@@ -1,0 +1,25 @@
+{
+  "id": "iren--dell--equipment",
+  "from": "iren",
+  "to": "dell",
+  "type": "hardware_purchase",
+  "status": "active",
+  "headline": { "value": 5.8, "unit": "USD_B", "caveat": "IREN's purchase of NVIDIA GB300 systems and related equipment from Dell to serve its $9.7B/5-yr Microsoft GPU-cloud contract at Childress, TX.", "as_of": "2025-11" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "Deliveries phase through 2026 alongside the Microsoft ramp; paid amounts not broken out (partly funded by Microsoft's ~20% prepayment and equipment financing).", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-11", "start": "2026", "end": null, "duration_years": null },
+  "nature_md": "IREN agreed to buy ~$5.8B of AI hardware — NVIDIA GB300 rack systems and supporting equipment — from Dell to build out the GPU fleet serving its $9.7B Microsoft cloud contract at Childress, Texas. A textbook link in the money chain: Microsoft's compute dollars (with ~20% prepaid) flow through IREN into Dell hardware revenue and onward into NVIDIA content — one contract generating recognized revenue at three levels of the stack.",
+  "accounting": {
+    "payer_treatment_md": "IREN capitalizes the GB300 fleet as PP&E depreciated over the contract life, financed by the Microsoft prepayment, equipment financing/debt, and equity — a leveraged bet that the 5-year contract outlasts the hardware's competitive life.",
+    "payee_treatment_md": "Dell books ISG hardware revenue on delivery within its AI backlog; IREN is among the named customers (with CoreWeave, xAI) behind Dell's $24.4B of Q1-FY27 AI orders.",
+    "off_balance_sheet": false,
+    "flags": ["vendor_financing", "customer_concentration"]
+  },
+  "related_edges": ["microsoft--iren--gpu-cloud", "xai--dell--servers"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-secures-97bn-ai-cloud-contract-microsoft", "publisher": "IREN IR", "published": "2025-11", "kind": "company_ir" },
+    { "url": "https://blockspace.media/insight/bitcoin-mining-news-cipher-lands-5-5b-aws-lease-iren-inks-9-7b-microsoft-deal-and-public-bitcoin-miner-q3-earnings/", "publisher": "Blockspace", "published": "2025-11", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

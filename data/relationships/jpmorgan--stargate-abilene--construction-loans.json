@@ -1,0 +1,33 @@
+{
+  "id": "jpmorgan--stargate-abilene--construction-loans",
+  "from": "jpmorgan",
+  "to": "stargate-abilene",
+  "type": "project_debt",
+  "status": "active",
+  "headline": { "value": 9.4, "unit": "USD_B", "caveat": "two JPMorgan-led construction loans: $2.3B (phase 1, Oct 2024) + $7.1B (phase 2, May 2025); JPMorgan's own hold vs consortium share undisclosed", "as_of": "2025-05" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "construction loans draw as the eight buildings progress; drawn amounts not disclosed" },
+  "term": { "announced": "2025-05", "start": "2024-10", "end": null, "duration_years": null },
+  "nature_md": "A JPMorgan-led consortium provides the construction debt for the Stargate Abilene campus: $2.3B for phase 1 (two buildings, Oct 2024) and $7.1B for phase 2 (six more buildings, May 2025; arranged by Newmark) — the first Stargate site to obtain major bank construction financing. The loans sit on the Crusoe/Blue Owl/Primary Digital JV and are supported by the campus and its Oracle lease serving OpenAI.",
+  "accounting": {
+    "payer_treatment_md": "Senior secured construction lending held/syndicated by the JPMorgan-led group — bank balance-sheet exposure to a single-tenant AI campus whose credit chains to Oracle/OpenAI; a named component of the banking system's growing AI C&I book.",
+    "payee_treatment_md": "Project-level debt of the JV — off the balance sheets of OpenAI, Oracle, and the sponsors individually. Refinancing risk at stabilization is a watch item as AI credit spreads widen.",
+    "off_balance_sheet": true,
+    "flags": ["spv_shift", "customer_concentration"]
+  },
+  "related_edges": ["blue-owl--stargate-abilene--jv", "crusoe--stargate-abilene--jv", "jpmorgan--vantage--project-debt"],
+  "observations": [],
+  "events": [
+    {
+      "date": "2025-05-22",
+      "title": "JPMorgan leads $7.1B construction loan for Stargate Abilene phase 2",
+      "impact": "medium",
+      "entities": ["jpmorgan", "stargate-abilene", "blue-owl", "crusoe"],
+      "sources": [{ "url": "https://www.bloomberg.com/news/articles/2025-05-22/jpmorgan-leads-7-1-billion-loan-for-blue-owl-tied-data-center", "publisher": "Bloomberg", "published": "2025-05-22", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.bloomberg.com/news/articles/2025-05-22/jpmorgan-leads-7-1-billion-loan-for-blue-owl-tied-data-center", "publisher": "Bloomberg", "published": "2025-05-22", "kind": "press" },
+    { "url": "https://www.costar.com/article/1387166843/first-stargate-data-center-project-lands-7-1-billion-construction-loan", "publisher": "CoStar", "published": "2025-05", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "openai--sk-hynix--memory-loi",
+  "from": "openai",
+  "to": "sk-hynix",
+  "type": "supply_agreement",
+  "status": "announced",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "letter of intent — no contract value; analysts estimate >$70B (>₩100T) of incremental demand for SK Hynix + Samsung combined through 2029", "as_of": "2025-10-01" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "LOI stage; firm orders/prepayments not publicly quantified", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-10-01", "start": null, "end": "2029", "duration_years": null },
+  "nature_md": "Oct 1, 2025 letter of intent under 'Stargate Korea': SK Hynix — holder of ~58% of the HBM market and supplier of ~⅔ of HBM4 to NVIDIA — commits to ramp HBM and DRAM production toward OpenAI's projected demand of up to 900,000 DRAM wafer starts per month **combined with Samsung** (≈40% of global DRAM output), and to partner on Stargate data centers in Korea. Like the Samsung leg, this is intent rather than contract: no dollars, no delivery schedule, no take-or-pay terms are public, and the >$70B figure is an analyst estimate (low confidence). SK Group is separately an investor in Anthropic's Series H.",
+  "accounting": {
+    "payer_treatment_md": "No obligation recognized at LOI stage. Converted contracts would likely follow the emerging HBM pattern of customer prepayments securing capacity — prepayments that would become balance-sheet assets for OpenAI and deferred revenue for SK Hynix.",
+    "payee_treatment_md": "Nothing bookable yet; provides demand-signal cover for capacity expansion decisions. Memory is sold out through 2026 industry-wide, so the LOI mostly reallocates future capacity toward OpenAI rather than creating near-term revenue.",
+    "off_balance_sheet": true,
+    "flags": ["commitment_unfunded"]
+  },
+  "related_edges": ["openai--samsung--memory-loi", "openai--stargate--jv-equity"],
+  "observations": [],
+  "events": [
+    {
+      "date": "2025-10-01",
+      "title": "SK Hynix signs Stargate Korea LOI (HBM/DRAM supply + Korean data centers)",
+      "impact": "high",
+      "entities": ["openai", "sk-hynix", "samsung"],
+      "sources": [{ "url": "https://openai.com/index/samsung-and-sk-join-stargate/", "publisher": "OpenAI", "published": "2025-10-01", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://openai.com/index/samsung-and-sk-join-stargate/", "publisher": "OpenAI", "published": "2025-10-01", "kind": "company_pr" },
+    { "url": "https://www.kedglobal.com/artificial-intelligence/newsView/ked202510010013", "publisher": "Korea Economic Daily", "published": "2025-10-01", "kind": "press" },
+    { "url": "https://www.tomshardware.com/pc-components/dram/openais-stargate-project-to-consume-up-to-40-percent-of-global-dram-output-inks-deal-with-samsung-and-sk-hynix-to-the-tune-of-up-to-900-000-wafers-per-month", "publisher": "Tom's Hardware", "published": "2025-10", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,27 +1,30 @@
-# AI Money Map — Product & Architecture Specification
+# AI Money Tracker — Product & Architecture Specification
 
-**Working title:** AI Money Map (repo: `aitracker`)
-**Status:** Draft v0.1 for review — decisions marked ⚠️ need sign-off
+**Product name:** AI Money Tracker (repo: `aitracker`)
+**Status:** Draft v0.2 — core decisions ratified by the project owner (see §14 decision log)
 **Date:** August 13, 2026
 
 ---
 
 ## 1. Vision
 
-A public, continuously updated, neutral reference for the financial structure of the AI ecosystem: who the players are, how they monetize AI, how much money flows between them, how those flows are recognized in each party's accounts, and what risks (especially circularity and contagion) those structures create.
+A public, **open-source**, continuously updated, neutral reference for the financial structure of the AI ecosystem: who the players are, how they monetize AI, how much money flows between them, how those flows are recognized in each party's accounts, and what risks (especially circularity and contagion) those structures create. The goal is to become the **de facto source of truth for AI-ecosystem financials** — thorough enough that every audience below finds their questions answerable here, and trusted enough that outsiders want to contribute to it.
 
-The ambition is Wikipedia-grade trust applied to a domain currently dominated by hot takes: every number carries a source, every estimate carries a method, every change is versioned, and analytical framings present the strongest form of both the bull and bear case.
+The ambition is Wikipedia-grade trust applied to a domain currently dominated by hot takes: every number carries a source, every estimate carries a documented method, every change is versioned and reviewed, and analytical framings present the strongest form of both the bull and bear case.
 
 **Audiences and what each needs:**
 
-| Audience | Primary need |
+| Audience | Primary needs |
 |---|---|
-| Equity/credit investors | Revenue quality, counterparty concentration, what happens to each balance sheet in a downcycle |
-| AI-ecosystem operators | Who funds whom, market structure, precedent terms for deals |
-| Regulators / policy | Aggregate exposure, off-balance-sheet structures, private-credit linkages, systemic channels |
-| Journalists / public | A verifiable map that replaces contradictory claims with sourced facts |
+| Equity investors | Revenue tracking, cost tracking, cash-flow tracking, counterparty-risk tracking, balance-sheet risks, financial valuation, securities-mispricing identification, comparables |
+| Credit investors | Cash-flow tracking, counterparty-risk tracking, balance-sheet tracking, credit-risk tracking, credit valuation, comparables |
+| AI-ecosystem operators | Financial stability of partners, partnership suitability, risk assessment, M&A opportunities |
+| Regulators / policy | Aggregate exposures, off-balance-sheet structures, private-credit and private-equity linkages, systemic risks |
+| Journalists / public | A verifiable, high-trust, open-source map that replaces and grounds contradictory claims and opinions on social media with sourced facts |
 
-**Non-goals (v1):** investment advice, price targets, real-time market data, coverage of every AI startup (we track the systemically connected core), paywalled content.
+**Coverage universe:** all systemically connected AI-ecosystem companies — hyperscalers, labs, chips, the full physical supply chain (power, electrical, cooling, construction), neoclouds and data-center operators, financiers, application-software incumbents with material AI businesses, and key international players including China — plus **any AI-native company with ≥$1B valuation or ≥$100M revenue**. Target scale: ~500 entities (tiered by coverage depth, §9).
+
+**In scope (revised from v0.1):** near-real-time market data (prices/market caps via API Ninjas). **Non-goals (v1):** investment advice, price targets or recommendations, tick-level trading data (we show current quotes, not a trading terminal), paywalled content.
 
 ## 2. Design principles
 
@@ -30,7 +33,8 @@ The ambition is Wikipedia-grade trust applied to a domain currently dominated by
 3. **Two-sided accounting, always.** A money flow isn't understood until we can say how *both* parties record it (revenue vs. deferred revenue vs. RPO; capex vs. opex vs. equity-method investment; on- vs. off-balance-sheet). The relationship page template forces this question for every edge.
 4. **Separate facts from framing.** Data pages are strictly factual. Analytical content (how to think about circularity, contagion scenarios) lives in clearly labeled *Insights* pages that present competing views with attribution, in the strongest form each side would accept.
 5. **Commitments are not revenue.** The single largest source of public confusion is headline deal values ($300B Oracle–OpenAI, $100B Nvidia–OpenAI) vs. money actually moving. Every edge distinguishes `announced` → `contracted` → `realized-to-date`, and the UI never shows a committed number without that label.
-6. **Estimates are welcome but quarantined.** AI P&L attribution mostly isn't disclosed; refusing to estimate would make the site useless, but estimates must never masquerade as facts. Estimated figures get a distinct visual treatment, a method note, and a sensitivity range.
+6. **Reported first; estimates welcome but quarantined.** Ratified policy: where a reported figure exists, it is always used and preferred. Where nothing is reported (AI P&L attribution mostly isn't), we publish estimates — but the estimate's assumptions and derivation process must be documented and **easily accessible to the reader** (one click from the number: method note, inputs, sensitivity range), and estimated figures carry a distinct visual treatment everywhere they appear.
+7. **Open by construction.** Code and data are open-source. Anyone can propose updates, error corrections, improvements, or new features via pull request; every contribution passes the same validation gates and human review. Review/approval authority starts with the project owner and widens to additional maintainers as the project scales (§12).
 
 ## 3. Core data model
 
@@ -57,7 +61,26 @@ A company, financier, or special-purpose vehicle.
 }
 ```
 
-**Category taxonomy** (node color in the graph): `hyperscaler`, `model_lab`, `neocloud`, `chip_designer`, `foundry`, `memory`, `semi_equipment`, `datacenter_developer`, `energy`, `enterprise_software`, `financier_bank`, `financier_private_credit`, `financier_pe_vc`, `sovereign_fund`, `spv_jv`.
+**Category taxonomy.** Two levels: a fine-grained `category` and a coarse `group` (used for node color — ~500 nodes need a legible legend). Groups → categories:
+
+- **Labs & AI-native** — `model_lab`, `ai_native` (agents/apps/robotics/media startups meeting the $1B/$100M threshold)
+- **Hyperscalers & clouds** — `hyperscaler`, `neocloud`, `datacenter_operator` (REITs/colo/miners-turned-AI), `datacenter_developer`
+- **Compute supply chain** — `chip_designer`, `foundry`, `memory_storage`, `semi_equipment_eda`, `packaging_substrate`, `network_optics`, `server_oem_odm`, `power_semis`
+- **Physical infrastructure** — `electrical_equipment` (Eaton/Schneider/Vertiv class), `cooling_thermal`, `engineering_construction` (Quanta/EMCOR/Comfort Systems class), `materials_cables`
+- **Energy** — `power_utility`, `power_generation_ipp`, `nuclear_smr`, `turbines_gensets`, `energy_other`
+- **Software & applications** — `enterprise_software` (incumbents with material AI businesses: Salesforce, ServiceNow, Adobe, SAP, Palantir…), `consumer_platform`
+- **Capital** — `financier_bank`, `financier_private_credit`, `financier_pe_vc`, `sovereign_fund`, `insurer`, `spv_jv`
+- **Government & state** — `government_program` (state funds, sovereign AI programs, subsidy vehicles)
+
+Entities also carry `region` (`us`, `europe`, `china`, `japan`, `korea`, `taiwan`, `middle_east`, `india`, `other`) — China's semi-parallel ecosystem (Huawei/SMIC/Cambricon/DeepSeek/Alibaba et al.) and the export-control boundary are part of the money map, not an afterthought.
+
+**Coverage tiers.** ~500 entities can't all get equal depth on day one; each entity carries a `tier`:
+
+- **Tier 1 (~60):** full treatment — complete financials, all edges, narrative sections, weekly refresh.
+- **Tier 2 (~150–200):** fundamentals (via automated ingest) + significant edges + short profile; refreshed weekly by automation, narratives quarterly.
+- **Tier 3 (rest to ~500):** identity card (name, category, scale, AI relevance, key relationships list) + market data; promoted to Tier 2 when they become systemically connected or a contributor fleshes them out.
+
+Tier is a coverage-depth label, never a judgment of importance — the UI says "coverage: basic" not "minor company."
 
 SPVs/JVs are first-class entities, not footnotes — structures like Meta's Hyperion JV or GPU-backed SPVs are precisely where balance-sheet risk hides, and modeling them as nodes makes "who actually holds the asset risk?" answerable from the graph.
 
@@ -136,10 +159,13 @@ Dated occurrences (deal announced, tranche funded, filing published, guidance ch
 | AI revenue (annualized) | with basis badge |
 | Capex (TTM + FY guidance) | |
 | Est. AI P&L | estimate badge + link to method |
-| Circular exposure | % of revenue/backlog touching flagged circular flows — links to methodology |
+| Revenue quality mix | compact stacked bar: share of revenue+backlog by quality tier (see below) with the financed/circular share as headline % |
+| Top counterparty | largest customer's share of revenue/RPO, links to that relationship |
 | Key counterparties | mini-list, links to relationship pages |
 
-Sortable/filterable by category; a row expands to show that company's edges. Estimated cells are visually distinct (badge + tint), per principle 6.
+**Presenting circularity (ratified design direction: clearest and most useful for investors, not a black-box score).** The primary presentation is a *decomposition, not an index*: each company's revenue+backlog split into visible tiers — **T1 organic** / **T2 financed at arm's length** / **T3 circular** (customer funded partly by the seller or its consortium) / **T4 committed-but-unfunded** (backlog from counterparties without identified funding) — rendered as a compact stacked bar in the table, in dollars on the company page, with every dollar traceable one click down to the specific edges and sources that put it in that tier. The advantages over a composite score: the units are dollars, the definition is on the label, the evidence is inspectable, and an investor can apply their own haircut per tier (§10.3). A derived sort key (`financed revenue share` = T3+T4 %) exists for ranking/filtering — explicitly labeled as derived from the mix, never presented as a rating. Credit investors additionally get commitment-coverage and debt-location (on-BS vs SPV) columns on the credit view of the table.
+
+Sortable/filterable by category, group, region, and tier; a row expands to show that company's edges. Default view shows Tier 1 (~60 rows) with search/filters across all ~500; estimated cells are visually distinct (badge + tint), per principle 6.
 
 **Below: the money-flow network graph.**
 
@@ -149,7 +175,8 @@ Sortable/filterable by category; a row expands to show that company's edges. Est
 - **Hover edge →** card: payer → payee, type, headline vs. realized value, one-line accounting treatment each side, circularity flags, "open page →".
 - **Click** node/edge → its dedicated page.
 - **Controls:** filter by edge type and category; minimum-flow slider; **"show circular flows"** toggle that dims everything except detected cycles and colors each cycle; **"follow the money"** mode — click a node, see all inbound/outbound paths to N hops with cumulative dollars.
-- **Layout:** force-directed (D3) with category gravity wells so the picture is stable week-to-week (hyperscalers center-left, labs center, chips right, financiers bottom); positions seeded deterministically so the map doesn't reshuffle every visit — recognizability builds trust.
+- **Layout:** force-directed (D3) with group gravity wells so the picture is stable week-to-week (hyperscalers center-left, labs center, chips right, financiers bottom, energy/physical-infra as an outer ring); positions seeded deterministically so the map doesn't reshuffle every visit — recognizability builds trust.
+- **Scale handling (~500 nodes):** default view renders Tier 1 nodes + edges above a flow threshold (legible, ~60 nodes); "expand" controls add tiers/categories/regions progressively; search jumps to any node with its ego-network. Full-graph mode exists but is a deliberate choice, not the landing state.
 - **Mobile fallback:** the graph degrades to a ranked edge list.
 
 ### 4.2 Company page (`/companies/<id>`)
@@ -195,14 +222,14 @@ Weekly digest, one entry per update run: new/changed edges, new filings ingested
 Pure TypeScript, runs at build; outputs derived JSON the site renders. All formulas documented on the methodology page.
 
 1. **Cycle detection:** enumerate simple cycles in the directed graph (money out → money back, ≤4 hops); each detected cycle cross-checked against manual flags; discrepancies surface in CI as review items.
-2. **Circular Exposure Score (per company):** share of revenue + backlog attributable to counterparties that the company (or its co-investors in the same structure) helps finance, weighted by financing share. Reported as a range, not false precision.
+2. **Revenue-quality decomposition (per company):** assign every revenue/backlog dollar to a quality tier (T1 organic / T2 arm's-length financed / T3 circular / T4 committed-unfunded) based on the edge graph — the primary circularity output (§4.1). Tier boundaries reported as ranges where attribution is uncertain, not false precision. The derived `financed revenue share` (T3+T4) is the sortable summary statistic.
 3. **Concentration metrics:** top-1/top-3 counterparty share of revenue and of RPO.
 4. **Commitment coverage:** for net spenders (OpenAI et al.): total committed obligations vs. identified funding capacity — the "who pays for all this?" number.
 5. **Contagion propagation:** shock vector → iterate flows with per-edge pass-through coefficients derived from contract type; parameters user-adjustable in the UI, defaults documented.
 
 ## 6. Architecture & stack
 
-**⚠️ Recommendation (needs sign-off):**
+**Ratified:**
 
 | Layer | Choice | Why |
 |---|---|---|
@@ -215,6 +242,8 @@ Pure TypeScript, runs at build; outputs derived JSON the site renders. All formu
 | CI | GitHub Actions: schema validation, link checks, cycle-flag reconciliation, build | Trust = the data can't silently break |
 
 Alternative considered: Next.js static export (fine, heavier); a database-backed app (rejected for v1 — kills the git-audit-trail trust story and adds ops burden for no v1 feature).
+
+**Secrets handling:** the pipeline uses two paid keys supplied by the project owner — API Ninjas (market data) and OpenRouter (LLM extraction). Keys live only in GitHub Actions secrets (CI) and local `.env` files (git-ignored); the repo documents required keys in `CONTRIBUTING.md` but never contains them. The public site never needs a key — all API access happens at build/ingest time, and only the resulting data is published. Contributors' PRs run validation without secrets; ingest jobs run only on the maintained branch.
 
 **Repo layout:**
 
@@ -234,13 +263,13 @@ The product commitment: **every Saturday evening the data is reconciled against 
 
 Pipeline per run:
 
-1. **Mechanical ingest (scripted):** pull latest quarterly XBRL facts (revenue, capex, RPO, segments) from SEC EDGAR for all public tracked entities; refresh market caps; fetch new 8-K/10-Q/10-K filings list since last run.
-2. **News & filings sweep (agentic):** a scheduled Claude session reviews the week's AI-finance news and new filings against the dataset; drafts data updates — new edges, revised observations, new events — every change carrying a source.
-3. **Validation:** JSON Schema, referential integrity (edges point at real entities), basis rules (no `estimated` without method), link liveness.
-4. **Derive + build + changelog:** analytics engine, site build, human-readable changelog entry.
-5. **Commit + push** → CI deploys. The commit message is the changelog summary.
+1. **Mechanical ingest (scripted, auto-mergeable):** pull latest quarterly XBRL facts (revenue, capex, RPO, segments) from SEC EDGAR for all public tracked entities; refresh prices/market caps for the full ticker universe via **API Ninjas**; fetch new 8-K/10-Q/10-K filings list since last run. These are schema-validated numeric refreshes from sources of record — they merge automatically when validation passes.
+2. **News sweep with LLM triage (scripted):** GDELT/Google News queries per entity and per live deal → dedupe → a **cheap OpenRouter model** classifies and extracts candidate facts (deal announced/changed, amounts, parties, accounting hints) into structured nominations with the source article attached. Nominations never write to data directly — they feed step 3. Quality bar: extraction prompts demand quotes + URLs; anything the model can't ground gets dropped, not guessed.
+3. **Editorial review (agentic + human):** a scheduled Claude session reviews the week's nominations and new filings against the dataset, drafts the actual data updates — new edges, revised observations, new events, each with sources and confidence — and opens a **pull request**. The project owner (initially; maintainers later, §12) reviews and merges. High-quality information is the product; nothing editorial ships unreviewed.
+4. **Validation (CI, on every PR):** JSON Schema, referential integrity (edges point at real entities), basis rules (no `estimated` without documented method), link liveness, cycle-flag reconciliation.
+5. **Derive + build + changelog:** analytics engine, site build, human-readable changelog entry; merge → CI deploys. The commit message is the changelog summary.
 
-**Scheduling mechanism (⚠️ sign-off):** a scheduled Claude Code session (a "Routine") firing weekly — cron `0 0 * * 0` UTC = Saturday 8:00 pm ET during daylight time (winter: fires 7:00 pm ET, or we adjust the cron seasonally; scheduler is UTC-based). Each run opens fresh, executes the pipeline, commits, pushes. Runs that find nothing material still commit a "no material changes" changelog entry — silence must be distinguishable from staleness.
+**Scheduling (ratified):** a scheduled Claude Code session (a "Routine") firing weekly — cron `0 0 * * 0` UTC = Saturday 8:00 pm ET during daylight time (winter: fires 7:00 pm ET; scheduler is UTC-based). Each run opens fresh, executes the pipeline, and leaves a merged mechanical update plus an editorial PR awaiting review. Runs that find nothing material still record a "no material changes" changelog entry — silence must be distinguishable from staleness.
 
 Corrections between Saturdays (a bad number found mid-week) are pushed immediately; the weekly rhythm is a floor, not a ceiling.
 
@@ -254,17 +283,21 @@ Verified as practical for an unattended weekly pipeline on a near-zero budget (a
 | New filings & deal disclosures | **EDGAR submissions API + full-text search** (`efts.sec.gov`) | Weekly sweep of new 8-K/10-Q/10-K; full-text queries on counterparty names ("OpenAI" in others' filings) catch deal disclosures. Endpoint shape is unofficial — wrap defensively. |
 | Segment / "AI revenue" detail | Filing-level XBRL or transcripts | The XBRL summary APIs carry **no dimensional/segment data** — segment revenue (e.g., Intelligent Cloud) needs filing-level parsing or prose extraction. Quarterly job, not weekly. |
 | Private-co financials (OpenAI, Anthropic, xAI) | **Epoch AI datasets** (epoch.ai/data/ai-companies, /ai-data-centers) — CC-BY 4.0 CSVs | Best-in-class free source: revenue run-rates, funding, compute spend, with per-datapoint confidence ratings; updated ~weekly. Credit Epoch. Supplement with hand-entered press numbers (The Information, Reuters, Bloomberg) recorded as `press_reported` with source + confidence. |
-| Market caps | **Stooq daily price CSV** × shares outstanding from EDGAR cover-page XBRL (`dei:EntityCommonStockSharesOutstanding`) | Fully free and automatable. yfinance is fallback-only (CI IPs get rate-blocked). Alpha Vantage free tier (25 req/day) too small; FMP free tier (250/day) workable if needed. |
+| Prices & market caps (near-real-time) | **API Ninjas** — `/v1/stockprice`, `/v1/marketcap` (owner-supplied key) | `X-Api-Key` auth. Developer tier (~$39–59/mo, 100K calls/mo, commercial use, real-time) covers 500 tickers weekly at ~4% of quota. Claims international exchange coverage — test our non-US tickers (TSMC, SK Hynix, Samsung, ASML, Siemens…) before relying on it. Fallback: Stooq CSV × EDGAR shares outstanding. |
+| Fundamentals cross-check | **API Ninjas** — `/v1/incomestatement`, `/v1/balancesheet`, `/v1/cashflow` (incl. `capital_expenditures`), `/v2/earnings` | US SEC filers only (it's SEC-derived, so EDGAR XBRL remains our source of record); useful as a standardized cross-check and for quick backfills. Historical years are premium-gated — covered by the same paid tier. |
+| News/filing extraction | **OpenRouter** (owner-supplied key) — triage: `deepseek/deepseek-v4-flash` (~$0.08/$0.18 per M tokens); extraction: `google/gemini-3.1-flash-lite` or `openai/gpt-5-mini` with strict `json_schema` mode | OpenAI-compatible API. At ~1,000 articles/week triaged + ~100 deep-extracted: **≈$0.50/week** — cost is a rounding error, so model choice optimizes extraction quality, not price. Prompts must demand verbatim quotes + URLs; ungrounded output is dropped. `:batch` variants halve cost if async fits the cron. |
 | Transcripts (AI commentary, prose-only numbers) | Motley Fool transcripts; NVIDIA CFO Commentary PDF from IR; prepared remarks via 8-K exhibits | Quarterly cadence; scraping is ToS-gray → keep low-volume, prefer IR/8-K documents. |
 | Weekly news sweep | **GDELT DOC 2.0 API** (free, ~250 records/query) + Google News RSS (low volume) | Dedupe → triage → **review queue; news never auto-publishes a data change without agentic/human review**. Bing News API is retired (Aug 2025) — don't plan on it. |
 
-Pipeline principle: EDGAR is the backbone of record for public companies; Epoch is the backbone for private ones; news feeds only *nominate* changes, they never write directly to data.
+Pipeline principle: EDGAR is the backbone of record for public companies; Epoch is the backbone for private ones; API Ninjas supplies live market data; the OpenRouter extraction layer and news feeds only *nominate* changes — they never write directly to data (§7 step 3 reviews every editorial change).
 
 ## 9. Seed dataset (launch universe)
 
-Compiled from live research on Aug 13, 2026. This is the v1 universe — every item below becomes an entity or relationship record with full sourcing in Phase 1. Values are headline figures; the data files will carry the committed/realized distinction, accounting treatment, and citations.
+Ratified scope: **~500 entities**, tiered per §3.1. The full census — including the physical-infrastructure supply chain (electrical equipment, cooling, power, engineering & construction labor), China and international players, application-software incumbents, and AI-natives meeting the $1B/$100M threshold — lives in [`UNIVERSE.md`](./UNIVERSE.md), which is the working document that becomes Tier-2/3 entity records in Phase 1.
 
-### 9.1 Entities (~40)
+This section lists the **Tier-1 core**: the entities and edges that get full hand-built treatment first, compiled from live research on Aug 13, 2026. Values are headline figures; the data files will carry the committed/realized distinction, accounting treatment, and citations.
+
+### 9.1 Tier-1 entities (~60)
 
 - **Model labs:** OpenAI ($852B, Mar 2026 round; ~$25B ARR Feb 2026; projected 2026 loss ≥$14B), Anthropic ($965B Series H May 2026; run-rate $9B→~$47B Dec 2025→May 2026), xAI (merged into SpaceX Feb 2026, combined ~$1.25T at merger).
 - **Hyperscalers:** Microsoft (~$3.6T; CY26 capex plan ~$190B; Azure >$100B/yr), Alphabet (~$4.6T; 2026 capex $195–205B; Cloud +82% y/y), Amazon (~$3.1T; ~$220B capex; AWS backlog ~$496B), Meta (~$1.5T; capex $130–145B), Oracle (RPO **$638B**, +363% y/y; FY27 net capex ~$70B). Big-4 combined 2026 capex ≈ **$725B, +77% y/y**.
@@ -406,26 +439,43 @@ What exists today (surveyed Aug 2026):
 - **Corrections:** public corrections log; errors fixed in place with a note, never silently.
 - **History:** every page links to its git file history.
 - **Disclaimer:** educational reference, not investment advice; prominently but not defensively worded.
-- **Contributions (Phase 4):** PRs against `/data` with required sources; maintainer review; this is the path to Wikipedia-like community trust if the project earns an audience.
+
+**Open-source model (ratified — from day one, not Phase 4):**
+
+- **Licensing (recommendation, needs owner confirmation):** code under **MIT**; data and written content under **CC BY-SA 4.0** — attribution keeps the project's name on every reuse, share-alike keeps derivative datasets open (the Wikipedia licensing model). Epoch-sourced data retains its CC-BY attribution.
+- **Contribution flow:** all changes — updates, error corrections, improvements, new features — arrive as pull requests. `CONTRIBUTING.md` specifies the sourcing standard (every factual change needs a source meeting the hierarchy above; estimates need a documented method), schema requirements, and style rules. CI validates every PR identically whether it comes from automation, a maintainer, or a stranger.
+- **Review ladder:** the project owner is the sole reviewer/approver initially (`CODEOWNERS` on `/data` and `/site`). As the project scales, contributors with a track record of accepted, well-sourced PRs are promoted to maintainers with merge rights over defined areas (e.g., a category or region); the owner retains final authority over methodology and governance changes. The ladder itself is documented publicly in `GOVERNANCE.md` so the path to trust is visible — that visibility is what converts readers into contributors.
+- **Issue intake:** error reports are first-class — a "report an error" link on every page opens a pre-filled GitHub issue naming the exact record and observation. Corrections get priority review.
 
 ## 13. Phased roadmap
 
 | Phase | Scope | Exit criterion |
 |---|---|---|
-| **0 — Spec** (this doc) | Align on design & decisions | Sign-off on ⚠️ items |
-| **1 — Foundation** | Schemas, seed dataset (hand-built, fully sourced), Astro site: home table + graph + company pages + relationship pages + methodology stub | Site deployed; every number sourced |
-| **2 — Live** | Ingest scripts (EDGAR, market caps), weekly Routine wired up, changelog page, validation CI | Three consecutive autonomous Saturday updates with correct output |
-| **3 — Analytics** | Cycle detection, exposure scores, interactive contagion stress test, insights essays | Contagion explorer public; methodology page complete |
-| **4 — Trust at scale** | Contribution flow, corrections process, RSS/email digest, custom domain | First outside contribution merged |
+| **0 — Spec** (this doc) | Align on design & decisions | Core decisions ratified (§14) — done |
+| **1 — Foundation** | Schemas; open-source scaffolding (LICENSE, CONTRIBUTING, GOVERNANCE, CODEOWNERS, PR/issue templates, validation CI); Tier-1 seed dataset (~60 entities, ~80 edges, hand-built, fully sourced) + Tier-2/3 identity cards from the census (§9); Astro site: home table + graph + company pages + relationship pages + methodology stub | Site deployed; every number sourced; a stranger can open a valid data PR |
+| **2 — Live** | Ingest scripts (EDGAR, API Ninjas, Epoch), OpenRouter news-triage pipeline, weekly Routine wired up (PR-based editorial flow), changelog page | Three consecutive Saturday cycles: mechanical auto-merge + editorial PR reviewed and merged |
+| **3 — Analytics** | Cycle detection, revenue-quality decomposition live on the table, interactive contagion stress test, insights essays, depreciation lens | Contagion explorer public; methodology page complete |
+| **4 — Scale & trust** | Tier-2 coverage to ~200 entities with automated fundamentals; Tier-3 to ~500; RSS/email digest; custom domain; maintainer ladder activated | First outside contribution merged; first non-owner maintainer appointed |
 
-## 14. Open decisions for review (⚠️)
+## 14. Decision log & remaining open items
 
-1. **Stack:** Astro static + JSON-in-git + GitHub Pages (recommended above) — approve or prefer Next.js/hosted DB?
-2. **Estimates policy:** publish our own labeled estimates for undisclosed figures (recommended — the site is toothless without them) vs. reported-only?
-3. **Scores:** show a computed "circular exposure" number per company (recommended, with methodology link) vs. flags only? A score is an opinion; it trades some neutrality for usefulness.
-4. **Universe v1:** the ~30-entity seed list in §9 — additions/removals?
-5. **Naming & domain:** keep `aitracker` / pick a product name and custom domain?
-6. **Weekly run:** confirm the scheduled-session mechanism and the DST handling choice for the 8pm ET Saturday slot.
+**Ratified by the project owner (Aug 13, 2026):**
+
+1. **Stack** — Astro static + JSON-in-git + GitHub Pages, as specified in §6. ✓
+2. **Estimates policy** — reported figures always preferred; estimates permitted where nothing is reported, with assumptions and derivation documented and easily accessible to the reader (§2 principle 6). ✓
+3. **Circularity presentation** — clearest-for-investors decomposition (revenue-quality mix with drill-down to edges), not a black-box score; derived summary % only as a sort key (§4.1). ✓
+4. **Universe** — vastly expanded: ~500 entities across the full ecosystem incl. physical infrastructure, energy, China/international, application software, and AI-natives at ≥$1B valuation or ≥$100M revenue; tiered coverage (§3.1, §9). ✓
+5. **Name** — **AI Money Tracker**. ✓
+6. **Weekly run** — scheduled session, Saturdays 8pm ET (UTC-anchored cron; 7pm ET in winter). ✓
+7. **Open source** — from day one; owner as initial sole reviewer/approver, maintainer ladder as it scales (§12). ✓
+8. **Market data** — API Ninjas (owner-supplied key); **news/web extraction** — cheap OpenRouter models (owner-supplied key), quality-first configuration (§8). ✓
+
+**Still open:**
+
+1. **License confirmation** — recommended: MIT (code) + CC BY-SA 4.0 (data/content). Confirm before the repo goes public.
+2. **Key handoff** — how the API Ninjas and OpenRouter keys reach CI (GitHub Actions secrets set by owner; needed at the start of Phase 2). Which API Ninjas tier to subscribe to (Developer tier suffices per §8 verification).
+3. **Custom domain** — none chosen yet; GitHub Pages default until then.
+4. **Repo visibility timing** — make `aitracker` public at Phase 1 completion, or immediately?
 
 ---
 

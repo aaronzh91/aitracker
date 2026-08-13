@@ -1,0 +1,25 @@
+{
+  "id": "snowflake--anthropic--model-access",
+  "from": "snowflake",
+  "to": "anthropic",
+  "type": "model_license",
+  "status": "active",
+  "headline": { "value": 200, "unit": "USD_M", "caveat": "multi-year commitment; duration and minimum-spend structure undisclosed", "as_of": "2025-12" },
+  "realized_to_date": { "value": null, "unit": "USD_M", "caveat": "consumption-based; amounts paid not disclosed", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-12", "start": "2025-12", "end": null, "duration_years": null },
+  "nature_md": "Announced Dec 2025: a multi-year, $200M partnership making Anthropic's Claude models available natively in Snowflake Cortex AI and Snowflake Intelligence across all three major clouds, to Snowflake's 12,600+ customers, plus a joint go-to-market initiative around deploying AI agents on governed enterprise data. Snowflake is deliberately model-agnostic — it signed a parallel $200M deal with OpenAI two months later — so this is a wholesale/resale arrangement, not exclusivity. App-layer deals like this are the test of AI revenue quality: enterprise dollars flowing to labs through platforms, unconnected to any circular financing.",
+  "accounting": {
+    "payer_treatment_md": "Committed model-access spend — cost of revenue against Snowflake's Cortex AI consumption products; Snowflake monetizes by reselling model calls with platform markup inside customer credits.",
+    "payee_treatment_md": "For Anthropic: high-quality third-party revenue (committed floor, usage upside) recognized over the term — the kind of demand bulls cite against the circularity critique, since Snowflake is neither investor nor supplier.",
+    "off_balance_sheet": false,
+    "flags": []
+  },
+  "related_edges": ["snowflake--openai--model-access"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.snowflake.com/en/news/press-releases/snowflake-and-anthropic-announce-200-million-partnership-to-bring-agentic-ai-to-global-enterprises/", "publisher": "Snowflake PR", "published": "2025-12", "kind": "company_pr" },
+    { "url": "https://www.hpcwire.com/bigdatawire/this-just-in/snowflake-and-anthropic-announce-200m-partnership-to-bring-agentic-ai-to-global-enterprises/", "publisher": "BigDATAwire / HPCwire", "published": "2025-12", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

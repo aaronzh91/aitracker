@@ -1,0 +1,34 @@
+{
+  "id": "apple--alphabet--gemini-license",
+  "from": "apple",
+  "to": "alphabet",
+  "type": "model_license",
+  "status": "active",
+  "headline": { "value": 1, "unit": "USD_B_per_year", "caveat": "~$1B/year for a custom 1.2-trillion-parameter Gemini model powering the rebuilt Siri; multi-year, exact term undisclosed", "as_of": "2026-01-12" },
+  "realized_to_date": { "value": null, "unit": "USD_M", "caveat": "payments began with the Jan 2026 agreement; nothing disclosed", "as_of": "2026-08-13" },
+  "annualized_flow": { "value": 1, "unit": "USD_B_per_year", "caveat": "press-reported run rate", "as_of": "2026-01" },
+  "term": { "announced": "2026-01-12", "start": "2026", "end": null, "duration_years": null },
+  "nature_md": "Reported by Bloomberg in Nov 2025 and finalized/confirmed Jan 2026: Apple pays Google ~$1B per year to license a custom 1.2T-parameter Gemini model as the foundation of the rebuilt Siri and next-generation Apple Intelligence, served through Apple's Private Cloud Compute (Apple-silicon servers anonymize traffic; no training on user data). Ends Apple's build-vs-buy ambiguity for frontier AI, and inverts the direction of the famous search ISA (where Google pays Apple ~$20B/yr): Apple now pays Google for AI while Google pays Apple for search defaults — the two flows are legally separate but strategically entangled. The clearest large price point for app-layer model licensing.",
+  "accounting": {
+    "payer_treatment_md": "Operating expense (licensing/cloud services) — immaterial to Apple's P&L (~0.1% of opex) but strategically decisive; Apple avoided the multi-GW capex path entirely, making it the only mega-cap consumer platform renting frontier AI rather than building it.",
+    "payee_treatment_md": "For Alphabet: licensing/services revenue (~$1B/yr) — small in dollars, large as validation that Gemini wins head-to-head evaluations (Apple tested OpenAI and Anthropic alternatives). Distribution on ~2B devices also has non-cash strategic value no line item captures.",
+    "off_balance_sheet": false,
+    "flags": []
+  },
+  "related_edges": ["openai--alphabet--cloud"],
+  "observations": [],
+  "events": [
+    {
+      "date": "2026-01-12",
+      "title": "Apple–Google Gemini-for-Siri partnership confirmed (~$1B/yr)",
+      "impact": "medium",
+      "entities": ["apple", "alphabet"],
+      "sources": [{ "url": "https://tech.yahoo.com/ai/apple-intelligence/articles/apple-google-circle-1-billion-205835401.html", "publisher": "Yahoo Tech", "published": "2026-01", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://tech.yahoo.com/ai/apple-intelligence/articles/apple-google-circle-1-billion-205835401.html", "publisher": "Yahoo Tech", "published": "2026-01", "kind": "press" },
+    { "url": "https://www.financialcontent.com/article/tokenring-2026-2-6-apple-inks-1-billion-deal-with-google-to-power-gemini-fueled-siri-revamp", "publisher": "FinancialContent", "published": "2026-02-06", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

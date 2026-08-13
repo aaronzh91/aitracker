@@ -1,0 +1,42 @@
+{
+  "id": "disney--openai--equity-withdrawn",
+  "from": "disney",
+  "to": "openai",
+  "type": "equity_investment",
+  "status": "withdrawn",
+  "headline": { "value": 1, "unit": "USD_B", "caveat": "announced Dec 2025 alongside a three-year Sora IP license; withdrawn Mar 24, 2026", "as_of": "2025-12" },
+  "realized_to_date": { "value": 0, "unit": "USD_B", "caveat": "no funds were ever delivered", "as_of": "2026-03-24" },
+  "term": { "announced": "2025-12", "start": null, "end": "2026-03-24", "duration_years": null },
+  "nature_md": "December 2025: Disney agreed to invest $1B in OpenAI as part of a comprehensive licensing arrangement giving Sora and other OpenAI generative products access to 200+ masked, animated, and creature characters from Disney, Marvel, Pixar, and Star Wars under a three-year license — the first big-media equity-plus-IP pact with a frontier lab. On **Mar 24, 2026** OpenAI shut down the Sora app (reported losses ~$1M/day), informing Disney less than an hour before the public announcement; Disney withdrew the investment the same day. **$0 was ever delivered.** The dataset's cautionary exemplar: a billion-dollar 'deal' that appeared in every AI-investment tally for a quarter and produced no money flow at all — commitment-vs-realized discipline in one edge.",
+  "accounting": {
+    "payer_treatment_md": "Nothing was ever booked — the commitment died before funding; no impairment, no investment, no disclosure obligation beyond news coverage. The reputational whiplash (embracing then fleeing generative AI) is unaccounted anywhere.",
+    "payee_treatment_md": "OpenAI received no proceeds and lost the IP license that was Sora's content moat; the app shutdown that triggered the withdrawal also removed the product the license existed to feed.",
+    "off_balance_sheet": true,
+    "flags": ["commitment_unfunded"]
+  },
+  "related_edges": [],
+  "observations": [],
+  "events": [
+    {
+      "date": "2025-12",
+      "title": "Disney announces $1B OpenAI investment + 3-year Sora IP license (200+ characters)",
+      "impact": "medium",
+      "entities": ["disney", "openai"],
+      "sources": [{ "url": "https://thedesk.net/2026/03/disney-pulls-openai-investment/", "publisher": "The Desk", "published": "2026-03", "kind": "press" }]
+    },
+    {
+      "date": "2026-03-24",
+      "title": "OpenAI shuts down Sora app; Disney withdraws the $1B investment ($0 delivered)",
+      "why_it_matters": "Demonstrates how fast announced AI commitments can evaporate — and that headline tallies of 'AI investment' include money that never moves.",
+      "impact": "high",
+      "entities": ["disney", "openai"],
+      "sources": [{ "url": "https://variety.com/2026/digital/news/openai-shutting-down-sora-video-disney-1236698277/", "publisher": "Variety", "published": "2026-03", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://variety.com/2026/digital/news/openai-shutting-down-sora-video-disney-1236698277/", "publisher": "Variety", "published": "2026-03", "kind": "press" },
+    { "url": "https://deadline.com/2026/03/sora-shut-down-disney-investment-1236764689/", "publisher": "Deadline", "published": "2026-03", "kind": "press" },
+    { "url": "https://thedesk.net/2026/03/disney-pulls-openai-investment/", "publisher": "The Desk", "published": "2026-03", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

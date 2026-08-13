@@ -1,0 +1,54 @@
+{
+  "id": "us-government--anthropic--dod-2025",
+  "from": "us-government",
+  "to": "anthropic",
+  "type": "government_contract",
+  "status": "disputed",
+  "headline": { "value": 200, "unit": "USD_M", "caveat": "two-year prototype OTA ceiling (Jul 2025) — subsequently effectively destroyed by the Feb 2026 government-wide ban; Anthropic is litigating", "as_of": "2025-07-14" },
+  "realized_to_date": { "value": null, "unit": "USD_M", "caveat": "obligated amounts never publicly itemized; whatever was obligated is now in a six-month phase-out", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-07-14", "start": "2025-07", "end": "2026-02", "duration_years": null },
+  "nature_md": "July 14, 2025: DoD's CDAO awarded Anthropic a two-year prototype OTA with a $200M ceiling to 'prototype frontier AI capabilities that advance U.S. national security' — part of the same four-lab award wave as OpenAI/Google/xAI. Under a separate July 2025 arrangement, Claude became the first frontier model approved for classified networks, with the Pentagon agreeing to Anthropic's acceptable-use policy (no mass domestic surveillance of Americans, no fully autonomous target selection/engagement). The relationship then inverted: the Pentagon demanded 'all lawful purposes' usage without AUP limits, negotiations failed, and on **Feb 27, 2026** the President directed all federal agencies to cease using Anthropic's technology while Defense Secretary Hegseth designated Anthropic a **'supply chain risk'** — barring any DoD contractor, supplier, or partner from commercial activity with Anthropic, with a six-month phase-out. GSA removed Anthropic from USAi.gov and its multiple-award schedules. Anthropic sued the Defense Department over the designation on Mar 9, 2026. The edge is now a negative: the $200M ceiling stands as a monument to a federal pipeline that was killed over usage-policy principles.",
+  "accounting": {
+    "payer_treatment_md": "Obligations against the ceiling were never publicly itemized; the ban halts new obligations and forces contract wind-down. The supply-chain-risk designation extends the effect beyond direct contracts to Anthropic's entire defense-contractor customer base.",
+    "payee_treatment_md": "Whatever federal revenue existed is being phased out; the larger P&L hit is indirect — defense contractors (a major enterprise segment) are barred from using Anthropic products for military work, and GSA delisting cuts civilian-agency channels. Anthropic's commercial (non-government) growth continued regardless; litigation outcome could restore or permanently bar the channel.",
+    "off_balance_sheet": false,
+    "flags": []
+  },
+  "related_edges": ["us-government--openai--dod-2025"],
+  "both_sides_md": "**Government framing (attributed):** the Pentagon cannot depend on a critical supplier that reserves the right to refuse lawful military uses — dependency without assurance is a supply-chain risk (Hegseth directive). **Anthropic framing (attributed):** the AUP terms were agreed contractually in July 2025 and the designation is retaliation for refusing to drop safety commitments — it sued rather than concede (Mar 2026 suit); reporting noted Claude had been used in the June Iran operation even as the designation landed (CNBC).",
+  "observations": [],
+  "events": [
+    {
+      "date": "2025-07-14",
+      "title": "CDAO awards Anthropic two-year, $200M-ceiling prototype OTA; Claude first frontier model on classified networks",
+      "impact": "medium",
+      "entities": ["us-government", "anthropic"],
+      "sources": [{ "url": "https://www.anthropic.com/news/anthropic-and-the-department-of-defense-to-advance-responsible-ai-in-defense-operations", "publisher": "Anthropic", "published": "2025-07-14", "kind": "company_pr" }]
+    },
+    {
+      "date": "2026-02-27",
+      "title": "Federal agencies ordered off Anthropic products; DoD designates it a 'supply chain risk'",
+      "why_it_matters": "Kills Anthropic's federal pipeline government-wide (GSA delisting, contractor bar, six-month phase-out) — the first destruction of a lab-government relationship over acceptable-use terms, and a template for political counterparty risk that no revenue model prices.",
+      "impact": "high",
+      "entities": ["us-government", "anthropic"],
+      "sources": [
+        { "url": "https://www.cnn.com/2026/02/27/tech/anthropic-pentagon-deadline", "publisher": "CNN", "published": "2026-02-27", "kind": "press" },
+        { "url": "https://www.mayerbrown.com/en/insights/publications/2026/03/pentagon-designates-anthropic-a-supply-chain-risk-what-government-contractors-need-to-know", "publisher": "Mayer Brown", "published": "2026-03", "kind": "other" }
+      ]
+    },
+    {
+      "date": "2026-03-09",
+      "title": "Anthropic sues the Defense Department over the supply-chain-risk designation",
+      "impact": "medium",
+      "entities": ["anthropic", "us-government"],
+      "sources": [{ "url": "https://euronews.com/2026/03/09/anthropic-sues-us-defense-department-over-supply-chain-risk-label", "publisher": "Euronews", "published": "2026-03-09", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.anthropic.com/news/anthropic-and-the-department-of-defense-to-advance-responsible-ai-in-defense-operations", "publisher": "Anthropic", "published": "2025-07-14", "kind": "company_pr" },
+    { "url": "https://www.cnn.com/2026/02/27/tech/anthropic-pentagon-deadline", "publisher": "CNN", "published": "2026-02-27", "kind": "press" },
+    { "url": "https://www.cnbc.com/2026/03/05/anthropic-pentagon-ai-claude-iran.html", "publisher": "CNBC", "published": "2026-03-05", "kind": "press" },
+    { "url": "https://www.mayerbrown.com/en/insights/publications/2026/03/pentagon-designates-anthropic-a-supply-chain-risk-what-government-contractors-need-to-know", "publisher": "Mayer Brown", "published": "2026-03", "kind": "other" }
+  ],
+  "updated": "2026-08-13"
+}

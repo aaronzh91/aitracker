@@ -1,0 +1,26 @@
+{
+  "id": "snowflake--openai--model-access",
+  "from": "snowflake",
+  "to": "openai",
+  "type": "model_license",
+  "status": "active",
+  "headline": { "value": 200, "unit": "USD_M", "caveat": "multi-year partnership; duration and minimum-spend structure undisclosed", "as_of": "2026-02" },
+  "realized_to_date": { "value": null, "unit": "USD_M", "caveat": "consumption-based; amounts paid not disclosed", "as_of": "2026-08-13" },
+  "term": { "announced": "2026-02-02", "start": "2026-02", "end": null, "duration_years": null },
+  "nature_md": "Announced Feb 2026: a multi-year, $200M partnership embedding OpenAI's models natively in Snowflake Cortex AI and Snowflake Intelligence across AWS, Azure, and Google Cloud, letting Snowflake's 12,600+ customers build agents and natural-language analytics grounded in governed enterprise data. Mirrors the $200M Anthropic deal signed two months earlier — Snowflake explicitly refuses model lock-in, so the identical price points function as a rough public benchmark for what platform-scale frontier-model access costs.",
+  "accounting": {
+    "payer_treatment_md": "Committed model-access spend — cost of revenue behind Cortex AI consumption; recovered through customer credit consumption with platform markup.",
+    "payee_treatment_md": "For OpenAI: committed multi-year enterprise-channel revenue independent of its investor-suppliers — the demand-quality datapoint bulls point to, though $200M is <1% of OpenAI's ARR and small against its compute obligations.",
+    "off_balance_sheet": false,
+    "flags": []
+  },
+  "related_edges": ["snowflake--anthropic--model-access", "intuit--openai--model-access"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.snowflake.com/en/news/press-releases/snowflake-and-openAI-forge-200-million-partnership-to-bring-enterprise-ready-ai-to-the-worlds-most-trusted-data-platform/", "publisher": "Snowflake PR", "published": "2026-02", "kind": "company_pr" },
+    { "url": "https://techcrunch.com/2026/02/02/what-snowflakes-deal-with-openai-tells-us-about-the-enterprise-ai-race/", "publisher": "TechCrunch", "published": "2026-02-02", "kind": "press" },
+    { "url": "https://www.constellationr.com/insights/news/snowflake-openai-ink-200-million-multi-year-partnership", "publisher": "Constellation Research", "published": "2026-02", "kind": "analyst" }
+  ],
+  "updated": "2026-08-13"
+}

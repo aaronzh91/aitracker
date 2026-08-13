@@ -1,0 +1,26 @@
+{
+  "id": "intuit--openai--model-access",
+  "from": "intuit",
+  "to": "openai",
+  "type": "model_license",
+  "status": "active",
+  "headline": { "value": 100, "unit": "USD_M", "caveat": "'more than $100M' multi-year for model access; some coverage characterizes the figure as annual — structure undisclosed", "as_of": "2025-11-18" },
+  "realized_to_date": { "value": null, "unit": "USD_M", "caveat": "not disclosed", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-11-18", "start": "2025-11", "end": null, "duration_years": null },
+  "nature_md": "Announced Nov 18, 2025, a two-directional deal: Intuit pays OpenAI >$100M for model access to power agentic experiences inside its own products, while TurboTax, QuickBooks, Credit Karma, and Mailchimp become apps inside ChatGPT — users can estimate refunds, review credit options, and manage business finances in-chat, with financial data staying inside Intuit's systems and shared only with explicit permission. Part of OpenAI's late-2025 wave of app-platform deals (PayPal, Walmart, Spotify). Money flows Intuit→OpenAI; distribution value flows both ways, and neither side has disclosed any revenue-share on ChatGPT-originated transactions.",
+  "accounting": {
+    "payer_treatment_md": "Model-access fees as operating expense/cost of revenue within Intuit's AI platform (GenOS) spend; Intuit monetizes downstream through its own product pricing, not per-token resale.",
+    "payee_treatment_md": "For OpenAI: committed app-layer enterprise revenue plus a marquee tenant for the ChatGPT apps platform — evidence for the platform thesis underlying its consumer valuation; economically small next to its infrastructure obligations.",
+    "off_balance_sheet": false,
+    "flags": []
+  },
+  "related_edges": ["snowflake--openai--model-access"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.cnbc.com/2025/11/18/intuit-pays-openai-100-million-turbotax-integrates-chatgpt.html", "publisher": "CNBC", "published": "2025-11-18", "kind": "press" },
+    { "url": "https://investors.intuit.com/news-events/press-releases/detail/1284/intuit-and-openai-join-forces-to-revolutionize-financial-intelligence-powering-every-person-business-and-dream-with-personalized-experiences", "publisher": "Intuit IR", "published": "2025-11-18", "kind": "company_pr" },
+    { "url": "https://www.axios.com/2025/11/18/openai-intuit-turbotax-quickbooks-chatgpt", "publisher": "Axios", "published": "2025-11-18", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

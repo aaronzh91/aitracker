@@ -7,8 +7,14 @@
   "region": "us",
   "tier": 1,
   "tickers": [
-    { "exchange": "NASDAQ", "symbol": "GOOGL" },
-    { "exchange": "NASDAQ", "symbol": "GOOG" }
+    {
+      "exchange": "NASDAQ",
+      "symbol": "GOOGL"
+    },
+    {
+      "exchange": "NASDAQ",
+      "symbol": "GOOG"
+    }
   ],
   "cik": "1652044",
   "website": "https://abc.xyz",
@@ -26,7 +32,13 @@
       "unit": "USD_B",
       "basis": "company_claimed",
       "confidence": "high",
-      "source": { "url": "https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html", "publisher": "CNBC", "title": "Alphabet earnings takeaways: Q2 revenue beats, GOOGL stock sinks on 2026 capex hike", "published": "2026-07-22", "kind": "press" },
+      "source": {
+        "url": "https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html",
+        "publisher": "CNBC",
+        "title": "Alphabet earnings takeaways: Q2 revenue beats, GOOGL stock sinks on 2026 capex hike",
+        "published": "2026-07-22",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Guidance range $195–205B (midpoint shown), raised from $180–190B at Q2-26 earnings; mainly technical infrastructure for AI."
     },
@@ -38,7 +50,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.investing.com/news/company-news/alphabet-q2-2026-slides-24-revenue-growth-cloud-surges-despite-capex-93CH-4807148", "publisher": "Investing.com (from Alphabet Q2-26 release)", "published": "2026-07-22", "kind": "press" },
+      "source": {
+        "url": "https://www.investing.com/news/company-news/alphabet-q2-2026-slides-24-revenue-growth-cloud-surges-despite-capex-93CH-4807148",
+        "publisher": "Investing.com (from Alphabet Q2-26 release)",
+        "published": "2026-07-22",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "+82% y/y, driven by enterprise AI and TPU demand."
     },
@@ -49,7 +66,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.investing.com/news/company-news/alphabet-q2-2026-slides-24-revenue-growth-cloud-surges-despite-capex-93CH-4807148", "publisher": "Investing.com (from Alphabet Q2-26 release)", "published": "2026-07-22", "kind": "press" },
+      "source": {
+        "url": "https://www.investing.com/news/company-news/alphabet-q2-2026-slides-24-revenue-growth-cloud-surges-despite-capex-93CH-4807148",
+        "publisher": "Investing.com (from Alphabet Q2-26 release)",
+        "published": "2026-07-22",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "+24% y/y; operating income $40.8B, +30% y/y."
     },
@@ -60,7 +82,13 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.insiderfinance.io/news/alphabet-q2-2026-earnings-show-cloud-surge", "publisher": "InsiderFinance", "title": "Alphabet Q2 2026 Earnings Show Cloud Surge", "published": "2026-07", "kind": "press" },
+      "source": {
+        "url": "https://www.insiderfinance.io/news/alphabet-q2-2026-earnings-show-cloud-surge",
+        "publisher": "InsiderFinance",
+        "title": "Alphabet Q2 2026 Earnings Show Cloud Surge",
+        "published": "2026-07",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Google Cloud backlog ~$514B. Other trackers cite ~$627B total Alphabet RPO in mid-2026 comparisons (vs Oracle $638B, Microsoft ~$460B) — scope difference to be reconciled against the 10-Q."
     },
@@ -72,7 +100,13 @@
       "unit": "USD_B_per_year",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.financialcontent.com/article/tokenring-2026-2-6-apple-inks-1-billion-deal-with-google-to-power-gemini-fueled-siri-revamp", "publisher": "FinancialContent", "title": "Apple Inks $1 Billion Deal with Google to Power Gemini-Fueled Siri Revamp", "published": "2026-02-06", "kind": "press" },
+      "source": {
+        "url": "https://www.financialcontent.com/article/tokenring-2026-2-6-apple-inks-1-billion-deal-with-google-to-power-gemini-fueled-siri-revamp",
+        "publisher": "FinancialContent",
+        "title": "Apple Inks $1 Billion Deal with Google to Power Gemini-Fueled Siri Revamp",
+        "published": "2026-02-06",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Multi-year deal announced Jan 12, 2026: custom 1.2T-parameter Gemini powers the rebuilt Siri via Apple's Private Cloud Compute. ~$1B/yr is a press estimate; exact terms undisclosed."
     },
@@ -85,7 +119,12 @@
       "basis": "estimated",
       "method_md": "Sum of disclosed backstop commitments in landlord 8-Ks/PRs: ~$3.2B for TeraWulf (expanded from $1.3B initial across Lake Mariner leases) plus ~$1.4–1.7B for Cipher Mining (expanded to $1.73B per press). Hut 8's River Bend backstop amount is undisclosed and EXCLUDED, so the true total is higher. Alphabet also received warrants/equity: ~14% of TeraWulf, ~5.4% of Cipher.",
       "confidence": "low",
-      "source": { "url": "https://www.sec.gov/Archives/edgar/data/1083301/000110465925102858/tm2529509d1_ex99-1.htm", "publisher": "SEC / TeraWulf 8-K", "published": "2025", "kind": "sec_filing" },
+      "source": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1083301/000110465925102858/tm2529509d1_ex99-1.htm",
+        "publisher": "SEC / TeraWulf 8-K",
+        "published": "2025",
+        "kind": "sec_filing"
+      },
       "as_of": "2026-08-13",
       "notes": "Off-balance-sheet contingent obligations; bind only if Fluidstack/the AI tenant fails to pay. See also Cipher and Hut 8 edges."
     },
@@ -96,9 +135,62 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.fool.com/research/largest-companies-by-market-cap/", "publisher": "Motley Fool", "published": "2026-08", "kind": "press" },
+      "source": {
+        "url": "https://www.fool.com/research/largest-companies-by-market-cap/",
+        "publisher": "Motley Fool",
+        "published": "2026-08",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "~$4.6T; automated feed replaces this in Phase 2."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "6-month to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 229.69,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001652044/us-gaap/Revenues.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-23",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "Revenues; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "capex",
+      "period": "6-month to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 80.6,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001652044/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-23",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "rpo",
+      "period": "point-in-time to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 519.5,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001652044/us-gaap/RevenueRemainingPerformanceObligation.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-23",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-Q."
     }
   ],
   "events": [
@@ -107,10 +199,23 @@
       "title": "Anthropic expands Google Cloud TPU deal to up to 1M chips / >1GW",
       "why_it_matters": "Largest TPU commitment ever (worth tens of billions of dollars); validates TPUs as a merchant alternative to Nvidia and deepens the Google-Anthropic equity-plus-supply loop (Google holds ~14% of Anthropic per Mar 2025 court filings).",
       "impact": "high",
-      "entities": ["alphabet", "anthropic"],
+      "entities": [
+        "alphabet",
+        "anthropic"
+      ],
       "sources": [
-        { "url": "https://www.googlecloudpresscorner.com/2025-10-23-Anthropic-to-Expand-Use-of-Google-Cloud-TPUs-and-Services", "publisher": "Google Cloud", "published": "2025-10-23", "kind": "company_pr" },
-        { "url": "https://www.cnbc.com/2025/10/23/anthropic-google-cloud-deal-tpu.html", "publisher": "CNBC", "published": "2025-10-23", "kind": "press" }
+        {
+          "url": "https://www.googlecloudpresscorner.com/2025-10-23-Anthropic-to-Expand-Use-of-Google-Cloud-TPUs-and-Services",
+          "publisher": "Google Cloud",
+          "published": "2025-10-23",
+          "kind": "company_pr"
+        },
+        {
+          "url": "https://www.cnbc.com/2025/10/23/anthropic-google-cloud-deal-tpu.html",
+          "publisher": "CNBC",
+          "published": "2025-10-23",
+          "kind": "press"
+        }
       ]
     },
     {
@@ -118,23 +223,61 @@
       "title": "Apple and Google announce Gemini-powered Siri partnership (~$1B/yr)",
       "why_it_matters": "Turns Alphabet's largest platform rival into a model-licensing customer; a marquee data point for frontier-model licensing economics.",
       "impact": "medium",
-      "entities": ["alphabet", "apple"],
-      "sources": [{ "url": "https://www.financialcontent.com/article/tokenring-2026-2-6-apple-inks-1-billion-deal-with-google-to-power-gemini-fueled-siri-revamp", "publisher": "FinancialContent", "published": "2026-02-06", "kind": "press" }]
+      "entities": [
+        "alphabet",
+        "apple"
+      ],
+      "sources": [
+        {
+          "url": "https://www.financialcontent.com/article/tokenring-2026-2-6-apple-inks-1-billion-deal-with-google-to-power-gemini-fueled-siri-revamp",
+          "publisher": "FinancialContent",
+          "published": "2026-02-06",
+          "kind": "press"
+        }
+      ]
     },
     {
       "date": "2026-07-22",
       "title": "Q2-26: Cloud +82% y/y, backlog >$500B; 2026 capex guidance raised to $195–205B",
       "why_it_matters": "Demonstrates AI revenue conversion at hyperscaler scale, but the second capex hike of the year sent the stock down — the market now prices spend as a risk, not just growth.",
       "impact": "high",
-      "entities": ["alphabet"],
-      "sources": [{ "url": "https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html", "publisher": "CNBC", "published": "2026-07-22", "kind": "press" }]
+      "entities": [
+        "alphabet"
+      ],
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html",
+          "publisher": "CNBC",
+          "published": "2026-07-22",
+          "kind": "press"
+        }
+      ]
     }
   ],
   "sources": [
-    { "url": "https://abc.xyz/investor/events/event-details/2026/2026-Q2-Earnings-Call-2026-GgTAq7Is0z/default.aspx", "publisher": "Alphabet IR", "kind": "company_ir" },
-    { "url": "https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html", "publisher": "CNBC", "published": "2026-07-22", "kind": "press" },
-    { "url": "https://www.datacenterdynamics.com/en/news/google-and-anthropic-confirm-massive-1gw-cloud-deal-with-up-to-one-million-google-tpus/", "publisher": "Data Center Dynamics", "published": "2025-10", "kind": "press" },
-    { "url": "https://www.sec.gov/Archives/edgar/data/1083301/000110465925102858/tm2529509d1_ex99-1.htm", "publisher": "SEC / TeraWulf 8-K", "kind": "sec_filing", "notes": "Google backstop and warrant structure around Fluidstack leases." }
+    {
+      "url": "https://abc.xyz/investor/events/event-details/2026/2026-Q2-Earnings-Call-2026-GgTAq7Is0z/default.aspx",
+      "publisher": "Alphabet IR",
+      "kind": "company_ir"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html",
+      "publisher": "CNBC",
+      "published": "2026-07-22",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/google-and-anthropic-confirm-massive-1gw-cloud-deal-with-up-to-one-million-google-tpus/",
+      "publisher": "Data Center Dynamics",
+      "published": "2025-10",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1083301/000110465925102858/tm2529509d1_ex99-1.htm",
+      "publisher": "SEC / TeraWulf 8-K",
+      "kind": "sec_filing",
+      "notes": "Google backstop and warrant structure around Fluidstack leases."
+    }
   ],
   "updated": "2026-08-13"
 }

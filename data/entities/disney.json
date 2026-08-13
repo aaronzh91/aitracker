@@ -6,7 +6,12 @@
   "group": "software_applications",
   "region": "us",
   "tier": 2,
-  "tickers": [{ "exchange": "NYSE", "symbol": "DIS" }],
+  "tickers": [
+    {
+      "exchange": "NYSE",
+      "symbol": "DIS"
+    }
+  ],
   "cik": "1744489",
   "website": "https://www.thewaltdisneycompany.com",
   "fiscal_year_end": "09-30",
@@ -21,14 +26,77 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "high",
-      "source": { "url": "https://variety.com/2026/digital/news/openai-shutting-down-sora-video-disney-1236698277/", "publisher": "Variety", "published": "2026-03", "kind": "press" },
+      "source": {
+        "url": "https://variety.com/2026/digital/news/openai-shutting-down-sora-video-disney-1236698277/",
+        "publisher": "Variety",
+        "published": "2026-03",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Announced Dec 2025; withdrawn Mar 24, 2026; $0 delivered."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "9-month to 2026-06-27 (Q3 FY2026, 10-Q)",
+      "value": 76.4,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001744489/us-gaap/Revenues.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-08-05",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "Revenues; 9-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "capex",
+      "period": "9-month to 2026-06-27 (Q3 FY2026, 10-Q)",
+      "value": 6.78,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001744489/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-08-05",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 9-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "rpo",
+      "period": "point-in-time to 2026-06-27 (Q3 FY2026, 10-Q)",
+      "value": 16,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001744489/us-gaap/RevenueRemainingPerformanceObligation.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-08-05",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-Q."
     }
   ],
   "sources": [
-    { "url": "https://variety.com/2026/digital/news/openai-shutting-down-sora-video-disney-1236698277/", "publisher": "Variety", "published": "2026-03", "kind": "press" },
-    { "url": "https://deadline.com/2026/03/sora-shut-down-disney-investment-1236764689/", "publisher": "Deadline", "published": "2026-03", "kind": "press" }
+    {
+      "url": "https://variety.com/2026/digital/news/openai-shutting-down-sora-video-disney-1236698277/",
+      "publisher": "Variety",
+      "published": "2026-03",
+      "kind": "press"
+    },
+    {
+      "url": "https://deadline.com/2026/03/sora-shut-down-disney-investment-1236764689/",
+      "publisher": "Deadline",
+      "published": "2026-03",
+      "kind": "press"
+    }
   ],
   "updated": "2026-08-13"
 }

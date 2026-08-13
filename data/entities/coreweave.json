@@ -6,7 +6,12 @@
   "group": "hyperscalers_clouds",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NASDAQ", "symbol": "CRWV" }],
+  "tickers": [
+    {
+      "exchange": "NASDAQ",
+      "symbol": "CRWV"
+    }
+  ],
   "cik": "1769628",
   "website": "https://www.coreweave.com",
   "fiscal_year_end": "12-31",
@@ -23,7 +28,13 @@
       "unit": "USD_B",
       "basis": "company_claimed",
       "confidence": "medium",
-      "source": { "url": "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html", "publisher": "CNBC", "title": "CoreWeave (CRWV) Q2 earnings report 2026", "published": "2026-08-11", "kind": "press" },
+      "source": {
+        "url": "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html",
+        "publisher": "CNBC",
+        "title": "CoreWeave (CRWV) Q2 earnings report 2026",
+        "published": "2026-08-11",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Total contracted backlog incl. ~$29.6B signed in the ~6 weeks around quarter-end; formal revenue backlog $104.2B as of Jun 30, 2026 (+246% y/y, vs $30.1B a year earlier). Committed value, not revenue."
     },
@@ -34,7 +45,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.investing.com/news/company-news/coreweave-q2-2026-slides-revenue-doubles-backlog-surges-246-93CH-4852949", "publisher": "Investing.com (from CRWV Q2-26 release)", "published": "2026-08-11", "kind": "press" },
+      "source": {
+        "url": "https://www.investing.com/news/company-news/coreweave-q2-2026-slides-revenue-doubles-backlog-surges-246-93CH-4852949",
+        "publisher": "Investing.com (from CRWV Q2-26 release)",
+        "published": "2026-08-11",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "+112% y/y; losses widened, net interest expense $640M (vs $267M in Q2-25)."
     },
@@ -45,7 +61,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "medium",
-      "source": { "url": "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html", "publisher": "CNBC", "published": "2026-08-11", "kind": "press" },
+      "source": {
+        "url": "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html",
+        "publisher": "CNBC",
+        "published": "2026-08-11",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Includes GPU-backed facilities (e.g. $7.6B DDTL 2.0), >$10B of unsecured/convertible debt raised in Q2-26, and a $3.1B term loan. Earlier 2026 tallies were ~$30B — the stack grows quarterly."
     },
@@ -57,7 +78,13 @@
       "unit": "pct",
       "basis": "press_reported",
       "confidence": "low",
-      "source": { "url": "https://www.techtimes.com/articles/324054/20260812/coreweave-q2-2026-129b-backlog-grew-296b-six-weeks-despite-50-default-odds.htm", "publisher": "Tech Times", "title": "CoreWeave Q2 2026: $129B Backlog Grew $29.6B in Six Weeks Despite 50% Default Odds", "published": "2026-08-12", "kind": "press" },
+      "source": {
+        "url": "https://www.techtimes.com/articles/324054/20260812/coreweave-q2-2026-129b-backlog-grew-296b-six-weeks-despite-50-default-odds.htm",
+        "publisher": "Tech Times",
+        "title": "CoreWeave Q2 2026: $129B Backlog Grew $29.6B in Six Weeks Despite 50% Default Odds",
+        "published": "2026-08-12",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "ANALYST-DERIVED from CDS/bond pricing in thin markets, not a disclosure — treat as indicative only (SPEC §10.4). Cited in official-sector stability commentary (Jul 2026)."
     },
@@ -69,9 +96,63 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "high",
-      "source": { "url": "https://www.cnbc.com/2025/09/25/coreweave-openai-6point5-billion-deal.html", "publisher": "CNBC", "title": "CoreWeave inks $6.5 billion deal with OpenAI", "published": "2025-09-25", "kind": "press" },
+      "source": {
+        "url": "https://www.cnbc.com/2025/09/25/coreweave-openai-6point5-billion-deal.html",
+        "publisher": "CNBC",
+        "title": "CoreWeave inks $6.5 billion deal with OpenAI",
+        "published": "2025-09-25",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "$11.9B (Mar 2025) + $4B (May 2025) + $6.5B (Sep 2025); ≈1/3 of contracted revenue at the time. Meta contracts total ~$35.2B separately (see edge)."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "6-month to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 4.65,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001769628/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-08-12",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "capex",
+      "period": "6-month to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 14.12,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001769628/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-08-12",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "rpo",
+      "period": "point-in-time to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 103.7,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001769628/us-gaap/RevenueRemainingPerformanceObligation.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-08-12",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-Q."
     }
   ],
   "events": [
@@ -80,33 +161,80 @@
       "title": "Core Scientific shareholders reject CoreWeave's $9B all-stock merger",
       "why_it_matters": "Leaves CoreWeave a tenant (~$10B+ of HPC contracts) rather than owner of critical capacity — a rent-vs-own structural weakness the credit market prices.",
       "impact": "medium",
-      "entities": ["coreweave"],
-      "sources": [{ "url": "https://www.datacenterdynamics.com/en/news/coreweave-leases-another-260mw-capacity-from-galaxy-in-texas/", "publisher": "Data Center Dynamics", "published": "2025", "kind": "press", "notes": "Context on CoreWeave's leased-capacity strategy incl. Galaxy Helios." }]
+      "entities": [
+        "coreweave"
+      ],
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/coreweave-leases-another-260mw-capacity-from-galaxy-in-texas/",
+          "publisher": "Data Center Dynamics",
+          "published": "2025",
+          "kind": "press",
+          "notes": "Context on CoreWeave's leased-capacity strategy incl. Galaxy Helios."
+        }
+      ]
     },
     {
       "date": "2026-04",
       "title": "Meta expands contracts by ~$21B to ~$35.2B total through 2032",
       "why_it_matters": "Second-largest customer relationship after the Microsoft/OpenAI complex; diversifies the tenant base but deepens dependence on three counterparties.",
       "impact": "high",
-      "entities": ["coreweave", "meta"],
-      "sources": [{ "url": "https://www.fool.com/investing/2026/04/21/meta-is-spending-48-billion-with-coreweave-nebius/", "publisher": "The Motley Fool", "published": "2026-04-21", "kind": "press" }]
+      "entities": [
+        "coreweave",
+        "meta"
+      ],
+      "sources": [
+        {
+          "url": "https://www.fool.com/investing/2026/04/21/meta-is-spending-48-billion-with-coreweave-nebius/",
+          "publisher": "The Motley Fool",
+          "published": "2026-04-21",
+          "kind": "press"
+        }
+      ]
     },
     {
       "date": "2026-08-11",
       "title": "Q2-26: revenue $2.6B (+112%), backlog ~$129B, debt ~$35B, losses widen; spreads widen ~125bp",
       "why_it_matters": "The bull case (backlog) and bear case (leverage, interest burden, implied default risk) both strengthened in the same print — the defining credit-vs-equity divergence of the AI trade.",
       "impact": "high",
-      "entities": ["coreweave"],
+      "entities": [
+        "coreweave"
+      ],
       "sources": [
-        { "url": "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html", "publisher": "CNBC", "published": "2026-08-11", "kind": "press" },
-        { "url": "https://www.techtimes.com/articles/324054/20260812/coreweave-q2-2026-129b-backlog-grew-296b-six-weeks-despite-50-default-odds.htm", "publisher": "Tech Times", "published": "2026-08-12", "kind": "press" }
+        {
+          "url": "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html",
+          "publisher": "CNBC",
+          "published": "2026-08-11",
+          "kind": "press"
+        },
+        {
+          "url": "https://www.techtimes.com/articles/324054/20260812/coreweave-q2-2026-129b-backlog-grew-296b-six-weeks-despite-50-default-odds.htm",
+          "publisher": "Tech Times",
+          "published": "2026-08-12",
+          "kind": "press"
+        }
       ]
     }
   ],
   "sources": [
-    { "url": "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html", "publisher": "CNBC", "published": "2026-08-11", "kind": "press" },
-    { "url": "https://www.cnbc.com/2025/09/25/coreweave-openai-6point5-billion-deal.html", "publisher": "CNBC", "published": "2025-09-25", "kind": "press" },
-    { "url": "https://seekingalpha.com/news/4629968-coreweave-q2-2026-earnings-preview", "publisher": "Seeking Alpha", "published": "2026-08", "kind": "analyst" }
+    {
+      "url": "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html",
+      "publisher": "CNBC",
+      "published": "2026-08-11",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.cnbc.com/2025/09/25/coreweave-openai-6point5-billion-deal.html",
+      "publisher": "CNBC",
+      "published": "2025-09-25",
+      "kind": "press"
+    },
+    {
+      "url": "https://seekingalpha.com/news/4629968-coreweave-q2-2026-earnings-preview",
+      "publisher": "Seeking Alpha",
+      "published": "2026-08",
+      "kind": "analyst"
+    }
   ],
   "updated": "2026-08-13"
 }

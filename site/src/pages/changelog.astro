@@ -1,18 +1,19 @@
 ---
 import Base from "../layouts/Base.astro";
-import { summary } from "../lib/data.js";
+import { readFileSync } from "node:fs";
+const log = JSON.parse(readFileSync(new URL("../../../data/changelog.json", import.meta.url), "utf8"));
 ---
 <Base title="Changelog — AI Money Tracker">
   <div class="narrow">
     <h1>Changelog</h1>
-    <p class="lede">One entry per weekly update run (Saturdays 8pm ET), plus out-of-band corrections. Full detail lives in the
+    <p class="lede">One entry per update run (weekly, Saturdays 8pm ET), plus out-of-band corrections. "No material changes"
+      weeks are recorded too — silence should be distinguishable from staleness. Full detail lives in the
       <a href="https://github.com/aaronzh91/aitracker/commits/main">git history</a>.</p>
-
-    <div class="panel">
-      <h3>2026-08-13 — Initial dataset</h3>
-      <p>Phase 1 launch: {summary.entities} entities, {summary.relationships} money flows, {summary.bottlenecks} bottleneck
-        records — hand-compiled and sourced from filings, company disclosures, and tier-1 press as of Aug 13, 2026.
-        Automated weekly updates (SEC EDGAR + market data + impact-filtered news) arrive with Phase 2.</p>
-    </div>
+    {log.map((entry) => (
+      <div class="panel" style="margin-bottom:12px">
+        <h3 style="margin-bottom:4px">{entry.date} — {entry.title} {entry.kind === "mechanical" && <span class="chip dim">Automated</span>}</h3>
+        <p style="margin:0">{entry.body}</p>
+      </div>
+    ))}
   </div>
 </Base>

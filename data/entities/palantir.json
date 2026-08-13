@@ -6,7 +6,12 @@
   "group": "software_applications",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NASDAQ", "symbol": "PLTR" }],
+  "tickers": [
+    {
+      "exchange": "NASDAQ",
+      "symbol": "PLTR"
+    }
+  ],
   "cik": "1321655",
   "website": "https://www.palantir.com",
   "fiscal_year_end": "12-31",
@@ -23,7 +28,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html", "publisher": "CNBC", "published": "2026-08-03", "kind": "press" },
+      "source": {
+        "url": "https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html",
+        "publisher": "CNBC",
+        "published": "2026-08-03",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "+93% y/y vs consensus ~$1.81B; GAAP net income $1.062B (55% margin)."
     },
@@ -35,7 +45,12 @@
       "unit": "USD_M",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html", "publisher": "CNBC", "published": "2026-08-03", "kind": "press" },
+      "source": {
+        "url": "https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html",
+        "publisher": "CNBC",
+        "published": "2026-08-03",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "+149% y/y — the AIP-driven line; US government revenue $809M (+90%)."
     },
@@ -47,7 +62,12 @@
       "unit": "USD_B",
       "basis": "company_claimed",
       "confidence": "high",
-      "source": { "url": "https://finance.yahoo.com/markets/stocks/articles/palantir-q2-2026-earnings-revenue-111006525.html", "publisher": "Yahoo Finance", "published": "2026-08", "kind": "press" },
+      "source": {
+        "url": "https://finance.yahoo.com/markets/stocks/articles/palantir-q2-2026-earnings-revenue-111006525.html",
+        "publisher": "Yahoo Finance",
+        "published": "2026-08",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Raised to $8.150–8.158B, ~+82% y/y."
     },
@@ -58,9 +78,62 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.thestreet.com/investing/stocks/pltr-palantir-stock-michael-burry-says-surging-ai-giant-is-worth-under-1-long-term-despite-strong-q2-2026-earnings", "publisher": "TheStreet", "published": "2026-08", "kind": "press" },
+      "source": {
+        "url": "https://www.thestreet.com/investing/stocks/pltr-palantir-stock-michael-burry-says-surging-ai-giant-is-worth-under-1-long-term-despite-strong-q2-2026-earnings",
+        "publisher": "TheStreet",
+        "published": "2026-08",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "~40x forward revenue per bear commentary; the reference number in the Burry-vs-bulls valuation fight."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "6-month to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 3.57,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001321655/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-08-04",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "capex",
+      "period": "6-month to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 0.02,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001321655/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-08-04",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "rpo",
+      "period": "point-in-time to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 4.9,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001321655/us-gaap/RevenueRemainingPerformanceObligation.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-08-04",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-Q."
     }
   ],
   "events": [
@@ -69,10 +142,22 @@
       "title": "Q2 2026: revenue +93% y/y, guidance raised to ~$8.15B; stock surges 29%",
       "why_it_matters": "The strongest revenue print of any large software company in the AI cycle; the one-day move erased roughly $3B of short-seller gains and reframed the AI-monetization debate around software, not just infrastructure.",
       "impact": "high",
-      "entities": ["palantir"],
+      "entities": [
+        "palantir"
+      ],
       "sources": [
-        { "url": "https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html", "publisher": "CNBC", "published": "2026-08-03", "kind": "press" },
-        { "url": "https://www.techtimes.com/articles/323175/20260805/palantir-q2-2026-earnings-prove-premise-ai-thesis-3b-short-squeeze.htm", "publisher": "Tech Times", "published": "2026-08-05", "kind": "press" }
+        {
+          "url": "https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html",
+          "publisher": "CNBC",
+          "published": "2026-08-03",
+          "kind": "press"
+        },
+        {
+          "url": "https://www.techtimes.com/articles/323175/20260805/palantir-q2-2026-earnings-prove-premise-ai-thesis-3b-short-squeeze.htm",
+          "publisher": "Tech Times",
+          "published": "2026-08-05",
+          "kind": "press"
+        }
       ]
     },
     {
@@ -80,17 +165,41 @@
       "title": "Michael Burry discloses rebuilt bearish position via March 2027 puts",
       "why_it_matters": "Keeps Palantir at the center of the AI-valuation short debate: the most-followed AI bear re-entered days after the Q2 beat, buying puts struck in the low-to-mid $100s while implied volatility sat at multi-month lows.",
       "impact": "medium",
-      "entities": ["palantir"],
+      "entities": [
+        "palantir"
+      ],
       "sources": [
-        { "url": "https://intellectia.ai/news/stock/michael-burry-reenters-bearish-trades-on-palantir-technologies", "publisher": "Intellectia", "published": "2026-08", "kind": "press" },
-        { "url": "https://www.thestreet.com/investing/stocks/pltr-palantir-stock-michael-burry-says-surging-ai-giant-is-worth-under-1-long-term-despite-strong-q2-2026-earnings", "publisher": "TheStreet", "published": "2026-08", "kind": "press" }
+        {
+          "url": "https://intellectia.ai/news/stock/michael-burry-reenters-bearish-trades-on-palantir-technologies",
+          "publisher": "Intellectia",
+          "published": "2026-08",
+          "kind": "press"
+        },
+        {
+          "url": "https://www.thestreet.com/investing/stocks/pltr-palantir-stock-michael-burry-says-surging-ai-giant-is-worth-under-1-long-term-despite-strong-q2-2026-earnings",
+          "publisher": "TheStreet",
+          "published": "2026-08",
+          "kind": "press"
+        }
       ]
     }
   ],
   "sources": [
-    { "url": "https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html", "publisher": "CNBC", "kind": "press" },
-    { "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262076608-palantir-q2-2026-earnings-commercial-149-stock-surge-tradingkey", "publisher": "TradingKey", "kind": "analyst" },
-    { "url": "https://www.thestreet.com/investing/stocks/pltr-palantir-stock-michael-burry-says-surging-ai-giant-is-worth-under-1-long-term-despite-strong-q2-2026-earnings", "publisher": "TheStreet", "kind": "press" }
+    {
+      "url": "https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html",
+      "publisher": "CNBC",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262076608-palantir-q2-2026-earnings-commercial-149-stock-surge-tradingkey",
+      "publisher": "TradingKey",
+      "kind": "analyst"
+    },
+    {
+      "url": "https://www.thestreet.com/investing/stocks/pltr-palantir-stock-michael-burry-says-surging-ai-giant-is-worth-under-1-long-term-despite-strong-q2-2026-earnings",
+      "publisher": "TheStreet",
+      "kind": "press"
+    }
   ],
   "updated": "2026-08-13"
 }

@@ -6,7 +6,12 @@
   "group": "capital",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NYSE", "symbol": "JPM" }],
+  "tickers": [
+    {
+      "exchange": "NYSE",
+      "symbol": "JPM"
+    }
+  ],
   "cik": "19617",
   "website": "https://www.jpmorganchase.com",
   "fiscal_year_end": "12-31",
@@ -23,7 +28,12 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.bloomberg.com/news/articles/2025-10-23/record-38-billion-debt-sale-nears-for-oracle-tied-data-centers", "publisher": "Bloomberg", "published": "2025-10-23", "kind": "press" },
+      "source": {
+        "url": "https://www.bloomberg.com/news/articles/2025-10-23/record-38-billion-debt-sale-nears-for-oracle-tied-data-centers",
+        "publisher": "Bloomberg",
+        "published": "2025-10-23",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "$23.25B (Texas) + $14.75B (Wisconsin) senior secured facilities for Vantage campuses leased to Oracle for OpenAI; syndicate includes Goldman, BNP, SocGen, SMBC, Wells Fargo."
     },
@@ -35,7 +45,11 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.commercialsearch.com/news/blue-owl-jv-lands-7-1b-for-data-center-project/", "publisher": "Commercial Property Executive", "kind": "press" },
+      "source": {
+        "url": "https://www.commercialsearch.com/news/blue-owl-jv-lands-7-1b-for-data-center-project/",
+        "publisher": "Commercial Property Executive",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "JPMorgan-led; follows the initial $2.3B construction loan for the Crusoe/Blue Owl/Primary Digital JV at Abilene, TX (Lancium Clean Campus)."
     },
@@ -47,9 +61,29 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "low",
-      "source": { "url": "https://www.studioglobal.ai/discover/answers/what-is-jpmorgan-s-updated-forecast-for-total-6a31b5a76ea4126128ebeee3", "publisher": "Studio Global (citing JPMorgan research)", "kind": "analyst" },
+      "source": {
+        "url": "https://www.studioglobal.ai/discover/answers/what-is-jpmorgan-s-updated-forecast-for-total-6a31b5a76ea4126128ebeee3",
+        "publisher": "Studio Global (citing JPMorgan research)",
+        "kind": "analyst"
+      },
       "as_of": "2026-08-13",
       "notes": "JPMorgan research estimate (~$1.2T by Oct 2025), making AI the largest sector in its US IG index — an analyst estimate widely cited in the systemic-risk debate, not a disclosure. Secondary-source URL; primary note is paywalled."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "12-month to 2025-12-31 (FY FY2025, 10-K)",
+      "value": 182.45,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000019617/us-gaap/Revenues.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-02-13",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "Revenues; 12-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-K."
     }
   ],
   "events": [
@@ -58,22 +92,61 @@
       "title": "Co-leads record $38B debt package for Vantage's Oracle-tied campuses",
       "why_it_matters": "The largest AI project-financing to date; commercial-bank credit now directly underwrites the Oracle–OpenAI compute chain.",
       "impact": "high",
-      "entities": ["jpmorgan", "goldman-sachs", "vantage", "oracle", "openai"],
-      "sources": [{ "url": "https://www.bloomberg.com/news/articles/2025-10-23/record-38-billion-debt-sale-nears-for-oracle-tied-data-centers", "publisher": "Bloomberg", "published": "2025-10-23", "kind": "press" }]
+      "entities": [
+        "jpmorgan",
+        "goldman-sachs",
+        "vantage",
+        "oracle",
+        "openai"
+      ],
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2025-10-23/record-38-billion-debt-sale-nears-for-oracle-tied-data-centers",
+          "publisher": "Bloomberg",
+          "published": "2025-10-23",
+          "kind": "press"
+        }
+      ]
     },
     {
       "date": "2026-08-06",
       "title": "Lends in SoftBank's $10B OpenAI-collateralized margin loan",
       "why_it_matters": "Bank credit is now secured directly by unlisted frontier-lab equity — a first-of-kind collateral chain at this scale.",
       "impact": "medium",
-      "entities": ["jpmorgan", "softbank", "openai"],
-      "sources": [{ "url": "https://www.bloomberg.com/news/articles/2026-08-06/softbank-secures-10-billion-margin-loan-backed-by-openai-stake", "publisher": "Bloomberg", "published": "2026-08-06", "kind": "press" }]
+      "entities": [
+        "jpmorgan",
+        "softbank",
+        "openai"
+      ],
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-08-06/softbank-secures-10-billion-margin-loan-backed-by-openai-stake",
+          "publisher": "Bloomberg",
+          "published": "2026-08-06",
+          "kind": "press"
+        }
+      ]
     }
   ],
   "sources": [
-    { "url": "https://www.bloomberg.com/news/articles/2025-08-20/jpmorgan-mufg-to-lead-22-billion-loan-for-vantage-data-centers", "publisher": "Bloomberg", "published": "2025-08-20", "kind": "press", "notes": "Earlier tranche of the Vantage relationship before the $38B package." },
-    { "url": "https://www.bloomberg.com/news/articles/2025-10-23/record-38-billion-debt-sale-nears-for-oracle-tied-data-centers", "publisher": "Bloomberg", "published": "2025-10-23", "kind": "press" },
-    { "url": "https://www.commercialsearch.com/news/blue-owl-jv-lands-7-1b-for-data-center-project/", "publisher": "Commercial Property Executive", "kind": "press" }
+    {
+      "url": "https://www.bloomberg.com/news/articles/2025-08-20/jpmorgan-mufg-to-lead-22-billion-loan-for-vantage-data-centers",
+      "publisher": "Bloomberg",
+      "published": "2025-08-20",
+      "kind": "press",
+      "notes": "Earlier tranche of the Vantage relationship before the $38B package."
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2025-10-23/record-38-billion-debt-sale-nears-for-oracle-tied-data-centers",
+      "publisher": "Bloomberg",
+      "published": "2025-10-23",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.commercialsearch.com/news/blue-owl-jv-lands-7-1b-for-data-center-project/",
+      "publisher": "Commercial Property Executive",
+      "kind": "press"
+    }
   ],
   "updated": "2026-08-13"
 }

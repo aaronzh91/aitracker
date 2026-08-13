@@ -6,7 +6,12 @@
   "group": "software_applications",
   "region": "us",
   "tier": 2,
-  "tickers": [{ "exchange": "NASDAQ", "symbol": "INTU" }],
+  "tickers": [
+    {
+      "exchange": "NASDAQ",
+      "symbol": "INTU"
+    }
+  ],
   "cik": "896878",
   "website": "https://www.intuit.com",
   "fiscal_year_end": "07-31",
@@ -21,14 +26,61 @@
       "unit": "USD_M",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.cnbc.com/2025/11/18/intuit-pays-openai-100-million-turbotax-integrates-chatgpt.html", "publisher": "CNBC", "published": "2025-11-18", "kind": "press" },
+      "source": {
+        "url": "https://www.cnbc.com/2025/11/18/intuit-pays-openai-100-million-turbotax-integrates-chatgpt.html",
+        "publisher": "CNBC",
+        "published": "2025-11-18",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Reported as 'more than $100 million' multi-year; some coverage characterizes it as an annual figure. Exact structure undisclosed."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "9-month to 2026-04-30 (Q3 FY2026, 10-Q)",
+      "value": 17.09,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000896878/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-05-20",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 9-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "capex",
+      "period": "9-month to 2026-04-30 (Q3 FY2026, 10-Q)",
+      "value": 0.15,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000896878/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-05-20",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 9-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
     }
   ],
   "sources": [
-    { "url": "https://investors.intuit.com/news-events/press-releases/detail/1284/intuit-and-openai-join-forces-to-revolutionize-financial-intelligence-powering-every-person-business-and-dream-with-personalized-experiences", "publisher": "Intuit IR", "published": "2025-11-18", "kind": "company_pr" },
-    { "url": "https://www.axios.com/2025/11/18/openai-intuit-turbotax-quickbooks-chatgpt", "publisher": "Axios", "published": "2025-11-18", "kind": "press" }
+    {
+      "url": "https://investors.intuit.com/news-events/press-releases/detail/1284/intuit-and-openai-join-forces-to-revolutionize-financial-intelligence-powering-every-person-business-and-dream-with-personalized-experiences",
+      "publisher": "Intuit IR",
+      "published": "2025-11-18",
+      "kind": "company_pr"
+    },
+    {
+      "url": "https://www.axios.com/2025/11/18/openai-intuit-turbotax-quickbooks-chatgpt",
+      "publisher": "Axios",
+      "published": "2025-11-18",
+      "kind": "press"
+    }
   ],
   "updated": "2026-08-13"
 }

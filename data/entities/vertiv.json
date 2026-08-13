@@ -6,7 +6,12 @@
   "group": "physical_infrastructure",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NYSE", "symbol": "VRT" }],
+  "tickers": [
+    {
+      "exchange": "NYSE",
+      "symbol": "VRT"
+    }
+  ],
   "cik": "1674101",
   "website": "https://www.vertiv.com",
   "fiscal_year_end": "12-31",
@@ -20,11 +25,16 @@
       "metric": "other",
       "metric_label": "Total backlog",
       "period": "FY2025-Q4",
-      "value": 15.0,
+      "value": 15,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Fourth-Quarter-with-Organic-Orders-Growth-of-252-and-Diluted-EPS-Growth-of-200-Adjusted-Diluted-EPS-37/default.aspx", "publisher": "Vertiv IR", "published": "2026-02", "kind": "company_ir" },
+      "source": {
+        "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Fourth-Quarter-with-Organic-Orders-Growth-of-252-and-Diluted-EPS-Growth-of-200-Adjusted-Diluted-EPS-37/default.aspx",
+        "publisher": "Vertiv IR",
+        "published": "2026-02",
+        "kind": "company_ir"
+      },
       "as_of": "2026-08-13",
       "notes": "Up 109% y/y; Q4 book-to-bill ~2.9x. Not AI-labeled, but demand is overwhelmingly hyperscale/colo AI data centers."
     },
@@ -36,7 +46,12 @@
       "unit": "pct",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.prnewswire.com/news-releases/vertiv-reports-strong-fourth-quarter-with-organic-orders-growth-of-252-and-diluted-eps-growth-of-200-adjusted-diluted-eps-37-302684536.html", "publisher": "PR Newswire (Vertiv)", "published": "2026-02", "kind": "company_pr" },
+      "source": {
+        "url": "https://www.prnewswire.com/news-releases/vertiv-reports-strong-fourth-quarter-with-organic-orders-growth-of-252-and-diluted-eps-growth-of-200-adjusted-diluted-eps-37-302684536.html",
+        "publisher": "PR Newswire (Vertiv)",
+        "published": "2026-02",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "+117% sequentially; trailing-twelve-month organic orders +81% y/y."
     },
@@ -47,7 +62,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.prnewswire.com/news-releases/vertiv-reports-strong-second-quarter-2026-with-diluted-eps-growth-of-53-adjusted-diluted-eps-growth-of-60-raises-full-year-2026-guidance-across-all-key-metrics-302837598.html", "publisher": "PR Newswire (Vertiv)", "published": "2026-07", "kind": "company_pr" },
+      "source": {
+        "url": "https://www.prnewswire.com/news-releases/vertiv-reports-strong-second-quarter-2026-with-diluted-eps-growth-of-53-adjusted-diluted-eps-growth-of-60-raises-full-year-2026-guidance-across-all-key-metrics-302837598.html",
+        "publisher": "PR Newswire (Vertiv)",
+        "published": "2026-07",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "+24% y/y (18% organic, 5% acquisitions); adjusted operating margin 22.6% (+410bp); adjusted FCF $925M (+234%); net cash position at quarter end."
     },
@@ -55,13 +75,50 @@
       "metric": "other",
       "metric_label": "FY2026 net sales guidance (midpoint)",
       "period": "FY2026E",
-      "value": 14.0,
+      "value": 14,
       "unit": "USD_B",
       "basis": "company_claimed",
       "confidence": "high",
-      "source": { "url": "https://www.prnewswire.com/news-releases/vertiv-reports-strong-second-quarter-2026-with-diluted-eps-growth-of-53-adjusted-diluted-eps-growth-of-60-raises-full-year-2026-guidance-across-all-key-metrics-302837598.html", "publisher": "PR Newswire (Vertiv)", "published": "2026-07", "kind": "company_pr" },
+      "source": {
+        "url": "https://www.prnewswire.com/news-releases/vertiv-reports-strong-second-quarter-2026-with-diluted-eps-growth-of-53-adjusted-diluted-eps-growth-of-60-raises-full-year-2026-guidance-across-all-key-metrics-302837598.html",
+        "publisher": "PR Newswire (Vertiv)",
+        "published": "2026-07",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "~+31% organic vs 2025; guide raised $250M at Q2 2026 along with adjusted diluted EPS to $6.70 (+60%) and adjusted operating profit to $3,325M at midpoint."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "6-month to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 5.92,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001674101/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-29",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "capex",
+      "period": "6-month to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 0.29,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001674101/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-29",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
     }
   ],
   "events": [
@@ -70,22 +127,54 @@
       "title": "Q4 2025: organic orders +252% y/y, backlog more than doubles to $15.0B",
       "why_it_matters": "One of the cleanest demand signals in the AI physical-infrastructure chain — order growth of this magnitude implies multi-year visibility but also high sensitivity to any capex pause.",
       "impact": "high",
-      "entities": ["vertiv", "nvidia"],
-      "sources": [{ "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Fourth-Quarter-with-Organic-Orders-Growth-of-252-and-Diluted-EPS-Growth-of-200-Adjusted-Diluted-EPS-37/default.aspx", "publisher": "Vertiv IR", "published": "2026-02", "kind": "company_ir" }]
+      "entities": [
+        "vertiv",
+        "nvidia"
+      ],
+      "sources": [
+        {
+          "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Fourth-Quarter-with-Organic-Orders-Growth-of-252-and-Diluted-EPS-Growth-of-200-Adjusted-Diluted-EPS-37/default.aspx",
+          "publisher": "Vertiv IR",
+          "published": "2026-02",
+          "kind": "company_ir"
+        }
+      ]
     },
     {
       "date": "2026-07-29",
       "title": "Q2 2026: raises full-year 2026 guidance across all key metrics",
       "why_it_matters": "FY26 revenue guide moved to ~$14B (+31% organic); confirms the 2025 order surge is converting to revenue, though a small revenue miss still knocked the stock — a read on how much is priced in.",
       "impact": "medium",
-      "entities": ["vertiv"],
-      "sources": [{ "url": "https://www.prnewswire.com/news-releases/vertiv-reports-strong-second-quarter-2026-with-diluted-eps-growth-of-53-adjusted-diluted-eps-growth-of-60-raises-full-year-2026-guidance-across-all-key-metrics-302837598.html", "publisher": "PR Newswire (Vertiv)", "published": "2026-07-29", "kind": "company_pr" }]
+      "entities": [
+        "vertiv"
+      ],
+      "sources": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/vertiv-reports-strong-second-quarter-2026-with-diluted-eps-growth-of-53-adjusted-diluted-eps-growth-of-60-raises-full-year-2026-guidance-across-all-key-metrics-302837598.html",
+          "publisher": "PR Newswire (Vertiv)",
+          "published": "2026-07-29",
+          "kind": "company_pr"
+        }
+      ]
     }
   ],
   "sources": [
-    { "url": "https://www.prnewswire.com/news-releases/vertiv-reports-strong-second-quarter-2026-with-diluted-eps-growth-of-53-adjusted-diluted-eps-growth-of-60-raises-full-year-2026-guidance-across-all-key-metrics-302837598.html", "publisher": "PR Newswire (Vertiv)", "kind": "company_pr" },
-    { "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Fourth-Quarter-with-Organic-Orders-Growth-of-252-and-Diluted-EPS-Growth-of-200-Adjusted-Diluted-EPS-37/default.aspx", "publisher": "Vertiv IR", "kind": "company_ir" },
-    { "url": "https://www.investing.com/news/company-news/vertiv-q4-2025-slides-orders-surge-252-backlog-doubles-as-ai-demand-accelerates-93CH-4500925", "publisher": "Investing.com", "kind": "press", "notes": "Q4 2025 slides recap; NVIDIA 800VDC collaboration timed to Rubin platform, 2H 2026." }
+    {
+      "url": "https://www.prnewswire.com/news-releases/vertiv-reports-strong-second-quarter-2026-with-diluted-eps-growth-of-53-adjusted-diluted-eps-growth-of-60-raises-full-year-2026-guidance-across-all-key-metrics-302837598.html",
+      "publisher": "PR Newswire (Vertiv)",
+      "kind": "company_pr"
+    },
+    {
+      "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Fourth-Quarter-with-Organic-Orders-Growth-of-252-and-Diluted-EPS-Growth-of-200-Adjusted-Diluted-EPS-37/default.aspx",
+      "publisher": "Vertiv IR",
+      "kind": "company_ir"
+    },
+    {
+      "url": "https://www.investing.com/news/company-news/vertiv-q4-2025-slides-orders-surge-252-backlog-doubles-as-ai-demand-accelerates-93CH-4500925",
+      "publisher": "Investing.com",
+      "kind": "press",
+      "notes": "Q4 2025 slides recap; NVIDIA 800VDC collaboration timed to Rubin platform, 2H 2026."
+    }
   ],
   "updated": "2026-08-13"
 }

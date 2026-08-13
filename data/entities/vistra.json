@@ -6,7 +6,12 @@
   "group": "energy",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NYSE", "symbol": "VST" }],
+  "tickers": [
+    {
+      "exchange": "NYSE",
+      "symbol": "VST"
+    }
+  ],
   "cik": "1692819",
   "website": "https://www.vistracorp.com",
   "fiscal_year_end": "12-31",
@@ -24,7 +29,12 @@
       "unit": "MW",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://investor.vistracorp.com/2026-01-09-Vistra-and-Meta-Announce-Agreements-to-Support-Nuclear-Plants-in-PJM-and-Add-New-Nuclear-Generation-to-the-Grid", "publisher": "Vistra IR", "published": "2026-01-09", "kind": "company_pr" },
+      "source": {
+        "url": "https://investor.vistracorp.com/2026-01-09-Vistra-and-Meta-Announce-Agreements-to-Support-Nuclear-Plants-in-PJM-and-Add-New-Nuclear-Generation-to-the-Grid",
+        "publisher": "Vistra IR",
+        "published": "2026-01-09",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "Perry 1,268MW + Davis-Besse 908MW operating capacity, plus 433MW of uprates (Perry 213, Davis-Besse 80, Beaver Valley 140). Full operating delivery by end-2027; uprates 2031–2034. Price undisclosed."
     },
@@ -36,7 +46,12 @@
       "unit": "MW",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://world-nuclear-news.org/articles/ppas-support-extended-operations-at-vistra-plants", "publisher": "World Nuclear News", "published": "2026-03", "kind": "press" },
+      "source": {
+        "url": "https://world-nuclear-news.org/articles/ppas-support-extended-operations-at-vistra-plants",
+        "publisher": "World Nuclear News",
+        "published": "2026-03",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Up to 1,200MW; delivery begins Q4 2027, ramping to full capacity by 2032. Price undisclosed."
     },
@@ -48,9 +63,62 @@
       "unit": "GW",
       "basis": "disclosed",
       "confidence": "medium",
-      "source": { "url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000006/vistra-20251231.htm", "publisher": "SEC (Vistra 10-K)", "published": "2026-02", "kind": "sec_filing" },
+      "source": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000006/vistra-20251231.htm",
+        "publisher": "SEC (Vistra 10-K)",
+        "published": "2026-02",
+        "kind": "sec_filing"
+      },
       "as_of": "2026-08-13",
       "notes": "~41GW pre-Cogentrix; pending Cogentrix (5.5GW, $4.7B) and completed Lotus (2.6GW, $1.9B, Oct 2025) additions would take the fleet toward ~49GW."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "6-month to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 9.4,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001692819/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-08-10",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "capex",
+      "period": "6-month to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 1.57,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001692819/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-08-10",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "rpo",
+      "period": "point-in-time to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 7.13,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001692819/us-gaap/RevenueRemainingPerformanceObligation.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-08-10",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-Q."
     }
   ],
   "events": [
@@ -59,33 +127,77 @@
       "title": "Agrees to acquire Cogentrix Energy's 5.5GW gas fleet for $4.7B",
       "why_it_matters": "One of the first large AI-rationale power M&A deals: 10 modern gas plants across PJM, ISO-NE, and ERCOT bought explicitly to serve data-center-driven load growth; close expected H2 2026.",
       "impact": "high",
-      "entities": ["vistra"],
-      "sources": [{ "url": "https://www.powermag.com/vistra-to-bolster-gas-fired-fleet-by-5-5-gw-with-4b-cogentrix-acquisition/", "publisher": "POWER Magazine", "published": "2026-01", "kind": "press" }]
+      "entities": [
+        "vistra"
+      ],
+      "sources": [
+        {
+          "url": "https://www.powermag.com/vistra-to-bolster-gas-fired-fleet-by-5-5-gw-with-4b-cogentrix-acquisition/",
+          "publisher": "POWER Magazine",
+          "published": "2026-01",
+          "kind": "press"
+        }
+      ]
     },
     {
       "date": "2026-01-09",
       "title": "Meta signs 20-year PPAs for 2,609MW across Vistra's PJM nuclear fleet",
       "why_it_matters": "The largest multi-plant hyperscaler nuclear package to date — supports continued operation of Perry and Davis-Besse and funds 433MW of new uprate capacity against committed demand.",
       "impact": "high",
-      "entities": ["vistra", "meta"],
-      "sources": [{ "url": "https://investor.vistracorp.com/2026-01-09-Vistra-and-Meta-Announce-Agreements-to-Support-Nuclear-Plants-in-PJM-and-Add-New-Nuclear-Generation-to-the-Grid", "publisher": "Vistra IR", "published": "2026-01-09", "kind": "company_pr" }]
+      "entities": [
+        "vistra",
+        "meta"
+      ],
+      "sources": [
+        {
+          "url": "https://investor.vistracorp.com/2026-01-09-Vistra-and-Meta-Announce-Agreements-to-Support-Nuclear-Plants-in-PJM-and-Add-New-Nuclear-Generation-to-the-Grid",
+          "publisher": "Vistra IR",
+          "published": "2026-01-09",
+          "kind": "company_pr"
+        }
+      ]
     },
     {
       "date": "2026-02",
       "title": "Amazon signs 20-year PPA for up to 1,200MW from Comanche Peak",
       "why_it_matters": "Extends hyperscaler nuclear contracting into ERCOT; disclosed alongside Q4/FY2025 results.",
       "impact": "high",
-      "entities": ["vistra", "amazon"],
+      "entities": [
+        "vistra",
+        "amazon"
+      ],
       "sources": [
-        { "url": "https://world-nuclear-news.org/articles/ppas-support-extended-operations-at-vistra-plants", "publisher": "World Nuclear News", "published": "2026-03", "kind": "press" },
-        { "url": "https://investor.vistracorp.com/2026-02-26-Vistra-Reports-Fourth-Quarter-and-Full-Year-2025-Results?asPDF=1", "publisher": "Vistra IR", "published": "2026-02-26", "kind": "company_ir" }
+        {
+          "url": "https://world-nuclear-news.org/articles/ppas-support-extended-operations-at-vistra-plants",
+          "publisher": "World Nuclear News",
+          "published": "2026-03",
+          "kind": "press"
+        },
+        {
+          "url": "https://investor.vistracorp.com/2026-02-26-Vistra-Reports-Fourth-Quarter-and-Full-Year-2025-Results?asPDF=1",
+          "publisher": "Vistra IR",
+          "published": "2026-02-26",
+          "kind": "company_ir"
+        }
       ]
     }
   ],
   "sources": [
-    { "url": "https://investor.vistracorp.com/2026-01-09-Vistra-and-Meta-Announce-Agreements-to-Support-Nuclear-Plants-in-PJM-and-Add-New-Nuclear-Generation-to-the-Grid", "publisher": "Vistra IR", "kind": "company_pr" },
-    { "url": "https://world-nuclear-news.org/articles/ppas-support-extended-operations-at-vistra-plants", "publisher": "World Nuclear News", "kind": "press" },
-    { "url": "https://www.powermag.com/vistra-to-bolster-gas-fired-fleet-by-5-5-gw-with-4b-cogentrix-acquisition/", "publisher": "POWER Magazine", "kind": "press" }
+    {
+      "url": "https://investor.vistracorp.com/2026-01-09-Vistra-and-Meta-Announce-Agreements-to-Support-Nuclear-Plants-in-PJM-and-Add-New-Nuclear-Generation-to-the-Grid",
+      "publisher": "Vistra IR",
+      "kind": "company_pr"
+    },
+    {
+      "url": "https://world-nuclear-news.org/articles/ppas-support-extended-operations-at-vistra-plants",
+      "publisher": "World Nuclear News",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.powermag.com/vistra-to-bolster-gas-fired-fleet-by-5-5-gw-with-4b-cogentrix-acquisition/",
+      "publisher": "POWER Magazine",
+      "kind": "press"
+    }
   ],
   "updated": "2026-08-13"
 }

@@ -6,7 +6,12 @@
   "group": "physical_infrastructure",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NYSE", "symbol": "FIX" }],
+  "tickers": [
+    {
+      "exchange": "NYSE",
+      "symbol": "FIX"
+    }
+  ],
   "cik": "1035983",
   "website": "https://www.comfortsystemsusa.com",
   "fiscal_year_end": "12-31",
@@ -24,7 +29,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.investing.com/news/company-news/comfort-systems-q2-2026-slides-revenue-tops-3b-backlog-hits-14b-93CH-4812234", "publisher": "Investing.com (Q2 2026 slides)", "published": "2026-07", "kind": "press" },
+      "source": {
+        "url": "https://www.investing.com/news/company-news/comfort-systems-q2-2026-slides-revenue-tops-3b-backlog-hits-14b-93CH-4812234",
+        "publisher": "Investing.com (Q2 2026 slides)",
+        "published": "2026-07",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "+73% y/y, primarily technology (data-center) sector."
     },
@@ -36,7 +46,12 @@
       "unit": "pct",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.investing.com/news/company-news/comfort-systems-q2-2026-slides-revenue-tops-3b-backlog-hits-14b-93CH-4812234", "publisher": "Investing.com (Q2 2026 slides)", "published": "2026-07", "kind": "press" },
+      "source": {
+        "url": "https://www.investing.com/news/company-news/comfort-systems-q2-2026-slides-revenue-tops-3b-backlog-hits-14b-93CH-4812234",
+        "publisher": "Investing.com (Q2 2026 slides)",
+        "published": "2026-07",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Next largest: manufacturing 16.4%, healthcare 7.1%. Technology is overwhelmingly data-center construction."
     },
@@ -47,7 +62,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.tradingview.com/news/zacks:9d3a1681e094b:0-comfort-systems-q2-earnings-revenues-beat-estimates-backlog-up-y-y/", "publisher": "Zacks via TradingView", "published": "2026-07", "kind": "press" },
+      "source": {
+        "url": "https://www.tradingview.com/news/zacks:9d3a1681e094b:0-comfort-systems-q2-earnings-revenues-beat-estimates-backlog-up-y-y/",
+        "publisher": "Zacks via TradingView",
+        "published": "2026-07",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "+50% y/y record; net income $441.6M (+91%); EPS $12.53; new construction 75.1% of revenue."
     },
@@ -59,9 +79,46 @@
       "unit": "USD_B",
       "basis": "company_claimed",
       "confidence": "medium",
-      "source": { "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-comfort-systems-usa-tops-q2-2026-estimates-stock-slips-93CH-4812224", "publisher": "Investing.com (earnings call)", "published": "2026-07", "kind": "earnings_call" },
+      "source": {
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-comfort-systems-usa-tops-q2-2026-estimates-stock-slips-93CH-4812224",
+        "publisher": "Investing.com (earnings call)",
+        "published": "2026-07",
+        "kind": "earnings_call"
+      },
       "as_of": "2026-08-13",
       "notes": "Over $1.8B net cash; earmarked for acquisitions and opportunistic buybacks."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "6-month to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 6.13,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001035983/us-gaap/Revenues.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-23",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "Revenues; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "capex",
+      "period": "6-month to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 0.29,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001035983/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-23",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
     }
   ],
   "events": [
@@ -70,13 +127,30 @@
       "title": "Q2 2026: revenue +50% to a record $3.27B; backlog $14.1B (+73%)",
       "why_it_matters": "A mechanical/electrical contractor compounding at hyperscaler speed — direct evidence that data-center construction labor is scarce enough to reprice an entire industry tier.",
       "impact": "medium",
-      "entities": ["comfort-systems"],
-      "sources": [{ "url": "https://www.investing.com/news/company-news/comfort-systems-q2-2026-slides-revenue-tops-3b-backlog-hits-14b-93CH-4812234", "publisher": "Investing.com", "published": "2026-07", "kind": "press" }]
+      "entities": [
+        "comfort-systems"
+      ],
+      "sources": [
+        {
+          "url": "https://www.investing.com/news/company-news/comfort-systems-q2-2026-slides-revenue-tops-3b-backlog-hits-14b-93CH-4812234",
+          "publisher": "Investing.com",
+          "published": "2026-07",
+          "kind": "press"
+        }
+      ]
     }
   ],
   "sources": [
-    { "url": "https://www.investing.com/news/company-news/comfort-systems-q2-2026-slides-revenue-tops-3b-backlog-hits-14b-93CH-4812234", "publisher": "Investing.com", "kind": "press" },
-    { "url": "https://www.tradingview.com/news/zacks:9d3a1681e094b:0-comfort-systems-q2-earnings-revenues-beat-estimates-backlog-up-y-y/", "publisher": "Zacks via TradingView", "kind": "press" }
+    {
+      "url": "https://www.investing.com/news/company-news/comfort-systems-q2-2026-slides-revenue-tops-3b-backlog-hits-14b-93CH-4812234",
+      "publisher": "Investing.com",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.tradingview.com/news/zacks:9d3a1681e094b:0-comfort-systems-q2-earnings-revenues-beat-estimates-backlog-up-y-y/",
+      "publisher": "Zacks via TradingView",
+      "kind": "press"
+    }
   ],
   "updated": "2026-08-13"
 }

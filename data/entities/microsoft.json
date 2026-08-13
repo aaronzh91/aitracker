@@ -6,7 +6,12 @@
   "group": "hyperscalers_clouds",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NASDAQ", "symbol": "MSFT" }],
+  "tickers": [
+    {
+      "exchange": "NASDAQ",
+      "symbol": "MSFT"
+    }
+  ],
   "cik": "789019",
   "website": "https://www.microsoft.com",
   "fiscal_year_end": "06-30",
@@ -23,7 +28,13 @@
       "unit": "USD_B",
       "basis": "company_claimed",
       "confidence": "high",
-      "source": { "url": "https://www.cnbc.com/2026/04/29/microsoft-msft-q3-earnings-report-2026.html", "publisher": "CNBC", "title": "Microsoft calls for $190 billion in 2026 capital spending on soaring memory prices", "published": "2026-04-29", "kind": "press" },
+      "source": {
+        "url": "https://www.cnbc.com/2026/04/29/microsoft-msft-q3-earnings-report-2026.html",
+        "publisher": "CNBC",
+        "title": "Microsoft calls for $190 billion in 2026 capital spending on soaring memory prices",
+        "published": "2026-04-29",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "+~61% y/y; ~$25B of the plan attributed to component (memory) price inflation. After the FY27 useful-life/lease reclassification, comparable CY26 capex ≈ $175B."
     },
@@ -35,7 +46,13 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://fortune.com/2026/07/29/microsoft-azure-100-billion-annual-revenue-earnings-revenue-cloud-ai/", "publisher": "Fortune", "title": "Microsoft's cloud just hit a new milestone — Azure crosses $100 billion in annual revenue", "published": "2026-07-29", "kind": "press" },
+      "source": {
+        "url": "https://fortune.com/2026/07/29/microsoft-azure-100-billion-annual-revenue-earnings-revenue-cloud-ai/",
+        "publisher": "Fortune",
+        "title": "Microsoft's cloud just hit a new milestone — Azure crosses $100 billion in annual revenue",
+        "published": "2026-07-29",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "First fiscal year above $100B (FY ended Jun 30, 2026). Microsoft discloses Azure growth rates, not an exact dollar figure — treat $100B as a floor."
     },
@@ -46,7 +63,13 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "medium",
-      "source": { "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast", "publisher": "Microsoft IR", "title": "FY26 Q4 press release", "published": "2026-07", "kind": "company_ir" },
+      "source": {
+        "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast",
+        "publisher": "Microsoft IR",
+        "title": "FY26 Q4 press release",
+        "published": "2026-07",
+        "kind": "company_ir"
+      },
       "as_of": "2026-08-13",
       "notes": "FY2026 revenue surpassed $331B per Q4 FY26 reporting; exact figure to be re-verified against the 10-K in the weekly run."
     },
@@ -58,7 +81,13 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.theregister.com/2025/10/29/microsoft_earnings_q1_26_openai_loss/", "publisher": "The Register (from Microsoft 10-Q)", "title": "Microsoft earnings suggest $11.5B+ OpenAI quarterly loss", "published": "2025-10-29", "kind": "press" },
+      "source": {
+        "url": "https://www.theregister.com/2025/10/29/microsoft_earnings_q1_26_openai_loss/",
+        "publisher": "The Register (from Microsoft 10-Q)",
+        "title": "Microsoft earnings suggest $11.5B+ OpenAI quarterly loss",
+        "published": "2025-10-29",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "At Microsoft's ~27% stake this implies a ~$11.5B OpenAI net loss for the quarter — the only public window into OpenAI's P&L. Nine months to Mar 2026 showed $5.9B of net GAINS from OpenAI, dominated by a one-time recapitalization dilution gain (per FY26 Q3 10-Q analysis: om.co, Deep Quarry)."
     },
@@ -70,7 +99,13 @@
       "unit": "pct",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/", "publisher": "Microsoft", "title": "The next chapter of the Microsoft-OpenAI partnership", "published": "2025-10-28", "kind": "company_pr" },
+      "source": {
+        "url": "https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/",
+        "publisher": "Microsoft",
+        "title": "The next chapter of the Microsoft-OpenAI partnership",
+        "published": "2025-10-28",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "~27% on an as-converted diluted basis (~$135B implied value at recapitalization), from $13.8B invested. Retained through the Apr 2026 amendment."
     },
@@ -81,9 +116,62 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.fool.com/research/largest-companies-by-market-cap/", "publisher": "Motley Fool", "published": "2026-08", "kind": "press" },
+      "source": {
+        "url": "https://www.fool.com/research/largest-companies-by-market-cap/",
+        "publisher": "Motley Fool",
+        "published": "2026-08",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "~$3.6T; automated feed replaces this in Phase 2."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "12-month to 2026-06-30 (FY FY2026, 10-K)",
+      "value": 331.84,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000789019/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-29",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 12-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-K."
+    },
+    {
+      "metric": "capex",
+      "period": "12-month to 2026-06-30 (FY FY2026, 10-K)",
+      "value": 115.95,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000789019/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-29",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 12-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-K."
+    },
+    {
+      "metric": "rpo",
+      "period": "point-in-time to 2026-06-30 (FY FY2026, 10-K)",
+      "value": 684,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000789019/us-gaap/RevenueRemainingPerformanceObligation.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-29",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-K."
     }
   ],
   "events": [
@@ -92,18 +180,41 @@
       "title": "OpenAI recapitalization: Microsoft takes ~27% of OpenAI Group PBC; OpenAI commits $250B of Azure purchases",
       "why_it_matters": "Converts Microsoft's $13.8B of capped-profit interests into conventional equity (~$135B implied) and books the largest single cloud commitment on record; Microsoft loses right of first refusal as OpenAI's compute provider.",
       "impact": "high",
-      "entities": ["microsoft", "openai"],
-      "sources": [{ "url": "https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/", "publisher": "Microsoft", "published": "2025-10-28", "kind": "company_pr" }]
+      "entities": [
+        "microsoft",
+        "openai"
+      ],
+      "sources": [
+        {
+          "url": "https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/",
+          "publisher": "Microsoft",
+          "published": "2025-10-28",
+          "kind": "company_pr"
+        }
+      ]
     },
     {
       "date": "2026-04-27",
       "title": "Microsoft-OpenAI partnership restructured: revenue share capped through 2030, exclusivity and AGI clause removed",
       "why_it_matters": "OpenAI's 20% revenue share to Microsoft becomes capped and AGI-independent; Microsoft's IP/model license runs non-exclusively to 2032 with first-on-Azure shipping; OpenAI can sell on any cloud. Changes the quality of both the rev-share stream and the $250B Azure commitment.",
       "impact": "high",
-      "entities": ["microsoft", "openai"],
+      "entities": [
+        "microsoft",
+        "openai"
+      ],
       "sources": [
-        { "url": "https://www.cnbc.com/2026/04/27/openai-microsoft-partnership-revenue-cap.html", "publisher": "CNBC", "published": "2026-04-27", "kind": "press" },
-        { "url": "https://www.datacenterdynamics.com/en/news/microsoft-loses-ip-exclusivity-rights-and-sees-revenue-payments-capped-in-updated-openai-deal/", "publisher": "Data Center Dynamics", "published": "2026-04", "kind": "press" }
+        {
+          "url": "https://www.cnbc.com/2026/04/27/openai-microsoft-partnership-revenue-cap.html",
+          "publisher": "CNBC",
+          "published": "2026-04-27",
+          "kind": "press"
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/microsoft-loses-ip-exclusivity-rights-and-sees-revenue-payments-capped-in-updated-openai-deal/",
+          "publisher": "Data Center Dynamics",
+          "published": "2026-04",
+          "kind": "press"
+        }
       ]
     },
     {
@@ -111,27 +222,72 @@
       "title": "Guides to ~$190B of CY2026 capital spending, ~$35B above consensus",
       "why_it_matters": "Repriced the whole AI capex complex; management attributed ~$25B of the increase to memory-price inflation rather than added capacity.",
       "impact": "high",
-      "entities": ["microsoft"],
-      "sources": [{ "url": "https://www.cnbc.com/2026/04/29/microsoft-msft-q3-earnings-report-2026.html", "publisher": "CNBC", "published": "2026-04-29", "kind": "press" }]
+      "entities": [
+        "microsoft"
+      ],
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2026/04/29/microsoft-msft-q3-earnings-report-2026.html",
+          "publisher": "CNBC",
+          "published": "2026-04-29",
+          "kind": "press"
+        }
+      ]
     },
     {
       "date": "2026-07-29",
       "title": "FY2026 results: Azure crosses $100B of annual revenue",
       "why_it_matters": "The first $100B cloud-infrastructure year for any vendor; validates the revenue side of the capex program and anchors AI-revenue estimates for the whole sector.",
       "impact": "medium",
-      "entities": ["microsoft"],
+      "entities": [
+        "microsoft"
+      ],
       "sources": [
-        { "url": "https://fortune.com/2026/07/29/microsoft-azure-100-billion-annual-revenue-earnings-revenue-cloud-ai/", "publisher": "Fortune", "published": "2026-07-29", "kind": "press" },
-        { "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast", "publisher": "Microsoft IR", "published": "2026-07", "kind": "company_ir" }
+        {
+          "url": "https://fortune.com/2026/07/29/microsoft-azure-100-billion-annual-revenue-earnings-revenue-cloud-ai/",
+          "publisher": "Fortune",
+          "published": "2026-07-29",
+          "kind": "press"
+        },
+        {
+          "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast",
+          "publisher": "Microsoft IR",
+          "published": "2026-07",
+          "kind": "company_ir"
+        }
       ]
     }
   ],
   "sources": [
-    { "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast", "publisher": "Microsoft IR", "kind": "company_ir" },
-    { "url": "https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/", "publisher": "Microsoft", "published": "2025-10-28", "kind": "company_pr" },
-    { "url": "https://www.cnbc.com/2026/04/27/openai-microsoft-partnership-revenue-cap.html", "publisher": "CNBC", "published": "2026-04-27", "kind": "press" },
-    { "url": "https://www.theregister.com/2025/10/29/microsoft_earnings_q1_26_openai_loss/", "publisher": "The Register", "published": "2025-10-29", "kind": "press" },
-    { "url": "https://deepquarry.substack.com/p/microsoft-starts-talking-about-openai", "publisher": "Deep Quarry", "kind": "analyst", "notes": "Analysis of Microsoft's OpenAI equity-method disclosures in the FY26 10-Qs." }
+    {
+      "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast",
+      "publisher": "Microsoft IR",
+      "kind": "company_ir"
+    },
+    {
+      "url": "https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/",
+      "publisher": "Microsoft",
+      "published": "2025-10-28",
+      "kind": "company_pr"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/04/27/openai-microsoft-partnership-revenue-cap.html",
+      "publisher": "CNBC",
+      "published": "2026-04-27",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.theregister.com/2025/10/29/microsoft_earnings_q1_26_openai_loss/",
+      "publisher": "The Register",
+      "published": "2025-10-29",
+      "kind": "press"
+    },
+    {
+      "url": "https://deepquarry.substack.com/p/microsoft-starts-talking-about-openai",
+      "publisher": "Deep Quarry",
+      "kind": "analyst",
+      "notes": "Analysis of Microsoft's OpenAI equity-method disclosures in the FY26 10-Qs."
+    }
   ],
   "updated": "2026-08-13"
 }

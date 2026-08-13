@@ -6,7 +6,12 @@
   "group": "software_applications",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NYSE", "symbol": "NOW" }],
+  "tickers": [
+    {
+      "exchange": "NYSE",
+      "symbol": "NOW"
+    }
+  ],
   "cik": "1373715",
   "website": "https://www.servicenow.com",
   "fiscal_year_end": "12-31",
@@ -20,11 +25,16 @@
       "metric": "other",
       "metric_label": "AI annual contract value (ACV)",
       "period": "FY2026-Q2",
-      "value": 1.0,
+      "value": 1,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx", "publisher": "ServiceNow", "published": "2026-07-22", "kind": "company_pr" },
+      "source": {
+        "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx",
+        "publisher": "ServiceNow",
+        "published": "2026-07-22",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "Crossed $1B for the first time, up more than 40% q/q; agentic AI production deployments up 9x over nine months; first-time agentic buyers +45% y/y."
     },
@@ -36,7 +46,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx", "publisher": "ServiceNow", "published": "2026-07-22", "kind": "company_pr" },
+      "source": {
+        "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx",
+        "publisher": "ServiceNow",
+        "published": "2026-07-22",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "+24.5% y/y, 150bp above the top of guidance; 123 deals >$1M net-new ACV (+~40% y/y); 658 customers >$5M ACV."
     },
@@ -48,7 +63,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx", "publisher": "ServiceNow", "published": "2026-07-22", "kind": "company_pr" },
+      "source": {
+        "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx",
+        "publisher": "ServiceNow",
+        "published": "2026-07-22",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "+21% y/y."
     },
@@ -60,9 +80,62 @@
       "unit": "USD_B",
       "basis": "company_claimed",
       "confidence": "high",
-      "source": { "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx", "publisher": "ServiceNow", "published": "2026-07-22", "kind": "company_pr" },
+      "source": {
+        "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx",
+        "publisher": "ServiceNow",
+        "published": "2026-07-22",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "Raised to $15.760–15.780B at Q2 2026."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "6-month to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 7.76,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-23",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "capex",
+      "period": "6-month to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 0.26,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-23",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "rpo",
+      "period": "point-in-time to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 29,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/RevenueRemainingPerformanceObligation.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-23",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-Q."
     }
   ],
   "events": [
@@ -71,25 +144,59 @@
       "title": "Agrees to acquire Moveworks for $2.85B",
       "why_it_matters": "ServiceNow's largest acquisition — buys an agentic AI assistant and enterprise-search stack to anchor its agent strategy; underwent extended antitrust review before completion.",
       "impact": "high",
-      "entities": ["servicenow"],
-      "sources": [{ "url": "https://enterprisedna.co/resources/news/servicenow-ai-acv-1-billion-agentic-enterprise-q2-2026/", "publisher": "Enterprise DNA", "published": "2026-07", "kind": "press", "notes": "Recaps the $2.85B Moveworks deal in covering the Q2 2026 AI ACV milestone." }]
+      "entities": [
+        "servicenow"
+      ],
+      "sources": [
+        {
+          "url": "https://enterprisedna.co/resources/news/servicenow-ai-acv-1-billion-agentic-enterprise-q2-2026/",
+          "publisher": "Enterprise DNA",
+          "published": "2026-07",
+          "kind": "press",
+          "notes": "Recaps the $2.85B Moveworks deal in covering the Q2 2026 AI ACV milestone."
+        }
+      ]
     },
     {
       "date": "2026-07-22",
       "title": "Q2 2026: AI ACV crosses $1B, +40% q/q; full-year guidance raised",
       "why_it_matters": "One of the first incumbent software companies to put a hard, disclosed number over $1B on AI-specific contract value — a key 'revenue quality' datapoint for the AI-monetization debate.",
       "impact": "high",
-      "entities": ["servicenow"],
+      "entities": [
+        "servicenow"
+      ],
       "sources": [
-        { "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx", "publisher": "ServiceNow", "published": "2026-07-22", "kind": "company_pr" },
-        { "url": "https://diginomica.com/servicenow-q2-2026-ai-acv-passes-1-billion-zavery-says-governance-opening-new-doors", "publisher": "diginomica", "published": "2026-07", "kind": "press" }
+        {
+          "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx",
+          "publisher": "ServiceNow",
+          "published": "2026-07-22",
+          "kind": "company_pr"
+        },
+        {
+          "url": "https://diginomica.com/servicenow-q2-2026-ai-acv-passes-1-billion-zavery-says-governance-opening-new-doors",
+          "publisher": "diginomica",
+          "published": "2026-07",
+          "kind": "press"
+        }
       ]
     }
   ],
   "sources": [
-    { "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx", "publisher": "ServiceNow", "kind": "company_pr" },
-    { "url": "https://enterprisedna.co/resources/news/servicenow-ai-acv-1-billion-agentic-enterprise-q2-2026/", "publisher": "Enterprise DNA", "kind": "press" },
-    { "url": "https://diginomica.com/servicenow-q2-2026-ai-acv-passes-1-billion-zavery-says-governance-opening-new-doors", "publisher": "diginomica", "kind": "press" }
+    {
+      "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx",
+      "publisher": "ServiceNow",
+      "kind": "company_pr"
+    },
+    {
+      "url": "https://enterprisedna.co/resources/news/servicenow-ai-acv-1-billion-agentic-enterprise-q2-2026/",
+      "publisher": "Enterprise DNA",
+      "kind": "press"
+    },
+    {
+      "url": "https://diginomica.com/servicenow-q2-2026-ai-acv-passes-1-billion-zavery-says-governance-opening-new-doors",
+      "publisher": "diginomica",
+      "kind": "press"
+    }
   ],
   "updated": "2026-08-13"
 }

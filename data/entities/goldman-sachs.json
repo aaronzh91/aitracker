@@ -6,7 +6,12 @@
   "group": "capital",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NYSE", "symbol": "GS" }],
+  "tickers": [
+    {
+      "exchange": "NYSE",
+      "symbol": "GS"
+    }
+  ],
   "cik": "886982",
   "website": "https://www.goldmansachs.com",
   "fiscal_year_end": "12-31",
@@ -23,7 +28,12 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.bloomberg.com/news/articles/2025-10-23/record-38-billion-debt-sale-nears-for-oracle-tied-data-centers", "publisher": "Bloomberg", "published": "2025-10-23", "kind": "press" },
+      "source": {
+        "url": "https://www.bloomberg.com/news/articles/2025-10-23/record-38-billion-debt-sale-nears-for-oracle-tied-data-centers",
+        "publisher": "Bloomberg",
+        "published": "2025-10-23",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Total package size ($23.25B Texas + $14.75B Wisconsin facilities), JPMorgan/MUFG-led with Goldman, BNP Paribas, SocGen, SMBC, Wells Fargo; Goldman's share undisclosed."
     },
@@ -35,9 +45,30 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.bloomberg.com/news/articles/2026-08-06/softbank-secures-10-billion-margin-loan-backed-by-openai-stake", "publisher": "Bloomberg", "published": "2026-08-06", "kind": "press" },
+      "source": {
+        "url": "https://www.bloomberg.com/news/articles/2026-08-06/softbank-secures-10-billion-margin-loan-backed-by-openai-stake",
+        "publisher": "Bloomberg",
+        "published": "2026-08-06",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Total facility size; Goldman Sachs Bank USA is one of five named lenders — individual share undisclosed. Collateral is unlisted OpenAI preferred stock."
+    },
+    {
+      "metric": "capex",
+      "period": "6-month to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 1.07,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000886982/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-08-03",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
     }
   ],
   "events": [
@@ -46,22 +77,62 @@
       "title": "Joins record $38B debt package for Vantage's Oracle-tied campuses",
       "why_it_matters": "The largest AI project-financing to date; bank credit formally underwrites the Oracle–OpenAI compute chain.",
       "impact": "high",
-      "entities": ["goldman-sachs", "jpmorgan", "vantage", "oracle", "openai"],
-      "sources": [{ "url": "https://www.bloomberg.com/news/articles/2025-10-23/record-38-billion-debt-sale-nears-for-oracle-tied-data-centers", "publisher": "Bloomberg", "published": "2025-10-23", "kind": "press" }]
+      "entities": [
+        "goldman-sachs",
+        "jpmorgan",
+        "vantage",
+        "oracle",
+        "openai"
+      ],
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2025-10-23/record-38-billion-debt-sale-nears-for-oracle-tied-data-centers",
+          "publisher": "Bloomberg",
+          "published": "2025-10-23",
+          "kind": "press"
+        }
+      ]
     },
     {
       "date": "2026-08-10",
       "title": "Founding financier in Nvidia's >$500B customer-financing coalition",
       "why_it_matters": "Puts a systemically important bank inside a vendor-financing framework collateralized by compute — the structure regulators have flagged as this cycle's novel risk.",
       "impact": "high",
-      "entities": ["goldman-sachs", "nvidia", "nvidia-financing-coalition"],
-      "sources": [{ "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html", "publisher": "CNBC", "published": "2026-08-10", "kind": "press" }]
+      "entities": [
+        "goldman-sachs",
+        "nvidia",
+        "nvidia-financing-coalition"
+      ],
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html",
+          "publisher": "CNBC",
+          "published": "2026-08-10",
+          "kind": "press"
+        }
+      ]
     }
   ],
   "sources": [
-    { "url": "https://www.bloomberg.com/news/articles/2025-10-23/record-38-billion-debt-sale-nears-for-oracle-tied-data-centers", "publisher": "Bloomberg", "published": "2025-10-23", "kind": "press" },
-    { "url": "https://www.bloomberg.com/news/articles/2026-08-06/softbank-secures-10-billion-margin-loan-backed-by-openai-stake", "publisher": "Bloomberg", "published": "2026-08-06", "kind": "press" },
-    { "url": "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/04/related-digital-announces-financing-for--16-billion-oracle-data-.html", "publisher": "Bank of America Newsroom", "published": "2026-04", "kind": "company_pr", "notes": "Names Goldman Sachs as advisor to Related Digital on the Saline Township financing." }
+    {
+      "url": "https://www.bloomberg.com/news/articles/2025-10-23/record-38-billion-debt-sale-nears-for-oracle-tied-data-centers",
+      "publisher": "Bloomberg",
+      "published": "2025-10-23",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-08-06/softbank-secures-10-billion-margin-loan-backed-by-openai-stake",
+      "publisher": "Bloomberg",
+      "published": "2026-08-06",
+      "kind": "press"
+    },
+    {
+      "url": "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/04/related-digital-announces-financing-for--16-billion-oracle-data-.html",
+      "publisher": "Bank of America Newsroom",
+      "published": "2026-04",
+      "kind": "company_pr",
+      "notes": "Names Goldman Sachs as advisor to Related Digital on the Saline Township financing."
+    }
   ],
   "updated": "2026-08-13"
 }

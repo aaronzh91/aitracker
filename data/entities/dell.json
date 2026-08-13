@@ -6,7 +6,12 @@
   "group": "compute_supply_chain",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NYSE", "symbol": "DELL" }],
+  "tickers": [
+    {
+      "exchange": "NYSE",
+      "symbol": "DELL"
+    }
+  ],
   "cik": "1571996",
   "website": "https://www.dell.com",
   "fiscal_year_end": "01-31",
@@ -23,7 +28,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-delivers-first-quarter-fiscal-2027-financial-results.htm", "publisher": "Dell Technologies", "published": "2026-05", "kind": "company_pr" },
+      "source": {
+        "url": "https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-delivers-first-quarter-fiscal-2027-financial-results.htm",
+        "publisher": "Dell Technologies",
+        "published": "2026-05",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "AI server backlog after $24.4B of AI orders in the quarter (ended May 2026)."
     },
@@ -35,7 +45,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-delivers-first-quarter-fiscal-2027-financial-results.htm", "publisher": "Dell Technologies", "published": "2026-05", "kind": "company_pr" },
+      "source": {
+        "url": "https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-delivers-first-quarter-fiscal-2027-financial-results.htm",
+        "publisher": "Dell Technologies",
+        "published": "2026-05",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "Customers include CoreWeave, xAI, and IREN."
     },
@@ -46,9 +61,62 @@
       "unit": "USD_B",
       "basis": "company_claimed",
       "confidence": "medium",
-      "source": { "url": "https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-delivers-first-quarter-fiscal-2027-financial-results.htm", "publisher": "Dell Technologies", "published": "2026-05", "kind": "company_pr" },
+      "source": {
+        "url": "https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-delivers-first-quarter-fiscal-2027-financial-results.htm",
+        "publisher": "Dell Technologies",
+        "published": "2026-05",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "~$60B of AI server shipments guided for FY2027 (year ending Jan 2027); approximate — stated as 'approximately' by management."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "3-month to 2026-05-01 (Q1 FY2027, 10-Q)",
+      "value": 43.84,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001571996/us-gaap/Revenues.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-06-09",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "Revenues; 3-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "capex",
+      "period": "3-month to 2026-05-01 (Q1 FY2027, 10-Q)",
+      "value": 0.96,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001571996/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-06-09",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 3-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "rpo",
+      "period": "point-in-time to 2026-05-01 (Q1 FY2027, 10-Q)",
+      "value": 97,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001571996/us-gaap/RevenueRemainingPerformanceObligation.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-06-09",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-Q."
     }
   ],
   "events": [
@@ -57,12 +125,27 @@
       "title": "Q1 FY2027: $24.4B AI orders in one quarter; AI backlog hits $51.3B; ~$60B FY27 AI guide",
       "why_it_matters": "Order intake at this scale made Dell the largest merchant AI-server channel and a direct read on neocloud/lab capex; backlog quality now hinges on those buyers' financing.",
       "impact": "high",
-      "entities": ["dell", "coreweave", "xai"],
-      "sources": [{ "url": "https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-delivers-first-quarter-fiscal-2027-financial-results.htm", "publisher": "Dell Technologies", "published": "2026-05", "kind": "company_pr" }]
+      "entities": [
+        "dell",
+        "coreweave",
+        "xai"
+      ],
+      "sources": [
+        {
+          "url": "https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-delivers-first-quarter-fiscal-2027-financial-results.htm",
+          "publisher": "Dell Technologies",
+          "published": "2026-05",
+          "kind": "company_pr"
+        }
+      ]
     }
   ],
   "sources": [
-    { "url": "https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-delivers-first-quarter-fiscal-2027-financial-results.htm", "publisher": "Dell Technologies", "kind": "company_pr" }
+    {
+      "url": "https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-delivers-first-quarter-fiscal-2027-financial-results.htm",
+      "publisher": "Dell Technologies",
+      "kind": "company_pr"
+    }
   ],
   "updated": "2026-08-13"
 }

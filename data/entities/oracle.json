@@ -6,7 +6,12 @@
   "group": "hyperscalers_clouds",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NYSE", "symbol": "ORCL" }],
+  "tickers": [
+    {
+      "exchange": "NYSE",
+      "symbol": "ORCL"
+    }
+  ],
   "cik": "1341439",
   "website": "https://www.oracle.com",
   "fiscal_year_end": "05-31",
@@ -23,7 +28,13 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/default.aspx", "publisher": "Oracle IR", "title": "Oracle Announces Record Q4 and FY 2026 Results", "published": "2026-06", "kind": "company_ir" },
+      "source": {
+        "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/default.aspx",
+        "publisher": "Oracle IR",
+        "title": "Oracle Announces Record Q4 and FY 2026 Results",
+        "published": "2026-06",
+        "kind": "company_ir"
+      },
       "as_of": "2026-08-13",
       "notes": "+363% y/y; exceeds Alphabet (~$627B) and Microsoft (~$460B) per press comparisons. Reportedly >50% OpenAI (analyst estimate, low confidence — see risk notes). ~$75B of the increase reflects GPU prepayments/customer-supplied hardware."
     },
@@ -34,7 +45,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "medium",
-      "source": { "url": "https://mlq.ai/news/oracle-reports-557b-fy2026-capex-guides-to-70b-net-outlay-in-fy2027/", "publisher": "MLQ News (from Oracle FY26 results)", "published": "2026-06", "kind": "press" },
+      "source": {
+        "url": "https://mlq.ai/news/oracle-reports-557b-fy2026-capex-guides-to-70b-net-outlay-in-fy2027/",
+        "publisher": "MLQ News (from Oracle FY26 results)",
+        "published": "2026-06",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Fiscal year ended May 31, 2026."
     },
@@ -45,7 +61,13 @@
       "unit": "USD_B",
       "basis": "company_claimed",
       "confidence": "high",
-      "source": { "url": "https://seekingalpha.com/news/4602439-oracle-expects-34-percent-fy27-revenue-growth-as-it-plans-70b-net-cash-capex-outlay", "publisher": "Seeking Alpha", "title": "Oracle expects 34% FY27 revenue growth as it plans $70B net cash capex outlay", "published": "2026-06", "kind": "press" },
+      "source": {
+        "url": "https://seekingalpha.com/news/4602439-oracle-expects-34-percent-fy27-revenue-growth-as-it-plans-70b-net-cash-capex-outlay",
+        "publisher": "Seeking Alpha",
+        "title": "Oracle expects 34% FY27 revenue growth as it plans $70B net cash capex outlay",
+        "published": "2026-06",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Net cash outlay; gross capex guided $90–95B, offset by customer prepayments and customer-supplied GPUs."
     },
@@ -57,7 +79,13 @@
       "basis": "estimated",
       "method_md": "Non-current borrowings were ~$124.7B at FY26-Q3 (Feb 2026), up from ~$85B a year earlier (press from filings). Adding current maturities and the Feb 2026 $25B issuance net of repayments yields ~$150B+; SPEC.md research (Aug 13, 2026) and press tallies cite ~$153B total debt. Treat as approximate pending the FY26 10-K balance sheet.",
       "confidence": "low",
-      "source": { "url": "https://www.fool.com/investing/2026/04/10/oracles-credit-risk-is-at-an-all-time-high/", "publisher": "The Motley Fool", "title": "Oracle's Credit Risk Is At an All-Time High", "published": "2026-04-10", "kind": "press" },
+      "source": {
+        "url": "https://www.fool.com/investing/2026/04/10/oracles-credit-risk-is-at-an-all-time-high/",
+        "publisher": "The Motley Fool",
+        "title": "Oracle's Credit Risk Is At an All-Time High",
+        "published": "2026-04-10",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Largest non-financial borrower in the Bloomberg US high-grade index. Excludes datacenter lease obligations."
     },
@@ -68,7 +96,13 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://howtheymake.money/en/blog/orcl-q4-fy2026-638b-rpo-negative-fcf", "publisher": "How They Make Money", "title": "Oracle's $638B Backlog Soared 363%. Why Did the Stock Fall?", "published": "2026-06", "kind": "analyst" },
+      "source": {
+        "url": "https://howtheymake.money/en/blog/orcl-q4-fy2026-638b-rpo-negative-fcf",
+        "publisher": "How They Make Money",
+        "title": "Oracle's $638B Backlog Soared 363%. Why Did the Stock Fall?",
+        "published": "2026-06",
+        "kind": "analyst"
+      },
       "as_of": "2026-08-13",
       "notes": "FY2026 free cash flow was negative (capex $55.7B outran operating cash flow); exact figure to be pulled from the 10-K cash-flow statement in the weekly run — null recorded rather than an unverified number."
     },
@@ -80,9 +114,63 @@
       "unit": "bps",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.cnbc.com/2026/02/02/oracles-credit-default-swaps-are-plummeting-after-financing-plans.html", "publisher": "CNBC", "title": "Oracle's credit default swaps are plummeting as financing plan boosts investor confidence", "published": "2026-02-02", "kind": "press" },
+      "source": {
+        "url": "https://www.cnbc.com/2026/02/02/oracles-credit-default-swaps-are-plummeting-after-financing-plans.html",
+        "publisher": "CNBC",
+        "title": "Oracle's credit default swaps are plummeting as financing plan boosts investor confidence",
+        "published": "2026-02-02",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Record wide ~215bp in Jan 2026 (vs ~145bp end-2025), easing after the Feb financing plan. Q1-26 Oracle CDS trading volume $4.6B notional vs $0.76B a year earlier; net notional ~$6.5B — partly project-finance banks hedging Oracle-tenant lease exposure, a thin-market signal to read with care (SPEC §10.4)."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "12-month to 2026-05-31 (FY FY2026, 10-K)",
+      "value": 67.36,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001341439/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-06-22",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 12-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-K."
+    },
+    {
+      "metric": "capex",
+      "period": "12-month to 2026-05-31 (FY FY2026, 10-K)",
+      "value": 55.66,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001341439/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-06-22",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 12-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-K."
+    },
+    {
+      "metric": "rpo",
+      "period": "point-in-time to 2026-05-31 (FY FY2026, 10-K)",
+      "value": 638,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001341439/us-gaap/RevenueRemainingPerformanceObligation.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-06-22",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-K."
     }
   ],
   "events": [
@@ -91,35 +179,90 @@
       "title": "Sells $18B of investment-grade bonds (second-largest US deal of 2025)",
       "why_it_matters": "First mega-raise of the OpenAI-contract era; ~$88B of peak demand showed credit markets initially embraced the AI story.",
       "impact": "high",
-      "entities": ["oracle"],
-      "sources": [{ "url": "https://news.bloomberglaw.com/tech-and-telecom-law/oracle-looks-to-raise-15-billion-from-corporate-bond-sale-2", "publisher": "Bloomberg Law", "published": "2025-09", "kind": "press" }]
+      "entities": [
+        "oracle"
+      ],
+      "sources": [
+        {
+          "url": "https://news.bloomberglaw.com/tech-and-telecom-law/oracle-looks-to-raise-15-billion-from-corporate-bond-sale-2",
+          "publisher": "Bloomberg Law",
+          "published": "2025-09",
+          "kind": "press"
+        }
+      ]
     },
     {
       "date": "2026-02",
       "title": "Raises $25B of bonds and lays out ~$40B FY27 debt+equity funding plan; CDS retraces from record wides",
       "why_it_matters": "Pre-funding the OpenAI buildout calmed the credit market — 5-yr CDS fell from ~215bp — but doubled down on leverage into a single-counterparty backlog.",
       "impact": "high",
-      "entities": ["oracle"],
-      "sources": [{ "url": "https://www.cnbc.com/2026/02/02/oracles-credit-default-swaps-are-plummeting-after-financing-plans.html", "publisher": "CNBC", "published": "2026-02-02", "kind": "press" }]
+      "entities": [
+        "oracle"
+      ],
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2026/02/02/oracles-credit-default-swaps-are-plummeting-after-financing-plans.html",
+          "publisher": "CNBC",
+          "published": "2026-02-02",
+          "kind": "press"
+        }
+      ]
     },
     {
       "date": "2026-06",
       "title": "FY26 Q4: RPO $638B (+363%), FY27 net capex guided ~$70B, FCF negative; stock falls",
       "why_it_matters": "The backlog now exceeds every other cloud's, but the market discounted it on conversion and funding risk — the clearest case of commitments-are-not-revenue in the dataset.",
       "impact": "high",
-      "entities": ["oracle", "openai"],
+      "entities": [
+        "oracle",
+        "openai"
+      ],
       "sources": [
-        { "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/default.aspx", "publisher": "Oracle IR", "published": "2026-06", "kind": "company_ir" },
-        { "url": "https://howtheymake.money/en/blog/orcl-q4-fy2026-638b-rpo-negative-fcf", "publisher": "How They Make Money", "published": "2026-06", "kind": "analyst" }
+        {
+          "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/default.aspx",
+          "publisher": "Oracle IR",
+          "published": "2026-06",
+          "kind": "company_ir"
+        },
+        {
+          "url": "https://howtheymake.money/en/blog/orcl-q4-fy2026-638b-rpo-negative-fcf",
+          "publisher": "How They Make Money",
+          "published": "2026-06",
+          "kind": "analyst"
+        }
       ]
     }
   ],
   "sources": [
-    { "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/default.aspx", "publisher": "Oracle IR", "kind": "company_ir" },
-    { "url": "https://www.datacenterdynamics.com/en/news/openai-signs-300bn-cloud-deal-with-oracle-report/", "publisher": "Data Center Dynamics", "published": "2025-09", "kind": "press", "notes": "The ~$300B/5yr OpenAI contract underlying the RPO." },
-    { "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262034371-oracle-ai-rpo-credit-downgrade-cash-flow-analysis-tradingkey", "publisher": "TradingKey", "kind": "analyst", "notes": "OpenAI share of RPO and credit analysis — analyst-derived, low confidence." },
-    { "url": "https://www.itiger.com/news/1118477526", "publisher": "iTiger (Morgan Stanley note)", "kind": "analyst", "notes": "Banks hedging Oracle-linked project-finance exposure via Oracle CDS." },
-    { "url": "https://sherwood.news/tech/oracle-is-trying-really-hard-to-convince-investors-it-wont-have-a-debt-problem/", "publisher": "Sherwood News", "kind": "press" }
+    {
+      "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/default.aspx",
+      "publisher": "Oracle IR",
+      "kind": "company_ir"
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/openai-signs-300bn-cloud-deal-with-oracle-report/",
+      "publisher": "Data Center Dynamics",
+      "published": "2025-09",
+      "kind": "press",
+      "notes": "The ~$300B/5yr OpenAI contract underlying the RPO."
+    },
+    {
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262034371-oracle-ai-rpo-credit-downgrade-cash-flow-analysis-tradingkey",
+      "publisher": "TradingKey",
+      "kind": "analyst",
+      "notes": "OpenAI share of RPO and credit analysis — analyst-derived, low confidence."
+    },
+    {
+      "url": "https://www.itiger.com/news/1118477526",
+      "publisher": "iTiger (Morgan Stanley note)",
+      "kind": "analyst",
+      "notes": "Banks hedging Oracle-linked project-finance exposure via Oracle CDS."
+    },
+    {
+      "url": "https://sherwood.news/tech/oracle-is-trying-really-hard-to-convince-investors-it-wont-have-a-debt-problem/",
+      "publisher": "Sherwood News",
+      "kind": "press"
+    }
   ],
   "updated": "2026-08-13"
 }

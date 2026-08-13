@@ -6,7 +6,12 @@
   "group": "hyperscalers_clouds",
   "region": "europe",
   "tier": 1,
-  "tickers": [{ "exchange": "NASDAQ", "symbol": "NBIS" }],
+  "tickers": [
+    {
+      "exchange": "NASDAQ",
+      "symbol": "NBIS"
+    }
+  ],
   "cik": "1513845",
   "website": "https://nebius.com",
   "fiscal_year_end": "12-31",
@@ -24,7 +29,13 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "high",
-      "source": { "url": "https://www.fool.com/investing/2026/03/16/this-ai-stock-has-a-194-billion-microsoft-deal-a-3/", "publisher": "The Motley Fool", "title": "This AI Stock Has a $19.4 Billion Microsoft Deal ... and Now a $2 Billion Nvidia Investment", "published": "2026-03-16", "kind": "press" },
+      "source": {
+        "url": "https://www.fool.com/investing/2026/03/16/this-ai-stock-has-a-194-billion-microsoft-deal-a-3/",
+        "publisher": "The Motley Fool",
+        "title": "This AI Stock Has a $19.4 Billion Microsoft Deal ... and Now a $2 Billion Nvidia Investment",
+        "published": "2026-03-16",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Signed Sep 2025; five-year term. Headline ceiling, not realized revenue."
     },
@@ -36,7 +47,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926027886/tm268879d1_ex99-1.htm", "publisher": "SEC / Nebius 6-K", "published": "2026-03", "kind": "sec_filing" },
+      "source": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926027886/tm268879d1_ex99-1.htm",
+        "publisher": "SEC / Nebius 6-K",
+        "published": "2026-03",
+        "kind": "sec_filing"
+      },
       "as_of": "2026-08-13",
       "notes": "$12B dedicated capacity + committed additional purchases up to ~$15B. Announced Mar 16, 2026; NBIS +14% on the news."
     },
@@ -47,7 +63,12 @@
       "unit": "USD_B",
       "basis": "company_claimed",
       "confidence": "medium",
-      "source": { "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926027886/tm268879d1_ex99-1.htm", "publisher": "SEC / Nebius 6-K", "published": "2026-03", "kind": "sec_filing" },
+      "source": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926027886/tm268879d1_ex99-1.htm",
+        "publisher": "SEC / Nebius 6-K",
+        "published": "2026-03",
+        "kind": "sec_filing"
+      },
       "as_of": "2026-08-13",
       "notes": "Guidance midpoint ($3.0–3.4B range); ARR run-rate guided to $7–9B exiting 2026."
     },
@@ -58,7 +79,13 @@
       "unit": "USD_B",
       "basis": "company_claimed",
       "confidence": "medium",
-      "source": { "url": "https://app.dealroom.co/news/feed/nebius-hikes-2026-capex-guidance-to-25b-signs-27b-meta-deal", "publisher": "Dealroom", "title": "Nebius hikes 2026 capex guidance to $25B, signs $27B Meta deal", "published": "2026", "kind": "press" },
+      "source": {
+        "url": "https://app.dealroom.co/news/feed/nebius-hikes-2026-capex-guidance-to-25b-signs-27b-meta-deal",
+        "publisher": "Dealroom",
+        "title": "Nebius hikes 2026 capex guidance to $25B, signs $27B Meta deal",
+        "published": "2026",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Midpoint of $20–25B range, raised from $16–20B on demand. ~7x guided 2026 revenue — the funding-gap metric to watch."
     },
@@ -70,9 +97,62 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.fool.com/investing/2026/03/16/this-ai-stock-has-a-194-billion-microsoft-deal-a-3/", "publisher": "The Motley Fool", "published": "2026-03-16", "kind": "press" },
+      "source": {
+        "url": "https://www.fool.com/investing/2026/03/16/this-ai-stock-has-a-194-billion-microsoft-deal-a-3/",
+        "publisher": "The Motley Fool",
+        "published": "2026-03-16",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Supplier-investor alignment; part of Nvidia's >$40B 2026 ecosystem equity program."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "12-month to 2025-12-31 (FY FY2025, 20-F)",
+      "value": 0.53,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001513845/us-gaap/Revenues.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-04-30",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "Revenues; 12-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 20-F."
+    },
+    {
+      "metric": "capex",
+      "period": "12-month to 2025-12-31 (FY FY2025, 20-F)",
+      "value": 4.07,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001513845/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-04-30",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 12-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 20-F."
+    },
+    {
+      "metric": "rpo",
+      "period": "point-in-time to 2025-12-31 (FY FY2025, 20-F)",
+      "value": 21.33,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001513845/us-gaap/RevenueRemainingPerformanceObligation.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-04-30",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 20-F."
     }
   ],
   "events": [
@@ -81,18 +161,42 @@
       "title": "Signs up-to-$19.4B five-year AI capacity deal with Microsoft",
       "why_it_matters": "The contract that moved Nebius from challenger to Tier-1 neocloud; Microsoft outsources capacity it cannot build fast enough.",
       "impact": "high",
-      "entities": ["nebius", "microsoft"],
-      "sources": [{ "url": "https://www.fool.com/investing/2026/03/16/this-ai-stock-has-a-194-billion-microsoft-deal-a-3/", "publisher": "The Motley Fool", "published": "2026-03-16", "kind": "press" }]
+      "entities": [
+        "nebius",
+        "microsoft"
+      ],
+      "sources": [
+        {
+          "url": "https://www.fool.com/investing/2026/03/16/this-ai-stock-has-a-194-billion-microsoft-deal-a-3/",
+          "publisher": "The Motley Fool",
+          "published": "2026-03-16",
+          "kind": "press"
+        }
+      ]
     },
     {
       "date": "2026-03-16",
       "title": "Signs up-to-$27B five-year deal with Meta; Nvidia invests ~$2B",
       "why_it_matters": "Takes contracted business to ~$46B and adds a second anchor tenant — while deepening the supplier-investor loop with Nvidia.",
       "impact": "high",
-      "entities": ["nebius", "meta", "nvidia"],
+      "entities": [
+        "nebius",
+        "meta",
+        "nvidia"
+      ],
       "sources": [
-        { "url": "https://www.cnbc.com/2026/03/16/meta-nebius-ai-infrastructure.html", "publisher": "CNBC", "published": "2026-03-16", "kind": "press" },
-        { "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926027886/tm268879d1_ex99-1.htm", "publisher": "SEC / Nebius 6-K", "published": "2026-03", "kind": "sec_filing" }
+        {
+          "url": "https://www.cnbc.com/2026/03/16/meta-nebius-ai-infrastructure.html",
+          "publisher": "CNBC",
+          "published": "2026-03-16",
+          "kind": "press"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926027886/tm268879d1_ex99-1.htm",
+          "publisher": "SEC / Nebius 6-K",
+          "published": "2026-03",
+          "kind": "sec_filing"
+        }
       ]
     },
     {
@@ -100,14 +204,37 @@
       "title": "Raises 2026 capex guidance to $20–25B citing demand",
       "why_it_matters": "Confirms the build-ahead-of-revenue model and enlarges the external funding requirement. (Month approximate — guidance raised after the Mar 2026 6-K's $16–20B; exact date pending the next results filing.)",
       "impact": "medium",
-      "entities": ["nebius"],
-      "sources": [{ "url": "https://app.dealroom.co/news/feed/nebius-hikes-2026-capex-guidance-to-25b-signs-27b-meta-deal", "publisher": "Dealroom", "published": "2026", "kind": "press" }]
+      "entities": [
+        "nebius"
+      ],
+      "sources": [
+        {
+          "url": "https://app.dealroom.co/news/feed/nebius-hikes-2026-capex-guidance-to-25b-signs-27b-meta-deal",
+          "publisher": "Dealroom",
+          "published": "2026",
+          "kind": "press"
+        }
+      ]
     }
   ],
   "sources": [
-    { "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926027886/tm268879d1_ex99-1.htm", "publisher": "SEC / Nebius 6-K", "kind": "sec_filing" },
-    { "url": "https://www.cnbc.com/2026/03/16/meta-nebius-ai-infrastructure.html", "publisher": "CNBC", "published": "2026-03-16", "kind": "press" },
-    { "url": "https://www.fool.com/investing/2026/04/19/nebius-has-landed-46-billion-in-ai-cloud-deals-cou/", "publisher": "The Motley Fool", "published": "2026-04-19", "kind": "press" }
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926027886/tm268879d1_ex99-1.htm",
+      "publisher": "SEC / Nebius 6-K",
+      "kind": "sec_filing"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/03/16/meta-nebius-ai-infrastructure.html",
+      "publisher": "CNBC",
+      "published": "2026-03-16",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.fool.com/investing/2026/04/19/nebius-has-landed-46-billion-in-ai-cloud-deals-cou/",
+      "publisher": "The Motley Fool",
+      "published": "2026-04-19",
+      "kind": "press"
+    }
   ],
   "updated": "2026-08-13"
 }

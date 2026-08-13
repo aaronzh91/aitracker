@@ -1,6 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
-import { entities, entityById, edgesFor, latestObs, fmtMoney, fmtObsValue, GROUP_LABELS, TYPE_LABELS } from "../../lib/data.js";
+import { entities, entityById, edgesFor, latestObs, fmtMoney, fmtObsValue, label, GROUP_LABELS, TYPE_LABELS } from "../../lib/data.js";
 
 export function getStaticPaths() {
   return entities.map((e) => ({ params: { id: e.id } }));
@@ -17,10 +17,10 @@ const ghUrl = `https://github.com/aaronzh91/aitracker/blob/main/data/entities/${
   <h1>{e.name}</h1>
   <p>
     <span class="chip">{GROUP_LABELS[e.group]}</span>
-    <span class="chip dim">{e.category.replaceAll("_", " ")}</span>
-    <span class="chip dim">coverage: tier {e.tier}</span>
+    <span class="chip dim">{label(e.category)}</span>
+    <span class="chip dim">Coverage: Tier {e.tier}</span>
     {e.tickers?.map((t) => <span class="chip dim">{t.exchange}: {t.symbol}</span>)}
-    {cap && <span class="chip warn">{e.kind === "public_company" ? "mkt cap" : "valuation"} {fmtMoney(cap)} <span class={`basis ${cap.basis}`}>{cap.basis[0].toUpperCase()}</span></span>}
+    {cap && <span class="chip warn">{e.kind === "public_company" ? "Mkt cap" : "Valuation"} {fmtMoney(cap)} <span class={`basis ${cap.basis}`}>{cap.basis[0].toUpperCase()}</span></span>}
   </p>
   <p class="lede">{e.monetization}</p>
 
@@ -38,11 +38,11 @@ const ghUrl = `https://github.com/aaronzh91/aitracker/blob/main/data/entities/${
           <tbody>
             {e.observations.map((o) => (
               <tr>
-                <td>{o.metric_label ?? o.metric.replaceAll("_", " ")}</td>
+                <td>{o.metric_label ?? label(o.metric)}</td>
                 <td>{o.period}</td>
                 <td class="num"><strong>{fmtObsValue(o)}</strong></td>
-                <td><span class={`basis ${o.basis}`}>{o.basis.replaceAll("_", " ")}</span>{o.method_md && <div class="src">Method: {o.method_md}</div>}</td>
-                <td>{o.confidence}</td>
+                <td><span class={`basis ${o.basis}`}>{label(o.basis)}</span>{o.method_md && <div class="src">Method: {o.method_md}</div>}</td>
+                <td>{label(o.confidence)}</td>
                 <td class="src"><a href={o.source.url}>{o.source.publisher}</a></td>
                 <td class="src">{o.notes ?? ""}</td>
               </tr>
@@ -63,7 +63,7 @@ const ghUrl = `https://github.com/aaronzh91/aitracker/blob/main/data/entities/${
           <p style="margin:6px 0">
             <a href={`/flows/${r.id}`}><strong>→ {entityById[r.to]?.name ?? r.to}</strong></a>
             {" "}<span class="chip dim">{TYPE_LABELS[r.type]}</span> {fmtMoney(r.headline)}
-            {dead(r) && <span class="chip bad">{r.status}</span>}
+            {dead(r) && <span class="chip bad">{label(r.status)}</span>}
           </p>
         ))}
       </div>
@@ -74,7 +74,7 @@ const ghUrl = `https://github.com/aaronzh91/aitracker/blob/main/data/entities/${
           <p style="margin:6px 0">
             <a href={`/flows/${r.id}`}><strong>← {entityById[r.from]?.name ?? r.from}</strong></a>
             {" "}<span class="chip dim">{TYPE_LABELS[r.type]}</span> {fmtMoney(r.headline)}
-            {dead(r) && <span class="chip bad">{r.status}</span>}
+            {dead(r) && <span class="chip bad">{label(r.status)}</span>}
           </p>
         ))}
       </div>
@@ -86,7 +86,7 @@ const ghUrl = `https://github.com/aaronzh91/aitracker/blob/main/data/entities/${
       <h2>Key developments</h2>
       {events.map((ev) => (
         <div class="panel" style="margin-bottom:10px">
-          <strong>{ev.date}</strong> — {ev.title} {ev.impact === "high" && <span class="chip warn">high impact</span>}
+          <strong>{ev.date}</strong> — {ev.title} {ev.impact === "high" && <span class="chip warn">High impact</span>}
           {ev.why_it_matters && <p style="margin:4px 0 0">{ev.why_it_matters}</p>}
           <p class="src" style="margin:4px 0 0">{ev.sources.map((s, i) => <span>{i > 0 && " · "}<a href={s.url}>{s.publisher}</a></span>)}</p>
         </div>

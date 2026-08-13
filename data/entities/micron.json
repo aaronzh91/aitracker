@@ -6,7 +6,12 @@
   "group": "compute_supply_chain",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NASDAQ", "symbol": "MU" }],
+  "tickers": [
+    {
+      "exchange": "NASDAQ",
+      "symbol": "MU"
+    }
+  ],
   "cik": "723125",
   "website": "https://www.micron.com",
   "fiscal_year_end": "08-31",
@@ -23,7 +28,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter", "publisher": "Micron IR", "published": "2026-06", "kind": "company_ir" },
+      "source": {
+        "url": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter",
+        "publisher": "Micron IR",
+        "published": "2026-06",
+        "kind": "company_ir"
+      },
       "as_of": "2026-08-13",
       "notes": "Fiscal Q3 ended May 2026; vs $9.3B a year earlier (~4.5×). HBM sold out through calendar 2026."
     },
@@ -34,7 +44,12 @@
       "unit": "USD_B",
       "basis": "company_claimed",
       "confidence": "high",
-      "source": { "url": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter", "publisher": "Micron IR", "published": "2026-06", "kind": "company_ir" },
+      "source": {
+        "url": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter",
+        "publisher": "Micron IR",
+        "published": "2026-06",
+        "kind": "company_ir"
+      },
       "as_of": "2026-08-13",
       "notes": "~$50B guided at ~86% gross margin — margin guidance far outside memory's historical range."
     },
@@ -45,7 +60,12 @@
       "unit": "pct",
       "basis": "company_claimed",
       "confidence": "high",
-      "source": { "url": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter", "publisher": "Micron IR", "published": "2026-06", "kind": "company_ir" },
+      "source": {
+        "url": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter",
+        "publisher": "Micron IR",
+        "published": "2026-06",
+        "kind": "company_ir"
+      },
       "as_of": "2026-08-13",
       "notes": "Guided; a key sustainability watch-item for the memory super-cycle (see risk notes)."
     },
@@ -57,9 +77,62 @@
       "unit": "pct",
       "basis": "press_reported",
       "confidence": "low",
-      "source": { "url": "https://www.astutegroup.com/news/general/sk-hynix-holds-62-of-hbm-micron-overtakes-samsung-2026-battle-pivots-to-hbm4/", "publisher": "Astute Group", "published": "2026", "kind": "press" },
+      "source": {
+        "url": "https://www.astutegroup.com/news/general/sk-hynix-holds-62-of-hbm-micron-overtakes-samsung-2026-battle-pivots-to-hbm4/",
+        "publisher": "Astute Group",
+        "published": "2026",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Share trackers reported Micron overtaking Samsung for #2 in HBM during 2025–26; exact percentage varies by source (shipments vs revenue), so no point value recorded."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "9-month to 2026-05-28 (Q3 FY2026, 10-Q)",
+      "value": 78.96,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000723125/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-06-25",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 9-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "capex",
+      "period": "9-month to 2026-05-28 (Q3 FY2026, 10-Q)",
+      "value": 19.6,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000723125/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-06-25",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 9-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "rpo",
+      "period": "point-in-time to 2026-05-28 (Q3 FY2026, 10-Q)",
+      "value": 5,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000723125/us-gaap/RevenueRemainingPerformanceObligation.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-06-25",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-Q."
     }
   ],
   "events": [
@@ -68,13 +141,31 @@
       "title": "FQ3-2026: revenue $41.5B vs $9.3B a year earlier; FQ4 guided to ~$50B at ~86% GM",
       "why_it_matters": "The single most extreme y/y revenue expansion of the AI cycle among large caps — direct evidence of how much buildout capex is flowing to the HBM/DRAM bottleneck.",
       "impact": "high",
-      "entities": ["micron", "nvidia"],
-      "sources": [{ "url": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter", "publisher": "Micron IR", "published": "2026-06", "kind": "company_ir" }]
+      "entities": [
+        "micron",
+        "nvidia"
+      ],
+      "sources": [
+        {
+          "url": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter",
+          "publisher": "Micron IR",
+          "published": "2026-06",
+          "kind": "company_ir"
+        }
+      ]
     }
   ],
   "sources": [
-    { "url": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter", "publisher": "Micron IR", "kind": "company_ir" },
-    { "url": "https://counterpointresearch.com/en/insights/global-dram-and-hbm-market-share", "publisher": "Counterpoint Research", "kind": "analyst" }
+    {
+      "url": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter",
+      "publisher": "Micron IR",
+      "kind": "company_ir"
+    },
+    {
+      "url": "https://counterpointresearch.com/en/insights/global-dram-and-hbm-market-share",
+      "publisher": "Counterpoint Research",
+      "kind": "analyst"
+    }
   ],
   "updated": "2026-08-13"
 }

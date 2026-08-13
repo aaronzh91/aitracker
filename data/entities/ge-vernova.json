@@ -6,7 +6,12 @@
   "group": "energy",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NYSE", "symbol": "GEV" }],
+  "tickers": [
+    {
+      "exchange": "NYSE",
+      "symbol": "GEV"
+    }
+  ],
   "cik": "1996810",
   "website": "https://www.gevernova.com",
   "fiscal_year_end": "12-31",
@@ -24,7 +29,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.gevernova.com/news/press-releases/ge-vernova-reports-second-quarter-2026-financial-results-raises-2026-financial", "publisher": "GE Vernova", "published": "2026-07-22", "kind": "company_pr" },
+      "source": {
+        "url": "https://www.gevernova.com/news/press-releases/ge-vernova-reports-second-quarter-2026-financial-results-raises-2026-financial",
+        "publisher": "GE Vernova",
+        "published": "2026-07-22",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "Equipment plus long-term services backlog across Power, Wind, and Electrification; grew on gas-turbine, grid, and data-center-linked demand."
     },
@@ -36,7 +46,12 @@
       "unit": "GW",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.turbomachinerymag.com/view/ge-vernova-gas-turbine-backlog-hits-116-gw-as-power-orders-more-than-double", "publisher": "Turbomachinery Magazine", "published": "2026-07", "kind": "press" },
+      "source": {
+        "url": "https://www.turbomachinerymag.com/view/ge-vernova-gas-turbine-backlog-hits-116-gw-as-power-orders-more-than-double",
+        "publisher": "Turbomachinery Magazine",
+        "published": "2026-07",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Up from 100GW in Q1 2026; ~5 years of output at current capacity. Equipment backlog 53GW + slot reservations 63GW. Company expects >=125GW under contract by end-2026."
     },
@@ -48,7 +63,12 @@
       "unit": "GW",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.gevernova.com/news/press-releases/ge-vernova-reports-second-quarter-2026-financial-results-raises-2026-financial", "publisher": "GE Vernova", "published": "2026-07-22", "kind": "company_pr" },
+      "source": {
+        "url": "https://www.gevernova.com/news/press-releases/ge-vernova-reports-second-quarter-2026-financial-results-raises-2026-financial",
+        "publisher": "GE Vernova",
+        "published": "2026-07-22",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "18GW slot-reservation agreements + 2GW firm orders; separately converted 10GW of earlier reservations into firm orders and shipped 3GW."
     },
@@ -60,9 +80,62 @@
       "unit": "pct",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.turbomachinerymag.com/view/ge-vernova-gas-turbine-backlog-hits-116-gw-as-power-orders-more-than-double", "publisher": "Turbomachinery Magazine", "published": "2026-07", "kind": "press" },
+      "source": {
+        "url": "https://www.turbomachinerymag.com/view/ge-vernova-gas-turbine-backlog-hits-116-gw-as-power-orders-more-than-double",
+        "publisher": "Turbomachinery Magazine",
+        "published": "2026-07",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Understates true AI exposure: much of the remainder is utility orders driven by data-center load growth."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "6-month to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 20.44,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001996810/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-22",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "capex",
+      "period": "6-month to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 0.78,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001996810/us-gaap/PaymentsToAcquireProductiveAssets.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-22",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquireProductiveAssets; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "rpo",
+      "period": "point-in-time to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 176.28,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001996810/us-gaap/RevenueRemainingPerformanceObligation.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-22",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-Q."
     }
   ],
   "events": [
@@ -71,17 +144,41 @@
       "title": "Q2 2026: gas-turbine book hits 116GW, total backlog ~$176B; raises 2026 guidance",
       "why_it_matters": "The clearest physical evidence that power generation is a multi-year bottleneck for the AI buildout — five years of turbine output is already spoken for, and buyers are paying fees just to hold places in line.",
       "impact": "high",
-      "entities": ["ge-vernova"],
+      "entities": [
+        "ge-vernova"
+      ],
       "sources": [
-        { "url": "https://www.gevernova.com/news/press-releases/ge-vernova-reports-second-quarter-2026-financial-results-raises-2026-financial", "publisher": "GE Vernova", "published": "2026-07-22", "kind": "company_pr" },
-        { "url": "https://www.utilitydive.com/news/ge-vernova-gas-turbine-backlog-climbs-to-116-gw/826039/", "publisher": "Utility Dive", "published": "2026-07", "kind": "press" }
+        {
+          "url": "https://www.gevernova.com/news/press-releases/ge-vernova-reports-second-quarter-2026-financial-results-raises-2026-financial",
+          "publisher": "GE Vernova",
+          "published": "2026-07-22",
+          "kind": "company_pr"
+        },
+        {
+          "url": "https://www.utilitydive.com/news/ge-vernova-gas-turbine-backlog-climbs-to-116-gw/826039/",
+          "publisher": "Utility Dive",
+          "published": "2026-07",
+          "kind": "press"
+        }
       ]
     }
   ],
   "sources": [
-    { "url": "https://www.gevernova.com/news/press-releases/ge-vernova-reports-second-quarter-2026-financial-results-raises-2026-financial", "publisher": "GE Vernova", "kind": "company_pr" },
-    { "url": "https://www.turbomachinerymag.com/view/ge-vernova-gas-turbine-backlog-hits-116-gw-as-power-orders-more-than-double", "publisher": "Turbomachinery Magazine", "kind": "press" },
-    { "url": "https://www.utilitydive.com/news/ge-vernova-gas-turbine-backlog-climbs-to-116-gw/826039/", "publisher": "Utility Dive", "kind": "press" }
+    {
+      "url": "https://www.gevernova.com/news/press-releases/ge-vernova-reports-second-quarter-2026-financial-results-raises-2026-financial",
+      "publisher": "GE Vernova",
+      "kind": "company_pr"
+    },
+    {
+      "url": "https://www.turbomachinerymag.com/view/ge-vernova-gas-turbine-backlog-hits-116-gw-as-power-orders-more-than-double",
+      "publisher": "Turbomachinery Magazine",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.utilitydive.com/news/ge-vernova-gas-turbine-backlog-climbs-to-116-gw/826039/",
+      "publisher": "Utility Dive",
+      "kind": "press"
+    }
   ],
   "updated": "2026-08-13"
 }

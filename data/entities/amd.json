@@ -6,7 +6,12 @@
   "group": "compute_supply_chain",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NASDAQ", "symbol": "AMD" }],
+  "tickers": [
+    {
+      "exchange": "NASDAQ",
+      "symbol": "AMD"
+    }
+  ],
   "cik": "2488",
   "website": "https://www.amd.com",
   "fiscal_year_end": "12-31",
@@ -23,7 +28,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results", "publisher": "AMD IR", "published": "2026-08-04", "kind": "company_ir" },
+      "source": {
+        "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+        "publisher": "AMD IR",
+        "published": "2026-08-04",
+        "kind": "company_ir"
+      },
       "as_of": "2026-08-13",
       "notes": "Record; +50% y/y. Non-GAAP EPS $1.66; GAAP net income $2.3B. Q3 guide $12.7–13.3B (~+41% y/y)."
     },
@@ -35,7 +45,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results", "publisher": "AMD IR", "published": "2026-08-04", "kind": "company_ir" },
+      "source": {
+        "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+        "publisher": "AMD IR",
+        "published": "2026-08-04",
+        "kind": "company_ir"
+      },
       "as_of": "2026-08-13",
       "notes": "+107% y/y on EPYC and Instinct; 58% of total revenue."
     },
@@ -47,7 +62,12 @@
       "unit": "shares_M",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://ir.amd.com/news-events/press-releases/detail/1260/amd-and-openai-announce-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus", "publisher": "AMD IR", "published": "2025-10-06", "kind": "company_pr" },
+      "source": {
+        "url": "https://ir.amd.com/news-events/press-releases/detail/1260/amd-and-openai-announce-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus",
+        "publisher": "AMD IR",
+        "published": "2025-10-06",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "Exercise price $0.01/share; tranches vest as OpenAI deployments scale from 1GW to 6GW and on AMD share-price/stock-performance milestones. Vested value is booked as contra-revenue (see FY2025 10-K)."
     },
@@ -59,9 +79,62 @@
       "unit": "USD_B",
       "basis": "company_claimed",
       "confidence": "medium",
-      "source": { "url": "https://ir.amd.com/news-events/press-releases/detail/1250/amd-and-humain-form-strategic-10b-collaboration-to-advance-global-ai", "publisher": "AMD IR", "published": "2025-05-13", "kind": "company_pr" },
+      "source": {
+        "url": "https://ir.amd.com/news-events/press-releases/detail/1250/amd-and-humain-form-strategic-10b-collaboration-to-advance-global-ai",
+        "publisher": "AMD IR",
+        "published": "2025-05-13",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "Up to 500MW of AI compute over five years initially; separate Humain–AMD–Cisco JV targets 1GW by 2030. Realized dollars undisclosed."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "6-month to 2026-06-27 (Q2 FY2026, 10-Q)",
+      "value": 21.79,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000002488/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-08-05",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "capex",
+      "period": "6-month to 2026-06-27 (Q2 FY2026, 10-Q)",
+      "value": 1.2,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000002488/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-08-05",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "rpo",
+      "period": "point-in-time to 2026-06-27 (Q2 FY2026, 10-Q)",
+      "value": 0.22,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000002488/us-gaap/RevenueRemainingPerformanceObligation.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-08-05",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-Q."
     }
   ],
   "events": [
@@ -70,10 +143,23 @@
       "title": "OpenAI partnership: 6GW of Instinct GPUs, warrant for up to 160M AMD shares",
       "why_it_matters": "AMD's largest-ever AI win; first 1GW of MI450 deploys 2H 2026. The $0.01 warrant with milestone vesting is the canonical warrant-for-revenue structure and is accounted for as contra-revenue.",
       "impact": "high",
-      "entities": ["amd", "openai"],
+      "entities": [
+        "amd",
+        "openai"
+      ],
       "sources": [
-        { "url": "https://ir.amd.com/news-events/press-releases/detail/1260/amd-and-openai-announce-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus", "publisher": "AMD IR", "published": "2025-10-06", "kind": "company_pr" },
-        { "url": "https://www.tomshardware.com/pc-components/gpus/openai-signs-6gw-amd-gpu-deal", "publisher": "Tom's Hardware", "published": "2025-10", "kind": "press" }
+        {
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1260/amd-and-openai-announce-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus",
+          "publisher": "AMD IR",
+          "published": "2025-10-06",
+          "kind": "company_pr"
+        },
+        {
+          "url": "https://www.tomshardware.com/pc-components/gpus/openai-signs-6gw-amd-gpu-deal",
+          "publisher": "Tom's Hardware",
+          "published": "2025-10",
+          "kind": "press"
+        }
       ]
     },
     {
@@ -81,23 +167,62 @@
       "title": "AMD to invest up to $5B in Anthropic as part of a compute deal",
       "why_it_matters": "AMD adopts the Nvidia playbook of equity-seeding a lab customer — investment and GPU purchases flow in a loop (equity_for_revenue pattern).",
       "impact": "high",
-      "entities": ["amd", "anthropic"],
-      "sources": [{ "url": "https://www.cnbc.com/2026/07/22/amd-anthropic-ai-chip-investment.html", "publisher": "CNBC", "published": "2026-07-22", "kind": "press" }]
+      "entities": [
+        "amd",
+        "anthropic"
+      ],
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2026/07/22/amd-anthropic-ai-chip-investment.html",
+          "publisher": "CNBC",
+          "published": "2026-07-22",
+          "kind": "press"
+        }
+      ]
     },
     {
       "date": "2025-03-31",
       "title": "Completes $4.9B ZT Systems acquisition",
       "why_it_matters": "Gave AMD rack-scale systems design needed to sell full AI racks (Helios) rather than chips; manufacturing arm resold to Sanmina for ~$3B (reported, unverified detail).",
       "impact": "medium",
-      "entities": ["amd"],
-      "sources": [{ "url": "https://www.amd.com/en/newsroom/press-releases/2025-3-31-amd-completes-acquisition-of-zt-systems.html", "publisher": "AMD", "published": "2025-03-31", "kind": "company_pr" }]
+      "entities": [
+        "amd"
+      ],
+      "sources": [
+        {
+          "url": "https://www.amd.com/en/newsroom/press-releases/2025-3-31-amd-completes-acquisition-of-zt-systems.html",
+          "publisher": "AMD",
+          "published": "2025-03-31",
+          "kind": "company_pr"
+        }
+      ]
     }
   ],
   "sources": [
-    { "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results", "publisher": "AMD IR", "kind": "company_ir" },
-    { "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm", "publisher": "SEC / AMD 10-K FY2025", "published": "2026", "kind": "sec_filing", "notes": "Warrant accounting (contra-revenue) and ZT Systems treatment." },
-    { "url": "https://openai.com/index/openai-amd-strategic-partnership/", "publisher": "OpenAI", "published": "2025-10-06", "kind": "company_pr" },
-    { "url": "https://www.cnbc.com/2026/07/22/amd-anthropic-ai-chip-investment.html", "publisher": "CNBC", "published": "2026-07-22", "kind": "press" }
+    {
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+      "publisher": "AMD IR",
+      "kind": "company_ir"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm",
+      "publisher": "SEC / AMD 10-K FY2025",
+      "published": "2026",
+      "kind": "sec_filing",
+      "notes": "Warrant accounting (contra-revenue) and ZT Systems treatment."
+    },
+    {
+      "url": "https://openai.com/index/openai-amd-strategic-partnership/",
+      "publisher": "OpenAI",
+      "published": "2025-10-06",
+      "kind": "company_pr"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/07/22/amd-anthropic-ai-chip-investment.html",
+      "publisher": "CNBC",
+      "published": "2026-07-22",
+      "kind": "press"
+    }
   ],
   "updated": "2026-08-13"
 }

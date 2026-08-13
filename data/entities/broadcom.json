@@ -6,7 +6,12 @@
   "group": "compute_supply_chain",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NASDAQ", "symbol": "AVGO" }],
+  "tickers": [
+    {
+      "exchange": "NASDAQ",
+      "symbol": "AVGO"
+    }
+  ],
   "cik": "1730168",
   "website": "https://www.broadcom.com",
   "fiscal_year_end": "10-31",
@@ -23,7 +28,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.prnewswire.com/news-releases/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial-results-and-quarterly-dividend-302790698.html", "publisher": "Broadcom IR (PR Newswire)", "published": "2026-06-03", "kind": "company_ir" },
+      "source": {
+        "url": "https://www.prnewswire.com/news-releases/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial-results-and-quarterly-dividend-302790698.html",
+        "publisher": "Broadcom IR (PR Newswire)",
+        "published": "2026-06-03",
+        "kind": "company_ir"
+      },
       "as_of": "2026-08-13",
       "notes": "+48% y/y. Q3 guide ~$29.4B (+84% y/y), non-GAAP operating margin ~67%."
     },
@@ -34,7 +44,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.prnewswire.com/news-releases/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial-results-and-quarterly-dividend-302790698.html", "publisher": "Broadcom IR (PR Newswire)", "published": "2026-06-03", "kind": "company_ir" },
+      "source": {
+        "url": "https://www.prnewswire.com/news-releases/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial-results-and-quarterly-dividend-302790698.html",
+        "publisher": "Broadcom IR (PR Newswire)",
+        "published": "2026-06-03",
+        "kind": "company_ir"
+      },
       "as_of": "2026-08-13",
       "notes": "AI semiconductor revenue, +143% y/y, above forecast; Q3 guided to $16.0B (+200%+ y/y)."
     },
@@ -45,7 +60,12 @@
       "unit": "USD_B",
       "basis": "company_claimed",
       "confidence": "high",
-      "source": { "url": "https://www.cnbc.com/2026/06/03/broadcom-avgo-earnings-report-q2-2026.html", "publisher": "CNBC", "published": "2026-06-03", "kind": "press" },
+      "source": {
+        "url": "https://www.cnbc.com/2026/06/03/broadcom-avgo-earnings-report-q2-2026.html",
+        "publisher": "CNBC",
+        "published": "2026-06-03",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Reiterated (not raised) at Q2 FY26 results — shares fell on the unchanged forecast plus weak software sales."
     },
@@ -56,9 +76,62 @@
       "unit": "USD_B",
       "basis": "company_claimed",
       "confidence": "medium",
-      "source": { "url": "https://finance.yahoo.com/markets/stocks/articles/analyst-thoughts-broadcom-ai-revenue-095947786.html", "publisher": "Yahoo Finance", "published": "2026", "kind": "press" },
+      "source": {
+        "url": "https://finance.yahoo.com/markets/stocks/articles/analyst-thoughts-broadcom-ai-revenue-095947786.html",
+        "publisher": "Yahoo Finance",
+        "published": "2026",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "'In excess of $100B' FY2027 AI semiconductor revenue target, reiterated alongside the FY26 guide; depends on OpenAI/Anthropic deployment schedules."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "6-month to 2026-05-03 (Q2 FY2026, 10-Q)",
+      "value": 41.5,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001730168/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-06-09",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "capex",
+      "period": "6-month to 2026-05-03 (Q2 FY2026, 10-Q)",
+      "value": 0.48,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001730168/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-06-09",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "rpo",
+      "period": "point-in-time to 2026-05-03 (Q2 FY2026, 10-Q)",
+      "value": 164.6,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001730168/us-gaap/RevenueRemainingPerformanceObligation.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-06-09",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-Q."
     }
   ],
   "events": [
@@ -67,18 +140,42 @@
       "title": "OpenAI and Broadcom announce 10GW custom-accelerator collaboration",
       "why_it_matters": "OpenAI commits to co-developed Broadcom ASICs (racks deploying 2026–2029) — the largest custom-silicon program announced, and the backbone of Broadcom's FY27 >$100B AI target.",
       "impact": "high",
-      "entities": ["broadcom", "openai"],
-      "sources": [{ "url": "https://openai.com/index/openai-and-broadcom-announce-strategic-collaboration/", "publisher": "OpenAI", "published": "2025-10-13", "kind": "company_pr" }]
+      "entities": [
+        "broadcom",
+        "openai"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/openai-and-broadcom-announce-strategic-collaboration/",
+          "publisher": "OpenAI",
+          "published": "2025-10-13",
+          "kind": "company_pr"
+        }
+      ]
     },
     {
       "date": "2026-04-07",
       "title": "Anthropic signs for ~3.5GW of Google TPUs supplied via Broadcom from 2027",
       "why_it_matters": "Expands a 1GW 2026 arrangement; Broadcom simultaneously extended its Google TPU development deal to 2031. Anthropic disclosed run-rate revenue >$30B, framing the capacity as demand-backed.",
       "impact": "high",
-      "entities": ["broadcom", "anthropic", "alphabet"],
+      "entities": [
+        "broadcom",
+        "anthropic",
+        "alphabet"
+      ],
       "sources": [
-        { "url": "https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus/", "publisher": "TechCrunch", "published": "2026-04-07", "kind": "press" },
-        { "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute", "publisher": "Anthropic", "published": "2026-04", "kind": "company_pr" }
+        {
+          "url": "https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus/",
+          "publisher": "TechCrunch",
+          "published": "2026-04-07",
+          "kind": "press"
+        },
+        {
+          "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
+          "publisher": "Anthropic",
+          "published": "2026-04",
+          "kind": "company_pr"
+        }
       ]
     },
     {
@@ -86,14 +183,37 @@
       "title": "Q2 FY26: AI revenue +143%, but shares drop on unchanged FY26 AI forecast",
       "why_it_matters": "Demonstrated how much AI growth is already priced in — a reiterated ~$56B AI guide plus soft VMware sales read as a miss.",
       "impact": "medium",
-      "entities": ["broadcom"],
-      "sources": [{ "url": "https://www.cnbc.com/2026/06/03/broadcom-avgo-earnings-report-q2-2026.html", "publisher": "CNBC", "published": "2026-06-03", "kind": "press" }]
+      "entities": [
+        "broadcom"
+      ],
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2026/06/03/broadcom-avgo-earnings-report-q2-2026.html",
+          "publisher": "CNBC",
+          "published": "2026-06-03",
+          "kind": "press"
+        }
+      ]
     }
   ],
   "sources": [
-    { "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial", "publisher": "Broadcom IR", "kind": "company_ir" },
-    { "url": "https://www.datacenterdynamics.com/en/news/broadcom-to-develop-google-tpus-until-2031-anthropic-signs-deal-with-both-companies-for-35gw-of-tpus/", "publisher": "Data Center Dynamics", "published": "2026-04", "kind": "press" },
-    { "url": "https://www.tomshardware.com/tech-industry/broadcom-expands-anthropic-deal-to-3-5gw-of-google-tpu-capacity-from-2027", "publisher": "Tom's Hardware", "published": "2026-04", "kind": "press" }
+    {
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial",
+      "publisher": "Broadcom IR",
+      "kind": "company_ir"
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/broadcom-to-develop-google-tpus-until-2031-anthropic-signs-deal-with-both-companies-for-35gw-of-tpus/",
+      "publisher": "Data Center Dynamics",
+      "published": "2026-04",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/broadcom-expands-anthropic-deal-to-3-5gw-of-google-tpu-capacity-from-2027",
+      "publisher": "Tom's Hardware",
+      "published": "2026-04",
+      "kind": "press"
+    }
   ],
   "updated": "2026-08-13"
 }

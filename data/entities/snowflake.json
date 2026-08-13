@@ -6,7 +6,12 @@
   "group": "software_applications",
   "region": "us",
   "tier": 2,
-  "tickers": [{ "exchange": "NYSE", "symbol": "SNOW" }],
+  "tickers": [
+    {
+      "exchange": "NYSE",
+      "symbol": "SNOW"
+    }
+  ],
   "cik": "1640147",
   "website": "https://www.snowflake.com",
   "fiscal_year_end": "01-31",
@@ -21,14 +26,77 @@
       "unit": "USD_M",
       "basis": "company_claimed",
       "confidence": "medium",
-      "source": { "url": "https://www.snowflake.com/en/news/press-releases/snowflake-and-openAI-forge-200-million-partnership-to-bring-enterprise-ready-ai-to-the-worlds-most-trusted-data-platform/", "publisher": "Snowflake PR", "published": "2026-02", "kind": "company_pr" },
+      "source": {
+        "url": "https://www.snowflake.com/en/news/press-releases/snowflake-and-openAI-forge-200-million-partnership-to-bring-enterprise-ready-ai-to-the-worlds-most-trusted-data-platform/",
+        "publisher": "Snowflake PR",
+        "published": "2026-02",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "$200M multi-year to each lab; terms (duration, minimums) not broken out."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "3-month to 2026-04-30 (Q1 FY2027, 10-Q)",
+      "value": 1.39,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001640147/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-05-29",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 3-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "capex",
+      "period": "3-month to 2026-04-30 (Q1 FY2027, 10-Q)",
+      "value": 0.01,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001640147/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-05-29",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 3-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "rpo",
+      "period": "point-in-time to 2026-04-30 (Q1 FY2027, 10-Q)",
+      "value": 9.2,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001640147/us-gaap/RevenueRemainingPerformanceObligation.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-05-29",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-Q."
     }
   ],
   "sources": [
-    { "url": "https://www.snowflake.com/en/news/press-releases/snowflake-and-anthropic-announce-200-million-partnership-to-bring-agentic-ai-to-global-enterprises/", "publisher": "Snowflake PR", "published": "2025-12", "kind": "company_pr" },
-    { "url": "https://techcrunch.com/2026/02/02/what-snowflakes-deal-with-openai-tells-us-about-the-enterprise-ai-race/", "publisher": "TechCrunch", "published": "2026-02-02", "kind": "press" }
+    {
+      "url": "https://www.snowflake.com/en/news/press-releases/snowflake-and-anthropic-announce-200-million-partnership-to-bring-agentic-ai-to-global-enterprises/",
+      "publisher": "Snowflake PR",
+      "published": "2025-12",
+      "kind": "company_pr"
+    },
+    {
+      "url": "https://techcrunch.com/2026/02/02/what-snowflakes-deal-with-openai-tells-us-about-the-enterprise-ai-race/",
+      "publisher": "TechCrunch",
+      "published": "2026-02-02",
+      "kind": "press"
+    }
   ],
   "updated": "2026-08-13"
 }

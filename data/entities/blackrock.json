@@ -6,7 +6,12 @@
   "group": "capital",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NYSE", "symbol": "BLK" }],
+  "tickers": [
+    {
+      "exchange": "NYSE",
+      "symbol": "BLK"
+    }
+  ],
   "cik": "1364742",
   "website": "https://www.blackrock.com",
   "fiscal_year_end": "12-31",
@@ -23,7 +28,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.prnewswire.com/news-releases/meta-announces-new-strategic-venture-with-blackrock-to-develop-data-center-in-el-paso-302836040.html", "publisher": "Meta / PR Newswire", "published": "2026-07-28", "kind": "company_pr" },
+      "source": {
+        "url": "https://www.prnewswire.com/news-releases/meta-announces-new-strategic-venture-with-blackrock-to-develop-data-center-in-el-paso-302836040.html",
+        "publisher": "Meta / PR Newswire",
+        "published": "2026-07-28",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "BlackRock-managed funds 80% / Meta 20%; Meta contributed ~$2.3B of land and construction-in-progress, BlackRock ~$4.9B cash; Meta received ~$1B one-time distribution; 1GW campus, Meta sole occupant, expected 2028."
     },
@@ -35,7 +45,12 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.bloomberg.com/news/articles/2026-07-27/blackrock-raises-12-5-billion-of-debt-for-meta-data-center", "publisher": "Bloomberg", "published": "2026-07-27", "kind": "press" },
+      "source": {
+        "url": "https://www.bloomberg.com/news/articles/2026-07-27/blackrock-raises-12-5-billion-of-debt-for-meta-data-center",
+        "publisher": "Bloomberg",
+        "published": "2026-07-27",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Priced at a 7.53% yield — among the highest for blue-chip data-center debt this cycle; compare Hyperion's 6.581% (Oct 2025)."
     },
@@ -47,7 +62,12 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "low",
-      "source": { "url": "https://www.bisnow.com/national/news/data-center-capital-markets/meta-pushes-its-largest-data-center-project-off-its-books-with-27b-joint-venture-131490", "publisher": "Bisnow", "published": "2025-10", "kind": "press" },
+      "source": {
+        "url": "https://www.bisnow.com/national/news/data-center-capital-markets/meta-pushes-its-largest-data-center-project-off-its-books-with-27b-joint-venture-131490",
+        "publisher": "Bisnow",
+        "published": "2025-10",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Reported as 'more than $3B' of the $27.3B Beignet notes; allocation detail is from secondary reporting."
     }
@@ -58,30 +78,77 @@
       "title": "GIP/MGX/AIP agree to acquire Aligned Data Centers for $40B",
       "why_it_matters": "The largest data-center acquisition ever — AIP's first flagship deal, converting the BlackRock-led consortium from a fund announcement into an operating platform (>6.4GW operational and planned capacity).",
       "impact": "high",
-      "entities": ["blackrock", "aip", "mgx", "vantage"],
-      "sources": [{ "url": "https://www.cnbc.com/2025/10/15/nvidia-microsoft-blackrock-aligned-data-centers.html", "publisher": "CNBC", "published": "2025-10-15", "kind": "press" }]
+      "entities": [
+        "blackrock",
+        "aip",
+        "mgx",
+        "vantage"
+      ],
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2025/10/15/nvidia-microsoft-blackrock-aligned-data-centers.html",
+          "publisher": "CNBC",
+          "published": "2025-10-15",
+          "kind": "press"
+        }
+      ]
     },
     {
       "date": "2025-10",
       "title": "GIP-led consortium (with EQT) agrees to take AES private",
       "why_it_matters": "Locks a major US power producer into the BlackRock infrastructure complex as data-center power becomes the binding constraint of the buildout.",
       "impact": "medium",
-      "entities": ["blackrock"],
-      "sources": [{ "url": "https://www.aes.com/newsroom/consortium-led-global-infrastructure-partners-and-eqt-agrees-acquire-aes", "publisher": "AES Corporation", "published": "2025-10", "kind": "company_pr" }]
+      "entities": [
+        "blackrock"
+      ],
+      "sources": [
+        {
+          "url": "https://www.aes.com/newsroom/consortium-led-global-infrastructure-partners-and-eqt-agrees-acquire-aes",
+          "publisher": "AES Corporation",
+          "published": "2025-10",
+          "kind": "company_pr"
+        }
+      ]
     },
     {
       "date": "2026-08-10",
       "title": "Joins Nvidia's >$500B customer-financing coalition",
       "why_it_matters": "Adds compute-collateralized SPV lending to BlackRock's equity/debt AI stack — deepening the correlation between its infrastructure marks and Nvidia's demand cycle.",
       "impact": "high",
-      "entities": ["blackrock", "nvidia", "nvidia-financing-coalition"],
-      "sources": [{ "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html", "publisher": "CNBC", "published": "2026-08-10", "kind": "press" }]
+      "entities": [
+        "blackrock",
+        "nvidia",
+        "nvidia-financing-coalition"
+      ],
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html",
+          "publisher": "CNBC",
+          "published": "2026-08-10",
+          "kind": "press"
+        }
+      ]
     }
   ],
   "sources": [
-    { "url": "https://www.prnewswire.com/news-releases/meta-announces-new-strategic-venture-with-blackrock-to-develop-data-center-in-el-paso-302836040.html", "publisher": "Meta / PR Newswire", "published": "2026-07-28", "kind": "company_pr" },
-    { "url": "https://www.global-infra.com/news/ai-infrastructure-partnership-aip-mgx-and-blackrocks-global-infrastructure-partners-gip-to-acquire-all-equity-in-aligned-data-centers/", "publisher": "Global Infrastructure Partners", "published": "2025-10", "kind": "company_pr" },
-    { "url": "https://www.cnbc.com/2026/07/28/meta-blackrock-partner-on-14-billion-el-paso-data-center.html", "publisher": "CNBC", "published": "2026-07-28", "kind": "press" }
+    {
+      "url": "https://www.prnewswire.com/news-releases/meta-announces-new-strategic-venture-with-blackrock-to-develop-data-center-in-el-paso-302836040.html",
+      "publisher": "Meta / PR Newswire",
+      "published": "2026-07-28",
+      "kind": "company_pr"
+    },
+    {
+      "url": "https://www.global-infra.com/news/ai-infrastructure-partnership-aip-mgx-and-blackrocks-global-infrastructure-partners-gip-to-acquire-all-equity-in-aligned-data-centers/",
+      "publisher": "Global Infrastructure Partners",
+      "published": "2025-10",
+      "kind": "company_pr"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/07/28/meta-blackrock-partner-on-14-billion-el-paso-data-center.html",
+      "publisher": "CNBC",
+      "published": "2026-07-28",
+      "kind": "press"
+    }
   ],
   "updated": "2026-08-13"
 }

@@ -1,6 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
-import { bottlenecks, entityById, fmtObsValue } from "../../lib/data.js";
+import { bottlenecks, entityById, fmtObsValue, label } from "../../lib/data.js";
 
 export function getStaticPaths() {
   return bottlenecks.map((b) => ({ params: { id: b.id } }));
@@ -12,7 +12,7 @@ const events = [...(b.events ?? [])].sort((x, y) => (x.date < y.date ? 1 : -1));
 ---
 <Base title={`${b.name} — AI Money Tracker`}>
   <h1>{b.name}</h1>
-  <p><span class={`chip ${statusChip[b.status]}`}>{b.status}</span> <span class="chip dim">{b.group.replaceAll("_", " ")}</span></p>
+  <p><span class={`chip ${statusChip[b.status]}`}>{label(b.status)}</span> <span class="chip dim">{label(b.group)}</span></p>
 
   <section class="prose"><h2>What it is and why it binds</h2><p>{b.description_md}</p></section>
 
@@ -40,10 +40,10 @@ const events = [...(b.events ?? [])].sort((x, y) => (x.date < y.date ? 1 : -1));
           <tbody>
             {b.observations.map((o) => (
               <tr>
-                <td>{o.metric_label ?? o.metric.replaceAll("_", " ")}</td>
+                <td>{o.metric_label ?? label(o.metric)}</td>
                 <td>{o.period}</td>
                 <td class="num"><strong>{fmtObsValue(o)}</strong></td>
-                <td><span class={`basis ${o.basis}`}>{o.basis.replaceAll("_", " ")}</span></td>
+                <td><span class={`basis ${o.basis}`}>{label(o.basis)}</span></td>
                 <td class="src"><a href={o.source.url}>{o.source.publisher}</a></td>
                 <td class="src">{o.notes ?? ""}</td>
               </tr>

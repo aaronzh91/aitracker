@@ -6,7 +6,12 @@
   "group": "physical_infrastructure",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NYSE", "symbol": "PWR" }],
+  "tickers": [
+    {
+      "exchange": "NYSE",
+      "symbol": "PWR"
+    }
+  ],
   "cik": "1050915",
   "website": "https://www.quantaservices.com",
   "fiscal_year_end": "12-31",
@@ -24,7 +29,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.prnewswire.com/news-releases/quanta-services-reports-first-quarter-2026-results-302758147.html", "publisher": "PR Newswire (Quanta Services)", "published": "2026-04", "kind": "company_pr" },
+      "source": {
+        "url": "https://www.prnewswire.com/news-releases/quanta-services-reports-first-quarter-2026-results-302758147.html",
+        "publisher": "PR Newswire (Quanta Services)",
+        "published": "2026-04",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "Record; spans electric power (grid), renewables, and technology/data-center electrical work — not an AI-only figure."
     },
@@ -35,7 +45,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.prnewswire.com/news-releases/quanta-services-reports-first-quarter-2026-results-302758147.html", "publisher": "PR Newswire (Quanta Services)", "published": "2026-04", "kind": "company_pr" },
+      "source": {
+        "url": "https://www.prnewswire.com/news-releases/quanta-services-reports-first-quarter-2026-results-302758147.html",
+        "publisher": "PR Newswire (Quanta Services)",
+        "published": "2026-04",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "vs $6.23B in Q1 2025 (+26% y/y); net income $220.6M; adjusted diluted EPS $2.68 vs $1.78."
     },
@@ -47,9 +62,62 @@
       "unit": "USD_B",
       "basis": "company_claimed",
       "confidence": "high",
-      "source": { "url": "https://www.prnewswire.com/news-releases/quanta-services-reports-first-quarter-2026-results-302758147.html", "publisher": "PR Newswire (Quanta Services)", "published": "2026-04", "kind": "company_pr" },
+      "source": {
+        "url": "https://www.prnewswire.com/news-releases/quanta-services-reports-first-quarter-2026-results-302758147.html",
+        "publisher": "PR Newswire (Quanta Services)",
+        "published": "2026-04",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "Range $34.7–35.2B; adjusted EBITDA $3.49–3.65B; adjusted EPS $13.55–14.25."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "6-month to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 17.43,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001050915/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-30",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "capex",
+      "period": "6-month to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 0.45,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001050915/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-30",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "rpo",
+      "period": "point-in-time to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 33.55,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001050915/us-gaap/RevenueRemainingPerformanceObligation.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-30",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-Q."
     }
   ],
   "events": [
@@ -58,13 +126,30 @@
       "title": "Q1 2026: record $48.5B backlog, raises full-year outlook",
       "why_it_matters": "The largest backlog of any pure-play electrical contractor — a direct measure of how much grid and data-center electrical work is queued behind the AI buildout's labor bottleneck.",
       "impact": "high",
-      "entities": ["quanta-services"],
-      "sources": [{ "url": "https://www.prnewswire.com/news-releases/quanta-services-reports-first-quarter-2026-results-302758147.html", "publisher": "PR Newswire (Quanta Services)", "published": "2026-04", "kind": "company_pr" }]
+      "entities": [
+        "quanta-services"
+      ],
+      "sources": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/quanta-services-reports-first-quarter-2026-results-302758147.html",
+          "publisher": "PR Newswire (Quanta Services)",
+          "published": "2026-04",
+          "kind": "company_pr"
+        }
+      ]
     }
   ],
   "sources": [
-    { "url": "https://www.prnewswire.com/news-releases/quanta-services-reports-first-quarter-2026-results-302758147.html", "publisher": "PR Newswire (Quanta Services)", "kind": "company_pr" },
-    { "url": "https://investors.quantaservices.com/news-events/press-releases/detail/396/quanta-services-reports-first-quarter-2026-results", "publisher": "Quanta Services IR", "kind": "company_ir" }
+    {
+      "url": "https://www.prnewswire.com/news-releases/quanta-services-reports-first-quarter-2026-results-302758147.html",
+      "publisher": "PR Newswire (Quanta Services)",
+      "kind": "company_pr"
+    },
+    {
+      "url": "https://investors.quantaservices.com/news-events/press-releases/detail/396/quanta-services-reports-first-quarter-2026-results",
+      "publisher": "Quanta Services IR",
+      "kind": "company_ir"
+    }
   ],
   "updated": "2026-08-13"
 }

@@ -6,7 +6,12 @@
   "group": "compute_supply_chain",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NASDAQ", "symbol": "INTC" }],
+  "tickers": [
+    {
+      "exchange": "NASDAQ",
+      "symbol": "INTC"
+    }
+  ],
   "cik": "50863",
   "website": "https://www.intel.com",
   "fiscal_year_end": "12-31",
@@ -23,7 +28,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.intc.com/news-events/press-releases/detail/1776/intel-reports-second-quarter-2026-financial-results", "publisher": "Intel IR", "published": "2026-07-30", "kind": "company_ir" },
+      "source": {
+        "url": "https://www.intc.com/news-events/press-releases/detail/1776/intel-reports-second-quarter-2026-financial-results",
+        "publisher": "Intel IR",
+        "published": "2026-07-30",
+        "kind": "company_ir"
+      },
       "as_of": "2026-08-13",
       "notes": "+25.4% y/y — fastest growth since 2011; $1.8B above April guidance midpoint; data center +59% y/y."
     },
@@ -35,7 +45,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.intc.com/news-events/press-releases/detail/1776/intel-reports-second-quarter-2026-financial-results", "publisher": "Intel IR", "published": "2026-07-30", "kind": "company_ir" },
+      "source": {
+        "url": "https://www.intc.com/news-events/press-releases/detail/1776/intel-reports-second-quarter-2026-financial-results",
+        "publisher": "Intel IR",
+        "published": "2026-07-30",
+        "kind": "company_ir"
+      },
       "as_of": "2026-08-13",
       "notes": "Up from $4.4B y/y but at a $2.1B operating loss (−36.2% margin); external foundry revenue only $293M. 18A output ~25% above target, +50% q/q."
     },
@@ -47,7 +62,12 @@
       "unit": "pct",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.techtimes.com/articles/323749/20260810/intel-sells-15b-stock-fund-chip-factory-customers-who-havent-signed.htm", "publisher": "TechTimes", "published": "2026-08-10", "kind": "press" },
+      "source": {
+        "url": "https://www.techtimes.com/articles/323749/20260810/intel-sells-15b-stock-fund-chip-factory-customers-who-havent-signed.htm",
+        "publisher": "TechTimes",
+        "published": "2026-08-10",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "$8.9B, funded by converting CHIPS Act grants into equity (Aug 2025); accompanied by Nvidia $5B private placement and SoftBank $2B."
     },
@@ -59,9 +79,46 @@
       "unit": "USD_B",
       "basis": "company_claimed",
       "confidence": "medium",
-      "source": { "url": "https://finance.yahoo.com/markets/stocks/articles/intel-falls-5-proposed-15b-131920887.html", "publisher": "Yahoo Finance", "published": "2026-08-10", "kind": "press" },
+      "source": {
+        "url": "https://finance.yahoo.com/markets/stocks/articles/intel-falls-5-proposed-15b-131920887.html",
+        "publisher": "Yahoo Finance",
+        "published": "2026-08-10",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Underwritten offering announced Aug 10, 2026 — first public share sale since 1971; proceeds for AI chips and foundry expansion. SPEC originally flagged this plan UNVERIFIED; now confirmed by multiple outlets, though not yet priced/closed."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "6-month to 2026-06-27 (Q2 FY2026, 10-Q)",
+      "value": 29.71,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000050863/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-24",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "capex",
+      "period": "6-month to 2026-06-27 (Q2 FY2026, 10-Q)",
+      "value": 6.19,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000050863/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-24",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
     }
   ],
   "events": [
@@ -70,32 +127,74 @@
       "title": "US government converts CHIPS grants into ~9.9% Intel stake for $8.9B",
       "why_it_matters": "Unprecedented peacetime state equity in a US chipmaker — makes Intel the explicit national-champion foundry and puts the US government inside the AI supply chain's cap table.",
       "impact": "high",
-      "entities": ["intel", "us-government"],
-      "sources": [{ "url": "https://www.techtimes.com/articles/323749/20260810/intel-sells-15b-stock-fund-chip-factory-customers-who-havent-signed.htm", "publisher": "TechTimes", "published": "2026-08-10", "kind": "press" }]
+      "entities": [
+        "intel",
+        "us-government"
+      ],
+      "sources": [
+        {
+          "url": "https://www.techtimes.com/articles/323749/20260810/intel-sells-15b-stock-fund-chip-factory-customers-who-havent-signed.htm",
+          "publisher": "TechTimes",
+          "published": "2026-08-10",
+          "kind": "press"
+        }
+      ]
     },
     {
       "date": "2025-09",
       "title": "Nvidia invests $5B in Intel; co-development partnership announced",
       "why_it_matters": "Nvidia equity-seeds its own potential second-source foundry and x86 partner — a supplier-side example of Nvidia financing its ecosystem (SoftBank added $2B in Aug 2025).",
       "impact": "high",
-      "entities": ["intel", "nvidia", "softbank"],
-      "sources": [{ "url": "https://nvidianews.nvidia.com/news/nvidia-and-intel-to-develop-ai-infrastructure-and-personal-computing-products", "publisher": "NVIDIA IR", "published": "2025-09", "kind": "company_pr" }]
+      "entities": [
+        "intel",
+        "nvidia",
+        "softbank"
+      ],
+      "sources": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-intel-to-develop-ai-infrastructure-and-personal-computing-products",
+          "publisher": "NVIDIA IR",
+          "published": "2025-09",
+          "kind": "company_pr"
+        }
+      ]
     },
     {
       "date": "2026-08-10",
       "title": "Intel announces $15B underwritten public stock offering",
       "why_it_matters": "Funds AI-chip and foundry expansion ahead of signed external demand; shares fell ~5%. Some analysts argued Intel should have raised far more while AI-linked equity is cheap.",
       "impact": "high",
-      "entities": ["intel"],
+      "entities": [
+        "intel"
+      ],
       "sources": [
-        { "url": "https://finance.yahoo.com/markets/stocks/articles/intel-falls-5-proposed-15b-131920887.html", "publisher": "Yahoo Finance", "published": "2026-08-10", "kind": "press" },
-        { "url": "https://www.hngn.com/articles/272688/20260810/intel-plans-15-billion-stock-sale-fund-ai-chip-foundry-expansion.htm", "publisher": "HNGN", "published": "2026-08-10", "kind": "press" }
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/intel-falls-5-proposed-15b-131920887.html",
+          "publisher": "Yahoo Finance",
+          "published": "2026-08-10",
+          "kind": "press"
+        },
+        {
+          "url": "https://www.hngn.com/articles/272688/20260810/intel-plans-15-billion-stock-sale-fund-ai-chip-foundry-expansion.htm",
+          "publisher": "HNGN",
+          "published": "2026-08-10",
+          "kind": "press"
+        }
       ]
     }
   ],
   "sources": [
-    { "url": "https://www.intc.com/news-events/press-releases/detail/1776/intel-reports-second-quarter-2026-financial-results", "publisher": "Intel IR", "kind": "company_ir" },
-    { "url": "https://www.datacenterdynamics.com/en/news/intel-posts-fastest-yoy-growth-since-2011-with-q2-2026-revenue-totaling-161bn/", "publisher": "Data Center Dynamics", "published": "2026-07", "kind": "press" }
+    {
+      "url": "https://www.intc.com/news-events/press-releases/detail/1776/intel-reports-second-quarter-2026-financial-results",
+      "publisher": "Intel IR",
+      "kind": "company_ir"
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/intel-posts-fastest-yoy-growth-since-2011-with-q2-2026-revenue-totaling-161bn/",
+      "publisher": "Data Center Dynamics",
+      "published": "2026-07",
+      "kind": "press"
+    }
   ],
   "updated": "2026-08-13"
 }

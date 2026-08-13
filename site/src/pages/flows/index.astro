@@ -1,6 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
-import { relationships, entityById, fmtMoney, TYPE_LABELS, FLAG_LABELS } from "../../lib/data.js";
+import { relationships, entityById, fmtMoney, label, TYPE_LABELS, FLAG_LABELS } from "../../lib/data.js";
 const rows = [...relationships].sort((a, b) => (b.headline?.value ?? 0) - (a.headline?.value ?? 0));
 const dead = (r) => ["dead", "cancelled", "withdrawn", "failed"].includes(r.status);
 ---
@@ -19,7 +19,7 @@ const dead = (r) => ["dead", "cancelled", "withdrawn", "failed"].includes(r.stat
             <td><span class="chip dim">{TYPE_LABELS[r.type]}</span></td>
             <td class="num">{fmtMoney(r.headline)}</td>
             <td class="num">{r.realized_to_date ? fmtMoney(r.realized_to_date) : "—"}</td>
-            <td>{dead(r) ? <span class="chip bad">{r.status}</span> : <span class="chip dim">{r.status}</span>}</td>
+            <td>{dead(r) ? <span class="chip bad">{label(r.status)}</span> : <span class="chip dim">{label(r.status)}</span>}</td>
             <td>{(r.accounting?.flags ?? []).map((f) => <span class="chip warn" style="margin-right:4px">{FLAG_LABELS[f] ?? f}</span>)}</td>
           </tr>
         ))}

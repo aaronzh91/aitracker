@@ -6,7 +6,12 @@
   "group": "software_applications",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NYSE", "symbol": "CRM" }],
+  "tickers": [
+    {
+      "exchange": "NYSE",
+      "symbol": "CRM"
+    }
+  ],
   "cik": "1108524",
   "website": "https://www.salesforce.com",
   "fiscal_year_end": "01-31",
@@ -24,7 +29,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://finance.yahoo.com/sectors/technology/articles/salesforces-agentforce-arr-tops-1b-150000612.html", "publisher": "Yahoo Finance", "published": "2026-05", "kind": "press" },
+      "source": {
+        "url": "https://finance.yahoo.com/sectors/technology/articles/salesforces-agentforce-arr-tops-1b-150000612.html",
+        "publisher": "Yahoo Finance",
+        "published": "2026-05",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "+205% y/y; crossed the $1B mark during the quarter ended Apr 30, 2026 (reported May 27, 2026); was $500M in Dec 2025."
     },
@@ -36,7 +46,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "medium",
-      "source": { "url": "https://longyield.substack.com/p/salesforce-agentforce-reaches-12b", "publisher": "Long Yield (earnings recap)", "published": "2026-05", "kind": "analyst" },
+      "source": {
+        "url": "https://longyield.substack.com/p/salesforce-agentforce-reaches-12b",
+        "publisher": "Long Yield (earnings recap)",
+        "published": "2026-05",
+        "kind": "analyst"
+      },
       "as_of": "2026-08-13",
       "notes": "Up >200% y/y; includes $1.1B Informatica Cloud ARR — the AI+data stack Salesforce presents as its 'agentic enterprise' number."
     },
@@ -47,9 +62,62 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "medium",
-      "source": { "url": "https://www.cynoteck.com/news/salesforce-q1-fy27-record-revenue-agentforce-2026", "publisher": "Cynoteck (earnings recap)", "published": "2026-05", "kind": "press" },
+      "source": {
+        "url": "https://www.cynoteck.com/news/salesforce-q1-fy27-record-revenue-agentforce-2026",
+        "publisher": "Cynoteck (earnings recap)",
+        "published": "2026-05",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Quarter ended Apr 30, 2026. Subscription & support $10.6B (+14%), including ~$428M from the recently closed $8B Informatica acquisition."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "3-month to 2026-04-30 (Q1 FY2027, 10-Q)",
+      "value": 11.13,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001108524/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-05-28",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 3-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "capex",
+      "period": "3-month to 2026-04-30 (Q1 FY2027, 10-Q)",
+      "value": 0.14,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001108524/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-05-28",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 3-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "rpo",
+      "period": "point-in-time to 2026-04-30 (Q1 FY2027, 10-Q)",
+      "value": 67.9,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001108524/us-gaap/RevenueRemainingPerformanceObligation.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-05-28",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-Q."
     }
   ],
   "events": [
@@ -58,25 +126,60 @@
       "title": "Anthropic partnership: Claude becomes preferred model for regulated industries in Agentforce 360",
       "why_it_matters": "A marquee model-access edge with undisclosed dollar terms: Claude runs inside Salesforce's virtual private cloud via Amazon Bedrock, testing whether 'trust boundary' distribution is worth a premium; deepens the Salesforce-Anthropic-AWS triangle.",
       "impact": "medium",
-      "entities": ["salesforce", "anthropic", "amazon"],
-      "sources": [{ "url": "https://www.salesforce.com/news/press-releases/2025/10/14/anthropic-regulated-industries-partnership-expansion-announcement/", "publisher": "Salesforce", "published": "2025-10-14", "kind": "company_pr" }]
+      "entities": [
+        "salesforce",
+        "anthropic",
+        "amazon"
+      ],
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/press-releases/2025/10/14/anthropic-regulated-industries-partnership-expansion-announcement/",
+          "publisher": "Salesforce",
+          "published": "2025-10-14",
+          "kind": "company_pr"
+        }
+      ]
     },
     {
       "date": "2026-05-27",
       "title": "Q1 FY2027: Agentforce ARR crosses $1B (to $1.2B); Informatica contributes first full quarter",
       "why_it_matters": "The clearest datapoint yet that an incumbent SaaS vendor can build a billion-dollar AI product line — while the market debates whether it offsets seat-model erosion.",
       "impact": "high",
-      "entities": ["salesforce"],
+      "entities": [
+        "salesforce"
+      ],
       "sources": [
-        { "url": "https://finance.yahoo.com/sectors/technology/articles/salesforces-agentforce-arr-tops-1b-150000612.html", "publisher": "Yahoo Finance", "published": "2026-05", "kind": "press" },
-        { "url": "https://www.cxtoday.com/contact-center/agentforce-hits-1-billion-arr-ai-agents-customer-service/", "publisher": "CX Today", "published": "2026-05", "kind": "press" }
+        {
+          "url": "https://finance.yahoo.com/sectors/technology/articles/salesforces-agentforce-arr-tops-1b-150000612.html",
+          "publisher": "Yahoo Finance",
+          "published": "2026-05",
+          "kind": "press"
+        },
+        {
+          "url": "https://www.cxtoday.com/contact-center/agentforce-hits-1-billion-arr-ai-agents-customer-service/",
+          "publisher": "CX Today",
+          "published": "2026-05",
+          "kind": "press"
+        }
       ]
     }
   ],
   "sources": [
-    { "url": "https://www.cxtoday.com/contact-center/agentforce-hits-1-billion-arr-ai-agents-customer-service/", "publisher": "CX Today", "kind": "press" },
-    { "url": "https://finance.yahoo.com/sectors/technology/articles/salesforces-agentforce-arr-tops-1b-150000612.html", "publisher": "Yahoo Finance", "kind": "press" },
-    { "url": "https://www.salesforce.com/news/press-releases/2025/10/14/anthropic-regulated-industries-partnership-expansion-announcement/", "publisher": "Salesforce", "kind": "company_pr" }
+    {
+      "url": "https://www.cxtoday.com/contact-center/agentforce-hits-1-billion-arr-ai-agents-customer-service/",
+      "publisher": "CX Today",
+      "kind": "press"
+    },
+    {
+      "url": "https://finance.yahoo.com/sectors/technology/articles/salesforces-agentforce-arr-tops-1b-150000612.html",
+      "publisher": "Yahoo Finance",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.salesforce.com/news/press-releases/2025/10/14/anthropic-regulated-industries-partnership-expansion-announcement/",
+      "publisher": "Salesforce",
+      "kind": "company_pr"
+    }
   ],
   "updated": "2026-08-13"
 }

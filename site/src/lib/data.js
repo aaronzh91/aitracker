@@ -86,6 +86,12 @@ export const FLAG_LABELS = {
   loss_leader_distribution: "Loss-leader distribution",
 };
 
+/** snake_case → "Sentence case" for any label shown to a reader. */
+export const label = (s) => {
+  const t = String(s ?? "").replaceAll("_", " ").trim();
+  return t.charAt(0).toUpperCase() + t.slice(1);
+};
+
 export function fmtMoney(m) {
   if (!m || m.value == null) return m?.caveat ? `undisclosed (${m.caveat})` : "undisclosed";
   const v = m.value;

@@ -1,6 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
-import { relationships, relById, entityById, bottlenecks, fmtMoney, TYPE_LABELS, FLAG_LABELS } from "../../lib/data.js";
+import { relationships, relById, entityById, bottlenecks, fmtMoney, label, TYPE_LABELS, FLAG_LABELS } from "../../lib/data.js";
 
 export function getStaticPaths() {
   return relationships.map((r) => ({ params: { id: r.id } }));
@@ -17,9 +17,9 @@ const ghUrl = `https://github.com/aaronzh91/aitracker/blob/main/data/relationshi
   <h1><a href={`/companies/${r.from}`}>{payer?.name ?? r.from}</a> <span class="flow-dir">→</span> <a href={`/companies/${r.to}`}>{payee?.name ?? r.to}</a></h1>
   <p>
     <span class="chip">{TYPE_LABELS[r.type]}</span>
-    {dead ? <span class="chip bad">{r.status}</span> : <span class="chip dim">{r.status}</span>}
+    {dead ? <span class="chip bad">{label(r.status)}</span> : <span class="chip dim">{label(r.status)}</span>}
     {(r.accounting?.flags ?? []).map((f) => <span class="chip warn">{FLAG_LABELS[f] ?? f}</span>)}
-    {r.accounting?.off_balance_sheet && <span class="chip warn">off balance sheet</span>}
+    {r.accounting?.off_balance_sheet && <span class="chip warn">Off balance sheet</span>}
   </p>
 
   <div class="statrow">

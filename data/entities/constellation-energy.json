@@ -6,7 +6,12 @@
   "group": "energy",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NASDAQ", "symbol": "CEG" }],
+  "tickers": [
+    {
+      "exchange": "NASDAQ",
+      "symbol": "CEG"
+    }
+  ],
   "cik": "1868275",
   "website": "https://www.constellationenergy.com",
   "fiscal_year_end": "12-31",
@@ -24,7 +29,12 @@
       "unit": "MW",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.businesswire.com/news/home/20260805185047/en/Constellation-Reports-Second-Quarter-2026-Results", "publisher": "Business Wire (Constellation)", "published": "2026-08-05", "kind": "company_pr" },
+      "source": {
+        "url": "https://www.businesswire.com/news/home/20260805185047/en/Constellation-Reports-Second-Quarter-2026-Results",
+        "publisher": "Business Wire (Constellation)",
+        "published": "2026-08-05",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "15–20-year terms with investment-grade customers, deliveries starting 2029–2032; includes 176MW Walmart PPA enabling a 30MW Dresden uprate. ~30% of clean baseload output now under long-term contract."
     },
@@ -36,7 +46,12 @@
       "unit": "MW",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html", "publisher": "Constellation", "published": "2024-09-20", "kind": "company_pr" },
+      "source": {
+        "url": "https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html",
+        "publisher": "Constellation",
+        "published": "2024-09-20",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "20-year PPA with Microsoft; first restart of a retired US reactor; online expected 2027–28 pending NRC approval. Price undisclosed."
     },
@@ -48,7 +63,12 @@
       "unit": "MW",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.stocktitan.net/news/CEG/constellation-reports-second-quarter-2026-rtppfjewi2nw.html", "publisher": "StockTitan (Constellation Q2 2026 recap)", "published": "2026-08", "kind": "press" },
+      "source": {
+        "url": "https://www.stocktitan.net/news/CEG/constellation-reports-second-quarter-2026-rtppfjewi2nw.html",
+        "publisher": "StockTitan (Constellation Q2 2026 recap)",
+        "published": "2026-08",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "20-year PPA announced June 3, 2025; begins June 2027 as Illinois zero-emission credit support expires. Price undisclosed."
     },
@@ -60,9 +80,62 @@
       "unit": "GW",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.stocktitan.net/news/CEG/constellation-reports-second-quarter-2026-rtppfjewi2nw.html", "publisher": "StockTitan", "published": "2026-08", "kind": "press" },
+      "source": {
+        "url": "https://www.stocktitan.net/news/CEG/constellation-reports-second-quarter-2026-rtppfjewi2nw.html",
+        "publisher": "StockTitan",
+        "published": "2026-08",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "~22GW nuclear (largest US fleet) plus Calpine gas/geothermal; Calpine acquisition closed in 2026. Aug 2026: agreed to divest the 606MW Brazos Valley gas plant to LS Power for $860M."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "6-month to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 13.38,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001868275/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-08-06",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "capex",
+      "period": "6-month to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 2.52,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001868275/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-08-06",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "rpo",
+      "period": "point-in-time to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 11.86,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001868275/us-gaap/RevenueRemainingPerformanceObligation.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-08-06",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-Q."
     }
   ],
   "events": [
@@ -71,30 +144,71 @@
       "title": "Signs 20-year PPA with Microsoft to restart Three Mile Island Unit 1 as Crane Clean Energy Center",
       "why_it_matters": "The deal that opened the nuclear-for-AI era: a hyperscaler PPA strong enough to bring an entire retired reactor (835MW) back to the grid; price undisclosed.",
       "impact": "high",
-      "entities": ["constellation-energy", "microsoft"],
-      "sources": [{ "url": "https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html", "publisher": "Constellation", "published": "2024-09-20", "kind": "company_pr" }]
+      "entities": [
+        "constellation-energy",
+        "microsoft"
+      ],
+      "sources": [
+        {
+          "url": "https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html",
+          "publisher": "Constellation",
+          "published": "2024-09-20",
+          "kind": "company_pr"
+        }
+      ]
     },
     {
       "date": "2025-06",
       "title": "Meta signs 20-year, 1,121MW PPA for the Clinton Clean Energy Center",
       "why_it_matters": "Replaces expiring state subsidy with hyperscaler demand — a template for corporate money substituting for public support in keeping nuclear plants alive.",
       "impact": "high",
-      "entities": ["constellation-energy", "meta"],
-      "sources": [{ "url": "https://www.stocktitan.net/news/CEG/constellation-reports-second-quarter-2026-rtppfjewi2nw.html", "publisher": "StockTitan (Constellation Q2 2026 recap)", "published": "2026-08", "kind": "press" }]
+      "entities": [
+        "constellation-energy",
+        "meta"
+      ],
+      "sources": [
+        {
+          "url": "https://www.stocktitan.net/news/CEG/constellation-reports-second-quarter-2026-rtppfjewi2nw.html",
+          "publisher": "StockTitan (Constellation Q2 2026 recap)",
+          "published": "2026-08",
+          "kind": "press"
+        }
+      ]
     },
     {
       "date": "2026-08-05",
       "title": "Q2 2026: +920MW of new nuclear PPAs; FY2026 EPS guidance raised to $11.50–12.50",
       "why_it_matters": "Shows nuclear PPA demand broadening beyond the big-three hyperscalers (e.g. Walmart) and the fleet steadily converting from merchant to contracted.",
       "impact": "medium",
-      "entities": ["constellation-energy"],
-      "sources": [{ "url": "https://www.businesswire.com/news/home/20260805185047/en/Constellation-Reports-Second-Quarter-2026-Results", "publisher": "Business Wire (Constellation)", "published": "2026-08-05", "kind": "company_pr" }]
+      "entities": [
+        "constellation-energy"
+      ],
+      "sources": [
+        {
+          "url": "https://www.businesswire.com/news/home/20260805185047/en/Constellation-Reports-Second-Quarter-2026-Results",
+          "publisher": "Business Wire (Constellation)",
+          "published": "2026-08-05",
+          "kind": "company_pr"
+        }
+      ]
     }
   ],
   "sources": [
-    { "url": "https://www.stocktitan.net/news/CEG/constellation-reports-second-quarter-2026-rtppfjewi2nw.html", "publisher": "StockTitan", "kind": "press" },
-    { "url": "https://www.businesswire.com/news/home/20260805185047/en/Constellation-Reports-Second-Quarter-2026-Results", "publisher": "Business Wire (Constellation)", "kind": "company_pr" },
-    { "url": "https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html", "publisher": "Constellation", "kind": "company_pr" }
+    {
+      "url": "https://www.stocktitan.net/news/CEG/constellation-reports-second-quarter-2026-rtppfjewi2nw.html",
+      "publisher": "StockTitan",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20260805185047/en/Constellation-Reports-Second-Quarter-2026-Results",
+      "publisher": "Business Wire (Constellation)",
+      "kind": "company_pr"
+    },
+    {
+      "url": "https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html",
+      "publisher": "Constellation",
+      "kind": "company_pr"
+    }
   ],
   "updated": "2026-08-13"
 }

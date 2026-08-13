@@ -1,0 +1,49 @@
+name: Weekly data refresh
+on:
+  schedule:
+    # Saturday 23:00 UTC = 7pm ET (EDT) — one hour before the editorial session,
+    # so the mechanical refresh + nominations are ready for it.
+    - cron: "0 23 * * 6"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-fund --no-audit
+      - name: EDGAR XBRL refresh (revenue, capex, RPO)
+        run: node scripts/ingest/edgar.mjs
+      - name: Market caps (API Ninjas)
+        env:
+          APININJAS_API_KEY: ${{ secrets.APININJAS_API_KEY }}
+        run: node scripts/ingest/marketdata.mjs
+      - name: News sweep + impact triage (GDELT + OpenRouter)
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: node scripts/ingest/news.mjs
+      - name: Validate + derive
+        run: npm run validate && npm run derive
+      - name: Commit mechanical refresh to main
+        run: |
+          git config user.name "aitracker-bot"
+          git config user.email "actions@github.com"
+          git add data derived
+          if git diff --cached --quiet; then
+            echo "No changes this week."
+          else
+            git commit -m "Weekly mechanical data refresh ($(date -u +%F))
+
+          Auto-merged per GOVERNANCE.md: schema-validated numeric refresh from
+          sources of record (SEC EDGAR XBRL, API Ninjas) plus the triaged news
+          nominations queue for editorial review."
+            git push origin main
+          fi

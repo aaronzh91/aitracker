@@ -6,7 +6,12 @@
   "group": "software_applications",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NASDAQ", "symbol": "AAPL" }],
+  "tickers": [
+    {
+      "exchange": "NASDAQ",
+      "symbol": "AAPL"
+    }
+  ],
   "cik": "320193",
   "website": "https://www.apple.com",
   "fiscal_year_end": "09-30",
@@ -23,7 +28,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.apple.com/newsroom/2025/10/apple-reports-fourth-quarter-results/", "publisher": "Apple", "published": "2025-10", "kind": "company_pr" },
+      "source": {
+        "url": "https://www.apple.com/newsroom/2025/10/apple-reports-fourth-quarter-results/",
+        "publisher": "Apple",
+        "published": "2025-10",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "Fiscal year ended Sep 27, 2025; Q4 FY2025 revenue $102.5B was a September-quarter record."
     },
@@ -31,11 +41,16 @@
       "metric": "other",
       "metric_label": "Annual payment to Google for Gemini-powered Siri",
       "period": "CY2026",
-      "value": 1.0,
+      "value": 1,
       "unit": "USD_B_per_year",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.cnbc.com/2026/01/12/apple-google-ai-siri-gemini.html", "publisher": "CNBC", "published": "2026-01-12", "kind": "press" },
+      "source": {
+        "url": "https://www.cnbc.com/2026/01/12/apple-google-ai-siri-gemini.html",
+        "publisher": "CNBC",
+        "published": "2026-01-12",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "~$1B/yr for a custom 1.2T-parameter Gemini model served through Apple's Private Cloud Compute; price not confirmed by either company. The ChatGPT integration is reportedly cashless."
     },
@@ -46,9 +61,46 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.macrotrends.net/stocks/charts/AAPL/apple/net-change-in-property-plant-equipment", "publisher": "Macrotrends (from Apple 10-K)", "published": "2025-10", "kind": "dataset" },
+      "source": {
+        "url": "https://www.macrotrends.net/stocks/charts/AAPL/apple/net-change-in-property-plant-equipment",
+        "publisher": "Macrotrends (from Apple 10-K)",
+        "published": "2025-10",
+        "kind": "dataset"
+      },
       "as_of": "2026-08-13",
       "notes": "+34.6% y/y but an order of magnitude below Big-4 hyperscaler AI capex (~$130–220B each in 2026 plans). Apple discloses no AI-specific capex; PCC buildout is not broken out."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "9-month to 2026-06-27 (Q3 FY2026, 10-Q)",
+      "value": 364.36,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-31",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 9-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "capex",
+      "period": "9-month to 2026-06-27 (Q3 FY2026, 10-Q)",
+      "value": 6.8,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-31",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 9-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
     }
   ],
   "events": [
@@ -57,10 +109,23 @@
       "title": "Picks Google Gemini (custom 1.2T-parameter model) to power rebuilt Siri, ~$1B/yr",
       "why_it_matters": "The AI era's most-watched model-access deal: the largest consumer platform outsources its assistant's brain to its chief rival for roughly the price of one week of hyperscaler capex — evidence that renting frontier capability can be radically cheaper than building it.",
       "impact": "high",
-      "entities": ["apple", "alphabet"],
+      "entities": [
+        "apple",
+        "alphabet"
+      ],
       "sources": [
-        { "url": "https://www.cnbc.com/2026/01/12/apple-google-ai-siri-gemini.html", "publisher": "CNBC", "published": "2026-01-12", "kind": "press" },
-        { "url": "https://techcrunch.com/2026/01/12/googles-gemini-to-power-apples-ai-features-like-siri/", "publisher": "TechCrunch", "published": "2026-01-12", "kind": "press" }
+        {
+          "url": "https://www.cnbc.com/2026/01/12/apple-google-ai-siri-gemini.html",
+          "publisher": "CNBC",
+          "published": "2026-01-12",
+          "kind": "press"
+        },
+        {
+          "url": "https://techcrunch.com/2026/01/12/googles-gemini-to-power-apples-ai-features-like-siri/",
+          "publisher": "TechCrunch",
+          "published": "2026-01-12",
+          "kind": "press"
+        }
       ]
     },
     {
@@ -68,14 +133,36 @@
       "title": "Announces Apple Intelligence and Private Cloud Compute; ChatGPT integration",
       "why_it_matters": "Set the template for Apple's AI economics: on-device models plus Apple-silicon private cloud, with third-party frontier models (OpenAI, later Google) integrated at little or no cash cost to Apple.",
       "impact": "medium",
-      "entities": ["apple", "openai"],
-      "sources": [{ "url": "https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/", "publisher": "Apple", "published": "2024-06", "kind": "company_pr" }]
+      "entities": [
+        "apple",
+        "openai"
+      ],
+      "sources": [
+        {
+          "url": "https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/",
+          "publisher": "Apple",
+          "published": "2024-06",
+          "kind": "company_pr"
+        }
+      ]
     }
   ],
   "sources": [
-    { "url": "https://www.cnbc.com/2026/01/12/apple-google-ai-siri-gemini.html", "publisher": "CNBC", "kind": "press" },
-    { "url": "https://techcrunch.com/2026/01/12/googles-gemini-to-power-apples-ai-features-like-siri/", "publisher": "TechCrunch", "kind": "press" },
-    { "url": "https://www.apple.com/newsroom/2025/10/apple-reports-fourth-quarter-results/", "publisher": "Apple", "kind": "company_pr" }
+    {
+      "url": "https://www.cnbc.com/2026/01/12/apple-google-ai-siri-gemini.html",
+      "publisher": "CNBC",
+      "kind": "press"
+    },
+    {
+      "url": "https://techcrunch.com/2026/01/12/googles-gemini-to-power-apples-ai-features-like-siri/",
+      "publisher": "TechCrunch",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.apple.com/newsroom/2025/10/apple-reports-fourth-quarter-results/",
+      "publisher": "Apple",
+      "kind": "company_pr"
+    }
   ],
   "updated": "2026-08-13"
 }

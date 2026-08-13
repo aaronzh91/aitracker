@@ -7,8 +7,14 @@
   "region": "china",
   "tier": 1,
   "tickers": [
-    { "exchange": "NYSE", "symbol": "BABA" },
-    { "exchange": "HKEX", "symbol": "9988" }
+    {
+      "exchange": "NYSE",
+      "symbol": "BABA"
+    },
+    {
+      "exchange": "HKEX",
+      "symbol": "9988"
+    }
   ],
   "cik": "1577552",
   "website": "https://www.alibabagroup.com",
@@ -27,7 +33,12 @@
       "unit": "pct",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://data.alibabagroup.com/ecms-files/1532295521/5b1cb883-8d00-4237-a148-6631cc12a5d2/Alibaba%20Group%20Announces%20March%20Quarter%202026%20and%20Fiscal%20Year%202026%20Results.pdf", "publisher": "Alibaba Group IR", "published": "2026-05-13", "kind": "company_ir" },
+      "source": {
+        "url": "https://data.alibabagroup.com/ecms-files/1532295521/5b1cb883-8d00-4237-a148-6631cc12a5d2/Alibaba%20Group%20Announces%20March%20Quarter%202026%20and%20Fiscal%20Year%202026%20Results.pdf",
+        "publisher": "Alibaba Group IR",
+        "published": "2026-05-13",
+        "kind": "company_ir"
+      },
       "as_of": "2026-08-13",
       "notes": "External cloud revenue +40% y/y; AI-related products ~30% of external cloud revenue."
     },
@@ -39,7 +50,12 @@
       "unit": "quarters",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.scmp.com/tech/big-tech/article/3353451/alibaba-ai-revenue-logs-triple-digit-growth-11th-quarter-amid-strategic-reshuffle", "publisher": "South China Morning Post", "published": "2026-05", "kind": "press" },
+      "source": {
+        "url": "https://www.scmp.com/tech/big-tech/article/3353451/alibaba-ai-revenue-logs-triple-digit-growth-11th-quarter-amid-strategic-reshuffle",
+        "publisher": "South China Morning Post",
+        "published": "2026-05",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "AI-related product revenue growing >100% y/y for 11 straight quarters."
     },
@@ -50,9 +66,30 @@
       "unit": "RMB_B",
       "basis": "company_claimed",
       "confidence": "high",
-      "source": { "url": "https://www.scmp.com/tech/big-tech/article/3353451/alibaba-ai-revenue-logs-triple-digit-growth-11th-quarter-amid-strategic-reshuffle", "publisher": "South China Morning Post", "published": "2026-05", "kind": "press" },
+      "source": {
+        "url": "https://www.scmp.com/tech/big-tech/article/3353451/alibaba-ai-revenue-logs-triple-digit-growth-11th-quarter-amid-strategic-reshuffle",
+        "publisher": "South China Morning Post",
+        "published": "2026-05",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "~$53B three-year AI/cloud program announced Feb 2025; CEO Eddie Wu (May 2026): 'We will overshoot the original capex figure.'"
+    },
+    {
+      "metric": "revenue_total",
+      "period": "12-month to 2026-03-31 (FY FY2026, 20-F)",
+      "value": 148.4,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001577552/us-gaap/Revenues.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-05-20",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "Revenues; 12-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 20-F."
     }
   ],
   "events": [
@@ -61,10 +98,22 @@
       "title": "FY2026 results: cloud accelerates (+38%), AI triple-digit streak hits 11 quarters, profit squeezed; capex program to be exceeded",
       "why_it_matters": "The clearest disclosure of China's AI monetization actually converting to revenue — and of its cost: heavy capex plus e-commerce subsidies compressed group profit sharply.",
       "impact": "high",
-      "entities": ["alibaba"],
+      "entities": [
+        "alibaba"
+      ],
       "sources": [
-        { "url": "https://data.alibabagroup.com/ecms-files/1532295521/5b1cb883-8d00-4237-a148-6631cc12a5d2/Alibaba%20Group%20Announces%20March%20Quarter%202026%20and%20Fiscal%20Year%202026%20Results.pdf", "publisher": "Alibaba Group IR", "published": "2026-05-13", "kind": "company_ir" },
-        { "url": "https://finance.yahoo.com/markets/stocks/articles/alibaba-group-holding-baba-down-005133822.html", "publisher": "Yahoo Finance", "published": "2026-05", "kind": "press" }
+        {
+          "url": "https://data.alibabagroup.com/ecms-files/1532295521/5b1cb883-8d00-4237-a148-6631cc12a5d2/Alibaba%20Group%20Announces%20March%20Quarter%202026%20and%20Fiscal%20Year%202026%20Results.pdf",
+          "publisher": "Alibaba Group IR",
+          "published": "2026-05-13",
+          "kind": "company_ir"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/alibaba-group-holding-baba-down-005133822.html",
+          "publisher": "Yahoo Finance",
+          "published": "2026-05",
+          "kind": "press"
+        }
       ]
     },
     {
@@ -72,14 +121,39 @@
       "title": "US extends AI-chip bans to Chinese firms' overseas data centers",
       "why_it_matters": "Closes the offshore loophole Alibaba Cloud's international expansion relied on for access to advanced Nvidia hardware; accelerates the shift to domestic accelerators.",
       "impact": "high",
-      "entities": ["alibaba", "tencent", "bytedance", "us-government"],
-      "sources": [{ "url": "https://www.aljazeera.com/economy/2026/6/1/us-says-ban-on-ai-chip-shipments-applies-to-chinese-firms-outside-china", "publisher": "Al Jazeera", "published": "2026-06-01", "kind": "press" }]
+      "entities": [
+        "alibaba",
+        "tencent",
+        "bytedance",
+        "us-government"
+      ],
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/economy/2026/6/1/us-says-ban-on-ai-chip-shipments-applies-to-chinese-firms-outside-china",
+          "publisher": "Al Jazeera",
+          "published": "2026-06-01",
+          "kind": "press"
+        }
+      ]
     }
   ],
   "sources": [
-    { "url": "https://data.alibabagroup.com/ecms-files/1532295521/5b1cb883-8d00-4237-a148-6631cc12a5d2/Alibaba%20Group%20Announces%20March%20Quarter%202026%20and%20Fiscal%20Year%202026%20Results.pdf", "publisher": "Alibaba Group IR", "kind": "company_ir" },
-    { "url": "https://www.scmp.com/tech/big-tech/article/3353451/alibaba-ai-revenue-logs-triple-digit-growth-11th-quarter-amid-strategic-reshuffle", "publisher": "South China Morning Post", "kind": "press" },
-    { "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-responds-to-reports-that-its-h20-gpu-for-china-is-ending-production-next-gen-b30a-green-light-up-to-the-united-states-government-according-to-ceo-jensen-huang", "publisher": "Tom's Hardware", "kind": "press", "notes": "Export-control frame: H20 ban → 15% USG revenue-share re-license → B30A blocked." }
+    {
+      "url": "https://data.alibabagroup.com/ecms-files/1532295521/5b1cb883-8d00-4237-a148-6631cc12a5d2/Alibaba%20Group%20Announces%20March%20Quarter%202026%20and%20Fiscal%20Year%202026%20Results.pdf",
+      "publisher": "Alibaba Group IR",
+      "kind": "company_ir"
+    },
+    {
+      "url": "https://www.scmp.com/tech/big-tech/article/3353451/alibaba-ai-revenue-logs-triple-digit-growth-11th-quarter-amid-strategic-reshuffle",
+      "publisher": "South China Morning Post",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-responds-to-reports-that-its-h20-gpu-for-china-is-ending-production-next-gen-b30a-green-light-up-to-the-united-states-government-according-to-ceo-jensen-huang",
+      "publisher": "Tom's Hardware",
+      "kind": "press",
+      "notes": "Export-control frame: H20 ban → 15% USG revenue-share re-license → B30A blocked."
+    }
   ],
   "updated": "2026-08-13"
 }

@@ -6,7 +6,12 @@
   "group": "capital",
   "region": "us",
   "tier": 2,
-  "tickers": [{ "exchange": "NYSE", "symbol": "BAC" }],
+  "tickers": [
+    {
+      "exchange": "NYSE",
+      "symbol": "BAC"
+    }
+  ],
   "cik": "70858",
   "website": "https://www.bankofamerica.com",
   "fiscal_year_end": "12-31",
@@ -21,14 +26,45 @@
       "unit": "USD_M",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.bloomberg.com/news/articles/2026-07-08/openai-ipo-bofa-u-turns-on-loan-for-chatgpt-maker-to-secure-role-in-listing", "publisher": "Bloomberg", "published": "2026-07-08", "kind": "press" },
+      "source": {
+        "url": "https://www.bloomberg.com/news/articles/2026-07-08/openai-ipo-bofa-u-turns-on-loan-for-chatgpt-maker-to-secure-role-in-listing",
+        "publisher": "Bloomberg",
+        "published": "2026-07-08",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "First bilateral bank loan to OpenAI; drawn amount undisclosed."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "6-month to 2026-06-30 (Q2 FY2026, 10-Q)",
+      "value": 61.83,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000070858/us-gaap/Revenues.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-07-31",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "Revenues; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
     }
   ],
   "sources": [
-    { "url": "https://www.bloomberg.com/news/articles/2026-07-08/openai-ipo-bofa-u-turns-on-loan-for-chatgpt-maker-to-secure-role-in-listing", "publisher": "Bloomberg", "published": "2026-07-08", "kind": "press" },
-    { "url": "https://www.theinformation.com/briefings/bofa-extends-520-million-loan-openai", "publisher": "The Information", "published": "2026-07", "kind": "press" }
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-07-08/openai-ipo-bofa-u-turns-on-loan-for-chatgpt-maker-to-secure-role-in-listing",
+      "publisher": "Bloomberg",
+      "published": "2026-07-08",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.theinformation.com/briefings/bofa-extends-520-million-loan-openai",
+      "publisher": "The Information",
+      "published": "2026-07",
+      "kind": "press"
+    }
   ],
   "updated": "2026-08-13"
 }

@@ -6,7 +6,12 @@
   "group": "compute_supply_chain",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NASDAQ", "symbol": "NVDA" }],
+  "tickers": [
+    {
+      "exchange": "NASDAQ",
+      "symbol": "NVDA"
+    }
+  ],
   "cik": "1045810",
   "website": "https://www.nvidia.com",
   "fiscal_year_end": "01-31",
@@ -23,7 +28,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26cfocommentary.htm", "publisher": "SEC / NVIDIA CFO commentary", "published": "2026-02", "kind": "sec_filing" },
+      "source": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26cfocommentary.htm",
+        "publisher": "SEC / NVIDIA CFO commentary",
+        "published": "2026-02",
+        "kind": "sec_filing"
+      },
       "as_of": "2026-08-13",
       "notes": "Fiscal year ended late Jan 2026; +65% y/y."
     },
@@ -34,7 +44,12 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027", "publisher": "NVIDIA IR", "published": "2026-05", "kind": "company_ir" },
+      "source": {
+        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027",
+        "publisher": "NVIDIA IR",
+        "published": "2026-05",
+        "kind": "company_ir"
+      },
       "as_of": "2026-08-13",
       "notes": "+85% y/y; data center $75.2B; GAAP net income $58.3B; Q2 guide ~$91B."
     },
@@ -45,7 +60,12 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.fool.com/research/largest-companies-by-market-cap/", "publisher": "Motley Fool", "published": "2026-08", "kind": "press" },
+      "source": {
+        "url": "https://www.fool.com/research/largest-companies-by-market-cap/",
+        "publisher": "Motley Fool",
+        "published": "2026-08",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "~16% below May 2026 peak (~$1T of market cap retraced). Sources range $5.0–5.4T; automated feed replaces this in Phase 2."
     },
@@ -57,9 +77,62 @@
       "unit": "pct",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://daloopa.com/blog/analyst-pov/nvidia-customer-concentration-a-big-4-earnings-preview", "publisher": "Daloopa (from 10-Q)", "published": "2026-06", "kind": "analyst" },
+      "source": {
+        "url": "https://daloopa.com/blog/analyst-pov/nvidia-customer-concentration-a-big-4-earnings-preview",
+        "publisher": "Daloopa (from 10-Q)",
+        "published": "2026-06",
+        "kind": "analyst"
+      },
       "as_of": "2026-08-13",
       "notes": "Four direct customers each >10% of revenue."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "3-month to 2026-04-26 (Q1 FY2027, 10-Q)",
+      "value": 81.61,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001045810/us-gaap/Revenues.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-05-20",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "Revenues; 3-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "capex",
+      "period": "3-month to 2026-04-26 (Q1 FY2027, 10-Q)",
+      "value": 1.76,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001045810/us-gaap/PaymentsToAcquireProductiveAssets.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-05-20",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "PaymentsToAcquireProductiveAssets; 3-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "rpo",
+      "period": "point-in-time to 2026-04-26 (Q1 FY2027, 10-Q)",
+      "value": 2.6,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001045810/us-gaap/RevenueRemainingPerformanceObligation.json",
+        "publisher": "SEC EDGAR (XBRL)",
+        "published": "2026-05-20",
+        "kind": "sec_filing"
+      },
+      "as_of": "2026-08-13",
+      "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-Q."
     }
   ],
   "events": [
@@ -68,13 +141,37 @@
       "title": "Announces >$500B customer-financing coalition with six financial giants",
       "why_it_matters": "Formalizes compute-as-collateral SPV financing for NVIDIA customers at systemic scale; NVDA fell ~2.5% on concentration-risk concerns.",
       "impact": "high",
-      "entities": ["nvidia", "apollo", "blackstone", "blackrock", "brookfield", "goldman-sachs", "kkr"],
-      "sources": [{ "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html", "publisher": "CNBC", "published": "2026-08-10", "kind": "press" }]
+      "entities": [
+        "nvidia",
+        "apollo",
+        "blackstone",
+        "blackrock",
+        "brookfield",
+        "goldman-sachs",
+        "kkr"
+      ],
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html",
+          "publisher": "CNBC",
+          "published": "2026-08-10",
+          "kind": "press"
+        }
+      ]
     }
   ],
   "sources": [
-    { "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027", "publisher": "NVIDIA IR", "kind": "company_ir" },
-    { "url": "https://www.cnbc.com/2026/05/09/nvidia-embraces-ai-investor-topping-40-billion-in-equity-bets-2026.html", "publisher": "CNBC", "published": "2026-05-09", "kind": "press" }
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027",
+      "publisher": "NVIDIA IR",
+      "kind": "company_ir"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/05/09/nvidia-embraces-ai-investor-topping-40-billion-in-equity-bets-2026.html",
+      "publisher": "CNBC",
+      "published": "2026-05-09",
+      "kind": "press"
+    }
   ],
   "updated": "2026-08-13"
 }

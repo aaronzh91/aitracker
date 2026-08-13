@@ -6,7 +6,12 @@
   "group": "capital",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NYSE", "symbol": "MS" }],
+  "tickers": [
+    {
+      "exchange": "NYSE",
+      "symbol": "MS"
+    }
+  ],
   "cik": "895421",
   "website": "https://www.morganstanley.com",
   "fiscal_year_end": "12-31",
@@ -23,7 +28,12 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "high",
-      "source": { "url": "https://www.bisnow.com/national/news/data-center-capital-markets/meta-pushes-its-largest-data-center-project-off-its-books-with-27b-joint-venture-131490", "publisher": "Bisnow", "published": "2025-10", "kind": "press" },
+      "source": {
+        "url": "https://www.bisnow.com/national/news/data-center-capital-markets/meta-pushes-its-largest-data-center-project-off-its-books-with-27b-joint-venture-131490",
+        "publisher": "Bisnow",
+        "published": "2025-10",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "$27.294B single 144A-for-life senior secured amortizing bond via Beignet Investor LLC; priced 2025-10-16 at 6.581%, final maturity 2049-05-30, S&P A+; PIMCO took ~$18B."
     },
@@ -35,7 +45,12 @@
       "unit": "USD_B",
       "basis": "company_claimed",
       "confidence": "high",
-      "source": { "url": "https://x.com/MorganStanley/status/1939768047780172184", "publisher": "Morgan Stanley (X)", "published": "2025-06-30", "kind": "company_pr" },
+      "source": {
+        "url": "https://x.com/MorganStanley/status/1939768047780172184",
+        "publisher": "Morgan Stanley (X)",
+        "published": "2025-06-30",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "Oversubscribed; floating-rate term loan (SOFR+700 at 97), fixed-rate loan and secured bonds around 12% during marketing; best-efforts, no Morgan Stanley capital committed."
     },
@@ -47,7 +62,12 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-forecasts-ai-debt-135325015.html", "publisher": "Yahoo Finance", "published": "2026-06", "kind": "press" },
+      "source": {
+        "url": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-forecasts-ai-debt-135325015.html",
+        "publisher": "Yahoo Finance",
+        "published": "2026-06",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Analyst forecast, not a disclosure: ~$570B for 2026, more than double 2025; ~$236B already issued by end-May 2026."
     }
@@ -58,10 +78,23 @@
       "title": "Completes $5B xAI secured notes and term loan financing",
       "why_it_matters": "First large syndicated debt raise for a standalone frontier lab; ~12% marketed yields set an early price on pure-play AI credit risk.",
       "impact": "medium",
-      "entities": ["morgan-stanley", "xai"],
+      "entities": [
+        "morgan-stanley",
+        "xai"
+      ],
       "sources": [
-        { "url": "https://x.com/MorganStanley/status/1939768047780172184", "publisher": "Morgan Stanley (X)", "published": "2025-06-30", "kind": "company_pr" },
-        { "url": "https://www.cnbc.com/2025/06/17/musks-xai-on-track-to-raise-5-billion-in-fresh-debt-following-modest-demand.html", "publisher": "CNBC", "published": "2025-06-17", "kind": "press" }
+        {
+          "url": "https://x.com/MorganStanley/status/1939768047780172184",
+          "publisher": "Morgan Stanley (X)",
+          "published": "2025-06-30",
+          "kind": "company_pr"
+        },
+        {
+          "url": "https://www.cnbc.com/2025/06/17/musks-xai-on-track-to-raise-5-billion-in-fresh-debt-following-modest-demand.html",
+          "publisher": "CNBC",
+          "published": "2025-06-17",
+          "kind": "press"
+        }
       ]
     },
     {
@@ -69,14 +102,42 @@
       "title": "Prices $27.3B Hyperion SPV notes for Meta/Blue Owl",
       "why_it_matters": "The template deal for off-balance-sheet AI capex: hyperscaler lease + residual-value guarantee wrapped into an A+ private placement — the structure most 2026 SPV financings now copy.",
       "impact": "high",
-      "entities": ["morgan-stanley", "hyperion-jv", "meta", "blue-owl", "pimco"],
-      "sources": [{ "url": "https://www.bisnow.com/national/news/data-center-capital-markets/meta-pushes-its-largest-data-center-project-off-its-books-with-27b-joint-venture-131490", "publisher": "Bisnow", "published": "2025-10", "kind": "press" }]
+      "entities": [
+        "morgan-stanley",
+        "hyperion-jv",
+        "meta",
+        "blue-owl",
+        "pimco"
+      ],
+      "sources": [
+        {
+          "url": "https://www.bisnow.com/national/news/data-center-capital-markets/meta-pushes-its-largest-data-center-project-off-its-books-with-27b-joint-venture-131490",
+          "publisher": "Bisnow",
+          "published": "2025-10",
+          "kind": "press"
+        }
+      ]
     }
   ],
   "sources": [
-    { "url": "https://www.bisnow.com/national/news/data-center-capital-markets/meta-pushes-its-largest-data-center-project-off-its-books-with-27b-joint-venture-131490", "publisher": "Bisnow", "published": "2025-10", "kind": "press" },
-    { "url": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-forecasts-ai-debt-135325015.html", "publisher": "Yahoo Finance", "published": "2026-06", "kind": "press" },
-    { "url": "https://www.investing.com/news/economy-news/morgan-stanley-markets-5-billion-for-elon-muskowned-xai-in-loans-bonds-sources-say-4087899", "publisher": "Investing.com / Reuters", "published": "2025-06", "kind": "press" }
+    {
+      "url": "https://www.bisnow.com/national/news/data-center-capital-markets/meta-pushes-its-largest-data-center-project-off-its-books-with-27b-joint-venture-131490",
+      "publisher": "Bisnow",
+      "published": "2025-10",
+      "kind": "press"
+    },
+    {
+      "url": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-forecasts-ai-debt-135325015.html",
+      "publisher": "Yahoo Finance",
+      "published": "2026-06",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.investing.com/news/economy-news/morgan-stanley-markets-5-billion-for-elon-muskowned-xai-in-loans-bonds-sources-say-4087899",
+      "publisher": "Investing.com / Reuters",
+      "published": "2025-06",
+      "kind": "press"
+    }
   ],
   "updated": "2026-08-13"
 }

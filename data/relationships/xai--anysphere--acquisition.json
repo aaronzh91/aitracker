@@ -4,30 +4,61 @@
   "to": "anysphere",
   "type": "acquisition",
   "status": "contracted",
-  "headline": { "value": 60, "unit": "USD_B", "caveat": "All-stock acquisition of Anysphere (Cursor) agreed June 2026 — the largest VC-backed startup acquisition ever. Consideration is merged xAI/SpaceX stock; close expected Q3 2026.", "as_of": "2026-06" },
-  "realized_to_date": { "value": 0, "unit": "USD_B", "caveat": "Not closed; all-stock, so no cash moves even at close — Anysphere holders receive xAI equity.", "as_of": "2026-08-13" },
-  "term": { "announced": "2026-06", "start": null, "end": null, "duration_years": null },
-  "nature_md": "xAI (the merged xAI/SpaceX entity) agreed in June 2026 to acquire Anysphere, maker of the Cursor AI coding tool, for $60B in stock — the largest acquisition of a venture-backed startup on record. Strategic logic: Cursor's developer distribution and usage data plugged into xAI's Grok models and Colossus compute, and coding is the deepest-monetizing AI application category. All-stock consideration leans on xAI's private $1.25T combined valuation mark; close expected Q3 2026, pending customary approvals.",
+  "headline": {
+    "value": 60,
+    "unit": "USD_B",
+    "caveat": "All-stock acquisition of Anysphere (Cursor) agreed June 2026 \u2014 the largest VC-backed startup acquisition ever. Consideration is merged xAI/SpaceX stock; close expected Q3 2026.",
+    "as_of": "2026-06"
+  },
+  "realized_to_date": {
+    "value": 0,
+    "unit": "USD_B",
+    "caveat": "Not closed; all-stock, so no cash moves even at close \u2014 Anysphere holders receive xAI equity.",
+    "as_of": "2026-08-13"
+  },
+  "term": {
+    "announced": "2026-06",
+    "start": null,
+    "end": null,
+    "duration_years": null
+  },
+  "nature_md": "xAI (the merged xAI/SpaceX entity) agreed in June 2026 to acquire Anysphere, maker of the Cursor AI coding tool, for $60B in stock \u2014 the largest acquisition of a venture-backed startup on record. Strategic logic: Cursor's developer distribution and usage data plugged into xAI's Grok models and Colossus compute, and coding is the deepest-monetizing AI application category. All-stock consideration leans on xAI's private $1.25T combined valuation mark; close expected Q3 2026, pending customary approvals.",
   "accounting": {
-    "payer_treatment_md": "At close, xAI issues equity — no cash outflow; Anysphere lands on the balance sheet mostly as goodwill/intangibles against a $60B mark set in xAI's own private-valuation currency. Dilution to existing xAI/SpaceX holders is the real cost.",
-    "payee_treatment_md": "Anysphere shareholders (VCs, employees) swap Cursor equity for xAI stock — no liquidity until an xAI IPO/secondary; the 'price' is only as real as the acquirer's private mark. Cursor's ARR (multi-hundred-$M scale) becomes xAI segment revenue post-close.",
+    "payer_treatment_md": "At close, xAI issues equity \u2014 no cash outflow; Anysphere lands on the balance sheet mostly as goodwill/intangibles against a $60B mark set in xAI's own private-valuation currency. Dilution to existing xAI/SpaceX holders is the real cost.",
+    "payee_treatment_md": "Anysphere shareholders (VCs, employees) swap Cursor equity for xAI stock \u2014 no liquidity until an xAI IPO/secondary; the 'price' is only as real as the acquirer's private mark. Cursor's ARR (multi-hundred-$M scale) becomes xAI segment revenue post-close.",
     "off_balance_sheet": false,
     "flags": []
   },
   "related_edges": [],
-  "both_sides_md": "**Bull:** consolidates the fastest-growing AI coding franchise into the Musk compute/model stack, paid in appreciated paper. **Bear:** a $60B all-stock price against private marks on both sides is unfalsifiable value transfer — headline records get set at cycle tops, and the deal has not closed (see Disney-OpenAI withdrawal for how announced ≠ done).",
+  "both_sides_md": "**Bull:** consolidates the fastest-growing AI coding franchise into the Musk compute/model stack, paid in appreciated paper. **Bear:** a $60B all-stock price against private marks on both sides is unfalsifiable value transfer \u2014 headline records get set at cycle tops, and the deal has not closed (see Disney-OpenAI withdrawal for how announced \u2260 done).",
   "observations": [],
   "events": [
     {
       "date": "2026-06",
       "title": "xAI agrees to acquire Anysphere (Cursor) for $60B in stock",
       "impact": "high",
-      "entities": ["xai", "anysphere"],
-      "sources": [{ "url": "https://www.bloomberg.com/news/articles/2026-06-15/xai-agrees-to-buy-cursor-maker-anysphere-for-60-billion-in-stock", "publisher": "Bloomberg", "published": "2026-06", "kind": "press" }]
+      "entities": [
+        "xai",
+        "anysphere"
+      ],
+      "sources": [
+        {
+          "url": "https://qz.com/spacex-buying-cursor-anysphere-60-billion-deal-061626",
+          "publisher": "Quartz",
+          "published": "2026-06-16",
+          "kind": "press"
+        }
+      ]
     }
   ],
   "sources": [
-    { "url": "https://www.bloomberg.com/news/articles/2026-06-15/xai-agrees-to-buy-cursor-maker-anysphere-for-60-billion-in-stock", "publisher": "Bloomberg", "published": "2026-06", "kind": "press", "notes": "Close expected Q3 2026; terms per announcement — not yet consummated." }
+    {
+      "url": "https://qz.com/spacex-buying-cursor-anysphere-60-billion-deal-061626",
+      "publisher": "Quartz",
+      "published": "2026-06-16",
+      "kind": "press",
+      "notes": "Close expected Q3 2026; terms per announcement \u2014 not yet consummated."
+    }
   ],
   "updated": "2026-08-13"
 }

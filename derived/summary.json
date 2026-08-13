@@ -1,11 +1,20 @@
 {
   "generated": "2026-08-13",
-  "entities": 1,
-  "relationships": 1,
-  "bottlenecks": 0,
-  "totalHeadlineUSDB": 0,
-  "cycles": 0,
-  "cycleNodes": [],
-  "flaggedEdges": 0,
-  "offBalanceSheetEdges": 0
+  "entities": 116,
+  "relationships": 119,
+  "bottlenecks": 12,
+  "totalHeadlineUSDB": 1996,
+  "cycles": 10,
+  "cycleNodes": [
+    "alphabet",
+    "anthropic",
+    "amazon",
+    "openai",
+    "microsoft",
+    "amd",
+    "hyperion-jv",
+    "meta"
+  ],
+  "flaggedEdges": 93,
+  "offBalanceSheetEdges": 47
 }

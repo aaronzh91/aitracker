@@ -340,7 +340,50 @@ Known data-quality flags to encode as low-confidence observations from day one: 
 
 ## 10. The intellectual core: circularity & contagion framework
 
-<!-- RESEARCH-PENDING: grounded survey of the debate (named bulls/bears, quantitative frameworks proposed, dot-com precedents) feeding the Insights section outlines -->
+The user-facing goal: help a reader answer *"how should circularity risk be priced?"* and *"how does contagion spread in a downcycle?"* without telling them what to conclude. This section maps the live debate (surveyed Aug 2026) and defines the framework the tracker will build on top of it.
+
+### 10.1 The debate we must represent fairly
+
+**Bear case (attributed):** Burry (Scion) — hyperscalers understate depreciation ~$176B cumulatively 2026–28 by using 5–6-year lives for shorter-economic-life GPUs; "not Enron… clearly Cisco." Chanos — vendor financing at a scale dwarfing the ~$100B dot-com precedent (Lucent $8.1B/Nortel $3.1B/Cisco $2.4B): "if demand were that strong you wouldn't need to finance your customer." Einhorn — **$1 of loss-making end-customer revenue cascades into >$8 of recognized supply-chain revenue**; went capital-preservation Apr 2026. Zitron — OpenAI as the single point of failure (~$748B of performance obligations across Microsoft/Amazon/Oracle). Cahn (Sequoia) — 2026 infra spend ~$1.5T requiring ~$3T annual revenue to justify. Kedrosky — AI capex >1.2% of GDP in short-lived depreciating assets; lenders should price OpenAI "like a sovereign-backed utility."
+
+**Bull case (attributed):** Huang — "the notion that it's circular is preposterous"; ~$1T of revenue visibility through 2027; Nvidia's checks are a fraction of customers' outside fundraising (Nvidia's Nov 2025 IR memo rebuts Enron/Lucent analogies point-by-point). CoreWeave — A100 contracts running into 2029, H100s re-leasing at ~95% of original price (the depreciation-life defense). O'Laughlin/SemiAnalysis — the buildout is fundable; 2026 drawdowns are rate-of-change repricings within a continuing cycle. Noah Smith — this is legitimate vendor financing (GM financing car buyers), not round-tripping; the real cost is added *correlation*, not fake revenue.
+
+**Referees:** Usvyatsky/Deep Quarry — the depreciation issue is stale estimates, not fraud; Amazon's 6→5-year change cost $677M/9mo, material but far from Burry's scenario. Bain — $2T/yr of new revenue needed by 2030, ~$800B shortfall. Allianz — capex/revenue divergence ~46% vs 32% at the 2001 telecom peak.
+
+**Official sector (2026 — the debate moved from equity to credit):** IMF GFSR Apr 2026 (framework below); Fed FSR May 2026 (AI is now the top-cited risk); BoE July 2026 (AI ≈ half of S&P 500 cap vs a quarter in 2022); BIS Bulletin 120 (private credit to AI borrowers $200B+, heading $300–600B by 2030); Chicago Fed (bank C&I commitments to AI-adjacent industries ≈ 25% of Tier 1 capital); Sens. Warren et al. pressing FSOC/OFR to probe the "AI debt bubble" (Jan 2026). Live market signals: CoreWeave CDS implying ~50% 5-yr default probability (Jul 2026); Oracle CDS at records with its own project-finance banks hedging via Oracle CDS; Fitch: record 6.0% US private-credit default rate (Apr 2026).
+
+Every one of these positions becomes sourced content in Insights pages; none becomes the site's voice.
+
+### 10.2 Quantitative building blocks that already exist (we adopt, cite, and connect them)
+
+| Building block | Source | What it gives us |
+|---|---|---|
+| AI value-stack taxonomy + exposure heatmap (73 firms, 8 layers) | IMF GFSR Apr 2026 Fig 1.17 | A vetted classification and per-layer leverage/valuation scoring to align our entity taxonomy with |
+| **Circularity premium**: ~7pp of the 12pp late-2025 outperformance of "AI-circle" firms attributable to intra-circle correlation ≈ ~$40B/firm of market cap | IMF GFSR Fig 1.18 | The first official *price* on circularity — the number that reverses in stress |
+| Obsolescence stress test: implied useful life ~7yrs; at 3yrs hyperscaler EBIT margin −9pp+, debt >$1T, CDS +60bps | IMF GFSR Box 1.4 | A published sensitivity we can re-run per company with our data |
+| $1.5T external-financing gap decomposition (private credit $800B+, ABS $150B, IG bonds…) | Morgan Stanley 2026 | The funding-side map for our financier nodes |
+| Capex → debt-issuance share: $405B/26% (2025) → ~$750B/33% (2026) → ~$1.14T/35% (2027E) | Goldman Sachs | Trend lines for the changelog to track against |
+| Cascade multipliers: $1 end-revenue → >$8 supply-chain revenue (Einhorn); $10B Nvidia investment → ~$35B GPU purchases (NewStreet, 3.5×) | investor letters/analyst notes | Simple, citable propagation coefficients as defaults in the stress engine |
+| Bank/insurer exposure: AI C&I ≈ 25% of Tier 1 commitments; ~$1T insurer private-credit holdings; ~$1.2T total AI-company debt (JPM est.) | Chicago Fed / Moody's / JPM | The last hop of the contagion chain |
+| CDS-implied default probabilities (CoreWeave, Oracle) | market data | Live counterparty-risk observations for relationship pages |
+
+**The gap we fill:** no one has published a standardized revenue-quality haircut or a cross-exposure matrix at the entity level. The IMF heatmap, Chicago Fed tables, Bloomberg's graph, and CDS quotes are disconnected building blocks; joining them per-company, per-edge, continuously, is the tracker's original contribution.
+
+### 10.3 Our framework
+
+**(a) Revenue-quality decomposition (per company).** Split revenue/backlog into tiers: T1 organic (paying customers, no financing link), T2 financed-but-arm's-length (customer independently funded), T3 circular (customer funded in part by the seller or its consortium — Nvidia→OpenAI→Nvidia; warrant-linked AMD revenue; backstopped neocloud revenue), T4 committed-not-yet-real (RPO from counterparties whose funding for the commitment is unidentified — the Oracle case: RPO $638B, >50% OpenAI per BofA, against OpenAI's identified resources). Publish the tier mix with sources; let readers apply their own multiples per tier. We show *worked examples* of haircut math (e.g., "at a 50% haircut to T3/T4, company X trades at …×") without endorsing a number — the pricing question becomes calculable instead of rhetorical.
+
+**(b) Contagion stress engine (per scenario).** The canonical chain assembled from the research: OpenAI demand shortfall → Oracle RPO fails to convert → Oracle's $153B debt + lease obligations strain → project-finance banks ($38B Vantage package et al.) and SPV lenders hit → private credit funds gate → insurers (~$1T private credit) absorb; parallel leg: Nvidia loses OpenAI-linked DC revenue while its equity stakes mark down simultaneously (correlation, the IMF's amplification point). The engine formalizes exactly this: user picks shock size and node; edges propagate by contract quality (take-or-pay/penalty-backed RPO propagates hard; cancellable commitments evaporate; equity marks to zero-order; GPU-collateralized debt margin-calls); defaults for pass-through coefficients seeded from the published multipliers in 10.2 and editable in the UI. Output: per-node revenue/EBIT/balance-sheet impact and a "who ultimately holds the loss" waterfall (equity → credit funds → insurers/banks).
+
+**(c) The depreciation lens.** Per-company table: stated useful life, implied useful life (PP&E/depreciation, IMF method), earnings sensitivity per year of life change (Amazon's disclosed $677M/9mo change as calibration), plus the contract evidence on both sides (CoreWeave re-lease rates vs. "couldn't give Hoppers away"). Pure disclosure journalism — highest trust-per-effort feature on the site.
+
+**(d) Historical base rates.** A standing page comparing this cycle to 1999–2001 vendor financing with actual numbers ($100B then vs. multi-hundred-billion now; Lucent's path from financing customers to bankruptcy; also the differences — today's funders are cash-rich) and to other capex manias (railroads, telecom). Base rates, not predictions.
+
+### 10.4 Weekly monitoring list (feeds the Saturday routine)
+
+Primary docs to poll: Oracle RPO + CDS; Microsoft 10-Q OpenAI equity-method line (the only public window into OpenAI's P&L — implied ~$11.5B quarterly loss in Q3 CY2025); AMD warrant-vesting disclosures; Nvidia 10-Q investment/concentration notes; CoreWeave debt + CDS; Meta SPV disclosures (EDGAR full-text: "special purpose", "useful life", "remaining performance obligations"). Secondary: Bloomberg circular-deals page, Burry's Substack, Where's Your Ed At, Kedrosky, SemiAnalysis, Deep Quarry; quarterly: IMF GFSR / Fed FSR / BoE FSR / BIS releases; The Information for private-co numbers; Senate Banking for FSOC escalation.
+
+Caveat discipline: several widely-cited numbers are analyst estimates, not disclosures (Burry's $176B, the $300B Oracle-OpenAI RPO split, JPM's $1.2T, Zitron's $748B); CDS-implied PDs come from thin markets. All enter the dataset as `press_reported`/`estimated` with confidence ratings — never presented as fact.
 
 ## 11. Prior art & differentiation
 
@@ -386,4 +429,4 @@ What exists today (surveyed Aug 2026):
 
 ---
 
-*Sections 8–11 are being populated from live research (current deal facts, the risk debate, prior art, and data-source assessments) in this same working session.*
+*Research basis: sections 8–11 were grounded in live web research conducted Aug 13, 2026 (deal facts, the circularity debate, prior art, and data-source assessments). Facts cited there carry their sources; anything single-sourced is flagged. Next step after spec sign-off: Phase 1 (schemas, seed data files, site skeleton).*

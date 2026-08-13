@@ -1,0 +1,78 @@
+{
+  "id": "scale-ai",
+  "name": "Scale AI",
+  "kind": "private_company",
+  "category": "ai_native",
+  "group": "labs_ai_native",
+  "region": "us",
+  "tier": 1,
+  "website": "https://scale.com",
+  "monetization": "Sells training data — labeling, RLHF, and expert data pipelines — plus government AI services; now effectively a Meta-aligned data arm after the 2025 quasi-acquisition.",
+  "description_md": "Scale AI built the dominant data-labeling and human-feedback pipeline of the first LLM wave, supplying OpenAI, Google, Meta, xAI, and the Pentagon. In June 2025 Meta paid $14.3B for a 49% non-voting stake (implying ~$29B) and hired away founder-CEO Alexandr Wang to run Meta Superintelligence Labs — a 'quasi-M&A' that instantly cost Scale its neutrality and triggered an exodus of its largest lab customers. The valuation has been frozen at the Meta mark since.",
+  "ai_monetization_md": "Pre-deal, revenue (~$870M in 2024, roughly doubling y/y) came from frontier labs paying for labeled/preference data — Google alone was worth ~$150–200M/yr — plus a growing public-sector business (Scale Donovan; defense contracts). Post-deal, Google, OpenAI, xAI, and Microsoft all cut or wound down work, leaving Meta itself, enterprises, and government as the remaining pillars. The rise of expert-generated data rivals (Surge, Mercor, Turing — Surge out-earned Scale in 2024 at $1B+ bootstrapped) was already compressing the core labeling franchise.",
+  "ai_strategy_md": "The Meta transaction converted Scale from neutral infrastructure into aligned capacity: Meta secured data pipelines and Wang's team without a reviewable acquisition (49%, non-voting), while Scale shareholders got liquidity at ~$29B. Remaining strategy under CEO Jason Droege leans on government/defense AI (where neutrality vs Meta matters less) and enterprise data engines, while the frontier-lab market it created moves to competitors positioned as conflict-free.",
+  "risk_notes_md": "Customer-concentration inversion: the deal that crystallized its valuation destroyed its customer base — Google (largest customer) split, OpenAI dropped Scale as a data provider, xAI and Microsoft backed away, and Scale laid off ~14% of staff (~200 roles) in July 2025. The $14.3B is Meta's cost basis, not evidence of Scale's standalone earning power; no post-deal revenue figures are public (informative in itself). Antitrust/structure scrutiny of 49% non-voting 'acqui-stakes' remains a live regulatory theme.",
+  "observations": [
+    {
+      "metric": "valuation",
+      "period": "2025-06",
+      "value": 29,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.cnbc.com/2025/06/14/google-scale-ais-largest-customer-plans-split-after-meta-deal.html", "publisher": "CNBC", "title": "Google, Scale AI's largest customer, plans split after Meta deal", "published": "2025-06-14", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Implied by Meta's $14.3B payment for 49% (non-voting), June 2025. Not a competitive round price, and frozen since — no subsequent mark."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Meta equity stake",
+      "period": "2025-06",
+      "value": 49,
+      "unit": "pct",
+      "basis": "press_reported",
+      "confidence": "high",
+      "source": { "url": "https://www.cnbc.com/2025/06/14/google-scale-ais-largest-customer-plans-split-after-meta-deal.html", "publisher": "CNBC", "title": "Google, Scale AI's largest customer, plans split after Meta deal", "published": "2025-06-14", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "$14.3B for 49% non-voting; Alexandr Wang departed to lead Meta Superintelligence Labs as part of the arrangement."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "CY2024",
+      "value": 870,
+      "unit": "USD_M",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://sacra.com/c/scale-ai/", "publisher": "Sacra", "title": "Scale AI revenue, valuation & funding", "published": "2025", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "Widely reported ~$870M for 2024 (Google ~$150M of it). No public post-exodus revenue figures — that absence is itself informative."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-06-13",
+      "title": "Meta invests $14.3B for 49% non-voting stake; Wang leaves to lead Meta Superintelligence Labs",
+      "why_it_matters": "The template 'quasi-M&A' of the cycle: control-like economics without a reviewable acquisition. Values Scale at ~$29B and staffs Meta's superintelligence push, but ends Scale's position as neutral data infrastructure.",
+      "impact": "high",
+      "entities": ["scale-ai", "meta"],
+      "sources": [{ "url": "https://www.cnbc.com/2025/06/14/google-scale-ais-largest-customer-plans-split-after-meta-deal.html", "publisher": "CNBC", "published": "2025-06-14", "kind": "press" }]
+    },
+    {
+      "date": "2025-06-18",
+      "title": "Customer exodus: OpenAI drops Scale; Google, xAI, Microsoft pull back",
+      "why_it_matters": "Within days of the Meta deal, Scale's largest lab customers cut ties over data-security and roadmap-leak concerns — a clean case study of how ownership changes destroy 'neutral vendor' revenue. Scale cut ~14% of staff the following month.",
+      "impact": "high",
+      "entities": ["scale-ai", "alphabet", "openai", "xai", "microsoft"],
+      "sources": [
+        { "url": "https://techcrunch.com/2025/06/18/openai-drops-scale-ai-as-a-data-provider-following-meta-deal", "publisher": "TechCrunch", "published": "2025-06-18", "kind": "press" },
+        { "url": "https://www.cnbc.com/2025/06/14/google-scale-ais-largest-customer-plans-split-after-meta-deal.html", "publisher": "CNBC", "published": "2025-06-14", "kind": "press" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.cnbc.com/2025/06/14/google-scale-ais-largest-customer-plans-split-after-meta-deal.html", "publisher": "CNBC", "kind": "press" },
+    { "url": "https://techcrunch.com/2025/06/18/openai-drops-scale-ai-as-a-data-provider-following-meta-deal", "publisher": "TechCrunch", "kind": "press" },
+    { "url": "https://sacra.com/c/scale-ai/", "publisher": "Sacra", "kind": "analyst" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "informatica",
+  "name": "Informatica",
+  "kind": "subsidiary",
+  "category": "enterprise_software",
+  "group": "software_applications",
+  "region": "us",
+  "tier": 3,
+  "website": "https://www.informatica.com",
+  "monetization": "Enterprise data-management/integration platform (IDMC); acquired by Salesforce for ~$8B to supply the data foundation for Agentforce agentic AI.",
+  "observations": [
+    {
+      "metric": "valuation",
+      "metric_label": "Salesforce acquisition equity value",
+      "period": "2025-05",
+      "value": 8,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.salesforce.com/news/press-releases/2025/05/27/salesforce-signs-definitive-agreement-to-acquire-informatica/", "publisher": "Salesforce", "published": "2025-05-27", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "$25/share cash; closed late 2025."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.salesforce.com/news/press-releases/2025/05/27/salesforce-signs-definitive-agreement-to-acquire-informatica/", "publisher": "Salesforce", "published": "2025-05-27", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

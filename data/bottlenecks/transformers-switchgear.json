@@ -1,0 +1,78 @@
+{
+  "id": "transformers-switchgear",
+  "name": "Large power transformers & switchgear",
+  "group": "physical_infrastructure",
+  "status": "binding",
+  "description_md": "Every gigawatt of data-center load needs large power transformers, medium-voltage switchgear, and substation gear — a market that was sized for ~1% annual load growth and is now asked to double output. Lead times for large transformers average 115-130 weeks (up to four years without a reservation), and the top makers are booked years out: Hitachi Energy, the world's largest transformer maker, carries a backlog above $43B (vs ~$14B three years earlier) and its CEO has publicly warned of shortage; HD Hyundai Electric has more than three years of production booked (~$7.9B backlog); Siemens Energy's Grid Technologies backlog hit a record €51B; Eaton — data centers now its largest end-market — bought Boyd Thermal for $9.5B to sell 'grid-to-chip'. Factories to relieve the squeeze (Hitachi's $4.5B program, US plants) do not add meaningful output before ~2027-28 because a transformer plant itself takes years to build and staff. Status basis: judged binding — multi-year lead times on a non-substitutable, code-required component sit directly on every substation in every utility queue.",
+  "controlled_by": [
+    { "entity": "hitachi-energy", "share_note": "World's largest transformer maker; >$43B backlog, multi-year lead times (company_claimed via press)" },
+    { "entity": "siemens-energy", "share_note": "Grid Technologies backlog record €51B (disclosed)" },
+    { "entity": "eaton", "share_note": "Leading MV switchgear/power distribution; data centers its largest end-market; $9.5B Boyd Thermal deal closed Mar 2026 (company_pr)" },
+    { "entity": "hd-hyundai-electric", "share_note": ">3 years of production booked, ~$7.9B backlog on US DC/grid orders (press_reported)" }
+  ],
+  "dependents": [
+    { "entity": "dominion-energy", "dependency_md": "The ~40GW NoVA pipeline is executed substation by substation; each requires large transformers ordered years ahead — utility energization dates inherit transformer lead times." },
+    { "entity": "vantage", "dependency_md": "Developer delivery schedules depend on long-lead electrical gear; developers now pre-order transformers/switchgear speculatively and carry them as inventory to protect timelines." },
+    { "entity": "quanta-services", "dependency_md": "Grid and substation construction backlog ($48.5B) can only convert to revenue as owner-furnished transformers and switchgear arrive on site." },
+    { "entity": "vertiv", "dependency_md": "In-building power distribution (switchgear, busway, PDUs) shares component supply chains; Vertiv's ~$15B backlog reflects the same gear scarcity one tier down." }
+  ],
+  "substitutes_md": "Essentially none for large power transformers — they are engineered-to-order, code-required, and only a dozen global plants make the largest classes. Mitigations: reconditioned/used units (thin market), standardizing designs to enable batch orders, on-site generation to defer grid gear, and higher-voltage direct designs (800VDC inside the DC reduces some downstream gear but not the grid-side transformer). New entrants and US plant expansions (Hitachi $4.5B incl. ~$500M North America; Korean and Powell/Hyosung capacity) arrive 2027+. Amorphous-core and dry-type alternatives serve smaller ratings only.",
+  "downcycle_md": "Transformer makers are unusually downturn-resistant this cycle: backlogs are 3-4+ years deep, diversified across utilities/renewables/industrial (data centers are ~20% or less of most books), and orders carry deposits and escalation clauses — Hitachi's >$43B and HD Hyundai's 3-year book would cushion even a sharp AI pullback, with cancellations landing first on speculative developer pre-orders rather than utility programs. The glut risk is timing: capacity built for the 2026 panic arriving into a softer 2029 market, repeating the industry's post-1970s overcapacity trauma that caused today's underinvestment. Switchgear (shorter-cycle, more DC-exposed, e.g. Eaton/Vertiv books) would feel a demand fall several quarters before transformers.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Hitachi Energy order backlog",
+      "period": "2026",
+      "value": 43,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.datacenterdynamics.com/en/news/hitachi-energy-ceo-warns-of-transformer-supply-shortage/", "publisher": "Data Center Dynamics", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": ">$43B vs ~$14B three years earlier."
+    },
+    {
+      "metric": "lead_time_months",
+      "period": "2026",
+      "value": 28,
+      "unit": "months",
+      "basis": "estimated",
+      "method_md": "Midpoint of the 115-130-week average large-transformer lead time reported by POWER Magazine; unreserved orders quoted up to 48 months.",
+      "confidence": "medium",
+      "source": { "url": "https://www.powermag.com/transformers-in-2026-shortage-scramble-or-self-inflicted-crisis/", "publisher": "POWER Magazine", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Average 115-130 weeks; up to 4 years without a reservation."
+    },
+    {
+      "metric": "other",
+      "metric_label": "HD Hyundai Electric backlog (production booked)",
+      "period": "2026-Q1",
+      "value": 7.9,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://en.sedaily.com/news/2026/05/01/korean-power-equipment-makers-clinch-record-orders-on-us", "publisher": "Seoul Economic Daily", "published": "2026-05-01", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "More than 3 years of production booked."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Siemens Energy Grid Technologies backlog",
+      "period": "FY2026-Q3",
+      "value": 51,
+      "unit": "EUR_B",
+      "basis": "disclosed",
+      "confidence": "medium",
+      "source": { "url": "https://mgrid.org/2026/08/09/siemens-energys-grid-order-backlog-hits-a-record-51-billion-euros-on-transformer-demand/", "publisher": "mgrid (from Siemens Energy results)", "published": "2026-08-09", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Record, driven by transformer demand; group backlog €154B."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.datacenterdynamics.com/en/news/hitachi-energy-ceo-warns-of-transformer-supply-shortage/", "publisher": "Data Center Dynamics", "kind": "press" },
+    { "url": "https://www.powermag.com/transformers-in-2026-shortage-scramble-or-self-inflicted-crisis/", "publisher": "POWER Magazine", "kind": "press" },
+    { "url": "https://en.sedaily.com/news/2026/05/01/korean-power-equipment-makers-clinch-record-orders-on-us", "publisher": "Seoul Economic Daily", "published": "2026-05-01", "kind": "press" },
+    { "url": "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-completes-acquisition-of-leading-liquid-cooling-solutions-provider-boyd-thermal.html", "publisher": "Eaton PR", "published": "2026-03", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

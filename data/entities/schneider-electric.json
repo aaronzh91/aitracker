@@ -1,0 +1,86 @@
+{
+  "id": "schneider-electric",
+  "name": "Schneider Electric SE",
+  "kind": "public_company",
+  "category": "electrical_equipment",
+  "group": "physical_infrastructure",
+  "region": "europe",
+  "tier": 1,
+  "tickers": [{ "exchange": "EPA", "symbol": "SU" }],
+  "cik": null,
+  "website": "https://www.se.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Sells electrical distribution, secure power (APC UPS), cooling (Motivair), and EcoStruxure software into data centers — the group's largest growth driver at roughly a quarter of revenue.",
+  "description_md": "Schneider Electric is the European heavyweight of energy management and industrial automation, and one of the two global leaders (with Vertiv/Eaton) in data-center electrical infrastructure. Its data-center offer spans medium/low-voltage distribution, switchgear, busway, Secure Power (the APC UPS franchise), prefabricated modular data centers, liquid cooling via Motivair, and the EcoStruxure software/DCIM stack. Data centers and networks account for roughly 24% of group revenue and are the group's biggest growth driver, with demand led by North American hyperscale and colocation customers.",
+  "ai_monetization_md": "AI monetization is volume-driven: more megawatts of AI capacity means more switchgear, UPS, busway, cooling, and services. FY2025 revenue crossed the €40B mark for the first time (€40.2B, +8.9% organic) with Q4 2025 data-center orders growing at a triple-digit percentage y/y from hyperscale and colocation customers. Schneider also monetizes the design layer: it co-develops AI-ready reference architectures with NVIDIA and sells EcoStruxure software and services on top of the installed base, making part of the AI revenue recurring.",
+  "ai_strategy_md": "Own the full electrical room and the software above it: pair the APC/Secure Power installed base with grid-side distribution, add liquid cooling through Motivair, and push prefabricated/modular builds that shorten hyperscaler deployment times. For 2026 the group targets 7–10% organic revenue growth and 10–15% organic adjusted EBITA growth, with data centers expected to remain the lead engine. Capacity expansion in North America — where lead times for electrical gear are a recognized industry bottleneck — is a stated priority.",
+  "risk_notes_md": "Data-center concentration (~24% of revenue and rising) ties a historically diversified industrial to the AI capex cycle. Triple-digit order growth creates the same reversal risk seen across the cluster if hyperscaler capex pauses. Schneider announced a leadership change alongside its record FY2025 results; execution continuity is a watch item. Currency and the group's large China/industrial-automation exposure can mask or amplify the data-center story in reported numbers.",
+  "observations": [
+    {
+      "metric": "revenue_total",
+      "period": "CY2025",
+      "value": 40.2,
+      "unit": "EUR_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.se.com/ww/en/assets/564/document/528237/release-fy-results-2025.pdf", "publisher": "Schneider Electric", "published": "2026-02-26", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "+8.9% organic; first year above €40B. Q4 2025 sales €11.1B, +10.7% organic, a quarterly record."
+    },
+    {
+      "metric": "revenue_segment",
+      "metric_label": "Data centers & networks share of group revenue",
+      "period": "CY2025",
+      "value": 24,
+      "unit": "pct",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://w.media/schneider-electric-posts-record-revenue-driven-by-data-center-demand/", "publisher": "W.Media", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Data center is the group's largest end-market by growth contribution; share is rising as hyperscale demand outpaces other segments."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Q4 2025 data-center order growth y/y",
+      "period": "FY2025-Q4",
+      "value": null,
+      "unit": "pct",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.investing.com/news/company-news/schneider-electric-fy-2025-slides-record-40bn-revenues-strong-outlook-93CH-4526856", "publisher": "Investing.com (FY2025 slides)", "published": "2026-02", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Triple-digit percentage y/y order growth from hyperscale and colocation customers; exact figure not disclosed. Strongest in North America with pickup in France, Nordics, and APAC."
+    },
+    {
+      "metric": "other",
+      "metric_label": "FY2026 organic revenue growth target",
+      "period": "FY2026E",
+      "value": null,
+      "unit": "pct",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://www.se.com/ww/en/assets/564/document/528237/release-fy-results-2025.pdf", "publisher": "Schneider Electric", "published": "2026-02-26", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "Target range 7–10% organic revenue growth and 10–15% organic adjusted EBITA growth for 2026."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-02-26",
+      "title": "FY2025 results: revenue crosses €40B for the first time on data-center demand",
+      "why_it_matters": "Confirms the AI buildout is now the growth engine of Europe's largest electrical-equipment maker, with Q4 data-center orders up triple-digit percent; announced alongside a leadership change.",
+      "impact": "medium",
+      "entities": ["schneider-electric"],
+      "sources": [
+        { "url": "https://www.se.com/ww/en/assets/564/document/528237/release-fy-results-2025.pdf", "publisher": "Schneider Electric", "published": "2026-02-26", "kind": "company_ir" },
+        { "url": "https://www.datacenterdynamics.com/en/news/schneider-electric-announces-record-revenue-and-a-leadership-change/", "publisher": "Data Center Dynamics", "published": "2026-02", "kind": "press" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.se.com/ww/en/assets/564/document/528237/release-fy-results-2025.pdf", "publisher": "Schneider Electric", "kind": "company_ir" },
+    { "url": "https://w.media/schneider-electric-posts-record-revenue-driven-by-data-center-demand/", "publisher": "W.Media", "kind": "press" },
+    { "url": "https://www.datacenterdynamics.com/en/news/schneider-electric-announces-record-revenue-and-a-leadership-change/", "publisher": "Data Center Dynamics", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "alphabet--intersect-power--jv",
+  "from": "alphabet",
+  "to": "intersect-power",
+  "type": "jv_equity",
+  "status": "active",
+  "headline": { "value": 20, "unit": "USD_B", "caveat": "Program-level target: Google + TPG Rise Climate partnership to co-develop co-located clean power + data-center parks, ~$20B of investment by 2030 incl. TPG capital and project debt. Google's own dollar commitment is undisclosed.", "as_of": "2024-12-10" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "Intersect closed a >$800M equity round (TPG-led, Google participating) at signing; deployed project capital since then is not broken out.", "as_of": "2026-08-13" },
+  "term": { "announced": "2024-12-10", "start": "2025", "end": "2030", "duration_years": null },
+  "nature_md": "Strategic partnership (Dec 2024) among Google, Intersect Power, and TPG Rise Climate to build 'energy parks' — new clean generation plus storage co-located with data-center campuses, so new load arrives with new power. Targets ~$20B of investment by 2030; first co-located capacity was targeted for 2026 with full operation in 2027. Google anchors as offtaker/tenant and equity participant (undisclosed amount within Intersect's >$800M round); TPG Rise Climate leads the capital. Structured as project-level JVs rather than a single fund.",
+  "accounting": {
+    "payer_treatment_md": "Alphabet's equity participation is a balance-sheet investment (non-marketable equity); power offtake and leases from the parks will be opex/lease liabilities as projects reach COD. The $20B headline is mostly third-party capital, not an Alphabet commitment.",
+    "payee_treatment_md": "Intersect books equity proceeds as financing, then project revenue from each park's COD — data-center tenancy plus power sales. TPG capital sits at fund/project level.",
+    "off_balance_sheet": true,
+    "flags": ["commitment_unfunded"]
+  },
+  "related_edges": ["alphabet--kairos-power--ppa", "alphabet--nextera--ppa-duane-arnold"],
+  "both_sides_md": "**Bull:** the structural fix for the interconnection-queue bottleneck — build generation and load together, additionality by design. **Bear:** the $20B is a program headline blending three parties' hypothetical capital; realized deployment through 2026 is a small fraction, and 'energy park' economics remain unproven at scale.",
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.cnbc.com/2024/12/10/google-strikes-clean-energy-deal-with-intersect-power-tpg-rise-climate.html", "publisher": "CNBC", "published": "2024-12-10", "kind": "press" },
+    { "url": "https://intersectpower.com/intersect-power-google-and-tpg-rise-climate-partner-to-power-the-ai-era/", "publisher": "Intersect Power", "published": "2024-12", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

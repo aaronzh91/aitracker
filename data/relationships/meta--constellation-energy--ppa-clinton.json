@@ -1,0 +1,26 @@
+{
+  "id": "meta--constellation-energy--ppa-clinton",
+  "from": "meta",
+  "to": "constellation-energy",
+  "type": "ppa",
+  "status": "contracted",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "Price undisclosed. 20-year agreement for 1,121MW of Clinton (IL) nuclear output from June 2027, incl. a ~30MW uprate.", "as_of": "2025-06-03" },
+  "realized_to_date": { "value": 0, "unit": "USD_B", "caveat": "Deliveries under the agreement begin June 2027, when Illinois' zero-emission-credit support for Clinton expires.", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-06-03", "start": "2027-06", "end": "2047-06", "duration_years": 20 },
+  "nature_md": "Meta's first nuclear deal: a 20-year attribute-and-energy purchase covering 1,121MW from Constellation's Clinton Clean Energy Center in Illinois starting June 2027, timed to replace the expiring state ZEC program that had kept the plant open. Includes a ~30MW plant uprate. Meta buys the clean-energy attributes to match its regional data-center load; the plant continues serving the local grid. Effectively a solvency guarantee for a plant that had been slated for early retirement.",
+  "accounting": {
+    "payer_treatment_md": "Meta books nothing until June 2027, then power/attribute costs as data-center opex; commitment disclosed among purchase obligations, off balance sheet.",
+    "payee_treatment_md": "Constellation replaces expiring state ZEC subsidy revenue with contracted corporate revenue from mid-2027; supported license extension and uprate capex at Clinton.",
+    "off_balance_sheet": true,
+    "flags": ["commitment_unfunded"]
+  },
+  "related_edges": ["microsoft--constellation-energy--ppa-crane", "meta--vistra--ppa-pjm"],
+  "both_sides_md": "**Bull:** private AI demand seamlessly replaces a public subsidy — the cleanest case of hyperscaler money keeping existing nuclear online. **Bear:** with the price confidential, ratepayer advocates cannot verify whether Meta pays more or less than the ZEC support it replaces, and grid consumers keep the reliability externalities either way.",
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.constellationenergy.com/newsroom/2025/meta-and-constellation-sign-20-year-emissions-free-nuclear-energy-agreement.html", "publisher": "Constellation Energy", "published": "2025-06-03", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2025/06/03/meta-constellation-nuclear-clinton-illinois.html", "publisher": "CNBC", "published": "2025-06-03", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

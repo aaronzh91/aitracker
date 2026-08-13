@@ -1,0 +1,60 @@
+{
+  "id": "abf-substrates",
+  "name": "ABF package substrates",
+  "group": "compute_supply_chain",
+  "status": "binding",
+  "description_md": "Every CoWoS-packaged accelerator ultimately sits on an ABF (Ajinomoto build-up film) substrate — the multi-layer organic board that connects the package to the system. AI parts need substrates that are far larger, with more layers, than anything before, so effective capacity shrinks even as the industry adds lines. Ibiden, Nvidia's lead substrate supplier, is effectively sold out — its CEO says customers are 'buying up all that Ibiden has been adding' — and in February 2026 announced a ¥500B (~$3.2B) FY26-28 expansion, the largest substrate capex on record. Nvidia, burned by CoWoS and HBM crunches, is reportedly locking ABF capacity with long-term contracts and prepayments; analysts project the ABF supply gap exceeds 20% in 2027. Upstream, the film itself comes from a single company (Ajinomoto), a monopoly-within-the-bottleneck; Ibiden has said it has film secured only for current guidance, not for upside. Status basis: judged binding — lead supplier sold out, single-source input material, projected >20% supply gap 2027, and capacity additions take 2+ years to qualify.",
+  "controlled_by": [
+    { "entity": "ibiden", "share_note": "Nvidia's lead ABF substrate supplier; AI-substrate capacity sold out as added (company_claimed); Shinko, Unimicron, Nan Ya PCB, Samsung Electro-Mechanics, AT&S hold the rest of the high-end pool" }
+  ],
+  "dependents": [
+    { "entity": "nvidia", "dependency_md": "Every Blackwell/Rubin package needs a large-format ABF substrate; Nvidia is reportedly signing long-term contracts and prepaying to lock Ibiden capacity, mirroring its HBM playbook." },
+    { "entity": "amd", "dependency_md": "MI-series and server CPUs draw from the same high-end ABF pool; substrate shortfall delays complete packages even when wafers and HBM are available." },
+    { "entity": "broadcom", "dependency_md": "Custom XPUs (large die + multi-HBM packages) require the same largest-format substrates where the gap is widest." },
+    { "entity": "tsmc", "dependency_md": "CoWoS output converts to sellable product only when married to a substrate — TSMC's packaging ramp and the substrate ramp must move together or one strands the other." }
+  ],
+  "substitutes_md": "No direct substitute for ABF build-up substrates at high-end logic; glass-core substrates (Intel, SKC/Absolics, Samsung) are the medium-term successor but remain pre-volume until ~2027-28. Second sources exist among substrate makers (Shinko, Unimicron, Nan Ya PCB, Samsung Electro-Mechanics, AT&S) but the largest AI-class formats are qualified per-design with quarters of lead time, and all of them buy build-up film from the same monopoly input (Ajinomoto). Rationing therefore propagates: switching suppliers redistributes, rather than relieves, the constraint.",
+  "downcycle_md": "Substrates have the chain's freshest memory of a glut: the 2021-22 ABF shortage triggered an industry-wide capacity binge that collided with the 2023 PC/server slump, cratering utilization and pricing at second-tier makers within quarters. The same dynamic would repeat at larger scale — Ibiden's ¥500B and peers' expansions land 2027-28 regardless of demand. Long-term agreements and reported Nvidia prepayments protect Ibiden's core volumes (contract quality here improved markedly vs. 2021), but merchant/spot substrate capacity at Unimicron/Nan Ya-class suppliers would hit the wall first. Watch substrate ASP trends and Ajinomoto film order patterns as the leading indicators.",
+  "observations": [
+    {
+      "metric": "capex",
+      "period": "FY2026-FY2028",
+      "value": 3.2,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://techresearchonline.com/news/nvidia-supplier-ibiden-plans-faster-expansion/", "publisher": "Tech Research Online", "published": "2026-02", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Ibiden ¥500B AI-substrate plan — largest single substrate expansion on record; CEO says current capacity is bought up as added."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Projected ABF substrate supply gap",
+      "period": "CY2027",
+      "value": 20,
+      "unit": "pct",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://www.datagravity.dev/p/the-abf-substrate-bottleneck", "publisher": "Data Gravity (Chris Zeoli)", "published": "2026", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "Analyst projection that the gap exceeds 20% in 2027 as AI substrate area/layer counts outgrow capacity adds; single-sourced."
+    },
+    {
+      "metric": "utilization_pct",
+      "period": "CY2026",
+      "value": 100,
+      "unit": "pct",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://techresearchonline.com/news/nvidia-supplier-ibiden-plans-faster-expansion/", "publisher": "Tech Research Online", "published": "2026-02", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Ibiden AI substrates effectively sold out; film input secured for guidance only, not upside."
+    }
+  ],
+  "sources": [
+    { "url": "https://techresearchonline.com/news/nvidia-supplier-ibiden-plans-faster-expansion/", "publisher": "Tech Research Online", "published": "2026-02", "kind": "press" },
+    { "url": "https://finance.biggo.com/news/DvWOQJ4BrX5PFN7B9bh8", "publisher": "BigGo Finance", "published": "2026", "kind": "press", "notes": "Nvidia locking ABF substrate capacity via LTAs/prepayments." },
+    { "url": "https://www.datagravity.dev/p/the-abf-substrate-bottleneck", "publisher": "Data Gravity", "kind": "analyst" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "aligned-data-centers",
+  "name": "Aligned Data Centers",
+  "kind": "private_company",
+  "category": "datacenter_developer",
+  "group": "physical_infrastructure",
+  "region": "us",
+  "tier": 2,
+  "website": "https://aligneddc.com",
+  "monetization": "Develops and leases hyperscale/AI data-center capacity across the Americas (51 campuses, >6.4GW operational and planned); owned since July 2026 by the AIP/MGX/BlackRock-GIP consortium after a ~$40B acquisition from Macquarie Asset Management.",
+  "observations": [
+    {
+      "metric": "capacity_gw",
+      "period": "2026-07",
+      "value": 6.4,
+      "unit": "GW",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://aligneddc.com/press-release/aip-mgx-and-blackrocks-gip-close-acquisition-of-aligned-data-centers/", "publisher": "Aligned Data Centers", "published": "2026-07", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Operational plus planned capacity across 51 campuses at closing."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Acquisition enterprise value",
+      "period": "2026-07",
+      "value": 40,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://www.businesswire.com/news/home/20260720395324/en/AIP-MGX-and-BlackRocks-GIP-Close-Acquisition-of-Aligned-Data-Centers", "publisher": "Business Wire", "published": "2026-07-20", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "100% of equity acquired; buyers also committed an additional $5B of growth capital."
+    }
+  ],
+  "sources": [
+    { "url": "https://aligneddc.com/press-release/aip-mgx-and-blackrocks-gip-close-acquisition-of-aligned-data-centers/", "publisher": "Aligned Data Centers", "published": "2026-07", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

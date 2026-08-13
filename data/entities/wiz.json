@@ -1,0 +1,29 @@
+{
+  "id": "wiz",
+  "name": "Wiz",
+  "kind": "subsidiary",
+  "category": "enterprise_software",
+  "group": "software_applications",
+  "region": "us",
+  "tier": 3,
+  "website": "https://www.wiz.io",
+  "monetization": "Cloud-security platform (CNAPP); acquired by Alphabet for $32B all-cash — Google's largest acquisition ever — to anchor Google Cloud's security offering in the AI buildout.",
+  "observations": [
+    {
+      "metric": "valuation",
+      "metric_label": "Alphabet acquisition price",
+      "period": "2025-03",
+      "value": 32,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://blog.google/inside-google/company-announcements/google-agreement-acquire-wiz/", "publisher": "Google", "published": "2025-03-18", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "All-cash; signed Mar 2025, closed 2026 after antitrust review."
+    }
+  ],
+  "sources": [
+    { "url": "https://blog.google/inside-google/company-announcements/google-agreement-acquire-wiz/", "publisher": "Google", "published": "2025-03-18", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

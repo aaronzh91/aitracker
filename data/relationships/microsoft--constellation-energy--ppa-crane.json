@@ -1,0 +1,26 @@
+{
+  "id": "microsoft--constellation-energy--ppa-crane",
+  "from": "microsoft",
+  "to": "constellation-energy",
+  "type": "ppa",
+  "status": "contracted",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "Price undisclosed. 20-year PPA for the full 835MW output of the Crane Clean Energy Center (Three Mile Island Unit 1 restart); analysts infer a premium to market power prices, but no dollar value is on record.", "as_of": "2024-09-20" },
+  "realized_to_date": { "value": 0, "unit": "USD_B", "caveat": "No power delivered yet; restart targeted 2027 (accelerated from 2028), so no PPA cash has flowed.", "as_of": "2026-08-13" },
+  "term": { "announced": "2024-09-20", "start": "2027", "end": null, "duration_years": 20 },
+  "nature_md": "Microsoft agreed to buy the entire 835MW output of Constellation's restarted Three Mile Island Unit 1 (renamed Crane Clean Energy Center, PA) for 20 years to match data-center load in PJM with carbon-free energy attributes. Constellation is funding the ~$1.6B restart itself — the PPA, not Microsoft capital, is what de-risks the investment. Power flows to the grid; Microsoft receives energy and environmental attributes, not co-located supply. Restart was accelerated to 2027 pending NRC approval.",
+  "accounting": {
+    "payer_treatment_md": "Microsoft books nothing until deliveries begin; the PPA then flows through cost of revenue (energy opex) for its data centers. The multi-decade commitment appears in unrecorded purchase-obligation disclosures in its 10-K, not on the balance sheet (subject to lease/derivative scoping tests).",
+    "payee_treatment_md": "Constellation capitalizes the ~$1.6B restart cost and recognizes revenue only from commercial operation (2027+). The contracted offtake underpinned upgrades to its earnings guidance; no upfront payment from Microsoft is disclosed.",
+    "off_balance_sheet": true,
+    "flags": ["commitment_unfunded"]
+  },
+  "related_edges": ["meta--constellation-energy--ppa-clinton"],
+  "both_sides_md": "**Bull:** the deal that proved AI demand can reopen shuttered nuclear plants — fully contracted output for 20 years with an investment-grade counterparty. **Bear:** the price is secret; if it embeds a large premium, Microsoft is pre-paying scarcity rents for power that arrives only from 2027, and restart schedules (NRC, staffing, equipment) have slipped industry-wide.",
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.constellationenergy.com/newsroom/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html", "publisher": "Constellation Energy", "title": "Constellation to Launch Crane Clean Energy Center", "published": "2024-09-20", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2024/09/20/three-mile-island-nuclear-plant-restart-microsoft-ai.html", "publisher": "CNBC", "published": "2024-09-20", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

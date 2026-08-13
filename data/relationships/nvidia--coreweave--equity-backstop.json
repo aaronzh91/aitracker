@@ -1,0 +1,43 @@
+{
+  "id": "nvidia--coreweave--equity-backstop",
+  "from": "nvidia",
+  "to": "coreweave",
+  "type": "backstop_guarantee",
+  "status": "active",
+  "headline": { "value": 6.3, "unit": "USD_B", "caveat": "capacity backstop through Apr 2032 (order form of Sep 9, 2025); NVIDIA separately holds an equity stake and bought $2B more stock in Jan 2026 — see nature", "as_of": "2025-09-09" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "backstop pays only to the extent capacity goes unsold; amounts drawn to date not disclosed. The Jan 2026 $2B equity purchase did fund." },
+  "term": { "announced": "2025-09", "start": "2025-09-09", "end": "2032-04-13", "duration_years": null },
+  "nature_md": "Bundled equity + backstop relationship. (1) **Capacity backstop:** under a Sep 9, 2025 order form (8-K) to their 2023 master services agreement, NVIDIA is obligated to purchase CoreWeave's residual unsold cloud capacity — initial value $6.3B — through April 13, 2032, functioning like a co-signer that lets CoreWeave borrow more, cheaper, against contracted capacity. (2) **Equity:** NVIDIA has been a CoreWeave shareholder since 2023 (~7% at the March 2025 IPO; ~5% per later 13F-era reports), and on Jan 26, 2026 purchased an additional $2B of Class A stock at $87.20/share to accelerate CoreWeave's plan to add >5GW of capacity by 2030 — Bloomberg put NVIDIA's stake at ~13% after that purchase (stake figures vary by source and share class). The vendor is simultaneously supplier, shareholder, and buyer-of-last-resort for the same customer.",
+  "accounting": {
+    "payer_treatment_md": "The backstop is a purchase commitment for NVIDIA, disclosed but not a liability unless triggered; if drawn, payments would be prepaid compute/opex. The equity is a balance-sheet investment (fair value). Neither runs through NVIDIA revenue — but both support a customer that generates NVIDIA revenue.",
+    "payee_treatment_md": "The backstop underpins CoreWeave's backlog quality and its GPU-collateralized debt structures (~$30B debt); rating agencies and lenders treat NVIDIA's obligation as credit enhancement. The $2B stock sale was equity financing at the parent level.",
+    "off_balance_sheet": false,
+    "flags": ["vendor_financing", "customer_concentration", "equity_for_revenue"]
+  },
+  "related_edges": ["microsoft--coreweave--compute", "meta--coreweave--compute", "nvidia--openai--equity-2026"],
+  "both_sides_md": "**Bear:** the chip vendor guaranteeing its customer's unsold inventory is circularity in its purest form — demand is manufactured at the margin, and CoreWeave's CDS (implying ~50% 5-yr default probability, Jul 2026) shows the market's doubt (Chanos framing). **Bull:** $6.3B against ~$129B of CoreWeave backlog is small; NVIDIA argues it is monetizing otherwise-idle capacity for its own R&D/DGX-cloud needs and that seeding distribution is classic vendor strategy (NVIDIA Nov 2025 IR memo).",
+  "observations": [],
+  "events": [
+    {
+      "date": "2025-09-15",
+      "title": "CoreWeave discloses $6.3B NVIDIA capacity backstop through 2032",
+      "impact": "high",
+      "entities": ["nvidia", "coreweave"],
+      "sources": [{ "url": "https://www.cnbc.com/2025/09/15/coreweave-stock-jumps-on-disclosure-of-6point3-billion-order-from-nvidia.html", "publisher": "CNBC", "published": "2025-09-15", "kind": "press" }]
+    },
+    {
+      "date": "2026-01-26",
+      "title": "NVIDIA invests additional $2B in CoreWeave at $87.20/share",
+      "impact": "medium",
+      "entities": ["nvidia", "coreweave"],
+      "sources": [{ "url": "https://www.bloomberg.com/news/articles/2026-01-26/nvidia-invests-another-2-billion-in-coreweave-offers-new-chip", "publisher": "Bloomberg", "published": "2026-01-26", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000047/crwv-20250909.htm", "publisher": "SEC (CoreWeave 8-K)", "published": "2025-09", "kind": "sec_filing" },
+    { "url": "https://www.cnbc.com/2025/09/15/coreweave-stock-jumps-on-disclosure-of-6point3-billion-order-from-nvidia.html", "publisher": "CNBC", "published": "2025-09-15", "kind": "press" },
+    { "url": "https://nvidianews.nvidia.com/news/nvidia-and-coreweave-strengthen-collaboration-to-accelerate-buildout-of-ai-factories", "publisher": "NVIDIA Newsroom", "published": "2026-01-26", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2026/01/26/3coreweave-nvidia-stock-ai-data-centers.html", "publisher": "CNBC", "published": "2026-01-26", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,76 @@
+{
+  "id": "hbm-supply",
+  "name": "HBM supply (SK Hynix / Micron / Samsung)",
+  "group": "compute_supply_chain",
+  "status": "binding",
+  "description_md": "High-bandwidth memory is the co-packaged DRAM every AI accelerator needs — 8+ stacks per Rubin-class GPU — and only three companies make it. SK Hynix leads with ~60% of the HBM market (58-62% in Q1-26 depending on tracker) and is reported to supply about two-thirds of Nvidia's HBM4 for the Vera Rubin platform; Micron told investors its HBM capacity is sold out through 2026 (~$8B annualized HBM run-rate); Samsung, after trailing on HBM3E qualification, is ramping HBM4 and targeting early delivery to claw back share. Demand exceeds supply so structurally that customers now pay in advance: Nvidia reportedly prepaid SK Hynix and Micron $540-770M each to lock allocation, and paid HBM4 samples shipped ahead of Q1-26 contract finalization. HBM also consumes ~3x the wafer area of standard DRAM per bit, so its growth cannibalizes conventional DRAM supply — spreading the shortage across the whole memory market (the 2026 pricing super-cycle). Status basis: judged binding — all three suppliers effectively sold out through 2026, prepayments as rationing mechanism, and packaging-integrated qualification makes switching slow.",
+  "controlled_by": [
+    { "entity": "sk-hynix", "share_note": "~60% HBM market share (58-62% Q1-26, Counterpoint/TrendForce); ~2/3 of Nvidia HBM4 allocation (press_reported)" },
+    { "entity": "micron", "share_note": "~20% share and rising; HBM sold out through 2026, ~$8B annualized HBM run-rate (company_claimed)" },
+    { "entity": "samsung", "share_note": "~20% share; ramping HBM4 after HBM3E qualification delays, targeting early HBM4 delivery to Nvidia (press_reported)" }
+  ],
+  "dependents": [
+    { "entity": "nvidia", "dependency_md": "Largest HBM buyer worldwide; Rubin-generation HBM4 demand allocated ~2/3 SK Hynix. Reportedly prepaid $540-770M each to SK Hynix and Micron to secure 2026-27 supply — memory, with packaging, sets the unit ceiling." },
+    { "entity": "amd", "dependency_md": "MI400-series bandwidth advantage depends on HBM4 allocation from the same three suppliers, where AMD is the smaller customer." },
+    { "entity": "broadcom", "dependency_md": "Every custom XPU (TPU et al.) ships with HBM; hyperscaler ASIC programs compete for the residual allocation after Nvidia." }
+  ],
+  "substitutes_md": "No drop-in substitute: accelerator memory bandwidth requirements can only be met by HBM today. Partial relief valves — LPDDR/GDDR for inference-optimized parts, larger SRAM caches (Cerebras-style), or CXL-attached DRAM — serve niches, not frontier training. Switching between the three HBM vendors requires months of electrical/thermal qualification against a specific GPU and its CoWoS package, which is why allocation is contracted a year ahead. Samsung's HBM4 ramp is the main share-shift mechanism, not a fourth source; Chinese HBM (CXMT) remains generations behind and export-restricted.",
+  "downcycle_md": "Memory is the most cyclical layer of the chain, and HBM would not be exempt: the same fabs flex between HBM and commodity DRAM, so an AI demand fall converts today's shortage into a general DRAM glut (as capacity built for HBM floods back into conventional bits). Prepayments and 2026 long-term agreements protect near-term revenue — Nvidia's advances are effectively non-refundable capacity reservations — but 2027+ volumes are re-negotiable, and history (2019, 2023) shows memory pricing can halve within a year. Samsung, the latest entrant with the most speculative HBM4 capacity, would absorb the swing first; SK Hynix's concentration (majority of profit from one customer's flagship platform) turns from moat to risk. Watch: paid-sample terms, prepayment size, and the HBM/DRAM price spread as contract-quality indicators.",
+  "observations": [
+    {
+      "metric": "market_share_pct",
+      "period": "2026-Q1",
+      "value": 60,
+      "unit": "pct",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://counterpointresearch.com/en/insights/global-dram-and-hbm-market-share", "publisher": "Counterpoint Research", "published": "2026", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "SK Hynix HBM share; trackers range 56.4-62% for Q1-26 (Counterpoint 58%; others 62%), down from ~69% a year earlier as Micron/Samsung ramp."
+    },
+    {
+      "metric": "other",
+      "metric_label": "SK Hynix share of Nvidia HBM4 (Vera Rubin) allocation",
+      "period": "CY2026",
+      "value": 66,
+      "unit": "pct",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.trendforce.com/news/2026/01/28/news-sk-hynix-reportedly-to-supply-about-two-thirds-of-nvidia-hbm4-samsung-targets-early-delivery/", "publisher": "TrendForce", "published": "2026-01-28", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "'About two-thirds', some reports up to ~70% — well above earlier expectations of just over 50%."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Micron HBM sold-out horizon",
+      "period": "FY2026",
+      "value": null,
+      "unit": "qualitative",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter", "publisher": "Micron IR", "published": "2026", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "HBM capacity sold out through calendar 2026; ~$8B annualized HBM revenue run-rate; FQ3-26 total revenue $41.5B vs $9.3B a year earlier (the super-cycle)."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Nvidia HBM prepayment per supplier (SK Hynix, Micron)",
+      "period": "2026",
+      "value": 655,
+      "unit": "USD_M",
+      "basis": "estimated",
+      "method_md": "Midpoint of the $540-770M-per-supplier range of Nvidia advance payments to SK Hynix and Micron reported in press aggregation of Korean media; exact figures undisclosed by the companies.",
+      "confidence": "low",
+      "source": { "url": "https://medium.com/@noahbean3396/nvidia-locked-in-its-memory-supply-through-2030-with-sk-hynix-heres-what-that-means-for-ai-37ec7bed421e", "publisher": "Medium (Noah Bean, citing Korean press)", "published": "2026-06", "kind": "other" },
+      "as_of": "2026-08-13",
+      "notes": "Single-sourced at low confidence; direction (nine-figure prepayments to lock HBM allocation) corroborated by TrendForce reporting of paid HBM4 samples ahead of 1Q26 contracts."
+    }
+  ],
+  "sources": [
+    { "url": "https://counterpointresearch.com/en/insights/global-dram-and-hbm-market-share", "publisher": "Counterpoint Research", "kind": "analyst" },
+    { "url": "https://www.trendforce.com/news/2026/01/28/news-sk-hynix-reportedly-to-supply-about-two-thirds-of-nvidia-hbm4-samsung-targets-early-delivery/", "publisher": "TrendForce", "published": "2026-01-28", "kind": "press" },
+    { "url": "https://www.trendforce.com/news/2025/12/16/news-sk-hynix-samsung-reportedly-deliver-paid-hbm4-samples-to-nvidia-ahead-of-1q26-contract-finalization/", "publisher": "TrendForce", "published": "2025-12-16", "kind": "press" },
+    { "url": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter", "publisher": "Micron IR", "kind": "company_ir" }
+  ],
+  "updated": "2026-08-13"
+}

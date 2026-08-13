@@ -1,0 +1,99 @@
+{
+  "id": "broadcom",
+  "name": "Broadcom Inc.",
+  "kind": "public_company",
+  "category": "chip_designer",
+  "group": "compute_supply_chain",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NASDAQ", "symbol": "AVGO" }],
+  "cik": "1730168",
+  "website": "https://www.broadcom.com",
+  "fiscal_year_end": "10-31",
+  "monetization": "Sells custom AI accelerators (XPUs) and AI networking silicon to hyperscalers and labs — OpenAI 10GW and Anthropic 3.5GW TPU deals — plus VMware infrastructure software.",
+  "description_md": "Broadcom designs custom AI accelerators ('XPUs') co-developed with a small set of very large customers — Google's TPUs are the flagship program — alongside merchant AI networking (Tomahawk/Jericho switches, optical/PCIe interconnect) and a large infrastructure-software business (VMware). It is the principal beneficiary of hyperscalers and labs diversifying away from Nvidia GPUs into custom silicon; management cites six core custom-chip customers including Google, Meta, OpenAI, and Anthropic.",
+  "ai_monetization_md": "AI semiconductor revenue was $10.8B in Q2 FY2026 (+143% y/y), guided to $16.0B in Q3 (+200%+ y/y); the company has reiterated FY2026 AI revenue of ~$56B and an FY2027 target in excess of $100B. Economics are long-cycle co-development contracts: OpenAI committed to 10GW of Broadcom-co-designed accelerators (deploying 2026–2029), and Broadcom will supply Anthropic with ~3.5GW of Google-designed TPU capacity from 2027 under an April 2026 three-way deal that also extends Broadcom's TPU development agreement with Google to 2031. Contract dollar splits per customer are undisclosed — a known data gap.",
+  "ai_strategy_md": "Be the arms-dealer for custom silicon: capture every hyperscaler/lab that wants an alternative to Nvidia by co-designing XPUs and bundling its networking stack (the 'open Ethernet vs NVLink' pitch). Concentrate on a handful of >$1B/yr customers rather than merchant volume; use VMware cash flows to fund the ramp. The FY27 >$100B AI target implies AI would roughly double again — predicated on OpenAI and Anthropic deployments landing on schedule.",
+  "risk_notes_md": "**Customer concentration:** six custom-silicon customers drive the AI business; the two largest new commitments (OpenAI 10GW, Anthropic 3.5GW) are labs whose own funding is the ecosystem's central open question — Broadcom backlog sits in the committed-but-unfunded tier until deployments are financed. **Guidance risk:** the June 2026 selloff (unchanged FY26 AI forecast, soft VMware) showed the stock is priced for raises, not reiterations. **Disclosure:** per-customer ASIC contract values are not public; revenue mix is inferred by analysts.",
+  "observations": [
+    {
+      "metric": "revenue_total",
+      "period": "FY2026-Q2",
+      "value": 22.19,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.prnewswire.com/news-releases/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial-results-and-quarterly-dividend-302790698.html", "publisher": "Broadcom IR (PR Newswire)", "published": "2026-06-03", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "+48% y/y. Q3 guide ~$29.4B (+84% y/y), non-GAAP operating margin ~67%."
+    },
+    {
+      "metric": "revenue_ai",
+      "period": "FY2026-Q2",
+      "value": 10.8,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.prnewswire.com/news-releases/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial-results-and-quarterly-dividend-302790698.html", "publisher": "Broadcom IR (PR Newswire)", "published": "2026-06-03", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "AI semiconductor revenue, +143% y/y, above forecast; Q3 guided to $16.0B (+200%+ y/y)."
+    },
+    {
+      "metric": "revenue_ai",
+      "period": "FY2026 (guide)",
+      "value": 56,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://www.cnbc.com/2026/06/03/broadcom-avgo-earnings-report-q2-2026.html", "publisher": "CNBC", "published": "2026-06-03", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Reiterated (not raised) at Q2 FY26 results — shares fell on the unchanged forecast plus weak software sales."
+    },
+    {
+      "metric": "revenue_ai",
+      "period": "FY2027 (target)",
+      "value": 100,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://finance.yahoo.com/markets/stocks/articles/analyst-thoughts-broadcom-ai-revenue-095947786.html", "publisher": "Yahoo Finance", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "'In excess of $100B' FY2027 AI semiconductor revenue target, reiterated alongside the FY26 guide; depends on OpenAI/Anthropic deployment schedules."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-10-13",
+      "title": "OpenAI and Broadcom announce 10GW custom-accelerator collaboration",
+      "why_it_matters": "OpenAI commits to co-developed Broadcom ASICs (racks deploying 2026–2029) — the largest custom-silicon program announced, and the backbone of Broadcom's FY27 >$100B AI target.",
+      "impact": "high",
+      "entities": ["broadcom", "openai"],
+      "sources": [{ "url": "https://openai.com/index/openai-and-broadcom-announce-strategic-collaboration/", "publisher": "OpenAI", "published": "2025-10-13", "kind": "company_pr" }]
+    },
+    {
+      "date": "2026-04-07",
+      "title": "Anthropic signs for ~3.5GW of Google TPUs supplied via Broadcom from 2027",
+      "why_it_matters": "Expands a 1GW 2026 arrangement; Broadcom simultaneously extended its Google TPU development deal to 2031. Anthropic disclosed run-rate revenue >$30B, framing the capacity as demand-backed.",
+      "impact": "high",
+      "entities": ["broadcom", "anthropic", "alphabet"],
+      "sources": [
+        { "url": "https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus/", "publisher": "TechCrunch", "published": "2026-04-07", "kind": "press" },
+        { "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute", "publisher": "Anthropic", "published": "2026-04", "kind": "company_pr" }
+      ]
+    },
+    {
+      "date": "2026-06-03",
+      "title": "Q2 FY26: AI revenue +143%, but shares drop on unchanged FY26 AI forecast",
+      "why_it_matters": "Demonstrated how much AI growth is already priced in — a reiterated ~$56B AI guide plus soft VMware sales read as a miss.",
+      "impact": "medium",
+      "entities": ["broadcom"],
+      "sources": [{ "url": "https://www.cnbc.com/2026/06/03/broadcom-avgo-earnings-report-q2-2026.html", "publisher": "CNBC", "published": "2026-06-03", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial", "publisher": "Broadcom IR", "kind": "company_ir" },
+    { "url": "https://www.datacenterdynamics.com/en/news/broadcom-to-develop-google-tpus-until-2031-anthropic-signs-deal-with-both-companies-for-35gw-of-tpus/", "publisher": "Data Center Dynamics", "published": "2026-04", "kind": "press" },
+    { "url": "https://www.tomshardware.com/tech-industry/broadcom-expands-anthropic-deal-to-3-5gw-of-google-tpu-capacity-from-2027", "publisher": "Tom's Hardware", "published": "2026-04", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

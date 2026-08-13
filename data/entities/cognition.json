@@ -1,0 +1,76 @@
+{
+  "id": "cognition",
+  "name": "Cognition AI",
+  "kind": "private_company",
+  "category": "ai_native",
+  "group": "labs_ai_native",
+  "region": "us",
+  "tier": 1,
+  "website": "https://cognition.ai",
+  "monetization": "Sells Devin, an autonomous AI software engineer, plus the Windsurf IDE — priced per-agent/per-seat to enterprises replacing or augmenting engineering capacity.",
+  "description_md": "Cognition AI, founded in 2023, builds Devin — the first widely deployed autonomous 'AI software engineer' that plans, writes, tests, and ships code — and owns the Windsurf IDE after acquiring its product and team in July 2025 following Google's ~$2.4B license-hire of Windsurf's leadership. It raised $1B+ at a $26B valuation in May 2026 (co-led by Lux, General Catalyst, 8VC, with Founders Fund), and by August 2026 was reportedly already in talks to raise at $40B with revenue run-rate approaching $1B.",
+  "ai_monetization_md": "Enterprise contracts for Devin agents (consumption/agent-hours) plus Windsurf subscriptions. Run-rate revenue climbed from $37M (May 2025) to $492M (May 2026), with management targeting >$1B later in 2026 — a figure TechCrunch reported the company was already approaching by August. The pitch is labor-substitution economics rather than tool economics: Devin is sold against the cost of an engineer, not the cost of an editor seat, and Cognition claims ~89–90% of its own committed code is Devin-written.",
+  "ai_strategy_md": "Go straight at autonomous engineering rather than assistive coding: agents that own tickets end-to-end, with Windsurf as the human-in-the-loop surface acquired opportunistically when Google took only Windsurf's leadership. Aggressive capital velocity is itself strategy — valuation doubled ~8 months to $26B (May 2026), with $40B talks three months later — using each round to fund compute and enterprise land-grab before Anysphere/Copilot/Claude Code close the autonomy gap.",
+  "risk_notes_md": "The reported ~$1B run-rate and the $40B raise talks are each single-sourced (TechCrunch, Aug 12, 2026) and unconfirmed — the $40B is talks, not a closed round. Competitive position is squeezed between Cursor's distribution (~$4B ARR) and frontier labs' own coding agents; like all coding startups it pays its model suppliers (who are also competitors). Revenue quality untested: agent-consumption contracts are young, and no retention/margin data is public.",
+  "observations": [
+    {
+      "metric": "valuation",
+      "period": "2026-05",
+      "value": 26,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "high",
+      "source": { "url": "https://www.bloomberg.com/news/articles/2026-05-27/ai-coding-startup-cognition-raises-1-billion-at-26-billion-value", "publisher": "Bloomberg", "title": "AI Coding Startup Cognition Raises $1 Billion at $26 Billion Value", "published": "2026-05-27", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "$1B+ raised at $26B post ($25B pre) — co-led by Lux Capital, General Catalyst, 8VC; incl. Founders Fund, Ribbit, Atreides. More than double its ~$10.2B mark of Sept 2025. Private round mark."
+    },
+    {
+      "metric": "arr",
+      "period": "run_rate@2026-05",
+      "value": 492,
+      "unit": "USD_M",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/", "publisher": "TechCrunch", "title": "AI coding startup Cognition raises $1B at $25B pre-money valuation", "published": "2026-05-27", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Run rate of $492M at the May 2026 raise, up from $37M a year earlier; management targeting >$1B later in 2026. Unaudited."
+    },
+    {
+      "metric": "ai_run_rate",
+      "period": "run_rate@2026-08",
+      "value": 1,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/", "publisher": "TechCrunch", "title": "AI coding startup Cognition reportedly already in talks to raise at $40B valuation", "published": "2026-08-12", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "~$1B run-rate reported alongside the $40B raise talks. Single-sourced from a strong outlet → medium; approximate figure."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-05-27",
+      "title": "Raises $1B+ at $26B valuation",
+      "why_it_matters": "More than doubles Cognition's valuation in ~8 months and arms the autonomous-agent thesis against Cursor's assistive-editor thesis — the two AI-coding archetypes now both Tier-1 scale.",
+      "impact": "high",
+      "entities": ["cognition"],
+      "sources": [
+        { "url": "https://www.bloomberg.com/news/articles/2026-05-27/ai-coding-startup-cognition-raises-1-billion-at-26-billion-value", "publisher": "Bloomberg", "published": "2026-05-27", "kind": "press" },
+        { "url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/", "publisher": "TechCrunch", "published": "2026-05-27", "kind": "press" }
+      ]
+    },
+    {
+      "date": "2026-08-12",
+      "title": "Reportedly in talks to raise at $40B valuation",
+      "why_it_matters": "A ~54% markup sought less than three months after the last round, with run-rate reportedly near $1B — capital velocity as competitive weapon, and a live data point on late-cycle private-market risk appetite. Talks only; not closed.",
+      "impact": "medium",
+      "entities": ["cognition"],
+      "sources": [{ "url": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/", "publisher": "TechCrunch", "published": "2026-08-12", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.bloomberg.com/news/articles/2026-05-27/ai-coding-startup-cognition-raises-1-billion-at-26-billion-value", "publisher": "Bloomberg", "kind": "press" },
+    { "url": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/", "publisher": "TechCrunch", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

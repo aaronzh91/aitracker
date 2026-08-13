@@ -1,0 +1,31 @@
+{
+  "id": "tata",
+  "name": "Tata Group",
+  "kind": "private_company",
+  "category": "datacenter_operator",
+  "group": "physical_infrastructure",
+  "region": "india",
+  "tier": 2,
+  "website": "https://www.tata.com",
+  "monetization": "Indian conglomerate (Tata Sons holding; TCS listed) whose TCS HyperVault unit sells AI-ready data-center capacity — OpenAI is the anchor customer, starting at 100MW with ambitions toward 1GW.",
+  "description_md": "Tata Group spans IT services (Tata Consultancy Services), steel, autos, power, and consumer businesses. Its relevance to the AI money map is TCS's HyperVault data-center business, launched with OpenAI as its first customer (announced Feb 19, 2026 at the India AI Impact Summit) as part of OpenAI's Stargate-branded India buildout. The deal also puts ChatGPT Enterprise across Tata's workforce.",
+  "observations": [
+    {
+      "metric": "capacity_mw",
+      "metric_label": "TCS HyperVault initial AI DC capacity for OpenAI",
+      "period": "2026",
+      "value": 100,
+      "unit": "MW",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.techcrunch.com/2026/02/18/openai-taps-tata-for-100mw-ai-data-center-capacity-in-india-eyes-1gw/", "publisher": "TechCrunch", "published": "2026-02-18", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Initial 100MW for OpenAI, with a stated path to scale to 1GW. Contract dollars undisclosed."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.techcrunch.com/2026/02/18/openai-taps-tata-for-100mw-ai-data-center-capacity-in-india-eyes-1gw/", "publisher": "TechCrunch", "published": "2026-02-18", "kind": "press" },
+    { "url": "https://finance.yahoo.com/news/tatas-data-centre-business-signs-030222356.html", "publisher": "Yahoo Finance / Reuters", "published": "2026-02", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

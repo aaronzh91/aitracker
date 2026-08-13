@@ -1,0 +1,34 @@
+{
+  "id": "bank-of-america",
+  "name": "Bank of America Corporation",
+  "kind": "public_company",
+  "category": "financier_bank",
+  "group": "capital",
+  "region": "us",
+  "tier": 2,
+  "tickers": [{ "exchange": "NYSE", "symbol": "BAC" }],
+  "cik": "70858",
+  "website": "https://www.bankofamerica.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Lends to and seeks capital-markets mandates from AI issuers; extended OpenAI's first bilateral bank credit line ($520M, Jul 2026) while pursuing IPO advisory roles at OpenAI and Anthropic.",
+  "description_md": "Bank of America is one of the large US banks moving from the sidelines into direct AI-lab credit exposure. After declining OpenAI's financing requests a year earlier, it opened a $520M bilateral credit line in July 2026 — widely read as relationship-building ahead of OpenAI's planned IPO. Bank C&I exposure to AI-adjacent industries is a live contagion channel (Chicago Fed: ~25% of Tier 1 capital in commitments across the banking system).",
+  "observations": [
+    {
+      "metric": "contract_value",
+      "metric_label": "Bilateral credit line to OpenAI",
+      "period": "2026-07",
+      "value": 520,
+      "unit": "USD_M",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.bloomberg.com/news/articles/2026-07-08/openai-ipo-bofa-u-turns-on-loan-for-chatgpt-maker-to-secure-role-in-listing", "publisher": "Bloomberg", "published": "2026-07-08", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "First bilateral bank loan to OpenAI; drawn amount undisclosed."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.bloomberg.com/news/articles/2026-07-08/openai-ipo-bofa-u-turns-on-loan-for-chatgpt-maker-to-secure-role-in-listing", "publisher": "Bloomberg", "published": "2026-07-08", "kind": "press" },
+    { "url": "https://www.theinformation.com/briefings/bofa-extends-520-million-loan-openai", "publisher": "The Information", "published": "2026-07", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

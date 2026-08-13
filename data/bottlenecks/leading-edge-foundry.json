@@ -1,0 +1,64 @@
+{
+  "id": "leading-edge-foundry",
+  "name": "Leading-edge foundry capacity (TSMC N3/N2)",
+  "group": "compute_supply_chain",
+  "status": "binding",
+  "description_md": "Every competitive AI accelerator — Nvidia Blackwell/Rubin, AMD MI-series, the Broadcom/Google TPU and other custom ASICs — is fabbed at TSMC on N4/N3 today and N2 next. TSMC held 72.3% of total foundry revenue in Q1 2026 and analysts put its advanced-node (≤3nm-class) share above 90%; N2 entered high-volume manufacturing in Q4 2025 with good yield, reached ~90-100k wafers/month by early 2026, and is reported sold out through at least Q2 2027 with allocation stretching to 2028. Because a new leading-edge fab takes ~2 years to build and ~$20B+ to equip, supply is inelastic on the timescale of AI demand: whoever wins TSMC allocation wins the market, and everyone else waits. Status basis: judged binding — the leading node is fully allocated more than a year forward, and the two substitutes (Samsung SF2, Intel 18A) remain distant on yield and customer traction.",
+  "controlled_by": [
+    { "entity": "tsmc", "share_note": "72.3% of total foundry revenue Q1-26; >90% of advanced-node (≤3nm) output (analyst/press_reported)" },
+    { "entity": "samsung", "share_note": "Distant #2; SF2 GAA in production but persistent yield challenges keep advanced-node share in single digits (press_reported)" },
+    { "entity": "intel", "share_note": "18A ramping mostly for internal products; external foundry share negligible so far (press_reported)" }
+  ],
+  "dependents": [
+    { "entity": "nvidia", "dependency_md": "Effectively 100% of data-center GPU/system silicon fabbed at TSMC; Rubin-generation dies target N3/N2-class nodes. Nvidia's ~$200B+ revenue run-rate transits this single supplier." },
+    { "entity": "amd", "dependency_md": "MI350/MI400 accelerators and EPYC CPUs are TSMC N4/N3/N2 parts; AMD competes with Nvidia for the same wafer allocation." },
+    { "entity": "broadcom", "dependency_md": "Custom AI ASICs (Google TPU, Meta MTIA and other XPU programs) are TSMC leading-edge; custom-silicon growth is capped by allocation." },
+    { "entity": "apple", "dependency_md": "Lead customer on each new node (first N2 customer for 2026); its priority allocation shrinks what is left for AI accelerators." }
+  ],
+  "substitutes_md": "Samsung Foundry (SF2) is the only nominally node-equivalent alternative but has struggled with GAA yields; it has won some mobile/crypto and Tesla business, not flagship AI accelerators. Intel Foundry's 18A is ramping primarily internal product, with 14A pitched at external customers for ~2027-28. Porting a design between foundries costs a year-plus of re-engineering and re-qualification, so substitution is a next-generation decision, not a this-generation escape valve. Trailing-edge nodes are not substitutes for frontier accelerators at all.",
+  "downcycle_md": "TSMC is protected by prepayments and long-term agreements and by having the whole industry as customer, but leading-edge fabs are the classic glut machine: capacity ordered against 2026-27 AI demand arrives in 2028 regardless. If AI accelerator orders fall, utilization drops first at Samsung/Intel (marginal suppliers lose share fastest), then TSMC cuts capex guidance and wafer pricing power erodes — as in 2019 and 2023 memory-style downturns. Customer prepayments and take-or-pay-like capacity agreements (Apple, Nvidia) mean TSMC books revenue even as customers eat inventory; the losses would surface as writedowns at chip designers and canceled expansion at the substitutes.",
+  "observations": [
+    {
+      "metric": "market_share_pct",
+      "period": "2026-Q1",
+      "value": 72.3,
+      "unit": "pct",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://marklapedus.substack.com/p/tsmc-gains-foundry-share-in-q1-26", "publisher": "Semiecosystem (Mark LaPedus)", "published": "2026", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "Total foundry revenue share, up from 70.4% prior quarter; advanced-node share estimated >90%."
+    },
+    {
+      "metric": "other",
+      "metric_label": "TSMC N2 capacity",
+      "period": "2026-Q1",
+      "value": 95,
+      "unit": "k_wafers_per_month",
+      "basis": "estimated",
+      "method_md": "Midpoint of the ~90,000-100,000 wafers/month range reported for TSMC N2 capacity across Taiwan facilities by early 2026 (Silicon Analysts / trade press).",
+      "confidence": "low",
+      "source": { "url": "https://siliconanalysts.com/analysis/foundry-allocation-status-q1-2026", "publisher": "Silicon Analysts", "published": "2026", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "N2 entered HVM Q4 2025; contributed ~3% of wafer revenue in Q2-26, ramping fast."
+    },
+    {
+      "metric": "other",
+      "metric_label": "N2 allocation sold-out horizon",
+      "period": "2026-Q1",
+      "value": null,
+      "unit": "qualitative",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://siliconanalysts.com/analysis/foundry-allocation-status-q1-2026", "publisher": "Silicon Analysts", "published": "2026", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "N2 slots reported sold out through Q2 2027, with output described as fully booked through 2028. Single-sourced analyst claim."
+    }
+  ],
+  "sources": [
+    { "url": "https://marklapedus.substack.com/p/tsmc-gains-foundry-share-in-q1-26", "publisher": "Semiecosystem (Mark LaPedus)", "kind": "analyst" },
+    { "url": "https://siliconanalysts.com/analysis/foundry-allocation-status-q1-2026", "publisher": "Silicon Analysts", "kind": "analyst" },
+    { "url": "https://investor.tsmc.com/static/annualReports/2025/english/index.html", "publisher": "TSMC IR", "kind": "company_ir" }
+  ],
+  "updated": "2026-08-13"
+}

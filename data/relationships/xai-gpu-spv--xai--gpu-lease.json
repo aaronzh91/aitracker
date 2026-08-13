@@ -1,0 +1,26 @@
+{
+  "id": "xai-gpu-spv--xai--gpu-lease",
+  "from": "xai-gpu-spv",
+  "to": "xai",
+  "type": "lease",
+  "status": "announced",
+  "headline": { "value": 20, "unit": "USD_B", "caveat": "~$20B of NVIDIA GPUs to be purchased by the SPV and leased to xAI over ~5 years; lease payment schedule undisclosed. Final close of the full raise not publicly confirmed", "as_of": "2025-10" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "GPU deliveries to Colossus 2 ramping from late 2025; amounts deployed not disclosed" },
+  "term": { "announced": "2025-10", "start": "2025", "end": null, "duration_years": 5 },
+  "nature_md": "The delivery leg of the xAI GPU SPV structure: the SPV (equity ~$7.5B anchored by Valor, incl. up to $2B from NVIDIA; debt ~$12.5B via Apollo/Diameter et al.) buys ~$20B of NVIDIA GPUs and leases them to xAI for ~5 years to equip the Colossus 2 campus in Memphis. Direction here follows the capital: the SPV funds and delivers the GPUs xAI uses; xAI's lease/rental payments flow back to the SPV over the term and service the debt. Structured partly as lease-to-own per some reports. xAI gets compute without $20B of debt on its own balance sheet; the SPV's lenders bear GPU-residual-value and xAI-credit risk.",
+  "accounting": {
+    "payer_treatment_md": "The SPV capitalizes the GPUs as leased assets, carries the ~$12.5B of collateralized debt, and earns lease income from xAI. If GPUs outlive the lease at good residual values, equity wins; if not, losses cascade up from equity into the GPU-backed debt.",
+    "payee_treatment_md": "xAI records a lease (right-of-use asset and lease liability under ASC 842 if finance/operating lease, magnitude far below $20B of debt) — the accounting keeps Colossus 2's compute cost off xAI's debt stack. Lease payments become xAI opex over 5 years, backloading the cash burden onto a company still burning cash.",
+    "off_balance_sheet": true,
+    "flags": ["collateralized_gpu_debt", "spv_shift"]
+  },
+  "related_edges": ["nvidia--xai-gpu-spv--equity", "valor-equity--xai-gpu-spv--equity", "apollo--xai-gpu-spv--debt"],
+  "both_sides_md": "**Bear:** a 5-year lease against GPUs whose economic life the shorts put at ~3 years, paid by a pre-profit lab, financed at SPV level so no one balance sheet shows the whole obligation — Burry/Kedrosky's depreciation and 'price-it-like-a-utility' critiques apply squarely. **Bull:** CoreWeave's evidence that A100s re-lease at ~95% of original rates into 2029 supports GPU residual values; the SPV isolates risk with real third-party capital rather than hiding it (CoreWeave earnings; SemiAnalysis fundability view).",
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.datacenterdynamics.com/en/news/nvidia-to-invest-in-xai-special-purpose-vehicle-cash-to-be-used-to-buy-nvidia-gpus/", "publisher": "Data Center Dynamics", "published": "2025-10", "kind": "press" },
+    { "url": "https://www.roic.ai/news/xai-pursues-20-billion-lease-to-own-deal-for-nvidia-gpus-through-spv-structure-10-16-2025", "publisher": "Roic News", "published": "2025-10-16", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

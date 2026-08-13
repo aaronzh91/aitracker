@@ -1,0 +1,74 @@
+{
+  "id": "perplexity",
+  "name": "Perplexity AI",
+  "kind": "private_company",
+  "category": "ai_native",
+  "group": "labs_ai_native",
+  "region": "us",
+  "tier": 1,
+  "website": "https://www.perplexity.ai",
+  "monetization": "Sells Pro/Max subscriptions to an AI answer engine and the Comet browser; building toward commerce and OEM distribution revenue while sharing revenue with publishers.",
+  "description_md": "Perplexity is the leading independent AI-native search challenger: an answer engine that cites sources, plus the Comet agentic browser launched in 2025. It reached a ~$23B valuation in its January 2026 round on $450M+ ARR — roughly 175× its April 2023 valuation in under three years — and has repeatedly used audacious M&A bids (Chrome, TikTok-US) as positioning. It rents rather than trains frontier models, riding on OpenAI/Anthropic/open-weight backends.",
+  "ai_monetization_md": "Revenue is mainly consumer subscriptions (Pro/Max tiers) plus enterprise seats and API, with ARR passing ~$450M by early 2026. It has committed spend the other way too — a reported $750M Azure commitment (Jan 2026). Distribution deals are the growth bet: Comet reached 3M+ MAU, launched free on iOS in March 2026, and Perplexity powers Samsung's Bixby on the Galaxy S26 — the first OS-level assistant deal outside Google. A publisher revenue-share program pays media partners whose content appears in answers, a hedge against the scraping lawsuits that dog the category.",
+  "ai_strategy_md": "Own the query, not the model: differentiate on product speed and citations, buy model capacity from multiple labs, and convert answers into commerce (shopping, bookings) where per-query economics beat ad-search margins. OEM distribution (Samsung; Motorola) attacks Google's default-placement moat directly — timed to the remedies phase of the Google antitrust cases. The January 2026 round (investors across rounds include Nvidia, SoftBank Vision Fund 2, IVP, Accel, Bezos) funds a compute ramp and browser marketing.",
+  "risk_notes_md": "Valuation is ~50× ARR on a consumer-heavy revenue base with low switching costs, squeezed from above by Google's Gemini-in-Search and ChatGPT's search mode. Model dependency: it rents frontier models from labs that are also competitors. Legal risk from publishers (News Corp/Dow Jones suits) persists despite the rev-share program. The $23B January 2026 mark is reported by trackers and secondary press rather than a tier-1 outlet with deal documents; some coverage puts it at $22.6B.",
+  "observations": [
+    {
+      "metric": "valuation",
+      "period": "2026-01",
+      "value": 23,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://sacra.com/c/perplexity/", "publisher": "Sacra", "title": "Perplexity revenue, valuation & funding", "published": "2026", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "January 2026 round (Series E-6); some trackers report $22.6B. No tier-1 press confirmation of final terms located — treated as a secondary-tracker figure. Private round mark, not a traded price."
+    },
+    {
+      "metric": "arr",
+      "period": "run_rate@2026-01",
+      "value": 450,
+      "unit": "USD_M",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://sacra.com/c/perplexity/", "publisher": "Sacra", "title": "Perplexity revenue, valuation & funding", "published": "2026", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "$450M+ ARR crossing into 2026; some estimates run to ~$500M. Value is a floor."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Azure compute commitment",
+      "period": "2026-01",
+      "value": 750,
+      "unit": "USD_M",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://getairefs.com/blog/perplexity-statistics-june-2026/", "publisher": "AIRefs", "title": "Perplexity Statistics June 2026", "published": "2026-06", "kind": "other" },
+      "as_of": "2026-08-13",
+      "notes": "Reported $750M committed to Microsoft Azure in Jan 2026; single secondary source — low confidence."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-01",
+      "title": "Raises at ~$23B valuation with $450M+ ARR",
+      "why_it_matters": "Prices the independent AI-search challenger at ~50× ARR and funds the Comet browser push — the sector's cleanest test of whether answer engines can dent Google's distribution moat.",
+      "impact": "medium",
+      "entities": ["perplexity"],
+      "sources": [{ "url": "https://sacra.com/c/perplexity/", "publisher": "Sacra", "published": "2026", "kind": "analyst" }]
+    },
+    {
+      "date": "2026-03-18",
+      "title": "Comet browser launches free on iOS, hits #3 on US App Store",
+      "why_it_matters": "Distribution is the whole game for AI search; Comet's traction (3M+ MAU) plus the Samsung Bixby deal on Galaxy S26 are the first real evidence Perplexity can reach users without paying Google-scale default fees.",
+      "impact": "medium",
+      "entities": ["perplexity"],
+      "sources": [{ "url": "https://getairefs.com/blog/perplexity-statistics-june-2026/", "publisher": "AIRefs", "published": "2026-06", "kind": "other" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://sacra.com/c/perplexity/", "publisher": "Sacra", "kind": "analyst" },
+    { "url": "https://getairefs.com/blog/perplexity-statistics-june-2026/", "publisher": "AIRefs", "kind": "other" }
+  ],
+  "updated": "2026-08-13"
+}

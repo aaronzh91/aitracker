@@ -1,0 +1,42 @@
+{
+  "id": "meta-el-paso-spv",
+  "name": "Meta El Paso SPV (Project Sopaipilla Holdings)",
+  "kind": "spv_jv",
+  "category": "spv_jv",
+  "group": "physical_infrastructure",
+  "region": "us",
+  "tier": 2,
+  "website": null,
+  "monetization": "Special-purpose venture that develops and owns Meta's 1GW El Paso, TX data-center campus; ~80% owned by funds managed by BlackRock (GIP and HPS), 20% by Meta; income is Meta's lease payments as sole occupant.",
+  "description_md": "Announced July 2026 as a strategic venture between Meta and BlackRock to develop an approximately $14B, 1GW data-center campus in El Paso, Texas (completion expected 2028, Meta sole occupant). Funded in part with a $12.5B bond sold July 27, 2026 at a 7.53% yield — one of the widest spreads for an A-or-better rated bond in three years, and visibly costlier than the Hyperion JV's 6.58% notes nine months earlier. The structure keeps the campus off Meta's balance sheet.",
+  "observations": [
+    {
+      "metric": "total_debt",
+      "period": "2026-07",
+      "value": 12.5,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "high",
+      "source": { "url": "https://www.bloomberg.com/news/articles/2026-07-27/blackrock-raises-12-5-billion-of-debt-for-meta-data-center", "publisher": "Bloomberg", "published": "2026-07-27", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Notes priced Jul 27, 2026 at 7.53% yield, ~287.5bp over 10-year Treasuries."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Total development cost",
+      "period": "2026",
+      "value": 14,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Announces-New-Strategic-Venture-with-BlackRock-to-Develop-Data-Center-in-El-Paso/default.aspx", "publisher": "Meta IR", "published": "2026-07", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "~$14B total development cost for the 1GW campus; completion expected 2028."
+    }
+  ],
+  "sources": [
+    { "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Announces-New-Strategic-Venture-with-BlackRock-to-Develop-Data-Center-in-El-Paso/default.aspx", "publisher": "Meta IR", "published": "2026-07", "kind": "company_pr" },
+    { "url": "https://www.forbes.com/sites/maryroeloffs/2026/07/28/blackrock-will-own-80-of-metas-massive-new-ai-data-center-in-el-paso/", "publisher": "Forbes", "published": "2026-07-28", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

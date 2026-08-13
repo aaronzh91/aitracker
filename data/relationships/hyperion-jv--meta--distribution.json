@@ -1,0 +1,25 @@
+{
+  "id": "hyperion-jv--meta--distribution",
+  "from": "hyperion-jv",
+  "to": "meta",
+  "type": "jv_equity",
+  "status": "completed",
+  "headline": { "value": 3, "unit": "USD_B", "caveat": "approximately $3B one-time distribution from the JV to Meta at close", "as_of": "2025-10" },
+  "realized_to_date": { "value": 3, "unit": "USD_B", "as_of": "2025-10" },
+  "term": { "announced": "2025-10", "start": "2025-10", "end": "2025-10", "duration_years": null },
+  "nature_md": "At the formation of the Hyperion JV, Meta received a one-time distribution of approximately $3B from the vehicle, funded out of the ~$7B cash contributed by Blue Owl-managed funds. Economically, Meta monetized part of the campus assets it seeded into the JV — cash came *back* to Meta from a structure created to finance Meta's own infrastructure, in the same transaction that moved $27B of related debt off Meta's books.",
+  "accounting": {
+    "payer_treatment_md": "Distribution paid by the JV out of contributed equity capital — a return of capital at the vehicle level, not an operating outflow.",
+    "payee_treatment_md": "Cash inflow to Meta. Distributions from an equity-method JV reduce the carrying value of Meta's investment (return of capital) rather than flowing through revenue; specifics of any gain recognition on contributed assets are not separately disclosed in the announcement.",
+    "off_balance_sheet": false,
+    "flags": ["spv_shift"]
+  },
+  "related_edges": ["meta--hyperion-jv--capitalization", "blue-owl--hyperion-jv--capitalization"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Announces-Joint-Venture-with-Funds-Managed-by-Blue-Owl-Capital-to-Develop-Hyperion-Data-Center/default.aspx", "publisher": "Meta IR", "published": "2025-10", "kind": "company_pr" },
+    { "url": "https://about.fb.com/news/2025/10/meta-blue-owl-capital-develop-hyperion-data-center/", "publisher": "Meta Newsroom", "published": "2025-10", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

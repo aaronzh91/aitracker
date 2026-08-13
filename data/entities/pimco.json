@@ -1,0 +1,79 @@
+{
+  "id": "pimco",
+  "name": "PIMCO (Pacific Investment Management Company)",
+  "kind": "financial_institution",
+  "category": "financier_private_credit",
+  "group": "capital",
+  "region": "us",
+  "tier": 1,
+  "cik": null,
+  "website": "https://www.pimco.com",
+  "monetization": "The world's largest active fixed-income manager (Allianz-owned); monetizes AI as the anchor buyer of the biggest investment-grade AI data-center bonds (Hyperion ~$18B; Saline Township ~$10B).",
+  "description_md": "PIMCO is the Allianz-owned bond manager that has emerged as the single largest end-buyer of AI data-center debt. It anchored the two largest single-project financings of the cycle: Meta's Hyperion JV notes and the Related Digital/Oracle Saline Township, Michigan package.",
+  "ai_monetization_md": "AI-exposure thesis: harvest long-duration, A-rated-ish spread on bonds whose credit is a hyperscaler lease rather than a corporate balance sheet. PIMCO-managed funds took ~$18B of the $27.3B Hyperion senior secured notes (6.581% coupon, final maturity 2049, S&P A+, backed by Meta's lease and a 16-year residual-value guarantee), and anchored roughly $10B of the ~$14B fixed-rate tranche in the $16.3B Saline Township financing for Oracle/Stargate after several US banks retreated — the largest single-facility technology debt package on record (closed April 2026).",
+  "risk_notes_md": "Both anchor positions are single-tenant, single-campus exposures whose performance depends on Meta's and Oracle's willingness to renew leases on purpose-built AI assets with untested residual values. The ~$10B Saline anchor figure is single-sourced (flagged UNVERIFIED; the closing press release confirms PIMCO anchored the debt but not the amount). As a fund manager, losses would land on client accounts — including insurance mandates — rather than PIMCO's own balance sheet, which is precisely the transmission channel regulators (IMF GFSR, Fed FSR 2026) are watching.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Hyperion JV notes purchased",
+      "period": "2025-10",
+      "value": 18,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.bisnow.com/national/news/data-center-capital-markets/meta-pushes-its-largest-data-center-project-off-its-books-with-27b-joint-venture-131490", "publisher": "Bisnow", "published": "2025-10", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "~$18B of the $27.294B Beignet Investor LLC notes (6.581%, due 2049, S&P A+); BlackRock took >$3B."
+    },
+    {
+      "metric": "contract_value",
+      "metric_label": "Saline Township (Oracle/Related Digital) total financing",
+      "period": "2026-04",
+      "value": 16.3,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.related.com/press-releases/2026-04-24/related-digital-announces-financing-16-billion-oracle-data-center-project", "publisher": "Related Companies", "published": "2026-04-24", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Largest single-facility tech debt package; PIMCO-managed funds anchored the fixed-rate long-term debt; equity from Related Digital and Blackstone-affiliated funds; >1GW campus serving Oracle/OpenAI Stargate."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Saline Township bond tranche anchored by PIMCO",
+      "period": "2026-04",
+      "value": 10,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://thenextweb.com/news/oracle-data-centre-16-billion-financing-stargate", "publisher": "TNW", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "UNVERIFIED amount, single-sourced: ~$10B of a ~$14B bond tranche, reportedly after US banks pulled back. The closing PR confirms the anchor role but not the dollar figure."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-10-16",
+      "title": "Anchors Meta Hyperion JV bond with ~$18B take-down",
+      "why_it_matters": "Establishes bond funds — not banks — as the marginal lender to the AI buildout, and concentrates a historic amount of single-project risk in one manager's client accounts.",
+      "impact": "high",
+      "entities": ["pimco", "hyperion-jv", "meta", "blue-owl"],
+      "sources": [{ "url": "https://www.bisnow.com/national/news/data-center-capital-markets/meta-pushes-its-largest-data-center-project-off-its-books-with-27b-joint-venture-131490", "publisher": "Bisnow", "published": "2025-10", "kind": "press" }]
+    },
+    {
+      "date": "2026-04-24",
+      "title": "Saline Township $16.3B financing closes with PIMCO as debt anchor",
+      "why_it_matters": "The deal got done only after bank retrenchment (and Blue Owl's Dec 2025 exit) — evidence that AI project credit increasingly clears through a small set of bond managers.",
+      "impact": "high",
+      "entities": ["pimco", "oracle", "blackstone"],
+      "sources": [
+        { "url": "https://www.related.com/press-releases/2026-04-24/related-digital-announces-financing-16-billion-oracle-data-center-project", "publisher": "Related Companies", "published": "2026-04-24", "kind": "company_pr" },
+        { "url": "https://www.datacenterdynamics.com/en/news/pimco-in-talks-to-provide-14bn-in-debt-financing-for-oracles-michigan-data-center-report/", "publisher": "Data Center Dynamics", "kind": "press" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.related.com/press-releases/2026-04-24/related-digital-announces-financing-16-billion-oracle-data-center-project", "publisher": "Related Companies", "published": "2026-04-24", "kind": "company_pr" },
+    { "url": "https://www.bisnow.com/national/news/data-center-capital-markets/meta-pushes-its-largest-data-center-project-off-its-books-with-27b-joint-venture-131490", "publisher": "Bisnow", "published": "2025-10", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

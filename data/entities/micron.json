@@ -1,0 +1,80 @@
+{
+  "id": "micron",
+  "name": "Micron Technology, Inc.",
+  "kind": "public_company",
+  "category": "memory_storage",
+  "group": "compute_supply_chain",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NASDAQ", "symbol": "MU" }],
+  "cik": "723125",
+  "website": "https://www.micron.com",
+  "fiscal_year_end": "08-31",
+  "monetization": "Sells DRAM, HBM, and NAND — the US-based HBM supplier, with capacity sold out and revenue up ~4.5× y/y at super-cycle pricing.",
+  "description_md": "Micron is the only US-headquartered maker of DRAM and HBM, the third leg of the HBM triopoly with SK hynix and Samsung. The AI memory super-cycle transformed its P&L faster than any large-cap semiconductor company on record: fiscal Q3 2026 (ended May 2026) revenue was $41.5B versus $9.3B in the same quarter a year earlier, with fiscal Q4 guided to ~$50B at ~86% gross margin. Its HBM output is sold out through calendar 2026, with supply agreements to Nvidia and other accelerator programs; during 2025–26 some share trackers placed Micron ahead of Samsung in HBM.",
+  "ai_monetization_md": "HBM3E/HBM4 for AI accelerators plus high-capacity server DRAM (including LP server memory) and enterprise/data-center NAND — all at bottleneck pricing, with customers signing long-term agreements and HBM sold out through calendar 2026. The revenue trajectory ($9.3B → $41.5B y/y for FQ3; ~$50B guided at ~86% GM) reflects both volume and unprecedented price: memory is capturing a historically large share of AI-system bill-of-materials value. US-based manufacturing (Idaho/New York expansions, CHIPS support) positions Micron as the domestic-content HBM option for US buildouts.",
+  "ai_strategy_md": "Ramp HBM4 with capacity discipline: management has prioritized long-term agreements and profitability over share-chasing, converting sold-out conditions into multi-year visibility. Expand US fabs (Boise, Clay NY) under CHIPS incentives to own the 'secure US memory supply' position as sovereign/defense AI programs grow. The strategic risk it manages is the classic memory trap — over-adding capacity at the top of a super-cycle.",
+  "risk_notes_md": "**Super-cycle sustainability:** ~86% guided gross margin is far outside memory's historical band (typically negative to ~60%); a demand pause or HBM supply catch-up (Samsung, CXMT at trailing edge) would compress it violently — Micron carries the highest earnings beta to the cycle of the three HBM makers. **Concentration:** AI accelerator programs (Nvidia foremost) dominate HBM demand. **Capex escalation:** meeting sold-out demand requires record capex into 2027, spent at peak equipment prices. Historical base rate: every prior memory super-cycle ended in a glut.",
+  "observations": [
+    {
+      "metric": "revenue_total",
+      "period": "FY2026-Q3",
+      "value": 41.5,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter", "publisher": "Micron IR", "published": "2026-06", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "Fiscal Q3 ended May 2026; vs $9.3B a year earlier (~4.5×). HBM sold out through calendar 2026."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "FY2026-Q4 (guide)",
+      "value": 50,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter", "publisher": "Micron IR", "published": "2026-06", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "~$50B guided at ~86% gross margin — margin guidance far outside memory's historical range."
+    },
+    {
+      "metric": "gross_margin_pct",
+      "period": "FY2026-Q4 (guide)",
+      "value": 86,
+      "unit": "pct",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter", "publisher": "Micron IR", "published": "2026-06", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "Guided; a key sustainability watch-item for the memory super-cycle (see risk notes)."
+    },
+    {
+      "metric": "market_share_pct",
+      "metric_label": "HBM market position vs Samsung",
+      "period": "CY2025-CY2026",
+      "value": null,
+      "unit": "pct",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://www.astutegroup.com/news/general/sk-hynix-holds-62-of-hbm-micron-overtakes-samsung-2026-battle-pivots-to-hbm4/", "publisher": "Astute Group", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Share trackers reported Micron overtaking Samsung for #2 in HBM during 2025–26; exact percentage varies by source (shipments vs revenue), so no point value recorded."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-06",
+      "title": "FQ3-2026: revenue $41.5B vs $9.3B a year earlier; FQ4 guided to ~$50B at ~86% GM",
+      "why_it_matters": "The single most extreme y/y revenue expansion of the AI cycle among large caps — direct evidence of how much buildout capex is flowing to the HBM/DRAM bottleneck.",
+      "impact": "high",
+      "entities": ["micron", "nvidia"],
+      "sources": [{ "url": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter", "publisher": "Micron IR", "published": "2026-06", "kind": "company_ir" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter", "publisher": "Micron IR", "kind": "company_ir" },
+    { "url": "https://counterpointresearch.com/en/insights/global-dram-and-hbm-market-share", "publisher": "Counterpoint Research", "kind": "analyst" }
+  ],
+  "updated": "2026-08-13"
+}

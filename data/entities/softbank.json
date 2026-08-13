@@ -1,0 +1,102 @@
+{
+  "id": "softbank",
+  "name": "SoftBank Group Corp.",
+  "kind": "public_company",
+  "category": "financier_pe_vc",
+  "group": "capital",
+  "region": "japan",
+  "tier": 1,
+  "tickers": [{ "exchange": "TSE", "symbol": "9984" }],
+  "cik": null,
+  "website": "https://group.softbank",
+  "fiscal_year_end": "03-31",
+  "monetization": "Investment holding company whose AI monetization is portfolio appreciation: ~13% of OpenAI (planned), ~90% of Arm, ~40% of Stargate, Ampere — increasingly funded by asset sales and debt secured against those same stakes.",
+  "description_md": "SoftBank Group is a Japanese investment holding company (Vision Funds, ~90%-owned Arm, and direct strategic stakes) that has repositioned itself as the single largest financial backer of OpenAI and co-lead of the Stargate buildout. Chairman-CEO Masayoshi Son has explicitly reoriented the balance sheet around artificial super-intelligence, selling legacy positions — the entire Nvidia stake ($5.83B, Oct 2025) and part of T-Mobile ($9.17B) — to fund the bet.",
+  "ai_monetization_md": "SoftBank's AI exposure is equity-mark-driven, not operating revenue: $32.4B invested in OpenAI by March 2026 and planned to reach $64.6B (~13% of OpenAI) by October 1, 2026; ~90% of Arm (royalty and licensing leverage on AI silicon); Ampere Computing acquired for $6.5B (closed Nov 25, 2025) to build an Arm-based server-CPU stack; and ~40% of Stargate LLC, where SoftBank carries financial responsibility and Son serves as chairman. The thesis is concentrated, levered exposure to OpenAI's equity value and to the compute infrastructure it consumes.",
+  "risk_notes_md": "The funding stack is increasingly debt against the AI portfolio itself: a bridge loan of up to $40B for the OpenAI investment (reported repayment deadline March 2027) and a $10B two-year margin loan collateralized by the OpenAI stake, signed August 2026 with Goldman Sachs, JPMorgan, Mizuho, Apollo Global Funding, and SMBC — with provisions requiring additional collateral or early repayment if OpenAI's preferred-share valuation falls sharply. OpenAI shares are unlisted, so collateral value rests on private-round marks rather than a traded price. Selling the Nvidia stake to fund OpenAI concentrated the balance sheet in a single private counterparty.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "OpenAI investment, paid-in to date",
+      "period": "2026-03",
+      "value": 32.4,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://group.softbank/en/news/press/20260227", "publisher": "SoftBank Group", "published": "2026-02-27", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Cumulative amount invested in OpenAI as of the Feb 2026 announcement."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Planned cumulative OpenAI investment by Oct 1, 2026",
+      "period": "2026-10",
+      "value": 64.6,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://group.softbank/en/news/press/20260227", "publisher": "SoftBank Group", "published": "2026-02-27", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Would equal roughly a 13% stake in OpenAI. Commitment, not yet fully funded — remaining tranches depend on financing."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Bridge loan for OpenAI investment",
+      "period": "2026-03",
+      "value": 40,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://bloomberg.com/news/articles/2026-03-06/softbank-seeks-record-loan-of-up-to-40-billion-for-openai-stake", "publisher": "Bloomberg", "published": "2026-03-06", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Record bank loan sought to fund the OpenAI stake; reported repayment deadline March 2027."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Margin loan collateralized by OpenAI stake",
+      "period": "2026-08",
+      "value": 10,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.bloomberg.com/news/articles/2026-08-06/softbank-secures-10-billion-margin-loan-backed-by-openai-stake", "publisher": "Bloomberg", "published": "2026-08-06", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Two-year facility; syndicate includes Goldman Sachs Bank USA, JPMorgan Chase Bank, Mizuho Securities USA, Apollo Global Funding, SMBC. Collateral top-up / early-repayment triggers on OpenAI valuation declines."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-11-11",
+      "title": "Sells entire Nvidia stake for $5.83B to fund OpenAI bet",
+      "why_it_matters": "SoftBank exited 32.1M NVDA shares (sold in October) — the clearest signal that its AI strategy is a concentrated OpenAI position funded by liquidating everything else.",
+      "impact": "high",
+      "entities": ["softbank", "nvidia", "openai"],
+      "sources": [{ "url": "https://www.cnbc.com/2025/11/11/softbank-sells-its-entire-stake-in-nvidia-for-5point83-billion.html", "publisher": "CNBC", "published": "2025-11-11", "kind": "press" }]
+    },
+    {
+      "date": "2025-11-25",
+      "title": "Completes $6.5B acquisition of Ampere Computing",
+      "why_it_matters": "Adds an Arm-architecture server-CPU designer to the ~90% Arm stake, deepening the compute-supply leg of the AI portfolio.",
+      "impact": "medium",
+      "entities": ["softbank"],
+      "sources": [{ "url": "https://www.forbes.com/sites/ywang/2025/11/26/softbank-completes-65-billion-purchase-of-ampere-computing/", "publisher": "Forbes", "published": "2025-11-26", "kind": "press" }]
+    },
+    {
+      "date": "2026-08-06",
+      "title": "Signs $10B margin loan secured by its OpenAI stake",
+      "why_it_matters": "Leverage is now layered directly on unlisted OpenAI equity — a private-mark collateral chain that transmits any OpenAI valuation shock straight to bank and credit-fund lenders.",
+      "impact": "high",
+      "entities": ["softbank", "openai", "goldman-sachs", "jpmorgan", "apollo"],
+      "sources": [
+        { "url": "https://www.bloomberg.com/news/articles/2026-08-06/softbank-secures-10-billion-margin-loan-backed-by-openai-stake", "publisher": "Bloomberg", "published": "2026-08-06", "kind": "press" },
+        { "url": "https://finance.yahoo.com/technology/ai/articles/softbank-secures-10-billion-loan-105715129.html", "publisher": "Yahoo Finance", "published": "2026-08", "kind": "press" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://group.softbank/en/news/press/20260227", "publisher": "SoftBank Group", "title": "Additional investment in OpenAI", "published": "2026-02-27", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2025/11/11/softbank-sells-its-entire-stake-in-nvidia-for-5point83-billion.html", "publisher": "CNBC", "published": "2025-11-11", "kind": "press" },
+    { "url": "https://www.usnews.com/news/top-news/articles/2026-07-01/exclusive-softbank-renews-talks-for-10-billion-loan-against-openai-stake-adds-concessions-sources-say", "publisher": "US News / Reuters", "published": "2026-07-01", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

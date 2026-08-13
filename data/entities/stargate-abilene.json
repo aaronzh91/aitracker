@@ -1,0 +1,42 @@
+{
+  "id": "stargate-abilene",
+  "name": "Stargate Abilene JV (Crusoe / Blue Owl / Primary Digital Infrastructure)",
+  "kind": "spv_jv",
+  "category": "spv_jv",
+  "group": "physical_infrastructure",
+  "region": "us",
+  "tier": 2,
+  "website": null,
+  "monetization": "The $15B joint venture that owns and is building the 1.2GW flagship Stargate campus in Abilene, TX; income is lease payments from Oracle, which operates the site for OpenAI workloads.",
+  "description_md": "Joint venture sponsored by Crusoe, funds managed by Blue Owl Capital's Real Assets platform, and Primary Digital Infrastructure. Phase 1 (two buildings) was funded from 2024; the second phase (May 2025) expanded the JV to ~$15B and eight buildings, each designed to run up to 50,000 NVIDIA GB200 NVL72s on one network fabric. Construction is debt-financed via JPMorgan-led loans ($2.3B phase 1, $7.1B phase 2). Abilene is the flagship site of the OpenAI/Oracle/SoftBank Stargate program.",
+  "observations": [
+    {
+      "metric": "capacity_gw",
+      "period": "2025",
+      "value": 1.2,
+      "unit": "GW",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://www.globenewswire.com/news-release/2025/05/21/3085765/0/en/Crusoe-Blue-Owl-Capital-and-Primary-Digital-Infrastructure-Enter-Second-Phase-of-15-Billion-Joint-Venture-to-Fund-AI-Data-Center-in-Abilene-Texas.html", "publisher": "Crusoe / GlobeNewswire", "published": "2025-05-21", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Eight buildings at full build-out."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Total JV funding",
+      "period": "2025-05",
+      "value": 15,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://www.globenewswire.com/news-release/2025/05/21/3085765/0/en/Crusoe-Blue-Owl-Capital-and-Primary-Digital-Infrastructure-Enter-Second-Phase-of-15-Billion-Joint-Venture-to-Fund-AI-Data-Center-in-Abilene-Texas.html", "publisher": "Crusoe / GlobeNewswire", "published": "2025-05-21", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Debt and equity committed across both phases."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.globenewswire.com/news-release/2025/05/21/3085765/0/en/Crusoe-Blue-Owl-Capital-and-Primary-Digital-Infrastructure-Enter-Second-Phase-of-15-Billion-Joint-Venture-to-Fund-AI-Data-Center-in-Abilene-Texas.html", "publisher": "Crusoe / GlobeNewswire", "published": "2025-05-21", "kind": "company_pr" },
+    { "url": "https://www.bloomberg.com/news/articles/2025-05-22/jpmorgan-leads-7-1-billion-loan-for-blue-owl-tied-data-center", "publisher": "Bloomberg", "published": "2025-05-22", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

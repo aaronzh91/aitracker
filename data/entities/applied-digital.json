@@ -1,0 +1,31 @@
+{
+  "id": "applied-digital",
+  "name": "Applied Digital",
+  "kind": "public_company",
+  "category": "datacenter_operator",
+  "group": "hyperscalers_clouds",
+  "region": "us",
+  "tier": 2,
+  "tickers": [{ "exchange": "NASDAQ", "symbol": "APLD" }],
+  "website": "https://www.applieddigital.com",
+  "monetization": "AI data-center developer/landlord (ex-crypto hosting): builds powered campuses in North Dakota (Polaris Forge) and leases them long-term, anchored by ~$11B/400MW of CoreWeave leases plus a $5B hyperscaler lease.",
+  "observations": [
+    {
+      "metric": "backlog_ai",
+      "metric_label": "AI lease backlog per FY26 10-K",
+      "period": "FY2026",
+      "value": 36.2,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://ir.applieddigital.com/news-events/press-releases/detail/132/applied-digital-announces-5-billion-ai-factory-lease-with", "publisher": "Applied Digital IR", "published": "2026", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "Includes CoreWeave 400MW (~$11B) and a $5B hyperscaler AI-factory lease."
+    }
+  ],
+  "sources": [
+    { "url": "https://ir.applieddigital.com/news-events/press-releases/detail/128/applied-digital-finalizes-additional-150mw-lease-with", "publisher": "Applied Digital IR", "published": "2025-08", "kind": "company_ir" },
+    { "url": "https://ir.applieddigital.com/news-events/press-releases/detail/132/applied-digital-announces-5-billion-ai-factory-lease-with", "publisher": "Applied Digital IR", "published": "2026", "kind": "company_ir" }
+  ],
+  "updated": "2026-08-13"
+}

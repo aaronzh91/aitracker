@@ -1,0 +1,30 @@
+{
+  "id": "ampere",
+  "name": "Ampere Computing",
+  "kind": "subsidiary",
+  "category": "chip_designer",
+  "group": "compute_supply_chain",
+  "region": "us",
+  "tier": 3,
+  "website": "https://amperecomputing.com",
+  "monetization": "Designs Arm-based server CPUs for cloud and AI compute; wholly owned SoftBank Group subsidiary since November 2025, positioned alongside Arm in SoftBank's AI-compute stack.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "SoftBank acquisition price",
+      "period": "2025-11",
+      "value": 6.5,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.bloomberg.com/news/articles/2025-11-26/softbank-completes-acquisition-of-chipmaker-ampere-computing", "publisher": "Bloomberg", "published": "2025-11-26", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Agreed March 2025; closed Nov 25, 2025 after the FTC ended its investigation. Prior owners included Carlyle and Oracle."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.bloomberg.com/news/articles/2025-11-26/softbank-completes-acquisition-of-chipmaker-ampere-computing", "publisher": "Bloomberg", "published": "2025-11-26", "kind": "press" },
+    { "url": "https://amperecomputing.com/press/softbank-group-to-acquire-ampere-computing", "publisher": "Ampere Computing", "published": "2025-03", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

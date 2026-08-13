@@ -1,0 +1,30 @@
+{
+  "id": "tesla",
+  "name": "Tesla, Inc.",
+  "kind": "public_company",
+  "category": "consumer_platform",
+  "group": "software_applications",
+  "region": "us",
+  "tier": 2,
+  "tickers": [{ "exchange": "NASDAQ", "symbol": "TSLA" }],
+  "website": "https://www.tesla.com",
+  "monetization": "Sells EVs, energy storage, and robotics; monetizes AI through FSD/robotaxi software and designs in-house AI inference silicon (AI5/AI6), fabbed externally — including a $16.5B AI6 foundry deal with Samsung's Taylor, TX fab through 2033.",
+  "observations": [
+    {
+      "metric": "contract_value",
+      "metric_label": "Samsung Foundry AI6 chip supply deal through 2033",
+      "period": "2025-07",
+      "value": 16.5,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.reuters.com/business/autos-transportation/samsung-electronics-signs-165-billion-chip-supply-deal-tesla-2025-07-28/", "publisher": "Reuters", "published": "2025-07-28", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Disclosed via Samsung regulatory filing; Musk confirmed AI6 production at Samsung's Taylor, TX fab."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.reuters.com/business/autos-transportation/samsung-electronics-signs-165-billion-chip-supply-deal-tesla-2025-07-28/", "publisher": "Reuters", "published": "2025-07-28", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

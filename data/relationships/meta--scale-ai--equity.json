@@ -1,0 +1,34 @@
+{
+  "id": "meta--scale-ai--equity",
+  "from": "meta",
+  "to": "scale-ai",
+  "type": "equity_investment",
+  "status": "completed",
+  "headline": { "value": 14.3, "unit": "USD_B", "caveat": "49% non-voting stake at a ~$29B valuation", "as_of": "2025-06" },
+  "realized_to_date": { "value": 14.3, "unit": "USD_B", "as_of": "2025-06" },
+  "term": { "announced": "2025-06", "start": "2025-06", "end": null, "duration_years": null },
+  "nature_md": "Meta paid ~$14.3B for a 49% **non-voting** stake in Scale AI (June 2025, ~$29B valuation) — quasi-M&A structured to avoid control and merger review. The deal's real payload was talent: founder-CEO Alexandr Wang left to run Meta's superintelligence effort (with a small group of Scale employees), while Scale continued as a nominally independent company under interim CEO Jason Droege. Fallout was immediate: Google, OpenAI, and xAI paused or wound down data-labeling work with Scale, cutting into the revenue base Meta had just paid for.",
+  "accounting": {
+    "payer_treatment_md": "Non-voting 49% stake — Meta does not consolidate Scale; carried as an equity investment (equity method or fair value depending on rights). The effective price of Wang and team is embedded in the investment, not expensed as compensation.",
+    "payee_treatment_md": "Primary/secondary proceeds to Scale and its shareholders — financing, not revenue. Counterweight: customer attrition (Google/OpenAI/xAI) directly reduced post-deal revenue, a key input to whether the ~$29B mark holds.",
+    "off_balance_sheet": false,
+    "flags": []
+  },
+  "related_edges": [],
+  "both_sides_md": "**Bear:** $14.3B for a non-voting half of a services firm whose top customers left on announcement — the price was for one person and looks like acqui-hire inflation at record scale. **Bull:** frontier-model data pipelines are a strategic bottleneck; Meta secured the category leader's capacity and its founder while leaving antitrust surface area minimal (CNBC, Forbes coverage).",
+  "observations": [],
+  "events": [
+    {
+      "date": "2025-06-12",
+      "title": "Meta takes 49% non-voting stake in Scale AI; Alexandr Wang departs for Meta",
+      "impact": "high",
+      "entities": ["meta", "scale-ai"],
+      "sources": [{ "url": "https://www.cnbc.com/2025/06/12/scale-ai-founder-wang-announces-exit-for-meta-part-of-14-billion-deal.html", "publisher": "CNBC", "published": "2025-06-12", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.cnbc.com/2025/06/12/scale-ai-founder-wang-announces-exit-for-meta-part-of-14-billion-deal.html", "publisher": "CNBC", "published": "2025-06-12", "kind": "press" },
+    { "url": "https://www.forbes.com/sites/jonmarkman/2026/06/16/why-meta-paid-143b-for-scale-ai-and-alexandr-wangs-data-empire/", "publisher": "Forbes", "published": "2026-06-16", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

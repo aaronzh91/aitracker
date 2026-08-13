@@ -1,0 +1,26 @@
+{
+  "id": "alphabet--kairos-power--ppa",
+  "from": "alphabet",
+  "to": "kairos-power",
+  "type": "ppa",
+  "status": "contracted",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "Dollar terms undisclosed. Master agreement to purchase power from a fleet of Kairos SMRs totaling 500MW by 2035; first deployment targeted ~2030.", "as_of": "2024-10-14" },
+  "realized_to_date": { "value": 0, "unit": "USD_B", "caveat": "No reactors online; development-milestone payments, if any, are not disclosed.", "as_of": "2026-08-13" },
+  "term": { "announced": "2024-10-14", "start": "2030", "end": "2035", "duration_years": null },
+  "nature_md": "Master plant development agreement (Oct 2024) under which Google will buy power from a fleet of Kairos Power fluoride-salt-cooled SMRs — up to ~7 reactors totaling 500MW deployed by 2035, with the first unit targeted around 2030. Orders are placed against development milestones rather than a single signed EPC contract, giving Kairos demand certainty to reach NRC licensing and FOAK construction (building on its Hermes demonstration reactors in Oak Ridge, TN). Highly conditional: capacity, timing, and price all depend on licensing and build success.",
+  "accounting": {
+    "payer_treatment_md": "Google records no liability today; power purchases would be opex from each unit's COD (2030+). Any development-stage payments are undisclosed and immaterial to Alphabet.",
+    "payee_treatment_md": "Kairos is pre-revenue on power; the offtake underpins project financing and DOE cost-share. Revenue recognition begins only at COD of each reactor — a decade-long lag between announcement and cash.",
+    "off_balance_sheet": true,
+    "flags": ["commitment_unfunded"]
+  },
+  "related_edges": ["alphabet--nextera--ppa-duane-arnold", "alphabet--intersect-power--jv"],
+  "both_sides_md": "**Bull:** the first corporate order book for SMRs — exactly the demand signal advanced nuclear needed. **Bear:** zero MW exist; every milestone (licensing, FOAK cost, supply chain) sits ahead, and the announced 500MW-by-2035 is a target, not a contract with liquidated damages.",
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://blog.google/outreach-initiatives/sustainability/google-kairos-power-nuclear-energy-agreement/", "publisher": "Google", "published": "2024-10-14", "kind": "company_pr" },
+    { "url": "https://world-nuclear-news.org/Articles/Google-to-buy-power-from-fleet-of-Kairos-SMRs", "publisher": "World Nuclear News", "published": "2024-10", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "optics-800g-1600g",
+  "name": "800G/1.6T optical transceivers",
+  "group": "compute_supply_chain",
+  "status": "binding",
+  "description_md": "AI clusters are as much networks as computers: a 100k-GPU cluster needs hundreds of thousands of optical transceivers, and each GPU generation doubles the port speed. 800G shipments are set to more than double in 2026 while 1.6T — required for Rubin-class scale-up fabrics — is only beginning to ramp from a small base; the transceiver market is forecast to hit ~$26B in 2026, +60% y/y. US-listed suppliers are at record levels: Coherent's datacenter & comms revenue grew 41% y/y to ~75% of the company, and Lumentum posted record 800G revenue with 1.6T ramping and demand reported above supply — Nvidia has taken equity stakes in both, a signal of how critical (and tight) the layer is. The binding sub-constraint is upstream components: EML/CW laser chips and indium-phosphide capacity, where Coherent and Lumentum are two of only a handful of merchant sources. Status basis: judged binding — component (laser) supply and 1.6T qualification pace, not assembly, cap cluster deployment schedules; vendors themselves describe demand above supply. Softens toward 'easing' if InnoLight/Eoptolink capacity and CPO adoption catch up in 2027.",
+  "controlled_by": [
+    { "entity": "coherent", "share_note": "Top-3 datacom transceiver maker and key merchant EML/laser source; DC & comms ~75% of revenue, +41% y/y (disclosed)" },
+    { "entity": "lumentum", "share_note": "Key laser/transceiver supplier; record 800G, 1.6T ramping, demand above supply (company_claimed). InnoLight (largest, China) and Eoptolink share the module market" }
+  ],
+  "dependents": [
+    { "entity": "nvidia", "dependency_md": "Every NVLink/Spectrum-X scale-out fabric consumes multiple optics per GPU; Nvidia holds equity stakes in both Coherent and Lumentum to secure the layer, and its co-packaged-optics roadmap depends on the same laser suppliers." },
+    { "entity": "alphabet", "dependency_md": "TPU pods and Google's Jupiter fabric are among the largest 800G/1.6T consumers; optics availability paces datacenter network upgrades." },
+    { "entity": "meta", "dependency_md": "Hyperion-class clusters require transceivers in the millions of units; Meta buys across InnoLight/Coherent/Eoptolink and is exposed to any EML shortage." }
+  ],
+  "substitutes_md": "More second sources than most compute bottlenecks — InnoLight (largest), Eoptolink, and a broad Chinese module ecosystem — but module assembly is not the constraint; laser dies and InP wafer capacity are, and those are concentrated in Coherent, Lumentum, and a few Japanese suppliers. Alternatives: copper (only within-rack reach), linear-drive/LPO optics (cheaper, same lasers), and co-packaged optics (TSMC/Broadcom/Nvidia, volume ~2027-28 — which shifts the bottleneck to TSMC rather than relieving it). Qualification cycles for a new optics vendor on a hyperscale fabric run ~2-4 quarters.",
+  "downcycle_md": "Optics is historically the whipsaw layer: modules are ordered ahead of cluster builds, inventories balloon late-cycle, and pricing falls fast (800G ASPs already decline double-digits annually even in shortage). Contracts are mostly rolling POs, not take-or-pay — hyperscalers can cut orders within quarters, as they did to the 400G complex in 2022-23. In a downturn, Chinese module makers with commodity cost structures would keep share while Coherent/Lumentum see the specialty laser premium compress; Nvidia's equity stakes would cushion strategy, not P&L. The 1.6T ramp would be the first casualty since it serves only frontier clusters.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Optical transceiver market size forecast",
+      "period": "CY2026",
+      "value": 26,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://m.c-light.com/news/details/Optical_Transceiver_Market_Size_Data_Centers_2026.html", "publisher": "C-Light (industry aggregation)", "published": "2026", "kind": "other" },
+      "as_of": "2026-08-13",
+      "notes": "~+60% y/y; 800G shipments more than doubling in 2026; 1.6T growing from a small base to tens of millions of ports."
+    },
+    {
+      "metric": "revenue_segment",
+      "metric_label": "Coherent datacenter & comms growth",
+      "period": "FY2026-Q3",
+      "value": 41,
+      "unit": "pct",
+      "basis": "disclosed",
+      "confidence": "medium",
+      "source": { "url": "https://futurumgroup.com/insights/coherent-q3-fy-2026-ai-data-center-demand-accelerates-optical-growth/", "publisher": "Futurum Group", "published": "2026", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "y/y growth; segment now ~75% of company revenue."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Lumentum 800G/1.6T status",
+      "period": "FY2026-Q4",
+      "value": null,
+      "unit": "qualitative",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Results/default.aspx", "publisher": "Lumentum IR", "published": "2026-08", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "Record 800G revenue; 1.6T in early ramp; demand described as exceeding supply."
+    }
+  ],
+  "sources": [
+    { "url": "https://futurumgroup.com/insights/coherent-q3-fy-2026-ai-data-center-demand-accelerates-optical-growth/", "publisher": "Futurum Group", "kind": "analyst" },
+    { "url": "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Results/default.aspx", "publisher": "Lumentum IR", "published": "2026-08", "kind": "company_ir" },
+    { "url": "https://m.c-light.com/news/details/Optical_Transceiver_Market_Size_Data_Centers_2026.html", "publisher": "C-Light", "kind": "other" }
+  ],
+  "updated": "2026-08-13"
+}

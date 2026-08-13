@@ -1,0 +1,25 @@
+{
+  "id": "meta--meta-el-paso-spv--capitalization",
+  "from": "meta",
+  "to": "meta-el-paso-spv",
+  "type": "jv_equity",
+  "status": "active",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "Meta holds 20% of the ~$14B venture; a pro-rata share would be ≈$2.8B, but Meta's actual equity contribution is not disclosed", "as_of": "2026-07" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "not disclosed" },
+  "term": { "announced": "2026-07", "start": "2026-07", "end": null, "duration_years": null },
+  "nature_md": "Meta holds 20% of the El Paso, TX data-center venture (Project Sopaipilla Holdings), with funds managed by BlackRock (Global Infrastructure Partners and HPS Investment Partners) holding 80%. Total development cost is ~$14B for a 1GW campus; Meta will be the sole occupant on completion (expected 2028). The venture issued $12.5B of notes at 7.53% (see related edge). The structure repeats the Hyperion playbook: majority third-party equity, SPV-level debt, Meta lease — and the campus stays off Meta's balance sheet.",
+  "accounting": {
+    "payer_treatment_md": "Equity-method investment for Meta's 20%; neither the ~$14B of assets nor the $12.5B of SPV debt consolidates onto Meta. Meta's lease payments will run through opex once the campus delivers. Disclosure of any Meta guarantees (e.g., residual-value support analogous to Hyperion's) was not included in the announcement.",
+    "payee_treatment_md": "SPV records Meta's contribution as 20% of member equity alongside GIP/HPS's 80%; combined with the $12.5B note issuance this funds the ~$14B build.",
+    "off_balance_sheet": true,
+    "flags": ["spv_shift"]
+  },
+  "related_edges": ["blackrock--meta-el-paso-spv--bonds", "meta--hyperion-jv--capitalization"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Announces-New-Strategic-Venture-with-BlackRock-to-Develop-Data-Center-in-El-Paso/default.aspx", "publisher": "Meta IR", "published": "2026-07", "kind": "company_pr" },
+    { "url": "https://finance.yahoo.com/technology/articles/meta-blackrock-form-14-billion-133518992.html", "publisher": "Reuters (via Yahoo Finance)", "published": "2026-07", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

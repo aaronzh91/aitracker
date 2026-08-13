@@ -1,0 +1,101 @@
+{
+  "id": "intel",
+  "name": "Intel Corporation",
+  "kind": "public_company",
+  "category": "foundry",
+  "group": "compute_supply_chain",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NASDAQ", "symbol": "INTC" }],
+  "cik": "50863",
+  "website": "https://www.intel.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Sells x86 CPUs (data center + client) while rebuilding as a US-champion foundry — recapitalized by the US government (~10%), Nvidia ($5B), SoftBank ($2B), and a $15B public share sale.",
+  "description_md": "Intel is the US integrated device manufacturer attempting a dual turnaround: regain process leadership (18A ramping in 2026, 14A targeted for 2028) and build a merchant foundry serving external customers, while its product business sells Xeon CPUs into AI head-nodes and client CPUs into AI PCs. Since mid-2025 it has become a partially state-backed enterprise: the US government converted CHIPS Act grants into a ~9.9% equity stake ($8.9B), with strategic investments from Nvidia ($5B) and SoftBank ($2B) alongside.",
+  "ai_monetization_md": "Intel's AI monetization today is mostly indirect: Xeon CPUs attach to GPU servers, Gaudi/GPU accelerator revenue is small, and the AI-era prize is foundry — winning advanced-node and advanced-packaging orders from AI chip designers seeking a second source to TSMC. Intel Foundry revenue was $5.8B in Q2 2026 (still only $293M external) at a $2.1B operating loss. The Nvidia partnership pairs the $5B investment with co-developed x86-RTX products and potential foundry/packaging work; High-NA EUV moved into production use at Intel in 2026, per ASML. The August 2026 $15B stock sale explicitly funds AI-chip development and foundry expansion ahead of committed external demand.",
+  "ai_strategy_md": "Ride sovereign-industrial backing: convert government capital, strategic-investor capital ($8.9B USG + $5B Nvidia + $2B SoftBank), and the planned $15B equity raise into 18A/14A capacity that AI designers will need for supply-chain diversification and US-content requirements. Execute 18A (output ~25% above target in Q2 2026, +50% q/q) to prove the foundry can serve external AI customers at scale. The bet: export-control politics and TSMC concentration risk make a credible US leading-edge alternative strategically valuable enough to be paid for before the customer list exists.",
+  "risk_notes_md": "**Unfunded demand:** Intel is building leading-edge capacity for external customers who largely have not signed — the inverse of the industry's committed-but-unfunded pattern (funded capacity, uncommitted demand). Foundry lost $2.1B in Q2 2026 alone. **Dilution stack:** USG ~10%, Nvidia, SoftBank, then a $15B offering (announced Aug 10, 2026; shares fell ~5%) — Intel's first public share sale since 1971. **Politicization:** a government equity holder creates procurement tailwinds but also policy risk; the stake was flagged UNVERIFIED in early drafts and is now well-documented. **Competitive:** 18A/14A must land on schedule against TSMC N2/A16.",
+  "observations": [
+    {
+      "metric": "revenue_total",
+      "period": "FY2026-Q2",
+      "value": 16.1,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.intc.com/news-events/press-releases/detail/1776/intel-reports-second-quarter-2026-financial-results", "publisher": "Intel IR", "published": "2026-07-30", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "+25.4% y/y — fastest growth since 2011; $1.8B above April guidance midpoint; data center +59% y/y."
+    },
+    {
+      "metric": "revenue_segment",
+      "metric_label": "Intel Foundry revenue",
+      "period": "FY2026-Q2",
+      "value": 5.8,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.intc.com/news-events/press-releases/detail/1776/intel-reports-second-quarter-2026-financial-results", "publisher": "Intel IR", "published": "2026-07-30", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "Up from $4.4B y/y but at a $2.1B operating loss (−36.2% margin); external foundry revenue only $293M. 18A output ~25% above target, +50% q/q."
+    },
+    {
+      "metric": "other",
+      "metric_label": "US government equity stake",
+      "period": "2025-08",
+      "value": 9.9,
+      "unit": "pct",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.techtimes.com/articles/323749/20260810/intel-sells-15b-stock-fund-chip-factory-customers-who-havent-signed.htm", "publisher": "TechTimes", "published": "2026-08-10", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "$8.9B, funded by converting CHIPS Act grants into equity (Aug 2025); accompanied by Nvidia $5B private placement and SoftBank $2B."
+    },
+    {
+      "metric": "funding_raised",
+      "metric_label": "Public stock offering (announced)",
+      "period": "2026-08",
+      "value": 15,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://finance.yahoo.com/markets/stocks/articles/intel-falls-5-proposed-15b-131920887.html", "publisher": "Yahoo Finance", "published": "2026-08-10", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Underwritten offering announced Aug 10, 2026 — first public share sale since 1971; proceeds for AI chips and foundry expansion. SPEC originally flagged this plan UNVERIFIED; now confirmed by multiple outlets, though not yet priced/closed."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-08",
+      "title": "US government converts CHIPS grants into ~9.9% Intel stake for $8.9B",
+      "why_it_matters": "Unprecedented peacetime state equity in a US chipmaker — makes Intel the explicit national-champion foundry and puts the US government inside the AI supply chain's cap table.",
+      "impact": "high",
+      "entities": ["intel", "us-government"],
+      "sources": [{ "url": "https://www.techtimes.com/articles/323749/20260810/intel-sells-15b-stock-fund-chip-factory-customers-who-havent-signed.htm", "publisher": "TechTimes", "published": "2026-08-10", "kind": "press" }]
+    },
+    {
+      "date": "2025-09",
+      "title": "Nvidia invests $5B in Intel; co-development partnership announced",
+      "why_it_matters": "Nvidia equity-seeds its own potential second-source foundry and x86 partner — a supplier-side example of Nvidia financing its ecosystem (SoftBank added $2B in Aug 2025).",
+      "impact": "high",
+      "entities": ["intel", "nvidia", "softbank"],
+      "sources": [{ "url": "https://nvidianews.nvidia.com/news/nvidia-and-intel-to-develop-ai-infrastructure-and-personal-computing-products", "publisher": "NVIDIA IR", "published": "2025-09", "kind": "company_pr" }]
+    },
+    {
+      "date": "2026-08-10",
+      "title": "Intel announces $15B underwritten public stock offering",
+      "why_it_matters": "Funds AI-chip and foundry expansion ahead of signed external demand; shares fell ~5%. Some analysts argued Intel should have raised far more while AI-linked equity is cheap.",
+      "impact": "high",
+      "entities": ["intel"],
+      "sources": [
+        { "url": "https://finance.yahoo.com/markets/stocks/articles/intel-falls-5-proposed-15b-131920887.html", "publisher": "Yahoo Finance", "published": "2026-08-10", "kind": "press" },
+        { "url": "https://www.hngn.com/articles/272688/20260810/intel-plans-15-billion-stock-sale-fund-ai-chip-foundry-expansion.htm", "publisher": "HNGN", "published": "2026-08-10", "kind": "press" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.intc.com/news-events/press-releases/detail/1776/intel-reports-second-quarter-2026-financial-results", "publisher": "Intel IR", "kind": "company_ir" },
+    { "url": "https://www.datacenterdynamics.com/en/news/intel-posts-fastest-yoy-growth-since-2011-with-q2-2026-revenue-totaling-161bn/", "publisher": "Data Center Dynamics", "published": "2026-07", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "intersect-power",
+  "name": "Intersect Power",
+  "kind": "private_company",
+  "category": "power_generation_ipp",
+  "group": "energy",
+  "region": "us",
+  "tier": 3,
+  "website": "https://intersectpower.com",
+  "monetization": "Clean-energy IPP building co-located power + data-center 'energy parks'; monetizes via power sales and site development under a $20B program with Google and TPG Rise Climate.",
+  "observations": [
+    {
+      "metric": "funding_raised",
+      "metric_label": "Late-2024 equity round led by TPG Rise Climate with Google",
+      "period": "2024-12",
+      "value": 0.8,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.cnbc.com/2024/12/10/google-strikes-clean-energy-deal-with-intersect-power-tpg-rise-climate.html", "publisher": "CNBC", "published": "2024-12", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": ">$800M raised alongside the $20B co-location partnership announcement; first co-located park power targeted 2026, full operation 2027."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.cnbc.com/2024/12/10/google-strikes-clean-energy-deal-with-intersect-power-tpg-rise-climate.html", "publisher": "CNBC", "published": "2024-12", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

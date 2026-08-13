@@ -1,0 +1,34 @@
+{
+  "id": "snowflake",
+  "name": "Snowflake Inc.",
+  "kind": "public_company",
+  "category": "enterprise_software",
+  "group": "software_applications",
+  "region": "us",
+  "tier": 2,
+  "tickers": [{ "exchange": "NYSE", "symbol": "SNOW" }],
+  "cik": "1640147",
+  "website": "https://www.snowflake.com",
+  "fiscal_year_end": "01-31",
+  "monetization": "Sells the AI Data Cloud; monetizes AI via Cortex AI consumption, paying OpenAI and Anthropic ($200M multi-year each) for frontier-model access it resells to 12,600+ enterprise customers.",
+  "description_md": "Snowflake is a cloud data platform that has positioned itself as deliberately model-agnostic: it committed $200M multi-year to Anthropic (Dec 2025) and $200M multi-year to OpenAI (Feb 2026) to embed both labs' models in Snowflake Cortex AI and Snowflake Intelligence across all three major clouds. A test case for whether app-layer AI spending translates into durable revenue for the labs.",
+  "observations": [
+    {
+      "metric": "contract_value",
+      "metric_label": "Combined model-access commitments to Anthropic and OpenAI",
+      "period": "2025-12/2026-02",
+      "value": 400,
+      "unit": "USD_M",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.snowflake.com/en/news/press-releases/snowflake-and-openAI-forge-200-million-partnership-to-bring-enterprise-ready-ai-to-the-worlds-most-trusted-data-platform/", "publisher": "Snowflake PR", "published": "2026-02", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "$200M multi-year to each lab; terms (duration, minimums) not broken out."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.snowflake.com/en/news/press-releases/snowflake-and-anthropic-announce-200-million-partnership-to-bring-agentic-ai-to-global-enterprises/", "publisher": "Snowflake PR", "published": "2025-12", "kind": "company_pr" },
+    { "url": "https://techcrunch.com/2026/02/02/what-snowflakes-deal-with-openai-tells-us-about-the-enterprise-ai-race/", "publisher": "TechCrunch", "published": "2026-02-02", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

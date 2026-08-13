@@ -1,0 +1,31 @@
+{
+  "id": "nokia",
+  "name": "Nokia Oyj",
+  "kind": "public_company",
+  "category": "network_optics",
+  "group": "compute_supply_chain",
+  "region": "europe",
+  "tier": 3,
+  "tickers": [{ "exchange": "NYSE", "symbol": "NOK" }, { "exchange": "HEL", "symbol": "NOKIA" }],
+  "website": "https://www.nokia.com",
+  "monetization": "Sells mobile (RAN), fixed, optical, and data-center networking equipment; AI exposure via AI-RAN co-development with NVIDIA (its 2.9% shareholder) and data-center optical networking (Infinera acquisition).",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "NVIDIA equity stake in Nokia",
+      "period": "2025-10",
+      "value": 2.9,
+      "unit": "pct",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.nokia.com/newsroom/inside-information-nvidia-to-make-usd-1-billion-equity-investment-in-nokia-in-addition-to-new-strategic-partnership-nokias-board-resolved-on-directed-share-issuance-to-nvidia/", "publisher": "Nokia", "published": "2025-10-28", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "~166M new shares issued to NVIDIA at $6.01/share ($1.0B) alongside an AI-RAN / 6G strategic partnership; T-Mobile US trials from 2026."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.nokia.com/newsroom/inside-information-nvidia-to-make-usd-1-billion-equity-investment-in-nokia-in-addition-to-new-strategic-partnership-nokias-board-resolved-on-directed-share-issuance-to-nvidia/", "publisher": "Nokia", "published": "2025-10-28", "kind": "company_pr" },
+    { "url": "https://www.bloomberg.com/news/articles/2025-10-28/nvidia-to-invest-1-billion-in-nokia-in-ai-networking-push", "publisher": "Bloomberg", "published": "2025-10-28", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

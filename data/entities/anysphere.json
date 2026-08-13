@@ -1,0 +1,77 @@
+{
+  "id": "anysphere",
+  "name": "Anysphere (Cursor)",
+  "kind": "private_company",
+  "category": "ai_native",
+  "group": "labs_ai_native",
+  "region": "us",
+  "tier": 1,
+  "website": "https://cursor.com",
+  "monetization": "Sells the Cursor AI code editor via individual and enterprise subscriptions; the fastest-growing software company ever measured, now agreed to be acquired by SpaceX/xAI for $60B (pending close).",
+  "description_md": "Anysphere makes Cursor, the AI-native code editor that became the emblem of the AI coding boom: ARR went from ~$1B (Nov 2025) to ~$2B (Feb 2026) to ~$4B (May–Jun 2026), with 50,000+ enterprise customers and developers at roughly two-thirds of the Fortune 500. Priced at $29.3B in its November 2025 round, it agreed in June 2026 to be acquired by SpaceX (the merged xAI/SpaceX entity) for $60B in stock — the largest acquisition of a VC-backed startup ever. **Status: acquisition pending**, expected to close Q3 2026 subject to regulatory approvals.",
+  "ai_monetization_md": "Subscription revenue (Pro/Ultra individual tiers and enterprise seats) plus usage-based pricing for frontier-model consumption inside the editor. The ~$4B ARR (mid-2026) was reached faster than any software company on record, but gross margin is structurally squeezed: Cursor pays OpenAI/Anthropic for the models that generate most of its value, which motivated its in-house Composer models. Enterprise mix (reported >$1B of the ARR) is the durable part; individual-developer revenue is exposed to bundled competitors (GitHub Copilot, Claude Code, Gemini).",
+  "ai_strategy_md": "Own the developer workflow surface while renting intelligence: ship the best AI-native editing UX, arbitrage whichever frontier model is best, and gradually verticalize with in-house models to recover margin. The SpaceX/xAI deal trades independence for distribution and compute — each Anysphere share converts to SpaceX Class A stock (ratio set by SPCX's 7-day VWAP before close), giving shareholders public-market liquidity and giving the Musk complex a flagship AI revenue stream to point at.",
+  "risk_notes_md": "Acquisition-pending: the $60B is all-stock and unclosed — consideration value floats with SPCX's price, and regulatory review or market breaks could still reprice or derail it (record as committed, not realized). Model-supplier dependency: its largest costs flow to Anthropic/OpenAI, who ship competing coding agents. ARR figures are press-reported, not audited, and the census's own mid-2026 survey carried a stale lower range ($2–3B) — growth this fast makes any point estimate short-lived.",
+  "observations": [
+    {
+      "metric": "valuation",
+      "period": "2025-11",
+      "value": 29.3,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "high",
+      "source": { "url": "https://en.wikipedia.org/wiki/Anysphere", "publisher": "Wikipedia (aggregating tier-1 press)", "title": "Anysphere", "published": "2026", "kind": "other" },
+      "as_of": "2026-08-13",
+      "notes": "$2.3B Series D priced Nov 2025 at $29.3B post (widely reported; investors incl. Coatue, Accel, Nvidia, Google). Last competitive private mark before the acquisition agreement."
+    },
+    {
+      "metric": "arr",
+      "period": "run_rate@2026-06",
+      "value": 4,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html", "publisher": "CNBC", "title": "SpaceX to acquire the AI coding startup Cursor for $60 billion", "published": "2026-06-16", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "ARR surpassed $4B as of early June 2026 (trajectory: ~$1B Nov 2025 → ~$2B Feb 2026 → $4B May–Jun 2026). Earlier census reports of $2–3B were stale. Unaudited."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Agreed acquisition price (SpaceX/xAI, all-stock)",
+      "period": "2026-06",
+      "value": 60,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "high",
+      "source": { "url": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html", "publisher": "CNBC", "title": "SpaceX to acquire the AI coding startup Cursor for $60 billion", "published": "2026-06-16", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Agreed Jun 16, 2026; all-stock (converts to SpaceX Class A at a VWAP-set ratio), expected close Q3 2026 pending approvals. PENDING — headline value, nothing realized yet; final value floats with SPCX stock."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-11",
+      "title": "Raises $2.3B at $29.3B post-money",
+      "why_it_matters": "Priced Cursor at ~30x then-current ARR with Nvidia and Google on the cap table — chip supplier and cloud rival both buying exposure to the AI-coding demand channel.",
+      "impact": "medium",
+      "entities": ["anysphere", "nvidia", "alphabet"],
+      "sources": [{ "url": "https://en.wikipedia.org/wiki/Anysphere", "publisher": "Wikipedia (aggregating tier-1 press)", "published": "2026", "kind": "other" }]
+    },
+    {
+      "date": "2026-06-16",
+      "title": "SpaceX/xAI agrees to acquire Anysphere for $60B in stock (pending)",
+      "why_it_matters": "Largest VC-backed startup acquisition ever, doubling the Nov 2025 mark in seven months; folds the fastest-growing AI software business into the Musk complex days after SpaceX's IPO. Expected to close Q3 2026 — until then, committed not realized.",
+      "impact": "high",
+      "entities": ["anysphere", "xai"],
+      "sources": [
+        { "url": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html", "publisher": "CNBC", "published": "2026-06-16", "kind": "press" },
+        { "url": "https://www.forbes.com/sites/siladityaray/2026/06/16/spacex-will-buy-ai-coding-firm-cursor-for-60-billion/", "publisher": "Forbes", "published": "2026-06-16", "kind": "press" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html", "publisher": "CNBC", "kind": "press" },
+    { "url": "https://www.forbes.com/sites/siladityaray/2026/06/16/spacex-will-buy-ai-coding-firm-cursor-for-60-billion/", "publisher": "Forbes", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

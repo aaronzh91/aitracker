@@ -1,0 +1,86 @@
+{
+  "id": "mistral",
+  "name": "Mistral AI",
+  "kind": "private_company",
+  "category": "model_lab",
+  "group": "labs_ai_native",
+  "region": "europe",
+  "tier": 1,
+  "website": "https://mistral.ai",
+  "monetization": "Sells frontier and open-weight models to European enterprises and governments (Le Chat, La Plateforme, on-prem deployments); Europe's sovereignty premium is the business model.",
+  "description_md": "Mistral AI is Europe's leading frontier lab, founded in Paris in 2023 by ex-DeepMind/Meta researchers. It pairs open-weight releases with commercial enterprise and government deployments, and became a strategic asset of the European tech stack when ASML — the Dutch EUV lithography monopolist — led its September 2025 round with a €1.3B investment for ~11%, making ASML its largest shareholder. A June 2026 round of ~$3.5B roughly doubled its valuation to ~$20B.",
+  "ai_monetization_md": "Revenue comes from enterprise API/platform contracts, on-prem and sovereign deployments (a differentiator vs US labs for European governments and regulated industries), and Le Chat subscriptions; ~60% of revenue is European. ARR passed $400M by January 2026 (roughly 20× y/y), and the company has publicly targeted >$1B in revenue for 2026. Loss-making, but with a fraction of the compute liabilities of US peers.",
+  "ai_strategy_md": "Position as the sovereign European alternative: open-weight models that enterprises can self-host, deep ties to European industrials (ASML as anchor shareholder and customer-partner), participation in France's AI infrastructure push (€109B package; Eclairion/Essonne compute campus) and the EU gigafactory program, and a compute buildout sized to enterprise inference rather than AGI-scale training. The ASML relationship makes the cap table itself an industrial-policy statement.",
+  "risk_notes_md": "Scale gap: ~$20B valuation and ~$400M+ ARR against US labs 40–100× larger on both counts; must justify a near-doubled valuation with the 2026 $1B revenue target. The June 2026 round was reported in both € and $ (Bloomberg: '~€20B'), so the headline valuation carries currency ambiguity. Dependency on continued European sovereignty procurement is a policy risk as much as a market one.",
+  "observations": [
+    {
+      "metric": "valuation",
+      "period": "2026-06",
+      "value": 20,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.bloomberg.com/news/articles/2026-06-12/france-s-mistral-in-funding-talks-at-about-20-billion-valuation", "publisher": "Bloomberg", "title": "France's Mistral in Funding Talks at About €20 Billion Valuation", "published": "2026-06-12", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Round of ~$3.5B (reported ~€3B) at ~$20B; Bloomberg reported the mark as ~€20B — currency ambiguity in coverage, so treat the dollar figure as approximate. Private round mark, not a traded price."
+    },
+    {
+      "metric": "funding_raised",
+      "period": "2026-06",
+      "value": 3.5,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://techcrunch.com/2026/06/12/mistral-is-rumored-to-be-raising-e3b-at-e20-valuation/", "publisher": "TechCrunch", "title": "Mistral is rumored to be raising €3B at €20B valuation", "published": "2026-06-12", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Reported at €3B–$3.5B across outlets; initially reported as talks (Jun 12, 2026)."
+    },
+    {
+      "metric": "arr",
+      "period": "run_rate@2026-01",
+      "value": 400,
+      "unit": "USD_M",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.cnbc.com/2026/05/19/mistral-cnbc-disruptor-50-ranking.html", "publisher": "CNBC", "title": "Mistral — CNBC Disruptor 50", "published": "2026-05-19", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": ">$400M ARR as of Jan 2026, ~20× y/y; company targets >$1B revenue by end-2026. Value is a floor (\">$400M\")."
+    },
+    {
+      "metric": "other",
+      "metric_label": "ASML equity stake",
+      "period": "2025-09",
+      "value": 11,
+      "unit": "pct",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai/", "publisher": "Mistral AI", "title": "Mistral AI raises €1.7B to accelerate technological progress with AI", "published": "2025-09", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "ASML invested €1.3B of the €1.7B Series C (at €11.7B post), becoming Mistral's largest shareholder at ~11%."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-09",
+      "title": "ASML leads €1.7B Series C at €11.7B; takes ~11% stake",
+      "why_it_matters": "Europe's most strategically important semiconductor company becomes the largest shareholder of Europe's leading AI lab — an intra-European circularity edge and an industrial-policy signal.",
+      "impact": "high",
+      "entities": ["mistral", "asml"],
+      "sources": [{ "url": "https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai/", "publisher": "Mistral AI", "published": "2025-09", "kind": "company_pr" }]
+    },
+    {
+      "date": "2026-06",
+      "title": "Raises ~$3.5B at ~$20B valuation",
+      "why_it_matters": "Nearly doubles the September 2025 mark and funds data-center buildout; keeps a credible European counterweight to US labs capitalized.",
+      "impact": "medium",
+      "entities": ["mistral"],
+      "sources": [{ "url": "https://www.bloomberg.com/news/articles/2026-06-12/france-s-mistral-in-funding-talks-at-about-20-billion-valuation", "publisher": "Bloomberg", "published": "2026-06-12", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai/", "publisher": "Mistral AI", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2026/05/19/mistral-cnbc-disruptor-50-ranking.html", "publisher": "CNBC", "kind": "press" },
+    { "url": "https://www.bloomberg.com/news/articles/2026-06-12/france-s-mistral-in-funding-talks-at-about-20-billion-valuation", "publisher": "Bloomberg", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

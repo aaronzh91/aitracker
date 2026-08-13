@@ -1,0 +1,34 @@
+{
+  "id": "intuit",
+  "name": "Intuit Inc.",
+  "kind": "public_company",
+  "category": "enterprise_software",
+  "group": "software_applications",
+  "region": "us",
+  "tier": 2,
+  "tickers": [{ "exchange": "NASDAQ", "symbol": "INTU" }],
+  "cik": "896878",
+  "website": "https://www.intuit.com",
+  "fiscal_year_end": "07-31",
+  "monetization": "Sells TurboTax, QuickBooks, Credit Karma, and Mailchimp; pays OpenAI >$100M multi-year for model access and distribution of its apps inside ChatGPT.",
+  "description_md": "Intuit is a financial-software incumbent using frontier models two ways: embedding OpenAI models in its own 'done-for-you' agentic experiences, and distributing TurboTax/QuickBooks/Credit Karma/Mailchimp as apps inside ChatGPT (announced Nov 18, 2025). One of the clearest examples of an app-layer company paying nine figures for model access — the demand side of AI revenue quality.",
+  "observations": [
+    {
+      "metric": "contract_value",
+      "metric_label": "OpenAI model-access and ChatGPT distribution deal",
+      "period": "2025-11",
+      "value": 100,
+      "unit": "USD_M",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.cnbc.com/2025/11/18/intuit-pays-openai-100-million-turbotax-integrates-chatgpt.html", "publisher": "CNBC", "published": "2025-11-18", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Reported as 'more than $100 million' multi-year; some coverage characterizes it as an annual figure. Exact structure undisclosed."
+    }
+  ],
+  "sources": [
+    { "url": "https://investors.intuit.com/news-events/press-releases/detail/1284/intuit-and-openai-join-forces-to-revolutionize-financial-intelligence-powering-every-person-business-and-dream-with-personalized-experiences", "publisher": "Intuit IR", "published": "2025-11-18", "kind": "company_pr" },
+    { "url": "https://www.axios.com/2025/11/18/openai-intuit-turbotax-quickbooks-chatgpt", "publisher": "Axios", "published": "2025-11-18", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

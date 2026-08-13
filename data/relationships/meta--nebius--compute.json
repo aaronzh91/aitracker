@@ -1,0 +1,25 @@
+{
+  "id": "meta--nebius--compute",
+  "from": "meta",
+  "to": "nebius",
+  "type": "compute_purchase",
+  "status": "contracted",
+  "headline": { "value": 27, "unit": "USD_B", "caveat": "up to $27B over five years: ~$12B of dedicated capacity plus a commitment to purchase up to ~$15B of additional capacity", "as_of": "2026-03-16" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "deliveries begin early 2027 as new clusters come online; nothing material realized yet" },
+  "term": { "announced": "2026-03-16", "start": "2027", "end": null, "duration_years": 5 },
+  "nature_md": "Five-year AI-infrastructure agreement (announced Mar 16, 2026) under which Nebius delivers ~$12B of dedicated capacity to Meta across multiple locations — among the first large-scale deployments of NVIDIA's Vera Rubin platform — plus Meta's commitment to purchase up to ~$15B of additional compute over the same period, for a total of up to $27B. The additional-capacity clusters will primarily serve other Nebius AI-cloud customers, with Meta taking remaining available compute. Alongside Microsoft's $17.4–19.4B contract, this puts Nebius's contracted backlog near $46B.",
+  "accounting": {
+    "payer_treatment_md": "Purchase commitment; expensed as compute is consumed. The 'up to $15B' tranche is an option-like commitment — headline overstates the guaranteed minimum.",
+    "payee_treatment_md": "Backlog/RPO for Nebius; the dedicated $12B portion is the firmer component. Nebius funds the buildout with capex of $16–20B in 2026, partly debt raised against contracted revenue.",
+    "off_balance_sheet": false,
+    "flags": ["customer_concentration", "commitment_unfunded"]
+  },
+  "related_edges": ["microsoft--nebius--compute", "nvidia--nebius--equity"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://nebius.com/newsroom/nebius-signs-new-ai-infrastructure-agreement-with-meta", "publisher": "Nebius", "published": "2026-03-16", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2026/03/16/meta-nebius-ai-infrastructure.html", "publisher": "CNBC", "published": "2026-03-16", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

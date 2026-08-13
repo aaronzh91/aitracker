@@ -1,0 +1,88 @@
+{
+  "id": "databricks",
+  "name": "Databricks",
+  "kind": "private_company",
+  "category": "ai_native",
+  "group": "labs_ai_native",
+  "region": "us",
+  "tier": 1,
+  "website": "https://www.databricks.com",
+  "monetization": "Sells consumption-based data + AI platform services (lakehouse, warehousing, agents, serverless Postgres); AI products alone crossed $1B annualized.",
+  "description_md": "Databricks is the largest private data-and-AI platform company: its lakehouse unifies data engineering, warehousing, and machine learning, and it has aggressively repositioned as the enterprise substrate for AI agents (Agent Bricks, Genie, Unity AI Gateway, and Lakebase serverless Postgres, built on the ~$1B Neon acquisition). Revenue reached $6.9B annualized in mid-2026, growing ~80% y/y, and a July 2026 term sheet led by Coatue priced it at $188B — with the company explicitly signaling no IPO urgency.",
+  "ai_monetization_md": "Consumption pricing across the platform: customers pay for compute/storage via DBUs, so every enterprise AI workload (ETL for training data, vector search, agent runtimes, model serving) monetizes directly. AI products specifically passed $1B+ in annualized revenue, and the $6.9B total annualized figure (June 2026, +~80% y/y, up from $5.2B at end-2025) makes it one of the few AI-native companies with revenue at hyperscaler-line-item scale. Databricks is also a large model-spend channel: it resells and hosts OpenAI, Anthropic, and Google models inside customer governance boundaries.",
+  "ai_strategy_md": "Be the neutral layer between enterprises' data and everyone's models: multi-model governance (Unity AI Gateway) rather than a house frontier model (after MosaicML, it builds smaller domain models but buys frontier capability), M&A to fill gaps (Mosaic $1.3B, Tabular, Neon — ~$4.3B combined), and partnerships on all clouds plus deep ties to OpenAI (a reported $100M model-access deal) and Anthropic. The $188B round is 'strategic' capital for AI product acceleration and employee liquidity, deferring an IPO from a position of strength.",
+  "risk_notes_md": "The $188B mark is a term sheet (Coatue-led, ~$3B per WSJ, closing later in summer 2026), not closed equity — headline ≠ realized. At ~27× annualized revenue the valuation assumes consumption growth persists through any AI-capex digestion; consumption pricing cuts both ways in a downturn (Snowflake 2023 precedent). Competitive squeeze from hyperscalers (all three are both partners and rivals) and from Snowflake's AI pivot is structural.",
+  "observations": [
+    {
+      "metric": "valuation",
+      "period": "2026-07",
+      "value": 188,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "high",
+      "source": { "url": "https://money.usnews.com/investing/news/articles/2026-07-16/databricks-valued-at-188-billion-after-coatue-led-investment-wsj-reports", "publisher": "US News (WSJ)", "title": "Databricks Valued at $188 Billion After Coatue-Led Investment, WSJ Reports", "published": "2026-07-16", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Term sheet signed Jul 16, 2026 (Coatue-led strategic round, ~$3B per WSJ); confirmed by Databricks' own press release. Round expected to close later in summer 2026 — a signed term sheet, not yet closed equity."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "run_rate@2026-06",
+      "value": 6.9,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.cnbc.com/2026/06/16/databricks-revenue-growth-tops-80percent-to-6point9-billion-annualized.html", "publisher": "CNBC", "title": "Databricks revenue growth tops 80% to $6.9 billion annualized", "published": "2026-06-16", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Annualized run rate disclosed by the company via press; growth ~80% y/y in Q2 2026 (vs ~65% at end-2025), up from $5.2B annualized at end-2025. Private company — unaudited."
+    },
+    {
+      "metric": "revenue_segment",
+      "metric_label": "AI product revenue (annualized)",
+      "period": "run_rate@2026-06",
+      "value": 1,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.cnbc.com/2026/06/16/databricks-revenue-growth-tops-80percent-to-6point9-billion-annualized.html", "publisher": "CNBC", "title": "Databricks revenue growth tops 80% to $6.9 billion annualized", "published": "2026-06-16", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "AI products crossed $1B+ annualized per company statements; value is a floor."
+    },
+    {
+      "metric": "funding_raised",
+      "period": "2026-07",
+      "value": 3,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://money.usnews.com/investing/news/articles/2026-07-16/databricks-valued-at-188-billion-after-coatue-led-investment-wsj-reports", "publisher": "US News (WSJ)", "title": "Databricks Valued at $188 Billion After Coatue-Led Investment, WSJ Reports", "published": "2026-07-16", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Round size ~$3B per WSJ; Databricks has not confirmed the amount publicly — low confidence on size (the valuation itself is separately confirmed)."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-07-16",
+      "title": "Signs term sheet for strategic round at $188B valuation",
+      "why_it_matters": "Prices the largest private data/AI platform at ~27× annualized revenue and confirms mega-cap private companies can keep raising instead of listing — Databricks explicitly signaled no IPO in sight.",
+      "impact": "high",
+      "entities": ["databricks"],
+      "sources": [
+        { "url": "https://www.databricks.com/company/newsroom/press-releases/databricks-raising-strategic-round-funding-188-billion-valuation", "publisher": "Databricks", "published": "2026-07-16", "kind": "company_pr" },
+        { "url": "https://money.usnews.com/investing/news/articles/2026-07-16/databricks-valued-at-188-billion-after-coatue-led-investment-wsj-reports", "publisher": "US News (WSJ)", "published": "2026-07-16", "kind": "press" }
+      ]
+    },
+    {
+      "date": "2026-06-16",
+      "title": "Discloses $6.9B annualized revenue, growth accelerating to ~80%",
+      "why_it_matters": "Rare case of AI demand showing up as accelerating platform consumption at multi-billion scale — evidence for the bull case that enterprise AI spend is real revenue, not just committed capex.",
+      "impact": "medium",
+      "entities": ["databricks"],
+      "sources": [{ "url": "https://www.cnbc.com/2026/06/16/databricks-revenue-growth-tops-80percent-to-6point9-billion-annualized.html", "publisher": "CNBC", "published": "2026-06-16", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.databricks.com/company/newsroom/press-releases/databricks-raising-strategic-round-funding-188-billion-valuation", "publisher": "Databricks", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2026/06/16/databricks-revenue-growth-tops-80percent-to-6point9-billion-annualized.html", "publisher": "CNBC", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

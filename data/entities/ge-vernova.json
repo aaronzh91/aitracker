@@ -1,0 +1,87 @@
+{
+  "id": "ge-vernova",
+  "name": "GE Vernova Inc.",
+  "kind": "public_company",
+  "category": "turbines_gensets",
+  "group": "energy",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NYSE", "symbol": "GEV" }],
+  "cik": "1996810",
+  "website": "https://www.gevernova.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Sells gas turbines, grid equipment, and multi-decade service agreements into the power buildout that AI data-center load is driving; sells out capacity years ahead via paid slot reservations.",
+  "description_md": "GE Vernova — the energy business spun out of General Electric in April 2024 — makes heavy-duty gas turbines (HA class), nuclear and hydro equipment, wind turbines, and grid/electrification hardware, plus decades-long service agreements on the installed fleet. It sits at the center of the AI power bottleneck: its gas-turbine order book plus slot reservations reached 116GW in Q2 2026, roughly five years of output at current manufacturing capacity, and total company backlog reached ~$176B. Utilities and developers pay reservation fees just to hold future production slots.",
+  "ai_monetization_md": "AI monetizes through power demand: data-center load growth drives utilities and IPPs to order gas turbines and grid equipment at a pace that more than doubled power orders y/y. About 20% of gas-turbine demand is explicitly for data centers, with more arriving indirectly through utilities serving DC load. In Q2 2026 alone GE Vernova signed contracts covering 20GW of new gas equipment (18GW slot reservations + 2GW firm orders) and converted 10GW of prior reservations to firm orders. Long-dated service agreements attached to every turbine make the backlog compound: total backlog reached ~$176B, most of it services.",
+  "ai_strategy_md": "Sell scarcity carefully: expand gas-turbine capacity deliberately (rather than chase the peak), monetize the queue through slot-reservation agreements with payments, push price on new orders, and attach 20+ year service contracts. Management guides to at least 125GW of gas equipment under contract by end-2026. Electrification (grid equipment) and small modular nuclear (BWRX-300) give second and third AI-linked growth legs; wind remains the drag being restructured.",
+  "risk_notes_md": "The backlog is the bull case and the risk: five years of sold-out output means limited upside capture if demand keeps rising, and cancellation/re-phasing risk if the AI data-center cycle turns before delivery — slot reservations are firmer than letters of intent but softer than shipped revenue. Capacity expansion decisions made now assume load growth that is itself a contested forecast. Roughly 20% of GT demand being explicitly data-center means the majority is utility demand that could also decelerate.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Total backlog",
+      "period": "FY2026-Q2",
+      "value": 176,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.gevernova.com/news/press-releases/ge-vernova-reports-second-quarter-2026-financial-results-raises-2026-financial", "publisher": "GE Vernova", "published": "2026-07-22", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Equipment plus long-term services backlog across Power, Wind, and Electrification; grew on gas-turbine, grid, and data-center-linked demand."
+    },
+    {
+      "metric": "capacity_gw",
+      "metric_label": "Gas-turbine equipment backlog + slot reservations",
+      "period": "FY2026-Q2",
+      "value": 116,
+      "unit": "GW",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.turbomachinerymag.com/view/ge-vernova-gas-turbine-backlog-hits-116-gw-as-power-orders-more-than-double", "publisher": "Turbomachinery Magazine", "published": "2026-07", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Up from 100GW in Q1 2026; ~5 years of output at current capacity. Equipment backlog 53GW + slot reservations 63GW. Company expects >=125GW under contract by end-2026."
+    },
+    {
+      "metric": "other",
+      "metric_label": "New gas equipment contracted in Q2 2026",
+      "period": "FY2026-Q2",
+      "value": 20,
+      "unit": "GW",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.gevernova.com/news/press-releases/ge-vernova-reports-second-quarter-2026-financial-results-raises-2026-financial", "publisher": "GE Vernova", "published": "2026-07-22", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "18GW slot-reservation agreements + 2GW firm orders; separately converted 10GW of earlier reservations into firm orders and shipped 3GW."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Share of gas-turbine demand explicitly for data centers",
+      "period": "FY2026-Q2",
+      "value": 20,
+      "unit": "pct",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.turbomachinerymag.com/view/ge-vernova-gas-turbine-backlog-hits-116-gw-as-power-orders-more-than-double", "publisher": "Turbomachinery Magazine", "published": "2026-07", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Understates true AI exposure: much of the remainder is utility orders driven by data-center load growth."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-07-22",
+      "title": "Q2 2026: gas-turbine book hits 116GW, total backlog ~$176B; raises 2026 guidance",
+      "why_it_matters": "The clearest physical evidence that power generation is a multi-year bottleneck for the AI buildout — five years of turbine output is already spoken for, and buyers are paying fees just to hold places in line.",
+      "impact": "high",
+      "entities": ["ge-vernova"],
+      "sources": [
+        { "url": "https://www.gevernova.com/news/press-releases/ge-vernova-reports-second-quarter-2026-financial-results-raises-2026-financial", "publisher": "GE Vernova", "published": "2026-07-22", "kind": "company_pr" },
+        { "url": "https://www.utilitydive.com/news/ge-vernova-gas-turbine-backlog-climbs-to-116-gw/826039/", "publisher": "Utility Dive", "published": "2026-07", "kind": "press" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.gevernova.com/news/press-releases/ge-vernova-reports-second-quarter-2026-financial-results-raises-2026-financial", "publisher": "GE Vernova", "kind": "company_pr" },
+    { "url": "https://www.turbomachinerymag.com/view/ge-vernova-gas-turbine-backlog-hits-116-gw-as-power-orders-more-than-double", "publisher": "Turbomachinery Magazine", "kind": "press" },
+    { "url": "https://www.utilitydive.com/news/ge-vernova-gas-turbine-backlog-climbs-to-116-gw/826039/", "publisher": "Utility Dive", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

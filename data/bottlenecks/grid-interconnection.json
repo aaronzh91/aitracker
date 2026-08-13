@@ -1,0 +1,75 @@
+{
+  "id": "grid-interconnection",
+  "name": "Grid interconnection queues",
+  "group": "energy",
+  "status": "binding",
+  "description_md": "A data center is worthless until the utility energizes it, and US interconnection is now the longest pole in most buildouts. Queues held ~2,600GW of proposed generation/storage in early 2026 with median waits approaching five years; ERCOT's large-load queue alone reached ~410GW (roughly 87% of it data centers), nearly quadrupling in a year, and PJM's first reformed cycle drew 220GW of requests against a projected 6.6GW capacity deficit for 2027-28. In Northern Virginia — the world's largest cluster — Dominion has ~40GW of data-center demand in contracting stages (substation engineering, construction LOAs, service agreements), roughly double a year earlier, and new multi-year transmission lines (Golden-to-Mars 500kV, Culpeper) must be built before much of it energizes. On impact there are two contested readings: Data Center Watch counts ~$130B of projects blocked or delayed by opposition in Q1-26 alone, while SemiAnalysis argues such tallies suffer denominator bias — its own 2026 North America capacity forecast adjustment is ~1%, because most 'blocked' projects were speculative announcements without financing or equipment orders. Status basis: judged binding — queue math and utility contracting stages are hard data regardless of how one scores the opposition-driven losses; power availability, not capital, is the stated gating factor for most 2026-28 site decisions.",
+  "controlled_by": [
+    { "entity": "dominion-energy", "share_note": "Utility for the largest global cluster (NoVA); ~40GW of DC demand in contracting stages, ~26GW at substation-engineering stage (company_claimed). RTOs (PJM, ERCOT) and other utilities control the remaining queues" }
+  ],
+  "dependents": [
+    { "entity": "vantage", "dependency_md": "Wholesale developer whose delivery dates to hyperscale tenants are set by utility energization schedules; NoVA and Texas pipelines sit directly in the Dominion/ERCOT queues." },
+    { "entity": "coreweave", "dependency_md": "Contracted-GPU revenue recognition depends on sites energizing on time; grid slippage converts backlog into deferred revenue and idle depreciating hardware." },
+    { "entity": "meta", "dependency_md": "Hyperion (~2.2GW via Entergy) and other multi-GW campuses require new generation and transmission; Meta has resorted to behind-the-meter gas and nuclear PPAs to jump the queue." },
+    { "entity": "microsoft", "dependency_md": "Has said publicly it has GPUs it cannot plug in — power, not chips, as the binding constraint on capacity growth." }
+  ],
+  "substitutes_md": "Queue-jumping strategies, each with limits: behind-the-meter/islanded generation (gas turbines, fuel cells — collides with the gas-turbine bottleneck), co-location at existing plants (Susquehanna/Talen-style, contested at FERC), acquiring already-energized sites and shuttered industrial load, demand-response deals (ERCOT's SB6 framework), and moving to secondary markets with shorter queues (the pattern in the 'next hotspots' migration). FERC's 2026 reforms forcing RTOs to process large loads within fixed clocks may compress timelines but do not create transformers, lines, or generation.",
+  "downcycle_md": "Interconnection is where AI overbuild would quietly deflate rather than crash: queue positions are cheap options, and speculative entries (a large share of ERCOT's 410GW) would simply be abandoned, shrinking queues without any utility losing money already spent. Utilities are increasingly protected by ratepayer-shielding tariffs — Dominion has been ordered to assign some transmission costs directly to data centers, and minimum-take/collateral provisions in electric service agreements mean hyperscalers pay for contracted capacity even if unused. The stranded-cost risk falls on utilities/ratepayers only for infrastructure built ahead of contracts; watch the ratio of signed ESAs to LOA-stage demand (Dominion: ~40GW contracted-stages vs far less under firm ESA) as the quality gauge.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "US interconnection queues (proposed generation + storage)",
+      "period": "2026-Q1",
+      "value": 2600,
+      "unit": "GW",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://enkiai.com/data-center/ai-data-center-energy-2026-2600-gw-queue-pjm-plan/", "publisher": "EnkiAI (citing LBNL-style queue data)", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Median wait to commercial operation approaching 5 years."
+    },
+    {
+      "metric": "other",
+      "metric_label": "ERCOT large-load interconnection queue",
+      "period": "2026-04",
+      "value": 410,
+      "unit": "GW",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.latitudemedia.com/news/ercots-large-load-queue-has-nearly-quadrupled-in-a-single-year/", "publisher": "Latitude Media", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "~87% data centers; up from ~63GW at end-2024 — most entries are speculative/duplicated site shopping."
+    },
+    {
+      "metric": "capacity_gw",
+      "period": "2026",
+      "value": 40,
+      "unit": "GW",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.datacenterdynamics.com/en/news/dominion-energy-nearly-doubles-data-center-capacity-under-contract-to-40gw/", "publisher": "Data Center Dynamics", "published": "2024-12", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Dominion NoVA data-center demand in contracting stages (substation engineering LOAs ~26GW, construction LOAs, ESAs) — the '40GW in substation engineering/construction' figure."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Value of DC projects blocked/delayed by local opposition (Q1-26) — CONTESTED",
+      "period": "2026-Q1",
+      "value": 130,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://www.datacenterwatch.org/q1-2026", "publisher": "Data Center Watch (10a Labs)", "published": "2026", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "≥75 projects, matching all of 2025 in one quarter. Contested: SemiAnalysis rebuts that its 2026 NA capacity forecast changed only ~1%, arguing announcement-stage projects without financing/equipment dominate such tallies (denominator bias)."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.datacenterdynamics.com/en/news/dominion-energy-nearly-doubles-data-center-capacity-under-contract-to-40gw/", "publisher": "Data Center Dynamics", "kind": "press" },
+    { "url": "https://www.latitudemedia.com/news/ercots-large-load-queue-has-nearly-quadrupled-in-a-single-year/", "publisher": "Latitude Media", "kind": "press" },
+    { "url": "https://www.datacenterwatch.org/q1-2026", "publisher": "Data Center Watch", "kind": "analyst" },
+    { "url": "https://www.youtube.com/watch?v=xqq5_7daYWc", "publisher": "SemiAnalysis (podcast ep. 018)", "kind": "analyst", "notes": "Rebuttal: 'Stop saying half of 2026 US datacenter capacity is canceled' — forecast adjustment ~1%." },
+    { "url": "https://www.utilitydive.com/news/dominion-energy-scc-transmission-costs-data-center/827693/", "publisher": "Utility Dive", "published": "2026", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

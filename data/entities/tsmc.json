@@ -1,0 +1,96 @@
+{
+  "id": "tsmc",
+  "name": "Taiwan Semiconductor Manufacturing Company",
+  "kind": "public_company",
+  "category": "foundry",
+  "group": "compute_supply_chain",
+  "region": "taiwan",
+  "tier": 1,
+  "tickers": [
+    { "exchange": "TWSE", "symbol": "2330" },
+    { "exchange": "NYSE", "symbol": "TSM" }
+  ],
+  "cik": "1046179",
+  "website": "https://www.tsmc.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Manufactures nearly all leading-edge AI silicon (Nvidia, AMD, Broadcom XPUs, Apple) and owns the CoWoS advanced-packaging capacity that paces the entire buildout.",
+  "description_md": "TSMC is the dominant leading-edge contract chipmaker: N5/N3 in volume, N2 ramping, with 7nm-and-below nodes now 77% of wafer revenue. Its high-performance-computing (HPC) platform — AI accelerators, data-center silicon, GPUs — is 66% of revenue. Critically, TSMC also owns CoWoS advanced packaging, the single most-cited chokepoint of the AI buildout: every Nvidia Blackwell/Rubin part and most custom ASICs must transit it. Fabs are concentrated in Taiwan, with Arizona expanding under a US investment program raised to $265B.",
+  "ai_monetization_md": "Wafer and advanced-packaging revenue from effectively every AI chip designer: Nvidia (wafers + ~60% of 2026 CoWoS capacity), AMD, Broadcom/Google TPUs, Apple, and the custom-ASIC wave. AI demand converted directly into pricing power and record profitability — Q2 2026 revenue of $40.2B (+36% y/y) at a record 67.7% gross margin — and into a capex step-up to $60–64B for 2026. Because CoWoS capacity allocations determine who can ship accelerators, TSMC effectively rations the industry's output; capacity is being scaled toward ~130–150K wafers/month by late 2026.",
+  "ai_strategy_md": "Stay 2+ nodes ahead (N2 in ramp, A16 next) so that AI compute has no substitute supplier; double CoWoS capacity for the Rubin generation rather than let packaging cap customers' roadmaps; expand geographically under customer and government pressure (additional $100B pledged to Arizona in July 2026, total US commitment $265B) while keeping leading-edge R&D in Taiwan. Management raised 2026 revenue growth guidance to slightly above 40%, citing AI demand it describes as structural rather than cyclical.",
+  "risk_notes_md": "**Concentration both ways:** Nvidia alone books ~60% of 2026 CoWoS output; conversely every AI roadmap on earth depends on one company's packaging lines — a single point of failure the bottleneck registry tracks explicitly. **Geopolitics:** Taiwan concentration is the systemic tail risk; US fabs carry higher costs. **Cycle risk:** the 2026 capex step-up ($60–64B) is justified by AI orders whose end-funding is contested; a demand fall would strand new CoWoS/N2 capacity. **China:** export controls bar leading-edge sales into China, and TSMC has halted advanced supply to Chinese AI-chip designers.",
+  "observations": [
+    {
+      "metric": "revenue_total",
+      "period": "FY2026-Q2",
+      "value": 40.2,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.investing.com/news/company-news/tsmc-q2-2026-slides-ai-demand-drives-record-margins-hpc-surges-20-93CH-4794789", "publisher": "Investing.com (TSMC results deck)", "published": "2026-07-16", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "+36% y/y; record gross margin 67.7%; Q3 guide $44.6–45.8B; 2026 growth outlook raised to >40%."
+    },
+    {
+      "metric": "other",
+      "metric_label": "HPC platform share of revenue",
+      "period": "FY2026-Q2",
+      "value": 66,
+      "unit": "pct",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://hwbusters.com/news/tsmc-q2-2026-the-best-quarter-in-its-history-and-two-thirds-of-it-was-ai/", "publisher": "Hardware Busters", "published": "2026-07", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "HPC (AI accelerators, DC silicon, GPUs) grew 20% q/q; smartphone fell to ~22% of revenue."
+    },
+    {
+      "metric": "capex_guidance",
+      "period": "CY2026",
+      "value": 62,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://finance.yahoo.com/markets/article/tsmc-raises-capex-and-revenue-forecast-highlighting-growing-ai-chip-demand-113101950.html", "publisher": "Yahoo Finance", "published": "2026-07", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Guided range $60–64B, raised at least $4B above the prior forecast; midpoint shown. Heavily weighted to leading-edge and CoWoS expansion."
+    },
+    {
+      "metric": "market_share_pct",
+      "metric_label": "Nvidia share of TSMC 2026 CoWoS capacity",
+      "period": "CY2026",
+      "value": 60,
+      "unit": "pct",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.digitimes.com/news/a20251210PD218/tsmc-cowos-capacity-nvidia-equipment.html", "publisher": "DigiTimes", "published": "2025-12-10", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Nvidia reported to have booked over half of 2026–27 CoWoS output (~60% for 2026). CoWoS scaling toward ~130–150K wafers/month by late 2026 — the packaging bottleneck record tracks this."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-07-16",
+      "title": "Q2 2026: record quarter; 2026 growth raised to >40%, capex to $60–64B, US investment to $265B",
+      "why_it_matters": "The single best real-time gauge of whether AI capex is converting into paid silicon — record revenue/margins plus a raised capex plan signal TSMC sees the order book as durable. An extra $100B was pledged to Arizona.",
+      "impact": "high",
+      "entities": ["tsmc", "nvidia"],
+      "sources": [
+        { "url": "https://www.techtimes.com/articles/320696/20260716/tsmc-posts-record-quarter-ai-chip-demand-pushes-full-year-growth-outlook-past-40.htm", "publisher": "TechTimes", "published": "2026-07-16", "kind": "press" },
+        { "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-tsmc-lifts-2026-outlook-as-ai-demand-stays-hot-in-q2-2026-93CH-4794777", "publisher": "Investing.com", "published": "2026-07-16", "kind": "earnings_call" }
+      ]
+    },
+    {
+      "date": "2025-12",
+      "title": "Nvidia books over half of 2026–27 CoWoS capacity",
+      "why_it_matters": "Formalizes the packaging chokepoint: competitors' 2026 accelerator volumes are residual claims on whatever CoWoS Nvidia didn't take, pushing overflow to ASE and others.",
+      "impact": "high",
+      "entities": ["tsmc", "nvidia"],
+      "sources": [{ "url": "https://www.digitimes.com/news/a20251210PD218/tsmc-cowos-capacity-nvidia-equipment.html", "publisher": "DigiTimes", "published": "2025-12-10", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.investing.com/news/company-news/tsmc-q2-2026-slides-ai-demand-drives-record-margins-hpc-surges-20-93CH-4794789", "publisher": "Investing.com", "kind": "press" },
+    { "url": "https://www.financialcontent.com/article/tokenring-2026-1-26-the-great-unclogging-tsmc-commits-56-billion-capex-to-double-cowos-capacity-for-nvidias-rubin-era", "publisher": "FinancialContent", "published": "2026-01-26", "kind": "press", "notes": "CoWoS doubling plan for the Rubin generation." },
+    { "url": "https://hwbusters.com/news/tsmc-q2-2026-the-best-quarter-in-its-history-and-two-thirds-of-it-was-ai/", "publisher": "Hardware Busters", "published": "2026-07", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

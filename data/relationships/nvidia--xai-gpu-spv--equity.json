@@ -1,0 +1,25 @@
+{
+  "id": "nvidia--xai-gpu-spv--equity",
+  "from": "nvidia",
+  "to": "xai-gpu-spv",
+  "type": "equity_investment",
+  "status": "announced",
+  "headline": { "value": 2, "unit": "USD_B", "caveat": "up to $2B of the SPV's ~$7.5B equity tranche (reported Oct 2025); final funding/close not publicly confirmed", "as_of": "2025-10" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "not disclosed" },
+  "term": { "announced": "2025-10", "start": null, "end": null, "duration_years": 5 },
+  "nature_md": "NVIDIA committed up to $2B of equity to the ~$20B special-purpose vehicle (anchored by Valor Equity Partners) that purchases NVIDIA GPUs and leases them to xAI for the Colossus 2 data center in Memphis. The SPV's proceeds are spent almost entirely on NVIDIA hardware — NVIDIA's equity check returns to NVIDIA as product revenue, the tightest circularity loop in its investment web (alongside the OpenAI round).",
+  "accounting": {
+    "payer_treatment_md": "Equity investment in the SPV on NVIDIA's balance sheet (non-marketable investment). The GPU sales the SPV funds are recognized as NVIDIA revenue at full price when shipped — the investment itself is not contra-revenue under current accounting.",
+    "payee_treatment_md": "Equity capitalization of the SPV, subordinate to ~$12.5B of GPU-collateralized debt; the SPV's assets are the GPUs, its income is xAI's lease payments.",
+    "off_balance_sheet": false,
+    "flags": ["equity_for_revenue", "spv_shift"]
+  },
+  "related_edges": ["valor-equity--xai-gpu-spv--equity", "apollo--xai-gpu-spv--debt", "xai-gpu-spv--xai--gpu-lease", "nvidia--openai--equity-2026"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.datacenterdynamics.com/en/news/nvidia-to-invest-in-xai-special-purpose-vehicle-cash-to-be-used-to-buy-nvidia-gpus/", "publisher": "Data Center Dynamics", "published": "2025-10", "kind": "press" },
+    { "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-backs-20-billion-xai-chip-deal", "publisher": "Tom's Hardware", "published": "2025-10", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "terawulf",
+  "name": "TeraWulf Inc.",
+  "kind": "public_company",
+  "category": "datacenter_operator",
+  "group": "hyperscalers_clouds",
+  "region": "us",
+  "tier": 2,
+  "tickers": [{ "exchange": "NASDAQ", "symbol": "WULF" }],
+  "website": "https://www.terawulf.com",
+  "monetization": "Bitcoin miner converted to AI data-center landlord: leases purpose-built HPC capacity at Lake Mariner (NY) to Fluidstack under long-term, Google-backstopped leases (Google ~14% pro forma equity holder).",
+  "observations": [
+    {
+      "metric": "contract_value",
+      "metric_label": "Contracted AI hosting revenue incl. extensions",
+      "period": "FY2026",
+      "value": 16,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://investors.terawulf.com/news-events/press-releases/detail/114/terawulf-announces-fluidstack-expansion-with-160-mw-cb-5", "publisher": "TeraWulf IR", "published": "2025-08", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "Initial Aug 2025 Fluidstack leases were ~$3.7B/10yr (~$8.7B w/ extensions); with CB-5 and subsequent expansions contracted value grew to ~$6.7B base / ~$16B with extensions; >360MW at Lake Mariner."
+    }
+  ],
+  "sources": [
+    { "url": "https://investors.terawulf.com/news-events/press-releases/detail/112/terawulf-signs-200-mw-10-year-ai-hosting-agreements-with-fluidstack", "publisher": "TeraWulf IR", "published": "2025-08", "kind": "company_ir" },
+    { "url": "https://www.datacenterdynamics.com/en/news/cryptominer-terawulf-secures-200mw-lease-with-fluidstack-google-to-take-stake-in-company/", "publisher": "Data Center Dynamics", "published": "2025-08", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "meta--entergy--power-hyperion",
+  "from": "meta",
+  "to": "entergy",
+  "type": "ppa",
+  "status": "contracted",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "Rates confidential. Meta signed long-term (15-yr) electric service agreements with Entergy Louisiana to serve its ~2.2GW Hyperion campus (Richland Parish, LA), underpinning ~2,260MW of new CCGTs (~$3.2B build cost) plus transmission.", "as_of": "2025" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "Interim grid service has begun as Hyperion phases energize; payments under the ESAs are not separately disclosed. New CCGTs come online 2028-2029.", "as_of": "2026-08-13" },
+  "term": { "announced": "2024-12", "start": "2026", "end": null, "duration_years": 15 },
+  "nature_md": "Regulated-utility version of an AI power deal: Entergy Louisiana is building three combined-cycle gas plants (~2,260MW, ~$3.2B, approved by the Louisiana PSC in 2025) and transmission to serve Meta's Hyperion data-center campus (~2.2GW load, Meta's largest). Meta pays through 15-year electric service agreements designed to cover the cost of the new units and protect other ratepayers, and has committed to fund transmission upgrades and (per the settlement) contribute toward securing additional generation. Unlike merchant PPAs, price and structure are embedded in a regulated rate proceeding — partially public, rates confidential.",
+  "accounting": {
+    "payer_treatment_md": "Meta expenses utility bills as data-center opex; the ESA commitments are purchase obligations (off balance sheet), with some transmission contributions likely capitalized as leasehold/CIAC-type payments. Meta's Hyperion structure also shifts DC capex to the Blue Owl JV (see hyperion-jv entity — edge owned by another author).",
+    "payee_treatment_md": "Entergy rate-bases the ~$3.2B of CCGTs and transmission (capex now, regulated return over decades) and books ESA revenue as delivered; LPSC-approved structure is designed so Meta's payments cover the new units' revenue requirement.",
+    "off_balance_sheet": true,
+    "flags": ["commitment_unfunded"]
+  },
+  "related_edges": ["meta--vistra--ppa-pjm"],
+  "both_sides_md": "**Bull:** the regulated model — new load pays for new steel, with PSC oversight preventing cost-shifting to households. **Bear:** consumer advocates contest exactly that: confidential rates, 15-year terms against 30-year assets, and stranded-cost risk if AI demand disappoints land on Louisiana ratepayers after year 15.",
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.utilitydive.com/news/entergy-louisiana-meta-data-center-gas-plants-lpsc-approval/", "publisher": "Utility Dive", "published": "2025", "kind": "press" },
+    { "url": "https://www.entergynewsroom.com/news/entergy-meta-announce-largest-data-center-project-louisiana/", "publisher": "Entergy Newsroom", "published": "2024-12", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

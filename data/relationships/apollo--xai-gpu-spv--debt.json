@@ -1,0 +1,26 @@
+{
+  "id": "apollo--xai-gpu-spv--debt",
+  "from": "apollo",
+  "to": "xai-gpu-spv",
+  "type": "debt_financing",
+  "status": "announced",
+  "headline": { "value": 12.5, "unit": "USD_B", "caveat": "total debt tranche arranged/led by Apollo and Diameter Capital Partners with other lenders; Apollo's own share undisclosed", "as_of": "2025-10" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "not disclosed" },
+  "term": { "announced": "2025-10", "start": null, "end": null, "duration_years": 5 },
+  "nature_md": "Apollo, together with Diameter Capital Partners and other private-credit lenders, arranged ~$12.5B of debt for the ~$20B xAI GPU SPV. The debt is collateralized by the NVIDIA GPUs the SPV purchases and serviced by xAI's lease payments over ~5 years — GPU-backed lending where recovery depends on chips retaining resale value, one of the most-watched credit experiments of the cycle. This edge records the debt tranche with Apollo as the identifiable lead; the full lender list is not public.",
+  "accounting": {
+    "payer_treatment_md": "Private-credit assets across Apollo-managed funds and insurance balance sheets (Athene); yield reflects GPU-residual and single-lessee (xAI) risk.",
+    "payee_treatment_md": "Senior secured debt of the SPV, above the ~$7.5B equity; not a liability of xAI itself — the point of the structure is that xAI's balance sheet carries a lease, not $12.5B of debt.",
+    "off_balance_sheet": false,
+    "flags": ["collateralized_gpu_debt", "spv_shift"]
+  },
+  "related_edges": ["nvidia--xai-gpu-spv--equity", "valor-equity--xai-gpu-spv--equity", "xai-gpu-spv--xai--gpu-lease"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.datacenterdynamics.com/en/news/nvidia-to-invest-in-xai-special-purpose-vehicle-cash-to-be-used-to-buy-nvidia-gpus/", "publisher": "Data Center Dynamics", "published": "2025-10", "kind": "press" },
+    { "url": "https://x.com/theinformation/status/1978966707843567936", "publisher": "The Information (via X)", "published": "2025-10-16", "kind": "press" },
+    { "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-backs-20-billion-xai-chip-deal", "publisher": "Tom's Hardware", "published": "2025-10", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

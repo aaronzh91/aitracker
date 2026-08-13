@@ -1,0 +1,68 @@
+{
+  "id": "safe-superintelligence",
+  "name": "Safe Superintelligence Inc. (SSI)",
+  "kind": "private_company",
+  "category": "model_lab",
+  "group": "labs_ai_native",
+  "region": "us",
+  "tier": 1,
+  "website": "https://ssi.inc",
+  "monetization": "None — $0 revenue by design; a research-only bet on building safe superintelligence 'in a straight shot', monetization explicitly deferred.",
+  "description_md": "Safe Superintelligence is the research lab founded in June 2024 by OpenAI co-founder and former chief scientist Ilya Sutskever (with Daniel Gross and Daniel Levy), operating from Palo Alto and Tel Aviv. It has raised ~$7B in total at a $32B post-money valuation while shipping no product and publishing no research — the purest expression of the cycle's willingness to fund pre-revenue frontier labs. Its first model was slated for an August 2026 debut per the coverage universe census (unverified).",
+  "ai_monetization_md": "There is no monetization: SSI states it will not release commercial products on the path to superintelligence, and it recorded $0 revenue through 2025–H1 2026. Its economic footprint is entirely on the spending side — it was reported as Google Cloud's largest external TPU customer before shifting toward GPUs, and Nvidia's reported $5B July 2026 investment comes bundled with access to Vera Rubin systems said to expand SSI's compute ~10× over 12 months.",
+  "ai_strategy_md": "One product, one milestone: insulate research from commercial pressure by raising enormous sums against Sutskever's reputation (backers across rounds reportedly include Greenoaks, Sequoia, a16z, DST, Alphabet, and Nvidia), buy frontier-scale compute (Google Cloud TPUs, now Nvidia GPUs), and stay dark until superintelligence-relevant results exist. For the money map, SSI matters as a large compute buyer and as the limit case of valuation-without-revenue.",
+  "risk_notes_md": "The $32B valuation is supported by zero revenue, zero product, and zero published research — the steepest faith-based mark among Tier-1 labs. The Nvidia $5B investment (Jul 2026) is single-sourced in origin (widely re-reported but tracing to one report), so it carries low confidence here; it also adds supplier-investor circularity, with Nvidia funding a customer whose spending returns as GPU purchases. Key-man risk on Sutskever is total; co-founder Daniel Gross already departed for Meta in mid-2025.",
+  "observations": [
+    {
+      "metric": "valuation",
+      "period": "2025-04",
+      "value": 32,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://valueaddvc.com/blog/safe-superintelligence-valuation-2026-32-billion-zero-revenue-and-ilya-sutskevers-7-billion-bet", "publisher": "Value Add VC", "title": "Safe Superintelligence Valuation 2026: $32B, Zero Revenue", "published": "2026-07", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "$2B raise at $32B (2025, Greenoaks-led, incl. Alphabet and Nvidia); the reported Jul 2026 Nvidia $5B was described as bringing total funding to ~$7B at the same $32B post. Private round mark, not a traded price."
+    },
+    {
+      "metric": "funding_raised",
+      "period": "2026-07",
+      "value": 5,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://www.siliconrepublic.com/business/nvidia-reportedly-commits-5bn-to-scale-safe-superintelligence", "publisher": "Silicon Republic", "title": "Nvidia reportedly commits $5bn to scale Safe Superintelligence", "published": "2026-07", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Reported Jul 27, 2026: Nvidia to invest ~$5B as part of a strategic partnership giving SSI access to Vera Rubin systems (~10x compute over 12 months). Single-sourced in origin — multiple outlets re-report one account; no confirmation from Nvidia or SSI. Confidence low per sourcing policy."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "CY2025",
+      "value": 0,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.wionews.com/world/nvidia-just-put-5-billion-into-a-company-that-has-never-shipped-a-product-1785872919506/amp", "publisher": "WION", "title": "Nvidia just put $5 billion into a company that has never shipped a product", "published": "2026-07", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "No product shipped, no research published, $0 revenue — consistently reported and consistent with the company's stated no-product-before-superintelligence position. First model slated Aug 2026 per census (UNVERIFIED)."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-07-27",
+      "title": "Nvidia reportedly invests ~$5B in SSI",
+      "why_it_matters": "Among Nvidia's largest single checks of the cycle, into a company with no product — a landmark data point for the circularity debate (investment funds compute purchases that return to Nvidia as revenue). Reported alongside a Vera Rubin compute partnership; single-sourced in origin, unconfirmed by either company.",
+      "impact": "high",
+      "entities": ["safe-superintelligence", "nvidia"],
+      "sources": [
+        { "url": "https://www.siliconrepublic.com/business/nvidia-reportedly-commits-5bn-to-scale-safe-superintelligence", "publisher": "Silicon Republic", "published": "2026-07", "kind": "press" },
+        { "url": "https://cryptobriefing.com/nvidia-invests-5-billion-safe-superintelligence/", "publisher": "Crypto Briefing", "published": "2026-07", "kind": "press", "notes": "Secondary re-report; both trace to the same original account." }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.siliconrepublic.com/business/nvidia-reportedly-commits-5bn-to-scale-safe-superintelligence", "publisher": "Silicon Republic", "kind": "press" },
+    { "url": "https://valueaddvc.com/blog/safe-superintelligence-valuation-2026-32-billion-zero-revenue-and-ilya-sutskevers-7-billion-bet", "publisher": "Value Add VC", "kind": "analyst" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,93 @@
+{
+  "id": "sk-hynix",
+  "name": "SK hynix Inc.",
+  "kind": "public_company",
+  "category": "memory_storage",
+  "group": "compute_supply_chain",
+  "region": "korea",
+  "tier": 1,
+  "tickers": [{ "exchange": "KRX", "symbol": "000660" }],
+  "cik": null,
+  "website": "https://www.skhynix.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Sells HBM and server DRAM/NAND into the AI buildout — ~60% HBM share, lead HBM4 supplier to Nvidia, multi-year supply agreements with ~10 customers.",
+  "description_md": "SK hynix is the leading high-bandwidth-memory (HBM) maker and the primary memory beneficiary of the AI super-cycle. HBM — stacked DRAM co-packaged with every AI accelerator — is one of the buildout's named bottlenecks, and SK hynix holds roughly 58–62% of the market with the lead position in HBM4 for Nvidia's Rubin generation (UBS estimates ~70% of Nvidia's 2026 HBM4 demand). Q2 2026 marked one of the most extreme quarters in semiconductor history: revenue ₩79.3T (+257% y/y) at a 76% operating margin. The company listed ADRs on NASDAQ in 2026.",
+  "ai_monetization_md": "HBM3E/HBM4 sales to Nvidia, AMD, and ASIC programs, plus surging conventional server DRAM and enterprise NAND — all effectively sold out, with customers signing multi-year supply agreements (~10 customers) and prepaying in some cases (contract dollars undisclosed — a known data gap). Pricing power at the bottleneck produced a 76% operating margin in Q2 2026 (operating profit ₩60.5T, +557% y/y). SK hynix co-signed the OpenAI Stargate memory letter of intent with Samsung (Oct 2025): up to 900K DRAM wafers/month — roughly 40% of global DRAM output — earmarked through 2029.",
+  "ai_strategy_md": "Defend the HBM lead across two generations simultaneously (HBM3E in volume, HBM4 ramped in 2026 with yields near HBM3E maturity; HBM4E samples shipped), add capacity on schedule (M15X fab wafer-in Q1 2026), and convert cycle windfalls into balance-sheet strength (net cash ₩69.4T) plus demand visibility via multi-year agreements. The Stargate LOI aligns it with OpenAI's buildout directly rather than only through Nvidia.",
+  "risk_notes_md": "**Cyclicality:** a 76% operating margin is the strongest possible invitation for supply response (Samsung, Micron, and eventually CXMT) and for customers to design around HBM; memory has never sustained margins like this. **Customer concentration:** Nvidia dominates HBM demand; the Stargate LOI ties a large share of capacity to OpenAI's contested funding. **Commitment quality:** the LOI is a letter of intent, not a contract — headline wafer volumes are not booked revenue. **Korea/China exposure:** US export-control decisions on China fabs and equipment affect operations and the customer set.",
+  "observations": [
+    {
+      "metric": "revenue_total",
+      "period": "FY2026-Q2",
+      "value": 79.3,
+      "unit": "KRW_T",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://news.skhynix.com/en/q2-2026-business-results/", "publisher": "SK hynix Newsroom", "published": "2026-07-28", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "≈$54.6B; +257% y/y. DRAM 73% of revenue, NAND 27%."
+    },
+    {
+      "metric": "operating_income",
+      "period": "FY2026-Q2",
+      "value": 60.5,
+      "unit": "KRW_T",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.investing.com/news/company-news/sk-hynix-q2-2026-slides-record-revenue-76-operating-margin-93CH-4818489", "publisher": "Investing.com (results deck)", "published": "2026-07-28", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "+557% y/y; record 76% operating margin — the headline number of the memory super-cycle."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Operating margin",
+      "period": "FY2026-Q2",
+      "value": 76,
+      "unit": "pct",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://news.skhynix.com/en/q2-2026-business-results/", "publisher": "SK hynix Newsroom", "published": "2026-07-28", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "All-time high; net cash ₩69.4T after the NASDAQ ADR listing."
+    },
+    {
+      "metric": "market_share_pct",
+      "metric_label": "HBM market share",
+      "period": "FY2026-Q1",
+      "value": 58,
+      "unit": "pct",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://counterpointresearch.com/en/insights/global-dram-and-hbm-market-share", "publisher": "Counterpoint Research", "published": "2026", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "58% in Q1 2026 per Counterpoint (62% of shipments during 2025); UNIVERSE/SPEC cite ~58–60%. UBS forecasts ~70% of Nvidia's HBM4 demand in 2026."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-10-01",
+      "title": "Signs OpenAI Stargate memory LOI with Samsung — up to 900K DRAM wafers/month",
+      "why_it_matters": "Earmarks ~40% of global DRAM output for OpenAI's buildout through 2029; an LOI, not a purchase contract, so it sits in the committed-but-unfunded tier until converted.",
+      "impact": "high",
+      "entities": ["sk-hynix", "samsung", "openai", "stargate"],
+      "sources": [{ "url": "https://openai.com/index/samsung-and-sk-join-stargate/", "publisher": "OpenAI", "published": "2025-10-01", "kind": "company_pr" }]
+    },
+    {
+      "date": "2026-07-28",
+      "title": "Q2 2026: revenue +257% y/y, 76% operating margin, HBM4 in mass production",
+      "why_it_matters": "The clearest evidence that bottleneck ownership converts to pricing power; multi-year agreements with ~10 customers extend visibility, while the margin level itself raises supply-response and sustainability questions.",
+      "impact": "high",
+      "entities": ["sk-hynix", "nvidia"],
+      "sources": [
+        { "url": "https://news.skhynix.com/en/q2-2026-business-results/", "publisher": "SK hynix Newsroom", "published": "2026-07-28", "kind": "company_ir" },
+        { "url": "https://www.investing.com/news/company-news/sk-hynix-q2-2026-slides-record-revenue-76-operating-margin-93CH-4818489", "publisher": "Investing.com", "published": "2026-07-28", "kind": "press" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://news.skhynix.com/en/q2-2026-business-results/", "publisher": "SK hynix Newsroom", "kind": "company_ir" },
+    { "url": "https://www.digitimes.com/news/a20251119PD211/hbm4-sk-hynix-2026-nvidia-demand.html", "publisher": "DigiTimes", "published": "2025-11-19", "kind": "press", "notes": "SK hynix projected to dominate Nvidia HBM4 demand." },
+    { "url": "https://counterpointresearch.com/en/insights/global-dram-and-hbm-market-share", "publisher": "Counterpoint Research", "kind": "analyst" }
+  ],
+  "updated": "2026-08-13"
+}

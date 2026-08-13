@@ -1,0 +1,30 @@
+{
+  "id": "valor-equity",
+  "name": "Valor Equity Partners",
+  "kind": "financial_institution",
+  "category": "financier_pe_vc",
+  "group": "capital",
+  "region": "us",
+  "tier": 2,
+  "website": "https://www.valorep.com",
+  "monetization": "Growth-stage private equity firm (Chicago); long-time backer of Musk companies (Tesla, SpaceX, xAI); earns management fees and carry, increasingly on AI-infrastructure structured vehicles.",
+  "description_md": "Valor Equity Partners is the anchor equity investor in the ~$20B xAI GPU SPV (Oct 2025) that buys NVIDIA GPUs and leases them to xAI for the Colossus 2 campus in Memphis — the marquee example of moving GPU capex off an AI lab's balance sheet. Valor also participated in xAI's $20B Series E (Jan 2026).",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "xAI GPU SPV equity tranche (Valor-anchored)",
+      "period": "2025-10",
+      "value": 7.5,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.datacenterdynamics.com/en/news/nvidia-to-invest-in-xai-special-purpose-vehicle-cash-to-be-used-to-buy-nvidia-gpus/", "publisher": "Data Center Dynamics", "published": "2025-10", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Total equity tranche of the ~$20B SPV; Valor's own commitment is undisclosed."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.datacenterdynamics.com/en/news/nvidia-to-invest-in-xai-special-purpose-vehicle-cash-to-be-used-to-buy-nvidia-gpus/", "publisher": "Data Center Dynamics", "published": "2025-10", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

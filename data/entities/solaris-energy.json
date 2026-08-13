@@ -1,0 +1,31 @@
+{
+  "id": "solaris-energy",
+  "name": "Solaris Energy Infrastructure",
+  "kind": "public_company",
+  "category": "turbines_gensets",
+  "group": "energy",
+  "region": "us",
+  "tier": 3,
+  "tickers": [{ "exchange": "NYSE", "symbol": "SEI" }],
+  "website": "https://www.solaris-energy.com",
+  "monetization": "Mobile gas-turbine power-as-a-service provider; monetizes AI through the 50.1%-owned Stateline Power JV with xAI (49.9%) supplying behind-the-meter turbine power to the Memphis-area Colossus data-center cluster.",
+  "observations": [
+    {
+      "metric": "capacity_mw",
+      "metric_label": "Operating turbine capacity targeted for xAI by Q2 2027",
+      "period": "2027-Q2 target",
+      "value": 1100,
+      "unit": "MW",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://semianalysis.com/2025/09/16/xais-colossus-2-first-gigawatt-datacenter/", "publisher": "SemiAnalysis", "published": "2025-09-16", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "From ~400MW initially deployed; JV owns ~900MW with ~240MW on the Colossus 1 site; Titan-350 units from Solar Turbines (Caterpillar)."
+    }
+  ],
+  "sources": [
+    { "url": "https://semianalysis.com/2025/09/16/xais-colossus-2-first-gigawatt-datacenter/", "publisher": "SemiAnalysis", "published": "2025-09-16", "kind": "analyst" },
+    { "url": "https://www.gem.wiki/Colossus_2_power_station", "publisher": "Global Energy Monitor", "kind": "dataset" }
+  ],
+  "updated": "2026-08-13"
+}

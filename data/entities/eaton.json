@@ -1,0 +1,91 @@
+{
+  "id": "eaton",
+  "name": "Eaton Corporation plc",
+  "kind": "public_company",
+  "category": "electrical_equipment",
+  "group": "physical_infrastructure",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NYSE", "symbol": "ETN" }],
+  "cik": "1551182",
+  "website": "https://www.eaton.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Sells electrical power management from grid to chip — switchgear, UPS, busway, and (post-Boyd) liquid cooling — with data centers now its largest end-market.",
+  "description_md": "Eaton is a diversified power-management company (electrical Americas/global, aerospace, vehicle, eMobility) that has become one of the primary beneficiaries of AI data-center electrification. Data centers are now its largest end-market, served with medium-voltage switchgear, transformers, UPS, power distribution, and busway. The March 2026 close of the $9.5B Boyd Thermal acquisition added liquid cooling (cold plates, CDUs, thermal systems), giving Eaton a 'grid-to-chip' offering that spans utility interconnection down to chip-level cooling. Eaton is also a named partner on NVIDIA's 800VDC rack-power architecture.",
+  "ai_monetization_md": "AI shows up as equipment content per megawatt across the data-center buildout plus a growing thermal line: in Q2 2026 Eaton's data-center business grew ~65% y/y, Electrical Global segment revenue rose 44% (18% organic plus 25 points from Boyd), and Boyd contributed $432M of revenue in the quarter — 20% above initial commitments — with the full-year Boyd forecast raised to ~$1.8B. Management cites design-partner status with major chip providers and a service network that can reach customer sites within an hour as monetization moats.",
+  "ai_strategy_md": "Assemble the full grid-to-chip stack via M&A and partnerships rather than stay a components vendor: buy the liquid-cooling leader (Boyd Thermal, $9.5B, closed March 2026), partner with NVIDIA on the 800VDC power architecture for next-generation racks, and leverage utility-scale electrical share to win whole-campus specifications. Eaton pairs this with capacity expansion in transformers and switchgear, where multi-year industry lead times have made electrical equipment a recognized bottleneck of the AI buildout.",
+  "risk_notes_md": "Boyd is a large, expensive integration ($9.5B for ~$1.8B of first-year revenue) into a fast-moving product category where Vertiv, Schneider/Motivair, and Asian suppliers compete hard. Data-center exposure is now large enough that an AI capex pause would dent the growth algorithm that supports the multiple. The rest of the portfolio (vehicle, aerospace) grows far slower, so the equity story is increasingly a single-end-market story.",
+  "observations": [
+    {
+      "metric": "revenue_total",
+      "period": "FY2026-Q2",
+      "value": 8.5,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.investing.com/news/company-news/eaton-q2-2026-slides-record-results-drive-guidance-raise-93CH-4829032", "publisher": "Investing.com (from Eaton 8-K)", "published": "2026-07", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "+21% y/y, organic +14%; record quarter; FY2026 adjusted EPS guidance raised to $13.40–13.60."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Data-center business growth, Q2 2026",
+      "period": "FY2026-Q2",
+      "value": 65,
+      "unit": "pct",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.fool.com/earnings/call-transcripts/2026/08/07/eaton-etn-q2-2026-earnings-call-transcript/", "publisher": "Motley Fool (earnings call transcript)", "published": "2026-08", "kind": "earnings_call" },
+      "as_of": "2026-08-13",
+      "notes": "Data centers are Eaton's largest end-market. Electrical Global segment +44% y/y (18% organic + 25 points from Boyd)."
+    },
+    {
+      "metric": "revenue_segment",
+      "metric_label": "Boyd Thermal revenue, Q2 2026",
+      "period": "FY2026-Q2",
+      "value": 432,
+      "unit": "USD_M",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.fool.com/earnings/call-transcripts/2026/08/07/eaton-etn-q2-2026-earnings-call-transcript/", "publisher": "Motley Fool (earnings call transcript)", "published": "2026-08", "kind": "earnings_call" },
+      "as_of": "2026-08-13",
+      "notes": "20% above initial deal commitments; full-year 2026 Boyd revenue forecast raised to ~$1.8B."
+    },
+    {
+      "metric": "contract_value",
+      "metric_label": "Boyd Thermal acquisition price",
+      "period": "2026-03",
+      "value": 9.5,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-completes-acquisition-of-leading-liquid-cooling-solutions-provider-boyd-thermal.html", "publisher": "Eaton", "published": "2026-03", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Closed March 2026; adds liquid cooling to complete the grid-to-chip portfolio."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-03",
+      "title": "Completes $9.5B acquisition of Boyd Thermal",
+      "why_it_matters": "The largest cooling-sector deal of the AI cycle: Eaton buys its way into liquid cooling at scale, directly challenging Vertiv's strongest franchise as rack densities force the industry to liquid.",
+      "impact": "high",
+      "entities": ["eaton", "vertiv"],
+      "sources": [{ "url": "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-completes-acquisition-of-leading-liquid-cooling-solutions-provider-boyd-thermal.html", "publisher": "Eaton", "published": "2026-03", "kind": "company_pr" }]
+    },
+    {
+      "date": "2026-07-31",
+      "title": "Record Q2 2026; raises FY guidance as data-center business grows ~65%",
+      "why_it_matters": "Confirms data centers as Eaton's largest and fastest end-market and that Boyd is beating deal-model revenue commitments in its first quarters.",
+      "impact": "medium",
+      "entities": ["eaton"],
+      "sources": [{ "url": "https://www.investing.com/news/company-news/eaton-q2-2026-slides-record-results-drive-guidance-raise-93CH-4829032", "publisher": "Investing.com", "published": "2026-07", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-completes-acquisition-of-leading-liquid-cooling-solutions-provider-boyd-thermal.html", "publisher": "Eaton", "kind": "company_pr" },
+    { "url": "https://www.fool.com/earnings/call-transcripts/2026/08/07/eaton-etn-q2-2026-earnings-call-transcript/", "publisher": "Motley Fool", "kind": "earnings_call" },
+    { "url": "https://www.investing.com/news/company-news/eaton-q2-2026-slides-record-results-drive-guidance-raise-93CH-4829032", "publisher": "Investing.com", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "blackrock--meta-el-paso-spv--bonds",
+  "from": "blackrock",
+  "to": "meta-el-paso-spv",
+  "type": "bond_issuance",
+  "status": "completed",
+  "headline": { "value": 12.5, "unit": "USD_B", "caveat": "BlackRock-led bond raise for the venture, priced Jul 27, 2026 at a 7.53% yield (~287.5bp over 10yr Treasuries)", "as_of": "2026-07-27" },
+  "realized_to_date": { "value": 12.5, "unit": "USD_B", "caveat": "notes priced/sold Jul 27, 2026; proceeds fund construction through 2028", "as_of": "2026-07-27" },
+  "term": { "announced": "2026-07", "start": "2026-07-27", "end": null, "duration_years": null },
+  "nature_md": "BlackRock — whose Global Infrastructure Partners and HPS Investment Partners funds hold the 80% equity stake in the El Paso venture (Project Sopaipilla Holdings) alongside Meta's 20% — led and structured a $12.5B bond sale for the SPV, priced July 27, 2026 at 7.53%, the widest spread for an A-or-better-rated bond in roughly three years. Ultimate noteholders are dispersed institutional buyers in the BlackRock-led offering; this edge records BlackRock as sponsor/arranger and equity principal of the debt-issuing vehicle. Pricing at 7.53% vs Hyperion's 6.58% nine months earlier is a widely cited marker of AI-infrastructure credit repricing.",
+  "accounting": {
+    "payer_treatment_md": "GIP/HPS funds hold the 80% equity position (client capital, fee-earning AUM); the $12.5B of notes were distributed to third-party institutional investors in a BlackRock-led offering — BlackRock Inc.'s own balance-sheet exposure is limited.",
+    "payee_treatment_md": "Debt of the SPV, serviced by Meta's lease payments as sole occupant of the 1GW campus (completion expected 2028). Off Meta's balance sheet; Meta holds only its 20% equity-method stake.",
+    "off_balance_sheet": true,
+    "flags": ["spv_shift"]
+  },
+  "related_edges": ["meta--meta-el-paso-spv--capitalization", "meta--hyperion-jv--capitalization", "blackrock--hyperion-jv--bonds"],
+  "both_sides_md": "**Bear:** 7.53% for A-rated, Meta-leased collateral means lenders are demanding nearly 300bp over Treasuries for single-tenant AI risk — the credit market's clearest 2026 signal that it prices these structures as riskier than the ratings imply. **Bull:** the deal cleared at $12.5B — demand exists at the right price, and hedging a 1GW campus with third-party capital at a fixed spread is rational for Meta even at a visibly higher coupon than Hyperion (Bloomberg, Forbes coverage).",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Yield on El Paso SPV notes",
+      "period": "2026-07-27",
+      "value": 7.53,
+      "unit": "pct",
+      "basis": "press_reported",
+      "confidence": "high",
+      "source": { "url": "https://www.bloomberg.com/news/articles/2026-07-27/blackrock-raises-12-5-billion-of-debt-for-meta-data-center", "publisher": "Bloomberg", "published": "2026-07-27", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "~95bp wider than the Hyperion JV's 6.58% notes of Oct 2025."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-07-27",
+      "title": "El Paso SPV prices $12.5B of notes at 7.53%",
+      "why_it_matters": "Widest spread for an A-or-better data-center bond in ~3 years; benchmark for AI-credit repricing.",
+      "impact": "high",
+      "entities": ["blackrock", "meta", "meta-el-paso-spv"],
+      "sources": [{ "url": "https://www.bloomberg.com/news/articles/2026-07-27/blackrock-raises-12-5-billion-of-debt-for-meta-data-center", "publisher": "Bloomberg", "published": "2026-07-27", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.bloomberg.com/news/articles/2026-07-27/blackrock-raises-12-5-billion-of-debt-for-meta-data-center", "publisher": "Bloomberg", "published": "2026-07-27", "kind": "press" },
+    { "url": "https://www.forbes.com/sites/maryroeloffs/2026/07/28/blackrock-will-own-80-of-metas-massive-new-ai-data-center-in-el-paso/", "publisher": "Forbes", "published": "2026-07-28", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

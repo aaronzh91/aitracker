@@ -1,0 +1,30 @@
+{
+  "id": "nextera",
+  "name": "NextEra Energy",
+  "kind": "public_company",
+  "category": "power_utility",
+  "group": "energy",
+  "region": "us",
+  "tier": 2,
+  "tickers": [{ "exchange": "NYSE", "symbol": "NEE" }],
+  "website": "https://www.nexteraenergy.com",
+  "monetization": "Largest US renewables developer plus regulated Florida utility (FPL); monetizes AI demand through long-term PPAs with hyperscalers, headlined by the 25-year Duane Arnold nuclear restart deal with Google.",
+  "observations": [
+    {
+      "metric": "capacity_mw",
+      "metric_label": "Duane Arnold Energy Center restart capacity contracted to Google",
+      "period": "2025-10",
+      "value": 615,
+      "unit": "MW",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://www.reuters.com/business/energy/nextera-google-strike-deal-restart-iowa-nuclear-plant-2025-10-28/", "publisher": "Reuters", "published": "2025-10", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "25-year PPA; Iowa BWR shut in 2020, restart targeted for early 2029."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.reuters.com/business/energy/nextera-google-strike-deal-restart-iowa-nuclear-plant-2025-10-28/", "publisher": "Reuters", "published": "2025-10", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

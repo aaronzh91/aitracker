@@ -1,0 +1,41 @@
+{
+  "id": "dominion-energy",
+  "name": "Dominion Energy",
+  "kind": "public_company",
+  "category": "power_utility",
+  "group": "energy",
+  "region": "us",
+  "tier": 2,
+  "tickers": [{ "exchange": "NYSE", "symbol": "D" }],
+  "cik": "715957",
+  "website": "https://www.dominionenergy.com",
+  "monetization": "Regulated utility serving Northern Virginia — the world's largest data-center cluster; monetizes AI via rate-based transmission/substation buildout for ~40GW of contracted DC demand.",
+  "observations": [
+    {
+      "metric": "capacity_gw",
+      "period": "2026",
+      "value": 40,
+      "unit": "GW",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.datacenterdynamics.com/en/news/dominion-energy-nearly-doubles-data-center-capacity-under-contract-to-40gw/", "publisher": "Data Center Dynamics", "published": "2024-12", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "~40GW of data-center demand in contracting stages (substation engineering LOAs, construction LOAs, electrical service agreements) — nearly double the 21GW of Jul 2024; ~26GW sat at the substation-engineering stage."
+    },
+    {
+      "metric": "capex_guidance",
+      "period": "2025-2029",
+      "value": 50.1,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.datacenterfrontier.com/energy/article/33013010/dominion-virginias-data-center-cluster-could-double-in-size", "publisher": "Data Center Frontier", "published": "2025", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Five-year plan raised from $43.2B, largely on transmission/substation work for data centers."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.datacenterdynamics.com/en/news/dominion-energy-nearly-doubles-data-center-capacity-under-contract-to-40gw/", "publisher": "Data Center Dynamics", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,136 @@
+{
+  "id": "meta",
+  "name": "Meta Platforms, Inc.",
+  "kind": "public_company",
+  "category": "hyperscaler",
+  "group": "hyperscalers_clouds",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NASDAQ", "symbol": "META" }],
+  "cik": "1326801",
+  "website": "https://www.meta.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Monetizes AI through ad targeting/ranking and engagement across Facebook/Instagram/WhatsApp; no cloud business — AI is a cost center funded by ads, bonds, and off-balance-sheet SPVs.",
+  "description_md": "Meta operates Facebook, Instagram, WhatsApp and Messenger, funding one of the largest AI buildouts ($130–145B of 2026 capex) entirely from its advertising franchise — uniquely among the big four, it sells no cloud services, so AI spend has no direct compute-revenue offset. Meta pioneered the off-balance-sheet financing structures now spreading through the sector: the Hyperion JV in Louisiana (Blue Owl 80%/Meta 20%, $27B of A+ rated SPV notes anchored by PIMCO) and the El Paso venture (BlackRock 80%, $12.5B of bonds at 7.53%). It also rents third-party capacity at scale (CoreWeave ~$35B, Nebius up to $27B, Google Cloud >$10B) and bought 49% of Scale AI for $14.3B to seed its Superintelligence Labs.",
+  "ai_monetization_md": "AI monetization is indirect: recommendation and ads models lift engagement and pricing across ~3.5B users, and generative ad tools raise advertiser spend — management attributes ad-revenue outperformance to AI ranking. There is no compute-resale revenue; Llama is open-weights and effectively unmonetized directly. The bet is that superintelligence-scale infrastructure (Hyperion ~5GW, Prometheus, El Paso 1GW) eventually monetizes through ads, agents, and devices. That makes Meta the sector's purest test of AI ROI without a cloud P&L: Q2-26 free cash flow fell to $0.78B (from $8.55B a year earlier) as capex consumed nearly all operating cash flow.",
+  "ai_strategy_md": "Three-track capacity strategy: (1) **Own builds** funded on-balance-sheet — $130–145B 2026 capex plus a record $30B bond raise (Oct 2025, $125B of orders). (2) **SPV/JV structures** that move mega-campus capex off Meta's books while keeping operational control — Hyperion (Blue Owl 80/20, $27B notes, Meta took a ~$3B distribution and provides a residual-value guarantee) and El Paso (BlackRock 80/20, $12.5B at 7.53%). (3) **Rented neocloud capacity** — CoreWeave ~$35.2B through 2032, Nebius up to $27B, plus >$10B/6yr on Google Cloud. Talent/data via the $14.3B Scale AI deal (49%, non-voting) that brought Alexandr Wang in to lead Superintelligence Labs. Power via nuclear PPAs (Constellation Clinton 1,121MW; >2,600MW across Vistra's PJM fleet).",
+  "risk_notes_md": "**SPV shift:** Hyperion and El Paso keep ~$40B+ of asset cost and debt off Meta's balance sheet while Meta retains use of the assets and (at Hyperion) a residual-value guarantee — the canonical spv_shift flag; where the risk truly sits is disclosed only partially. **Rising cost of capital:** El Paso's 7.53% (Jul 2026) vs Hyperion's A+ pricing a year earlier shows lenders repricing identical-sponsor risk; Morgan Stanley forecasts ~$570B of AI debt issuance in 2026 sector-wide. **FCF compression:** $0.78B Q2-26 FCF leaves the buyback/dividend and the capex plan competing for the same ad dollar; a digital-ad downturn transmits directly to the buildout. **No compute revenue offset:** unlike Azure/AWS/GCP, Meta cannot recycle AI capacity into third-party revenue if internal demand disappoints. **Commitment stack:** ~$62B of neocloud contracts (CoreWeave + Nebius) are firm obligations regardless of Llama's trajectory.",
+  "observations": [
+    {
+      "metric": "capex_guidance",
+      "period": "CY2026",
+      "value": 137.5,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://www.cnbc.com/2026/07/29/meta-q2-earnings-report-2026.html", "publisher": "CNBC", "title": "Meta's stock drops on disappointing guidance, dwindling free cash flow", "published": "2026-07-29", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Midpoint of $130–145B range; floor raised from $125B at Q2-26 (top end had been raised to $145B in Apr 2026). Excludes capacity financed through the Hyperion and El Paso SPVs."
+    },
+    {
+      "metric": "free_cash_flow",
+      "period": "CY2026-Q2",
+      "value": 0.78,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.cnbc.com/2026/07/29/meta-q2-earnings-report-2026.html", "publisher": "CNBC", "published": "2026-07-29", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Down from $8.55B a year earlier; AI infrastructure consumed nearly all operating cash flow."
+    },
+    {
+      "metric": "contract_value",
+      "metric_label": "CoreWeave compute contracts (cumulative, through 2032)",
+      "period": "2026-04",
+      "value": 35.2,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.fool.com/investing/2026/04/21/meta-is-spending-48-billion-with-coreweave-nebius/", "publisher": "The Motley Fool", "title": "Meta Is Spending $48 Billion With CoreWeave and Nebius", "published": "2026-04-21", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "~$14.2B initial (Sep 2025) expanded by ~$21B in Apr 2026. Headline committed value, not realized spend."
+    },
+    {
+      "metric": "contract_value",
+      "metric_label": "Nebius compute contract (up to)",
+      "period": "2026-03",
+      "value": 27,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926027886/tm268879d1_ex99-1.htm", "publisher": "SEC / Nebius 6-K", "published": "2026-03", "kind": "sec_filing" },
+      "as_of": "2026-08-13",
+      "notes": "Five-year deal: $12B dedicated capacity plus committed purchases of additional capacity up to ~$15B more. Disclosed by the counterparty (Nebius), not by Meta."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Scale AI 49% non-voting stake (consideration)",
+      "period": "2025-06",
+      "value": 14.3,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "high",
+      "source": { "url": "https://www.nytimes.com/2025/06/12/technology/meta-scale-ai.html", "publisher": "The New York Times", "title": "Meta Invests $14.3 Billion in Scale AI to Kick-Start Superintelligence", "published": "2025-06-12", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Quasi-M&A structured below merger-control thresholds; Scale CEO Alexandr Wang joined to lead Meta Superintelligence Labs."
+    },
+    {
+      "metric": "market_cap",
+      "period": "2026-08",
+      "value": 1500,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.fool.com/research/largest-companies-by-market-cap/", "publisher": "Motley Fool", "published": "2026-08", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "~$1.5T; automated feed replaces this in Phase 2."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-10-21",
+      "title": "Forms Hyperion JV with Blue Owl (80/20); SPV issues $27B of A+ notes anchored by PIMCO ($18B)",
+      "why_it_matters": "The template for off-balance-sheet AI financing: Meta's largest datacenter moves off its books, Meta takes a ~$3B distribution and provides a residual-value guarantee — the structure every credit analyst now stress-tests.",
+      "impact": "high",
+      "entities": ["meta", "blue-owl", "pimco", "hyperion-jv"],
+      "sources": [
+        { "url": "https://www.prnewswire.com/news-releases/meta-announces-joint-venture-with-funds-managed-by-blue-owl-capital-to-develop-hyperion-data-center-302590584.html", "publisher": "PR Newswire / Meta", "published": "2025-10", "kind": "company_pr" },
+        { "url": "https://www.bisnow.com/national/news/data-center-capital-markets/meta-pushes-its-largest-data-center-project-off-its-books-with-27b-joint-venture-131490", "publisher": "Bisnow", "published": "2025-10", "kind": "press" }
+      ]
+    },
+    {
+      "date": "2025-10-30",
+      "title": "Sells $30B of bonds — its largest-ever offering — on $125B of orders",
+      "why_it_matters": "Part of ~$121B of Big-5 2025 bond issuance; marks the AI trade's decisive move into the credit markets.",
+      "impact": "high",
+      "entities": ["meta"],
+      "sources": [{ "url": "https://www.bloomberg.com/news/articles/2025-10-30/meta-sets-bond-sale-at-30-billion-biggest-offering-of-the-year", "publisher": "Bloomberg", "published": "2025-10-30", "kind": "press" }]
+    },
+    {
+      "date": "2026-07-27",
+      "title": "BlackRock raises $12.5B of bonds at 7.53% for the Meta El Paso SPV (BlackRock 80%/Meta 20%)",
+      "why_it_matters": "Widest spread for an A-or-better rated bond in three years — visibly costlier than Hyperion, a live read on lenders repricing AI-datacenter risk.",
+      "impact": "high",
+      "entities": ["meta", "blackrock"],
+      "sources": [
+        { "url": "https://www.bloomberg.com/news/articles/2026-07-27/blackrock-raises-12-5-billion-of-debt-for-meta-data-center", "publisher": "Bloomberg", "published": "2026-07-27", "kind": "press" },
+        { "url": "https://www.forbes.com/sites/maryroeloffs/2026/07/28/blackrock-will-own-80-of-metas-massive-new-ai-data-center-in-el-paso/", "publisher": "Forbes", "published": "2026-07-28", "kind": "press" }
+      ]
+    },
+    {
+      "date": "2026-07-29",
+      "title": "Q2-26: free cash flow falls to $0.78B; 2026 capex floor raised to $130B",
+      "why_it_matters": "The ad machine still grows, but cash generation net of AI capex approaches zero — the clearest single number on what the buildout costs an ads-only business model.",
+      "impact": "medium",
+      "entities": ["meta"],
+      "sources": [{ "url": "https://www.cnbc.com/2026/07/29/meta-q2-earnings-report-2026.html", "publisher": "CNBC", "published": "2026-07-29", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Announces-Joint-Venture-with-Funds-Managed-by-Blue-Owl-Capital-to-Develop-Hyperion-Data-Center/default.aspx", "publisher": "Meta IR", "kind": "company_ir" },
+    { "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Announces-New-Strategic-Venture-with-BlackRock-to-Develop-Data-Center-in-El-Paso/default.aspx", "publisher": "Meta IR", "kind": "company_ir" },
+    { "url": "https://www.cnbc.com/2026/07/29/meta-q2-earnings-report-2026.html", "publisher": "CNBC", "published": "2026-07-29", "kind": "press" },
+    { "url": "https://www.cnbc.com/2026/03/16/meta-nebius-ai-infrastructure.html", "publisher": "CNBC", "published": "2026-03-16", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

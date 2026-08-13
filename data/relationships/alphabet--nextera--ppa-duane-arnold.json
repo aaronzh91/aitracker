@@ -1,0 +1,24 @@
+{
+  "id": "alphabet--nextera--ppa-duane-arnold",
+  "from": "alphabet",
+  "to": "nextera",
+  "type": "ppa",
+  "status": "contracted",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "Price undisclosed. 25-year PPA for the 615MW Duane Arnold Energy Center (IA) restart; plant shut in 2020, restart targeted early 2029.", "as_of": "2025-10" },
+  "realized_to_date": { "value": 0, "unit": "USD_B", "caveat": "No power until the restart (targeted early 2029); no PPA cash has flowed.", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-10", "start": "2029", "end": null, "duration_years": 25 },
+  "nature_md": "Google agreed to a 25-year PPA for the output of NextEra's Duane Arnold nuclear plant in Iowa — a 615MW BWR shut down in 2020 after derecho damage — which NextEra will restart, targeting early 2029, to serve Google's Iowa data-center load and broader MISO demand. The contracted offtake is what makes the restart financeable; NextEra funds the restart work itself. The third US nuclear restart underwritten by a hyperscaler (after TMI/Microsoft and Palisades).",
+  "accounting": {
+    "payer_treatment_md": "Alphabet books nothing until COD (~2029), then power as data-center opex; ~25-year commitment disclosed as an unrecorded purchase obligation.",
+    "payee_treatment_md": "NextEra capitalizes restart costs and recognizes revenue from commercial operation; the PPA converts a retired asset back into a contracted rate-of-return-like cash flow. No disclosed Google prepayment or restart funding.",
+    "off_balance_sheet": true,
+    "flags": ["commitment_unfunded"]
+  },
+  "related_edges": ["microsoft--constellation-energy--ppa-crane", "alphabet--kairos-power--ppa"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.reuters.com/business/energy/nextera-google-strike-deal-restart-iowa-nuclear-plant-2025-10-28/", "publisher": "Reuters", "published": "2025-10-28", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

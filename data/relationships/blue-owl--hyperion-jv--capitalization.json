@@ -1,0 +1,25 @@
+{
+  "id": "blue-owl--hyperion-jv--capitalization",
+  "from": "blue-owl",
+  "to": "hyperion-jv",
+  "type": "jv_equity",
+  "status": "active",
+  "headline": { "value": 21.6, "unit": "USD_B", "caveat": "estimated: 80% pro-rata share of ~$27B total development cost, funded over the build; ~$7B cash was contributed at close", "as_of": "2025-10" },
+  "realized_to_date": { "value": 7, "unit": "USD_B", "caveat": "cash contribution at close per Meta's announcement; subsequent pro-rata funding not disclosed", "as_of": "2025-10" },
+  "term": { "announced": "2025-10", "start": "2025-10", "end": null, "duration_years": null },
+  "nature_md": "Funds managed by Blue Owl Capital own 80% of the Hyperion JV and committed to fund 80% of ~$27B in development costs for Meta's Richland Parish, Louisiana campus. At close, the Blue Owl-managed funds contributed approximately $7B in cash, out of which the JV paid Meta a one-time ~$3B distribution (see related edge). Blue Owl's return is the JV's lease income from Meta, protected by Meta's ~16-year residual-value guarantee. Morgan Stanley arranged the accompanying $27B A+ bond financing.",
+  "accounting": {
+    "payer_treatment_md": "Held in Blue Owl-managed funds (Real Assets / net-lease strategies) as an equity investment in the JV; fee-earning AUM for Blue Owl the manager. Not on Blue Owl Capital Inc.'s corporate balance sheet.",
+    "payee_treatment_md": "JV records equity contributions; combined with the $27B note issuance, this capitalizes the vehicle that owns the campus and leases it to Meta.",
+    "off_balance_sheet": false,
+    "flags": ["spv_shift"]
+  },
+  "related_edges": ["meta--hyperion-jv--capitalization", "pimco--hyperion-jv--bonds", "blackrock--hyperion-jv--bonds", "hyperion-jv--meta--distribution"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Announces-Joint-Venture-with-Funds-Managed-by-Blue-Owl-Capital-to-Develop-Hyperion-Data-Center/default.aspx", "publisher": "Meta IR", "published": "2025-10", "kind": "company_pr" },
+    { "url": "https://www.prnewswire.com/news-releases/meta-announces-joint-venture-with-funds-managed-by-blue-owl-capital-to-develop-hyperion-data-center-302590584.html", "publisher": "PR Newswire (Meta)", "published": "2025-10", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

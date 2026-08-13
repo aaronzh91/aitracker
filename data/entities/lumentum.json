@@ -1,0 +1,30 @@
+{
+  "id": "lumentum",
+  "name": "Lumentum Holdings",
+  "kind": "public_company",
+  "category": "network_optics",
+  "group": "compute_supply_chain",
+  "region": "us",
+  "tier": 2,
+  "tickers": [{ "exchange": "NASDAQ", "symbol": "LITE" }],
+  "website": "https://www.lumentum.com",
+  "monetization": "Sells datacom lasers and 800G/1.6T transceivers for AI clusters; record 800G shipments with 1.6T ramping; Nvidia investee.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "800G shipments / 1.6T ramp status",
+      "period": "FY2026-Q4",
+      "value": null,
+      "unit": "qualitative",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Results/default.aspx", "publisher": "Lumentum IR", "published": "2026-08", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "Record 800G revenue in FY26; 1.6T in early ramp — company reports demand above supply."
+    }
+  ],
+  "sources": [
+    { "url": "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Results/default.aspx", "publisher": "Lumentum IR", "published": "2026-08", "kind": "company_ir" }
+  ],
+  "updated": "2026-08-13"
+}

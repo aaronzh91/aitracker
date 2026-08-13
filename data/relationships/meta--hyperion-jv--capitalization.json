@@ -1,0 +1,35 @@
+{
+  "id": "meta--hyperion-jv--capitalization",
+  "from": "meta",
+  "to": "hyperion-jv",
+  "type": "jv_equity",
+  "status": "active",
+  "headline": { "value": 5.4, "unit": "USD_B", "caveat": "estimated: Meta's 20% pro-rata share of ~$27B total development cost; Meta's actual contributions to date are not separately disclosed", "as_of": "2025-10" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "Meta funds its pro-rata share as development costs are incurred; cumulative amount not disclosed" },
+  "term": { "announced": "2025-10", "start": "2025-10", "end": null, "duration_years": null },
+  "nature_md": "Meta holds a 20% equity interest in the Hyperion JV (Richland Parish, Louisiana — Meta's largest data-center campus, ~2GW+), with funds managed by Blue Owl Capital holding 80%. Both parties committed to fund their pro-rata share of ~$27B of development costs for the buildings and long-lived power/cooling/connectivity infrastructure. Meta provides construction and property management, leases the campus, and — critically — gave the JV a **residual-value guarantee**: for roughly the first 16 years, if Meta walks away from the lease and the assets are worth less than a guaranteed minimum, Meta pays the difference. The JV's $27B of A+ rated notes (PIMCO ~$18B, BlackRock >$3B) are recorded on the JV, not on Meta.",
+  "accounting": {
+    "payer_treatment_md": "Meta accounts for its 20% stake as an equity-method investment — neither the JV's ~$27B of assets nor its $27B of bonds consolidate onto Meta's balance sheet. Lease payments will hit Meta's income statement as operating expense over time. The residual-value guarantee is a contingent obligation disclosed in footnotes, not carried as debt.",
+    "payee_treatment_md": "The JV records the contributed capital as equity and the $27B notes as debt; its revenue is Meta's lease payments. Its credit quality is effectively a Meta-lease-plus-RVG claim, which is how the notes achieved an A+ rating.",
+    "off_balance_sheet": true,
+    "flags": ["spv_shift"]
+  },
+  "related_edges": ["blue-owl--hyperion-jv--capitalization", "pimco--hyperion-jv--bonds", "blackrock--hyperion-jv--bonds", "hyperion-jv--meta--distribution", "meta--meta-el-paso-spv--capitalization"],
+  "both_sides_md": "**Bear:** the structure moves $27B of debt supporting Meta-only infrastructure off Meta's balance sheet while Meta keeps operational control and tail risk via the residual-value guarantee — leverage that credit metrics won't show (see Rajgopal, 'The Strange Case of Meta,' Forbes, Nov 2025). **Bull:** Meta pays for risk transfer that is real at the margin — 80% of the equity and all of the bondholder capital is third-party money, the RVG only bites in a walk-away scenario, and the JV lets Meta build faster than its own balance sheet alone would allow (Meta PR framing; Bisnow coverage of the financing's oversubscription).",
+  "observations": [],
+  "events": [
+    {
+      "date": "2025-10",
+      "title": "Meta and Blue Owl announce Hyperion JV; $27B financing closes — largest private-credit deal ever",
+      "impact": "high",
+      "entities": ["meta", "blue-owl", "hyperion-jv", "pimco", "blackrock"],
+      "sources": [{ "url": "https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Announces-Joint-Venture-with-Funds-Managed-by-Blue-Owl-Capital-to-Develop-Hyperion-Data-Center/default.aspx", "publisher": "Meta IR", "published": "2025-10", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Announces-Joint-Venture-with-Funds-Managed-by-Blue-Owl-Capital-to-Develop-Hyperion-Data-Center/default.aspx", "publisher": "Meta IR", "published": "2025-10", "kind": "company_pr" },
+    { "url": "https://www.bisnow.com/national/news/data-center-capital-markets/meta-pushes-its-largest-data-center-project-off-its-books-with-27b-joint-venture-131490", "publisher": "Bisnow", "published": "2025-10", "kind": "press" },
+    { "url": "https://www.forbes.com/sites/shivaramrajgopal/2025/11/16/the-strange-case-of-meta/", "publisher": "Forbes (Shivaram Rajgopal)", "published": "2025-11-16", "kind": "analyst" }
+  ],
+  "updated": "2026-08-13"
+}

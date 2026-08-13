@@ -1,0 +1,69 @@
+{
+  "id": "waymo",
+  "name": "Waymo",
+  "kind": "subsidiary",
+  "category": "ai_native",
+  "group": "labs_ai_native",
+  "region": "us",
+  "tier": 1,
+  "website": "https://waymo.com",
+  "monetization": "Sells autonomous ride-hailing (per-trip robotaxi fares) in a growing set of US cities; the first embodied-AI business generating consumer revenue at scale.",
+  "description_md": "Waymo is Alphabet's autonomous-driving subsidiary and the clear leader in commercial robotaxis, having served ~15 million paid trips in 2025 across markets including Phoenix, San Francisco, Los Angeles, and Austin. In February 2026 it raised $16B at a $126B post-money valuation — the largest investment ever in an AV company and nearly triple its October 2024 mark — from outside investors (Sequoia, DST, Dragoneer, a16z, Mubadala, Silver Lake, Tiger, T. Rowe) alongside Alphabet, which retains control.",
+  "ai_monetization_md": "Revenue is per-trip robotaxi fares via the Waymo One app and the Uber partnership (Austin/Atlanta), plus nascent licensing conversations with automakers (Toyota partnership for personally owned vehicles). The economics are a fleet-capex business — sensorized Jaguars/Zeekrs/Ioniq 5s plus the Waymo Driver stack — where scale in cities drives utilization; Waymo does not disclose revenue, and external estimates remain small relative to the $126B mark, making this a growth-priced bet on the 2026 expansion wave (Dallas, Denver, Detroit, Houston, Las Vegas, Miami, Nashville, Orlando, San Antonio, San Diego, Washington DC, plus London as the first international market and testing in Tokyo).",
+  "ai_strategy_md": "Scale methodically city-by-city with a safety-first record as the moat, monetize Alphabet's decade of AV R&D through fares rather than licensing, and use external capital (2024's $5.6B, 2026's $16B) so the buildout doesn't sit entirely on Alphabet's income statement. The 20+ city expansion and freeway/airport unlocks in 2026 are the volume inflection; hardware cost-down (6th-gen Driver) is the margin lever. For Alphabet, Waymo is also the strongest 'other bet' evidence that AI capex converts to new revenue lines.",
+  "risk_notes_md": "No disclosed revenue or unit economics — the $126B valuation rests on trip growth and expansion cadence, not published financials. Incidents/regulatory setbacks in any city can freeze expansion (the category's history is Cruise); Tesla's camera-only robotaxi push compresses the perceived technology premium; per-city profitability still unproven publicly. Alphabet control means outside investors hold a minority of a strategic subsidiary — liquidity path (IPO or continued secondary rounds) is undefined.",
+  "observations": [
+    {
+      "metric": "valuation",
+      "period": "2026-02",
+      "value": 126,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "high",
+      "source": { "url": "https://www.bloomberg.com/news/articles/2026-02-02/waymo-raises-16-billion-from-alphabet-others-to-expand-service", "publisher": "Bloomberg", "title": "Waymo Raises $16 Billion From Alphabet, Others to Expand Service", "published": "2026-02-02", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Post-money on the $16B Feb 2026 round; up from $45B (Oct 2024). Multiple tier-1 outlets; company confirmed the round. Private mark, not a traded price."
+    },
+    {
+      "metric": "funding_raised",
+      "period": "2026-02",
+      "value": 16,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://waymo.com/blog/2026/02/waymo-raises-usd16-billion-investment-round/", "publisher": "Waymo", "title": "Accelerating our global growth: Waymo raises $16 billion investment round", "published": "2026-02-02", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Led by Sequoia, DST Global, Dragoneer; incl. a16z, Mubadala, Bessemer, Silver Lake, Tiger Global, T. Rowe Price, alongside Alphabet. Largest AV investment ever."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Paid trips (2025)",
+      "period": "CY2025",
+      "value": 15,
+      "unit": "trips_M",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.forbes.com/sites/alanohnsman/2026/02/02/waymo-raises-16-billion-to-speed-up-its-global-robotaxi-push/", "publisher": "Forbes", "title": "Waymo Raises $16 Billion To Speed Up Its Global Robotaxi Push", "published": "2026-02-02", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "~15M trips served in 2025 per company statements around the round. Revenue itself is undisclosed."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-02-02",
+      "title": "Raises $16B at $126B post-money to fund 20+ city expansion",
+      "why_it_matters": "Largest-ever AV financing; prices embodied AI as a Tier-1 asset class and shifts part of Alphabet's robotaxi buildout onto outside investors' capital. Funds 2026 expansion to 11 new US cities plus London.",
+      "impact": "high",
+      "entities": ["waymo", "alphabet", "mubadala"],
+      "sources": [
+        { "url": "https://waymo.com/blog/2026/02/waymo-raises-usd16-billion-investment-round/", "publisher": "Waymo", "published": "2026-02-02", "kind": "company_pr" },
+        { "url": "https://www.cnbc.com/2026/02/02/waymo-announced-16-billion-fundraising-round.html", "publisher": "CNBC", "published": "2026-02-02", "kind": "press" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://waymo.com/blog/2026/02/waymo-raises-usd16-billion-investment-round/", "publisher": "Waymo", "kind": "company_pr" },
+    { "url": "https://www.bloomberg.com/news/articles/2026-02-02/waymo-raises-16-billion-from-alphabet-others-to-expand-service", "publisher": "Bloomberg", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

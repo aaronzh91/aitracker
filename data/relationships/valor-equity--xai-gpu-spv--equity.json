@@ -1,0 +1,25 @@
+{
+  "id": "valor-equity--xai-gpu-spv--equity",
+  "from": "valor-equity",
+  "to": "xai-gpu-spv",
+  "type": "equity_investment",
+  "status": "announced",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "Valor anchors the SPV's ~$7.5B total equity tranche; Valor's own commitment is undisclosed", "as_of": "2025-10" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "not disclosed" },
+  "term": { "announced": "2025-10", "start": null, "end": null, "duration_years": 5 },
+  "nature_md": "Valor Equity Partners — Antonio Gracias's firm and a long-standing Musk-company investor — is the anchor of the ~$7.5B equity tranche of the ~$20B SPV that buys NVIDIA GPUs and leases them to xAI for Colossus 2 (Memphis). Other equity participants include NVIDIA (up to $2B); ~$12.5B of debt was arranged by Apollo, Diameter Capital Partners, and others. Final close of the full $20B was reported in progress in Oct 2025 and has not been separately confirmed.",
+  "accounting": {
+    "payer_treatment_md": "LP capital deployed from Valor-managed funds as SPV equity; returns depend on xAI lease performance and GPU residual value after the 5-year lease.",
+    "payee_treatment_md": "First-loss equity beneath the SPV's GPU-collateralized debt stack.",
+    "off_balance_sheet": false,
+    "flags": ["spv_shift", "collateralized_gpu_debt"]
+  },
+  "related_edges": ["nvidia--xai-gpu-spv--equity", "apollo--xai-gpu-spv--debt", "xai-gpu-spv--xai--gpu-lease"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://x.com/theinformation/status/1978966707843567936", "publisher": "The Information (via X)", "published": "2025-10-16", "kind": "press" },
+    { "url": "https://www.datacenterdynamics.com/en/news/nvidia-to-invest-in-xai-special-purpose-vehicle-cash-to-be-used-to-buy-nvidia-gpus/", "publisher": "Data Center Dynamics", "published": "2025-10", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "zt-systems",
+  "name": "ZT Systems",
+  "kind": "subsidiary",
+  "category": "server_oem_odm",
+  "group": "compute_supply_chain",
+  "region": "us",
+  "tier": 3,
+  "website": "https://www.ztsystems.com",
+  "monetization": "Hyperscale AI server and rack-level systems designer; acquired by AMD for $4.9B (closed Mar 2025) for its systems-design talent, with the manufacturing business resold to Sanmina for ~$3B.",
+  "observations": [
+    {
+      "metric": "valuation",
+      "metric_label": "AMD acquisition price",
+      "period": "2025-03",
+      "value": 4.9,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://ir.amd.com/news-events/press-releases/detail/1236/amd-completes-acquisition-of-zt-systems", "publisher": "AMD IR", "published": "2025-03-31", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "Cash and stock, incl. up to $400M contingent; announced Aug 2024."
+    }
+  ],
+  "sources": [
+    { "url": "https://ir.amd.com/news-events/press-releases/detail/1236/amd-completes-acquisition-of-zt-systems", "publisher": "AMD IR", "published": "2025-03-31", "kind": "company_ir" }
+  ],
+  "updated": "2026-08-13"
+}

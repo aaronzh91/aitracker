@@ -1,0 +1,33 @@
+{
+  "id": "meta--coreweave--compute",
+  "from": "meta",
+  "to": "coreweave",
+  "type": "compute_purchase",
+  "status": "active",
+  "headline": { "value": 35, "unit": "USD_B", "caveat": "~$14.2B initial agreement (Sept 2025) plus ~$21B expansion (Apr 9, 2026); capacity runs through December 2032", "as_of": "2026-04-09" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "deliveries under the initial contract are underway; expansion capacity delivers 2027–2032; cumulative billed amounts not disclosed" },
+  "term": { "announced": "2026-04-09", "start": "2025-09", "end": "2032-12", "duration_years": null },
+  "nature_md": "Meta's total AI-cloud commitment to CoreWeave reached ~$35B through December 2032 after an ~$21B expansion announced April 9, 2026, on top of the ~$14.2B agreement from fall 2025. The expansion covers early deployments of NVIDIA's Vera Rubin platform across multiple sites and is designed primarily for inference workloads. It was the largest single disclosed AI-cloud commitment of 2026 at announcement, and makes Meta one of CoreWeave's largest customers alongside Microsoft and OpenAI.",
+  "accounting": {
+    "payer_treatment_md": "Purchase commitment for Meta — cloud/compute costs expensed as incurred (cost of revenue/opex), disclosed in commitments footnotes rather than as debt. Sits alongside, not inside, Meta's $130–145B 2026 capex program.",
+    "payee_treatment_md": "Enters CoreWeave's revenue backlog/RPO and converts to revenue as capacity delivers. Meta's commitment is central to CoreWeave's customer-diversification story beyond Microsoft — and to the debt capacity CoreWeave raises against contracted backlog.",
+    "off_balance_sheet": false,
+    "flags": ["customer_concentration"]
+  },
+  "related_edges": ["microsoft--coreweave--compute", "nvidia--coreweave--equity-backstop"],
+  "observations": [],
+  "events": [
+    {
+      "date": "2026-04-09",
+      "title": "CoreWeave and Meta expand agreement by ~$21B to ~$35B total through 2032",
+      "impact": "high",
+      "entities": ["meta", "coreweave"],
+      "sources": [{ "url": "https://www.coreweave.com/news/coreweave-and-meta-announce-21-billion-expanded-ai-infrastructure-agreement", "publisher": "CoreWeave", "published": "2026-04-09", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.coreweave.com/news/coreweave-and-meta-announce-21-billion-expanded-ai-infrastructure-agreement", "publisher": "CoreWeave", "published": "2026-04-09", "kind": "company_pr" },
+    { "url": "https://www.bloomberg.com/news/articles/2026-04-09/coreweave-expands-meta-deal-for-ai-computing-to-21-billion", "publisher": "Bloomberg", "published": "2026-04-09", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "quanta-services",
+  "name": "Quanta Services, Inc.",
+  "kind": "public_company",
+  "category": "engineering_construction",
+  "group": "physical_infrastructure",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NYSE", "symbol": "PWR" }],
+  "cik": "1050915",
+  "website": "https://www.quantaservices.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Builds and electrifies the grid and data centers with the largest skilled electrical-labor force in North America — transmission, substations, and DC electrical fit-out (Cupertino Electric).",
+  "description_md": "Quanta Services is North America's largest specialty contractor for electric power infrastructure: high-voltage transmission, substations, distribution, renewables interconnection, and — through its Cupertino Electric subsidiary — electrical fit-out inside hyperscale data centers. Its core asset is people: a craft-skilled workforce of tens of thousands of electricians and linemen at a time when electrical labor, not equipment, is widely cited as the binding constraint on how fast AI data centers and their grid connections can be built. Quanta effectively owns a share of that bottleneck.",
+  "ai_monetization_md": "AI monetization flows through two channels: (1) utility grid work — transmission lines, substations, and interconnections that utilities must build to serve gigawatt-scale data-center load; and (2) direct data-center electrical construction via Cupertino Electric. The demand shows up in a record $48.5B total backlog (Q1 2026) and FY2026 revenue guidance of $34.7–35.2B. Because Quanta is paid for labor and execution rather than equipment, its revenue is tied to construction activity itself — a purer read on physical buildout pace than equipment orders.",
+  "ai_strategy_md": "Own the labor bottleneck: recruit and train craft labor at scale (including its own lineman training infrastructure), self-perform the majority of work, and keep a portfolio spread across utilities, renewables, and technology customers so AI upside layers on top of a regulated-utility base that grows regardless. Management pitches 'collaborative' multi-year frameworks with utilities and hyperscalers rather than one-off bids, converting the labor scarcity into pricing power and backlog visibility.",
+  "risk_notes_md": "Labor is both moat and constraint: growth is gated by how fast Quanta can add skilled electricians, and wage inflation can compress fixed-price project margins. Backlog is not revenue — utility programs can be re-phased, and ~$130B of US data-center projects saw blocks or delays in Q1 2026 (contested framing). A minority of revenue is direct data-center work; the bigger AI exposure is indirect through utility capex, which depends on rate-case and interconnection timelines Quanta does not control.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Total backlog (record)",
+      "period": "FY2026-Q1",
+      "value": 48.5,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.prnewswire.com/news-releases/quanta-services-reports-first-quarter-2026-results-302758147.html", "publisher": "PR Newswire (Quanta Services)", "published": "2026-04", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Record; spans electric power (grid), renewables, and technology/data-center electrical work — not an AI-only figure."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "FY2026-Q1",
+      "value": 7.87,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.prnewswire.com/news-releases/quanta-services-reports-first-quarter-2026-results-302758147.html", "publisher": "PR Newswire (Quanta Services)", "published": "2026-04", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "vs $6.23B in Q1 2025 (+26% y/y); net income $220.6M; adjusted diluted EPS $2.68 vs $1.78."
+    },
+    {
+      "metric": "other",
+      "metric_label": "FY2026 revenue guidance (midpoint)",
+      "period": "FY2026E",
+      "value": 34.95,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://www.prnewswire.com/news-releases/quanta-services-reports-first-quarter-2026-results-302758147.html", "publisher": "PR Newswire (Quanta Services)", "published": "2026-04", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Range $34.7–35.2B; adjusted EBITDA $3.49–3.65B; adjusted EPS $13.55–14.25."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-04",
+      "title": "Q1 2026: record $48.5B backlog, raises full-year outlook",
+      "why_it_matters": "The largest backlog of any pure-play electrical contractor — a direct measure of how much grid and data-center electrical work is queued behind the AI buildout's labor bottleneck.",
+      "impact": "high",
+      "entities": ["quanta-services"],
+      "sources": [{ "url": "https://www.prnewswire.com/news-releases/quanta-services-reports-first-quarter-2026-results-302758147.html", "publisher": "PR Newswire (Quanta Services)", "published": "2026-04", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.prnewswire.com/news-releases/quanta-services-reports-first-quarter-2026-results-302758147.html", "publisher": "PR Newswire (Quanta Services)", "kind": "company_pr" },
+    { "url": "https://investors.quantaservices.com/news-events/press-releases/detail/396/quanta-services-reports-first-quarter-2026-results", "publisher": "Quanta Services IR", "kind": "company_ir" }
+  ],
+  "updated": "2026-08-13"
+}

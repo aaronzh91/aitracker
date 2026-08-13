@@ -1,0 +1,26 @@
+{
+  "id": "amazon--vistra--ppa-comanche",
+  "from": "amazon",
+  "to": "vistra",
+  "type": "ppa",
+  "status": "contracted",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "Price undisclosed. 20-year PPA for up to 1,200MW of Comanche Peak (TX) nuclear output, with options to extend up to an additional 20 years.", "as_of": "2025-09-29" },
+  "realized_to_date": { "value": 0, "unit": "USD_B", "caveat": "Power delivery begins Q4 2027, ramping to full contracted capacity by 2032; no cash has flowed yet.", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-09-29", "start": "2027", "end": null, "duration_years": 20 },
+  "nature_md": "20-year power purchase agreement under which AWS buys up to 1,200MW of carbon-free power from Vistra's Comanche Peak nuclear plant in Texas (ERCOT), with extension options for up to another 20 years. Deliveries start Q4 2027 and ramp to full capacity by 2032. Vistra disclosed the deal via 8-K (customer initially unnamed; identified as Amazon in subsequent reporting) and said full utilization could add ~8-10% to adjusted free cash flow before growth.",
+  "accounting": {
+    "payer_treatment_md": "Amazon books delivered power as AWS opex from 2027; the long-dated commitment is an unrecorded purchase obligation disclosed in commitments footnotes.",
+    "payee_treatment_md": "Vistra recognizes energy revenue on delivery from Q4 2027; contract converts merchant ERCOT nuclear exposure into contracted cash flow (guided ~8-10% adj. FCF accretion at full utilization). No disclosed prepayment or capacity payment.",
+    "off_balance_sheet": true,
+    "flags": ["commitment_unfunded"]
+  },
+  "related_edges": ["amazon--talen-energy--ppa-susquehanna", "meta--vistra--ppa-pjm"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.investing.com/news/sec-filings/vistra-signs-20year-power-purchase-agreement-for-1200-mw-of-nuclear-power-93CH-4260635", "publisher": "Investing.com (Vistra 8-K)", "published": "2025-09-29", "kind": "press" },
+    { "url": "https://world-nuclear-news.org/articles/ppas-support-extended-operations-at-vistra-plants", "publisher": "World Nuclear News", "published": "2026", "kind": "press" },
+    { "url": "https://www.power-eng.com/nuclear/vistra-secures-long-term-nuclear-ppa-from-comanche-peak-nuclear-plant/", "publisher": "Power Engineering", "published": "2025-09", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

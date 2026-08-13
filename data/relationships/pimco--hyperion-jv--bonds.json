@@ -1,0 +1,39 @@
+{
+  "id": "pimco--hyperion-jv--bonds",
+  "from": "pimco",
+  "to": "hyperion-jv",
+  "type": "bond_issuance",
+  "status": "completed",
+  "headline": { "value": 18, "unit": "USD_B", "caveat": "PIMCO's reported subscription of the ~$27B A+ rated note issuance for the Hyperion campus", "as_of": "2025-10" },
+  "realized_to_date": { "value": 18, "unit": "USD_B", "caveat": "financing closed Oct 2025; funds draw as construction proceeds", "as_of": "2025-10" },
+  "term": { "announced": "2025-10", "start": "2025-10", "end": null, "duration_years": null },
+  "nature_md": "PIMCO was the anchor buyer — approximately $18B — of the ~$27B of notes issued to finance the Hyperion data-center campus owned by the Meta/Blue Owl JV. The notes were rated A+ by S&P and priced around a 6.58% yield, wide for the rating; Morgan Stanley arranged the deal, described as the largest private-credit/corporate-bond financing for a data center ever. Bondholders' credit ultimately rests on Meta's lease payments plus Meta's ~16-year residual-value guarantee rather than on Meta's general credit.",
+  "accounting": {
+    "payer_treatment_md": "Held across PIMCO-managed funds and accounts as fixed-income investments (A+ rated, data-center-backed notes). PIMCO is a fiduciary manager — exposure sits with its fund investors.",
+    "payee_treatment_md": "Debt on the JV/SPV's balance sheet, serviced by Meta lease payments. None of it appears as debt on Meta, which holds only a 20% equity-method stake — the core of the off-balance-sheet critique.",
+    "off_balance_sheet": false,
+    "flags": ["spv_shift"]
+  },
+  "related_edges": ["meta--hyperion-jv--capitalization", "blue-owl--hyperion-jv--capitalization", "blackrock--hyperion-jv--bonds"],
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Yield on Hyperion A+ notes",
+      "period": "2025-10",
+      "value": 6.58,
+      "unit": "pct",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://longbridge.com/en/news/262131565", "publisher": "Longbridge (aggregating WSJ/press reports)", "published": "2025-10", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Wide for an A+ rating — an early data point on how the market prices single-tenant AI-infrastructure credit."
+    }
+  ],
+  "events": [],
+  "sources": [
+    { "url": "https://longbridge.com/en/news/262131565", "publisher": "Longbridge (aggregating WSJ/press reports)", "published": "2025-10", "kind": "press" },
+    { "url": "https://www.globaldatacenterhub.com/p/meta-blue-owls-27b-bet-is-this-the", "publisher": "Global Data Center Hub", "published": "2025-10", "kind": "analyst" },
+    { "url": "https://www.bisnow.com/national/news/data-center-capital-markets/meta-pushes-its-largest-data-center-project-off-its-books-with-27b-joint-venture-131490", "publisher": "Bisnow", "published": "2025-10", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

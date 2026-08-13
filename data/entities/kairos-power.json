@@ -1,0 +1,29 @@
+{
+  "id": "kairos-power",
+  "name": "Kairos Power",
+  "kind": "private_company",
+  "category": "nuclear_smr",
+  "group": "energy",
+  "region": "us",
+  "tier": 3,
+  "website": "https://kairospower.com",
+  "monetization": "SMR developer (fluoride-salt-cooled high-temperature reactors); pre-revenue on power sales, monetizing via the Google master agreement to deliver 500MW of reactors by 2035 plus DOE/TVA demonstration support.",
+  "observations": [
+    {
+      "metric": "capacity_mw",
+      "metric_label": "SMR fleet capacity contracted to Google by 2035",
+      "period": "2024-10",
+      "value": 500,
+      "unit": "MW",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://blog.google/outreach-initiatives/sustainability/google-kairos-power-nuclear-energy-agreement/", "publisher": "Google", "published": "2024-10", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Master plant development agreement; first deployment targeted ~2030, fleet of up to ~7 reactors by 2035."
+    }
+  ],
+  "sources": [
+    { "url": "https://blog.google/outreach-initiatives/sustainability/google-kairos-power-nuclear-energy-agreement/", "publisher": "Google", "published": "2024-10", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "cipher-mining",
+  "name": "Cipher Mining",
+  "kind": "public_company",
+  "category": "datacenter_operator",
+  "group": "hyperscalers_clouds",
+  "region": "us",
+  "tier": 2,
+  "tickers": [{ "exchange": "NASDAQ", "symbol": "CIFR" }],
+  "website": "https://www.ciphermining.com",
+  "monetization": "Bitcoin miner converted to AI data-center landlord: long-term hosting leases at its West Texas campuses to AWS (~$5.5B/15yr, 300MW) and Fluidstack (~$3B/10yr at Barber Lake, Google-backstopped; Google ~5.4% pro forma equity).",
+  "observations": [
+    {
+      "metric": "contract_value",
+      "metric_label": "AWS 15-year lease, 300MW",
+      "period": "2025-11",
+      "value": 5.5,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.coindesk.com/business/2025/11/03/cipher-mining-surges-19-usd5-5b-amazon-web-services-deal", "publisher": "CoinDesk", "published": "2025-11-03", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "First direct hyperscaler deal; capacity delivered in phases through Q4 2026, rent commencing Aug 2026."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.datacenterdynamics.com/en/news/aws-signs-300mw-hosting-deal-to-lease-capacity-from-cipher-mining/", "publisher": "Data Center Dynamics", "published": "2025-11", "kind": "press" },
+    { "url": "https://www.theblock.co/post/372315/cipher-mining-google-backed-3-billion-usd-ai-hosting-deal", "publisher": "The Block", "published": "2025-09", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

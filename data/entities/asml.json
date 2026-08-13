@@ -1,0 +1,95 @@
+{
+  "id": "asml",
+  "name": "ASML Holding N.V.",
+  "kind": "public_company",
+  "category": "semi_equipment_eda",
+  "group": "compute_supply_chain",
+  "region": "europe",
+  "tier": 1,
+  "tickers": [
+    { "exchange": "Euronext Amsterdam", "symbol": "ASML" },
+    { "exchange": "NASDAQ", "symbol": "ASML" }
+  ],
+  "cik": "937966",
+  "website": "https://www.asml.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Monopoly supplier of EUV lithography — every leading-edge AI chip and next-generation memory requires its machines; also Mistral AI's largest shareholder (~11%).",
+  "description_md": "ASML is the sole maker of extreme-ultraviolet (EUV) lithography systems, the machines without which no leading-edge logic (TSMC N3/N2, Intel 18A, Samsung SF2) or next-generation DRAM/HBM can be produced — the most absolute single-supplier bottleneck in the AI supply chain. Low-NA EUV is the workhorse; High-NA EUV entered production use at Intel in 2026. In September 2025 ASML made an uncharacteristic move down the stack, investing €1.3B in French lab Mistral AI (~11%, its largest shareholder).",
+  "ai_monetization_md": "AI monetizes for ASML at one remove: TSMC, Samsung, SK hynix, Micron, and Intel buy EUV/DUV systems (€150–400M each) to add the logic and memory capacity the buildout requires. Q2 2026 sales were €9.3B at 54% gross margin, with 2026 guidance raised twice during the year to €43–45B on AI-driven order strength from both logic and memory customers; ASML plans to raise 2027 low-NA EUV shipment capacity ~30% above 2026's ~65 units. Installed-base service revenue compounds with every system shipped. The Mistral stake adds direct equity exposure to a model lab — strategically framed as securing European AI relevance.",
+  "ai_strategy_md": "Protect the monopoly by out-investing everyone on the roadmap (High-NA now in production at Intel; hyper-NA research next) and by capacity discipline — expanding 2027 EUV output ~30% only after multi-year AI demand signals from logic and HBM customers. The Mistral investment marks a strategy extension: putting balance-sheet capital directly into the AI application layer, both as a financial position and as a hedge on Europe's AI ecosystem developing demand for advanced chips.",
+  "risk_notes_md": "**Order cyclicality:** ASML sits furthest upstream — if fab operators trim capex, litho orders swing hardest; bookings are the市场's favorite AI-cycle leading indicator and a guidance miss moves the whole complex. **China exposure:** export controls bar EUV and restrict DUV sales to China (historically a large DUV market), capping a revenue pool and inviting long-run domestic substitution efforts. **Mistral stake:** an ~€1.3B venture-style position is atypical for a toolmaker — marked as a financial investment, it introduces AI-lab valuation risk onto the balance sheet. Note: '市场' should read 'market'.",
+  "observations": [
+    {
+      "metric": "revenue_total",
+      "period": "FY2026-Q2",
+      "value": 9.3,
+      "unit": "EUR_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results", "publisher": "ASML", "published": "2026-07-15", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "Net income €2.9B; gross margin 54.0%, above guidance on installed-base management sales."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "CY2026 (guide)",
+      "value": 44,
+      "unit": "EUR_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://www.cnbc.com/2026/07/15/asml-2q-earnings-ai-chips-orders.html", "publisher": "CNBC", "published": "2026-07-15", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Guided €43–45B (midpoint shown), gross margin 54–56% — the second raise of 2026, on AI-driven logic and memory demand."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Planned 2027 low-NA EUV capacity increase",
+      "period": "CY2027 (plan)",
+      "value": 30,
+      "unit": "pct",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-asml-q2-2026-beats-guidance-as-ai-demand-lifts-outlook-93CH-4792156", "publisher": "Investing.com (earnings call)", "published": "2026-07-15", "kind": "earnings_call" },
+      "as_of": "2026-08-13",
+      "notes": "On a 2026 base of ~65 low-NA EUV systems; High-NA EUV in production use at Intel."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Mistral AI equity stake",
+      "period": "2025-09",
+      "value": 11,
+      "unit": "pct",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai/", "publisher": "Mistral AI", "published": "2025-09", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "€1.3B invested in Mistral's Series C (€1.7B round) — ASML became Mistral's largest shareholder; Mistral later raised at $20B (Jun 2026)."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-09",
+      "title": "Invests €1.3B in Mistral AI for ~11% — becomes largest shareholder",
+      "why_it_matters": "The EUV monopolist buying into a frontier lab is the cycle's most unusual vertical equity link — upstream toolmaker capital directly funding downstream model development.",
+      "impact": "high",
+      "entities": ["asml", "mistral"],
+      "sources": [{ "url": "https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai/", "publisher": "Mistral AI", "published": "2025-09", "kind": "company_pr" }]
+    },
+    {
+      "date": "2026-07-15",
+      "title": "Q2 2026: beats guidance, raises 2026 outlook for the second time (€43–45B)",
+      "why_it_matters": "Confirms AI demand has reached the most upstream node of the supply chain — both logic and HBM-driven memory litho orders; shares nonetheless fell on positioning, showing expectations risk.",
+      "impact": "high",
+      "entities": ["asml", "tsmc", "intel", "samsung", "sk-hynix", "micron"],
+      "sources": [
+        { "url": "https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results", "publisher": "ASML", "published": "2026-07-15", "kind": "company_ir" },
+        { "url": "https://www.cnbc.com/2026/07/15/asml-2q-earnings-ai-chips-orders.html", "publisher": "CNBC", "published": "2026-07-15", "kind": "press" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.asml.com/en/investors/financial-results/q2-2026", "publisher": "ASML IR", "kind": "company_ir" },
+    { "url": "https://www.sec.gov/Archives/edgar/data/0000937966/000162828026048235/pressreleasefinancialresul.htm", "publisher": "SEC / ASML 6-K", "published": "2026-07", "kind": "sec_filing" }
+  ],
+  "updated": "2026-08-13"
+}

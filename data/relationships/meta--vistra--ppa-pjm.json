@@ -1,0 +1,26 @@
+{
+  "id": "meta--vistra--ppa-pjm",
+  "from": "meta",
+  "to": "vistra",
+  "type": "ppa",
+  "status": "contracted",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "Prices undisclosed. Agreements covering >2,600MW across Vistra's PJM nuclear fleet (the former Energy Harbor plants), incl. capacity uprates and support for adding new nuclear generation.", "as_of": "2026-01-09" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "Staggered starts across plants; cumulative payments not disclosed.", "as_of": "2026-08-13" },
+  "term": { "announced": "2026-01-09", "start": null, "end": null, "duration_years": null },
+  "nature_md": "A portfolio of long-term nuclear agreements announced Jan 9, 2026 between Meta and Vistra covering more than 2,600MW across Vistra's PJM nuclear fleet (Beaver Valley, Davis-Besse, Perry — acquired with Energy Harbor), including plant uprates and commitments that support adding new nuclear generation to the grid. Dollar terms and per-plant tenors are undisclosed. Together with Clinton (see related edge), Meta has contracted well over 3.7GW of nuclear capacity — the largest corporate nuclear offtake portfolio.",
+  "accounting": {
+    "payer_treatment_md": "Meta expenses power/attributes as delivered; long-dated commitments live in purchase-obligation footnotes, off balance sheet. No prepayment disclosed.",
+    "payee_treatment_md": "Vistra layers contracted revenue over merchant PJM exposure from the agreed start dates and books uprate spending as growth capex de-risked by contracted offtake; revenue from COD/start of each tranche.",
+    "off_balance_sheet": true,
+    "flags": ["commitment_unfunded"]
+  },
+  "related_edges": ["meta--constellation-energy--ppa-clinton", "amazon--vistra--ppa-comanche", "meta--entergy--power-hyperion"],
+  "both_sides_md": "**Bull:** uprates and new-build support mean this deal adds megawatts to the grid rather than only re-contracting existing ones — answering the 'AI steals existing clean power' critique. **Bear:** everything material (price, tenor, escalators) is confidential, so the >2,600MW headline cannot be converted into a revenue or cost estimate by outsiders.",
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://investor.vistracorp.com/2026-01-09-Vistra-and-Meta-Announce-Agreements-to-Support-Nuclear-Plants-in-PJM-and-Add-New-Nuclear-Generation-to-the-Grid", "publisher": "Vistra IR", "published": "2026-01-09", "kind": "company_ir" },
+    { "url": "https://world-nuclear-news.org/articles/ppas-support-extended-operations-at-vistra-plants", "publisher": "World Nuclear News", "published": "2026", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

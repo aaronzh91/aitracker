@@ -1,0 +1,25 @@
+{
+  "id": "meta--alphabet--cloud",
+  "from": "meta",
+  "to": "alphabet",
+  "type": "compute_purchase",
+  "status": "active",
+  "headline": { "value": 10, "unit": "USD_B", "caveat": "reported as 'more than $10B' over six years; exact value undisclosed", "as_of": "2025-08" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "not disclosed; multi-year consumption began 2025" },
+  "term": { "announced": "2025-08", "start": "2025", "end": null, "duration_years": 6 },
+  "nature_md": "Six-year agreement (reported Aug 2025) under which Meta spends more than $10B on Google Cloud servers, storage, networking, and related services, mainly for AI infrastructure — a rare case of one hyperscaler renting a direct rival's cloud because internal capacity could not keep pace with AI demand. Meta also holds cloud arrangements with AWS and Azure.",
+  "accounting": {
+    "payer_treatment_md": "Cloud services expensed as consumed (opex/cost of revenue); a purchase commitment in footnotes, not capex.",
+    "payee_treatment_md": "Google Cloud revenue for Alphabet, recognized as delivered — part of the Cloud segment's AI-driven acceleration (+82% y/y in 2026). A competitor becoming a >$10B customer is itself evidence of industry-wide capacity shortage.",
+    "off_balance_sheet": false,
+    "flags": []
+  },
+  "related_edges": ["meta--coreweave--compute", "meta--nebius--compute"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.cnbc.com/2025/08/21/google-scores-six-year-meta-cloud-deal-worth-over-10-billion.html", "publisher": "CNBC", "published": "2025-08-21", "kind": "press" },
+    { "url": "https://www.datacenterdynamics.com/en/news/meta-signs-10bn-cloud-deal-with-google-report/", "publisher": "Data Center Dynamics", "published": "2025-08", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

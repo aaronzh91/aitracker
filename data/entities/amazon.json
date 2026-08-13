@@ -1,0 +1,116 @@
+{
+  "id": "amazon",
+  "name": "Amazon.com, Inc.",
+  "kind": "public_company",
+  "category": "hyperscaler",
+  "group": "hyperscalers_clouds",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NASDAQ", "symbol": "AMZN" }],
+  "cik": "1018724",
+  "website": "https://www.amazon.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Sells AI compute through AWS (Nvidia GPUs + Trainium custom silicon) against a ~$496B backlog; holds large equity stakes in both Anthropic and OpenAI; spending ~$220B of capex in 2026.",
+  "description_md": "Amazon spans e-commerce, advertising, logistics, and AWS — the largest cloud-infrastructure business, and the balance-sheet anchor of the AI buildout on the demand side. AWS grew 37% y/y in Q2 2026 (its fastest in 18 quarters) to $42.2B, with contracted commitments (backlog) jumping to ~$496B. Amazon is Anthropic's largest outside shareholder (convertible instruments carried near $98B after a ~$53.4B Q2-26 fair-value gain) and completed a $50B investment in OpenAI, making it the only company with major equity in both leading labs while also selling both of them compute.",
+  "ai_monetization_md": "(1) **AWS compute** — AI business crossed a $25B annualized run rate in Q2-26, growing triple digits; custom silicon (Trainium/Inferentia) independently crossed $25B annualized. Anthropic's >$100B decade-scale commitment (including up to 5GW of Trainium via Project Rainier) and OpenAI's $38B/7yr + $100B/8yr expansion contracts anchor the ~$496B backlog. (2) **Investment gains** — the Anthropic stake produced a $53.4B pre-tax, non-operating fair-value gain in Q2-26 alone (net income $62.6B, of which operating income was only $27.5B); the OpenAI position ($15B funded at the Mar 2026 close, $35B milestone tranche completed per press, ~5% stake) was carried at $28.7B in the Q2-26 10-Q. (3) **Consumer/ads AI** — Alexa+, Rufus, and ad-tech AI monetize across the retail franchise.",
+  "ai_strategy_md": "Outspend and vertically integrate: ~$220B of 2026 cash capex (raised from ~$200B, partly on memory costs), with management saying capacity will still not meet demand through 2027. Dual-track silicon strategy — deep Nvidia partnership plus Trainium, whose biggest proof point is Anthropic's 5GW Project Rainier commitment. Dual-lab equity strategy — $8B+$5B into Anthropic and $50B into OpenAI — converts lab upside into balance-sheet gains while both labs are also AWS customers (equity_for_revenue pattern on both edges). Nuclear PPAs (Talen $18B/17yr Susquehanna, Vistra Comanche Peak) lock in power.",
+  "risk_notes_md": "**Earnings quality:** Q2-26 net income of $62.6B included a $53.4B non-cash, non-recurring Anthropic mark — headline profit overstates run-rate earnings by ~5x for the quarter; marks reverse in a downcycle exactly when AWS AI revenue would slow (correlation risk, the IMF's amplification point). **Circularity:** Amazon funds Anthropic and OpenAI with equity while recognizing their spend as AWS revenue and backlog; the ~$496B backlog's largest components are labs whose losses are funded by their suppliers' investments. **Capex/FCF pressure:** ~$220B of 2026 capex compresses free cash flow. **Useful-life precedent:** Amazon's own 6→5-year server-life change cost $677M over 9 months — the calibration point for the sector-wide depreciation debate.",
+  "observations": [
+    {
+      "metric": "capex_guidance",
+      "period": "CY2026",
+      "value": 220,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html", "publisher": "CNBC", "title": "Amazon hikes 2026 capex to $220 billion due to higher memory costs", "published": "2026-07-30", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Raised from ~$200B at Q2-26 earnings; management expects capacity to lag demand into 2027."
+    },
+    {
+      "metric": "rpo",
+      "period": "CY2026-Q2",
+      "value": 496,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.techtimes.com/articles/322572/20260731/aws-backlog-hits-496b-amazon-raises-ai-spend-220b-capacity-runs-short.htm", "publisher": "Tech Times", "title": "AWS Backlog Hits $496B as Amazon Raises AI Spend to $220B", "published": "2026-07-31", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "AWS contracted commitments, up from $364B one quarter earlier; growing triple digits y/y. Includes OpenAI ($38B/7yr + $100B/8yr expansion) and Anthropic (>$100B decade-scale) contracts — see edges."
+    },
+    {
+      "metric": "revenue_segment",
+      "metric_label": "AWS revenue",
+      "period": "CY2026-Q2",
+      "value": 42.2,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://finance.biggo.com/news/US_AMZN_2026-07-30", "publisher": "BigGo Finance (from Amazon Q2-26 release)", "published": "2026-07-30", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "+36.7% y/y, fastest in 18 quarters; AI business and custom-silicon business each >$25B annualized run rate."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Anthropic fair-value gain (pre-tax, non-operating)",
+      "period": "CY2026-Q2",
+      "value": 53.4,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.stocktitan.net/sec-filings/AMZN/10-q-amazon-com-inc-quarterly-earnings-report-0b79ef7cd1d2.html", "publisher": "StockTitan (from Amazon 10-Q)", "published": "2026-07", "kind": "sec_filing" },
+      "as_of": "2026-08-13",
+      "notes": "Non-cash mark on Anthropic convertible notes/preferred (carried ~$97.9B). Lifted Q2 net income to $62.6B vs operating income $27.5B — exclude from run-rate earnings."
+    },
+    {
+      "metric": "other",
+      "metric_label": "OpenAI equity commitment",
+      "period": "2026",
+      "value": 50,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.geekwire.com/2026/filings-how-amazons-50b-openai-deal-actually-works-and-what-theyre-keeping-secret/", "publisher": "GeekWire", "title": "Filings: How Amazon's $50B OpenAI deal actually works", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "$15B of Series C preferred funded at the Mar 31, 2026 round close; remaining $35B was milestone-contingent (IPO/AGI-linked per reports) and reported completed by press in 2026, for ~5% of OpenAI. Q2-26 10-Q carried the position at $28.7B — tranche timing vs carrying value to be reconciled next filing."
+    },
+    {
+      "metric": "market_cap",
+      "period": "2026-08",
+      "value": 3100,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.fool.com/research/largest-companies-by-market-cap/", "publisher": "Motley Fool", "published": "2026-08", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "~$3.1T; automated feed replaces this in Phase 2."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-03-31",
+      "title": "Invests in OpenAI's $122B round: $15B funded, $35B milestone-contingent (up to $50B total)",
+      "why_it_matters": "Puts Amazon on both sides of both frontier labs — equity holder and compute supplier — and adds a second lab's P&L volatility to Amazon's other income.",
+      "impact": "high",
+      "entities": ["amazon", "openai"],
+      "sources": [{ "url": "https://www.geekwire.com/2026/filings-how-amazons-50b-openai-deal-actually-works-and-what-theyre-keeping-secret/", "publisher": "GeekWire", "published": "2026", "kind": "press" }]
+    },
+    {
+      "date": "2026-07-30",
+      "title": "Q2-26: AWS +37%, backlog $496B, capex raised to ~$220B, $53.4B Anthropic mark",
+      "why_it_matters": "One quarter captured the whole AI-financials story: accelerating cloud revenue, ballooning committed backlog, higher capex on input inflation, and investment marks dominating reported profit.",
+      "impact": "high",
+      "entities": ["amazon", "anthropic"],
+      "sources": [
+        { "url": "https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html", "publisher": "CNBC", "published": "2026-07-30", "kind": "press" },
+        { "url": "https://www.stocktitan.net/sec-filings/AMZN/10-q-amazon-com-inc-quarterly-earnings-report-0b79ef7cd1d2.html", "publisher": "StockTitan (from Amazon 10-Q)", "published": "2026-07", "kind": "sec_filing" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html", "publisher": "CNBC", "published": "2026-07-30", "kind": "press" },
+    { "url": "https://www.stocktitan.net/sec-filings/AMZN/10-q-amazon-com-inc-quarterly-earnings-report-0b79ef7cd1d2.html", "publisher": "StockTitan (from Amazon 10-Q)", "kind": "sec_filing" },
+    { "url": "https://mlq.ai/news/amazon-raises-2026-ai-capex-to-220b-says-capacity-wont-meet-demand-through-2027/", "publisher": "MLQ News", "published": "2026-07", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

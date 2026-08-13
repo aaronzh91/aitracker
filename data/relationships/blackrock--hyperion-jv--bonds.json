@@ -1,0 +1,25 @@
+{
+  "id": "blackrock--hyperion-jv--bonds",
+  "from": "blackrock",
+  "to": "hyperion-jv",
+  "type": "bond_issuance",
+  "status": "completed",
+  "headline": { "value": 3, "unit": "USD_B", "caveat": "reported as 'over $3B' — the second-largest subscription of the ~$27B A+ note issuance after PIMCO's ~$18B", "as_of": "2025-10" },
+  "realized_to_date": { "value": 3, "unit": "USD_B", "caveat": "financing closed Oct 2025", "as_of": "2025-10" },
+  "term": { "announced": "2025-10", "start": "2025-10", "end": null, "duration_years": null },
+  "nature_md": "BlackRock-managed funds subscribed over $3B of the ~$27B A+ rated notes financing the Hyperion campus (Richland Parish, LA), making BlackRock the second-largest bondholder behind PIMCO. Notably, BlackRock later became the 80% equity sponsor of Meta's *next* SPV structure (El Paso, Jul 2026) — the same asset manager sits on both the debt and equity sides of Meta's off-balance-sheet build-out.",
+  "accounting": {
+    "payer_treatment_md": "Held across BlackRock-managed fixed-income funds/accounts as investments; client money, not BlackRock Inc. balance-sheet exposure.",
+    "payee_treatment_md": "Debt of the JV/SPV, serviced by Meta lease payments; off Meta's balance sheet.",
+    "off_balance_sheet": false,
+    "flags": ["spv_shift"]
+  },
+  "related_edges": ["pimco--hyperion-jv--bonds", "meta--hyperion-jv--capitalization", "blackrock--meta-el-paso-spv--bonds"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://longbridge.com/en/news/262131565", "publisher": "Longbridge (aggregating WSJ/press reports)", "published": "2025-10", "kind": "press" },
+    { "url": "https://www.thelec.net/news/articleView.html?idxno=12663", "publisher": "The Elec", "published": "2025-10", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "siemens-energy",
+  "name": "Siemens Energy AG",
+  "kind": "public_company",
+  "category": "turbines_gensets",
+  "group": "energy",
+  "region": "europe",
+  "tier": 1,
+  "tickers": [{ "exchange": "XETRA", "symbol": "ENR" }],
+  "cik": null,
+  "website": "https://www.siemens-energy.com",
+  "fiscal_year_end": "09-30",
+  "monetization": "Sells gas turbines, grid technologies (transformers, HVDC, switchgear), and long-term service into AI-driven power demand; order book stretches to four-year delivery waits.",
+  "description_md": "Siemens Energy is Europe's counterpart to GE Vernova across the AI power bottleneck: heavy-duty gas turbines (Gas Services), grid equipment including transformers and HVDC (Grid Technologies), industrial decarbonization, and the Siemens Gamesa wind business. AI data-center demand pushed its total order backlog to a record €154B in fiscal Q2 2026 and €162B by fiscal Q3, with the gas-turbine order book alone at ~87GW — enough to force delivery waits of up to four years. Grid Technologies, which sells the transformers and switchgear the buildout is chronically short of, carries a €51B backlog of its own.",
+  "ai_monetization_md": "Monetization mirrors GE Vernova's: equipment sales gated by manufacturing capacity, price escalation on scarce slots, and multi-decade service contracts on the installed fleet. Fiscal Q3 2026 showed record orders with Grid Technologies orders of €5.4B (+28% y/y), revenue +29% to €3.6B at a 19.9% margin. The company raised annual production of medium gas turbines from ~50 units (FY2025) to ~80 (FY2026), with large-turbine capacity additions contributing from FY2027 — meaning today's demand converts to revenue over many years. FY2026 guidance: comparable revenue growth 14–16%, net income ~€4B, free cash flow ~€8B.",
+  "ai_strategy_md": "Expand capacity without repeating past quality crises: measured ramp of turbine production, aggressive growth in Grid Technologies (the transformer/HVDC bottleneck), and selectivity on which data-center-driven orders to take — management openly discusses a four-year wait as a demand-shaping tool. The formerly loss-making Siemens Gamesa wind unit turned a profit in fiscal Q3 2026, removing the group's chronic drag just as the gas and grid businesses accelerate.",
+  "risk_notes_md": "Same cycle risk as the rest of the turbine cluster: a four-year order book built on AI-era load forecasts faces cancellation or re-phasing risk if data-center demand disappoints — and capacity being added now would then land in a soft market. Backlog (€154–162B) is committed orders, not revenue, and includes long-dated service. Wind's recovery is one quarter old. German grid-connection and supply-chain constraints can gate how fast even a record backlog converts.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Total order backlog",
+      "period": "FY2026-Q3",
+      "value": 162,
+      "unit": "EUR_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://finance.yahoo.com/energy/articles/siemens-energy-beats-forecasts-ai-144126001.html", "publisher": "Yahoo Finance", "published": "2026-08", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Fiscal Q3 = Apr–Jun 2026. Backlog set a then-record €154B in fiscal Q2 2026 before reaching €162B in Q3; AI data-center demand cited as the driver."
+    },
+    {
+      "metric": "capacity_gw",
+      "metric_label": "Gas-turbine order backlog",
+      "period": "FY2026-Q3",
+      "value": 87,
+      "unit": "GW",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/siemens-energy-s-record-backlog-creates-a-four-year-wait-and-a-test/69531463", "publisher": "ad-hoc-news.de", "published": "2026-08", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Order book has ballooned to ~87GW; medium gas-turbine annual production raised from ~50 units (FY2025) to ~80 (FY2026)."
+    },
+    {
+      "metric": "lead_time_months",
+      "metric_label": "Gas-turbine delivery wait",
+      "period": "2026-08",
+      "value": 48,
+      "unit": "months",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/siemens-energy-s-record-backlog-creates-a-four-year-wait-and-a-test/69531463", "publisher": "ad-hoc-news.de", "published": "2026-08", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Lead times of up to four years for gas turbines — one of the hard physical constraints on AI data-center power."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Grid Technologies order backlog",
+      "period": "FY2026-Q3",
+      "value": 51,
+      "unit": "EUR_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://finance.yahoo.com/energy/articles/siemens-energy-beats-forecasts-ai-144126001.html", "publisher": "Yahoo Finance", "published": "2026-08", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Q3 Grid Technologies orders €5.4B (+28% y/y); revenue €3.6B (+29%); 19.9% margin before special items. Transformers/HVDC are a named buildout bottleneck."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-08",
+      "title": "Fiscal Q3 2026: record backlog (€162B), Gamesa turns profitable, FY outlook raised",
+      "why_it_matters": "Confirms AI data-center demand as the driver of record orders across both turbines and grid equipment, while the wind unit's return to profit removes the group's structural drag.",
+      "impact": "medium",
+      "entities": ["siemens-energy"],
+      "sources": [
+        { "url": "https://finance.yahoo.com/energy/articles/siemens-energy-beats-forecasts-ai-144126001.html", "publisher": "Yahoo Finance", "published": "2026-08", "kind": "press" },
+        { "url": "https://www.utilitydive.com/news/siemens-gas-turbine-backlog-nears-70-gw-as-company-expands-manufacturing/827390/", "publisher": "Utility Dive", "published": "2026-08", "kind": "press", "notes": "Reports a lower ~70GW figure for the near-term gas-turbine backlog — figures differ by scope (firm orders vs total order book)." }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://finance.yahoo.com/energy/articles/siemens-energy-beats-forecasts-ai-144126001.html", "publisher": "Yahoo Finance", "kind": "press" },
+    { "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/siemens-energy-s-record-backlog-creates-a-four-year-wait-and-a-test/69531463", "publisher": "ad-hoc-news.de", "kind": "press" },
+    { "url": "https://www.utilitydive.com/news/siemens-gas-turbine-backlog-nears-70-gw-as-company-expands-manufacturing/827390/", "publisher": "Utility Dive", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

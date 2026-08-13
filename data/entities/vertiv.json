@@ -1,0 +1,91 @@
+{
+  "id": "vertiv",
+  "name": "Vertiv Holdings Co",
+  "kind": "public_company",
+  "category": "electrical_equipment",
+  "group": "physical_infrastructure",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NYSE", "symbol": "VRT" }],
+  "cik": "1674101",
+  "website": "https://www.vertiv.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Sells the power and cooling guts of AI data centers — UPS, switchgear, busway, liquid-cooling CDUs, racks, and services — to hyperscalers, neoclouds, and colocation operators.",
+  "description_md": "Vertiv is the closest thing to a pure-play on AI data-center electrical and thermal infrastructure. Its portfolio spans critical power (UPS, switchgear, busbar, power distribution), thermal management (air and liquid cooling, coolant distribution units, rear-door heat exchangers), integrated modular solutions, and lifecycle services. Demand is dominated by hyperscale and colocation AI buildouts, concentrated in the Americas. The company works directly with NVIDIA on reference architectures for each GPU generation, including the 800VDC rack-power transition timed to the Vera Rubin platform.",
+  "ai_monetization_md": "Vertiv monetizes the AI buildout through equipment sales that scale roughly with megawatts deployed, plus recurring services. The AI capex wave shows up directly in its order book: Q4 2025 organic orders grew ~252% y/y (book-to-bill ~2.9x), backlog reached $15.0B (+109% y/y), and FY2026 guidance was raised to ~$14B of net sales at the midpoint (+31% organic vs 2025). Liquid cooling — required for Blackwell/Rubin-class rack densities — is the fastest-growing product line and carries the company's densest competitive moat alongside its NVIDIA co-design relationship.",
+  "ai_strategy_md": "Stay one GPU generation ahead of the market: co-develop power and cooling reference designs with NVIDIA (including the 800VDC architecture slated for 2H 2026 in step with the Rubin platform), expand capacity ahead of demand, and sell integrated 'grid-to-chip, chip-to-chiller' solutions rather than components. Management is deliberately building backlog coverage across 2026–2027 while pushing services attach to make AI revenue more recurring.",
+  "risk_notes_md": "Demand concentration in hyperscale/colo AI capex: an AI capex pause would hit orders with high beta (the same ~250% order growth works in reverse). Q2 2026 showed the market's sensitivity — revenue slightly missed despite beats everywhere else and the stock fell. Competition is intensifying from Eaton (post-Boyd), Schneider (Motivair), Delta, and Asian ODM cooling suppliers; the 800VDC transition re-opens sockets Vertiv currently owns. Backlog is an announced-commitment figure, not revenue: conversion depends on customers' build schedules, which slipped for ~$130B of US projects in Q1 2026 (contested).",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Total backlog",
+      "period": "FY2025-Q4",
+      "value": 15.0,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Fourth-Quarter-with-Organic-Orders-Growth-of-252-and-Diluted-EPS-Growth-of-200-Adjusted-Diluted-EPS-37/default.aspx", "publisher": "Vertiv IR", "published": "2026-02", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "Up 109% y/y; Q4 book-to-bill ~2.9x. Not AI-labeled, but demand is overwhelmingly hyperscale/colo AI data centers."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Q4 2025 organic orders growth y/y",
+      "period": "FY2025-Q4",
+      "value": 252,
+      "unit": "pct",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.prnewswire.com/news-releases/vertiv-reports-strong-fourth-quarter-with-organic-orders-growth-of-252-and-diluted-eps-growth-of-200-adjusted-diluted-eps-37-302684536.html", "publisher": "PR Newswire (Vertiv)", "published": "2026-02", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "+117% sequentially; trailing-twelve-month organic orders +81% y/y."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "FY2026-Q2",
+      "value": 3.274,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.prnewswire.com/news-releases/vertiv-reports-strong-second-quarter-2026-with-diluted-eps-growth-of-53-adjusted-diluted-eps-growth-of-60-raises-full-year-2026-guidance-across-all-key-metrics-302837598.html", "publisher": "PR Newswire (Vertiv)", "published": "2026-07", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "+24% y/y (18% organic, 5% acquisitions); adjusted operating margin 22.6% (+410bp); adjusted FCF $925M (+234%); net cash position at quarter end."
+    },
+    {
+      "metric": "other",
+      "metric_label": "FY2026 net sales guidance (midpoint)",
+      "period": "FY2026E",
+      "value": 14.0,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://www.prnewswire.com/news-releases/vertiv-reports-strong-second-quarter-2026-with-diluted-eps-growth-of-53-adjusted-diluted-eps-growth-of-60-raises-full-year-2026-guidance-across-all-key-metrics-302837598.html", "publisher": "PR Newswire (Vertiv)", "published": "2026-07", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "~+31% organic vs 2025; guide raised $250M at Q2 2026 along with adjusted diluted EPS to $6.70 (+60%) and adjusted operating profit to $3,325M at midpoint."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-02",
+      "title": "Q4 2025: organic orders +252% y/y, backlog more than doubles to $15.0B",
+      "why_it_matters": "One of the cleanest demand signals in the AI physical-infrastructure chain — order growth of this magnitude implies multi-year visibility but also high sensitivity to any capex pause.",
+      "impact": "high",
+      "entities": ["vertiv", "nvidia"],
+      "sources": [{ "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Fourth-Quarter-with-Organic-Orders-Growth-of-252-and-Diluted-EPS-Growth-of-200-Adjusted-Diluted-EPS-37/default.aspx", "publisher": "Vertiv IR", "published": "2026-02", "kind": "company_ir" }]
+    },
+    {
+      "date": "2026-07-29",
+      "title": "Q2 2026: raises full-year 2026 guidance across all key metrics",
+      "why_it_matters": "FY26 revenue guide moved to ~$14B (+31% organic); confirms the 2025 order surge is converting to revenue, though a small revenue miss still knocked the stock — a read on how much is priced in.",
+      "impact": "medium",
+      "entities": ["vertiv"],
+      "sources": [{ "url": "https://www.prnewswire.com/news-releases/vertiv-reports-strong-second-quarter-2026-with-diluted-eps-growth-of-53-adjusted-diluted-eps-growth-of-60-raises-full-year-2026-guidance-across-all-key-metrics-302837598.html", "publisher": "PR Newswire (Vertiv)", "published": "2026-07-29", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.prnewswire.com/news-releases/vertiv-reports-strong-second-quarter-2026-with-diluted-eps-growth-of-53-adjusted-diluted-eps-growth-of-60-raises-full-year-2026-guidance-across-all-key-metrics-302837598.html", "publisher": "PR Newswire (Vertiv)", "kind": "company_pr" },
+    { "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Fourth-Quarter-with-Organic-Orders-Growth-of-252-and-Diluted-EPS-Growth-of-200-Adjusted-Diluted-EPS-37/default.aspx", "publisher": "Vertiv IR", "kind": "company_ir" },
+    { "url": "https://www.investing.com/news/company-news/vertiv-q4-2025-slides-orders-surge-252-backlog-doubles-as-ai-demand-accelerates-93CH-4500925", "publisher": "Investing.com", "kind": "press", "notes": "Q4 2025 slides recap; NVIDIA 800VDC collaboration timed to Rubin platform, 2H 2026." }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "tokyo-electron",
+  "name": "Tokyo Electron",
+  "kind": "public_company",
+  "category": "semi_equipment_eda",
+  "group": "compute_supply_chain",
+  "region": "japan",
+  "tier": 2,
+  "tickers": [{ "exchange": "TSE", "symbol": "8035" }],
+  "website": "https://www.tel.com",
+  "monetization": "Sells wafer-fab equipment (coater/developers, etch, deposition); near-monopoly in EUV coater/developer tracks paired with ASML scanners; AI-related demand ~40% of sales.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "AI-related share of sales",
+      "period": "FY2027-Q1",
+      "value": 40,
+      "unit": "pct",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.investing.com/news/company-news/tokyo-electron-q1-fy2027-slides-ai-boom-drives-record-sales-outlook-93CH-4827886", "publisher": "Investing.com", "published": "2026-08", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Record sales outlook; AI demand ~40% of sales. TEL holds ~100% share of EUV coater/developer tracks (company-claimed in prior disclosures)."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.investing.com/news/company-news/tokyo-electron-q1-fy2027-slides-ai-boom-drives-record-sales-outlook-93CH-4827886", "publisher": "Investing.com", "published": "2026-08", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,104 @@
+{
+  "id": "samsung",
+  "name": "Samsung Electronics Co., Ltd.",
+  "kind": "public_company",
+  "category": "memory_storage",
+  "group": "compute_supply_chain",
+  "region": "korea",
+  "tier": 1,
+  "tickers": [{ "exchange": "KRX", "symbol": "005930" }],
+  "cik": null,
+  "website": "https://www.samsung.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Sells HBM4/server DRAM/NAND into the AI memory super-cycle, runs a contract foundry (Tesla AI6, $16.5B), and co-anchors OpenAI's Stargate memory supply.",
+  "description_md": "Samsung Electronics is the world's largest memory maker and a conglomerate spanning foundry, devices (smartphones/TVs), and displays. In the AI cycle its memory division is the profit engine: first to mass-produce and commercially ship HBM4 (February 2026), with conventional server DRAM and enterprise SSDs also sold out as AI demand broadened beyond HBM. Its foundry — long a distant #2 to TSMC — landed Tesla's $16.5B AI6 contract (through 2033, Taylor, Texas fab) and supplies Groq, with Meta and Anthropic reportedly evaluating. Q2 2026 operating profit of ₩89.5T was up ~18× y/y, a company record.",
+  "ai_monetization_md": "Three AI revenue engines: (1) **Memory** — HBM4 (guided to triple q/q in Q3 2026 and reach ~60% of HBM revenue in 2H26), server DRAM, and enterprise SSD at super-cycle pricing; co-signatory with SK hynix of the OpenAI Stargate LOI for up to 900K DRAM wafers/month (~40% of global output) through 2029. (2) **Foundry** — Tesla's $16.5B AI6 inference-chip deal anchors the Taylor fab; advanced nodes to exceed 50% of foundry revenue, AI/HPC rising past 30% of mix in 2026. (3) **Devices** — AI PCs/phones, though the mobile unit swung to a loss in Q2 2026 as memory input costs soared — the super-cycle taxes its own downstream businesses.",
+  "ai_strategy_md": "Use scale across two memory generations to close the HBM gap with SK hynix (HBM4 first-mover claim, ~10-fold capacity ambitions), convert the memory windfall into foundry credibility via marquee anchor customers (Tesla, Groq), and lock demand via the Stargate LOI. Management guided double-digit-plus 2H26 foundry growth and signaled that customer-funded capacity commitments now underwrite expansion — while warning of tight supply into 2027.",
+  "risk_notes_md": "**Internal cannibalization:** record memory pricing squeezed Samsung's own device margins (mobile loss in Q2 2026) — a conglomerate-specific exposure its pure-play memory rivals lack. **HBM competition:** SK hynix retains the Nvidia HBM4 lead (UBS: ~70% of Nvidia demand) and Micron overtook Samsung in some HBM share estimates during 2025–26. **Commitment quality:** the Stargate LOI is non-binding; Tesla's $16.5B is a real contract but Musk's 'output likely several times higher' framing is aspiration, not backlog. **China/export controls:** US restrictions constrain its China fabs and the customer set for advanced memory.",
+  "observations": [
+    {
+      "metric": "revenue_total",
+      "period": "FY2026-Q2",
+      "value": 171.5,
+      "unit": "KRW_T",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://news.samsung.com/global/samsung-electronics-announces-second-quarter-2026-results", "publisher": "Samsung Newsroom", "published": "2026-07", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "Record quarterly revenue, driven by AI memory (HBM4), server DRAM, and 2nm foundry orders."
+    },
+    {
+      "metric": "operating_income",
+      "period": "FY2026-Q2",
+      "value": 89.5,
+      "unit": "KRW_T",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.tradingkey.com/analysis/stocks/more/262062867-samsung-q2-skhynix-deam-mu-tsla-tsml-tradingkey", "publisher": "TradingKey", "published": "2026-07", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "+~1,814% y/y (≈18×); net profit ₩71.6T. Mobile unit swung to a loss on memory input costs."
+    },
+    {
+      "metric": "other",
+      "metric_label": "HBM4 share of HBM revenue (2H26 guide)",
+      "period": "FY2026-H2 (guide)",
+      "value": 60,
+      "unit": "pct",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-samsung-electronics-posts-record-q2-2026-profit-as-ai-demand-surges-93CH-4822292", "publisher": "Investing.com (earnings call)", "published": "2026-07", "kind": "earnings_call" },
+      "as_of": "2026-08-13",
+      "notes": "HBM4 revenue guided to more than triple q/q in Q3 2026; Samsung claims first mass production/commercial shipment of HBM4 (Feb 2026)."
+    },
+    {
+      "metric": "contract_value",
+      "metric_label": "Tesla AI6 foundry agreement",
+      "period": "2025-07 through 2033",
+      "value": 16.5,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.datacenterdynamics.com/en/news/samsung-electronics-signs-165bn-deal-with-tesla-to-manufacture-ai6-chips-at-taylor-texas-fab/", "publisher": "Data Center Dynamics", "published": "2025-07", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Eight-year deal through 2033; AI6 inference chips (FSD/Optimus) at Taylor, TX. Musk: actual output 'likely several times higher' — treat as commentary, not contract."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-07-28",
+      "title": "Tesla signs $16.5B AI6 foundry deal anchored on Taylor, Texas fab",
+      "why_it_matters": "Rescued the economics of Samsung's US foundry expansion and gave the foundry its first marquee AI anchor customer against TSMC.",
+      "impact": "high",
+      "entities": ["samsung"],
+      "sources": [
+        { "url": "https://www.datacenterdynamics.com/en/news/samsung-electronics-signs-165bn-deal-with-tesla-to-manufacture-ai6-chips-at-taylor-texas-fab/", "publisher": "Data Center Dynamics", "published": "2025-07", "kind": "press" },
+        { "url": "https://www.bloomberg.com/news/articles/2025-07-28/samsung-bags-16-5-billion-deal-in-big-win-for-chipmaking-arm", "publisher": "Bloomberg", "published": "2025-07-28", "kind": "press" }
+      ]
+    },
+    {
+      "date": "2025-10-01",
+      "title": "Joins OpenAI Stargate memory LOI with SK hynix — up to 900K DRAM wafers/month",
+      "why_it_matters": "Ties Korean memory capacity (~40% of global DRAM output) to OpenAI's buildout through 2029; analyst estimates put the value at >$70B through 2029, but the LOI is non-binding.",
+      "impact": "high",
+      "entities": ["samsung", "sk-hynix", "openai", "stargate"],
+      "sources": [{ "url": "https://openai.com/index/samsung-and-sk-join-stargate/", "publisher": "OpenAI", "published": "2025-10-01", "kind": "company_pr" }]
+    },
+    {
+      "date": "2026-07",
+      "title": "Q2 2026: record ₩89.5T operating profit (+~18× y/y) as super-cycle broadens",
+      "why_it_matters": "Confirmed the AI memory cycle has spread beyond HBM into server DRAM/SSD and foundry — while flagging 2027 supply warnings and squeezing Samsung's own device margins.",
+      "impact": "high",
+      "entities": ["samsung"],
+      "sources": [
+        { "url": "https://news.samsung.com/global/samsung-electronics-announces-second-quarter-2026-results", "publisher": "Samsung Newsroom", "published": "2026-07", "kind": "company_ir" },
+        { "url": "https://finance.yahoo.com/technology/articles/samsung-q2-2026-earnings-record-115328985.html", "publisher": "Yahoo Finance", "published": "2026-07", "kind": "press" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://news.samsung.com/global/samsung-electronics-announces-second-quarter-2026-results", "publisher": "Samsung Newsroom", "kind": "company_ir" },
+    { "url": "https://telecomlead.com/smart-phone/samsung-q2-2026-revenue-hits-record-krw-171-5-trillion-as-ai-memory-hbm4-and-2nm-chip-orders-drive-growth-126986", "publisher": "TelecomLead", "published": "2026-07", "kind": "press" },
+    { "url": "https://openai.com/index/samsung-and-sk-join-stargate/", "publisher": "OpenAI", "published": "2025-10-01", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

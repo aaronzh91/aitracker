@@ -1,0 +1,75 @@
+{
+  "id": "euv-lithography",
+  "name": "EUV lithography (ASML monopoly)",
+  "group": "compute_supply_chain",
+  "status": "binding",
+  "description_md": "Every leading-edge logic wafer (TSMC N3/N2, Intel 18A/14A, Samsung SF2) and increasingly leading-edge DRAM requires extreme-ultraviolet lithography, and exactly one company on earth — ASML — can build the machines. Scanner lead times run a year or more, ASML entered 2026 with a record ~€38.8B backlog, and each fab expansion anywhere in the chain (N2 capacity, HBM4 DRAM lines, US fabs) queues behind ASML tool slots and Tokyo Electron's matching coater/developer tracks (~100% share). The next-generation High-NA ramp is real but early: the first production-grade EXE:5200B shipped Q4 2025, adoption is limited to Intel (14A), Samsung, and SK Hynix, and TSMC has said it will not use High-NA in volume production before ~2029 on cost (>€350M/tool) grounds. Status basis: judged binding because a single supplier with >12-month lead times and record backlog gates the pace at which every downstream compute constraint (foundry, HBM, packaging) can be expanded — even though EUV tool supply is not the most acutely rationed input in 2026.",
+  "controlled_by": [
+    { "entity": "asml", "share_note": "100% of EUV/High-NA scanner supply (structural monopoly; disclosed)" },
+    { "entity": "tokyo-electron", "share_note": "~100% of EUV coater/developer tracks paired with ASML scanners (company_claimed)" }
+  ],
+  "dependents": [
+    { "entity": "tsmc", "dependency_md": "All N5/N3/N2 capacity — >90% of leading-edge foundry output — is printed on ASML EUV; N2 expansion (~90-100k wpm by early 2026) is paced by scanner deliveries." },
+    { "entity": "intel", "dependency_md": "18A ramp and 14A (first High-NA node, target 2027) depend on EUV and EXE:5200 deliveries; Intel is ASML's lead High-NA customer." },
+    { "entity": "samsung", "dependency_md": "SF2 GAA logic and leading-edge DRAM/HBM4 base-die work require EUV; a High-NA early adopter." },
+    { "entity": "sk-hynix", "dependency_md": "1c-nm-class DRAM for HBM4 uses EUV layers; capacity adds queue for the same scanners as logic." },
+    { "entity": "nvidia", "dependency_md": "Indirect but total: every Blackwell/Rubin die exists only because an ASML scanner printed it; no substitute path exists at any price." }
+  ],
+  "substitutes_md": "None at leading edge. DUV multi-patterning can in principle substitute at old nodes (as SMIC does at 7nm-class in China under export controls) but with severe yield/cost penalties and it cannot reach N3/N2-class density economically. Nikon/Canon exited the leading-edge scanner race years ago; no second source is plausible inside a decade. The only 'substitute' is time — waiting for ASML capacity.",
+  "downcycle_md": "ASML is among the best-protected names in the chain in a downturn: tools are ordered years ahead with deposits, the backlog is diversified beyond AI (mobile, auto, memory), and litho capacity is the last thing a fab cancels because it is the longest to re-acquire. In 2001- and 2019-style semi downcycles ASML saw order pushouts rather than mass cancellations. The glut would form downstream (idle fab capacity, falling wafer prices at TSMC/Samsung) before ASML's P&L took the hit; the High-NA ramp would slow first since it is the discretionary, unproven capex item (TSMC has already deferred it).",
+  "observations": [
+    {
+      "metric": "market_share_pct",
+      "period": "CY2026",
+      "value": 100,
+      "unit": "pct",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.tomshardware.com/tech-industry/semiconductors/asml-lithograpy-roadmap-examined-from-duv-to-hyper-na", "publisher": "Tom's Hardware", "published": "2025", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Sole supplier of EUV and High-NA scanners worldwide."
+    },
+    {
+      "metric": "other",
+      "metric_label": "ASML order backlog",
+      "period": "2026-01",
+      "value": 38.8,
+      "unit": "EUR_B",
+      "basis": "disclosed",
+      "confidence": "medium",
+      "source": { "url": "https://futurumgroup.com/insights/asml-q4-fy-2025-earnings-record-orders-capacity-execution-in-focus/", "publisher": "Futurum Group", "published": "2026-01", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "Record backlog entering 2026; FY26 shipments skewed to 2H on customer cleanroom readiness."
+    },
+    {
+      "metric": "lead_time_months",
+      "period": "2026",
+      "value": 12,
+      "unit": "months",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://futurumgroup.com/insights/asml-q4-fy-2025-earnings-record-orders-capacity-execution-in-focus/", "publisher": "Futurum Group", "published": "2026-01", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "At least ~12 months for EUV systems; High-NA effectively longer (install + qualification measured in years)."
+    },
+    {
+      "metric": "other",
+      "metric_label": "High-NA (EXE:5200B) first production shipment",
+      "period": "2025-Q4",
+      "value": 1,
+      "unit": "systems",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.trendforce.com/news/2025/07/17/news-asml-confirms-first-high-na-euv-exe5200-shipment-reportedly-prepping-for-intels-14a-in-2027/", "publisher": "TrendForce", "published": "2025-07", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "First production-grade EXE:5200B shipped for Intel 14A (2027 target); imec qualification unit targeted 4Q26; TSMC says no High-NA volume production before ~2029."
+    }
+  ],
+  "sources": [
+    { "url": "https://futurumgroup.com/insights/asml-q4-fy-2025-earnings-record-orders-capacity-execution-in-focus/", "publisher": "Futurum Group", "kind": "analyst" },
+    { "url": "https://www.trendforce.com/news/2025/07/17/news-asml-confirms-first-high-na-euv-exe5200-shipment-reportedly-prepping-for-intels-14a-in-2027/", "publisher": "TrendForce", "kind": "press" },
+    { "url": "https://www.trendforce.com/news/2026/03/19/news-imec-secures-asmls-most-advanced-exe5200-high-na-euv-for-sub-2nm-4q26-qualification-target/", "publisher": "TrendForce", "published": "2026-03", "kind": "press" },
+    { "url": "https://www.tomshardware.com/tech-industry/semiconductors/asml-lithograpy-roadmap-examined-from-duv-to-hyper-na", "publisher": "Tom's Hardware", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

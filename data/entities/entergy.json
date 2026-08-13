@@ -1,0 +1,30 @@
+{
+  "id": "entergy",
+  "name": "Entergy Corporation",
+  "kind": "public_company",
+  "category": "power_utility",
+  "group": "energy",
+  "region": "us",
+  "tier": 2,
+  "tickers": [{ "exchange": "NYSE", "symbol": "ETR" }],
+  "website": "https://www.entergy.com",
+  "monetization": "Regulated Gulf-South utility; monetizes AI through rate-based new gas generation and transmission serving Meta's Hyperion campus in Richland Parish, Louisiana (~2.2GW load) under long-term electric service agreements.",
+  "observations": [
+    {
+      "metric": "capacity_mw",
+      "metric_label": "New CCGT capacity being built for Meta's Hyperion load",
+      "period": "2025",
+      "value": 2260,
+      "unit": "MW",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.utilitydive.com/news/entergy-louisiana-meta-data-center-gas-plants-lpsc-approval/", "publisher": "Utility Dive", "published": "2025", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Three combined-cycle gas turbines (~$3.2B) approved by the Louisiana PSC in 2025; in service 2028-2029."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.utilitydive.com/news/entergy-louisiana-meta-data-center-gas-plants-lpsc-approval/", "publisher": "Utility Dive", "published": "2025", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

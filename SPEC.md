@@ -246,7 +246,19 @@ Corrections between Saturdays (a bad number found mid-week) are pushed immediate
 
 ## 8. Data sources
 
-<!-- RESEARCH-PENDING: practical source table (EDGAR APIs, market data, transcripts, private-co reporting, news monitoring) with rate limits and automation notes -->
+Verified as practical for an unattended weekly pipeline on a near-zero budget (as of Aug 2026):
+
+| Need | Source | Automation notes |
+|---|---|---|
+| Public-co fundamentals (revenue, capex, RPO) | **SEC EDGAR XBRL APIs** — `companyfacts` / `companyconcept` at `data.sec.gov` | Free, no auth, explicitly automation-friendly. Requires a `User-Agent: <name> (<email>)` header; ≤10 req/s. Key tags: `PaymentsToAcquirePropertyPlantAndEquipment` (capex — add finance-lease ROU assets for Microsoft-style leasing), `RevenueRemainingPerformanceObligation` (RPO — the Oracle/Microsoft backlog number). Watch fiscal-year offsets (NVDA FY ends late Jan). |
+| New filings & deal disclosures | **EDGAR submissions API + full-text search** (`efts.sec.gov`) | Weekly sweep of new 8-K/10-Q/10-K; full-text queries on counterparty names ("OpenAI" in others' filings) catch deal disclosures. Endpoint shape is unofficial — wrap defensively. |
+| Segment / "AI revenue" detail | Filing-level XBRL or transcripts | The XBRL summary APIs carry **no dimensional/segment data** — segment revenue (e.g., Intelligent Cloud) needs filing-level parsing or prose extraction. Quarterly job, not weekly. |
+| Private-co financials (OpenAI, Anthropic, xAI) | **Epoch AI datasets** (epoch.ai/data/ai-companies, /ai-data-centers) — CC-BY 4.0 CSVs | Best-in-class free source: revenue run-rates, funding, compute spend, with per-datapoint confidence ratings; updated ~weekly. Credit Epoch. Supplement with hand-entered press numbers (The Information, Reuters, Bloomberg) recorded as `press_reported` with source + confidence. |
+| Market caps | **Stooq daily price CSV** × shares outstanding from EDGAR cover-page XBRL (`dei:EntityCommonStockSharesOutstanding`) | Fully free and automatable. yfinance is fallback-only (CI IPs get rate-blocked). Alpha Vantage free tier (25 req/day) too small; FMP free tier (250/day) workable if needed. |
+| Transcripts (AI commentary, prose-only numbers) | Motley Fool transcripts; NVIDIA CFO Commentary PDF from IR; prepared remarks via 8-K exhibits | Quarterly cadence; scraping is ToS-gray → keep low-volume, prefer IR/8-K documents. |
+| Weekly news sweep | **GDELT DOC 2.0 API** (free, ~250 records/query) + Google News RSS (low volume) | Dedupe → triage → **review queue; news never auto-publishes a data change without agentic/human review**. Bing News API is retired (Aug 2025) — don't plan on it. |
+
+Pipeline principle: EDGAR is the backbone of record for public companies; Epoch is the backbone for private ones; news feeds only *nominate* changes, they never write directly to data.
 
 ## 9. Seed dataset (launch universe)
 
@@ -258,7 +270,17 @@ Corrections between Saturdays (a bad number found mid-week) are pushed immediate
 
 ## 11. Prior art & differentiation
 
-<!-- RESEARCH-PENDING: existing trackers/visualizations and what they lack -->
+What exists today (surveyed Aug 2026):
+
+- **News-org graphics** — Bloomberg maintains a standing "AI Circular Deals" graphics page (grown from its Oct 2025 feature; refreshed when major deals land); FT, WSJ, Reuters, CNBC and Visual Capitalist have published one-off circular-deal diagrams. All are editorial snapshots: paywalled or static, no per-deal records, no primary-source citations per edge, no export.
+- **ai-circular-economy.com** — the closest direct prior art: an interactive network graph (~26 companies, ~65 deals, typed edges, source link per figure), but manually maintained by a single person, with no company fundamentals, no per-deal permalink pages, no methodology framework, and no automation.
+- **AI-bubble dashboards** (aibubble.watch, boomorbubble.ai, etc.) — indicator gauges answering "is it a bubble?"; none represent entity-to-entity money flows.
+- **Epoch AI data hubs** — free CC-BY datasets on AI companies (revenue, funding, compute spend, with confidence ratings) and data centers (satellite/permit-derived capex); rigorous but tabular — no deal graph, no bilateral edges.
+- **The Information / SemiAnalysis** — the deepest data (AI Data Center Database; 5,000+ tracked datacenters, accelerator installed-base models) but institutionally priced; defines the quality ceiling, not accessible prior art.
+- **Niche trackers** — Fierce Network's editorial "Encyclopedia of AI Deals" (list, no data), Tow Center's publisher-licensing-deals tracker (different niche, good per-deal-record model), several facility-map projects.
+- No maintained public **network dataset** of AI corporate money flows exists in academia either — a genuine gap.
+
+**The open lane, and our differentiation:** nobody combines (1) automated weekly refresh, (2) per-deal permalink pages with primary-source citations and revision history, (3) company fundamentals (XBRL capex/revenue/RPO) joined to the deal graph, (4) two-sided accounting treatment per flow, (5) open data export, and (6) a documented neutrality methodology. That combination — roughly *ai-circular-economy.com's format × Epoch's rigor and licensing × Wikipedia's page/versioning model × weekly automation* — is this project. Main incumbent risks: Bloomberg keeping its graphic continuously fresh, or Epoch adding a graph view; both lack the per-deal accounting depth that is our core.
 
 ## 12. Trust & governance
 

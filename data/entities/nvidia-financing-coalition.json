@@ -1,0 +1,55 @@
+{
+  "id": "nvidia-financing-coalition",
+  "name": "Nvidia Customer-Financing Coalition",
+  "kind": "spv_jv",
+  "category": "spv_jv",
+  "group": "capital",
+  "region": "us",
+  "tier": 1,
+  "cik": null,
+  "website": null,
+  "monetization": "Announced framework (Aug 10, 2026) under which Nvidia and six financial giants would provide >$500B of financing for Nvidia customers' compute purchases through compute-collateralized SPV structures; would monetize via financing spreads on GPU-backed paper — nothing funded yet.",
+  "description_md": "On August 10, 2026, Nvidia announced a financing coalition with Apollo, Blackstone, BlackRock, Brookfield, Goldman Sachs, and KKR to mobilize more than $500B of financing for Nvidia customers, structured as special-purpose vehicles issuing debt collateralized by the financed compute (GPUs, systems, and associated contracts). The arrangement is explicitly subject to final agreements: no vehicles have been publicly capitalized, no commitments allocated among members, and no deals disclosed as funded as of August 13, 2026. NVDA shares fell ~2.5% on the announcement on concentration-risk concerns.",
+  "ai_monetization_md": "The intended flow: coalition members raise or commit capital into SPVs; the SPVs finance Nvidia customers' purchases of Nvidia systems (neoclouds, labs, sovereigns — the customer set most constrained by debt markets); the debt is secured by the compute assets themselves, generalizing the xAI GPU SPV template (Valor/Apollo/Diameter, Oct 2025). For Nvidia, it converts customers' financing constraints into sales without Nvidia carrying the receivables; for the financiers, it manufactures a large new asset class of compute-collateralized IG-targeted paper. Two-sided accounting when deals fund: customers get off-balance-sheet capacity (lease/opex), SPV lenders hold GPU-backed credit, and Nvidia books ordinary product revenue — with any Nvidia equity participation in the SPVs recreating the vendor-financing circularity at one remove.",
+  "risk_notes_md": "Every dollar here is announced, none realized: headline >$500B with no disclosed structure, member allocations, timeline, or first transactions — the widest headline-vs-realized gap of any record in this dataset. Pattern risks flagged by critics on announcement day: `vendor_financing` at a scale that dwarfs the ~$100B dot-com-era precedent (Lucent/Nortel/Cisco), and `collateralized_gpu_debt` — collateral whose resale value depends on the same demand cycle the financing props up. If the coalition proceeds, a material share of Nvidia's demand would be underwritten by a consortium in which Nvidia participates, which is exactly the structure the revenue-quality decomposition (T3 circular) exists to measure. Bull framing (Nvidia, coalition members): it is ordinary equipment financing — GM Financial for compute — supplied by third-party capital at arm's-length pricing.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Announced financing capacity",
+      "period": "2026-08",
+      "value": 500,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html", "publisher": "CNBC", "published": "2026-08-10", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "'More than $500B', subject to final agreements; no member-level allocations disclosed."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Financing deployed to date",
+      "period": "2026-08",
+      "value": null,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html", "publisher": "CNBC", "published": "2026-08-10", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "No deployments disclosed as of 2026-08-13; recorded as null (unknown/zero) to keep the committed-vs-realized gap visible."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-08-10",
+      "title": "Coalition announced: Nvidia + Apollo, Blackstone, BlackRock, Brookfield, Goldman Sachs, KKR",
+      "why_it_matters": "Formalizes compute-as-collateral vendor financing at systemic scale — the AI cycle's clearest echo of 1999-2001 vendor finance, at 5x the size; NVDA fell ~2.5% on the news.",
+      "impact": "high",
+      "entities": ["nvidia-financing-coalition", "nvidia", "apollo", "blackstone", "blackrock", "brookfield", "goldman-sachs", "kkr"],
+      "sources": [{ "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html", "publisher": "CNBC", "published": "2026-08-10", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html", "publisher": "CNBC", "published": "2026-08-10", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

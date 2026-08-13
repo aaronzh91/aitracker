@@ -1,0 +1,35 @@
+{
+  "id": "anthropic--fluidstack--compute",
+  "from": "anthropic",
+  "to": "fluidstack",
+  "type": "lease",
+  "status": "contracted",
+  "headline": { "value": 50, "unit": "USD_B", "caveat": "Anthropic's announced total US data-center investment for sites developed with Fluidstack; the split between payments to Fluidstack and other project costs is not disclosed", "as_of": "2025-11-12" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "construction spending underway since late 2025; first sites online during 2026; amounts paid not disclosed", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-11-12", "start": "2025-11", "end": null, "duration_years": null },
+  "nature_md": "Announced Nov 12, 2025: Anthropic will invest **$50B in US data centers built with Fluidstack**, starting with custom-designed sites in Texas and New York (more to follow), creating ~2,400 construction jobs and ~800 permanent roles, with first capacity online in 2026. Verified structure, as far as public reporting goes: Fluidstack — a London-founded GPU-cloud/DC developer with a thin public balance sheet (itself a flagged data gap) — acts as **developer/operator**, and Anthropic takes the capacity under long-term dedicated arrangements; the underlying campuses are in part leased from miners-turned-AI hosts (TeraWulf's Lake Mariner, NY; Cipher's Texas sites), where **Google has provided multi-billion-dollar lease backstops** supporting Fluidstack's obligations (~$3.2B TeraWulf, ~$1.4B Cipher, taking ~14%/~5.4% equity warrants respectively). So the $50B headline is Anthropic's program-level number spanning a chain: Anthropic → Fluidstack → miner-hosts, credit-enhanced by Alphabet.",
+  "accounting": {
+    "payer_treatment_md": "For Anthropic: long-term dedicated-capacity commitments — economically lease-like obligations that would capitalize as right-of-use assets/liabilities if Anthropic reported under GAAP publicly; the 'investment' framing describes program scale, not equity ownership of the sites (site ownership details undisclosed).",
+    "payee_treatment_md": "For Fluidstack: anchor-tenant contracted revenue that it passes partly through as lease payments to TeraWulf/Cipher; its ability to carry these obligations rests significantly on Google's backstops rather than its own balance sheet — credit substitution that keeps the chain financeable.",
+    "off_balance_sheet": true,
+    "flags": ["commitment_unfunded", "spv_shift"]
+  },
+  "related_edges": ["anthropic--amazon--compute", "anthropic--alphabet--tpu"],
+  "both_sides_md": "**Bear:** a private lab with ~$30B run-rate committing $50B through a developer whose balance sheet is invisible, on sites owned by former bitcoin miners, credit-enhanced by its own investor (Google) — a fragility chain where every link depends on Claude's growth curve continuing. **Bull:** dedicated purpose-built capacity is cheaper and more controllable than hyperscaler markup; the structure diversifies Anthropic away from rented hyperscaler capacity toward assets optimized for its workloads; and Google's backstop is third-party validation of the sites' residual value.",
+  "observations": [],
+  "events": [
+    {
+      "date": "2025-11-12",
+      "title": "Anthropic announces $50B US DC buildout with Fluidstack (TX + NY first)",
+      "impact": "high",
+      "entities": ["anthropic", "fluidstack"],
+      "sources": [{ "url": "https://www.anthropic.com/news/anthropic-invests-50-billion-in-american-ai-infrastructure", "publisher": "Anthropic", "published": "2025-11-12", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.anthropic.com/news/anthropic-invests-50-billion-in-american-ai-infrastructure", "publisher": "Anthropic", "published": "2025-11-12", "kind": "company_pr" },
+    { "url": "https://www.datacenterdynamics.com/en/news/anthropic-plans-50bn-us-data-center-spend-starting-with-fluidstack-sites-in-texas-and-new-york/", "publisher": "Data Center Dynamics", "published": "2025-11", "kind": "press" },
+    { "url": "https://www.datacenterknowledge.com/data-center-construction/anthropic-fluidstack-to-pour-50-billion-into-us-data-centers", "publisher": "Data Center Knowledge", "published": "2025-11", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

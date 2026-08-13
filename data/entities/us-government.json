@@ -1,0 +1,96 @@
+{
+  "id": "us-government",
+  "name": "United States Government (federal AI-related programs)",
+  "kind": "government",
+  "category": "government_program",
+  "group": "government_state",
+  "region": "us",
+  "tier": 1,
+  "cik": null,
+  "website": null,
+  "monetization": "Not a profit-seeker by charter, but now a direct financial participant in the AI economy: ~10% equity in Intel, a 15% cut of Nvidia/AMD China chip revenue, profit participation in the Westinghouse nuclear buildout, and $1-a-year AI procurement that shapes lab revenue quality.",
+  "description_md": "This record tracks the US federal government's financial positions in the AI ecosystem, which since mid-2025 have gone far beyond procurement: equity stakes in strategic suppliers, revenue-share license conditions on chip exports, nuclear-buildout profit participation, and loss-leader AI purchasing across agencies. It is simultaneously the ecosystem's regulator (export controls), customer (DoD/GSA), shareholder (Intel), and — via the Anthropic ban — its most consequential single counterparty risk.",
+  "ai_monetization_md": "Positions, in order of financial weight: (1) an $8.9B purchase of 433.3M non-voting Intel shares at $20.47 (~9.9%), funded by converting unpaid CHIPS Act grants ($5.7B) and Secure Enclave funding ($3.2B), closed Aug 27, 2025 — a passive stake with no board seat; (2) a license arrangement under which Nvidia and AMD remit 15% of China chip revenue (H20/MI308-class) to the US government as an export-license condition (Aug 2025); (3) the Oct 2025 Westinghouse partnership: the government arranges financing/permitting for ≥$80B of AP1000/AP300 reactors and receives, once vested, 20% of Westinghouse cash distributions above $17.5B; (4) DoD/CDAO contracts of up to $200M each with OpenAI, Anthropic, Google, and xAI (Jul 2025) — ceilings, not obligations (OpenAI's award had only ~$2M obligated initially); (5) GSA OneGov agreements putting ChatGPT and Claude into agencies at $1/agency/year (Gemini at $0.47) — distribution-buying by the labs, near-zero federal revenue.",
+  "risk_notes_md": "Policy is the risk channel: the Feb 27, 2026 order for federal agencies to cease using Anthropic products — with DoD designating Anthropic a supply-chain risk (formalized Mar 3, 2026, the first such designation of a US company) after Anthropic refused to waive surveillance/autonomous-weapons restrictions — killed a federal pipeline overnight and demonstrated that US-government AI relationships can reverse without financial process. For counterparties, government ceilings (DoD $200M) and $1 deals are revenue-quality traps: high headline, minimal realized. The Intel stake and 15% China arrangement have no modern legal template and face ongoing challenge risk.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Intel equity stake (cost basis)",
+      "period": "2025-08",
+      "value": 8.9,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.cnbc.com/2025/08/22/intel-goverment-equity-stake.html", "publisher": "CNBC", "published": "2025-08-22", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "433.3M non-voting shares at $20.47 (~9.9%); $5.7B converted CHIPS grants + $3.2B Secure Enclave; closed 2025-08-27; part held in escrow pending Secure Enclave disbursements. No board seat."
+    },
+    {
+      "metric": "other",
+      "metric_label": "China chip-export license revenue share (Nvidia/AMD)",
+      "period": "2025-08",
+      "value": 15,
+      "unit": "pct",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-responds-to-reports-that-its-h20-gpu-for-china-is-ending-production-next-gen-b30a-green-light-up-to-the-united-states-government-according-to-ceo-jensen-huang", "publisher": "Tom's Hardware", "published": "2025-08", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "15% of China H20/MI308 revenue as a license condition; largely moot for new sales after 2026 bans extended to offshore Chinese data centers (Jun 1, 2026)."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-07",
+      "title": "DoD awards contracts of up to $200M each to OpenAI, Anthropic, Google, xAI",
+      "why_it_matters": "Ceiling ≠ revenue: OpenAI's award had only ~$2M obligated initially — the canonical example of headline-vs-realized in government AI contracting.",
+      "impact": "medium",
+      "entities": ["us-government", "openai", "anthropic", "alphabet", "xai"],
+      "sources": [{ "url": "https://fedscoop.com/openai-chatgpt-enterprise-federal-government-gsa-deal-general-services-administration-anthropic/", "publisher": "FedScoop", "published": "2025-08", "kind": "press" }]
+    },
+    {
+      "date": "2025-08",
+      "title": "GSA OneGov: ChatGPT and Claude at $1/agency/year, Gemini at $0.47",
+      "why_it_matters": "Labs bought federal distribution at a loss — near-zero revenue now, procurement lock-in later; a protest against the $1 agreements followed within weeks.",
+      "impact": "medium",
+      "entities": ["us-government", "openai", "anthropic", "alphabet"],
+      "sources": [
+        { "url": "https://www.gsa.gov/about-gsa/newsroom/news-releases/gsa-strikes-onegov-deal-with-anthropic-08122025", "publisher": "GSA", "published": "2025-08-12", "kind": "official_sector" },
+        { "url": "https://www.nextgov.com/acquisition/2025/08/openai-give-federal-agencies-chatgpt-access-1-year/407266/", "publisher": "Nextgov/FCW", "published": "2025-08", "kind": "press" }
+      ]
+    },
+    {
+      "date": "2025-08-22",
+      "title": "Takes ~10% equity stake in Intel for $8.9B via converted grants",
+      "why_it_matters": "Unprecedented peacetime federal shareholding in a strategic chipmaker; by 2026 the stake's paper value had roughly quadrupled.",
+      "impact": "high",
+      "entities": ["us-government", "intel"],
+      "sources": [{ "url": "https://www.cnbc.com/2025/08/22/intel-goverment-equity-stake.html", "publisher": "CNBC", "published": "2025-08-22", "kind": "press" }]
+    },
+    {
+      "date": "2025-10-27",
+      "title": "Announces $80B Westinghouse nuclear partnership with profit participation",
+      "why_it_matters": "The state underwrites AI-era power supply and takes upside: 20% of Westinghouse distributions above $17.5B once an $80B reactor program is definitively agreed.",
+      "impact": "high",
+      "entities": ["us-government", "brookfield"],
+      "sources": [{ "url": "https://www.utilitydive.com/news/westinghouse-cameco-brookfield-nuclear/803999/", "publisher": "Utility Dive", "published": "2025-10", "kind": "press" }]
+    },
+    {
+      "date": "2026-02-27",
+      "title": "Federal agencies ordered off Anthropic; DoD designates it a supply-chain risk",
+      "why_it_matters": "The first-ever such designation of a US company (formalized Mar 3, 2026) after Anthropic refused to waive restrictions on mass surveillance and autonomous weapons; agencies got six months to phase out Claude — eliminating Anthropic's federal pipeline and repricing 'government AI revenue' risk for every lab.",
+      "impact": "high",
+      "entities": ["us-government", "anthropic"],
+      "sources": [
+        { "url": "https://www.cnn.com/2026/02/27/tech/anthropic-pentagon-deadline", "publisher": "CNN Business", "published": "2026-02-27", "kind": "press" },
+        { "url": "https://www.mayerbrown.com/en/insights/publications/2026/03/pentagon-designates-anthropic-a-supply-chain-risk-what-government-contractors-need-to-know", "publisher": "Mayer Brown", "published": "2026-03", "kind": "other" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.cnbc.com/2025/08/22/intel-goverment-equity-stake.html", "publisher": "CNBC", "published": "2025-08-22", "kind": "press" },
+    { "url": "https://www.cameco.com/media/news/cameco-and-brookfield-establish-transformational-partnership-with-united-states", "publisher": "Cameco", "published": "2025-10", "kind": "company_pr" },
+    { "url": "https://www.gsa.gov/about-gsa/newsroom/news-releases/gsa-strikes-onegov-deal-with-anthropic-08122025", "publisher": "GSA", "published": "2025-08-12", "kind": "official_sector" },
+    { "url": "https://www.cnn.com/2026/02/27/tech/anthropic-pentagon-deadline", "publisher": "CNN Business", "published": "2026-02-27", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

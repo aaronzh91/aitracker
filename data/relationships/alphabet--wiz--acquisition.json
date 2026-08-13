@@ -17,15 +17,7 @@
   "related_edges": [],
   "both_sides_md": "**Bull:** Google Cloud buys the fastest-growing security franchise in history and neutralizes a gap versus Microsoft's security bundle — paid in cash it cannot otherwise deploy. **Bear:** ~60x ARR for a multicloud-committed asset inside a hyperscaler is a cycle-top comp; the 18-month regulatory limbo also froze Wiz's momentum against rivals.",
   "observations": [],
-  "events": [
-    {
-      "date": "2026",
-      "title": "Wiz acquisition closes after DOJ review",
-      "impact": "medium",
-      "entities": ["alphabet", "wiz"],
-      "sources": [{ "url": "https://www.cnbc.com/2026/wiz-google-acquisition-closes.html", "publisher": "CNBC", "published": "2026", "kind": "press" }]
-    }
-  ],
+  "events": [],
   "sources": [
     { "url": "https://blog.google/inside-google/company-announcements/google-agreement-acquire-wiz/", "publisher": "Google", "published": "2025-03-18", "kind": "company_pr" },
     { "url": "https://www.cnbc.com/2026/wiz-google-acquisition-closes.html", "publisher": "CNBC", "published": "2026", "kind": "press", "notes": "Close timing per 2026 reporting; exact close date to be firmed up." }

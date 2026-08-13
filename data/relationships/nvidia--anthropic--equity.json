@@ -1,0 +1,35 @@
+{
+  "id": "nvidia--anthropic--equity",
+  "from": "nvidia",
+  "to": "anthropic",
+  "type": "equity_investment",
+  "status": "announced",
+  "headline": { "value": 10, "unit": "USD_B", "caveat": "'up to $10B' committed Nov 18, 2025; amount actually funded to date undisclosed", "as_of": "2025-11-18" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "funding schedule and amounts drawn never disclosed", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-11-18", "start": null, "end": null, "duration_years": null },
+  "nature_md": "The other half of the Nov 18, 2025 three-way deal: NVIDIA commits **up to $10B** into Anthropic (Microsoft up to $5B) at a ~$350B valuation context, while Anthropic — historically a Trainium/TPU flagbearer — agrees to adopt NVIDIA architectures (Grace Blackwell, then Vera Rubin) for the $30B of Azure capacity and to deep technology co-design with NVIDIA. For NVIDIA this bought back architectural relevance at the one frontier lab that had built its scaling story on rival silicon; it also means NVIDIA holds equity in both OpenAI ($30B) and Anthropic simultaneously. Funded amounts are undisclosed — treat headline as ceiling, not flow.",
+  "accounting": {
+    "payer_treatment_md": "If/as funded: non-marketable equity investment at fair value, joining NVIDIA's >$40B 2026 ecosystem-equity program. The demand it secures (Anthropic's Azure capacity is NVIDIA-powered) returns as GPU revenue booked from Microsoft — investor and beneficiary at one remove.",
+    "payee_treatment_md": "Equity financing; no revenue. Strategic cost: dilutes Anthropic's silicon-diversification narrative — its three-cloud strategy now includes committed consumption of its investor's chips.",
+    "off_balance_sheet": true,
+    "flags": ["equity_for_revenue", "commitment_unfunded"]
+  },
+  "related_edges": ["microsoft--anthropic--equity", "anthropic--microsoft--azure", "nvidia--openai--equity-2026"],
+  "both_sides_md": "**Bear:** NVIDIA now equity-seeds both leading labs — the two largest sources of GPU demand are partially funded by the GPU vendor, deepening the correlation Noah Smith concedes even in the bull case. **Bull:** ≤$10B against Anthropic's $350B→$965B valuation path was cheap optionality, third-party investors (Series H at $965B) priced the company far above NVIDIA's entry, and Anthropic's NVIDIA adoption reflects genuine multi-architecture demand, not charity.",
+  "observations": [],
+  "events": [
+    {
+      "date": "2025-11-18",
+      "title": "NVIDIA commits up to $10B to Anthropic as it adopts NVIDIA architectures on Azure",
+      "impact": "high",
+      "entities": ["nvidia", "anthropic", "microsoft"],
+      "sources": [{ "url": "https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships", "publisher": "Anthropic", "published": "2025-11-18", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships", "publisher": "Anthropic", "published": "2025-11-18", "kind": "company_pr" },
+    { "url": "https://blogs.microsoft.com/blog/2025/11/18/microsoft-nvidia-and-anthropic-announce-strategic-partnerships/", "publisher": "Microsoft", "published": "2025-11-18", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2025/11/18/anthropic-ai-azure-microsoft-nvidia.html", "publisher": "CNBC", "published": "2025-11-18", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

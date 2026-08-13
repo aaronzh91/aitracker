@@ -1,0 +1,34 @@
+{
+  "id": "anthropic--broadcom--tpu-2026",
+  "from": "anthropic",
+  "to": "broadcom",
+  "type": "hardware_purchase",
+  "status": "contracted",
+  "headline": { "value": 3.5, "unit": "GW", "caveat": "~3.5GW of Google-designed, Broadcom-supplied TPU capacity coming online from 2027; dollar value undisclosed — Mizuho estimates Broadcom AI revenue from Anthropic of ~$21B in 2026 and ~$42B in 2027", "as_of": "2026-04-06" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "capacity from 2027; nothing recognized yet from this expansion", "as_of": "2026-08-13" },
+  "term": { "announced": "2026-04-06", "start": "2027", "end": null, "duration_years": null },
+  "nature_md": "Three-way deal announced Apr 6, 2026: Anthropic secures approximately **3.5GW of TPU compute capacity from 2027**, with Broadcom designing and supplying the Google-architecture TPUs (Broadcom simultaneously committed to develop Google's TPU generations through 2031). This is *additional* to the ~1GW coming online in 2026 under the Oct 2025 Google Cloud agreement. Notably conditioned: filings state Anthropic's use of the expanded capacity is **contingent on its continued commercial performance** — a rare disclosed gate tying compute expansion to revenue delivery (run-rate had passed $30B at announcement, up from $9B at end-2025). Structure (who books what between Google and Broadcom) is not fully public; Broadcom ships the silicon/systems, hence this edge.",
+  "accounting": {
+    "payer_treatment_md": "Forward capacity commitment with a disclosed performance contingency — Anthropic keeps an exit if growth stalls, making this softer than take-or-pay. Spend will blend hardware-linked payments (Broadcom side) and cloud consumption (Google side); the split is undisclosed.",
+    "payee_treatment_md": "For Broadcom: custom-accelerator (XPU) revenue on shipment from 2027, stacking Anthropic onto Google, Meta, and OpenAI as concentrated AI customers (Mizuho: $21B/2026 → $42B/2027 from Anthropic alone — estimates, not guidance).",
+    "off_balance_sheet": true,
+    "flags": ["customer_concentration", "commitment_unfunded"]
+  },
+  "related_edges": ["anthropic--alphabet--tpu", "openai--broadcom--asics", "alphabet--anthropic--equity"],
+  "observations": [],
+  "events": [
+    {
+      "date": "2026-04-06",
+      "title": "Anthropic, Google, Broadcom announce ~3.5GW TPU expansion from 2027",
+      "impact": "high",
+      "entities": ["anthropic", "broadcom", "alphabet"],
+      "sources": [{ "url": "https://www.cnbc.com/2026/04/06/broadcom-agrees-to-expanded-chip-deals-with-google-anthropic.html", "publisher": "CNBC", "published": "2026-04-06", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute", "publisher": "Anthropic", "published": "2026-04", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2026/04/06/broadcom-agrees-to-expanded-chip-deals-with-google-anthropic.html", "publisher": "CNBC", "published": "2026-04-06", "kind": "press" },
+    { "url": "https://www.tomshardware.com/tech-industry/broadcom-expands-anthropic-deal-to-3-5gw-of-google-tpu-capacity-from-2027", "publisher": "Tom's Hardware", "published": "2026-04", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

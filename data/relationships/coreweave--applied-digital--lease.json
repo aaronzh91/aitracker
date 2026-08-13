@@ -6,7 +6,7 @@
   "status": "active",
   "headline": { "value": 11, "unit": "USD_B", "caveat": "~$11B total anticipated contract revenue across 400MW at Polaris Forge 1 (Ellendale, ND): two ~15-year leases (~$7B, May 2025) plus a 150MW expansion (Aug 2025). Press estimates including options range up to ~$16B; campus designed to scale to 1GW.", "as_of": "2025-08-29" },
   "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "First 100MW building reached ready-for-service Q4 2025; second building mid-2026; rent flowing but cumulative amounts not broken out.", "as_of": "2026-08-13" },
-  "term": { "announced": "2025-05", "start": "2025-Q4", "end": null, "duration_years": 15 },
+  "term": { "announced": "2025-05", "start": "2025-10", "end": null, "duration_years": 15 },
   "nature_md": "CoreWeave leases 400MW of critical IT capacity across ~15-year leases at Applied Digital's Polaris Forge 1 campus in Ellendale, North Dakota (~$11B anticipated contract revenue; first building RFS Q4 2025, second mid-2026, third by 2027). Applied Digital builds and owns the powered shells; CoreWeave installs its GPU fleet and resells capacity — much of it ultimately serving OpenAI and other lab contracts, making this a load-bearing link in the compute sublease chain.",
   "accounting": {
     "payer_treatment_md": "CoreWeave capitalizes leases as ROU assets/lease liabilities (adding to its ~$30B debt-plus-lease stack) and expenses rent through cost of revenue against contracted customer commitments.",

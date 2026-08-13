@@ -1,0 +1,34 @@
+{
+  "id": "mgx--openai--equity",
+  "from": "mgx",
+  "to": "openai",
+  "type": "equity_investment",
+  "status": "completed",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "MGX's individual check is undisclosed. It co-led OpenAI's $122B round (closed Mar 31, 2026, $852B post-money) from its $49B AI fund (closed Jul 1, 2026), alongside NVIDIA ($30B), Amazon ($50B), and SoftBank ($30B).", "as_of": "2026-03-31" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "Funded at the round's close; amount not broken out. MGX also holds earlier OpenAI exposure (2024 round, Stargate JV equity).", "as_of": "2026-08-13" },
+  "term": { "announced": "2026-02", "start": "2026-03-31", "end": null, "duration_years": null },
+  "nature_md": "Abu Dhabi's MGX co-led OpenAI's $122B round (closed Mar 31, 2026 at $852B post-money) with an undisclosed commitment from its $49B dedicated AI fund — the largest sovereign AI vehicle on record. MGX is OpenAI's most consequential sovereign backer across multiple layers: direct equity (2024 and 2026 rounds), Stargate LLC JV equity, and Stargate UAE infrastructure. Its H1-2026 run also included co-leads in Anthropic's $30B round and xAI's $20B Series E — one state fund holding equity in all three frontier labs simultaneously.",
+  "accounting": {
+    "payer_treatment_md": "MGX books a private-market equity position at fund level (state fund; no public accounts). Its cross-lab portfolio means correlated mark-to-market exposure to the entire frontier-lab asset class.",
+    "payee_treatment_md": "OpenAI books equity financing — no revenue, no liability; sovereign proceeds co-fund the compute purchases (Oracle, AWS, Stargate) recognized as revenue across its supplier base.",
+    "off_balance_sheet": false,
+    "flags": []
+  },
+  "related_edges": ["nvidia--openai--equity-2026", "microsoft--g42--equity"],
+  "both_sides_md": "**Bull:** patient sovereign capital with 30-year horizons is the natural holder of pre-IPO frontier-lab equity, and Gulf capital comes bundled with power-rich land for inference buildout. **Bear:** undisclosed check sizes from state funds concentrated across all three rival labs blur price discovery — round marks set partly by strategic (non-financial) buyers are weak evidence of value.",
+  "observations": [],
+  "events": [
+    {
+      "date": "2026-07-01",
+      "title": "MGX closes $49B AI fund after co-leading OpenAI's $122B round",
+      "impact": "medium",
+      "entities": ["mgx", "openai"],
+      "sources": [{ "url": "https://www.cnbc.com/2026/07/01/mgx-ai-fund-uae-49-billion.html", "publisher": "CNBC", "published": "2026-07-01", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.cnbc.com/2026/07/01/mgx-ai-fund-uae-49-billion.html", "publisher": "CNBC", "published": "2026-07-01", "kind": "press" },
+    { "url": "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html", "publisher": "CNBC", "published": "2026-03-31", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

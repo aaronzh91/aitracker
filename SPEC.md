@@ -22,6 +22,8 @@ The ambition is Wikipedia-grade trust applied to a domain currently dominated by
 | Regulators / policy | Aggregate exposures, off-balance-sheet structures, private-credit and private-equity linkages, systemic risks |
 | Journalists / public | A verifiable, high-trust, open-source map that replaces and grounds contradictory claims and opinions on social media with sourced facts |
 
+**Cross-cutting use case (all audiences):** discovery, visualization, and in-depth understanding of **key supply-chain bottlenecks** — the chokepoints (advanced packaging, HBM, EUV, transformers, turbines, grid interconnection, electrical labor, power itself) where capacity constraints set the pace of the entire buildout, pricing power concentrates, and shocks originate. Bottlenecks are a first-class concept in the data model (§3.6), the graph (§4.1), dedicated pages (§4.5), and analytics (§5).
+
 **Coverage universe:** all systemically connected AI-ecosystem companies — hyperscalers, labs, chips, the full physical supply chain (power, electrical, cooling, construction), neoclouds and data-center operators, financiers, application-software incumbents with material AI businesses, and key international players including China — plus **any AI-native company with ≥$1B valuation or ≥$100M revenue**. Target scale: ~500 entities (tiered by coverage depth, §9).
 
 **In scope (revised from v0.1):** near-real-time market data (prices/market caps via API Ninjas). **Non-goals (v1):** investment advice, price targets or recommendations, tick-level trading data (we show current quotes, not a trading terminal), paywalled content.
@@ -145,6 +147,33 @@ Dated occurrences (deal announced, tranche funded, filing published, guidance ch
 - `spv_shift` — capex moved off balance sheet into a JV/SPV the company still effectively controls or guarantees
 - `collateralized_gpu_debt` — borrowing secured by chips whose resale value depends on the same demand cycle
 
+### 3.6 Bottleneck (`data/bottlenecks/<id>.json`)
+
+A named supply-chain chokepoint — a capacity, component, or resource constraint through which a large share of the ecosystem's buildout must pass. First-class records, because bottlenecks are where pricing power concentrates and where shocks originate, and no general-purpose financial source models them explicitly.
+
+```jsonc
+{
+  "id": "cowos-advanced-packaging",
+  "name": "CoWoS / advanced packaging capacity",
+  "group": "compute_supply_chain",        // which layer of the stack it sits in
+  "status": "binding",                    // binding | easing | watch | resolved
+  "description_md": "…what it is, why it constrains the whole chain…",
+  "controlled_by": [                      // who owns the capacity, with shares
+    { "entity": "tsmc", "share": { "value": 0.9, "basis": "press_reported", "source": {…} } }
+  ],
+  "dependents": [                         // who needs it, quantified where possible
+    { "entity": "nvidia", "dependency_md": "all Blackwell/Rubin output routes through …" }
+  ],
+  "metrics": [ /* Observations: capacity, utilization, lead_time_months, price_trend, expansion_pipeline */ ],
+  "substitutes_md": "…alternatives, switching costs, time-to-qualify…",
+  "downcycle_md": "…what a demand fall does here (glut dynamics, contract quality)…",
+  "events": [ /* dated capacity announcements, shortages, price moves */ ],
+  "sources": [ /* … */ ]
+}
+```
+
+Bottlenecks link entities and edges: a bottleneck's `controlled_by` entities gain a "controls bottleneck" badge, and supply edges that transit a bottleneck reference it — so the graph can answer "what share of AI capex passes through nodes with <3 qualified suppliers?"
+
 ## 4. Product surfaces
 
 ### 4.1 Home page
@@ -174,7 +203,7 @@ Sortable/filterable by category, group, region, and tier; a row expands to show 
 - **Hover node →** card: name, category, market cap, AI revenue, capex, top 3 counterparties, "open page →".
 - **Hover edge →** card: payer → payee, type, headline vs. realized value, one-line accounting treatment each side, circularity flags, "open page →".
 - **Click** node/edge → its dedicated page.
-- **Controls:** filter by edge type and category; minimum-flow slider; **"show circular flows"** toggle that dims everything except detected cycles and colors each cycle; **"follow the money"** mode — click a node, see all inbound/outbound paths to N hops with cumulative dollars.
+- **Controls:** filter by edge type and category; minimum-flow slider; **"show circular flows"** toggle that dims everything except detected cycles and colors each cycle; **"follow the money"** mode — click a node, see all inbound/outbound paths to N hops with cumulative dollars; **"bottleneck lens"** — overlays the named chokepoints (§3.6): nodes controlling a bottleneck get a distinct ring, edges transiting one thicken, and clicking a bottleneck highlights its full dependency subtree (everyone upstream and downstream of, say, CoWoS capacity or HBM supply).
 - **Layout:** force-directed (D3) with group gravity wells so the picture is stable week-to-week (hyperscalers center-left, labs center, chips right, financiers bottom, energy/physical-infra as an outer ring); positions seeded deterministically so the map doesn't reshuffle every visit — recognizability builds trust.
 - **Scale handling (~500 nodes):** default view renders Tier 1 nodes + edges above a flow threshold (legible, ~60 nodes); "expand" controls add tiers/categories/regions progressively; search jumps to any node with its ego-network. Full-graph mode exists but is a deliberate choice, not the landing state.
 - **Mobile fallback:** the graph degrades to a ranked edge list.
@@ -213,7 +242,21 @@ Labeled analysis, separate from data pages. Launch set:
 - **Off-balance-sheet structures.** SPVs/JVs mapped, who bears residual asset risk.
 - **Methodology** + **Glossary** (RPO, take-or-pay, equity method, vendor financing, residual value guarantee…) + **Sources & corrections policy**.
 
-### 4.5 Changelog (`/changelog`)
+### 4.5 Bottleneck pages (`/bottlenecks`, `/bottlenecks/<id>`)
+
+The index ranks the named chokepoints by status (binding / easing / watch) with a one-glance card each: what it is, who controls it, headline metric (lead time, utilization, share). Each bottleneck page gives the in-depth understanding:
+
+1. **What it is and why it binds** — plain-language explanation of the constraint mechanism.
+2. **Who controls it** — capacity holders with market shares, sourced; their pricing-power evidence (price trends, margin trends).
+3. **Who depends on it** — quantified dependency list linking to entity pages; "what share of announced buildout routes through here."
+4. **Current state** — lead times, capacity, utilization, expansion pipeline with dates (time-series where we have it).
+5. **Substitutes & switching** — alternatives, qualification timelines, real switching costs.
+6. **Downcycle behavior** — what happens here if demand falls (which contracts protect capacity holders, where gluts form first).
+7. Timeline of events + sources.
+
+Launch registry (seed, hand-built; census research feeds the numbers): EUV lithography (ASML); leading-edge foundry capacity (TSMC N3/N2); CoWoS/advanced packaging; HBM supply (SK Hynix/Micron/Samsung); ABF substrates; 800G+ optics; grid interconnection queues; large power transformers & switchgear (multi-year lead times); gas turbines (GE Vernova/Siemens Energy/Mitsubishi backlogs); electrical construction labor (the Comfort Systems/Quanta class); data-center shells/land/water/permits; nuclear/SMR timelines.
+
+### 4.6 Changelog (`/changelog`)
 
 Weekly digest, one entry per update run: new/changed edges, new filings ingested, metric revisions, corrections. Doubles as an RSS/email artifact later. This page is what makes "live" credible.
 
@@ -226,6 +269,7 @@ Pure TypeScript, runs at build; outputs derived JSON the site renders. All formu
 3. **Concentration metrics:** top-1/top-3 counterparty share of revenue and of RPO.
 4. **Commitment coverage:** for net spenders (OpenAI et al.): total committed obligations vs. identified funding capacity — the "who pays for all this?" number.
 5. **Contagion propagation:** shock vector → iterate flows with per-edge pass-through coefficients derived from contract type; parameters user-adjustable in the UI, defaults documented.
+6. **Bottleneck analytics:** supplier-concentration measures per input category (HHI, top-supplier share); single-/dual-source dependency detection from the supply edges; criticality score per bottleneck = share of tracked buildout capex that transits it; cross-check that every structurally detected concentration has (or explicitly declines) a bottleneck record.
 
 ## 6. Architecture & stack
 
@@ -452,9 +496,9 @@ What exists today (surveyed Aug 2026):
 | Phase | Scope | Exit criterion |
 |---|---|---|
 | **0 — Spec** (this doc) | Align on design & decisions | Core decisions ratified (§14) — done |
-| **1 — Foundation** | Schemas; open-source scaffolding (LICENSE, CONTRIBUTING, GOVERNANCE, CODEOWNERS, PR/issue templates, validation CI); Tier-1 seed dataset (~60 entities, ~80 edges, hand-built, fully sourced) + Tier-2/3 identity cards from the census (§9); Astro site: home table + graph + company pages + relationship pages + methodology stub | Site deployed; every number sourced; a stranger can open a valid data PR |
+| **1 — Foundation** | Schemas; open-source scaffolding (LICENSE, CONTRIBUTING, GOVERNANCE, CODEOWNERS, PR/issue templates, validation CI); Tier-1 seed dataset (~60 entities, ~80 edges, hand-built, fully sourced) + Tier-2/3 identity cards from the census (§9); seed bottleneck registry (~12 records, §4.5); Astro site: home table + graph + company pages + relationship pages + bottleneck pages + methodology stub | Site deployed; every number sourced; a stranger can open a valid data PR |
 | **2 — Live** | Ingest scripts (EDGAR, API Ninjas, Epoch), OpenRouter news-triage pipeline, weekly Routine wired up (PR-based editorial flow), changelog page | Three consecutive Saturday cycles: mechanical auto-merge + editorial PR reviewed and merged |
-| **3 — Analytics** | Cycle detection, revenue-quality decomposition live on the table, interactive contagion stress test, insights essays, depreciation lens | Contagion explorer public; methodology page complete |
+| **3 — Analytics** | Cycle detection, revenue-quality decomposition live on the table, interactive contagion stress test, bottleneck concentration analytics + graph lens, insights essays, depreciation lens | Contagion explorer public; methodology page complete |
 | **4 — Scale & trust** | Tier-2 coverage to ~200 entities with automated fundamentals; Tier-3 to ~500; RSS/email digest; custom domain; maintainer ladder activated | First outside contribution merged; first non-owner maintainer appointed |
 
 ## 14. Decision log & remaining open items
@@ -469,6 +513,7 @@ What exists today (surveyed Aug 2026):
 6. **Weekly run** — scheduled session, Saturdays 8pm ET (UTC-anchored cron; 7pm ET in winter). ✓
 7. **Open source** — from day one; owner as initial sole reviewer/approver, maintainer ladder as it scales (§12). ✓
 8. **Market data** — API Ninjas (owner-supplied key); **news/web extraction** — cheap OpenRouter models (owner-supplied key), quality-first configuration (§8). ✓
+9. **Supply-chain bottlenecks** — discovery, visualization, and in-depth understanding of key chokepoints added as a core cross-audience use case: first-class records (§3.6), graph lens (§4.1), dedicated pages (§4.5), concentration analytics (§5). ✓
 
 **Still open:**
 

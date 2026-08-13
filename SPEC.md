@@ -339,7 +339,7 @@ Pipeline principle: EDGAR is the backbone of record for public companies; Epoch 
 
 ## 9. Seed dataset (launch universe)
 
-Ratified scope: **~500 entities**, tiered per §3.1. The full census — including the physical-infrastructure supply chain (electrical equipment, cooling, power, engineering & construction labor), China and international players, application-software incumbents, and AI-natives meeting the $1B/$100M threshold — lives in [`UNIVERSE.md`](./UNIVERSE.md), which is the working document that becomes Tier-2/3 entity records in Phase 1.
+Ratified scope: **~500 entities**, tiered per §3.1. The full census — **~470 entities compiled Aug 13, 2026** spanning AI-natives at the $1B/$100M threshold (~140), the physical-infrastructure and compute supply chains (~155), energy (~35), data-center operators and miners-turned-AI (~20), software incumbents (~23), and China/international (~100) — lives in [`UNIVERSE.md`](./UNIVERSE.md), which is the working document that becomes Tier-2/3 entity records in Phase 1.
 
 This section lists the **Tier-1 core**: the entities and edges that get full hand-built treatment first, compiled from live research on Aug 13, 2026. Values are headline figures; the data files will carry the committed/realized distinction, accounting treatment, and citations.
 

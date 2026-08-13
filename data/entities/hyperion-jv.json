@@ -1,0 +1,83 @@
+{
+  "id": "hyperion-jv",
+  "name": "Hyperion JV (Meta / Blue Owl — Beignet Investor LLC)",
+  "kind": "spv_jv",
+  "category": "spv_jv",
+  "group": "capital",
+  "region": "us",
+  "tier": 1,
+  "cik": null,
+  "website": null,
+  "monetization": "Bankruptcy-remote joint venture that owns Meta's Hyperion data-center campus in Richland Parish, Louisiana; monetizes via Meta's lease payments, which service $27.3B of amortizing A+ notes — Meta's largest capex project, moved off its balance sheet.",
+  "description_md": "The Hyperion JV is the October 2025 joint venture between Meta (20%) and funds managed by Blue Owl Capital (80%) that owns and develops the Hyperion AI data-center campus in Richland Parish, Louisiana — Meta's largest data-center project. It was financed through Beignet Investor LLC, a bankruptcy-remote SPV that issued a single $27.294B 144A-for-life senior secured, fully amortizing bond, priced at par on October 16, 2025 with a 6.581% fixed coupon (reported ~+225bp over Treasuries), quarterly pay, expected final maturity May 30, 2049, rated A+ by S&P — one notch below Meta's own rating. Roughly $2.5B of JV equity sits beneath the notes, and Meta received a one-time distribution of ~$3B at close. PIMCO anchored the bond with ~$18B; BlackRock took >$3B.",
+  "ai_monetization_md": "Cash flows in from one source: Meta's lease commitments for the campus, which service the notes. Two-sided accounting: Meta treats the JV as an unconsolidated variable-interest entity (Meta is not deemed the primary beneficiary), so neither the $27B+ of debt nor the assets appear on Meta's balance sheet — Meta records its 20% under the equity method plus lease obligations as they arise. The JV/noteholders' protection is structural: senior security over the campus, full amortization, and a Meta residual-value guarantee for the first 16 years of operations — a capped cash payment based on the campus's then-current value if leases are not renewed or are terminated under certain conditions. The ~$3B distribution to Meta at close means Meta extracted cash up front while retaining operational use of the asset.",
+  "risk_notes_md": "The consolidation judgment is the central controversy (`spv_shift` pattern): in February 2026, auditor EY flagged Meta's off-balance-sheet treatment of the JV as a critical audit matter, citing the high degree of judgment in concluding Meta is not the primary beneficiary — reported by WSJ and others. Economically, noteholders hold 24-year paper against a single-tenant, purpose-built AI campus: if Meta walked at a renewal window after year 16, there is no residual-value guarantee left and no obvious alternative tenant at scale. The structure is also the template being copied (El Paso at 7.53% in Jul 2026), so its performance sets the market's price for all hyperscaler SPV paper.",
+  "observations": [
+    {
+      "metric": "total_debt",
+      "metric_label": "Senior secured notes issued (Beignet Investor LLC)",
+      "period": "2025-10",
+      "value": 27.3,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "high",
+      "source": { "url": "https://www.bisnow.com/national/news/data-center-capital-markets/meta-pushes-its-largest-data-center-project-off-its-books-with-27b-joint-venture-131490", "publisher": "Bisnow", "published": "2025-10", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "$27.294B, priced at par 2025-10-16; 6.581% fixed (reported ~+225bp over Treasuries), quarterly pay, fully amortizing, expected final maturity 2049-05-30; S&P A+."
+    },
+    {
+      "metric": "other",
+      "metric_label": "JV equity beneath the notes",
+      "period": "2025-10",
+      "value": 2.5,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://pe-insights.com/blue-owl-and-meta-close-record-30bn-financing-for-ai-data-centre-expansion-in-louisiana/", "publisher": "Private Equity Insights", "published": "2025-10", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Total financing ~$30B = $27.3B notes + ~$2.5B equity; Blue Owl funds hold 80% of JV equity, Meta 20%."
+    },
+    {
+      "metric": "other",
+      "metric_label": "One-time distribution to Meta at close",
+      "period": "2025-10",
+      "value": 3,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.forbes.com/sites/shivaramrajgopal/2025/11/16/the-strange-case-of-meta/", "publisher": "Forbes", "published": "2025-11-16", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Meta received ~$3B cash while keeping 20% ownership and sole-tenant use — the feature bear analysts cite as capex-for-cash financial engineering."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-10-16",
+      "title": "Beignet Investor LLC prices $27.294B senior secured notes at 6.581%",
+      "why_it_matters": "Largest private-placement data-center bond ever; created the off-balance-sheet template (lease + residual-value guarantee + SPV notes) for the rest of the cycle.",
+      "impact": "high",
+      "entities": ["hyperion-jv", "meta", "blue-owl", "pimco", "morgan-stanley", "blackrock"],
+      "sources": [
+        { "url": "https://www.bisnow.com/national/news/data-center-capital-markets/meta-pushes-its-largest-data-center-project-off-its-books-with-27b-joint-venture-131490", "publisher": "Bisnow", "published": "2025-10", "kind": "press" },
+        { "url": "https://www.prnewswire.com/news-releases/meta-announces-joint-venture-with-funds-managed-by-blue-owl-capital-to-develop-hyperion-data-center-302590584.html", "publisher": "Meta / PR Newswire", "published": "2025-10", "kind": "company_pr" }
+      ]
+    },
+    {
+      "date": "2026-02-11",
+      "title": "EY flags Hyperion off-balance-sheet treatment as a critical audit matter",
+      "why_it_matters": "Meta's own auditor publicly marked the consolidation judgment — whether Meta is the primary beneficiary of a $27B+ vehicle it uses exclusively — as high-risk, the sharpest official challenge yet to AI SPV accounting.",
+      "impact": "high",
+      "entities": ["hyperion-jv", "meta", "blue-owl"],
+      "sources": [
+        { "url": "https://www.roic.ai/news/ey-flags-metas-27-billion-data-center-accounting-as-high-risk-amid-hyperion-expansion-02-11-2026", "publisher": "Roic News", "published": "2026-02-11", "kind": "press" },
+        { "url": "https://seekingalpha.com/news/4550750-metas-auditor-questions-decision-to-keep-27b-data-center-off-balance-sheet-report", "publisher": "Seeking Alpha (citing WSJ)", "published": "2026", "kind": "press" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Announces-Joint-Venture-with-Funds-Managed-by-Blue-Owl-Capital-to-Develop-Hyperion-Data-Center/default.aspx", "publisher": "Meta IR", "published": "2025-10", "kind": "company_ir" },
+    { "url": "https://www.bisnow.com/national/news/data-center-capital-markets/meta-pushes-its-largest-data-center-project-off-its-books-with-27b-joint-venture-131490", "publisher": "Bisnow", "published": "2025-10", "kind": "press" },
+    { "url": "https://www.forbes.com/sites/shivaramrajgopal/2025/11/16/the-strange-case-of-meta/", "publisher": "Forbes", "published": "2025-11-16", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

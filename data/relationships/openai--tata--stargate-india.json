@@ -1,0 +1,34 @@
+{
+  "id": "openai--tata--stargate-india",
+  "from": "openai",
+  "to": "tata",
+  "type": "compute_purchase",
+  "status": "contracted",
+  "headline": { "value": 100, "unit": "MW", "caveat": "initial AI-ready data-center capacity from TCS HyperVault, with a stated path/option to scale to 1GW; contract dollars undisclosed", "as_of": "2026-02-19" },
+  "realized_to_date": { "value": null, "unit": "USD_M", "caveat": "capacity being built; no payments quantified publicly", "as_of": "2026-08-13" },
+  "term": { "announced": "2026-02-19", "start": "2026", "end": null, "duration_years": null },
+  "nature_md": "Announced Feb 19, 2026 at the India AI Impact Summit: OpenAI becomes the **first customer** of Tata Consultancy Services' HyperVault data-center business, anchoring 100MW of AI-ready capacity in India with ambitions to scale to 1GW, as part of OpenAI's Stargate-branded international buildout ('OpenAI for India'). The capacity lets OpenAI's frontier models run in-country for latency, data-residency, and government/mission-critical compliance. The partnership is two-way: Tata also deploys ChatGPT Enterprise across its workforce and standardizes on OpenAI tooling for AI-native software development (a smaller reverse flow, dollars undisclosed).",
+  "accounting": {
+    "payer_treatment_md": "OpenAI pays for capacity as delivered (structure — lease vs. managed service — undisclosed). India is a top-2 ChatGPT market by users but monetizes far below US rates, so this is margin-dilutive capacity bought for strategic position.",
+    "payee_treatment_md": "Anchor-tenant revenue that launches TCS's HyperVault line; Tata carries the buildout capex. For Tata the risk is classic anchor-tenant concentration: HyperVault's initial economics depend on one foreign counterparty.",
+    "off_balance_sheet": true,
+    "flags": ["customer_concentration"]
+  },
+  "related_edges": ["openai--stargate--jv-equity", "openai--samsung--memory-loi"],
+  "observations": [],
+  "events": [
+    {
+      "date": "2026-02-19",
+      "title": "OpenAI anchors TCS HyperVault with 100MW, eyeing 1GW (Stargate India)",
+      "impact": "medium",
+      "entities": ["openai", "tata"],
+      "sources": [{ "url": "https://www.techcrunch.com/2026/02/18/openai-taps-tata-for-100mw-ai-data-center-capacity-in-india-eyes-1gw/", "publisher": "TechCrunch", "published": "2026-02-18", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.techcrunch.com/2026/02/18/openai-taps-tata-for-100mw-ai-data-center-capacity-in-india-eyes-1gw/", "publisher": "TechCrunch", "published": "2026-02-18", "kind": "press" },
+    { "url": "https://openai.com/index/openai-for-india/", "publisher": "OpenAI", "published": "2026-02", "kind": "company_pr" },
+    { "url": "https://finance.yahoo.com/news/tatas-data-centre-business-signs-030222356.html", "publisher": "Yahoo Finance / Reuters", "published": "2026-02", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

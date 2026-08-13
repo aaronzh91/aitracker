@@ -1,0 +1,101 @@
+{
+  "id": "deepseek",
+  "name": "DeepSeek (Hangzhou DeepSeek Artificial Intelligence Co.)",
+  "kind": "private_company",
+  "category": "model_lab",
+  "group": "labs_ai_native",
+  "region": "china",
+  "tier": 1,
+  "tickers": [],
+  "cik": null,
+  "website": "https://www.deepseek.com",
+  "fiscal_year_end": null,
+  "monetization": "Open-weight frontier models (V-series, R-series) monetized through ultra-cheap API pricing; historically bankrolled by founder Liang Wenfeng's High-Flyer hedge fund rather than outside capital.",
+  "description_md": "DeepSeek is the Hangzhou lab, spun out of and funded by Liang Wenfeng's quantitative hedge fund High-Flyer, whose January 2025 R1 release triggered the largest one-day market-cap loss in history (Nvidia, ~$600B) by demonstrating frontier-adjacent capability at a fraction of assumed training cost. Its April 2026 V4 family (1.6T-parameter MoE Pro; 284B Flash) was trained and served on Huawei Ascend hardware from day 0 — making DeepSeek the flagship proof of China's domestic compute stack. It open-sources weights and prices its API far below Western labs, repeatedly resetting global price-performance expectations.",
+  "ai_monetization_md": "Revenue comes from API access priced aggressively below Western labs (V4 continued the pattern of order-of-magnitude-cheaper tokens) and from the halo it provides High-Flyer; weights are open, so DeepSeek captures none of the self-hosted usage it enables. No revenue figures are disclosed and press estimates are unreliable (its consumer app had ~127M MAU in March 2026 per QuestMobile, third in China behind Doubao and Qwen). The economics were historically irrelevant by design — High-Flyer funded it as a research vehicle — which is precisely why the June 2026 reports of a $7.4B external raise at >$50B valuation mark a regime change, if accurate.",
+  "ai_strategy_md": "Maximize capability per unit of compute under export-control constraints (sparse MoE architectures, aggressive engineering), publish weights to commoditize rivals' pricing and win the global open-weights ecosystem, and anchor the domestic hardware stack (V4 day-0 on Ascend, co-optimized with Huawei). The reported 2026 funding round — led by Tencent (~$1.5B) with CATL (~$735M), structured as a Liang-controlled limited partnership with a five-year lockup and no investor voting rights except China's state AI fund — would fund scaling while preserving total founder control.",
+  "risk_notes_md": "**Valuation/funding uncertainty — confidence low:** the '>$50B valuation / $7.4B raise' reports (The Information, Jun 2026, widely re-reported) conflict with DeepSeek's documented history of refusing external capital, and the unusual LP structure means investors hold economic exposure, not equity in the operating company; the company has not confirmed the round. Record both the claims and the conflict, not a resolved fact. **Export-control frame:** DeepSeek is the demand-side anchor of the Ascend ecosystem after the H20 ban→re-license (15% USG revenue share)→B30A blockade sequence and the Jun 1, 2026 offshore-DC ban; its ceiling is now Huawei/SMIC's manufacturing ceiling. **Key-person/single-backer:** Liang Wenfeng controls research direction and (via High-Flyer/the LP) the funding; no independent governance. **Monetization:** open weights + rock-bottom API pricing may never support frontier-scale capex without state or strategic subsidy.",
+  "observations": [
+    {
+      "metric": "funding_raised",
+      "period": "2026-06 (reported round)",
+      "value": 7.4,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://www.forbes.com/sites/anishasircar/2026/06/17/deepseek-just-raised-74-billion-heres-the-catch/", "publisher": "Forbes (via The Information)", "published": "2026-06-17", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Reported first-ever external round (~RMB 50B): Tencent ~$1.5B, CATL ~$735M, others via a Liang-controlled LP (5-yr lockup, no voting rights; state AI fund invested directly with voting rights). Unconfirmed by the company; conflicts with its no-external-capital history — hence low confidence."
+    },
+    {
+      "metric": "valuation",
+      "period": "2026-06",
+      "value": 50,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://www.asiafinancial.com/chinas-deepseek-valued-at-over-50-billion-after-funding-round", "publisher": "Asia Financial", "published": "2026-06", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "'More than $50B' per reports of the same round; single primary source (The Information) behind most coverage. Treat as a claim under verification, not an established mark."
+    },
+    {
+      "metric": "other",
+      "metric_label": "V4 Pro total parameters (MoE)",
+      "period": "2026-04",
+      "value": 1.6,
+      "unit": "T parameters",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://fortune.com/2026/04/24/deepseek-v4-ai-model-price-performance-china-open-source/", "publisher": "Fortune", "published": "2026-04-24", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "V4 Pro: 1.6T total / ~49B active parameters; V4 Flash: 284B. Trained and served on Huawei Ascend from day 0; open weights; priced far below Western frontier APIs."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Consumer app monthly active users",
+      "period": "2026-03",
+      "value": 127,
+      "unit": "M users",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://finance.biggo.com/news/Fks8Cp4BDXrLZJaAbcpF", "publisher": "BigGo Finance (QuestMobile via FT)", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Third in China's AI-native apps behind ByteDance's Doubao (345M) and Alibaba's Qwen (166M), per QuestMobile Q1 2026."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-01-27",
+      "title": "R1 release triggers global AI-stock selloff; Nvidia sheds ~$600B in one day",
+      "why_it_matters": "Established that training-cost assumptions underpinning Western capex could be wrong — the single largest market event of the AI cycle to that date, and DeepSeek's entry into systemic relevance.",
+      "impact": "high",
+      "entities": ["deepseek", "nvidia"],
+      "sources": [{ "url": "https://www.cnbc.com/2025/01/27/nvidia-sheds-almost-600-billion-in-market-cap-biggest-drop-ever.html", "publisher": "CNBC", "published": "2025-01-27", "kind": "press" }]
+    },
+    {
+      "date": "2026-04-24",
+      "title": "V4 launches: 1.6T-parameter MoE, trained and served on Huawei Ascend from day 0",
+      "why_it_matters": "Decoupled China's flagship open-weight lab from Nvidia hardware entirely, validating the domestic stack under export controls and again undercutting global API pricing.",
+      "impact": "high",
+      "entities": ["deepseek", "huawei"],
+      "sources": [{ "url": "https://fortune.com/2026/04/24/deepseek-v4-ai-model-price-performance-china-open-source/", "publisher": "Fortune", "published": "2026-04-24", "kind": "press" }]
+    },
+    {
+      "date": "2026-06",
+      "title": "First external funding reported: ~$7.4B at >$50B valuation via LP structure (unconfirmed)",
+      "why_it_matters": "If accurate, ends the High-Flyer-only funding era while preserving Liang's control through a no-voting-rights LP; reporting rests largely on one outlet and conflicts with the lab's history — recorded at low confidence.",
+      "impact": "high",
+      "entities": ["deepseek", "tencent"],
+      "sources": [
+        { "url": "https://www.siliconrepublic.com/business/the-information-deepseek-raises-7-4bn-at-50bn-plus-valuation", "publisher": "Silicon Republic (via The Information)", "published": "2026-06", "kind": "press" },
+        { "url": "https://www.forbes.com/sites/anishasircar/2026/06/17/deepseek-just-raised-74-billion-heres-the-catch/", "publisher": "Forbes", "published": "2026-06-17", "kind": "press" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://fortune.com/2026/04/24/deepseek-v4-ai-model-price-performance-china-open-source/", "publisher": "Fortune", "kind": "press" },
+    { "url": "https://the-decoder.com/deepseek-takes-outside-money-for-the-first-time-at-a-50-billion-valuation/", "publisher": "The Decoder", "published": "2026-06", "kind": "press" },
+    { "url": "https://www.aljazeera.com/economy/2026/6/1/us-says-ban-on-ai-chip-shipments-applies-to-chinese-firms-outside-china", "publisher": "Al Jazeera", "kind": "press", "notes": "Export-control frame relevant to DeepSeek's Ascend dependence." }
+  ],
+  "updated": "2026-08-13"
+}

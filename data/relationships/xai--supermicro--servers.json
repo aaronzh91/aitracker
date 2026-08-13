@@ -1,0 +1,27 @@
+{
+  "id": "xai--supermicro--servers",
+  "from": "xai",
+  "to": "supermicro",
+  "type": "hardware_purchase",
+  "status": "active",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "Current order value undisclosed. Supermicro built roughly half of the original Colossus racks and supplies GB300 NVL72 racks for Colossus 2 — after xAI had shifted ~$6B of orders to Dell during Supermicro's 2024-25 accounting/DOJ turmoil, later restoring SMCI as a second-source supplier.", "as_of": "2026" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "Colossus 1 deliveries (H100/H200, GB200 era) plus ongoing GB300 racks; neither party discloses totals.", "as_of": "2026-08-13" },
+  "term": { "announced": "2024", "start": "2024", "end": null, "duration_years": null },
+  "nature_md": "Supermicro is one of two rack suppliers (with Dell) for xAI's Colossus supercomputers, having built liquid-cooled racks for the original 100K-GPU cluster and now supplying NVIDIA GB300 NVL72 racks for Colossus 2. The relationship survived a near-death moment: xAI reportedly shifted ~$6B of orders to rivals when Supermicro faced auditor resignation and a DOJ probe (late 2024), then resumed orders as SMCI stabilized — xAI deliberately dual-sources its rack supply. Direct-to-chip liquid cooling co-engineering is the differentiator SMCI retained.",
+  "accounting": {
+    "payer_treatment_md": "xAI capitalizes rack purchases as compute infrastructure (or via GPU-leasing SPV structures), depreciated over 4-6 years; split-sourcing between Dell and SMCI is a supply-risk hedge, not a financial structure.",
+    "payee_treatment_md": "Supermicro books hardware revenue on delivery; xAI is among its largest single accounts (FY25 revenue ~$22B, 70%+ AI — figures partly UNVERIFIED given its restatement history), making order-shift headlines highly market-moving for SMCI.",
+    "off_balance_sheet": false,
+    "flags": ["customer_concentration"]
+  },
+  "related_edges": ["xai--dell--servers", "xai--solaris-energy--power-jv"],
+  "both_sides_md": "**Bull:** SMCI's liquid-cooling lead and build speed won xAI back despite governance scars — capability trumped credit concerns. **Bear:** the ~$6B order shift showed how fast this revenue evaporates on counterparty doubt, in both directions; concentration cuts against SMCI whenever xAI's capital raising stumbles.",
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.supermicro.com/en/featured/xai-colossus", "publisher": "Supermicro", "kind": "company_pr" },
+    { "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/elon-musks-xai-reportedly-shifts-usd6-billion-ai-server-order-from-troubled-supermicro-to-its-rivals", "publisher": "Tom's Hardware", "kind": "press" },
+    { "url": "https://www.datacenterdynamics.com/en/news/dell-and-super-micro-computer-to-provide-server-racks-for-xai-supercomputer/", "publisher": "Data Center Dynamics", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

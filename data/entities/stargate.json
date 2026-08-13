@@ -1,0 +1,93 @@
+{
+  "id": "stargate",
+  "name": "Stargate LLC",
+  "kind": "spv_jv",
+  "category": "spv_jv",
+  "group": "capital",
+  "region": "us",
+  "tier": 1,
+  "cik": null,
+  "website": null,
+  "monetization": "Joint venture that raises and deploys capital to build OpenAI-dedicated AI data centers in the US; economics flow from OpenAI's long-term compute offtake at JV-financed sites — a capital-projects vehicle, not an operating-revenue business.",
+  "description_md": "Stargate LLC is the joint venture announced at the White House on January 21, 2025 to invest $500B over four years building 10GW of AI infrastructure for OpenAI in the United States. Ownership per press reports: SoftBank ~40% and OpenAI ~40%, with Oracle and MGX holding the remaining ~20% between them; initial commitments were ~$19B each from SoftBank and OpenAI and ~$7B each from Oracle and MGX within a first $100B tranche. SoftBank carries financial responsibility (Masayoshi Son chairs the venture); OpenAI carries operational responsibility. The flagship Abilene, TX campus (1.2GW, developed with Crusoe/Blue Owl/Primary Digital and leased through Oracle) has been partially operational since September 2025, with additional sites announced across New Mexico, Ohio, Texas, Wisconsin, Michigan and elsewhere. International 'Stargate' projects (UAE with G42, India with TCS, UK, Norway) are separately structured offshoots, not part of Stargate LLC.",
+  "ai_monetization_md": "Stargate itself does not sell AI — it is the financing and development shell through which partner capital becomes OpenAI compute capacity. Money in: partner equity (SoftBank, OpenAI, Oracle, MGX) plus site-level project debt (e.g., JPMorgan-led $2.3B and $7.1B Abilene construction loans; the $38B Vantage package and $16.3B Saline Township financing fund Oracle-leased Stargate-serving sites). Money out: construction capex to developers (Crusoe, Vantage, Related Digital) and equipment purchases. The return path runs entirely through OpenAI's willingness and ability to pay for compute at these sites — largely via Oracle as intermediary lessee.",
+  "ai_strategy_md": "By September 2025 OpenAI announced five new sites bringing planned capacity to nearly 7GW and >$400B of investment 'over the next three years'; by early 2026 press accounts put the program at over $400B 'in motion' and >8GW toward the full $500B/10GW target. The strategy is speed: pre-committing partner capital and standing sites up through developer JVs rather than waiting for OpenAI's own cash flows.",
+  "risk_notes_md": "Committed ≠ funded: the $500B target and '>$400B in motion' figures mix equity commitments, project debt in syndication, and announced intentions; site-level SPV capital stacks are mostly undisclosed. The venture concentrates single-tenant risk on OpenAI — a pre-profit company — with SoftBank funding its share substantially through debt (including loans against its OpenAI stake). Ownership percentages are press-reported, not filed. Several 2026 financings for Stargate-serving sites cleared only after bank retrenchment (Saline Township), and Blue Owl withdrew from one (Dec 2025).",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Headline investment target",
+      "period": "2025-01",
+      "value": 500,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://openai.com/index/announcing-the-stargate-project/", "publisher": "OpenAI", "published": "2025-01-21", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "$500B over four years for 10GW; $100B 'deployed immediately' at announcement. Target, not funded capital."
+    },
+    {
+      "metric": "capacity_gw",
+      "metric_label": "Capacity target",
+      "period": "2025-01",
+      "value": 10,
+      "unit": "GW",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://openai.com/index/announcing-the-stargate-project/", "publisher": "OpenAI", "published": "2025-01-21", "kind": "company_pr" },
+      "as_of": "2026-08-13"
+    },
+    {
+      "metric": "other",
+      "metric_label": "Investment announced/'in motion'",
+      "period": "2025-09",
+      "value": 400,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://openai.com/index/five-new-stargate-sites/", "publisher": "OpenAI", "published": "2025-09-23", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "OpenAI: >$400B over three years / ~7GW planned as of Sep 2025; press accounts by Feb 2026 put it at >8GW with >$400B of the $500B 'in play'. Mixes commitments, debt in syndication, and announcements — not money spent."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Initial partner equity commitments (first tranche)",
+      "period": "2025-01",
+      "value": 52,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.spglobal.com/market-intelligence/en/news-insights/research/softbabnk-openai-oracle-and-mgx-commit-to-100b-for-stargate-ai-infrastructure", "publisher": "S&P Global Market Intelligence", "published": "2025", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "~$19B each SoftBank/OpenAI + ~$7B each Oracle/MGX; equity split ~40/40/20 per press. LLC capital structure is not publicly filed."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-01-21",
+      "title": "Stargate announced: $500B/10GW JV of SoftBank, OpenAI, Oracle, MGX",
+      "why_it_matters": "Created the largest single capital-formation vehicle of the AI cycle and the template for lab-dedicated infrastructure JVs.",
+      "impact": "high",
+      "entities": ["stargate", "softbank", "openai", "oracle", "mgx"],
+      "sources": [
+        { "url": "https://openai.com/index/announcing-the-stargate-project/", "publisher": "OpenAI", "published": "2025-01-21", "kind": "company_pr" },
+        { "url": "https://group.softbank/en/news/press/20250122", "publisher": "SoftBank Group", "published": "2025-01-22", "kind": "company_pr" }
+      ]
+    },
+    {
+      "date": "2025-09-23",
+      "title": "Five new US sites announced; ~7GW and >$400B claimed",
+      "why_it_matters": "Declared the program ahead of schedule on its full $500B/10GW commitment, shifting the question from ambition to funding execution.",
+      "impact": "high",
+      "entities": ["stargate", "openai", "oracle", "softbank"],
+      "sources": [{ "url": "https://openai.com/index/five-new-stargate-sites/", "publisher": "OpenAI", "published": "2025-09-23", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://openai.com/index/announcing-the-stargate-project/", "publisher": "OpenAI", "published": "2025-01-21", "kind": "company_pr" },
+    { "url": "https://openai.com/index/five-new-stargate-sites/", "publisher": "OpenAI", "published": "2025-09-23", "kind": "company_pr" },
+    { "url": "https://www.spglobal.com/market-intelligence/en/news-insights/research/softbabnk-openai-oracle-and-mgx-commit-to-100b-for-stargate-ai-infrastructure", "publisher": "S&P Global Market Intelligence", "kind": "analyst" },
+    { "url": "https://en.wikipedia.org/wiki/Stargate_LLC", "publisher": "Wikipedia", "kind": "other", "notes": "Ownership split cross-reference; secondary source." }
+  ],
+  "updated": "2026-08-13"
+}

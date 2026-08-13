@@ -1,0 +1,25 @@
+{
+  "id": "nvidia--samsung--hbm",
+  "from": "nvidia",
+  "to": "samsung",
+  "type": "supply_agreement",
+  "status": "active",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "Contract dollars undisclosed. Samsung supplies HBM to NVIDIA as the third vendor — a smaller allocation than SK Hynix/Micron after repeated HBM3E qualification delays; HBM4 qualification restored it to the Rubin-generation supply pool.", "as_of": "2026" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "Deliveries ongoing (HBM3E in China-bound and select SKUs earlier; HBM4 ramping 2026); customer-level figures undisclosed.", "as_of": "2026-08-13" },
+  "term": { "announced": null, "start": null, "end": null, "duration_years": null },
+  "nature_md": "Multi-year HBM supply from Samsung to NVIDIA — historically the lagging qualifier (HBM3E passed NVIDIA qualification late after yield/thermal issues), with HBM4 bringing Samsung back into the allocation mix for the Rubin generation alongside its 1c-DRAM ramp. Volumes and pricing undisclosed; industry-wide HBM is sold out through 2026 and Samsung + SK Hynix are separately parties to OpenAI's Stargate memory LOI (up to 900K DRAM wafers/mo by 2029). Samsung's NVIDIA relationship spans HBM supply, foundry competition (vs TSMC), and its own Anthropic-round investment — multi-directional exposure.",
+  "accounting": {
+    "payer_treatment_md": "NVIDIA books HBM purchases in COGS on delivery; second/third-source allocation is a deliberate de-risking strategy against SK Hynix concentration, worth paying qualification overhead for.",
+    "payee_treatment_md": "Samsung's memory division books revenue on delivery under LTAs; regaining NVIDIA HBM4 qualification was the swing factor in its 2026 memory-margin recovery. Customer-level disclosure is nil.",
+    "off_balance_sheet": true,
+    "flags": ["customer_concentration"]
+  },
+  "related_edges": ["nvidia--sk-hynix--hbm", "nvidia--micron--hbm", "tesla--samsung--foundry"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.kedglobal.com/korean-chipmakers/newsView/ked202602100002", "publisher": "KED Global", "published": "2026-02", "kind": "press", "notes": "Samsung HBM4 qualification/allocation reporting; single-outlet Korean supply-chain sourcing — treat allocation details as medium-low confidence." },
+    { "url": "https://openai.com/index/samsung-and-sk-join-stargate/", "publisher": "OpenAI", "published": "2025-10", "kind": "company_pr", "notes": "Separate Stargate memory LOI context." }
+  ],
+  "updated": "2026-08-13"
+}

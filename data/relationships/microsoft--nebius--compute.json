@@ -1,0 +1,25 @@
+{
+  "id": "microsoft--nebius--compute",
+  "from": "microsoft",
+  "to": "nebius",
+  "type": "compute_purchase",
+  "status": "active",
+  "headline": { "value": 17.4, "unit": "USD_B", "caveat": "five-year base contract (Sep 2025); rises to $19.4B if Microsoft takes additional services and capacity", "as_of": "2025-09" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "capacity delivering from Nebius's Vineland, NJ data center; billed amounts not disclosed" },
+  "term": { "announced": "2025-09-08", "start": "2025", "end": "2031", "duration_years": 5 },
+  "nature_md": "Five-year, $17.4B dedicated GPU-capacity agreement (announced Sep 8, 2025) — the deal that validated Nebius as a top-tier neocloud, sending its shares up ~50%. Microsoft gets dedicated capacity from Nebius's new Vineland, New Jersey facility as Azure AI demand outruns Microsoft's own buildout; the value can rise to $19.4B with additional services and capacity. Nebius said it would finance the buildout partly with debt secured against the contract — committed hyperscaler revenue converted directly into borrowing capacity.",
+  "accounting": {
+    "payer_treatment_md": "Committed capacity purchases expensed as consumed (Azure cost of revenue); a purchase commitment in footnotes rather than capex — capacity without owning the asset.",
+    "payee_treatment_md": "Anchor of Nebius's ~$46B contracted backlog (with Meta's up-to-$27B); explicitly used as collateral for debt financing of the capex program ($16–20B guided for 2026). Single-customer concentration on the realized-revenue side until Meta deliveries begin in 2027.",
+    "off_balance_sheet": false,
+    "flags": ["customer_concentration"]
+  },
+  "related_edges": ["meta--nebius--compute", "nvidia--nebius--equity", "microsoft--coreweave--compute"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.datacenterdynamics.com/en/news/microsoft-to-use-nebius-gpu-data-centers-in-deal-worth-174bn-over-five-years/", "publisher": "Data Center Dynamics", "published": "2025-09", "kind": "press" },
+    { "url": "https://www.techrepublic.com/article/news-microsoft-signs-nebius-cloud-deal/", "publisher": "TechRepublic", "published": "2025-09", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "bank-of-america--openai--credit-2026",
+  "from": "bank-of-america",
+  "to": "openai",
+  "type": "credit_facility",
+  "status": "active",
+  "headline": { "value": 520, "unit": "USD_M", "caveat": "bilateral credit line — OpenAI's first from a single bank", "as_of": "2026-07-08" },
+  "realized_to_date": { "value": null, "unit": "USD_M", "caveat": "drawn amount undisclosed; a line, not a funded term loan", "as_of": "2026-08-13" },
+  "term": { "announced": "2026-07", "start": "2026-06", "end": null, "duration_years": null },
+  "nature_md": "In mid-2026 Bank of America extended OpenAI a $520M bilateral credit line — the first single-bank loan to the company, and a reversal after BofA declined OpenAI's financing requests roughly a year earlier. Bloomberg framed the U-turn explicitly as relationship banking ahead of OpenAI's planned US IPO (confidentially filed; >$1T valuation targeted per Reuters): early lending buys visibility into cash needs and positions the bank for underwriting and advisory mandates at both OpenAI and Anthropic. Small in dollars by this dataset's standards, large as a signal — regulated bank balance sheets beginning to take direct, uncollateralized AI-lab credit exposure.",
+  "accounting": {
+    "payer_treatment_md": "For BofA: a loan commitment — undrawn portions are off-balance-sheet commitments (earning fees), drawn amounts become C&I loans. Adds to the banking system's AI-adjacent C&I exposure the Chicago Fed sized at ~25% of Tier 1 capital commitments.",
+    "payee_treatment_md": "For OpenAI: drawn balances are debt; the facility diversifies liquidity away from equity megarounds and prepayments. Terms (pricing, covenants, security) undisclosed.",
+    "off_balance_sheet": true,
+    "flags": []
+  },
+  "related_edges": ["softbank--openai--equity", "amazon--openai--equity-2026"],
+  "observations": [],
+  "events": [
+    {
+      "date": "2026-07-08",
+      "title": "Bloomberg reports BofA's $520M credit line to OpenAI ahead of IPO",
+      "impact": "medium",
+      "entities": ["bank-of-america", "openai"],
+      "sources": [{ "url": "https://www.bloomberg.com/news/articles/2026-07-08/openai-ipo-bofa-u-turns-on-loan-for-chatgpt-maker-to-secure-role-in-listing", "publisher": "Bloomberg", "published": "2026-07-08", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.bloomberg.com/news/articles/2026-07-08/openai-ipo-bofa-u-turns-on-loan-for-chatgpt-maker-to-secure-role-in-listing", "publisher": "Bloomberg", "published": "2026-07-08", "kind": "press" },
+    { "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-lands-520-million-line-of-credit-from-bank-of-america/", "publisher": "PYMNTS", "published": "2026-07", "kind": "press" },
+    { "url": "https://www.theinformation.com/briefings/bofa-extends-520-million-loan-openai", "publisher": "The Information", "published": "2026-07", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

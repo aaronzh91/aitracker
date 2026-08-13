@@ -1,0 +1,38 @@
+{
+  "id": "nvidia--sk-hynix--hbm",
+  "from": "nvidia",
+  "to": "sk-hynix",
+  "type": "supply_agreement",
+  "status": "active",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "Contract dollars undisclosed. SK Hynix is NVIDIA's lead HBM supplier — reported ~2/3 of HBM4 supply — with output effectively sold out through 2026 and customers (incl. NVIDIA) prepaying for capacity.", "as_of": "2026" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "Ongoing multi-year purchases; SK Hynix does not disclose customer-level revenue, though NVIDIA is understood to be its largest customer by far.", "as_of": "2026-08-13" },
+  "term": { "announced": null, "start": null, "end": null, "duration_years": null },
+  "nature_md": "Multi-year HBM supply relationship: SK Hynix has led every HBM generation qualification at NVIDIA (HBM3, HBM3E, HBM4 for Rubin) and reportedly holds ~two-thirds of NVIDIA's HBM4 allocation. HBM output is sold out through 2026 under LTAs with customer prepayments — memory has become a contracted, prepaid commodity rather than a spot market, a defining feature of the 2026 memory super-cycle. Terms (pricing, volumes) are undisclosed; the Stargate memory LOI (up to 900K DRAM wafers/mo with Samsung+SK) is a separate OpenAI-side arrangement.",
+  "accounting": {
+    "payer_treatment_md": "NVIDIA's HBM purchases flow through COGS as systems ship; capacity prepayments to memory vendors sit in prepaid/supply-commitment disclosures (aggregated, not itemized by supplier).",
+    "payee_treatment_md": "SK Hynix books revenue on delivery under LTAs; prepayments are contract liabilities funding capex (M15X, Yongin). HBM's contracted nature underpinned record 2026 margins — and its concentration risk: a handful of AI customers dominate the book.",
+    "off_balance_sheet": true,
+    "flags": ["customer_concentration", "commitment_unfunded"]
+  },
+  "related_edges": ["nvidia--micron--hbm", "nvidia--samsung--hbm", "nvidia--tsmc--wafer-packaging"],
+  "observations": [
+    {
+      "metric": "market_share_pct",
+      "metric_label": "Reported share of NVIDIA HBM4 supply",
+      "period": "CY2026",
+      "value": 66,
+      "unit": "pct",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.kedglobal.com/korean-chipmakers/newsView/ked202601150001", "publisher": "KED Global", "published": "2026-01", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "~2/3 per Korean supply-chain reporting; neither company confirms."
+    }
+  ],
+  "events": [],
+  "sources": [
+    { "url": "https://www.kedglobal.com/korean-chipmakers/newsView/ked202601150001", "publisher": "KED Global", "published": "2026-01", "kind": "press" },
+    { "url": "https://www.reuters.com/technology/sk-hynix-says-hbm-chips-sold-out-through-2026-2025-04-24/", "publisher": "Reuters", "published": "2025-04", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

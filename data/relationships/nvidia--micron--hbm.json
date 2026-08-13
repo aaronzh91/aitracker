@@ -1,0 +1,38 @@
+{
+  "id": "nvidia--micron--hbm",
+  "from": "nvidia",
+  "to": "micron",
+  "type": "supply_agreement",
+  "status": "active",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "Contract dollars undisclosed. Multi-year HBM3E/HBM4 supply to NVIDIA; Micron's HBM is sold out through 2026 with pricing largely locked under LTAs.", "as_of": "2026" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "Ongoing deliveries since 2024 (H200/Blackwell HBM3E); customer-level revenue not disclosed.", "as_of": "2026-08-13" },
+  "term": { "announced": null, "start": "2024", "end": null, "duration_years": null },
+  "nature_md": "Micron supplies HBM3E (since the H200/Blackwell generation) and HBM4 to NVIDIA under multi-year agreements with volumes and pricing undisclosed. Micron has said its HBM output is sold out through calendar 2026, and the AI memory cycle drove its FQ3-26 revenue to $41.5B (vs $9.3B a year earlier) at ~86% guided gross margin — figures that themselves signal how far contracted AI memory pricing has moved. NVIDIA allocation among the three HBM vendors is actively managed and competitive each generation.",
+  "accounting": {
+    "payer_treatment_md": "NVIDIA books HBM as input cost (COGS) on delivery; multi-year volume commitments appear within aggregate supply obligations. Prepayment specifics, if any, are not itemized.",
+    "payee_treatment_md": "Micron recognizes revenue on delivery under LTAs; sold-out-through-2026 means near-total revenue visibility, and HBM capex (Boise, Singapore) is effectively underwritten by committed AI demand.",
+    "off_balance_sheet": true,
+    "flags": ["customer_concentration"]
+  },
+  "related_edges": ["nvidia--sk-hynix--hbm", "nvidia--samsung--hbm"],
+  "observations": [
+    {
+      "metric": "revenue_total",
+      "metric_label": "Micron total revenue (HBM super-cycle context)",
+      "period": "FQ3-2026",
+      "value": 41.5,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter", "publisher": "Micron IR", "published": "2026", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "vs $9.3B a year earlier; FQ4 guide ~$50B at ~86% GM. Not NVIDIA-specific, but NVIDIA is the anchor HBM customer."
+    }
+  ],
+  "events": [],
+  "sources": [
+    { "url": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter", "publisher": "Micron IR", "published": "2026", "kind": "company_ir" },
+    { "url": "https://www.reuters.com/technology/micron-says-hbm-sold-out-2026-2025-06-25/", "publisher": "Reuters", "published": "2025-06", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

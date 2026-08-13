@@ -1,0 +1,34 @@
+{
+  "id": "openai--broadcom--asics",
+  "from": "openai",
+  "to": "broadcom",
+  "type": "hardware_purchase",
+  "status": "contracted",
+  "headline": { "value": 10, "unit": "GW", "caveat": "OpenAI-designed custom accelerators + Broadcom Ethernet networking, deploying 2H2026 through end-2029; contract dollars undisclosed (a known data gap)", "as_of": "2025-10-13" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "rack deployments targeted to start 2H2026; nothing quantified publicly", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-10-13", "start": "2026", "end": "2029", "duration_years": 3.5 },
+  "nature_md": "Announced Oct 13, 2025: OpenAI designs its own AI accelerators and systems (embedding frontier-model learnings into silicon), Broadcom co-develops and deploys them — 10GW of racks scaled entirely with Broadcom Ethernet, across OpenAI facilities and partner data centers, starting 2H2026 and completing by end-2029. This is OpenAI's hedge against NVIDIA/AMD pricing and its bid for Google-style TPU economics. No contract value has ever been disclosed; Broadcom's FY26 AI revenue guidance (~$56B) and its reported ~$10B 'fourth custom ASIC customer' backlog entry (widely believed to be OpenAI) are the only public financial traces.",
+  "accounting": {
+    "payer_treatment_md": "Undisclosed purchase commitments; custom-silicon programs typically involve NRE payments during development plus per-unit purchases on delivery — none of it visible in public filings since OpenAI is private.",
+    "payee_treatment_md": "Broadcom books custom-accelerator (XPU) and networking revenue on shipment within its AI semiconductor segment; analysts track OpenAI as one of a small set of custom-ASIC customers (with Google, Meta, and now Anthropic-linked TPU volumes) — deep customer concentration in the segment.",
+    "off_balance_sheet": true,
+    "flags": ["customer_concentration", "commitment_unfunded"]
+  },
+  "related_edges": ["openai--amd--gpu-2025", "anthropic--broadcom--tpu-2026"],
+  "observations": [],
+  "events": [
+    {
+      "date": "2025-10-13",
+      "title": "OpenAI and Broadcom announce 10GW custom-accelerator collaboration",
+      "impact": "high",
+      "entities": ["openai", "broadcom"],
+      "sources": [{ "url": "https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-announce-strategic-collaboration-deploy-10", "publisher": "Broadcom IR", "published": "2025-10-13", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-announce-strategic-collaboration-deploy-10", "publisher": "Broadcom IR", "published": "2025-10-13", "kind": "company_pr" },
+    { "url": "https://openai.com/index/openai-and-broadcom-announce-strategic-collaboration/", "publisher": "OpenAI", "published": "2025-10-13", "kind": "company_pr" },
+    { "url": "https://www.globenewswire.com/news-release/2025/10/13/3165560/19933/en/OpenAI-and-Broadcom-announce-strategic-collaboration-to-deploy-10-gigawatts-of-OpenAI-designed-AI-accelerators.html", "publisher": "GlobeNewswire", "published": "2025-10-13", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,111 @@
+{
+  "id": "fluidstack",
+  "name": "Fluidstack",
+  "kind": "private_company",
+  "category": "neocloud",
+  "group": "hyperscalers_clouds",
+  "region": "europe",
+  "tier": 1,
+  "cik": null,
+  "website": "https://www.fluidstack.io",
+  "fiscal_year_end": null,
+  "monetization": "Assembles GPU capacity by leasing miner-owned datacenters (TeraWulf, Cipher, Hut 8) — with Google backstopping the leases — and delivers it to frontier labs, above all Anthropic.",
+  "description_md": "Fluidstack is a London-founded GPU cloud that has become the AI buildout's distinctive intermediary: it signs decade-plus leases at miners-turned-AI landlords (TeraWulf Lake Mariner ~$9.5B up to ~$16B with extensions; Cipher Mining Barber Lake ~$3.8B base / ~$7.8B extended; Hut 8 River Bend $7.0B base / up to $17.7B), Google backstops billions of those lease obligations (taking warrants of ~14% in TeraWulf and ~5.4% in Cipher), and Anthropic anchors the capacity as end user. It is also Anthropic's development partner on the $50B US datacenter buildout announced Nov 2025 (Texas and New York first). Fluidstack's own balance sheet and valuation are not reliably public — an explicit data gap (SPEC §9.2b).",
+  "ai_monetization_md": "Spread economics between long-term leases (obligations to landlords) and compute contracts with end users (Anthropic; also Google-facing arrangements, Meta and Mistral per press). The structure is credit-enhanced aggregation: Fluidstack itself is thin relative to the >$20B of base-term lease obligations it has signed, which is why Google's backstops are what make the leases financeable — landlord bonds (TeraWulf, Cipher, Hut 8 raised $15B+ against these leases) effectively price Alphabet's guarantee, not Fluidstack's credit. Reported financing: ~$830M Series A at ~$7.5B (Jan 2026) and mid-2026 talks at ~$18B — single-sourced secondary reports, UNVERIFIED.",
+  "ai_strategy_md": "Move faster than hyperscaler procurement by renting the one asset miners already own — powered shells with grid interconnects — and matching them to frontier-lab demand: TeraWulf Lake Mariner (~360MW), Cipher Barber Lake (~207MW), Hut 8 River Bend (245MW), aggregating gigawatt-class capacity for Anthropic's $50B US program without owning land, power, or (mostly) chips. The Google relationship is the keystone: backstops de-risk the landlords' financing, and Google secures optionality over capacity in the TPU era. The open strategic question is whether Fluidstack graduates from credit-enhanced middleman to balance-sheet operator (an 'AI utility').",
+  "risk_notes_md": "**Opacity:** no audited financials, no disclosed balance sheet; the ~$7.5B (Jan 2026) and ~$18B (talks, mid-2026) valuation figures are single-sourced secondary reports — UNVERIFIED, confidence low, recorded as such. **Structural thinness:** >$20B of base-term lease obligations vs undisclosed equity; absent the Google backstops the structure likely doesn't finance — meaning Fluidstack's viability is contingent on Alphabet's continued support and Anthropic's demand. **Two-sided concentration:** one dominant guarantor (Google) and one dominant end user (Anthropic); stress at either collapses the spread. **Flag:** the lease web is the canonical example of off-balance-sheet contingent risk migrating to a hyperscaler (see alphabet.json risk notes and the Google backstop observation there).",
+  "observations": [
+    {
+      "metric": "contract_value",
+      "metric_label": "TeraWulf Lake Mariner leases (contracted, with extensions)",
+      "period": "2026",
+      "value": 16,
+      "unit": "USD_B",
+      "basis": "company_pr",
+      "confidence": "medium",
+      "source": { "url": "https://investors.terawulf.com/news-events/press-releases/detail/114/terawulf-announces-fluidstack-expansion-with-160-mw-cb-5-lease-at-lake-mariner", "publisher": "TeraWulf IR", "title": "TeraWulf Announces Fluidstack Expansion with 160 MW CB-5 Lease at Lake Mariner", "published": "2026", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "~360MW across successive leases; base-term contracted revenue grew from ~$6.7B toward ~$16B with extensions (press variously cites ~$9.5B for the 25-yr base). Google backstop ~$3.2B cumulative + ~14% equity/warrants. Disclosed by the landlord, not Fluidstack."
+    },
+    {
+      "metric": "contract_value",
+      "metric_label": "Hut 8 River Bend lease (15-yr base term)",
+      "period": "2025-12",
+      "value": 7,
+      "unit": "USD_B",
+      "basis": "company_pr",
+      "confidence": "high",
+      "source": { "url": "https://www.prnewswire.com/news-releases/hut-8-signs-15-year-245-mw-ai-data-center-lease-at-river-bend-campus-with-total-contract-value-of-7-0-billion-302644600.html", "publisher": "PR Newswire / Hut 8", "title": "Hut 8 signs 15-year 245 MW AI data center lease at River Bend campus", "published": "2025-12", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "245MW, Louisiana; up to $17.7B with renewals; Google financial backstop (amount undisclosed); Anthropic end user. Part of Hut 8's $26.6B cumulative AI contract value."
+    },
+    {
+      "metric": "contract_value",
+      "metric_label": "Cipher Mining Barber Lake lease (10-yr base term)",
+      "period": "2025-09",
+      "value": 3.8,
+      "unit": "USD_B",
+      "basis": "company_pr",
+      "confidence": "medium",
+      "source": { "url": "https://www.datacenterdynamics.com/en/news/hut-8-signs-245mw-capacity-deal-with-fluidstack-as-part-of-multi-gigawatt-partnership-with-anthropic/", "publisher": "Data Center Dynamics", "published": "2025-12", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Expanded to ~207MW critical IT load; ~$3.8B base term, up to ~$7.8B with extensions; Google backstop expanded to ~$1.73B plus ~5.4% equity stake."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Anthropic $50B US datacenter program (development partner)",
+      "period": "2025-11",
+      "value": 50,
+      "unit": "USD_B",
+      "basis": "company_pr",
+      "confidence": "medium",
+      "source": { "url": "https://www.anthropic.com/news/anthropic-invests-50-billion-in-american-ai-infrastructure", "publisher": "Anthropic", "title": "Anthropic invests $50 billion in American AI infrastructure", "published": "2025-11", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Anthropic's announced program (Texas, New York first sites) with Fluidstack as buildout partner — the $50B is Anthropic's investment figure, not Fluidstack revenue; Fluidstack's share of economics undisclosed."
+    },
+    {
+      "metric": "valuation",
+      "period": "2026-06",
+      "value": null,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://measuredai.substack.com/p/neoclouds-ai-middle-layer", "publisher": "Measured AI (Substack)", "title": "Neoclouds: AI's $150 Billion Middle Layer That Owns Almost Nothing", "published": "2026", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "UNVERIFIED — recorded as null deliberately. Secondary reports cite an ~$830M Series A at ~$7.5B (Jan 2026) and mid-2026 talks at ~$18B; no primary confirmation, and Fluidstack's balance sheet is a known data gap (SPEC §9.2b)."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-08",
+      "title": "TeraWulf-Fluidstack leases signed with Google backstop and warrant structure",
+      "why_it_matters": "Invented the template: miner shell + neocloud lease + hyperscaler backstop + lab end-user — replicated at Cipher and Hut 8 within months.",
+      "impact": "high",
+      "entities": ["fluidstack", "alphabet", "anthropic"],
+      "sources": [{ "url": "https://www.sec.gov/Archives/edgar/data/1083301/000110465925079463/tm2523651d3_ex99-1.htm", "publisher": "SEC / TeraWulf 8-K", "published": "2025-08", "kind": "sec_filing" }]
+    },
+    {
+      "date": "2025-11",
+      "title": "Anthropic announces $50B US datacenter buildout with Fluidstack as partner",
+      "why_it_matters": "Elevates Fluidstack from capacity broker to development partner on one of the largest single-lab infrastructure programs.",
+      "impact": "high",
+      "entities": ["fluidstack", "anthropic"],
+      "sources": [{ "url": "https://www.anthropic.com/news/anthropic-invests-50-billion-in-american-ai-infrastructure", "publisher": "Anthropic", "published": "2025-11", "kind": "company_pr" }]
+    },
+    {
+      "date": "2025-12",
+      "title": "Hut 8 River Bend: 15-yr, 245MW, $7.0B lease (Google-backstopped, Anthropic end user)",
+      "why_it_matters": "Third landlord in the structure; the miners' bond investors are now underwriting Google's guarantee across ~$20B+ of base-term leases.",
+      "impact": "medium",
+      "entities": ["fluidstack", "alphabet", "anthropic"],
+      "sources": [{ "url": "https://www.prnewswire.com/news-releases/hut-8-signs-15-year-245-mw-ai-data-center-lease-at-river-bend-campus-with-total-contract-value-of-7-0-billion-302644600.html", "publisher": "PR Newswire / Hut 8", "published": "2025-12", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.anthropic.com/news/anthropic-invests-50-billion-in-american-ai-infrastructure", "publisher": "Anthropic", "kind": "company_pr" },
+    { "url": "https://investors.terawulf.com/news-events/press-releases/detail/114/terawulf-announces-fluidstack-expansion-with-160-mw-cb-5-lease-at-lake-mariner", "publisher": "TeraWulf IR", "kind": "company_pr" },
+    { "url": "https://sacra.com/c/fluidstack/", "publisher": "Sacra", "kind": "analyst", "notes": "Secondary revenue/funding estimates — low confidence." },
+    { "url": "https://measuredai.substack.com/p/neoclouds-ai-middle-layer", "publisher": "Measured AI (Substack)", "kind": "analyst" }
+  ],
+  "updated": "2026-08-13"
+}

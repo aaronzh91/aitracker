@@ -1,0 +1,88 @@
+{
+  "id": "nscale",
+  "name": "Nscale",
+  "kind": "private_company",
+  "category": "neocloud",
+  "group": "hyperscalers_clouds",
+  "region": "europe",
+  "tier": 1,
+  "cik": null,
+  "website": "https://www.nscale.com",
+  "fiscal_year_end": null,
+  "monetization": "Builds and rents sovereign-flavored GPU capacity across the UK, Norway, Portugal, and Texas — ~$20B+ of Microsoft contracts (~200K GB300s) — targeting a 2026 IPO.",
+  "description_md": "Nscale is a London-headquartered neocloud (spun out of Arkon Energy in 2024) that went from ~$3B to $14.6B valuation in roughly five months on the back of Microsoft mega-contracts: ~200,000 Nvidia GB300 GPUs across Texas (~104K at a Microsoft facility), Norway (Stargate Norway sites), the UK (Stargate UK, Loughton) and Portugal (Start Campus Sines), worth roughly $14–23B cumulatively per press tallies. It raised $2B in Mar 2026 at $14.6B with Nvidia and Dell participating, has hired Goldman Sachs and JPMorgan, and is pitching a public listing as soon as late 2026. Its sovereign-AI positioning (UK/EU capacity, OpenAI Stargate UK site at Blyth) differentiates it from US-centric neoclouds.",
+  "ai_monetization_md": "Multi-year GPU capacity contracts, overwhelmingly with Microsoft: an initial ~$14B agreement (Oct 2025, ~116K GB300s including 75K previously announced for Norway/UK) extended by ~100K GPUs across the US and Europe (Dec 2025), with cumulative press-tallied value around $20–23B. Deployment across 2026–27 converts the contracts into recognized revenue; Nvidia (investor and supplier) and Dell (investor and server OEM for the deployments) sit on both sides of its cost base — an equity-for-revenue-adjacent alignment on the supply side. OpenAI's Stargate UK adds a second marquee tenant relationship.",
+  "ai_strategy_md": "Be Europe's sovereign-scale neocloud: lock the anchor tenant (Microsoft) for baseload economics, site capacity where power and politics are favorable (Norwegian hydro via the Aker JV, UK grid deals, Portugal's Sines campus, Texas for speed), and convert the contracted pipeline into an IPO at public-neocloud multiples with Goldman Sachs/JPMorgan mandated. Vendor alignment (Nvidia, Dell) secures allocation; the $2B Mar 2026 round funds equity slices of the buildouts ahead of the listing.",
+  "risk_notes_md": "**Single-customer concentration:** Microsoft is effectively the whole current book (~$20B+ of ~200K-GPU contracts); contract terms, take-or-pay coverage, and cancellation rights are undisclosed. **Execution scale-up:** Nscale must deploy one of Europe's largest GPU fleets on a company that was worth ~$3B in Oct 2025 — financing, construction, and power-delivery risk stack on a thin operating history. **Valuation path:** $3B → $14.6B in ~5 months is priced for flawless conversion; an IPO delay or Microsoft renegotiation reprices the whole cap table. **Headline vs realized:** cumulative contract figures ($14B/$20B/$23B) vary by tally and include prior announcements — recorded here as press-reported ranges, not disclosed backlog.",
+  "observations": [
+    {
+      "metric": "valuation",
+      "period": "2026-03",
+      "value": 14.6,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://aibusiness.com/data-centers/nscale-expands-microsoft-deal-eyes-ipo-in-2026", "publisher": "AI Business", "title": "Nscale Expands Microsoft Deal as It Eyes IPO in 2026", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "$2B raise at $14.6B (Mar 2026), Nvidia and Dell participating; up from ~$3B at the Oct 2025 $1.5B raise. Round mark, not a traded price."
+    },
+    {
+      "metric": "funding_raised",
+      "period": "2026-03",
+      "value": 2,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://aibusiness.com/data-centers/nscale-expands-microsoft-deal-eyes-ipo-in-2026", "publisher": "AI Business", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Goldman Sachs and JPMorgan hired for a potential late-2026 listing."
+    },
+    {
+      "metric": "contract_value",
+      "metric_label": "Microsoft GPU contracts (cumulative, ~200K GB300)",
+      "period": "2025-12",
+      "value": 23,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://www.datacenterdynamics.com/en/news/nscale-to-supply-microsoft-with-additional-100000-nvidia-gpus-in-us-and-europe/", "publisher": "Data Center Dynamics", "title": "Nscale to supply Microsoft with additional 100,000 Nvidia GPUs in US and Europe", "published": "2025-12", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Press tallies range ~$14B (initial Oct 2025 deal) to ~$23B cumulative across TX (~104K GPUs), Norway, UK, Portugal (12.6K at Start Campus). UNIVERSE.md census uses ~$20B+. 'Up to' ceilings, single-sourced totals — low confidence."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-10-15",
+      "title": "Signs ~$14B GB300 supply deal with Microsoft; eyes IPO",
+      "why_it_matters": "The contract that created a Tier-1 neocloud out of a $3B startup; Microsoft outsources European and Texas capacity it cannot self-build in time.",
+      "impact": "high",
+      "entities": ["nscale", "microsoft", "nvidia"],
+      "sources": [{ "url": "https://www.cnbc.com/2025/10/15/nscale-eyes-ipo-amid-fresh-14-billion-deal-with-microsoft-.html", "publisher": "CNBC", "published": "2025-10-15", "kind": "press" }]
+    },
+    {
+      "date": "2025-12",
+      "title": "Expands Microsoft agreement by ~100K additional Nvidia GPUs across US and Europe",
+      "why_it_matters": "Takes the relationship to ~200K GB300s and roughly $20B+ cumulative — deepening both the growth story and the single-customer concentration.",
+      "impact": "high",
+      "entities": ["nscale", "microsoft"],
+      "sources": [{ "url": "https://www.datacenterdynamics.com/en/news/nscale-to-supply-microsoft-with-additional-100000-nvidia-gpus-in-us-and-europe/", "publisher": "Data Center Dynamics", "published": "2025-12", "kind": "press" }]
+    },
+    {
+      "date": "2026-03",
+      "title": "Raises $2B at $14.6B valuation (Nvidia, Dell participating); GS/JPM hired for potential late-2026 IPO",
+      "why_it_matters": "Prices the Microsoft book at ~5x from five months earlier and starts the clock on the first European neocloud listing.",
+      "impact": "medium",
+      "entities": ["nscale", "nvidia", "dell", "goldman-sachs", "jpmorgan"],
+      "sources": [
+        { "url": "https://aibusiness.com/data-centers/nscale-expands-microsoft-deal-eyes-ipo-in-2026", "publisher": "AI Business", "published": "2026", "kind": "press" },
+        { "url": "https://valueaddvc.com/pulse/nscale-multibillion-dollar-ipo-pitch-2026", "publisher": "Value Add VC", "published": "2026", "kind": "press" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.cnbc.com/2025/10/15/nscale-eyes-ipo-amid-fresh-14-billion-deal-with-microsoft-.html", "publisher": "CNBC", "published": "2025-10-15", "kind": "press" },
+    { "url": "https://www.datacenterdynamics.com/en/news/nscale-to-supply-microsoft-with-additional-100000-nvidia-gpus-in-us-and-europe/", "publisher": "Data Center Dynamics", "kind": "press" },
+    { "url": "https://techfundingnews.com/nscale-inks-14b-nvidia-gpu-supply-deal-with-microsoft-eyes-2026-ipo/", "publisher": "Tech Funding News", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

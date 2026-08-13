@@ -1,0 +1,26 @@
+{
+  "id": "xai--dell--servers",
+  "from": "xai",
+  "to": "dell",
+  "type": "hardware_purchase",
+  "status": "active",
+  "headline": { "value": 5, "unit": "USD_B", "caveat": ">$5B of Dell AI servers with NVIDIA GB200 racks for Colossus (initial reported order, Feb 2025); xAI subsequently shifted ~$6B of orders from Supermicro toward Dell, and follow-on orders have grown the relationship (Dell counts xAI among its named AI customers behind its $51.3B AI backlog).", "as_of": "2025-02" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "GB200 deliveries ran through 2025; cumulative payments not disclosed (xAI is private; Dell does not break out customers).", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-02", "start": "2025", "end": null, "duration_years": null },
+  "nature_md": "Dell supplies NVIDIA GB200-based rack-scale AI servers to xAI for the Colossus buildout in Memphis — an initial ~$5B order reported Feb 2025, growing as xAI shifted ~$6B of orders away from then-troubled Supermicro (DOJ accounting probe) and split subsequent GB300-generation orders between Dell and Supermicro. Standard hardware purchase with delivery-based payment; xAI's extreme buildout tempo (racks energized within weeks of delivery) makes it one of Dell's marquee AI accounts alongside CoreWeave and IREN.",
+  "accounting": {
+    "payer_treatment_md": "xAI capitalizes servers as fixed assets (or routes them through its GPU-leasing SPV structures — see xai-gpu-spv entity — to keep debt off its own balance sheet), depreciating over 4-6 years; funded by equity/debt raises, not operating cash flow.",
+    "payee_treatment_md": "Dell books ISG hardware revenue on delivery at thin AI-server margins (pass-through NVIDIA content dominates BOM); xAI orders sit within its $51.3B AI backlog and ~$60B FY27 AI revenue guide.",
+    "off_balance_sheet": false,
+    "flags": ["customer_concentration"]
+  },
+  "related_edges": ["xai--supermicro--servers", "iren--dell--equipment"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.cnbc.com/2025/02/14/dell-shares-pop-on-report-of-5-billion-deal-for-ai-servers-for-elon-musks-xai.html", "publisher": "CNBC", "published": "2025-02-14", "kind": "press" },
+    { "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/elon-musks-xai-reportedly-shifts-usd6-billion-ai-server-order-from-troubled-supermicro-to-its-rivals", "publisher": "Tom's Hardware", "kind": "press" },
+    { "url": "https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-delivers-first-quarter-fiscal-2027-financial-results.htm", "publisher": "Dell Technologies", "published": "2026-05", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

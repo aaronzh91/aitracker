@@ -1,0 +1,82 @@
+{
+  "id": "morgan-stanley",
+  "name": "Morgan Stanley",
+  "kind": "financial_institution",
+  "category": "financier_bank",
+  "group": "capital",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NYSE", "symbol": "MS" }],
+  "cik": "895421",
+  "website": "https://www.morganstanley.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Investment bank; monetizes AI as the structurer of record for AI credit — arranged Meta's $27.3B Hyperion SPV notes and xAI's $5B secured notes/term loans — while its research benchmarks the cycle (~$570B 2026 AI-debt-issuance forecast).",
+  "description_md": "Morgan Stanley is the investment bank most closely identified with the novel structures of the AI credit cycle: it arranged the record $27.3B Hyperion JV private placement for Meta/Blue Owl (Oct 2025) and ran xAI's $5B secured notes and term loans (completed mid-2025) on a best-efforts basis. Its research desk's forecast that global AI-related bond issuance would approach $570B in 2026 is the standard sizing reference for the market it helps build.",
+  "ai_monetization_md": "AI-exposure thesis: fees for inventing and placing the structures that move AI capex into credit markets, with minimal balance-sheet hold. Arranged the Beignet Investor LLC 144A notes ($27.294B, 6.581%, due 2049, S&P A+) that took Meta's Hyperion campus off balance sheet; completed the oversubscribed $5B xAI financing of secured notes and term loans (July 2025), explicitly declining to commit its own capital after the X/Twitter debt experience; and continues as arranger on subsequent xAI debt. Research franchise: the ~$570B 2026 issuance forecast and the $1.5T external-financing-gap decomposition are core inputs to how investors size the AI debt market.",
+  "risk_notes_md": "Best-efforts mandates cap balance-sheet risk but tie the franchise to structures whose collateral (single-tenant campuses, GPUs, frontier-lab cash flows) is untested through a downturn. Reputational/league-table concentration in AI credit means a repricing event (spreads on AI paper were already widening in mid-2026) would hit both pipeline and marks on any retained positions.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Hyperion JV notes arranged",
+      "period": "2025-10",
+      "value": 27.3,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "high",
+      "source": { "url": "https://www.bisnow.com/national/news/data-center-capital-markets/meta-pushes-its-largest-data-center-project-off-its-books-with-27b-joint-venture-131490", "publisher": "Bisnow", "published": "2025-10", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "$27.294B single 144A-for-life senior secured amortizing bond via Beignet Investor LLC; priced 2025-10-16 at 6.581%, final maturity 2049-05-30, S&P A+; PIMCO took ~$18B."
+    },
+    {
+      "metric": "other",
+      "metric_label": "xAI secured notes and term loans completed",
+      "period": "2025-07",
+      "value": 5,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://x.com/MorganStanley/status/1939768047780172184", "publisher": "Morgan Stanley (X)", "published": "2025-06-30", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Oversubscribed; floating-rate term loan (SOFR+700 at 97), fixed-rate loan and secured bonds around 12% during marketing; best-efforts, no Morgan Stanley capital committed."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Forecast 2026 global AI-related bond issuance (MS research)",
+      "period": "CY2026",
+      "value": 570,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-forecasts-ai-debt-135325015.html", "publisher": "Yahoo Finance", "published": "2026-06", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Analyst forecast, not a disclosure: ~$570B for 2026, more than double 2025; ~$236B already issued by end-May 2026."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-06-30",
+      "title": "Completes $5B xAI secured notes and term loan financing",
+      "why_it_matters": "First large syndicated debt raise for a standalone frontier lab; ~12% marketed yields set an early price on pure-play AI credit risk.",
+      "impact": "medium",
+      "entities": ["morgan-stanley", "xai"],
+      "sources": [
+        { "url": "https://x.com/MorganStanley/status/1939768047780172184", "publisher": "Morgan Stanley (X)", "published": "2025-06-30", "kind": "company_pr" },
+        { "url": "https://www.cnbc.com/2025/06/17/musks-xai-on-track-to-raise-5-billion-in-fresh-debt-following-modest-demand.html", "publisher": "CNBC", "published": "2025-06-17", "kind": "press" }
+      ]
+    },
+    {
+      "date": "2025-10-16",
+      "title": "Prices $27.3B Hyperion SPV notes for Meta/Blue Owl",
+      "why_it_matters": "The template deal for off-balance-sheet AI capex: hyperscaler lease + residual-value guarantee wrapped into an A+ private placement — the structure most 2026 SPV financings now copy.",
+      "impact": "high",
+      "entities": ["morgan-stanley", "hyperion-jv", "meta", "blue-owl", "pimco"],
+      "sources": [{ "url": "https://www.bisnow.com/national/news/data-center-capital-markets/meta-pushes-its-largest-data-center-project-off-its-books-with-27b-joint-venture-131490", "publisher": "Bisnow", "published": "2025-10", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.bisnow.com/national/news/data-center-capital-markets/meta-pushes-its-largest-data-center-project-off-its-books-with-27b-joint-venture-131490", "publisher": "Bisnow", "published": "2025-10", "kind": "press" },
+    { "url": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-forecasts-ai-debt-135325015.html", "publisher": "Yahoo Finance", "published": "2026-06", "kind": "press" },
+    { "url": "https://www.investing.com/news/economy-news/morgan-stanley-markets-5-billion-for-elon-muskowned-xai-in-loans-bonds-sources-say-4087899", "publisher": "Investing.com / Reuters", "published": "2025-06", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

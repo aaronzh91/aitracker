@@ -1,0 +1,25 @@
+{
+  "id": "oracle--vantage--lease",
+  "from": "oracle",
+  "to": "vantage",
+  "type": "lease",
+  "status": "contracted",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "lease terms undisclosed; context is Vantage's >$25B, 1.4GW Frontier campus (Shackelford County, TX) built for Oracle/OpenAI under Stargate, plus the Port Washington, WI project", "as_of": "2025-10" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "first Frontier building due live 2H 2026; lease payments ramp with delivery" },
+  "term": { "announced": "2025-10", "start": "2026", "end": null, "duration_years": null },
+  "nature_md": "Oracle leases Vantage's Frontier mega-campus — >$25B of development, 1,200 acres, ten buildings, 1.4GW of IT capacity in Shackelford County, Texas — to serve its ~$300B OpenAI compute contract, as part of Stargate's October 2025 site expansion (OpenAI agreed to rent 4.5GW of additional capacity through Oracle). Oracle's lease payments are the revenue stream servicing the $38B JPMorgan/MUFG project-debt package (Texas + Wisconsin). First building targeted live in 2H 2026.",
+  "accounting": {
+    "payer_treatment_md": "Long-term lease obligations for Oracle (right-of-use assets and lease liabilities under ASC 842 as buildings deliver) — a major driver of Oracle's ballooning off-income-statement commitments alongside its $638B RPO; not conventional debt but debt-like in cash-flow terms.",
+    "payee_treatment_md": "Contracted lease revenue for Vantage underpinning the project financing; DigitalBridge/Silver Lake-owned Vantage carries the construction risk, with credit ultimately chained to OpenAI's ability to pay Oracle.",
+    "off_balance_sheet": false,
+    "flags": ["customer_concentration"]
+  },
+  "related_edges": ["jpmorgan--vantage--project-debt"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://vantage-dc.com/news/vantage-data-centers-unveils-plans-for-frontier-a-25b-mega-campus-in-texas-to-meet-unprecedented-ai-demand/", "publisher": "Vantage Data Centers", "published": "2025-08", "kind": "company_pr" },
+    { "url": "https://www.datacenterdynamics.com/en/news/vantage-breaks-ground-on-texas-gigawatt-data-center-campus-for-openai/", "publisher": "Data Center Dynamics", "published": "2026", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

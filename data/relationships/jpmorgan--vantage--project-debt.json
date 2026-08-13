@@ -1,0 +1,25 @@
+{
+  "id": "jpmorgan--vantage--project-debt",
+  "from": "jpmorgan",
+  "to": "vantage",
+  "type": "project_debt",
+  "status": "contracted",
+  "headline": { "value": 38, "unit": "USD_B", "caveat": "two senior secured credit facilities — $23.25B (Texas) + $14.75B (Wisconsin) — co-led by JPMorgan and MUFG; JPMorgan's own hold undisclosed", "as_of": "2025-10" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "construction facilities draw over the build; syndication was nearing completion in early 2026 per Bloomberg" },
+  "term": { "announced": "2025-10", "start": "2025", "end": null, "duration_years": null },
+  "nature_md": "JPMorgan and MUFG co-lead a ~$38B project-debt package — among the largest AI-infrastructure debt deals ever — funding two Vantage-developed data-center campuses leased to Oracle to serve OpenAI under Stargate: $23.25B for the Texas project (the Frontier/Shackelford County campus) and $14.75B for Port Washington, Wisconsin. Wells Fargo, BNP Paribas, Goldman Sachs, SMBC, and Société Générale were designated portions after initial underwriting. Structured as senior secured credit facilities at the project level: lenders' recourse is to the campuses and the Oracle leases — whose economics depend on OpenAI performing on its ~$300B Oracle contract.",
+  "accounting": {
+    "payer_treatment_md": "Bank loans held/syndicated by JPMorgan, MUFG, and the designated lender group; classic project finance with the AI-specific twist that credit quality chains Vantage → Oracle lease → OpenAI contract. Bank C&I exposure to AI-adjacent borrowers (≈25% of Tier 1 capital per Chicago Fed) includes structures like this.",
+    "payee_treatment_md": "Project-level secured debt on Vantage SPVs — off the balance sheets of Oracle (lessee) and OpenAI (end customer) alike, though both are the economic support. Oracle's own banks have reportedly hedged via Oracle CDS.",
+    "off_balance_sheet": true,
+    "flags": ["spv_shift", "customer_concentration"]
+  },
+  "related_edges": ["oracle--vantage--lease", "jpmorgan--stargate-abilene--construction-loans"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.datacenterdynamics.com/en/news/jpmorgan-chase-and-mitsubishi-ufj-lead-38bn-debt-package-for-oracle-linked-data-centers-report/", "publisher": "Data Center Dynamics", "published": "2025-10", "kind": "press" },
+    { "url": "https://www.investing.com/news/stock-market-news/jpmorgan-mufg-near-completion-of-oracles-38-billion-data-center-loan--bloomberg-93CH-4616221", "publisher": "Bloomberg (via Investing.com)", "published": "2026", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

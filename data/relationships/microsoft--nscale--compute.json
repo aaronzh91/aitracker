@@ -1,0 +1,26 @@
+{
+  "id": "microsoft--nscale--compute",
+  "from": "microsoft",
+  "to": "nscale",
+  "type": "compute_purchase",
+  "status": "contracted",
+  "headline": { "value": 20, "unit": "USD_B", "caveat": "estimated aggregate: up to ~$14B Texas/Portugal agreement (~104K GB300s at the Ionic Digital site, TX + 12.6K at Start Campus, Portugal) + $6.2B Norway (52K GPUs, Narvik) + UK (Loughton, ~23K GPUs) — ~200K GB300-class GPUs total across four countries", "as_of": "2025-12" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "deployments over 12–18 months from late 2025; billed amounts not disclosed" },
+  "term": { "announced": "2025-12", "start": "2025", "end": null, "duration_years": null },
+  "nature_md": "Cumulative Microsoft–Nscale agreements total roughly $20B+ for approximately 200,000 NVIDIA GB300 GPUs across four countries: (1) the headline up-to-$14B deal for ~104K GB300s at a Texas data center leased from Ionic Digital (240MW scaling toward 1.2GW by 2027) plus ~12.6K GPUs at Start Campus, Sines, Portugal; (2) a $6.2B, 52K-GPU deployment at Narvik, Norway (with Aker); and (3) ~23K GPUs at Loughton, UK under Microsoft's $30B UK pledge. For a company founded in 2024, Microsoft is effectively the entire demand book — the extreme case of neocloud customer concentration, and the anchor for Nscale's mooted 2026 IPO.",
+  "accounting": {
+    "payer_treatment_md": "Committed capacity purchases expensed as consumed; lets Microsoft add ~GW-scale GB300 capacity in Europe and Texas without owning the sites.",
+    "payee_treatment_md": "Essentially all of Nscale's contracted revenue; underpins its $1.1B Series B, the Mar 2026 raise at $14.6B, and GPU/site financing. Loss or renegotiation of the Microsoft relationship is the single biggest risk to the company.",
+    "off_balance_sheet": false,
+    "flags": ["customer_concentration"]
+  },
+  "related_edges": ["nvidia--nscale--equity", "microsoft--coreweave--compute", "microsoft--nebius--compute", "microsoft--lambda--compute"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.nscale.com/press-releases/nscale-microsoft-2025", "publisher": "Nscale", "published": "2025-12", "kind": "company_pr" },
+    { "url": "https://www.datacenterdynamics.com/en/news/nscale-to-supply-microsoft-with-additional-100000-nvidia-gpus-in-us-and-europe/", "publisher": "Data Center Dynamics", "published": "2025-12", "kind": "press" },
+    { "url": "https://europeanbusinessmagazine.com/nscale-strikes-14-billion-microsoft-deal-in-push-for-ipo/", "publisher": "European Business Magazine", "published": "2025-12", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

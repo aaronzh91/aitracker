@@ -1,0 +1,81 @@
+{
+  "id": "apple",
+  "name": "Apple Inc.",
+  "kind": "public_company",
+  "category": "consumer_platform",
+  "group": "software_applications",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NASDAQ", "symbol": "AAPL" }],
+  "cik": "320193",
+  "website": "https://www.apple.com",
+  "fiscal_year_end": "09-30",
+  "monetization": "Monetizes AI indirectly — as a device-upgrade and services driver — while paying partners (Google ~$1B/yr for a custom Gemini) rather than building frontier models or hyperscale AI capex.",
+  "description_md": "Apple is the AI trade's largest demand-side node: it distributes AI to more than a billion devices but deliberately does not build frontier models or gigawatt data centers. Apple Intelligence runs small on-device models on Apple silicon, escalating to Private Cloud Compute (PCC) — Apple-silicon servers designed so that even Apple cannot read user data — and, from January 2026, to a custom 1.2-trillion-parameter Google Gemini model that powers the rebuilt Siri for roughly $1B per year. Its ChatGPT integration with OpenAI is reportedly cashless. Apple discloses no AI-specific capex; total company capex (~$12.7B in FY2025) is an order of magnitude below hyperscaler AI budgets.",
+  "ai_monetization_md": "Apple's AI monetization is defensive and indirect: AI features are free attributes of hardware meant to drive iPhone upgrade cycles and protect the ~$100B+/yr services franchise, not a priced product line. Money flows outward, not inward — ~$1B/yr to Google for the Gemini-Siri model (while Google separately pays Apple an estimated ~$20B/yr for search default placement, making the two companies each other's counterparties), and undisclosed sums for PCC server silicon and third-party cloud capacity. No disclosed AI revenue line, no disclosed AI capex: in a tracker of AI money flows, Apple is where AI demand meets a company that refuses to arms-race.",
+  "ai_strategy_md": "Buy the frontier, own the interface and the silicon: rent best-in-class model capability from partners (Google Gemini for Siri; OpenAI's ChatGPT as an opt-in), keep inference on-device or on Apple-silicon PCC servers for privacy differentiation, and preserve optionality to swap model suppliers as the frontier commoditizes. The bet is that distribution and privacy, not model ownership, are the durable moats — the inverse of every hyperscaler's bet, and the cheapest AI strategy of any trillion-dollar platform.",
+  "risk_notes_md": "The Gemini deal concedes that Apple's in-house models fell behind — a strategic dependency on its fiercest platform rival, layered on top of the ~$20B/yr Google search-default relationship that remains under antitrust remedy risk. If AI assistants become the primary interface, Apple's control of distribution could erode to whoever owns the model. Conversely, if the AI capex cycle disappoints, Apple's refusal to spend becomes the best balance sheet in tech — it is the natural hedge inside the AI trade. Siri's rebuilt launch timing and quality remain execution risks after repeated delays.",
+  "observations": [
+    {
+      "metric": "revenue_total",
+      "period": "FY2025",
+      "value": 416.2,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.apple.com/newsroom/2025/10/apple-reports-fourth-quarter-results/", "publisher": "Apple", "published": "2025-10", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Fiscal year ended Sep 27, 2025; Q4 FY2025 revenue $102.5B was a September-quarter record."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Annual payment to Google for Gemini-powered Siri",
+      "period": "CY2026",
+      "value": 1.0,
+      "unit": "USD_B_per_year",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.cnbc.com/2026/01/12/apple-google-ai-siri-gemini.html", "publisher": "CNBC", "published": "2026-01-12", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "~$1B/yr for a custom 1.2T-parameter Gemini model served through Apple's Private Cloud Compute; price not confirmed by either company. The ChatGPT integration is reportedly cashless."
+    },
+    {
+      "metric": "capex",
+      "period": "FY2025",
+      "value": 12.71,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.macrotrends.net/stocks/charts/AAPL/apple/net-change-in-property-plant-equipment", "publisher": "Macrotrends (from Apple 10-K)", "published": "2025-10", "kind": "dataset" },
+      "as_of": "2026-08-13",
+      "notes": "+34.6% y/y but an order of magnitude below Big-4 hyperscaler AI capex (~$130–220B each in 2026 plans). Apple discloses no AI-specific capex; PCC buildout is not broken out."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-01-12",
+      "title": "Picks Google Gemini (custom 1.2T-parameter model) to power rebuilt Siri, ~$1B/yr",
+      "why_it_matters": "The AI era's most-watched model-access deal: the largest consumer platform outsources its assistant's brain to its chief rival for roughly the price of one week of hyperscaler capex — evidence that renting frontier capability can be radically cheaper than building it.",
+      "impact": "high",
+      "entities": ["apple", "alphabet"],
+      "sources": [
+        { "url": "https://www.cnbc.com/2026/01/12/apple-google-ai-siri-gemini.html", "publisher": "CNBC", "published": "2026-01-12", "kind": "press" },
+        { "url": "https://techcrunch.com/2026/01/12/googles-gemini-to-power-apples-ai-features-like-siri/", "publisher": "TechCrunch", "published": "2026-01-12", "kind": "press" }
+      ]
+    },
+    {
+      "date": "2024-06",
+      "title": "Announces Apple Intelligence and Private Cloud Compute; ChatGPT integration",
+      "why_it_matters": "Set the template for Apple's AI economics: on-device models plus Apple-silicon private cloud, with third-party frontier models (OpenAI, later Google) integrated at little or no cash cost to Apple.",
+      "impact": "medium",
+      "entities": ["apple", "openai"],
+      "sources": [{ "url": "https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/", "publisher": "Apple", "published": "2024-06", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.cnbc.com/2026/01/12/apple-google-ai-siri-gemini.html", "publisher": "CNBC", "kind": "press" },
+    { "url": "https://techcrunch.com/2026/01/12/googles-gemini-to-power-apples-ai-features-like-siri/", "publisher": "TechCrunch", "kind": "press" },
+    { "url": "https://www.apple.com/newsroom/2025/10/apple-reports-fourth-quarter-results/", "publisher": "Apple", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

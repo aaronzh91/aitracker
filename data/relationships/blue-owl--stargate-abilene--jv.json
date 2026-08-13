@@ -1,0 +1,25 @@
+{
+  "id": "blue-owl--stargate-abilene--jv",
+  "from": "blue-owl",
+  "to": "stargate-abilene",
+  "type": "jv_equity",
+  "status": "active",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "Blue Owl Real Assets funds' share of the $15B JV is undisclosed", "as_of": "2025-05" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "not disclosed; construction funding is drawn progressively" },
+  "term": { "announced": "2024-10", "start": "2024", "end": null, "duration_years": null },
+  "nature_md": "Funds managed by Blue Owl Capital's Real Assets platform co-sponsor (with Crusoe and Primary Digital Infrastructure) the $15B joint venture that owns the 1.2GW Stargate flagship campus in Abilene, TX — phase 1 (two buildings) from Oct 2024, expanded May 2025 to eight buildings, each able to run up to 50,000 NVIDIA GB200 NVL72s. The JV's equity sits beneath JPMorgan-led construction loans ($2.3B + $7.1B) and above lease income from Oracle, which operates the campus for OpenAI. Blue Owl thereby anchors both of the era's marquee AI SPVs — Meta's Hyperion and OpenAI's Abilene.",
+  "accounting": {
+    "payer_treatment_md": "Equity investment held in Blue Owl-managed Real Assets funds (client capital; fee-earning AUM). Return profile: development yield on a single-tenant asset chained to Oracle/OpenAI credit.",
+    "payee_treatment_md": "Member equity of the JV, first-loss beneath ~$9.4B of construction debt.",
+    "off_balance_sheet": false,
+    "flags": ["spv_shift"]
+  },
+  "related_edges": ["crusoe--stargate-abilene--jv", "jpmorgan--stargate-abilene--construction-loans", "blue-owl--hyperion-jv--capitalization"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.globenewswire.com/news-release/2025/05/21/3085765/0/en/Crusoe-Blue-Owl-Capital-and-Primary-Digital-Infrastructure-Enter-Second-Phase-of-15-Billion-Joint-Venture-to-Fund-AI-Data-Center-in-Abilene-Texas.html", "publisher": "Crusoe / GlobeNewswire", "published": "2025-05-21", "kind": "company_pr" },
+    { "url": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture", "publisher": "Crusoe", "published": "2024-10", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

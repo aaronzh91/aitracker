@@ -1,0 +1,25 @@
+{
+  "id": "crusoe--stargate-abilene--jv",
+  "from": "crusoe",
+  "to": "stargate-abilene",
+  "type": "jv_equity",
+  "status": "active",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "Crusoe's equity share of the $15B JV is undisclosed; Crusoe is developer/operator as well as co-sponsor", "as_of": "2025-05" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "not disclosed" },
+  "term": { "announced": "2024-10", "start": "2024", "end": null, "duration_years": null },
+  "nature_md": "Crusoe co-sponsors the $15B Abilene JV with Blue Owl Real Assets funds and Primary Digital Infrastructure, and is the developer-operator building the 1.2GW, eight-building campus — the flagship Stargate site for OpenAI (via Oracle as tenant/operator of capacity). Crusoe raised an additional $11.6B in debt and equity in May 2025 to accelerate construction, taking total committed capital for the project to ~$15B. For Crusoe (a former flare-gas Bitcoin miner) the JV is the anchor asset of its pivot into AI data centers.",
+  "accounting": {
+    "payer_treatment_md": "JV equity on Crusoe's balance sheet plus development/operations fees earned from the project; Crusoe carries construction-execution risk and earns promote-style upside typical of developer-sponsors.",
+    "payee_treatment_md": "Member equity of the JV alongside Blue Owl and Primary Digital, beneath ~$9.4B of JPMorgan-led construction debt.",
+    "off_balance_sheet": false,
+    "flags": ["spv_shift"]
+  },
+  "related_edges": ["blue-owl--stargate-abilene--jv", "jpmorgan--stargate-abilene--construction-loans"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.globenewswire.com/news-release/2025/05/21/3085765/0/en/Crusoe-Blue-Owl-Capital-and-Primary-Digital-Infrastructure-Enter-Second-Phase-of-15-Billion-Joint-Venture-to-Fund-AI-Data-Center-in-Abilene-Texas.html", "publisher": "Crusoe / GlobeNewswire", "published": "2025-05-21", "kind": "company_pr" },
+    { "url": "https://www.datacenterdynamics.com/en/news/crusoe-secures-116bn-in-debt-and-equity-for-openais-stargate-data-center-campus-in-abilene-texas/", "publisher": "Data Center Dynamics", "published": "2025-05", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

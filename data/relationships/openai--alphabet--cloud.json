@@ -1,0 +1,24 @@
+{
+  "id": "openai--alphabet--cloud",
+  "from": "openai",
+  "to": "alphabet",
+  "type": "compute_purchase",
+  "status": "active",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "undisclosed — no contract value has ever been reported", "as_of": "2025-06" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "unknown", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-06", "start": "2025", "end": null, "duration_years": null },
+  "nature_md": "Reported by Reuters in June 2025 (finalized May 2025 after months of talks): Google Cloud supplies computing capacity to OpenAI — its most prominent rival — as OpenAI diversified beyond Microsoft after Azure exclusivity relaxed. A striking edge precisely because the money is invisible: neither party has disclosed dollars, duration, or capacity, though later reporting pointed to capacity across the US, UK, Netherlands, Norway, and Japan. Notable as the moment competitive lines dissolved into supplier economics (Google selling compute that strengthens its chief search-disruption threat).",
+  "accounting": {
+    "payer_treatment_md": "Compute costs expensed as consumed; magnitude unknown. One of several multi-cloud legs (Microsoft, Oracle, AWS, CoreWeave) whose combined obligations define OpenAI's cost base.",
+    "payee_treatment_md": "Google Cloud revenue and backlog contribution — undisclosed, and never called out in Alphabet's earnings beyond broad Cloud growth (+82% y/y backlog era). What is known vs. unknown: the relationship exists (multiple outlets, Google Cloud customer references); its size is a genuine data gap.",
+    "off_balance_sheet": true,
+    "flags": []
+  },
+  "related_edges": ["openai--microsoft--azure-commit", "openai--amazon--compute", "openai--oracle--compute-2025"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.reuters.com/business/retail-consumer/openai-taps-google-unprecedented-cloud-deal-despite-ai-rivalry-sources-say-2025-06-10/", "publisher": "Reuters", "published": "2025-06-10", "kind": "press", "notes": "Sourced reporting; deal value undisclosed — treat magnitude as unknown." }
+  ],
+  "updated": "2026-08-13"
+}

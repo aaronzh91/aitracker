@@ -1,0 +1,36 @@
+{
+  "id": "amd--openai--warrant-2025",
+  "from": "amd",
+  "to": "openai",
+  "type": "warrant",
+  "status": "active",
+  "headline": { "value": 160, "unit": "shares_M", "caveat": "up to 160M AMD shares at $0.01 strike (~10% of AMD fully vested); vests in tranches tied to OpenAI's GPU-deployment milestones and AMD stock-price targets (up to $600/share for the final tranche)", "as_of": "2025-10-06" },
+  "realized_to_date": { "value": 0, "unit": "shares_M", "caveat": "no tranches vested; zero financial-statement impact through AMD FY2025 per the 10-K/A, as no vesting conditions have been met", "as_of": "2026-02-04" },
+  "term": { "announced": "2025-10-06", "start": "2025-10-06", "end": null, "duration_years": null },
+  "nature_md": "Issued Oct 6, 2025 concurrently with the 6GW GPU purchase agreement: OpenAI may purchase up to 160M AMD shares at $0.01 each, vesting in tranches as (a) OpenAI hits Instinct GPU purchase/deployment milestones (first tranche at the first 1GW) and (b) AMD's stock reaches specified price targets. Essentially penny-priced equity handed to the customer as an inducement to buy — economically a rebate paid in stock. AMD's amended FY2025 annual report (10-K/A, Feb 2026) confirms the accounting: consideration payable to a customer, to be recognized as **contra-revenue** (reducing reported revenue) as vesting becomes probable — with zero impact so far because nothing has vested.",
+  "accounting": {
+    "payer_treatment_md": "Consideration payable to a customer under ASC 606: the warrant's fair value will be recorded as contra-revenue (a reduction of the revenue from OpenAI GPU sales) as tranches become probable of vesting. Through FY2025: no financial-statement impact. If fully vested, AMD hands over ~10% of the company; dilution hits shareholders rather than the income statement's cash costs.",
+    "payee_treatment_md": "OpenAI holds an option-like asset costing effectively nothing, worth tens of billions if it deploys the 6GW and AMD's stock performs — its GPU purchases are partially self-funding via supplier equity. Any gain is investment income, unrelated to OpenAI's operating economics.",
+    "off_balance_sheet": false,
+    "flags": ["warrant_for_revenue", "equity_for_revenue"]
+  },
+  "related_edges": ["openai--amd--gpu-2025"],
+  "both_sides_md": "**Bear:** paying your customer ~10% of your company to buy your product is demand manufactured with equity — and because the cost lands as contra-revenue only later, near-term reported revenue from the deal overstates its true economics (the Chanos vendor-financing critique in warrant form). **Bull:** the structure is cash-free, costs AMD nothing unless OpenAI actually deploys 6GW *and* AMD shareholders enjoy large price appreciation — a self-funding customer-acquisition tool for the #2 GPU vendor breaking an effective monopoly (AMD's own framing; deal disclosed transparently in SEC filings).",
+  "observations": [],
+  "events": [
+    {
+      "date": "2026-02-04",
+      "title": "AMD 10-K/A details warrant accounting: contra-revenue, no impact yet",
+      "why_it_matters": "Establishes the audited treatment — the clearest on-the-record example of warrant-for-revenue accounting in the AI cycle.",
+      "impact": "medium",
+      "entities": ["amd", "openai"],
+      "sources": [{ "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000021/amd-20251227.htm", "publisher": "SEC / AMD 10-K/A", "published": "2026-02-04", "kind": "sec_filing" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://ir.amd.com/financial-information/sec-filings/content/0001193125-25-230895/d28189dex41.htm", "publisher": "SEC / AMD 8-K exhibit 4.1 (warrant)", "published": "2025-10-06", "kind": "sec_filing" },
+    { "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000021/amd-20251227.htm", "publisher": "SEC / AMD 10-K/A FY2025", "published": "2026-02-04", "kind": "sec_filing" },
+    { "url": "https://openai.com/index/openai-amd-strategic-partnership/", "publisher": "OpenAI", "published": "2025-10-06", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "microsoft--lambda--compute",
+  "from": "microsoft",
+  "to": "lambda",
+  "type": "compute_purchase",
+  "status": "contracted",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "described only as 'multibillion-dollar'; exact value undisclosed", "as_of": "2025-11-03" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "not disclosed" },
+  "term": { "announced": "2025-11-03", "start": "2025", "end": null, "duration_years": null },
+  "nature_md": "Multibillion-dollar, multi-year agreement (announced Nov 3, 2025) for Lambda to deploy AI infrastructure for Microsoft powered by tens of thousands of NVIDIA GPUs, including GB300 NVL72 systems. Extends a >8-year Microsoft–Lambda relationship and positions Lambda as one of Microsoft's strategic external capacity suppliers alongside CoreWeave, Nebius, Nscale, and IREN. Value undisclosed — one of the weakest-disclosed edges in the Microsoft neocloud complex.",
+  "accounting": {
+    "payer_treatment_md": "Committed capacity purchases expensed as consumed; part of Microsoft's ~$60B+ rented-neocloud strategy layered on top of its ~$190B CY26 capex plan.",
+    "payee_treatment_md": "Contracted revenue/backlog for Lambda (private; no public RPO disclosure), supporting its GPU-backed financing and mooted IPO. Adds a second hyperscaler-scale anchor after its existing cloud business.",
+    "off_balance_sheet": false,
+    "flags": ["customer_concentration"]
+  },
+  "related_edges": ["microsoft--coreweave--compute", "microsoft--nebius--compute", "microsoft--nscale--compute"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://lambda.ai/blog/lambda-announces-multibillion-dollar-agreement-with-microsoft-to-deploy-ai-infrastructure-powered-by-tens-of-thousands-of-nvidia-gpus", "publisher": "Lambda", "published": "2025-11-03", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2025/11/03/lambda-ai-microsoft-nvidia.html", "publisher": "CNBC", "published": "2025-11-03", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

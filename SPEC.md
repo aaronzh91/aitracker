@@ -262,7 +262,81 @@ Pipeline principle: EDGAR is the backbone of record for public companies; Epoch 
 
 ## 9. Seed dataset (launch universe)
 
-<!-- RESEARCH-PENDING: ~25–35 entities and ~40+ edges with current values, from deal-map research -->
+Compiled from live research on Aug 13, 2026. This is the v1 universe — every item below becomes an entity or relationship record with full sourcing in Phase 1. Values are headline figures; the data files will carry the committed/realized distinction, accounting treatment, and citations.
+
+### 9.1 Entities (~40)
+
+- **Model labs:** OpenAI ($852B, Mar 2026 round; ~$25B ARR Feb 2026; projected 2026 loss ≥$14B), Anthropic ($965B Series H May 2026; run-rate $9B→~$47B Dec 2025→May 2026), xAI (merged into SpaceX Feb 2026, combined ~$1.25T at merger).
+- **Hyperscalers:** Microsoft (~$3.6T; CY26 capex plan ~$190B; Azure >$100B/yr), Alphabet (~$4.6T; 2026 capex $195–205B; Cloud +82% y/y), Amazon (~$3.1T; ~$220B capex; AWS backlog ~$496B), Meta (~$1.5T; capex $130–145B), Oracle (RPO **$638B**, +363% y/y; FY27 net capex ~$70B). Big-4 combined 2026 capex ≈ **$725B, +77% y/y**.
+- **Chips & supply chain:** Nvidia (~$5.0–5.4T; FY26 revenue $215.9B; **4 customers = 61% of revenue**; >$40B equity bets across the ecosystem in 2026 YTD), AMD, Broadcom (FY26 AI revenue guide ~$56B), TSMC (HPC = 66% of revenue), SK Hynix (~58% HBM share), Samsung, Intel (Nvidia investee).
+- **Neoclouds & DC developers:** CoreWeave (backlog ~$129B; debt ~$30B; spreads widening), Nebius (~$46B Microsoft+Meta contracts), Lambda, Crusoe (Stargate Abilene), Nscale, Vantage, Aligned (acquired $40B by AIP/MGX/GIP), Fluidstack.
+- **SPVs / JVs (first-class nodes):** Stargate LLC (SoftBank ~40% / OpenAI ~40% / Oracle+MGX ~20%; $500B target), Hyperion JV (Meta 20% / Blue Owl 80%; $27B bonds), Meta El Paso SPV ($12.5B, BlackRock-led), xAI GPU SPV (~$20B: Valor equity anchor, Nvidia ≤$2B, ~$12.5B debt via Apollo/Diameter), AI Infrastructure Partnership (BlackRock/GIP + Microsoft + MGX + Nvidia + xAI).
+- **Financial players:** SoftBank (>$60B into OpenAI; sold entire Nvidia stake to fund it), MGX, Blue Owl, PIMCO (~$18B Hyperion bonds), BlackRock/GIP, Apollo, Blackstone, Brookfield, KKR, Goldman Sachs, JPMorgan (co-lead $38B Vantage project debt), Morgan Stanley (arranged Hyperion; forecasts ~$570B AI debt issuance in 2026), MUFG, Valor Equity, Bank of America (OpenAI's first bank line, $520M).
+
+### 9.2 Seed edges (~40, grouped by cluster)
+
+**OpenAI cluster** — the densest node:
+| Flow | Type | Headline |
+|---|---|---|
+| Nvidia → OpenAI | equity (**LOI dead**) | $100B Sept-2025 LOI never signed; superseded ↓ |
+| Nvidia → OpenAI | equity, paid | $30B in the $122B round (Mar 2026) |
+| Nvidia → OpenAI | debt guarantee, in talks | up to ~$250B backstop (Piketon OH campus) |
+| Amazon → OpenAI | equity | $50B ($35B contingent on IPO/AGI milestone) |
+| SoftBank → OpenAI | equity | >$60B cumulative |
+| Microsoft → OpenAI | equity (historical) | $13.8B → 27% of OpenAI PBC |
+| OpenAI → Microsoft | cloud commitment + rev share | $250B Azure commit; 20% rev-share now capped, exclusivity ended (Apr 2026 restructuring) |
+| OpenAI → Oracle | compute contract | ~$300B/5yr from 2027 (dominates Oracle RPO) |
+| OpenAI → AWS | compute contract | $38B/7yr + $100B/8yr expansion |
+| OpenAI → CoreWeave | compute contracts | ~$22.4B (≈⅓ of CRWV contracted revenue) |
+| OpenAI → AMD | GPU purchases | 6GW; first GW deploying 2H26 |
+| AMD → OpenAI | warrant | up to 160M shares @$0.01, milestone-vested (contra-revenue accounting) |
+| OpenAI → Broadcom | custom ASICs | 10GW co-developed |
+| OpenAI → Google Cloud | compute contract | undisclosed (June 2025) |
+| BofA → OpenAI | credit line | $520M — first bilateral bank loan |
+| SoftBank/OpenAI/Oracle/MGX → Stargate | JV equity | $500B/10GW target; >$400B "in motion" |
+
+**Anthropic cluster:**
+| Flow | Type | Headline |
+|---|---|---|
+| Amazon → Anthropic | equity | $8B + $5B (2026); ~$53B fair-value gain booked Q2 26 |
+| Anthropic → AWS | compute commitment | >$100B over a decade incl. up to 5GW Trainium |
+| Google → Anthropic | equity + cloud | ~$3B equity; TPU deal up to 1M TPUs / >1GW |
+| Anthropic → Broadcom | TPU capacity | ~3.5GW Google-designed TPUs from 2027 |
+| Microsoft ≤$5B + Nvidia ≤$10B → Anthropic | equity | Nov 2025 announcement |
+| Anthropic → Azure | compute commitment | $30B |
+| Anthropic → Fluidstack | DC investment | $50B US buildout |
+| Investors → Anthropic | Series H | $65B at $965B post (incl. Blackstone, Brookfield, Micron, Samsung, SK Hynix) |
+
+**Meta & financier structures** — where off-balance-sheet lives:
+| Flow | Type | Headline |
+|---|---|---|
+| Meta ↔ Blue Owl (Hyperion JV) | SPV capitalization | 80/20 JV; $27B A+ notes (PIMCO $18B); Meta took ~$3B distribution; residual-value guarantee |
+| Meta ↔ BlackRock (El Paso SPV) | SPV bonds | $12.5B at ~7.53% — visibly costlier than Hyperion |
+| Meta → bond markets | corporate debt | ~$25–30B (Oct 2025); Big-5 issued ~$121B bonds in 2025 |
+| Meta → CoreWeave | compute | ~$35B through 2032 |
+| Meta → Nebius | compute | up to $27B |
+| Nvidia + Apollo/Blackstone/BlackRock/Brookfield/GS/KKR → Nvidia customers | financing coalition | **>$500B** compute-collateralized SPV financing (announced Aug 10, 2026) |
+| AIP/MGX/GIP → Aligned | acquisition | $40B |
+| JPMorgan/MUFG et al. → Vantage | project debt | $38B for Oracle-leased OpenAI sites |
+| Banks → SoftBank | loans for OpenAI stake | $40B loan + $10B margin loan **collateralized by the OpenAI stake** |
+| Blue Owl → Amazon | DC capital | $12B campus |
+
+**Nvidia's investment web & neocloud financing:**
+| Flow | Type | Headline |
+|---|---|---|
+| Nvidia ↔ CoreWeave | equity + backstop ↔ GPU purchases | ~5% stake; $6.3B capacity backstop through 2032 |
+| Nvidia → xAI SPV | equity into GPU-leasing SPV | ≤$2B of $20B SPV that buys Nvidia GPUs (off xAI's balance sheet) |
+| Nvidia → Intel | equity | $5B |
+| Nvidia → Nokia/Lumentum/Coherent/Synopsys/Nebius/Nscale | equity | ~$1–2B each; >$40B total 2026 commitments |
+| Microsoft → CoreWeave/Nebius/Lambda/Nscale | compute contracts | ~$60B+ across the four |
+| CoreWeave → debt markets | GPU-backed + unsecured debt | ~$30B total; spreads +125bp Aug 2026 |
+| OpenAI-linked developers → debt markets | project debt | ~$100B accumulated |
+
+### 9.3 Why weekly updates are the product (evidence from Feb–Aug 2026 alone)
+
+A Jan-2026 snapshot would today be wrong about nearly every major edge: the Nvidia–OpenAI $100B deal died; Microsoft–OpenAI was rewritten (exclusivity gutted, rev-share capped); xAI merged into SpaceX; Anthropic's run-rate quintupled and reportedly passed OpenAI's; OpenAI missed internal targets and pushed its IPO to 2027; the AI story moved decisively into **credit** (Morgan Stanley: ~$570B AI debt issuance in 2026; El Paso pricing at 7.53%; lenders demanding covenants; SoftBank margin-lending against its OpenAI stake); Nvidia stood up the $500B financier coalition; and ~$130B of US data-center projects were blocked or delayed in Q1 2026 (contested — SemiAnalysis rebuts the "half of 2026 builds delayed" framing). Deal snapshots rot in weeks; a maintained graph with a changelog is the moat.
+
+Known data-quality flags to encode as low-confidence observations from day one: CoreWeave's FY26 revenue guidance conflicting with H1 actuals; Nvidia–Intel stake value discrepancies ($9.5B per 13F vs. higher press claims); Meta's Oct-2025 bond size ($25B vs $30B reports); private valuations are round marks, not traded prices; Microsoft-backlog-share-of-OpenAI figures come from secondary trackers, not filings.
 
 ## 10. The intellectual core: circularity & contagion framework
 

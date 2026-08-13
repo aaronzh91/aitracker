@@ -1,0 +1,35 @@
+{
+  "id": "openai--stargate--jv-equity",
+  "from": "openai",
+  "to": "stargate",
+  "type": "jv_equity",
+  "status": "active",
+  "headline": { "value": 40, "unit": "pct", "caveat": "~40% of Stargate LLC; OpenAI's own capital commitment against the $500B/10GW target not separately disclosed", "as_of": "2025-01-21" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "per-partner equity funded undisclosed; program-level >$400B in motion", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-01-21", "start": "2025-01", "end": "2029", "duration_years": 4 },
+  "nature_md": "OpenAI holds ~40% of Stargate LLC and runs it operationally (SoftBank ~40% and 'financial responsibility'; Oracle+MGX ~20%). The circular geometry is the point of interest: OpenAI is simultaneously **equity owner** of the vehicle and its **sole anchor customer** — Stargate exists to build capacity that OpenAI then pays to use (Abilene 1.2GW flagship, five sites added Sept 2025, ~7GW→8GW+ planned, Stargate Korea/India/UAE branded extensions). Much of the Oracle $300B contract is delivered from Stargate-developed sites. OpenAI thus sits on both sides of the landlord-tenant line, wearing equity upside on infrastructure whose lease payments are its own future costs.",
+  "accounting": {
+    "payer_treatment_md": "JV equity contribution (amount undisclosed) — an investment on OpenAI's balance sheet. Separately, OpenAI's usage contracts with Stargate-delivered capacity (largely via Oracle) create the forward cost obligations recorded on those edges; the LLC structure keeps construction debt off OpenAI's own books.",
+    "payee_treatment_md": "Equity capitalization of Stargate LLC, layered with site-level project debt (Abilene: JPMorgan-led $2.3B + $7.1B construction loans via the Crusoe/Blue Owl/Primary Digital JV). The LLC's consolidated financials are not public.",
+    "off_balance_sheet": true,
+    "flags": ["spv_shift", "round_trip_cloud", "commitment_unfunded"]
+  },
+  "related_edges": ["softbank--stargate--jv-equity", "oracle--stargate--jv-equity", "mgx--stargate--jv-equity", "openai--oracle--compute-2025", "openai--tata--stargate-india"],
+  "both_sides_md": "**Bear:** OpenAI owning its landlord blurs cost discovery — capacity pricing between related parties isn't market-tested, and the SPV lattice hides leverage that ultimately claims OpenAI's future cashflow (Kedrosky: price it like a sovereign-backed utility). **Bull:** vertical integration into infrastructure is what every hyperscaler already did — owning ~40% of the vehicle captures developer margin instead of paying it away, and third-party capital (MGX, project lenders) validates the assets independently.",
+  "observations": [],
+  "events": [
+    {
+      "date": "2025-01-21",
+      "title": "Stargate announced: OpenAI takes ~40% and operational lead",
+      "impact": "high",
+      "entities": ["openai", "stargate"],
+      "sources": [{ "url": "https://openai.com/index/announcing-the-stargate-project/", "publisher": "OpenAI", "published": "2025-01-21", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://openai.com/index/announcing-the-stargate-project/", "publisher": "OpenAI", "published": "2025-01-21", "kind": "company_pr" },
+    { "url": "https://openai.com/index/five-new-stargate-sites/", "publisher": "OpenAI", "published": "2025-09-23", "kind": "company_pr" },
+    { "url": "https://www.datacenterdynamics.com/en/news/openai-announces-five-more-us-stargate-data-centers-with-oracle-and-softbank/", "publisher": "Data Center Dynamics", "published": "2025-09", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

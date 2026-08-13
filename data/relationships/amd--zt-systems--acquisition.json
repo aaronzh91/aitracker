@@ -1,0 +1,33 @@
+{
+  "id": "amd--zt-systems--acquisition",
+  "from": "amd",
+  "to": "zt-systems",
+  "type": "acquisition",
+  "status": "completed",
+  "headline": { "value": 4.9, "unit": "USD_B", "caveat": "Cash-and-stock (incl. up to $400M contingent), announced Aug 2024, closed Mar 31, 2025. AMD kept the rack/systems design business and resold ZT's manufacturing arm to Sanmina for ~$3B.", "as_of": "2025-03-31" },
+  "realized_to_date": { "value": 4.9, "unit": "USD_B", "caveat": "Closed; net cost after the ~$3B Sanmina manufacturing divestiture is roughly ~$2B for the design/talent assets retained.", "as_of": "2025-12" },
+  "term": { "announced": "2024-08-19", "start": "2025-03-31", "end": null, "duration_years": null },
+  "nature_md": "AMD bought ZT Systems — a leading designer/builder of hyperscale AI server and rack-scale systems — for $4.9B to gain the systems-engineering capability needed to sell full rack-level MI-series solutions (matching NVIDIA's NVL72 systems play), then divested ZT's manufacturing business to Sanmina for up to ~$3B (announced May 2025) while retaining ~1,200 design engineers. Sanmina became a preferred NPI manufacturing partner for AMD AI systems. Net effect: ~$2B for the design organization that underpins AMD's Helios rack platform and the OpenAI/Humain GW-scale deployments.",
+  "accounting": {
+    "payer_treatment_md": "AMD consolidated ZT at close (goodwill + intangibles + brief manufacturing revenue), then derecognized the manufacturing arm on the Sanmina sale; retained business is opex-heavy design capability serving AMD's data-center segment, not a standalone revenue line.",
+    "payee_treatment_md": "ZT's private owners received cash and AMD stock; the manufacturing business transferred again to Sanmina for ~$3B (three-quarters cash), with Sanmina booking the fab assets and AMD retaining customer-facing systems design.",
+    "off_balance_sheet": false,
+    "flags": []
+  },
+  "related_edges": ["humain--amd--gpu"],
+  "observations": [],
+  "events": [
+    {
+      "date": "2025-05",
+      "title": "AMD agrees to sell ZT manufacturing business to Sanmina for ~$3B",
+      "impact": "medium",
+      "entities": ["amd", "zt-systems"],
+      "sources": [{ "url": "https://www.reuters.com/markets/deals/sanmina-buy-zt-systems-manufacturing-business-amd-3-billion-deal-2025-05-19/", "publisher": "Reuters", "published": "2025-05-19", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://ir.amd.com/news-events/press-releases/detail/1236/amd-completes-acquisition-of-zt-systems", "publisher": "AMD IR", "published": "2025-03-31", "kind": "company_ir" },
+    { "url": "https://www.reuters.com/markets/deals/sanmina-buy-zt-systems-manufacturing-business-amd-3-billion-deal-2025-05-19/", "publisher": "Reuters", "published": "2025-05-19", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

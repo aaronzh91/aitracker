@@ -1,0 +1,33 @@
+{
+  "id": "aip--aligned-data-centers--acquisition",
+  "from": "aip",
+  "to": "aligned-data-centers",
+  "type": "acquisition",
+  "status": "completed",
+  "headline": { "value": 40, "unit": "USD_B", "caveat": "enterprise value; consortium of AIP, MGX, and BlackRock's GIP acquired 100% of the equity from Macquarie Asset Management, plus a further $5B committed growth capital", "as_of": "2026-07-20" },
+  "realized_to_date": { "value": 40, "unit": "USD_B", "caveat": "closed Jul 2026; equity/debt split of the consideration not disclosed", "as_of": "2026-07-20" },
+  "term": { "announced": "2025-10", "start": "2026-07-20", "end": null, "duration_years": null },
+  "nature_md": "The AI Infrastructure Partnership (AIP — founding members BlackRock/GIP, Microsoft, MGX, NVIDIA, xAI; anchor investors incl. KIA and Temasek), together with MGX and BlackRock's GIP directly, closed the ~$40B acquisition of 100% of Aligned Data Centers from Macquarie Asset Management in July 2026 — the largest private digital-infrastructure deal to date and AIP's marquee deployment from its $30B equity mandate (up to $100B with debt). Aligned brings 51 campuses and >6.4GW operational/planned. The buyers committed an additional $5B of growth capital for AI-ready capacity. This edge records AIP as the named acquirer of record for the consortium; MGX and GIP co-invested directly.",
+  "accounting": {
+    "payer_treatment_md": "Consortium equity (AIP vehicle + MGX + GIP funds) plus assumed/raised acquisition debt at the Aligned level; for AIP's members this is fund capital, not corporate balance-sheet M&A. Microsoft and NVIDIA participate economically as AIP members while also being, respectively, a major tenant category and the supplier of what fills the buildings.",
+    "payee_treatment_md": "Sale proceeds to Macquarie Asset Management funds (exit); Aligned itself continues under new ownership with $5B of committed growth capital. Purchase price implies a full-cycle bet that AI-driven data-center demand persists at ~$6.25M+/MW valuations.",
+    "off_balance_sheet": false,
+    "flags": []
+  },
+  "related_edges": ["blackrock--nvidia-financing-coalition--capitalization"],
+  "observations": [],
+  "events": [
+    {
+      "date": "2026-07-20",
+      "title": "AIP/MGX/GIP close ~$40B acquisition of Aligned Data Centers",
+      "impact": "high",
+      "entities": ["aip", "mgx", "blackrock", "aligned-data-centers"],
+      "sources": [{ "url": "https://www.businesswire.com/news/home/20260720395324/en/AIP-MGX-and-BlackRocks-GIP-Close-Acquisition-of-Aligned-Data-Centers", "publisher": "Business Wire", "published": "2026-07-20", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.businesswire.com/news/home/20260720395324/en/AIP-MGX-and-BlackRocks-GIP-Close-Acquisition-of-Aligned-Data-Centers", "publisher": "Business Wire", "published": "2026-07-20", "kind": "company_pr" },
+    { "url": "https://www.datacenterdynamics.com/en/news/mgx-aip-and-blackrocks-gip-complete-40bn-acquisition-of-aligned-data-centers/", "publisher": "Data Center Dynamics", "published": "2026-07", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

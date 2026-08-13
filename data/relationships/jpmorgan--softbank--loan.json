@@ -1,0 +1,34 @@
+{
+  "id": "jpmorgan--softbank--loan",
+  "from": "jpmorgan",
+  "to": "softbank",
+  "type": "credit_facility",
+  "status": "active",
+  "headline": { "value": 40, "unit": "USD_B", "caveat": "unsecured 12-month bridge facility, 21 lenders; JPMorgan and Goldman Sachs lead with Mizuho, SMBC, and MUFG; sub-underwriters incl. HSBC, BNP Paribas, Intesa Sanpaolo", "as_of": "2026-03" },
+  "realized_to_date": { "value": 20, "unit": "USD_B", "caveat": "estimated: $10B tranches scheduled Apr 1 / Jul 1 / Oct 1, 2026 — first confirmed drawn, the July tranche assumed drawn on schedule, October pending", "as_of": "2026-08-13" },
+  "term": { "announced": "2026-03", "start": "2026-03", "end": "2027-03", "duration_years": 1 },
+  "nature_md": "A $40B unsecured bridge facility — SoftBank's largest-ever loan, with lead arrangers JPMorgan and Goldman Sachs alongside Mizuho, Sumitomo Mitsui, and MUFG, sub-underwriters including HSBC, BNP Paribas, and Intesa Sanpaolo, and 21 lenders in total (JPM and GS reportedly earning ~$100M in combined fees). Signed March 2026, 12-month maturity, ~SOFR+250bp (~6.1%). $30B funds SoftBank's follow-on OpenAI investment through Vision Fund 2 (taking planned cumulative OpenAI investment to ~$64.6B by Oct 1, 2026), drawn in $10B tranches Apr 1 / Jul 1 / Oct 1, 2026; $10B is for general corporate purposes. The 12-month unsecured tenor is widely read as lenders underwriting to an expected OpenAI IPO as the take-out.",
+  "accounting": {
+    "payer_treatment_md": "Unsecured syndicated lending across 21 banks — spreading a record single-name commitment; ~$100M of arrangement fees to the leads. The bridge's repayment path depends heavily on capital-markets events (OpenAI IPO or SoftBank asset sales) rather than SoftBank operating cash flow.",
+    "payee_treatment_md": "Debt on SoftBank's balance sheet funding an equity investment in a loss-making private company — the archetype of the cycle's debt-funds-equity-funds-compute chain. Sits alongside the $10B OpenAI-stake margin loan (Aug 2026) and follows SoftBank's sale of its entire NVIDIA position to fund OpenAI.",
+    "off_balance_sheet": false,
+    "flags": []
+  },
+  "related_edges": ["goldman-sachs--softbank--margin-loan", "nvidia--openai--equity-2026"],
+  "observations": [],
+  "events": [
+    {
+      "date": "2026-03",
+      "title": "SoftBank signs $40B bridge with 21 lenders to fund OpenAI stake",
+      "impact": "high",
+      "entities": ["softbank", "jpmorgan", "goldman-sachs"],
+      "sources": [{ "url": "https://techcrunch.com/2026/03/27/why-softbanks-new-40b-loan-points-to-a-2026-openai-ipo/", "publisher": "TechCrunch", "published": "2026-03-27", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://techcrunch.com/2026/03/27/why-softbanks-new-40b-loan-points-to-a-2026-openai-ipo/", "publisher": "TechCrunch", "published": "2026-03-27", "kind": "press" },
+    { "url": "https://www.bloomberg.com/news/articles/2026-07-21/jpmorgan-goldman-set-for-100-million-paydays-on-softbank-s-record-loan", "publisher": "Bloomberg", "published": "2026-07-21", "kind": "press" },
+    { "url": "https://group.softbank/en/news/press/20260227", "publisher": "SoftBank Group", "published": "2026-02-27", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

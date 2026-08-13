@@ -1,0 +1,25 @@
+{
+  "id": "mgx--stargate--jv-equity",
+  "from": "mgx",
+  "to": "stargate",
+  "type": "jv_equity",
+  "status": "active",
+  "headline": { "value": null, "unit": "pct", "caveat": "MGX + Oracle together hold ~20% of Stargate LLC; the individual split and MGX's capital commitment are undisclosed", "as_of": "2025-01-21" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "per-partner equity funded undisclosed", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-01-21", "start": "2025-01", "end": "2029", "duration_years": 4 },
+  "nature_md": "Abu Dhabi's MGX (the UAE sovereign AI investment vehicle) is the fourth initial equity funder of Stargate LLC, sharing ~20% with Oracle. MGX is the program's sovereign-capital leg and the bridge to Stargate UAE (1GW announced, first 200MW live Feb 2026, on which the UAE side committed to matching US-based investment). MGX also participates elsewhere in the same stack it co-owns — it is an investor in OpenAI rounds, a partner in the AI Infrastructure Partnership with BlackRock/Microsoft/NVIDIA, and co-acquirer of Aligned Data Centers ($40B) — making Gulf capital one of the few genuinely external (non-circular) funding sources in the OpenAI cluster, though it appears at multiple layers simultaneously.",
+  "accounting": {
+    "payer_treatment_md": "Sovereign-fund investment in JV equity; MGX discloses no financials. Its Stargate exposure spans layers: LLC equity, OpenAI equity, and data-center assets (Aligned via AIP) — correlated bets on the same demand.",
+    "payee_treatment_md": "Equity capitalization of Stargate LLC; sovereign participation also carries geopolitical weight (chip-export and data-sovereignty approvals) that pure financial investors don't bring.",
+    "off_balance_sheet": true,
+    "flags": ["spv_shift"]
+  },
+  "related_edges": ["softbank--stargate--jv-equity", "openai--stargate--jv-equity", "oracle--stargate--jv-equity"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://openai.com/index/announcing-the-stargate-project/", "publisher": "OpenAI", "published": "2025-01-21", "kind": "company_pr" },
+    { "url": "https://www.datacenterdynamics.com/en/news/openai-announces-five-more-us-stargate-data-centers-with-oracle-and-softbank/", "publisher": "Data Center Dynamics", "published": "2025-09", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

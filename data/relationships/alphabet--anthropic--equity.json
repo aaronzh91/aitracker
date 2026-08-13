@@ -1,0 +1,39 @@
+{
+  "id": "alphabet--anthropic--equity",
+  "from": "alphabet",
+  "to": "anthropic",
+  "type": "equity_investment",
+  "status": "active",
+  "headline": { "value": 3, "unit": "USD_B", "caveat": "cumulative >$3B across multiple rounds per court filings, plus a planned $750M convertible (Sept 2025) — ~14% stake, capped at 15%, no voting rights or board presence. UNVERIFIED beyond litigation documents and press; Alphabet has never disclosed the figures itself", "as_of": "2025-03" },
+  "realized_to_date": { "value": 3, "unit": "USD_B", "caveat": "at least; total including 2025–26 participation likely higher but undisclosed", "as_of": "2025-03" },
+  "term": { "announced": "2023-02", "start": "2023", "end": null, "duration_years": null },
+  "nature_md": "Google's Anthropic stake became public knowledge only through court documents (obtained by the NYT during the search antitrust remedies fight): >$3B contributed across multiple rounds for **~14% ownership**, contractually capped at 15%, with **no voting rights, board seats, or observer rights**, plus a further $750M via convertible debt planned for Sept 2025. The DOJ at one point proposed forcing divestment, then dropped it. Confidence is deliberately low: Alphabet files no disclosure of the position's size or carrying value, and all figures trace to litigation documents as reported by press. Like Amazon's position, the equity is paired with cloud supply (the TPU relationship, see related edge).",
+  "accounting": {
+    "payer_treatment_md": "Non-marketable equity security under ASC 321 (measurement alternative or fair value) — Alphabet does not break out the position or its remeasurement gains, which after Anthropic's $965B Series H would be very large (~14% of $965B ≈ $135B notional vs. ~$3B cost). The silence itself is notable relative to Amazon's loud disclosure.",
+    "payee_treatment_md": "Equity financing; no revenue. Proceeds partially fund Google Cloud TPU purchases booked as Alphabet revenue — same round-trip pattern as Amazon, with weaker public accounting visibility.",
+    "off_balance_sheet": false,
+    "flags": ["equity_for_revenue", "round_trip_cloud"]
+  },
+  "related_edges": ["anthropic--alphabet--tpu", "amazon--anthropic--equity", "anthropic--broadcom--tpu-2026"],
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Google ownership of Anthropic",
+      "period": "2025",
+      "value": 14,
+      "unit": "pct",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://www.datacenterdynamics.com/en/news/google-owns-14-percent-of-generative-ai-business-anthropic/", "publisher": "DCD (citing NYT / court filings)", "published": "2025", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "From litigation documents, pre-dating 2025–26 rounds; current percentage after Series G/H dilution unknown. UNVERIFIED by any Alphabet or Anthropic disclosure."
+    }
+  ],
+  "events": [],
+  "sources": [
+    { "url": "https://techcrunch.com/2025/03/11/google-has-given-anthropic-more-funding-than-previously-known-show-new-filings/", "publisher": "TechCrunch", "published": "2025-03-11", "kind": "press" },
+    { "url": "https://www.datacenterdynamics.com/en/news/google-owns-14-percent-of-generative-ai-business-anthropic/", "publisher": "Data Center Dynamics", "published": "2025", "kind": "press" },
+    { "url": "https://www.computing.co.uk/news/2025/ai/google-revealed-to-hold-14-stake-in-anthropic", "publisher": "Computing", "published": "2025", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

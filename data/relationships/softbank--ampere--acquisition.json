@@ -1,0 +1,33 @@
+{
+  "id": "softbank--ampere--acquisition",
+  "from": "softbank",
+  "to": "ampere",
+  "type": "acquisition",
+  "status": "completed",
+  "headline": { "value": 6.5, "unit": "USD_B", "caveat": "all-cash acquisition agreed Mar 2025; closed Nov 25, 2025 after the FTC ended its review", "as_of": "2025-11-25" },
+  "realized_to_date": { "value": 6.5, "unit": "USD_B", "as_of": "2025-11-25" },
+  "term": { "announced": "2025-03", "start": "2025-11-25", "end": null, "duration_years": null },
+  "nature_md": "SoftBank Group acquired Arm-server-CPU designer Ampere Computing for $6.5B in cash (agreed March 2025; closed November 25, 2025 — the task-force review by the FTC was halted, clearing the final obstacle). Sellers included Carlyle and Oracle, both long-time Ampere investors. Ampere became a wholly owned SoftBank subsidiary, slotting into Masayoshi Son's AI-compute stack alongside ~90%-owned Arm and the Stargate program — giving SoftBank a merchant CPU design house for AI data centers.",
+  "accounting": {
+    "payer_treatment_md": "Cash acquisition consolidated onto SoftBank Group's balance sheet (goodwill + intangibles vs the $6.5B consideration); adds to the leverage-funded AI program alongside the OpenAI stake, Arm, and Stargate commitments.",
+    "payee_treatment_md": "Exit proceeds to Carlyle, Oracle, and other holders; Ampere's operating results consolidate into SoftBank from Nov 2025.",
+    "off_balance_sheet": false,
+    "flags": []
+  },
+  "related_edges": ["jpmorgan--softbank--loan"],
+  "observations": [],
+  "events": [
+    {
+      "date": "2025-11-25",
+      "title": "SoftBank completes $6.5B acquisition of Ampere Computing",
+      "impact": "medium",
+      "entities": ["softbank", "ampere"],
+      "sources": [{ "url": "https://www.bloomberg.com/news/articles/2025-11-26/softbank-completes-acquisition-of-chipmaker-ampere-computing", "publisher": "Bloomberg", "published": "2025-11-26", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.bloomberg.com/news/articles/2025-11-26/softbank-completes-acquisition-of-chipmaker-ampere-computing", "publisher": "Bloomberg", "published": "2025-11-26", "kind": "press" },
+    { "url": "https://amperecomputing.com/press/softbank-group-to-acquire-ampere-computing", "publisher": "Ampere Computing", "published": "2025-03", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

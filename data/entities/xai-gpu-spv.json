@@ -1,0 +1,92 @@
+{
+  "id": "xai-gpu-spv",
+  "name": "xAI GPU SPV (Colossus 2 chip-leasing vehicle)",
+  "kind": "spv_jv",
+  "category": "spv_jv",
+  "group": "capital",
+  "region": "us",
+  "tier": 1,
+  "cik": null,
+  "website": null,
+  "monetization": "Special-purpose vehicle that buys Nvidia GPUs and leases them to xAI over five years; monetizes via lease payments, keeping ~$20B of compute financing — and the hardware — off xAI's balance sheet.",
+  "description_md": "The xAI GPU SPV is the ~$20B financing vehicle reported in October 2025 as part of xAI's expanded fundraising for the Colossus 2 data center in Memphis. Structure: ~$7.5B of equity anchored by Valor Equity Partners (including up to $2B from Nvidia itself) plus up to ~$12.5B of GPU-backed debt led by Apollo Global Management and Diameter Capital Partners. The SPV purchases Nvidia chips and leases them back to xAI over five years in a lease-to-own arrangement with a buyout option; Valor subsequently raised ~$5.4B toward the equity anchor.",
+  "ai_monetization_md": "Cash in: equity from Valor/Nvidia/co-investors and secured debt from Apollo/Diameter-led lenders. Cash out: GPU purchases from Nvidia. Cash back: five-year lease payments from xAI. Two-sided accounting: the SPV owns the assets and carries the financing, while xAI records only an operating expense — no debt and no depreciating GPU fleet on xAI's balance sheet. Lenders' recovery is designed to come from the hardware itself rather than xAI's corporate credit. Nvidia's ≤$2B equity participation means the chip vendor holds equity in the vehicle whose sole purpose is buying its chips (`vendor_financing` / `equity_for_revenue` pattern).",
+  "risk_notes_md": "This is the cleanest live example of `collateralized_gpu_debt`: the collateral (used GB300-generation GPUs) is priced off the same AI demand cycle that determines xAI's ability to pay its leases — wrong-way risk by construction, and nobody has established what a repossessed 5-year-old GPU fleet is worth at this scale. The five-year lease term itself embeds a useful-life assumption that is contested (the Burry depreciation debate). Counterparty risk shifted in February 2026 when xAI merged into SpaceX — a stronger consolidated credit, but lease obligations' priority within the merged entity is undisclosed. Precise SPV legal structure, lessor identity, and covenant terms have not been made public.",
+  "observations": [
+    {
+      "metric": "funding_raised",
+      "metric_label": "Total SPV structure size (equity + debt)",
+      "period": "2025-10",
+      "value": 20,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://investinglive.com/stocks/musks-xai-seeks-20-bn-funding-nvidia-investing-and-backing-gpu-linked-financing-model-20251008/", "publisher": "InvestingLive", "published": "2025-10-08", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "~$7.5B equity + up to $12.5B GPU-backed debt; sized for Nvidia chips for Colossus 2 (Memphis)."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Equity tranche (Valor-anchored, incl. ≤$2B Nvidia)",
+      "period": "2025-10",
+      "value": 7.5,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.roic.ai/news/xai-pursues-20-billion-lease-to-own-deal-for-nvidia-gpus-through-spv-structure-10-16-2025", "publisher": "Roic News", "published": "2025-10-16", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Nvidia contribution capped around $2B — the chip vendor as equity holder in its own demand."
+    },
+    {
+      "metric": "other",
+      "metric_label": "GPU-backed debt tranche (Apollo/Diameter-led)",
+      "period": "2025-10",
+      "value": 12.5,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.roic.ai/news/xai-pursues-20-billion-lease-to-own-deal-for-nvidia-gpus-through-spv-structure-10-16-2025", "publisher": "Roic News", "published": "2025-10-16", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "'Up to' figure; secured by the GPUs so lenders recover through hardware rather than xAI's credit."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Valor equity raised toward the SPV",
+      "period": "2026",
+      "value": 5.4,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.datacenterdynamics.com/en/news/valor-equity-partners-raises-54bn-to-buy-nvidia-gpus-for-xai/", "publisher": "Data Center Dynamics", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Raised specifically to buy Nvidia GPUs for xAI; timing of the report not independently dated — treated as in progress toward the ~$7.5B equity target."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-10-08",
+      "title": "~$20B GPU-leasing SPV structure reported, with Nvidia equity backing",
+      "why_it_matters": "Landmark test of GPUs as standalone loan collateral and of off-balance-sheet compute for a frontier lab — the structure Nvidia's Aug 2026 coalition later sought to generalize.",
+      "impact": "high",
+      "entities": ["xai-gpu-spv", "xai", "nvidia", "apollo"],
+      "sources": [
+        { "url": "https://investinglive.com/stocks/musks-xai-seeks-20-bn-funding-nvidia-investing-and-backing-gpu-linked-financing-model-20251008/", "publisher": "InvestingLive", "published": "2025-10-08", "kind": "press" },
+        { "url": "https://www.roic.ai/news/xai-pursues-20-billion-lease-to-own-deal-for-nvidia-gpus-through-spv-structure-10-16-2025", "publisher": "Roic News", "published": "2025-10-16", "kind": "press" }
+      ]
+    },
+    {
+      "date": "2026-02",
+      "title": "Lessee xAI merges into SpaceX",
+      "why_it_matters": "The SPV's sole counterparty became part of a ~$1.25T combined entity — changing the credit behind the leases without any public disclosure of how obligations rank in the merged company.",
+      "impact": "medium",
+      "entities": ["xai-gpu-spv", "xai"],
+      "sources": [{ "url": "https://www.prnewswire.com/news-releases/humain-backs-xai-with-3-billion-series-e-investment-ahead-of-historic-spacex-merger-302691510.html", "publisher": "PR Newswire", "published": "2026-02", "kind": "company_pr", "notes": "Series E / merger context reference." }]
+    }
+  ],
+  "sources": [
+    { "url": "https://investinglive.com/stocks/musks-xai-seeks-20-bn-funding-nvidia-investing-and-backing-gpu-linked-financing-model-20251008/", "publisher": "InvestingLive", "published": "2025-10-08", "kind": "press" },
+    { "url": "https://www.roic.ai/news/xai-pursues-20-billion-lease-to-own-deal-for-nvidia-gpus-through-spv-structure-10-16-2025", "publisher": "Roic News", "published": "2025-10-16", "kind": "press" },
+    { "url": "https://www.datacenterdynamics.com/en/news/valor-equity-partners-raises-54bn-to-buy-nvidia-gpus-for-xai/", "publisher": "Data Center Dynamics", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

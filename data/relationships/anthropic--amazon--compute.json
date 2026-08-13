@@ -1,0 +1,34 @@
+{
+  "id": "anthropic--amazon--compute",
+  "from": "anthropic",
+  "to": "amazon",
+  "type": "compute_purchase",
+  "status": "contracted",
+  "headline": { "value": 100, "unit": "USD_B", "caveat": ">$100B of AWS purchases over a decade, incl. up to 5GW of capacity on Trainium 2/3/4 and future generations plus tens of millions of Graviton cores", "as_of": "2026-04-20" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "Anthropic has consumed AWS/Trainium at scale since 2024 (Project Rainier ~1GW live 2025); cumulative spend not disclosed", "as_of": "2026-08-13" },
+  "term": { "announced": "2026-04-20", "start": "2026", "end": "2036", "duration_years": 10 },
+  "nature_md": "Announced Apr 20, 2026 alongside Amazon's $5B (+ up to $20B) investment: Anthropic commits to **more than $100B of AWS technology purchases over ten years**, securing up to 5GW of capacity — significant Trainium3 in 2026, plus Trainium2/4 and rights to future silicon generations and Graviton CPU fleets — with international inference expansion in Asia and Europe. Builds on Project Rainier (the ~1GW Trainium2 training cluster live in 2025). AWS remains Anthropic's primary training partner even as Anthropic runs a deliberate three-cloud strategy (Google TPUs, Azure). The equity and the commitment were struck together — the round-trip is explicit in the announcement itself.",
+  "accounting": {
+    "payer_treatment_md": "Decade-scale purchase commitment expensed as consumed — Anthropic's largest single forward obligation, payable from revenue growth (run-rate $9B Dec 2025 → $30B+ mid-2026) and continued fundraising. Terms (minimums, take-or-pay) undisclosed.",
+    "payee_treatment_md": "AWS books consumption revenue and the commitment feeds backlog (~$496B mid-2026). Because Amazon's equity funds the same counterparty whose purchases it books, a slice of AWS growth is self-referential — though Anthropic's third-party revenue increasingly covers the spend.",
+    "off_balance_sheet": true,
+    "flags": ["round_trip_cloud", "commitment_unfunded"]
+  },
+  "related_edges": ["amazon--anthropic--equity", "anthropic--alphabet--tpu", "anthropic--microsoft--azure", "anthropic--fluidstack--compute"],
+  "observations": [],
+  "events": [
+    {
+      "date": "2026-04-20",
+      "title": "Anthropic commits >$100B/decade to AWS incl. up to 5GW Trainium",
+      "impact": "high",
+      "entities": ["anthropic", "amazon"],
+      "sources": [{ "url": "https://www.anthropic.com/news/anthropic-amazon-compute", "publisher": "Anthropic", "published": "2026-04-20", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.anthropic.com/news/anthropic-amazon-compute", "publisher": "Anthropic", "published": "2026-04-20", "kind": "company_pr" },
+    { "url": "https://techcrunch.com/2026/04/20/anthropic-takes-5b-from-amazon-and-pledges-100b-in-cloud-spending-in-return/", "publisher": "TechCrunch", "published": "2026-04-20", "kind": "press" },
+    { "url": "https://www.aboutamazon.com/news/company-news/amazon-invests-additional-5-billion-anthropic-ai", "publisher": "Amazon", "published": "2026-04-20", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "humain--nvidia--gpu",
+  "from": "humain",
+  "to": "nvidia",
+  "type": "hardware_purchase",
+  "status": "active",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "Dollar value undisclosed — Humain discloses GPU counts and megawatts, not contract dollars. Program: ~600K NVIDIA GPUs over ~5 years for Saudi AI factories, starting with an initial 18K GB300 tranche (announced May 2025).", "as_of": "2025-05-13" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "Initial phases shipped/deploying (first AI factory tranches live 2026); cumulative spend unpublished. At list-price economics 600K GPUs would imply tens of billions of dollars, but no figure is on record.", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-05-13", "start": "2025", "end": "2030", "duration_years": 5 },
+  "nature_md": "Humain's anchor silicon program: up to ~600K NVIDIA GPUs over roughly five years to build 'AI factories' of several hundred MW (500MW initially announced, within Humain's 6.6GW-by-2034 pipeline) in Saudi Arabia, beginning with 18K GB300 Grace Blackwell systems. xAI is contracted as an anchor tenant/first customer of a 500MW Humain data center running this compute (see related edge). Shipments require US export licenses granted under the 2025 US-Saudi AI framework — policy risk is structural. No dollar value has ever been disclosed; this is the tracker's canonical example of a MW-and-units-only sovereign deal (SPEC 9.2b).",
+  "accounting": {
+    "payer_treatment_md": "Humain capitalizes GPUs/systems as sovereign infrastructure funded by PIF; no public financials exist to verify commitments against payments.",
+    "payee_treatment_md": "NVIDIA books data-center revenue on delivery under export license; sovereign orders diversify its hyperscaler concentration but add geopolitical revenue-recognition risk (licenses revocable). Customer-level dollars undisclosed in NVIDIA filings.",
+    "off_balance_sheet": true,
+    "flags": ["commitment_unfunded", "customer_concentration"]
+  },
+  "related_edges": ["humain--amd--gpu", "humain--xai--jv-equity", "nvidia--tsmc--wafer-packaging"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.cnbc.com/2025/11/19/musks-xai-will-be-customer-for-nvidia-data-center-in-saudi-arabia.html", "publisher": "CNBC", "published": "2025-11-19", "kind": "press" },
+    { "url": "https://vision2030.ai/analysis/humain-ai-infrastructure/", "publisher": "vision2030.ai", "published": "2026", "kind": "analyst" },
+    { "url": "https://nvidianews.nvidia.com/news/nvidia-and-humain-build-ai-factories-saudi-arabia", "publisher": "NVIDIA Newsroom", "published": "2025-05", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

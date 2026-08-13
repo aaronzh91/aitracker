@@ -1,0 +1,34 @@
+{
+  "id": "goldman-sachs--softbank--margin-loan",
+  "from": "goldman-sachs",
+  "to": "softbank",
+  "type": "margin_loan",
+  "status": "contracted",
+  "headline": { "value": 10, "unit": "USD_B", "caveat": "full syndicate facility with Goldman Sachs Bank USA as identifiable lead; also JPMorgan Chase Bank, Mizuho Securities USA, Apollo Global Funding, and SMBC", "as_of": "2026-08-06" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "signed early Aug 2026; SoftBank planned to draw within the month — drawdown not yet confirmed as of Aug 13, 2026" },
+  "term": { "announced": "2026-08-06", "start": "2026-08", "end": "2028-08", "duration_years": 2 },
+  "nature_md": "SoftBank secured a $10B, two-year margin loan (one-year extension option) **collateralized by its OpenAI stake** — its ~$64.6B planned OpenAI position pledged against bank debt. Priced at ~SOFR+425bp (~7.9% at signing), nearly triple the spread of SoftBank's 2018 Alibaba margin loan, reflecting private (unlisted) collateral. Lenders: Goldman Sachs Bank USA, JPMorgan Chase Bank NA, Mizuho Securities USA, Apollo Global Funding, and Sumitomo Mitsui Banking Corp. Proceeds fund general corporate purposes and Vision Fund II-2. Provisions require additional collateral or early repayment if OpenAI's preferred shares suffer a sharp valuation decline — a direct transmission channel from OpenAI's private mark to SoftBank's liquidity. Stacks on top of the separate $40B unsecured bridge (see related edge).",
+  "accounting": {
+    "payer_treatment_md": "Secured lending on the syndicate banks' books against unlisted preferred shares — collateral that cannot be sold quickly and whose 'price' is a funding-round mark. The margin-call mechanics make the banks' protection procyclical: it tightens exactly when OpenAI's valuation weakens.",
+    "payee_treatment_md": "Non-recourse-style leverage against SoftBank's largest asset without selling it: debt on SoftBank's balance sheet, collateral pledged. SoftBank has now sold its entire NVIDIA stake, borrowed $40B unsecured, and margined its OpenAI stake to keep funding its AI program — a leverage stack senior official-sector observers cite in the credit-cycle debate.",
+    "off_balance_sheet": false,
+    "flags": []
+  },
+  "related_edges": ["jpmorgan--softbank--loan", "nvidia--openai--equity-2026"],
+  "both_sides_md": "**Bear:** borrowing at ~7.9% against an illiquid private mark, with collateral-top-up triggers, is late-cycle leverage — if OpenAI's valuation resets, SoftBank faces margin calls on a stake it cannot sell (Bloomberg's spread comparison vs the Alibaba loan makes the risk repricing explicit). **Bull:** the loan is small against the stake's ~$64.6B planned cost basis (let alone its mark), monetizes an appreciated asset without dilution ahead of a potential OpenAI IPO, and five top-tier lenders accepting OpenAI paper as collateral is itself institutional validation of the asset class.",
+  "observations": [],
+  "events": [
+    {
+      "date": "2026-08-06",
+      "title": "SoftBank signs $10B margin loan backed by OpenAI stake at ~SOFR+425bp",
+      "impact": "high",
+      "entities": ["softbank", "goldman-sachs", "jpmorgan", "apollo"],
+      "sources": [{ "url": "https://www.bloomberg.com/news/articles/2026-08-06/softbank-secures-10-billion-margin-loan-backed-by-openai-stake", "publisher": "Bloomberg", "published": "2026-08-06", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.bloomberg.com/news/articles/2026-08-06/softbank-secures-10-billion-margin-loan-backed-by-openai-stake", "publisher": "Bloomberg", "published": "2026-08-06", "kind": "press" },
+    { "url": "https://thenextweb.com/news/softbank-10b-margin-loan-openai-stake-collateral", "publisher": "TNW", "published": "2026-08", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

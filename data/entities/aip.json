@@ -1,0 +1,87 @@
+{
+  "id": "aip",
+  "name": "AI Infrastructure Partnership (AIP)",
+  "kind": "spv_jv",
+  "category": "spv_jv",
+  "group": "capital",
+  "region": "us",
+  "tier": 1,
+  "cik": null,
+  "website": null,
+  "monetization": "Consortium investment partnership (BlackRock/GIP, Microsoft, MGX; Nvidia and xAI since Mar 2025) mobilizing $30B of equity — up to $100B with debt — to buy and build AI data centers and power; monetizes via infrastructure returns on assets like Aligned Data Centers.",
+  "description_md": "The AI Infrastructure Partnership is the consortium vehicle launched in September 2024 (originally as the Global AI Infrastructure Investment Partnership) by BlackRock, Global Infrastructure Partners, Microsoft, and MGX to invest in next-generation AI data centers and supporting power infrastructure, principally in the US. Nvidia and xAI joined as partners in March 2025, with Nvidia also acting as technical advisor; the Kuwait Investment Authority and Temasek joined subsequently. Initial goal: mobilize $30B of equity capital, with potential to reach $100B including debt financing.",
+  "ai_monetization_md": "AIP's economics are infrastructure private-equity: deploy consortium capital into data-center platforms and power assets, earn development yield and appreciation, with member hyperscalers (Microsoft) as anchor tenants and members (Nvidia, xAI) shaping technical demand. Flagship transaction: the $40B acquisition of Aligned Data Centers (agreed October 2025, alongside MGX and GIP, from Macquarie Asset Management) — >6.4GW of operational and planned capacity across 51 campuses in the US, Mexico, and South America, the largest data-center deal ever at signing. The membership structure is itself the notable feature: the chip monopolist, the largest hyperscaler, the largest asset manager, a frontier lab, and Gulf sovereign capital co-invest in the infrastructure their own transactions with each other require.",
+  "risk_notes_md": "Circularity by design: Nvidia advises and invests in the vehicle that builds capacity for buyers of Nvidia systems (Microsoft, xAI are both members and tenants) — the `equity_for_revenue` adjacency regulators cite when mapping AI cross-exposures. The $30B/$100B figures are mobilization targets, not called capital; actual commitments per member are undisclosed. Valuations paid for scarce operating platforms ($40B for Aligned, ~6x what Macquarie reportedly built it for) embed continuation of current AI leasing economics.",
+  "observations": [
+    {
+      "metric": "funding_raised",
+      "metric_label": "Equity mobilization target",
+      "period": "2024-09",
+      "value": 30,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://www.global-infra.com/news/ai-infrastructure-partnership-aip-mgx-and-blackrocks-global-infrastructure-partners-gip-to-acquire-all-equity-in-aligned-data-centers/", "publisher": "Global Infrastructure Partners", "published": "2025-10", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Target at launch, not called capital; per-member commitments undisclosed."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Total investment potential including debt",
+      "period": "2024-09",
+      "value": 100,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://www.global-infra.com/news/ai-infrastructure-partnership-aip-mgx-and-blackrocks-global-infrastructure-partners-gip-to-acquire-all-equity-in-aligned-data-centers/", "publisher": "Global Infrastructure Partners", "published": "2025-10", "kind": "company_pr" },
+      "as_of": "2026-08-13"
+    },
+    {
+      "metric": "contract_value",
+      "metric_label": "Aligned Data Centers acquisition (with MGX, GIP)",
+      "period": "2025-10",
+      "value": 40,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.cnbc.com/2025/10/15/nvidia-microsoft-blackrock-aligned-data-centers.html", "publisher": "CNBC", "published": "2025-10-15", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "100% of Aligned equity from Macquarie Asset Management; >6.4GW operational + planned across 51 campuses; largest data-center transaction on record at signing."
+    }
+  ],
+  "events": [
+    {
+      "date": "2024-09",
+      "title": "Partnership launched by BlackRock, GIP, Microsoft, MGX",
+      "why_it_matters": "First formal pooling of hyperscaler, asset-manager, and Gulf sovereign capital dedicated to AI infrastructure.",
+      "impact": "medium",
+      "entities": ["aip", "blackrock", "microsoft", "mgx"],
+      "sources": [{ "url": "https://www.esgdive.com/news/blackrocks-gip-microsoft-backed-ai-group-buy-aligned-data-centers-for-40/825920/", "publisher": "ESG Dive", "published": "2025-10", "kind": "press", "notes": "Recaps the Sep 2024 launch and $30B/$100B targets." }]
+    },
+    {
+      "date": "2025-03",
+      "title": "Nvidia and xAI join AIP",
+      "why_it_matters": "Put the dominant chip vendor (also technical advisor) and a frontier lab inside the consortium that finances capacity they respectively supply and consume.",
+      "impact": "medium",
+      "entities": ["aip", "nvidia", "xai"],
+      "sources": [{ "url": "https://www.global-infra.com/news/ai-infrastructure-partnership-aip-mgx-and-blackrocks-global-infrastructure-partners-gip-to-acquire-all-equity-in-aligned-data-centers/", "publisher": "Global Infrastructure Partners", "published": "2025-10", "kind": "company_pr", "notes": "Partner roster including Nvidia/xAI; join date per Mar 2025 announcements." }]
+    },
+    {
+      "date": "2025-10-15",
+      "title": "Agrees to acquire Aligned Data Centers for $40B",
+      "why_it_matters": "AIP's first flagship deal converted the consortium from announcement to owner of one of the largest US data-center platforms.",
+      "impact": "high",
+      "entities": ["aip", "mgx", "blackrock", "nvidia", "xai", "microsoft"],
+      "sources": [
+        { "url": "https://www.cnbc.com/2025/10/15/nvidia-microsoft-blackrock-aligned-data-centers.html", "publisher": "CNBC", "published": "2025-10-15", "kind": "press" },
+        { "url": "https://aligneddc.com/press-release/ai-infrastructure-partnership-aip-mgx-and-blackrocks-global-infrastructure-partners-gip-to-acquire-all-equity-in-aligned-data-centers/", "publisher": "Aligned Data Centers", "published": "2025-10", "kind": "company_pr" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.global-infra.com/news/ai-infrastructure-partnership-aip-mgx-and-blackrocks-global-infrastructure-partners-gip-to-acquire-all-equity-in-aligned-data-centers/", "publisher": "Global Infrastructure Partners", "published": "2025-10", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2025/10/15/nvidia-microsoft-blackrock-aligned-data-centers.html", "publisher": "CNBC", "published": "2025-10-15", "kind": "press" },
+    { "url": "https://www.datacenterfrontier.com/hyperscale/article/55323360/blackrock-led-consortium-to-acquire-aligned-data-centers-in-40-billion-ai-infrastructure-deal", "publisher": "Data Center Frontier", "published": "2025-10", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "humain--xai--jv-equity",
+  "from": "humain",
+  "to": "xai",
+  "type": "jv_equity",
+  "status": "active",
+  "headline": { "value": 3, "unit": "USD_B", "caveat": "$3B Humain investment in xAI's Series E (Feb 2026), paired with a 500MW Saudi data-center JV in which xAI is the anchor tenant/first customer (JV capitalization terms undisclosed).", "as_of": "2026-02" },
+  "realized_to_date": { "value": 3, "unit": "USD_B", "caveat": "Series E investment funded; JV data-center capex contributions are separate and undisclosed (first phases under construction).", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-11", "start": "2026", "end": null, "duration_years": null },
+  "nature_md": "Two-part sovereign tie-up: Humain invested $3B in xAI's ~$20B Series E (Jan-Feb 2026, at ~$230B pre-merger valuation, alongside Nvidia, Cisco, Valor, Fidelity, QIA, MGX), and the two are building a 500MW AI data center in Saudi Arabia — announced Nov 2025 with xAI as first customer — powered by Humain's NVIDIA GPU program. Circular by construction: Saudi capital funds xAI's equity while xAI's compute rental anchors the Saudi data center's revenue case.",
+  "accounting": {
+    "payer_treatment_md": "Humain/PIF books the $3B as a strategic equity investment (no public accounts); JV data-center capex is capitalized in the JV. Returns depend on both xAI equity marks and DC utilization.",
+    "payee_treatment_md": "xAI books equity financing — no revenue; its future payments as JV tenant will be compute opex flowing partly back to its own investor's infrastructure. Tenant commitments not disclosed.",
+    "off_balance_sheet": true,
+    "flags": ["equity_for_revenue", "round_trip_cloud"]
+  },
+  "related_edges": ["humain--nvidia--gpu", "humain--amd--gpu", "xai--solaris-energy--power-jv"],
+  "both_sides_md": "**Bull:** xAI gets sovereign-scale capital and Gulf inference capacity without US grid constraints; Humain gets a marquee anchor tenant that de-risks its buildout. **Bear:** investor-funds-tenant circularity in miniature — the same balance sheet sits on both sides of the future rent checks, and disclosure on the JV's actual capitalization is nil.",
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.datacenterdynamics.com/en/news/xai-humain-data-center-elon-musk/", "publisher": "Data Center Dynamics", "published": "2026-02", "kind": "press" },
+    { "url": "https://www.cnbc.com/2025/11/19/musks-xai-will-be-customer-for-nvidia-data-center-in-saudi-arabia.html", "publisher": "CNBC", "published": "2025-11-19", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

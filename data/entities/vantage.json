@@ -1,0 +1,106 @@
+{
+  "id": "vantage",
+  "name": "Vantage Data Centers",
+  "kind": "private_company",
+  "category": "datacenter_developer",
+  "group": "hyperscalers_clouds",
+  "region": "us",
+  "tier": 1,
+  "cik": null,
+  "website": "https://vantage-dc.com",
+  "fiscal_year_end": null,
+  "monetization": "Develops and leases hyperscale datacenter campuses — flagship: the $25B/1.4GW Frontier campus for Oracle/OpenAI's Stargate — funded by sponsor equity and ~$38B of bank project debt.",
+  "description_md": "Vantage Data Centers is a DigitalBridge- and Silver Lake-backed wholesale datacenter developer operating across five continents. It has become a core physical builder of the Stargate program: the $25B+, 1.4GW 'Frontier' mega-campus in Shackelford County, Texas (10 buildings, 3.7M sq ft, first delivery 2026, completion ~2028) and the ~$15B, 902MW 'Lighthouse' campus in Port Washington, Wisconsin — both Oracle-leased for OpenAI workloads. JPMorgan and MUFG lead a ~$38B loan package (with BNP Paribas, Goldman Sachs, SocGen, SMBC, Wells Fargo among underwriters) financing these Oracle-linked builds — among the largest project-finance packages ever assembled. Vantage's announced development pipeline exceeds $64B per census research (order-of-magnitude estimate; see observation caveat).",
+  "ai_monetization_md": "Long-term wholesale leases (typically 10–20 years) to investment-grade-ish tenants: Vantage builds shells, powers them, and collects contracted rent — here principally from Oracle, which in turn serves OpenAI under Stargate. Development is funded campus-by-campus with construction debt (the JPM/MUFG-led facilities price around SOFR+~250bp, ~4-year terms with extension options) that is repaid or refinanced against the lease once stabilized. Vantage also raised ~$11B across nine months (equity/ABS/loans) to drive ~$30B of development, per trade press. Economics therefore depend on the lease chain holding: Vantage's rent ← Oracle's lease payments ← OpenAI's contract payments.",
+  "ai_strategy_md": "Scale as the hyperscalers' and Stargate's external developer: concentrate capital on mega-campuses (Frontier is its largest-ever investment), pre-lease before building, and recycle sponsor capital through project debt and asset-level securitizations. The Texas/Wisconsin pair positions Vantage as Oracle's build partner of choice alongside Crusoe (Abilene) and Related (Saline Twp). DigitalBridge sponsorship provides repeat institutional LP capital; the >$64B pipeline extends the same model across North America and EMEA.",
+  "risk_notes_md": "**Single-tenant chain risk:** the flagship campuses are effectively OpenAI exposure intermediated by Oracle's lease — precisely the chain (OpenAI shortfall → Oracle RPO fails to convert → Oracle lease strain → project-finance banks) that SPEC §10.3(b) treats as the canonical contagion path; the ~$38B package's banks are reportedly hedging via Oracle CDS. **Refinancing risk:** ~4-year construction facilities assume takeout markets stay open at completion (2028+); El Paso's 7.53% print shows datacenter credit repricing. **Private opacity:** Vantage's consolidated leverage and the split between sponsor equity and project debt are not public. **Pipeline figure unverified:** the >$64B pipeline is a census-research estimate, not a company disclosure — Frontier's own PR contains no pipeline total.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Frontier mega-campus investment (Shackelford County, TX)",
+      "period": "2025-08",
+      "value": 25,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://vantage-dc.com/news/vantage-data-centers-unveils-plans-for-frontier-a-25b-mega-campus-in-texas-to-meet-unprecedented-ai-demand/", "publisher": "Vantage Data Centers", "title": "Vantage Data Centers Unveils Plans for Frontier, a $25B Mega-campus in Texas", "published": "2025-08", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "1.4GW, 1,200 acres, 10 buildings / 3.7M sq ft; first building delivering 2026, completion ~2028; Oracle-leased for OpenAI (Stargate). Investment plan, not spend to date."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Oracle-linked project debt package (JPMorgan/MUFG-led)",
+      "period": "2025-09",
+      "value": 38,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.bloomberg.com/news/articles/2025-09-04/banks-ready-38-billion-of-debt-for-data-centers-tied-to-oracle", "publisher": "Bloomberg", "title": "Banks Ready $38 Billion of Debt for Data Centers Tied to Oracle", "published": "2025-09-04", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Loans for Vantage's Texas (incl. ~$22–23B for Frontier/Shackelford) and Wisconsin campuses where Oracle is tenant; underwriters incl. BNP, GS, SocGen, SMBC, Wells Fargo; ~4-yr facilities pricing ~SOFR+250bp with extension options. Project-level debt, not on Vantage's corporate books alone."
+    },
+    {
+      "metric": "capacity_mw",
+      "metric_label": "Lighthouse campus, Port Washington WI (Stargate)",
+      "period": "2026-01",
+      "value": 902,
+      "unit": "MW",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.datacenterknowledge.com/data-center-construction/new-data-center-developments-january-2026", "publisher": "Data Center Knowledge", "title": "New Data Center Developments: January 2026", "published": "2026-01", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Four buildings, ~$15B investment, part of Oracle/OpenAI's Stargate initiative."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Total development pipeline (order-of-magnitude)",
+      "period": "2026-08",
+      "value": 64,
+      "unit": "USD_B",
+      "basis": "estimated",
+      "method_md": "No company disclosure of a pipeline total exists (the Frontier PR contains none). Estimate assembled from announced projects and trade press: Frontier >$25B + Lighthouse ~$15B + the ~$30B development program funded by ~$11B raised over nine months (Data Center Knowledge, Jan 2026), less overlap between programs; the UNIVERSE.md census (Aug 13, 2026) carries >$64B. Treat as order-of-magnitude, floor-biased.",
+      "confidence": "low",
+      "source": { "url": "https://www.datacenterknowledge.com/data-center-construction/new-data-center-developments-january-2026", "publisher": "Data Center Knowledge", "published": "2026-01", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "UNVERIFIED as a single figure; flagged for replacement with a company or sponsor (DigitalBridge) disclosure."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-08",
+      "title": "Unveils Frontier: $25B+, 1.4GW mega-campus in Shackelford County, TX",
+      "why_it_matters": "Vantage's largest-ever project and one of the largest single-site datacenter investments announced anywhere; anchors the Oracle/OpenAI Stargate buildout.",
+      "impact": "high",
+      "entities": ["vantage", "oracle", "openai"],
+      "sources": [
+        { "url": "https://vantage-dc.com/news/vantage-data-centers-unveils-plans-for-frontier-a-25b-mega-campus-in-texas-to-meet-unprecedented-ai-demand/", "publisher": "Vantage Data Centers", "published": "2025-08", "kind": "company_pr" },
+        { "url": "https://ir.digitalbridge.com/news-releases/news-release-details/digitalbridge-backed-portfolio-company-vantage-data-centers", "publisher": "DigitalBridge IR", "published": "2025-08", "kind": "company_ir" }
+      ]
+    },
+    {
+      "date": "2025-09",
+      "title": "JPMorgan/MUFG-led banks prepare ~$38B of debt for Vantage's Oracle-leased campuses",
+      "why_it_matters": "Among the largest project-finance packages ever; concentrates a banking syndicate's exposure on the Oracle-OpenAI lease chain — the same banks later seen hedging via Oracle CDS.",
+      "impact": "high",
+      "entities": ["vantage", "jpmorgan", "oracle"],
+      "sources": [
+        { "url": "https://www.bloomberg.com/news/articles/2025-09-04/banks-ready-38-billion-of-debt-for-data-centers-tied-to-oracle", "publisher": "Bloomberg", "published": "2025-09-04", "kind": "press" },
+        { "url": "https://www.datacenterdynamics.com/en/news/jpmorgan-and-mufg-close-to-securing-22bn-financing-for-vantages-texas-data-center-project/", "publisher": "Data Center Dynamics", "published": "2025", "kind": "press" }
+      ]
+    },
+    {
+      "date": "2026-01",
+      "title": "Lighthouse (Port Washington, WI) advances: 902MW, ~$15B, Stargate-linked",
+      "why_it_matters": "Second Oracle/OpenAI mega-site confirms Vantage as a repeat Stargate developer and deepens the tenant-concentration profile.",
+      "impact": "medium",
+      "entities": ["vantage", "oracle", "openai"],
+      "sources": [{ "url": "https://www.datacenterknowledge.com/data-center-construction/new-data-center-developments-january-2026", "publisher": "Data Center Knowledge", "published": "2026-01", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://vantage-dc.com/news/vantage-data-centers-unveils-plans-for-frontier-a-25b-mega-campus-in-texas-to-meet-unprecedented-ai-demand/", "publisher": "Vantage Data Centers", "kind": "company_pr" },
+    { "url": "https://www.bloomberg.com/news/articles/2025-09-04/banks-ready-38-billion-of-debt-for-data-centers-tied-to-oracle", "publisher": "Bloomberg", "published": "2025-09-04", "kind": "press" },
+    { "url": "https://www.datacenterdynamics.com/en/news/vantage-breaks-ground-on-texas-gigawatt-data-center-campus-for-openai/", "publisher": "Data Center Dynamics", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

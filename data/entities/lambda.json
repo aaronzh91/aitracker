@@ -81,9 +81,9 @@
       "sources": [{ "url": "https://techcrunch.com/2025/11/18/ai-data-center-provider-lambda-raises-whopping-1-5b-after-multibillion-dollar-microsoft-deal/", "publisher": "TechCrunch", "published": "2025-11-18", "kind": "press" }]
     },
     {
-      "date": "2026",
+      "date": "2026-06",
       "title": "Reported in talks for ~$350M pre-IPO funding; IPO planned but unscheduled",
-      "why_it_matters": "A neocloud IPO would put public-market pricing on the sector's private tier — a valuation read-through for Crusoe, Nscale, and Fluidstack.",
+      "why_it_matters": "A neocloud IPO would put public-market pricing on the sector's private tier — a valuation read-through for Crusoe, Nscale, and Fluidstack. (Report month approximate; DCD item undated in our capture.)",
       "impact": "medium",
       "entities": ["lambda"],
       "sources": [{ "url": "https://www.datacenterdynamics.com/en/news/lambda-in-talks-to-raise-350m-in-pre-ipo-funding-report/", "publisher": "Data Center Dynamics", "published": "2026", "kind": "press" }]

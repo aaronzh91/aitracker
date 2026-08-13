@@ -1,0 +1,26 @@
+{
+  "id": "oracle--stargate--jv-equity",
+  "from": "oracle",
+  "to": "stargate",
+  "type": "jv_equity",
+  "status": "active",
+  "headline": { "value": null, "unit": "pct", "caveat": "Oracle + MGX together hold ~20% of Stargate LLC; the individual split and Oracle's capital commitment are undisclosed", "as_of": "2025-01-21" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "per-partner equity funded undisclosed", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-01-21", "start": "2025-01", "end": "2029", "duration_years": 4 },
+  "nature_md": "Oracle is an initial equity funder of Stargate LLC (sharing ~20% with MGX; exact split undisclosed) and, more importantly, its principal delivery arm: Oracle contracts for and operates much of the Stargate capacity (Abilene with Crusoe, the five Sept 2025 sites with Vantage and others) and sells it onward to OpenAI under the ~$300B compute contract. Oracle's JV equity is small relative to the balance-sheet weight it carries as lessee/operator of Stargate campuses — the leases and its ~$70B FY27 capex, not the LLC stake, are where Oracle's real Stargate exposure lives.",
+  "accounting": {
+    "payer_treatment_md": "JV equity stake (undisclosed, presumably equity-method). The heavier items are elsewhere: Oracle's data-center lease obligations for Stargate sites (supporting the $16.3B Saline Twp and $38B Vantage debt packages priced off Oracle's credit) and its bond issuance ($18B + $25B) funding buildout capex.",
+    "payee_treatment_md": "Capital contribution to the LLC. Stargate's economics flow back to Oracle mainly as its role converts into OCI revenue via the OpenAI contract — equity in the vehicle, revenue from its output.",
+    "off_balance_sheet": true,
+    "flags": ["spv_shift", "customer_concentration"]
+  },
+  "related_edges": ["openai--oracle--compute-2025", "softbank--stargate--jv-equity", "openai--stargate--jv-equity", "mgx--stargate--jv-equity"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://openai.com/index/announcing-the-stargate-project/", "publisher": "OpenAI", "published": "2025-01-21", "kind": "company_pr" },
+    { "url": "https://openai.com/index/five-new-stargate-sites/", "publisher": "OpenAI", "published": "2025-09-23", "kind": "company_pr" },
+    { "url": "https://www.datacenterdynamics.com/en/news/openai-announces-five-more-us-stargate-data-centers-with-oracle-and-softbank/", "publisher": "Data Center Dynamics", "published": "2025-09", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

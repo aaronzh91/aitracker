@@ -1,0 +1,25 @@
+{
+  "id": "salesforce--informatica--acquisition",
+  "from": "salesforce",
+  "to": "informatica",
+  "type": "acquisition",
+  "status": "completed",
+  "headline": { "value": 8, "unit": "USD_B", "caveat": "Equity value; $25/share in cash (net of Salesforce's existing stake). Announced May 27, 2025; closed late 2025.", "as_of": "2025-05-27" },
+  "realized_to_date": { "value": 8, "unit": "USD_B", "caveat": "Cash consideration paid at close.", "as_of": "2025-12" },
+  "term": { "announced": "2025-05-27", "start": "2025", "end": null, "duration_years": null },
+  "nature_md": "Salesforce acquired Informatica for ~$8B ($25/share cash) to bolt enterprise data management — cataloging, integration, governance, master data (IDMC) — under its Agentforce agentic-AI strategy: agents are only as good as the customer data plumbing beneath them. Second-largest Salesforce deal after Slack ($27.7B), struck at a ~30% discount to Informatica's 2024 take-private talks price, and folded into the Data Cloud organization post-close.",
+  "accounting": {
+    "payer_treatment_md": "Salesforce funded the purchase with cash and new debt; Informatica consolidates into revenue from close (adding ~$1.7B ARR), with goodwill/intangibles and integration costs against the AI-data narrative that underpins Agentforce's $1B ARR trajectory.",
+    "payee_treatment_md": "Informatica public shareholders were cashed out at $25/share; company delisted (NYSE: INFA) and became a Salesforce subsidiary.",
+    "off_balance_sheet": false,
+    "flags": []
+  },
+  "related_edges": [],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.salesforce.com/news/press-releases/2025/05/27/salesforce-signs-definitive-agreement-to-acquire-informatica/", "publisher": "Salesforce", "published": "2025-05-27", "kind": "company_pr" },
+    { "url": "https://www.cxtoday.com/contact-center/agentforce-hits-1-billion-arr-ai-agents-customer-service/", "publisher": "CX Today", "published": "2026-05", "kind": "press", "notes": "Confirms deal closed and Agentforce context." }
+  ],
+  "updated": "2026-08-13"
+}

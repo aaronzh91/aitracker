@@ -1,0 +1,55 @@
+{
+  "id": "amazon--anthropic--equity",
+  "from": "amazon",
+  "to": "anthropic",
+  "type": "equity_investment",
+  "status": "active",
+  "headline": { "value": 13, "unit": "USD_B", "caveat": "$8B (2023–24, largely convertible notes) + $5B (Apr 2026, at ~$380B valuation), plus up to $20B of additional milestone-tied commitments not yet counted", "as_of": "2026-04-20" },
+  "realized_to_date": { "value": 13, "unit": "USD_B", "as_of": "2026-04-20" },
+  "term": { "announced": "2023-09", "start": "2023-09", "end": null, "duration_years": null },
+  "nature_md": "Amazon's Anthropic position built in layers: $1.25B (Sept 2023) growing to $4B (Mar 2024), +$4B (Nov 2024) = $8B, then +$5B on Apr 20, 2026 at Anthropic's ~$380B valuation with up to $20B more tied to commercial milestones — all as a non-voting minority holder, and always paired with compute: the 2024 tranches came with Trainium adoption and Project Rainier, the 2026 tranche with the >$100B decade-long AWS commitment and up to 5GW of Trainium (see related edge). The position now dominates Amazon's reported earnings: Q2 2026 included a **$53.4B pre-tax non-operating fair-value gain** 'primarily from our investments in Anthropic' (after Anthropic's May 2026 Series H at $965B post), nearly 2x Amazon's $27.5B operating income that quarter, plus $15.9B of H1 discrete tax expense from the markups.",
+  "accounting": {
+    "payer_treatment_md": "Originally convertible notes, now equity interests carried at fair value: private-round marks flow through Amazon's non-operating income — the Q2 2026 $53.4B gain is non-cash, non-recurring, and set by private funding-round prices, not markets. It dwarfed operating profit, making Amazon's headline net income substantially an Anthropic derivative.",
+    "payee_treatment_md": "Equity/convertible financing — no revenue. Proceeds substantially fund AWS compute purchases that Amazon books as revenue and backlog: the paired structure means Amazon's investment and AWS's largest-customer growth are the same money at one remove.",
+    "off_balance_sheet": false,
+    "flags": ["equity_for_revenue", "round_trip_cloud"]
+  },
+  "related_edges": ["anthropic--amazon--compute", "alphabet--anthropic--equity", "microsoft--anthropic--equity", "nvidia--anthropic--equity"],
+  "both_sides_md": "**Bear:** a textbook Einhorn cascade — Amazon invests, the money returns as AWS revenue, and the private-mark gain ($53.4B, priced by rounds in which strategic buyers participate) flatters net income with paper profits on an asset that can't be sold (Q2-26 gain ≈ 2x operating income). **Bull:** Anthropic's run-rate went $9B→$30B+ in under a year — the marks track real revenue; the Series H was priced by third parties; and unlike pure paper, Amazon's return includes hard consideration: Trainium validation, 5GW of anchored demand, and the largest committed customer in AWS history.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Amazon pre-tax fair-value gain, primarily Anthropic",
+      "period": "FY2026-Q2",
+      "value": 53.4,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.stocktitan.net/sec-filings/AMZN/10-q-amazon-com-inc-quarterly-earnings-report-0b79ef7cd1d2.html", "publisher": "StockTitan (Amazon 10-Q)", "published": "2026-07-31", "kind": "sec_filing" },
+      "as_of": "2026-08-13",
+      "notes": "Non-operating, non-cash; H1 2026 also carried $15.9B of net discrete tax expense primarily from upward Anthropic adjustments."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-04-20",
+      "title": "Amazon invests $5B more (up to $20B milestone-tied) alongside expanded AWS/Trainium pact",
+      "impact": "high",
+      "entities": ["amazon", "anthropic"],
+      "sources": [{ "url": "https://www.aboutamazon.com/news/company-news/amazon-invests-additional-5-billion-anthropic-ai", "publisher": "Amazon", "published": "2026-04-20", "kind": "company_pr" }]
+    },
+    {
+      "date": "2026-07-31",
+      "title": "Q2 2026 10-Q: $53.4B fair-value gain primarily from Anthropic dwarfs operating income",
+      "impact": "high",
+      "entities": ["amazon", "anthropic"],
+      "sources": [{ "url": "https://mlq.ai/news/amazons-534-billion-anthropic-linked-gain-dwarfed-its-operating-profit/", "publisher": "MLQ", "published": "2026-08", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.aboutamazon.com/news/company-news/amazon-invests-additional-5-billion-anthropic-ai", "publisher": "Amazon", "published": "2026-04-20", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2026/04/20/amazon-invest-up-to-25-billion-in-anthropic-part-of-ai-infrastructure.html", "publisher": "CNBC", "published": "2026-04-20", "kind": "press" },
+    { "url": "https://www.stocktitan.net/sec-filings/AMZN/10-q-amazon-com-inc-quarterly-earnings-report-0b79ef7cd1d2.html", "publisher": "StockTitan (Amazon 10-Q)", "published": "2026-07-31", "kind": "sec_filing" }
+  ],
+  "updated": "2026-08-13"
+}

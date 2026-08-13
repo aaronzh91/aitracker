@@ -1,0 +1,26 @@
+{
+  "id": "humain--amd--gpu",
+  "from": "humain",
+  "to": "amd",
+  "type": "hardware_purchase",
+  "status": "active",
+  "headline": { "value": 10, "unit": "USD_B", "caveat": "~$10B program for up to 1GW of AMD MI-series AI infrastructure in Saudi Arabia (announced May 2025, scaled through 2026); program-level figure — formal contract values undisclosed.", "as_of": "2025-05-13" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "Initial tranches (first ~100s of MW) deploying 2026; paid amounts undisclosed — Humain discloses GPU counts and MW, not dollars.", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-05-13", "start": "2026", "end": "2030", "duration_years": 5 },
+  "nature_md": "Humain — Saudi Arabia's PIF-owned AI company — is deploying up to 1GW of AMD Instinct MI-series compute in its Saudi AI factories under a ~$10B multi-year collaboration announced May 2025 (alongside its larger Nvidia program; Humain deliberately dual-sources silicon). AMD also took a small equity/partnership interest in the program structure at announcement. Part of Humain's 6.6GW-by-2034 pipeline serving sovereign AI and export inference capacity; US export-license conditions apply to all shipments.",
+  "accounting": {
+    "payer_treatment_md": "Humain (state-owned, no public accounts) capitalizes the systems as data-center assets funded by PIF equity; commitments are program announcements rather than audited obligations — dollar realization depends on export licenses and buildout pace.",
+    "payee_treatment_md": "AMD books data-center GPU/systems revenue on delivery; the Humain program is one of the two GW-scale anchor deployments (with OpenAI's 6GW) validating its rack-scale roadmap. Contract-level splits undisclosed.",
+    "off_balance_sheet": true,
+    "flags": ["commitment_unfunded", "customer_concentration"]
+  },
+  "related_edges": ["humain--nvidia--gpu", "humain--xai--jv-equity", "amd--zt-systems--acquisition"],
+  "both_sides_md": "**Bull:** sovereign capital is the marginal buyer that diversifies AMD away from hyperscaler dependence, at GW scale. **Bear:** headline sovereign programs habitually outrun realized deployment (see 9.2b data gaps — Humain contract dollars are undisclosed); export-control policy can re-scope the deal at any time.",
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://vision2030.ai/analysis/humain-ai-infrastructure/", "publisher": "vision2030.ai", "published": "2026", "kind": "analyst" },
+    { "url": "https://www.amd.com/en/newsroom/press-releases/2025-5-13-amd-and-humain-to-build-future-of-ai-computing.html", "publisher": "AMD", "published": "2025-05-13", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

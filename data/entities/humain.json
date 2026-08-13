@@ -1,0 +1,97 @@
+{
+  "id": "humain",
+  "name": "Humain",
+  "kind": "private_company",
+  "category": "datacenter_developer",
+  "group": "hyperscalers_clouds",
+  "region": "middle_east",
+  "tier": 1,
+  "cik": null,
+  "website": null,
+  "monetization": "Saudi PIF-owned full-stack AI company; monetizes by selling sovereign AI compute (GPU data centers, cloud) and Arabic-first models, anchored by state capital and partner offtake (xAI as first customer of its flagship DC).",
+  "description_md": "Humain is the state AI champion launched in May 2025 under Saudi Arabia's Public Investment Fund and chaired by Crown Prince Mohammed bin Salman, spanning data centers, AI cloud, and models. It has assembled the largest sovereign GPU pipeline outside the US and China through simultaneous partnerships with Nvidia, AMD, Qualcomm, AWS, and Cisco, with a stated pipeline reaching 6.6GW by 2034.",
+  "ai_monetization_md": "Revenue model: GPU-as-a-service and AI cloud from Saudi (and planned US) data centers, plus model/platform services — but near-term economics are buildout, not profits, and contract dollar values are largely undisclosed (GPU counts and megawatts only). Supply side: a program to deploy 600,000 Nvidia GPUs across Saudi Arabia and beyond (announced Nov 2025, deepening the May 2025 partnership); ~$10B of AMD-based capacity building toward 1GW; 200MW of Qualcomm AI200/AI250 inference silicon. Demand side: xAI signed as first customer and JV partner for a flagship 500MW facility (Nov 2025), and Humain invested $3B in xAI's Series E (Feb 2026, converted to SpaceX shares in the merger) — the sovereign version of the invest-in-your-customer pattern, in reverse: invest in your anchor tenant.",
+  "risk_notes_md": "Execution risk is the story: 6.6GW by 2034 (company target, thinly sourced) requires power, cooling, and export-licensed chips on schedules Saudi Arabia has never hit before. All major partnerships are denominated in hardware and megawatts, not disclosed dollars — revenue quality is unknowable from public data. Dependence on US export-control policy for every GPU, and on PIF funding whose own AI budget (~$100B claimed) is partially unverified. The xAI relationship is bidirectional (equity out, tenancy in), concentrating both asset and counterparty risk on one customer.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Nvidia GPU deployment program",
+      "period": "2025-11",
+      "value": 600000,
+      "unit": "GPUs",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://techafricanews.com/2025/11/20/humain-and-nvidia-to-deploy-600000-gpus-across-saudi-arabia-and-beyond/", "publisher": "TechAfrica News", "published": "2025-11-20", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Across Saudi Arabia and planned US sites; multi-year deployment, not installed base. Dollar value undisclosed."
+    },
+    {
+      "metric": "contract_value",
+      "metric_label": "AMD compute partnership",
+      "period": "2025-05",
+      "value": 10,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.crnasia.com/news/2025/artificial-intelligence/humain-taps-nvidia", "publisher": "CRN Asia", "published": "2025", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "~$10B investment toward AMD-based capacity (500MW over five years, scaling toward 1GW by 2030); alongside Qualcomm 200MW and AWS/Cisco partnerships."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Equity investment in xAI Series E",
+      "period": "2026-02",
+      "value": 3,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "high",
+      "source": { "url": "https://www.cnbc.com/2026/02/19/saudis-humain-invested-3-billion-in-xais-series-e-funding-round.html", "publisher": "CNBC", "published": "2026-02-19", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Made Humain a 'significant' minority holder just before the SpaceX merger; holdings converted into SpaceX shares."
+    },
+    {
+      "metric": "capacity_gw",
+      "metric_label": "Data-center pipeline target by 2034",
+      "period": "2034",
+      "value": 6.6,
+      "unit": "GW",
+      "basis": "company_claimed",
+      "confidence": "low",
+      "source": { "url": "https://vision2030.ai/analysis/humain-ai-infrastructure/", "publisher": "vision2030.ai", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "Company target via secondary source; UNVERIFIED against a primary Humain disclosure."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-05",
+      "title": "Launched by PIF with Nvidia, AMD, AWS, Cisco, Qualcomm partnerships",
+      "why_it_matters": "Created the vehicle for Saudi Arabia's entire sovereign AI infrastructure push in a single week of announcements.",
+      "impact": "high",
+      "entities": ["humain", "nvidia", "amd", "amazon"],
+      "sources": [{ "url": "https://www.crnasia.com/news/2025/artificial-intelligence/humain-taps-nvidia", "publisher": "CRN Asia", "published": "2025", "kind": "press" }]
+    },
+    {
+      "date": "2025-11-19",
+      "title": "xAI signed as first customer of Nvidia-backed Saudi data center; 500MW JV announced",
+      "why_it_matters": "Gave Humain an anchor tenant for its flagship capacity — and tied its buildout economics to a single Musk-controlled counterparty.",
+      "impact": "high",
+      "entities": ["humain", "xai", "nvidia"],
+      "sources": [{ "url": "https://www.cnbc.com/2025/11/19/musks-xai-will-be-customer-for-nvidia-data-center-in-saudi-arabia.html", "publisher": "CNBC", "published": "2025-11-19", "kind": "press" }]
+    },
+    {
+      "date": "2026-02-19",
+      "title": "Invests $3B in xAI's Series E ahead of SpaceX merger",
+      "why_it_matters": "Deepened the two-way exposure: Humain is now equity holder in, JV partner of, and landlord to the same counterparty.",
+      "impact": "medium",
+      "entities": ["humain", "xai"],
+      "sources": [{ "url": "https://www.cnbc.com/2026/02/19/saudis-humain-invested-3-billion-in-xais-series-e-funding-round.html", "publisher": "CNBC", "published": "2026-02-19", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.crnasia.com/news/2025/artificial-intelligence/humain-taps-nvidia", "publisher": "CRN Asia", "published": "2025", "kind": "press" },
+    { "url": "https://www.cnbc.com/2025/11/19/musks-xai-will-be-customer-for-nvidia-data-center-in-saudi-arabia.html", "publisher": "CNBC", "published": "2025-11-19", "kind": "press" },
+    { "url": "https://www.datacenterdynamics.com/en/news/xai-humain-data-center-elon-musk/", "publisher": "Data Center Dynamics", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

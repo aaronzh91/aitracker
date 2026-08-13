@@ -1,0 +1,25 @@
+{
+  "id": "openai--io-products--acquisition",
+  "from": "openai",
+  "to": "io-products",
+  "type": "acquisition",
+  "status": "completed",
+  "headline": { "value": 6.5, "unit": "USD_B", "caveat": "All-stock acquisition of Jony Ive's AI-device startup io Products (reported $6.4-6.5B); ~$5B of new equity net of OpenAI's pre-existing ~23% stake.", "as_of": "2025-05-21" },
+  "realized_to_date": { "value": 0, "unit": "USD_B", "caveat": "All-stock — no cash moved; io holders received OpenAI equity at close (2025, after a trademark-suit renaming detour).", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-05-21", "start": null, "end": null, "duration_years": null },
+  "nature_md": "OpenAI acquired io Products, the AI hardware-device startup founded by Jony Ive and LoveFrom alumni, for ~$6.5B in OpenAI stock (announced May 21, 2025; closed later that year after an 'io'/'iyO' trademark suit forced marketing changes). OpenAI already held ~23%, so net new consideration was ~$5B. Ive and LoveFrom lead design across OpenAI; the io team (~55 engineers/designers, ex-Apple) builds OpenAI's consumer AI devices — a pre-revenue talent-and-roadmap purchase, not a revenue acquisition.",
+  "accounting": {
+    "payer_treatment_md": "OpenAI issued equity; io lands as goodwill/intangibles and R&D headcount — no revenue contribution, pure investment in a future device category, expensed forward through device development.",
+    "payee_treatment_md": "io shareholders swapped into OpenAI paper (then marked ~$300B, later $852B post-money) — the appreciation of acquirer stock, not the business, delivered the return.",
+    "off_balance_sheet": false,
+    "flags": []
+  },
+  "related_edges": ["nvidia--openai--equity-2026"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://openai.com/sam-and-jony/", "publisher": "OpenAI", "title": "Sam and Jony introduce io", "published": "2025-05-21", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2025/05/21/openai-buys-jony-ive-startup-io-6point4-billion.html", "publisher": "CNBC", "published": "2025-05-21", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

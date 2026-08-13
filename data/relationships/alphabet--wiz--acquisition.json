@@ -1,0 +1,34 @@
+{
+  "id": "alphabet--wiz--acquisition",
+  "from": "alphabet",
+  "to": "wiz",
+  "type": "acquisition",
+  "status": "completed",
+  "headline": { "value": 32, "unit": "USD_B", "caveat": "All-cash — Google's largest acquisition ever. Signed Mar 18, 2025; closed in 2026 after an extended DOJ antitrust review.", "as_of": "2025-03-18" },
+  "realized_to_date": { "value": 32, "unit": "USD_B", "caveat": "Cash paid at 2026 close.", "as_of": "2026" },
+  "term": { "announced": "2025-03-18", "start": "2026", "end": null, "duration_years": null },
+  "nature_md": "Alphabet acquired cloud-security company Wiz for $32B in cash — its largest deal ever, roughly 2.5x the failed 2024 approach at ~$23B that Wiz walked away from to pursue an IPO. Wiz (CNAPP; ~$500M+ ARR at signing, targeting $1B) joins Google Cloud but is committed to remaining multicloud across AWS/Azure — securing rival clouds is part of the strategic value. Signed with a reported ~$3.2B reverse termination fee given antitrust risk; closed in 2026 after DOJ review.",
+  "accounting": {
+    "payer_treatment_md": "Alphabet paid from its cash pile; Wiz consolidates into Google Cloud revenue from close, with the bulk of the $32B landing as goodwill/intangibles (revenue multiple ~50-60x at signing). Immaterial to Alphabet's balance sheet, headline-setting for security M&A comps.",
+    "payee_treatment_md": "Wiz's VC holders (Index, Sequoia, Insight, Cyberstarts) realized one of the largest venture cash exits ever; founders and employees cashed out at close rather than via IPO.",
+    "off_balance_sheet": false,
+    "flags": []
+  },
+  "related_edges": [],
+  "both_sides_md": "**Bull:** Google Cloud buys the fastest-growing security franchise in history and neutralizes a gap versus Microsoft's security bundle — paid in cash it cannot otherwise deploy. **Bear:** ~60x ARR for a multicloud-committed asset inside a hyperscaler is a cycle-top comp; the 18-month regulatory limbo also froze Wiz's momentum against rivals.",
+  "observations": [],
+  "events": [
+    {
+      "date": "2026",
+      "title": "Wiz acquisition closes after DOJ review",
+      "impact": "medium",
+      "entities": ["alphabet", "wiz"],
+      "sources": [{ "url": "https://www.cnbc.com/2026/wiz-google-acquisition-closes.html", "publisher": "CNBC", "published": "2026", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://blog.google/inside-google/company-announcements/google-agreement-acquire-wiz/", "publisher": "Google", "published": "2025-03-18", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2026/wiz-google-acquisition-closes.html", "publisher": "CNBC", "published": "2026", "kind": "press", "notes": "Close timing per 2026 reporting; exact close date to be firmed up." }
+  ],
+  "updated": "2026-08-13"
+}

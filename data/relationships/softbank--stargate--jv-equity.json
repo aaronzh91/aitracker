@@ -1,0 +1,41 @@
+{
+  "id": "softbank--stargate--jv-equity",
+  "from": "softbank",
+  "to": "stargate",
+  "type": "jv_equity",
+  "status": "active",
+  "headline": { "value": 40, "unit": "pct", "caveat": "~40% of Stargate LLC; SoftBank's own capital commitment against the $500B/10GW program target is not separately disclosed ($100B committed to deploy 'immediately' at Jan 2025 launch, across all partners)", "as_of": "2025-01-21" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "per-partner equity funded to date undisclosed; program-level: >$400B described as in motion across nearly 7GW of sites by late 2025", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-01-21", "start": "2025-01", "end": "2029", "duration_years": 4 },
+  "nature_md": "SoftBank is co-lead equity holder (~40%, alongside OpenAI ~40% and Oracle+MGX ~20%) and chairs Stargate LLC — the JV vehicle targeting $500B / 10GW of US AI infrastructure over four years. Masayoshi Son is chairman; SoftBank has 'financial responsibility' while OpenAI has 'operational responsibility.' Beyond LLC equity, SoftBank-side entities develop individual campuses (notably the 10GW Piketon, OH site via its energy subsidiary — the object of the proposed NVIDIA $250B backstop). By Sept 2025 the partners described >$400B of investment in motion over three years across Abilene and five new sites (~7GW); by early 2026 OpenAI put capacity 'well over 8GW.' Per-partner capital contributions have never been broken out — a structural opacity of the whole program.",
+  "accounting": {
+    "payer_treatment_md": "JV equity stake carried as an investment (equity method or fair value through SoftBank's Vision Fund structures — treatment not disclosed). Site-level debt lives in project SPVs (e.g., JPMorgan-led loans at Abilene), not on SoftBank's consolidated balance sheet except where its development entities borrow.",
+    "payee_treatment_md": "Capital contribution to Stargate LLC funding land, shells, power, and long-lead equipment; the LLC layer plus site SPVs keep the buildout's debt off every sponsor's balance sheet individually — the canonical spv_shift structure of the cycle.",
+    "off_balance_sheet": true,
+    "flags": ["spv_shift", "commitment_unfunded"]
+  },
+  "related_edges": ["openai--stargate--jv-equity", "oracle--stargate--jv-equity", "mgx--stargate--jv-equity", "softbank--openai--equity", "nvidia--openai--guarantee-talks-2026"],
+  "observations": [],
+  "events": [
+    {
+      "date": "2025-01-21",
+      "title": "Stargate announced at the White House: $500B target, $100B immediate",
+      "impact": "high",
+      "entities": ["softbank", "openai", "oracle", "mgx", "stargate"],
+      "sources": [{ "url": "https://openai.com/index/announcing-the-stargate-project/", "publisher": "OpenAI", "published": "2025-01-21", "kind": "company_pr" }]
+    },
+    {
+      "date": "2025-09-23",
+      "title": "Five new US sites announced; >$400B / ~7GW described as in motion",
+      "impact": "high",
+      "entities": ["softbank", "openai", "oracle", "stargate"],
+      "sources": [{ "url": "https://group.softbank/en/news/press/20250924", "publisher": "SoftBank Group", "published": "2025-09-24", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://openai.com/index/announcing-the-stargate-project/", "publisher": "OpenAI", "published": "2025-01-21", "kind": "company_pr" },
+    { "url": "https://openai.com/index/five-new-stargate-sites/", "publisher": "OpenAI", "published": "2025-09-23", "kind": "company_pr" },
+    { "url": "https://group.softbank/en/news/press/20250924", "publisher": "SoftBank Group", "published": "2025-09-24", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

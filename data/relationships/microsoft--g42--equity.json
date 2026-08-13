@@ -1,0 +1,27 @@
+{
+  "id": "microsoft--g42--equity",
+  "from": "microsoft",
+  "to": "g42",
+  "type": "equity_investment",
+  "status": "completed",
+  "headline": { "value": 1.5, "unit": "USD_B", "caveat": "Microsoft's Apr 2024 minority equity investment in G42 (board seat: Brad Smith). Sits inside a broader $15.2B Microsoft UAE commitment through 2029 (equity + infrastructure + skilling), incl. a 200MW Microsoft-Khazna data-center expansion from late 2026.", "as_of": "2024-04-16" },
+  "realized_to_date": { "value": 1.5, "unit": "USD_B", "caveat": "Equity funded 2024; the wider $15.2B UAE program is a multi-year commitment realized progressively (portions disclosed as spent through 2025-26).", "as_of": "2026-08-13" },
+  "term": { "announced": "2024-04-16", "start": "2024", "end": "2029", "duration_years": null },
+  "nature_md": "Microsoft invested $1.5B for a minority stake in Abu Dhabi's G42 (Apr 2024), a security-conditioned strategic alignment brokered with both governments: G42 runs its AI workloads on Azure, divested China exposure, and operates under a US-UAE intergovernmental assurance agreement (IGA) on model/chip security. The stake anchors Microsoft's cumulative $15.2B UAE program through 2029 — equity, data-center infrastructure (incl. +200MW with G42's Khazna from late 2026), and the export-licensed shipment of advanced GPUs to the UAE. G42 is simultaneously the Stargate UAE operator and (with MBZUAI) one of Cerebras's largest customers.",
+  "accounting": {
+    "payer_treatment_md": "Microsoft carries G42 as an equity-method/minority investment; program infrastructure spend is ordinary Azure capex in the UAE region; skilling/commitments are opex as incurred. The $15.2B is a program headline, not a booked liability.",
+    "payee_treatment_md": "G42 (private, Mubadala-linked) received growth equity; its Azure commitment routes its AI compute spending back through Microsoft — equity in, cloud revenue back, the strategic point of the deal.",
+    "off_balance_sheet": false,
+    "flags": ["equity_for_revenue", "round_trip_cloud"]
+  },
+  "related_edges": ["mgx--openai--equity"],
+  "both_sides_md": "**Bull:** the template for security-conditioned AI diplomacy — Microsoft bought the UAE's AI alignment away from China for $1.5B plus commercial commitments it would have made anyway. **Bear:** the $15.2B headline blends equity, capex, and aspiration; G42's opaque state-linked structure makes value verification impossible, and the IGA's enforceability is untested.",
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://blogs.microsoft.com/blog/2024/04/15/microsoft-invests-1-5-billion-in-abu-dhabis-g42-to-accelerate-ai-development-and-global-expansion/", "publisher": "Microsoft", "published": "2024-04-15", "kind": "company_pr" },
+    { "url": "https://news.microsoft.com/source/emea/2025/11/microsoft-and-g42-accelerate-uaes-digital-future-with-major-data-centre-expansion/", "publisher": "Microsoft", "published": "2025-11", "kind": "company_pr" },
+    { "url": "https://techinformed.com/microsoft-g42-announce-200-megawatt-uae-data-center-expansion/", "publisher": "TechInformed", "published": "2026", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

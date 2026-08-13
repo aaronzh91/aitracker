@@ -1,0 +1,90 @@
+{
+  "id": "brookfield",
+  "name": "Brookfield Asset Management",
+  "kind": "financial_institution",
+  "category": "financier_pe_vc",
+  "group": "capital",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NYSE", "symbol": "BAM" }],
+  "cik": null,
+  "website": "https://www.brookfield.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Global infrastructure and renewables manager; monetizes AI through the power leg of the buildout — co-owner of Westinghouse with an $80B US-government nuclear partnership — plus data-center platforms, frontier-lab equity (Anthropic), and Nvidia's financing coalition.",
+  "description_md": "Brookfield is one of the world's largest infrastructure investors, spanning renewables, nuclear (Westinghouse, co-owned ~51% by Brookfield-managed vehicles with Cameco at 49%), data centers, and private credit. Its AI positioning is energy-first: it owns the reactor OEM that the US government has chosen for its AI-era nuclear expansion, and it has pledged large AI-infrastructure programs in Europe (including a reported ~€20B commitment in France).",
+  "ai_monetization_md": "AI-exposure thesis: AI demand is ultimately a power problem, and Brookfield owns the scarce power assets. Centerpiece: the Oct 2025 strategic partnership under which the US government will arrange financing and permitting for at least $80B of new Westinghouse AP1000/AP300 reactors — with the government earning a participation interest (20% of cash distributions above $17.5B) once vested. Alongside: data-center and renewables platforms contracted to hyperscalers, a participation in Anthropic's $65B Series H (May 2026, amount undisclosed), and founding membership in Nvidia's >$500B compute-collateralized customer-financing coalition (Aug 2026, subject to final agreements).",
+  "risk_notes_md": "Nuclear construction risk is historically severe (the AP1000's Vogtle precedent ran years late and billions over); the $80B figure is a partnership target, not contracted backlog — final investment decisions rest with the US government. Coalition membership would add GPU-collateralized credit exposure correlated with the same AI cycle driving its power demand thesis.",
+  "observations": [
+    {
+      "metric": "contract_value",
+      "metric_label": "Westinghouse–US government partnership, aggregate reactor investment target",
+      "period": "2025-10",
+      "value": 80,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.cameco.com/media/news/cameco-and-brookfield-establish-transformational-partnership-with-united-states", "publisher": "Cameco", "published": "2025-10", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "At least $80B of AP1000/AP300 reactors; US government arranges financing/permitting and receives a participation interest (20% of Westinghouse distributions above $17.5B once vested). Target, not contracted revenue."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Westinghouse ownership (Brookfield-managed vehicles)",
+      "period": "2025",
+      "value": 51,
+      "unit": "pct",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://westinghousenuclear.com/strategic-partnership/press-releases/brookfield/", "publisher": "Westinghouse", "published": "2025-10", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Cameco holds the remaining 49%."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Anthropic Series H participation",
+      "period": "2026-05",
+      "value": null,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.anthropic.com/news/series-h", "publisher": "Anthropic", "published": "2026-05-28", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Named participant in the $65B round at $965B post-money; individual amount undisclosed."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-10-27",
+      "title": "US government announces $80B nuclear partnership with Westinghouse owners",
+      "why_it_matters": "Ties the US state's AI-era power strategy directly to Brookfield/Cameco-owned Westinghouse — a government-backstopped demand pipeline for the reactor OEM.",
+      "impact": "high",
+      "entities": ["brookfield", "us-government"],
+      "sources": [
+        { "url": "https://www.utilitydive.com/news/westinghouse-cameco-brookfield-nuclear/803999/", "publisher": "Utility Dive", "published": "2025-10", "kind": "press" },
+        { "url": "https://www.cameco.com/media/news/cameco-and-brookfield-establish-transformational-partnership-with-united-states", "publisher": "Cameco", "published": "2025-10", "kind": "company_pr" }
+      ]
+    },
+    {
+      "date": "2026-05-28",
+      "title": "Participates in Anthropic's $65B Series H",
+      "why_it_matters": "Adds direct frontier-lab equity to an otherwise power-and-infrastructure AI book.",
+      "impact": "medium",
+      "entities": ["brookfield", "anthropic"],
+      "sources": [{ "url": "https://www.anthropic.com/news/series-h", "publisher": "Anthropic", "published": "2026-05-28", "kind": "company_pr" }]
+    },
+    {
+      "date": "2026-08-10",
+      "title": "Joins Nvidia's >$500B customer-financing coalition",
+      "why_it_matters": "Brookfield capital would help finance Nvidia customers' compute purchases via collateralized SPVs — linking its credit book to the demand cycle its power assets already depend on.",
+      "impact": "high",
+      "entities": ["brookfield", "nvidia", "nvidia-financing-coalition"],
+      "sources": [{ "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html", "publisher": "CNBC", "published": "2026-08-10", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.cameco.com/media/news/cameco-and-brookfield-establish-transformational-partnership-with-united-states", "publisher": "Cameco", "published": "2025-10", "kind": "company_pr" },
+    { "url": "https://westinghousenuclear.com/strategic-partnership/", "publisher": "Westinghouse", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html", "publisher": "CNBC", "published": "2026-08-10", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

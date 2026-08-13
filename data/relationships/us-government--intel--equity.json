@@ -1,0 +1,34 @@
+{
+  "id": "us-government--intel--equity",
+  "from": "us-government",
+  "to": "intel",
+  "type": "equity_investment",
+  "status": "completed",
+  "headline": { "value": 8.9, "unit": "USD_B", "caveat": "US government took ~10% (9.9%) of Intel common stock at $20.47/share by converting $5.7B of unpaid CHIPS Act grants plus $3.2B of Secure Enclave awards — grants became equity, not new appropriations.", "as_of": "2025-08-22" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "$5.7B of previously-awarded-but-unpaid CHIPS funds were funded around close; the $3.2B Secure Enclave component pays against program milestones. Exact cumulative funding not publicly reconciled.", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-08-22", "start": "2025-08", "end": null, "duration_years": null },
+  "nature_md": "The US government converted Intel's outstanding CHIPS Act awards ($5.7B unpaid grants) and $3.2B Secure Enclave program funding into ~433M shares (~9.9%) of Intel common stock at $20.47/share — turning subsidy into state shareholding. The stake is passive (no board seat, agreed voting alignment with the board), and includes a 5-year warrant for an additional ~5% at $20/share exercisable only if Intel ceases to own at least 51% of its foundry business. Precedent-setting: grants-for-equity replaced milestone grants as US industrial policy's instrument of choice.",
+  "accounting": {
+    "payer_treatment_md": "For the government: no new cash beyond already-appropriated CHIPS/Secure Enclave funds; the Treasury holds equity whose value floats with INTC. Not a procurement contract — no goods received.",
+    "payee_treatment_md": "Intel receives the cash as equity issuance (balance sheet: cash up, equity up) rather than deferred grant income tied to capex milestones — cleaner and faster than CHIPS disbursement, at the cost of ~10% dilution plus warrant overhang.",
+    "off_balance_sheet": false,
+    "flags": []
+  },
+  "related_edges": ["softbank--intel--equity"],
+  "both_sides_md": "**Bull:** anchors Intel's foundry ambitions with the state's balance sheet and aligns Washington with Intel's survival — 13F filings later marked the stake around $9.5B. **Bear:** dilutive, politicizes capital allocation, and the foundry-ownership warrant condition constrains strategic options (a foundry spin-off would trigger further dilution); press-vs-filing value discrepancies flagged in tracker data-quality notes.",
+  "observations": [],
+  "events": [
+    {
+      "date": "2025-08-22",
+      "title": "Intel and US government agree $8.9B equity conversion of CHIPS grants",
+      "impact": "high",
+      "entities": ["us-government", "intel"],
+      "sources": [{ "url": "https://newsroom.intel.com/corporate/intel-announces-agreement-us-government", "publisher": "Intel Newsroom", "published": "2025-08-22", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://newsroom.intel.com/corporate/intel-announces-agreement-us-government", "publisher": "Intel Newsroom", "published": "2025-08-22", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2025/08/22/intel-us-government-stake-chips-act.html", "publisher": "CNBC", "published": "2025-08-22", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

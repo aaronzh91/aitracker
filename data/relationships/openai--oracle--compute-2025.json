@@ -1,0 +1,48 @@
+{
+  "id": "openai--oracle--compute-2025",
+  "from": "openai",
+  "to": "oracle",
+  "type": "compute_purchase",
+  "status": "contracted",
+  "headline": { "value": 300, "unit": "USD_B", "caveat": "~$300B over ~5 years beginning 2027, tied to 4.5GW of Stargate capacity; among the largest commercial contracts ever signed", "as_of": "2025-09" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "main deliveries begin 2027; OpenAI already consumes Oracle OCI capacity (Abilene) under earlier Stargate arrangements — split not disclosed", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-07", "start": "2027", "end": "2032", "duration_years": 5 },
+  "nature_md": "OpenAI agreed (July 2025 capacity agreement, dollar scale reported Sept 2025) to purchase ~$300B of compute from Oracle over roughly five years starting 2027, backed by ~4.5GW of Stargate data-center capacity that Oracle is building/leasing through developers (Vantage's $25B Frontier campus, Crusoe at Abilene, Related Digital's Saline Twp MI, and JPMorgan/MUFG-financed Vantage sites). The contract single-handedly transformed Oracle's disclosed backlog: RPO jumped to $455B in Q1 FY26 (+$317B from the OpenAI agreement) and reached $638B (+363% y/y) by Q4 FY26 — more than half attributed to OpenAI by press. Payment terms, take-or-pay provisions, and cancellation rights are not public.",
+  "accounting": {
+    "payer_treatment_md": "A forward purchase obligation vastly exceeding OpenAI's current revenue (~$25B ARR early 2026) — unfunded, to be paid from future fundraising, IPO proceeds, and revenue growth. Not on any balance sheet today; it is a claim on OpenAI's future capital structure.",
+    "payee_treatment_md": "Booked into Oracle's remaining performance obligations (RPO), recognized as revenue only as capacity is delivered and consumed from 2027. Meanwhile Oracle carries the buildout cost: ~$70B FY27 net capex, $18B+$25B bond raises, and developer lease obligations — spending real money today against one customer's promise to pay later. Oracle CDS hit records with its own project-finance banks hedging via Oracle CDS.",
+    "off_balance_sheet": true,
+    "flags": ["customer_concentration", "commitment_unfunded"]
+  },
+  "related_edges": ["oracle--stargate--jv-equity", "openai--stargate--jv-equity", "openai--microsoft--azure-commit", "openai--amazon--compute"],
+  "both_sides_md": "**Bear:** Oracle levered its balance sheet and credit spreads to a single unprofitable counterparty — >half of a $638B backlog from one customer whose annual losses exceed $14B (Zitron: OpenAI is the single point of failure across ~$748B of obligations; Oracle CDS at records is the market pricing this). **Bull:** RPO is contracted, not speculative; Oracle's OCI revenue is compounding as capacity lands (+363% y/y RPO converts on delivery), OpenAI's revenue is growing into the commitment, and the risk is priced — Oracle is being paid (in margin and strategic position) for taking concentration the hyperscalers refused.",
+  "observations": [
+    {
+      "metric": "rpo",
+      "metric_label": "Oracle remaining performance obligations (majority-OpenAI)",
+      "period": "FY2026-Q4",
+      "value": 638,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.fool.com/investing/2026/07/02/this-ai-infrastructure-company-has-a-638-billion-b/", "publisher": "Motley Fool (from Oracle filings)", "published": "2026-07-02", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "+363% y/y; over half attributed to OpenAI per press reporting. Q1 FY26 RPO was $455B, +$317B from the OpenAI agreement."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-09",
+      "title": "$300B/5yr scale of the OpenAI–Oracle contract reported",
+      "impact": "high",
+      "entities": ["openai", "oracle"],
+      "sources": [{ "url": "https://www.datacenterdynamics.com/en/news/openai-signs-300bn-cloud-deal-with-oracle-report/", "publisher": "DCD", "published": "2025-09", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.datacenterdynamics.com/en/news/openai-signs-300bn-cloud-deal-with-oracle-report/", "publisher": "Data Center Dynamics", "published": "2025-09", "kind": "press" },
+    { "url": "https://finance.yahoo.com/news/oracle-secures-300b-openai-deal-114904785.html", "publisher": "Yahoo Finance", "published": "2025-09", "kind": "press" },
+    { "url": "https://www.fool.com/investing/2026/07/02/this-ai-infrastructure-company-has-a-638-billion-b/", "publisher": "Motley Fool", "published": "2026-07-02", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

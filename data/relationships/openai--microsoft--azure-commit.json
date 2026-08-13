@@ -1,0 +1,56 @@
+{
+  "id": "openai--microsoft--azure-commit",
+  "from": "openai",
+  "to": "microsoft",
+  "type": "compute_purchase",
+  "status": "active",
+  "headline": { "value": 250, "unit": "USD_B", "caveat": "incremental Azure purchase commitment agreed in the Oct 2025 recapitalization; no public schedule or take-or-pay terms", "as_of": "2025-10-28" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "not separately disclosed; Microsoft's FY26 related-party disclosure ($24.1B revenue from OpenAI arrangements, incl. rev-share) is the closest public proxy", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-10-28", "start": "2025-10", "end": null, "duration_years": null },
+  "nature_md": "Two flows in one contract stack. (1) Compute: in the Oct 28, 2025 recapitalization OpenAI contracted to purchase an incremental $250B of Azure services; in exchange Microsoft gave up its right of first refusal as compute provider. (2) Revenue share: OpenAI has historically paid Microsoft ~20% of revenue. **Apr 27, 2026 restructuring:** the rev-share was made subject to a total cap (running through 2030), Microsoft stopped paying OpenAI a share on Azure-hosted OpenAI-model sales, and remaining exclusivity was gutted — OpenAI may now sell its products on any cloud (this cleared the way for the $38B+$100B AWS contracts and the Google Cloud deal). Microsoft remains the 'primary' cloud partner in branding, but the economic tie is now a large but capped commitment rather than an exclusive channel.",
+  "accounting": {
+    "payer_treatment_md": "OpenAI (private) expenses Azure consumption as cost of revenue; the $250B is an unconditional-looking purchase commitment whose enforceability/timing terms are undisclosed. Rev-share payments to Microsoft are a direct deduction from OpenAI's topline economics — now capped through 2030.",
+    "payee_treatment_md": "Microsoft recognizes Azure revenue as consumed and discloses OpenAI as a related party: FY26 revenue from OpenAI arrangements (incl. rev-share receipts) was $24.1B with $6.0B receivable. The $250B commitment sits in backlog/RPO-adjacent disclosure, not revenue, until consumed.",
+    "off_balance_sheet": false,
+    "flags": ["round_trip_cloud", "customer_concentration", "commitment_unfunded"]
+  },
+  "related_edges": ["microsoft--openai--equity", "openai--amazon--compute", "openai--oracle--compute-2025", "openai--alphabet--cloud"],
+  "both_sides_md": "**Bear:** OpenAI's committed spend across Microsoft/Oracle/AWS/others (~$748B+ of performance obligations per Zitron's tally) dwarfs its ~$25B ARR — the $250B Azure commitment is unfundable from current cashflow, and Microsoft's receivable ($6.0B) is growing. **Bull:** consumption is real and audited ($24.1B in FY26 through Microsoft's books alone), the Apr 2026 restructuring shows both parties can reprice terms rationally, and diversified supply reduces the single-vendor bottleneck rather than signaling breakdown.",
+  "observations": [
+    {
+      "metric": "contract_value",
+      "metric_label": "Incremental Azure purchase commitment",
+      "period": "2025-10",
+      "value": 250,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/", "publisher": "Microsoft", "published": "2025-10-28", "kind": "company_pr" },
+      "as_of": "2026-08-13"
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-10-28",
+      "title": "OpenAI commits to $250B of incremental Azure; Microsoft drops right of first refusal",
+      "impact": "high",
+      "entities": ["openai", "microsoft"],
+      "sources": [{ "url": "https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/", "publisher": "Microsoft", "published": "2025-10-28", "kind": "company_pr" }]
+    },
+    {
+      "date": "2026-04-27",
+      "title": "Second restructuring: rev-share capped through 2030, exclusivity ended, OpenAI free to sell on any cloud",
+      "why_it_matters": "Converted the defining exclusive relationship of the AI era into a capped commercial contract; directly enabled the Amazon equity + AWS expansion.",
+      "impact": "high",
+      "entities": ["openai", "microsoft", "amazon"],
+      "sources": [{ "url": "https://www.cnbc.com/2026/04/27/openai-microsoft-partnership-revenue-cap.html", "publisher": "CNBC", "published": "2026-04-27", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/", "publisher": "Microsoft", "published": "2025-10-28", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2026/04/27/openai-microsoft-partnership-revenue-cap.html", "publisher": "CNBC", "published": "2026-04-27", "kind": "press" },
+    { "url": "https://venturebeat.com/technology/microsoft-and-openai-gut-their-exclusive-deal-freeing-openai-to-sell-on-aws-and-google-cloud", "publisher": "VentureBeat", "published": "2026-04", "kind": "press" },
+    { "url": "https://www.neowin.net/amp/microsoft-reveals-it-generated-241-billion-in-revenue-from-openai-in-fiscal-2026/", "publisher": "Neowin (from Microsoft 10-K)", "published": "2026-08", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

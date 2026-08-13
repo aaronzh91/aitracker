@@ -1,0 +1,28 @@
+{
+  "id": "coreweave--galaxy-digital--lease",
+  "from": "coreweave",
+  "to": "galaxy-digital",
+  "type": "lease",
+  "status": "active",
+  "headline": { "value": 10.4, "unit": "USD_B", "caveat": "Minimum contracted lease payments over the initial 15-year term for 526MW of critical IT load at Helios (West Texas), leased across three phases; total potential value >$30B over 25 years assuming both 5-year extension options.", "as_of": "2026-08" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "Phase I (133MW) delivered and revenue-generating in 2026; cumulative rent received not broken out.", "as_of": "2026-08-13" },
+  "annualized_flow": { "value": 1, "unit": "USD_B_per_year", "caveat": "Galaxy-guided average annual lease revenue >$1B at full 526MW delivery, at ~90% lease-level EBITDA margins.", "as_of": "2026-08-13" },
+  "term": { "announced": "2025", "start": "2026", "end": null, "duration_years": 15 },
+  "nature_md": "CoreWeave leased the entire converted Helios campus — 526MW of critical IT load across three phases — from Galaxy Digital under 15-year leases with two 5-year extension options (>$30B potential over 25 years; $10.4B minimum contracted over the initial term). Galaxy, a crypto financial-services firm, funded the bitcoin-mine-to-AI conversion partly with $3.5B of high-yield bonds and a $1.4B debt facility. Phase I (133MW) was delivered to CoreWeave in 2026 and is generating revenue.",
+  "accounting": {
+    "payer_treatment_md": "CoreWeave adds the Helios leases to its ROU-asset/lease-liability stack and passes costs through cost of revenue against customer contracts (Meta, OpenAI et al.); extension options are not liabilities until exercised.",
+    "payee_treatment_md": "Galaxy books lease revenue as capacity is delivered (>$1B/yr average at full delivery, ~90% lease-level EBITDA margin) against ~$3.5B of junk-bond funding — a leveraged landlord whose bond covenants rest on one tenant's credit.",
+    "off_balance_sheet": false,
+    "flags": ["customer_concentration", "collateralized_gpu_debt"]
+  },
+  "related_edges": ["coreweave--applied-digital--lease"],
+  "both_sides_md": "**Bull:** 90%-margin contracted revenue for 15-25 years transformed Galaxy's earnings mix overnight; Helios power rights were the scarce asset. **Bear:** single-tenant risk on a junk-funded conversion — Galaxy's Q2-26 slides tout a $30B pipeline while the firm posts losses, and CoreWeave's own credit (CDS ~50% implied 5-yr default, Jul 2026) is the true underwriting.",
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.prnewswire.com/news-releases/galaxy-completes-phase-i-of-its-helios-data-center-campus-delivering-133-megawatts-of-critical-it-load-to-coreweave-302818664.html", "publisher": "PR Newswire (Galaxy Digital)", "published": "2026", "kind": "company_pr" },
+    { "url": "https://www.datacenterdynamics.com/en/news/coreweave-leases-another-260mw-capacity-from-galaxy-in-texas/", "publisher": "Data Center Dynamics", "published": "2025", "kind": "press" },
+    { "url": "https://uk.investing.com/news/company-news/galaxy-digital-q2-2026-slides-show-30b-contract-pipeline-amid-losses-93CH-4811726", "publisher": "Investing.com", "published": "2026-08", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

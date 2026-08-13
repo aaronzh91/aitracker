@@ -1,0 +1,25 @@
+{
+  "id": "alphabet--cipher-mining--backstop",
+  "from": "alphabet",
+  "to": "cipher-mining",
+  "type": "backstop_guarantee",
+  "status": "active",
+  "headline": { "value": 1.4, "unit": "USD_B", "caveat": "Google backstop of Fluidstack's Barber Lake lease obligations, with warrants for ~24M CIFR shares (~5.4% pro forma). Expanded by $333M to $1.73B with the Nov 2025 lease add-on.", "as_of": "2025-09" },
+  "realized_to_date": { "value": 0, "unit": "USD_B", "caveat": "Contingent — pays only on a Fluidstack default; no draw reported.", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-09", "start": "2025", "end": null, "duration_years": 10 },
+  "nature_md": "Google backstops $1.4B (later $1.73B) of Fluidstack's lease obligations to Cipher Mining at Barber Lake, enabling Cipher's project financing, and receives warrants for ~24M shares (~5.4% pro forma equity). Same template as the TeraWulf arrangement: Google provides credit enhancement for a thinly-capitalized tenant whose capacity serves the Google/Anthropic compute stack, taking equity upside in the landlord instead of signing the lease itself.",
+  "accounting": {
+    "payer_treatment_md": "Contingent liability for Alphabet — guarantee fair value plus warrant asset recognized; the $1.4-1.73B notional hits Alphabet's financials only if Fluidstack defaults. Disclosed among guarantees/commitments, off balance sheet in the headline sense.",
+    "payee_treatment_md": "Cipher receives no Google cash; benefit arrives as cheaper, larger project debt against Google-grade lease credit. Warrant issuance dilutes shareholders in exchange.",
+    "off_balance_sheet": true,
+    "flags": ["commitment_unfunded", "warrant_for_revenue", "customer_concentration"]
+  },
+  "related_edges": ["fluidstack--cipher-mining--lease", "alphabet--terawulf--backstop"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.theblock.co/post/372315/cipher-mining-google-backed-3-billion-usd-ai-hosting-deal", "publisher": "The Block", "published": "2025-09", "kind": "press" },
+    { "url": "https://www.datacenterdynamics.com/en/news/fluidstack-signs-additional-39mw-lease-with-cipher-mining-in-texas-backed-by-google/", "publisher": "Data Center Dynamics", "published": "2025-11", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

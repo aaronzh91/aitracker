@@ -1,0 +1,85 @@
+{
+  "id": "alibaba",
+  "name": "Alibaba Group Holding Limited",
+  "kind": "public_company",
+  "category": "hyperscaler",
+  "group": "hyperscalers_clouds",
+  "region": "china",
+  "tier": 1,
+  "tickers": [
+    { "exchange": "NYSE", "symbol": "BABA" },
+    { "exchange": "HKEX", "symbol": "9988" }
+  ],
+  "cik": "1577552",
+  "website": "https://www.alibabagroup.com",
+  "fiscal_year_end": "03-31",
+  "monetization": "Sells AI cloud (Qwen model family, GPU/inference services) through Alibaba Cloud, funded by e-commerce cash flows and a RMB 380B+ AI capex program.",
+  "description_md": "Alibaba is China's largest cloud provider (Cloud Intelligence Group) and e-commerce platform, and the anchor of China's open-model ecosystem via its Qwen family — the most-adopted open-weight models domestically and a top global open-source line. It is also a strategic investor across China's AI labs (Moonshot, Zhipu, MiniMax, 01.AI) and designs in-house accelerators through T-Head. In February 2025 it announced a three-year RMB 380B (~$53B) AI/cloud capex program — the largest disclosed in China — which management said in May 2026 it will 'overshoot'.",
+  "ai_monetization_md": "AI-related product revenue (model APIs, GPU/inference cloud, AI-enhanced products) has posted **triple-digit y/y growth for 11 consecutive quarters** through the March 2026 quarter. Cloud Intelligence Group revenue grew 38% y/y in the March quarter (external revenue +40%), with AI products at ~30% of external cloud revenue. Monetization runs through consumption-based cloud contracts rather than seat licenses — Qwen's open-weights strategy sacrifices license fees to drive cloud consumption and standards adoption. The cost side is heavy: FY2026 profit fell sharply on AI infrastructure investment and e-commerce subsidies.",
+  "ai_strategy_md": "Full-stack sovereign-scale AI: own models (Qwen 3.x), own silicon (T-Head) plus domestic accelerators to hedge US export controls, massive capex (RMB 380B program, to be exceeded — CEO Eddie Wu frames AI as a once-in-a-generation platform shift with returns visible over 3–5 years), and equity stakes across China's frontier labs. Alibaba is positioning as the AWS-plus-OpenAI of the Chinese bloc as US chips exit the market.",
+  "risk_notes_md": "**Export-control frame:** Nvidia's H20 was banned (Apr 2025), re-licensed (Jul 2025) with a 15%-of-China-revenue payment to the US government, then effectively re-blocked as Beijing discouraged purchases; the B30A/Blackwell class is blocked for China in 2026, and on Jun 1, 2026 US bans were extended to Chinese firms' overseas data centers — directly constraining Alibaba Cloud's international expansion and pushing it onto domestic silicon (Huawei Ascend, Cambricon, T-Head) with lower performance per unit. **Margin risk:** FY2026 showed the AI buildout consuming e-commerce profits (quarterly profit fell sharply on capex and subsidies). **Geopolitical/listing risk:** dual NYSE/HKEX listing exposure.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Cloud Intelligence Group revenue growth y/y",
+      "period": "FY2026-Q4 (Mar 2026 quarter)",
+      "value": 38,
+      "unit": "pct",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://data.alibabagroup.com/ecms-files/1532295521/5b1cb883-8d00-4237-a148-6631cc12a5d2/Alibaba%20Group%20Announces%20March%20Quarter%202026%20and%20Fiscal%20Year%202026%20Results.pdf", "publisher": "Alibaba Group IR", "published": "2026-05-13", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "External cloud revenue +40% y/y; AI-related products ~30% of external cloud revenue."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Consecutive quarters of triple-digit AI revenue growth",
+      "period": "through FY2026-Q4",
+      "value": 11,
+      "unit": "quarters",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.scmp.com/tech/big-tech/article/3353451/alibaba-ai-revenue-logs-triple-digit-growth-11th-quarter-amid-strategic-reshuffle", "publisher": "South China Morning Post", "published": "2026-05", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "AI-related product revenue growing >100% y/y for 11 straight quarters."
+    },
+    {
+      "metric": "capex_guidance",
+      "period": "FY2026–FY2028 program",
+      "value": 380,
+      "unit": "RMB_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://www.scmp.com/tech/big-tech/article/3353451/alibaba-ai-revenue-logs-triple-digit-growth-11th-quarter-amid-strategic-reshuffle", "publisher": "South China Morning Post", "published": "2026-05", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "~$53B three-year AI/cloud program announced Feb 2025; CEO Eddie Wu (May 2026): 'We will overshoot the original capex figure.'"
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-05-13",
+      "title": "FY2026 results: cloud accelerates (+38%), AI triple-digit streak hits 11 quarters, profit squeezed; capex program to be exceeded",
+      "why_it_matters": "The clearest disclosure of China's AI monetization actually converting to revenue — and of its cost: heavy capex plus e-commerce subsidies compressed group profit sharply.",
+      "impact": "high",
+      "entities": ["alibaba"],
+      "sources": [
+        { "url": "https://data.alibabagroup.com/ecms-files/1532295521/5b1cb883-8d00-4237-a148-6631cc12a5d2/Alibaba%20Group%20Announces%20March%20Quarter%202026%20and%20Fiscal%20Year%202026%20Results.pdf", "publisher": "Alibaba Group IR", "published": "2026-05-13", "kind": "company_ir" },
+        { "url": "https://finance.yahoo.com/markets/stocks/articles/alibaba-group-holding-baba-down-005133822.html", "publisher": "Yahoo Finance", "published": "2026-05", "kind": "press" }
+      ]
+    },
+    {
+      "date": "2026-06-01",
+      "title": "US extends AI-chip bans to Chinese firms' overseas data centers",
+      "why_it_matters": "Closes the offshore loophole Alibaba Cloud's international expansion relied on for access to advanced Nvidia hardware; accelerates the shift to domestic accelerators.",
+      "impact": "high",
+      "entities": ["alibaba", "tencent", "bytedance", "us-government"],
+      "sources": [{ "url": "https://www.aljazeera.com/economy/2026/6/1/us-says-ban-on-ai-chip-shipments-applies-to-chinese-firms-outside-china", "publisher": "Al Jazeera", "published": "2026-06-01", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://data.alibabagroup.com/ecms-files/1532295521/5b1cb883-8d00-4237-a148-6631cc12a5d2/Alibaba%20Group%20Announces%20March%20Quarter%202026%20and%20Fiscal%20Year%202026%20Results.pdf", "publisher": "Alibaba Group IR", "kind": "company_ir" },
+    { "url": "https://www.scmp.com/tech/big-tech/article/3353451/alibaba-ai-revenue-logs-triple-digit-growth-11th-quarter-amid-strategic-reshuffle", "publisher": "South China Morning Post", "kind": "press" },
+    { "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-responds-to-reports-that-its-h20-gpu-for-china-is-ending-production-next-gen-b30a-green-light-up-to-the-united-states-government-according-to-ceo-jensen-huang", "publisher": "Tom's Hardware", "kind": "press", "notes": "Export-control frame: H20 ban → 15% USG revenue-share re-license → B30A blocked." }
+  ],
+  "updated": "2026-08-13"
+}

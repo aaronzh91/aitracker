@@ -1,0 +1,36 @@
+{
+  "id": "amazon--openai--equity-2026",
+  "from": "amazon",
+  "to": "openai",
+  "type": "equity_investment",
+  "status": "completed",
+  "headline": { "value": 50, "unit": "USD_B", "caveat": "$15B immediate + $35B contingent on the earlier of an OpenAI IPO or specified milestones; largest single check in OpenAI's $122B round", "as_of": "2026-02" },
+  "realized_to_date": { "value": 50, "unit": "USD_B", "caveat": "final $35B tranche funded Jul 31, 2026", "as_of": "2026-07-31" },
+  "term": { "announced": "2026-02", "start": "2026-03-31", "end": null, "duration_years": null },
+  "nature_md": "Amazon anchored OpenAI's early-2026 mega-round (closed Mar 31, 2026 at $852B post-money) with $50B: $15B funded immediately, and $35B committed upon the earlier of (1) an OpenAI IPO or (2) OpenAI meeting 'specified milestones' (Reuters reported these related to declaring AGI). Amazon funded the remaining $35B on July 31, 2026 — coverage conflicts on whether milestones were formally met or Amazon simply exercised early; Amazon did not say. Press reports put the resulting stake at ~5% (unconfirmed). The equity came paired with a $100B/8-year expansion of OpenAI's AWS compute contract (see related edge) — investor and vendor in the same handshake.",
+  "accounting": {
+    "payer_treatment_md": "Non-marketable equity investment on Amazon's balance sheet, carried at fair value with remeasurement gains/losses in non-operating income (the same treatment producing Amazon's headline Anthropic marks). No income-statement expense for the purchase itself.",
+    "payee_treatment_md": "Equity financing — no revenue or liability. Proceeds substantially fund compute purchases, including from AWS itself under the expanded $38B+$100B contracts, which AWS recognizes as revenue: the round-trip concern.",
+    "off_balance_sheet": false,
+    "flags": ["equity_for_revenue", "round_trip_cloud"]
+  },
+  "related_edges": ["openai--amazon--compute", "nvidia--openai--equity-2026", "softbank--openai--equity"],
+  "both_sides_md": "**Bear:** Amazon paid $50B into a customer that simultaneously committed $138B to AWS — investor cash cycling back as cloud revenue at cycle-defining scale, and the $35B 'milestone' gate was waived in practice, suggesting the gate was decorative. **Bull:** OpenAI is the single largest source of incremental cloud demand in the world; a ~5% stake plus anchor-tenant economics ahead of a $1T+ IPO is a rational use of Amazon's balance sheet, and the funding was majority third-party (SoftBank, NVIDIA, others) rather than Amazon-only.",
+  "observations": [],
+  "events": [
+    {
+      "date": "2026-07-31",
+      "title": "Amazon funds final $35B tranche, completing the $50B investment",
+      "why_it_matters": "Committed became realized ahead of schedule — and ahead of the IPO/milestone triggers as publicly understood.",
+      "impact": "high",
+      "entities": ["amazon", "openai"],
+      "sources": [{ "url": "https://www.pymnts.com/news/artificial-intelligence/2026/amazon-completes-50-billion-dollar-investment-openai/", "publisher": "PYMNTS", "published": "2026-08", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.pymnts.com/news/artificial-intelligence/2026/amazon-completes-50-billion-dollar-investment-openai/", "publisher": "PYMNTS", "published": "2026-08", "kind": "press" },
+    { "url": "https://www.citybiz.co/article/882621/amazon-completes-50b-openai-investment-finalizing-35b-funding-tranche/", "publisher": "citybiz", "published": "2026-08", "kind": "press" },
+    { "url": "https://www.mediapost.com/publications/article/416943/amazon-investment-signals-openai-ipo-or-meeting-mi.html", "publisher": "MediaPost", "published": "2026-08", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "nvidia--ssi--equity",
+  "from": "nvidia",
+  "to": "safe-superintelligence",
+  "type": "equity_investment",
+  "status": "announced",
+  "headline": { "value": 5, "unit": "USD_B", "caveat": "'up to $5B' per Bloomberg's Jul 27, 2026 report; SSI confirmed the NVIDIA partnership but the dollar figure traces to that single report — treat as low-confidence until corroborated by filings", "as_of": "2026-07-27" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "not disclosed" },
+  "term": { "announced": "2026-07-27", "start": null, "end": null, "duration_years": null },
+  "nature_md": "NVIDIA plans to invest up to $5B in Safe Superintelligence, Ilya Sutskever's pre-product lab (last marked ~$32B in 2025, with earlier Alphabet/NVIDIA backing). Alongside the investment SSI will deploy NVIDIA Vera Rubin systems, increasing its compute 'by an order of magnitude' over 12 months — notable because SSI had been Google Cloud's largest TPU customer and is shifting toward GPUs. The investment-funds-GPU-purchases loop mirrors NVIDIA's OpenAI and xAI-SPV positions, at a lab with zero revenue.",
+  "accounting": {
+    "payer_treatment_md": "Would be a non-marketable equity investment on NVIDIA's balance sheet; the associated Vera Rubin deployments are future NVIDIA revenue — equity in, purchases out.",
+    "payee_treatment_md": "Equity financing for SSI — no revenue exists at the company; proceeds effectively pre-fund compute purchases, largely from NVIDIA.",
+    "off_balance_sheet": false,
+    "flags": ["equity_for_revenue"]
+  },
+  "related_edges": ["nvidia--openai--equity-2026", "nvidia--xai-gpu-spv--equity"],
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Reported NVIDIA investment in SSI",
+      "period": "2026-07",
+      "value": 5,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://www.bloomberg.com/news/articles/2026-07-27/nvidia-makes-substantial-investment-in-sutskever-s-ai-startup", "publisher": "Bloomberg", "published": "2026-07-27", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Single-sourced dollar figure ('up to $5B'); the partnership itself was confirmed by SSI. No filing-level confirmation as of Aug 13, 2026."
+    }
+  ],
+  "events": [],
+  "sources": [
+    { "url": "https://www.bloomberg.com/news/articles/2026-07-27/nvidia-makes-substantial-investment-in-sutskever-s-ai-startup", "publisher": "Bloomberg", "published": "2026-07-27", "kind": "press" },
+    { "url": "https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/", "publisher": "TechCrunch", "published": "2026-07-27", "kind": "press" },
+    { "url": "https://www.datacenterdynamics.com/en/news/nvidia-to-invest-5bn-in-safe-superintelligence-sutskever-firm-to-substantially-increase-gpu-compute/", "publisher": "Data Center Dynamics", "published": "2026-07", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

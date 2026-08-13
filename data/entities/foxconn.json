@@ -1,0 +1,81 @@
+{
+  "id": "foxconn",
+  "name": "Hon Hai Precision Industry Co., Ltd. (Foxconn)",
+  "kind": "public_company",
+  "category": "server_oem_odm",
+  "group": "compute_supply_chain",
+  "region": "taiwan",
+  "tier": 1,
+  "tickers": [{ "exchange": "TWSE", "symbol": "2317" }],
+  "cik": null,
+  "website": "https://www.honhai.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "World's largest AI-server assembler — builds Nvidia rack systems and Stargate/US AI-infrastructure hardware; cloud & networking passed 51% of revenue in Q2 2026.",
+  "description_md": "Hon Hai (Foxconn) is the world's largest electronics contract manufacturer and, since the AI buildout, the largest assembler of AI servers — building Nvidia GB/VR-generation rack systems for hyperscalers and neoclouds. In Q2 2026 its cloud-and-networking segment (housing AI servers) exceeded 51% of total revenue for the first time, surpassing the consumer-electronics (iPhone) business that defined the company for two decades. It is expanding US production, including Houston facilities tied to AI-server programs (Apple server assembly; reported Stargate-related hardware work with OpenAI), and struck a November 2025 partnership with OpenAI on next-generation AI infrastructure hardware.",
+  "ai_monetization_md": "Assembly and integration revenue on AI racks: Q2 2026 revenue was ~$78.7B (+39.8% y/y) with record Q2 net profit of NT$59.97B (~$1.86B, +35% y/y) — profit growing far slower than revenue because assembly margins are thin and the GPU content passes through. The OpenAI partnership covers jointly developing and US-manufacturing AI data-center hardware; notably, **OpenAI made no purchase commitment**, so the arrangement is capability positioning rather than backlog. Foxconn Industrial Internet (the listed China subsidiary) nearly doubled H1 profit on AI-server orders.",
+  "ai_strategy_md": "Convert consumer-electronics scale into AI-infrastructure scale: dedicate capacity to Nvidia rack systems ahead of demand, localize US manufacturing (Houston, Texas; Wisconsin) to capture sovereign/onshoring requirements including Stargate-linked work, and move up the value chain from boards to full data-center integration (liquid cooling, power shelves) — while management flags upstream CoWoS packaging, not orders, as the 2027 growth ceiling.",
+  "risk_notes_md": "**Margin structure:** assembly economics mean Foxconn books enormous revenue on AI servers but captures a thin slice — profit +35% on revenue +40% in Q2 2026; a mix shift alone cannot re-rate margins. **No-commitment partnerships:** the OpenAI deal carries no purchase obligation — capacity built for it is at Foxconn's risk if Stargate deployment slips. **Concentration:** deeply tied to the Nvidia ecosystem and a few hyperscaler/neocloud programs; some reported figures (Houston/Stargate scope) remain unverified in detail. **Geopolitics:** Taiwan-China exposure plus US onshoring costs.",
+  "observations": [
+    {
+      "metric": "revenue_total",
+      "period": "FY2026-Q2",
+      "value": 78.7,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "medium",
+      "source": { "url": "https://cryptobriefing.com/foxconn-quarterly-sales-jump-cloud-ai-revenue/", "publisher": "Crypto Briefing", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "+39.8% y/y, driven by cloud and AI-server revenue; converted from NT$ (company monthly disclosures)."
+    },
+    {
+      "metric": "revenue_segment",
+      "metric_label": "Cloud & networking (AI server) share of revenue",
+      "period": "FY2026-Q2",
+      "value": 51,
+      "unit": "pct",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://technosports.co.in/foxconn-ai-servers-revenue-q2/", "publisher": "TechnoSports", "published": "2026-08", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "First time above half of revenue (48% in Q1 2026) — AI servers now outweigh the consumer (iPhone) business."
+    },
+    {
+      "metric": "net_income",
+      "period": "FY2026-Q2",
+      "value": 1.86,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.cryptopolitan.com/foxconn-q2-profit-rises-35-nvidia-ai-servers/", "publisher": "Cryptopolitan", "published": "2026-08", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "NT$59.97B, +35% y/y — a Q2 record, beating consensus (NT$58.8B); note profit growth lags revenue growth (thin assembly margins)."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-11",
+      "title": "OpenAI partnership on US-built AI data-center hardware — with no purchase commitment",
+      "why_it_matters": "OpenAI gets US manufacturing capacity and design input on next-gen racks without committing dollars; Foxconn carries the capacity risk. A textbook example of headline partnership ≠ contracted revenue.",
+      "impact": "medium",
+      "entities": ["foxconn", "openai"],
+      "sources": [
+        { "url": "https://www.techrepublic.com/article/news-openai-foxconn-stargate-data-center/", "publisher": "TechRepublic", "published": "2025-11", "kind": "press" },
+        { "url": "https://seekingalpha.com/news/4520302-foxconn-sees-ai-driven-growth-in-2026-teases-openai-announcement", "publisher": "Seeking Alpha", "published": "2025-11", "kind": "press" }
+      ]
+    },
+    {
+      "date": "2026-08-12",
+      "title": "Q2 2026: record profit; AI servers >51% of revenue; CEO names CoWoS as 2027 ceiling",
+      "why_it_matters": "The revenue-mix crossover makes Foxconn an AI-infrastructure company by composition; management explicitly located the binding constraint upstream in TSMC packaging, not in demand.",
+      "impact": "high",
+      "entities": ["foxconn", "nvidia", "tsmc"],
+      "sources": [{ "url": "https://www.techtimes.com/articles/324129/20260812/foxconn-ceo-names-cowos-packaging-2027-ai-server-ceiling-after-record-q2-earnings.htm", "publisher": "TechTimes", "published": "2026-08-12", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.techtimes.com/articles/324129/20260812/foxconn-ceo-names-cowos-packaging-2027-ai-server-ceiling-after-record-q2-earnings.htm", "publisher": "TechTimes", "kind": "press" },
+    { "url": "https://www.techrepublic.com/article/news-openai-foxconn-stargate-data-center/", "publisher": "TechRepublic", "kind": "press", "notes": "Foxconn factories in the Stargate buildout; Houston scope partly unverified." },
+    { "url": "https://www.digitimes.com/news/a20260505PD233/growth-ai-server-revenue-foxconn-2026.html", "publisher": "DigiTimes", "published": "2026-05", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

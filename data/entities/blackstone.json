@@ -1,0 +1,87 @@
+{
+  "id": "blackstone",
+  "name": "Blackstone Inc.",
+  "kind": "financial_institution",
+  "category": "financier_pe_vc",
+  "group": "capital",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NYSE", "symbol": "BX" }],
+  "cik": "1393818",
+  "website": "https://www.blackstone.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Largest alternative asset manager; monetizes AI as landlord and lender to the buildout — owned data-center platforms (QTS, AirTrunk), project equity (Saline Township), frontier-lab equity (Anthropic), and Nvidia's financing coalition.",
+  "description_md": "Blackstone is the world's largest alternative asset manager and one of the earliest institutional owners of the AI real-asset layer: it took QTS private for ~$10B in 2021 (then the largest data-center deal ever) and, with CPP Investments, acquired APAC operator AirTrunk for A$24B (~$16B) in 2024. Its data-center tenants include the major hyperscalers and ByteDance.",
+  "ai_monetization_md": "AI-exposure thesis: own the shells and power the tenants can't build fast enough, and increasingly finance them too. Platform equity (QTS — now among the largest US hyperscale developers — and AirTrunk with >1.8GW APAC pipeline); project equity in Related Digital's $16.3B Saline Township campus for Oracle/Stargate (closed Apr 2026); a participation in Anthropic's $65B Series H (May 2026, amount undisclosed); and membership in Nvidia's >$500B compute-collateralized customer-financing coalition (Aug 2026, subject to final agreements).",
+  "risk_notes_md": "Data-center platform valuations embed continued hyperscaler leasing at current rates; a capex slowdown hits both rents and exit multiples. The coalition would add GPU-collateralized credit exposure on top of landlord exposure to the same demand cycle. Fund-level leverage on QTS/AirTrunk is not fully public.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "AirTrunk acquisition enterprise value",
+      "period": "2024-09",
+      "value": 16,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.blackstone.com/news/press/blackstone-announces-agreement-to-acquire-airtrunk-in-a-a24b-transaction/", "publisher": "Blackstone", "published": "2024-09", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "A$24B including debt and committed projects, with CPP Investments; largest data-center deal globally at signing."
+    },
+    {
+      "metric": "other",
+      "metric_label": "QTS take-private value",
+      "period": "2021",
+      "value": 10,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.blackstone.com/insights/article/behind-the-deal-airtrunk/", "publisher": "Blackstone", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "2021 take-private; QTS capacity has multiplied severalfold under Blackstone ownership during the AI cycle."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Anthropic Series H participation",
+      "period": "2026-05",
+      "value": null,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.anthropic.com/news/series-h", "publisher": "Anthropic", "published": "2026-05-28", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Named participant in the $65B round at $965B post-money; individual amount undisclosed."
+    }
+  ],
+  "events": [
+    {
+      "date": "2024-09-04",
+      "title": "Agrees to acquire AirTrunk for A$24B (with CPP Investments)",
+      "why_it_matters": "Gave Blackstone the dominant APAC hyperscale platform just as AI demand hit the region; tenants include AWS, Microsoft, ByteDance.",
+      "impact": "medium",
+      "entities": ["blackstone"],
+      "sources": [{ "url": "https://www.datacenterdynamics.com/en/news/blackstone-and-cpp-to-acquire-apac-data-center-firm-airtrunk-for-au24bn/", "publisher": "Data Center Dynamics", "published": "2024-09", "kind": "press" }]
+    },
+    {
+      "date": "2026-04-24",
+      "title": "Provides equity in $16.3B Saline Township financing for Oracle campus",
+      "why_it_matters": "Blackstone-affiliated funds took project equity in the largest single-facility tech debt package on record (PIMCO-anchored), for a >1GW Stargate-serving campus.",
+      "impact": "medium",
+      "entities": ["blackstone", "oracle", "pimco"],
+      "sources": [{ "url": "https://www.blackstone.com/news/press/related-digital-announces-financing-for-16-billion-oracle-data-center-project-in-saline-township-michigan/", "publisher": "Blackstone", "published": "2026-04-24", "kind": "company_pr" }]
+    },
+    {
+      "date": "2026-08-10",
+      "title": "Joins Nvidia's >$500B customer-financing coalition",
+      "why_it_matters": "Moves Blackstone from landlord to GPU-collateralized lender for Nvidia's customer base — layering credit exposure on top of real-asset exposure to the same cycle.",
+      "impact": "high",
+      "entities": ["blackstone", "nvidia", "nvidia-financing-coalition"],
+      "sources": [{ "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html", "publisher": "CNBC", "published": "2026-08-10", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.blackstone.com/news/press/blackstone-announces-agreement-to-acquire-airtrunk-in-a-a24b-transaction/", "publisher": "Blackstone", "published": "2024-09", "kind": "company_pr" },
+    { "url": "https://www.anthropic.com/news/series-h", "publisher": "Anthropic", "published": "2026-05-28", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html", "publisher": "CNBC", "published": "2026-08-10", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

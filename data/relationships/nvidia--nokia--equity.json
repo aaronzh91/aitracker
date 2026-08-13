@@ -1,0 +1,25 @@
+{
+  "id": "nvidia--nokia--equity",
+  "from": "nvidia",
+  "to": "nokia",
+  "type": "equity_investment",
+  "status": "completed",
+  "headline": { "value": 1, "unit": "USD_B", "caveat": "~166M new Nokia shares at $6.01/share via directed issuance — a ~2.9% stake", "as_of": "2025-10-28" },
+  "realized_to_date": { "value": 1, "unit": "USD_B", "caveat": "Nokia's board resolved the directed share issuance to NVIDIA on Oct 28, 2025; subscription per the companies' agreement", "as_of": "2025-10" },
+  "term": { "announced": "2025-10-28", "start": "2025-10", "end": null, "duration_years": null },
+  "nature_md": "NVIDIA subscribed $1.0B of newly issued Nokia shares ($6.01/share, ~2.9% stake) alongside a strategic partnership to develop AI-RAN (AI-native radio access networks) and the 5G-to-6G transition on NVIDIA compute, with T-Mobile US as first trial partner from 2026. The pattern matches NVIDIA's other 2025-26 supply-chain stakes (Nebius, Nscale, Naver, Lumentum, Coherent): equity that seeds future demand for NVIDIA silicon in a new vertical — here, telecom infrastructure.",
+  "accounting": {
+    "payer_treatment_md": "Marketable equity investment on NVIDIA's balance sheet, marked through other income. Any future Nokia purchases of NVIDIA AI-RAN compute would be NVIDIA revenue — equity precedes the product cycle.",
+    "payee_treatment_md": "Primary share issuance — ~$1B of new equity capital for Nokia, no revenue. Signals to Nokia's carrier customers that its AI-RAN roadmap has NVIDIA's backing.",
+    "off_balance_sheet": false,
+    "flags": ["equity_for_revenue"]
+  },
+  "related_edges": ["nvidia--nebius--equity", "nvidia--nscale--equity"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.nokia.com/newsroom/inside-information-nvidia-to-make-usd-1-billion-equity-investment-in-nokia-in-addition-to-new-strategic-partnership-nokias-board-resolved-on-directed-share-issuance-to-nvidia/", "publisher": "Nokia", "published": "2025-10-28", "kind": "company_pr" },
+    { "url": "https://www.bloomberg.com/news/articles/2025-10-28/nvidia-to-invest-1-billion-in-nokia-in-ai-networking-push", "publisher": "Bloomberg", "published": "2025-10-28", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

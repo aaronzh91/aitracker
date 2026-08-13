@@ -1,0 +1,76 @@
+{
+  "id": "electrical-construction-labor",
+  "name": "Electrical construction labor",
+  "group": "labor",
+  "status": "binding",
+  "description_md": "Data centers are, by cost, mostly electrical construction projects — IBEW puts electrical work at 45-70% of total DC construction cost — and the US does not have the electricians to build what has been announced. The big electrical/mechanical contractors carry record books: Quanta Services $48.5B backlog (grid + DC electrical via Cupertino Electric), Comfort Systems $14.1B (+73% y/y, technology now 58% of revenue), EMCOR $17.1B RPOs (+44%). Behind them is a structural shortage: ABC estimates construction needs ~349,000 net new workers in 2026 alone, industry analyses project a shortfall approaching 500,000 workers for data-center-class construction by 2027, contractors are turning down projects outright, and hyperscalers are funding apprenticeships directly (Google's $50M IBEW program to lift enrollment from 19,500 to 30,000/year; Meta/Google/BlackRock >$265M in training). Craft labor cannot be printed: a journeyman electrician takes 4-5 years to train. Status basis: judged binding — contractors' record backlogs plus documented project refusals and 6-12-month schedule stretches show demand exceeding crew supply, and the training pipeline caps how fast supply responds.",
+  "controlled_by": [
+    { "entity": "quanta-services", "share_note": "Largest US specialty electrical/grid contractor; record $48.5B backlog (disclosed)" },
+    { "entity": "comfort-systems", "share_note": "Record $14.1B backlog, +73% y/y; technology (DC) = 58% of revenue (disclosed)" },
+    { "entity": "emcor", "share_note": "Record $17.1B RPOs, +44% y/y; DC/comms segment +45% (disclosed)" }
+  ],
+  "dependents": [
+    { "entity": "microsoft", "dependency_md": "Multi-GW self-build program competes for the same national pool of electricians and commissioning agents; labor availability now enters site selection alongside power." },
+    { "entity": "meta", "dependency_md": "Hyperion (Louisiana) and Prometheus-class builds employ thousands of electrical workers at peak; Meta co-funds training programs to expand the pipeline it draws from." },
+    { "entity": "vantage", "dependency_md": "Wholesale delivery schedules depend on contracted crew availability; developers report labor as the second constraint after power in established markets." },
+    { "entity": "stargate", "dependency_md": "Abilene-class campuses require thousands of tradespeople in thin rural labor markets — premium travel pay and camp logistics set the pace of buildout." }
+  ],
+  "substitutes_md": "Limited and slow: prefabrication/modular skids (shifting site hours to factories — Comfort Systems' modular units, Vertiv/Schneider integrated modules), overtime and traveling crews (at 1.5-2x cost), poaching from other sectors (which moves the shortage, currently hollowing out commercial/residential electrical), robots/automation (marginal for now), and training pipelines that pay off in 4-5 years. Offshoring is impossible; H-1B-style visas do not cover trades. The effective substitute is schedule slip and paying more — data-center electricians reportedly clearing $200-300k with overtime.",
+  "downcycle_md": "Contractor backlogs are the canary for an AI construction downturn: unlike take-or-pay compute contracts, construction backlog is cancellable with limited penalty (typically cost-incurred plus margin on work performed), so a demand fall converts record books into air within 2-3 quarters — as happened to commercial contractors in 2008-09. Quanta is best protected (majority utility/grid work that proceeds regardless of AI), Comfort Systems most exposed (58% technology revenue). Labor itself does not glut quickly — shortage-era wage gains are sticky, and journeymen get reabsorbed by grid/reshoring/electrification demand — so a bust would hurt contractor margins and equipment suppliers more than the trades. Watch book-to-bill and the mix of signed contracts vs LOIs in reported backlog.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Quanta Services backlog",
+      "period": "FY2026-Q1",
+      "value": 48.5,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.prnewswire.com/news-releases/quanta-services-reports-first-quarter-2026-results-302758147.html", "publisher": "Quanta Services PR", "published": "2026", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Record; grid + data-center electrical (Cupertino Electric)."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Comfort Systems backlog",
+      "period": "FY2026-Q2",
+      "value": 14.1,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "medium",
+      "source": { "url": "https://www.investing.com/news/company-news/comfort-systems-q2-2026-slides-revenue-tops-3b-backlog-hits-14b-93CH-4812234", "publisher": "Investing.com (from company slides)", "published": "2026-07", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "+73% y/y; technology = 58% of revenue; Q2 revenue +50%."
+    },
+    {
+      "metric": "rpo",
+      "period": "FY2026-Q2",
+      "value": 17.1,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "medium",
+      "source": { "url": "https://stockstory.org/us/stocks/nyse/eme/news/earnings-call/eme-q2-deep-dive-data-center-demand-and-strategic-acquisitions-drive-growth", "publisher": "StockStory (from earnings)", "published": "2026-07", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "EMCOR record RPOs, +44% y/y; DC/comms +45%."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Projected construction/DC labor shortfall",
+      "period": "2026-2027",
+      "value": 499,
+      "unit": "k_workers",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://www.irecruit.co/insights/data-center-construction-labor-market-report", "publisher": "iRecruit / industry analyses", "published": "2026", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "Up to ~499k-worker shortfall projected by 2027 for DC-class construction; ABC separately estimates 349k net new construction workers needed in 2026. Estimates vary by methodology; treat as order-of-magnitude."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.prnewswire.com/news-releases/quanta-services-reports-first-quarter-2026-results-302758147.html", "publisher": "Quanta Services PR", "kind": "company_pr" },
+    { "url": "https://www.investing.com/news/company-news/comfort-systems-q2-2026-slides-revenue-tops-3b-backlog-hits-14b-93CH-4812234", "publisher": "Investing.com", "kind": "press" },
+    { "url": "https://stockstory.org/us/stocks/nyse/eme/news/earnings-call/eme-q2-deep-dive-data-center-demand-and-strategic-acquisitions-drive-growth", "publisher": "StockStory", "kind": "press" },
+    { "url": "https://finance.yahoo.com/news/dire-electrician-shortage-life-death-080000954.html", "publisher": "Fortune via Yahoo Finance", "published": "2026", "kind": "press", "notes": "Electrician shortage as 'life or death' threat to the AI DC boom; Google $50M IBEW program." }
+  ],
+  "updated": "2026-08-13"
+}

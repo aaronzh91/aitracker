@@ -1,0 +1,95 @@
+{
+  "id": "servicenow",
+  "name": "ServiceNow, Inc.",
+  "kind": "public_company",
+  "category": "enterprise_software",
+  "group": "software_applications",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NYSE", "symbol": "NOW" }],
+  "cik": "1373715",
+  "website": "https://www.servicenow.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Sells AI (Now Assist / agentic workflows) as premium-priced SKUs on its enterprise workflow platform; AI annual contract value crossed $1B in Q2 2026.",
+  "description_md": "ServiceNow runs enterprise workflow software (IT service management, HR, customer service, security operations) and has become one of the two clearest incumbent-SaaS AI monetization stories alongside Salesforce. Its AI portfolio — Now Assist copilots, AI Agents, and the agentic orchestration/governance layer built partly on the $2.85B Moveworks acquisition (announced March 2025) — is sold as premium 'Pro Plus/Enterprise' SKUs, and its AI annual contract value crossed $1B in Q2 2026, up more than 40% quarter over quarter.",
+  "ai_monetization_md": "AI monetization is upsell into a sticky base: AI ACV passed $1B in Q2 2026 (+>40% q/q), agentic AI production deployments grew ninefold over nine months, and first-time agentic buyers rose 45% y/y. The base it upsells into remains healthy: Q2 2026 subscription revenue was $3.877B (+24.5% y/y), current RPO $13.2B (+21%), 123 deals over $1M of net-new ACV in the quarter, and FY2026 subscription revenue guidance was raised to $15.76–15.78B. Pricing is per-SKU premium plus consumption elements; the company positions AI governance (its AI Control Tower) as a paid differentiator for regulated enterprises.",
+  "ai_strategy_md": "Be the orchestration and governance layer for enterprise AI agents rather than the model: buy capability (Moveworks $2.85B for agentic assistant/enterprise search) instead of training frontier models, integrate every major model provider underneath, and price AI into premium SKUs that lift ACV per customer. Management's stated goal of $1B AI ACV in 2026 was hit two quarters early, and the pitch to investors is that workflow + governance is where agentic value accrues.",
+  "risk_notes_md": "AI ACV ($1B) is ~6% of the subscription run-rate — material but not yet the growth engine bulls price in. Seat-based ITSM is precisely the category AI-native challengers and in-house agents threaten; ServiceNow must out-run its own core's disruption. The Moveworks deal went through extended antitrust review, and integrating an acquired agent stack against fast-moving frontier-lab offerings is execution risk. Model costs sit with partners, but so does capability differentiation.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "AI annual contract value (ACV)",
+      "period": "FY2026-Q2",
+      "value": 1.0,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx", "publisher": "ServiceNow", "published": "2026-07-22", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Crossed $1B for the first time, up more than 40% q/q; agentic AI production deployments up 9x over nine months; first-time agentic buyers +45% y/y."
+    },
+    {
+      "metric": "revenue_segment",
+      "metric_label": "Subscription revenue",
+      "period": "FY2026-Q2",
+      "value": 3.877,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx", "publisher": "ServiceNow", "published": "2026-07-22", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "+24.5% y/y, 150bp above the top of guidance; 123 deals >$1M net-new ACV (+~40% y/y); 658 customers >$5M ACV."
+    },
+    {
+      "metric": "rpo",
+      "metric_label": "Current remaining performance obligations",
+      "period": "FY2026-Q2",
+      "value": 13.2,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx", "publisher": "ServiceNow", "published": "2026-07-22", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "+21% y/y."
+    },
+    {
+      "metric": "other",
+      "metric_label": "FY2026 subscription revenue guidance (midpoint)",
+      "period": "FY2026E",
+      "value": 15.77,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx", "publisher": "ServiceNow", "published": "2026-07-22", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Raised to $15.760–15.780B at Q2 2026."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-03",
+      "title": "Agrees to acquire Moveworks for $2.85B",
+      "why_it_matters": "ServiceNow's largest acquisition — buys an agentic AI assistant and enterprise-search stack to anchor its agent strategy; underwent extended antitrust review before completion.",
+      "impact": "high",
+      "entities": ["servicenow"],
+      "sources": [{ "url": "https://enterprisedna.co/resources/news/servicenow-ai-acv-1-billion-agentic-enterprise-q2-2026/", "publisher": "Enterprise DNA", "published": "2026-07", "kind": "press", "notes": "Recaps the $2.85B Moveworks deal in covering the Q2 2026 AI ACV milestone." }]
+    },
+    {
+      "date": "2026-07-22",
+      "title": "Q2 2026: AI ACV crosses $1B, +40% q/q; full-year guidance raised",
+      "why_it_matters": "One of the first incumbent software companies to put a hard, disclosed number over $1B on AI-specific contract value — a key 'revenue quality' datapoint for the AI-monetization debate.",
+      "impact": "high",
+      "entities": ["servicenow"],
+      "sources": [
+        { "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx", "publisher": "ServiceNow", "published": "2026-07-22", "kind": "company_pr" },
+        { "url": "https://diginomica.com/servicenow-q2-2026-ai-acv-passes-1-billion-zavery-says-governance-opening-new-doors", "publisher": "diginomica", "published": "2026-07", "kind": "press" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx", "publisher": "ServiceNow", "kind": "company_pr" },
+    { "url": "https://enterprisedna.co/resources/news/servicenow-ai-acv-1-billion-agentic-enterprise-q2-2026/", "publisher": "Enterprise DNA", "kind": "press" },
+    { "url": "https://diginomica.com/servicenow-q2-2026-ai-acv-passes-1-billion-zavery-says-governance-opening-new-doors", "publisher": "diginomica", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

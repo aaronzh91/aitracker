@@ -1,0 +1,26 @@
+{
+  "id": "tesla--samsung--foundry",
+  "from": "tesla",
+  "to": "samsung",
+  "type": "supply_agreement",
+  "status": "contracted",
+  "headline": { "value": 16.5, "unit": "USD_B", "caveat": "Foundry deal for Tesla's AI6 inference chips through 2033, produced at Samsung's Taylor, TX fab; disclosed by Samsung in a Korean regulatory filing (customer initially unnamed, confirmed by Musk).", "as_of": "2025-07-28" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "AI6 volume production is later-decade; near-term payments (masks, prepayments, engineering) not disclosed.", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-07-28", "start": "2025", "end": "2033", "duration_years": 8 },
+  "nature_md": "Samsung will fabricate Tesla's next-generation AI6 chip — used across FSD vehicles, Optimus robots, and data-center inference — at its Taylor, Texas fab under a $16.5B agreement running through 2033. Musk said Tesla will help drive the fab's ramp ('I will walk the line myself') and suggested actual spend could exceed the contracted figure. The deal rescued utilization economics for Samsung's underbooked US fab and diversified Tesla away from TSMC (which builds AI5).",
+  "accounting": {
+    "payer_treatment_md": "Tesla books wafer purchases as inventory/cost of revenue as chips deliver; the multi-year commitment is a purchase obligation in 10-K footnotes. Any prepayments would sit as supplier advances.",
+    "payee_treatment_md": "Samsung Foundry recognizes revenue on wafer delivery from production start; the contract anchors Taylor fab loading — the disclosure itself (rare for foundry deals) signaled how existential the utilization question was.",
+    "off_balance_sheet": true,
+    "flags": ["commitment_unfunded", "customer_concentration"]
+  },
+  "related_edges": ["nvidia--samsung--hbm"],
+  "both_sides_md": "**Bull:** validates Samsung's 2nm-class US foundry against TSMC's monopoly and gives Tesla supply-chain sovereignty for its robotics thesis. **Bear:** $16.5B over 8 years is contingent on AI6 actually taping out and ramping on Samsung yields — a bet on the historically weakest link (Samsung advanced-node yield) by a customer with shifting product roadmaps.",
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.reuters.com/business/autos-transportation/samsung-electronics-signs-165-billion-chip-supply-deal-tesla-2025-07-28/", "publisher": "Reuters", "published": "2025-07-28", "kind": "press" },
+    { "url": "https://www.cnbc.com/2025/07/28/samsung-tesla-16point5-billion-chip-deal.html", "publisher": "CNBC", "published": "2025-07-28", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

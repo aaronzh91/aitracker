@@ -1,0 +1,82 @@
+{
+  "id": "tencent",
+  "name": "Tencent Holdings Limited",
+  "kind": "public_company",
+  "category": "hyperscaler",
+  "group": "hyperscalers_clouds",
+  "region": "china",
+  "tier": 1,
+  "tickers": [{ "exchange": "HKEX", "symbol": "0700" }],
+  "cik": null,
+  "website": "https://www.tencent.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Monetizes AI through advertising uplift, games, and Hunyuan-powered cloud/agents, funding a ~3× y/y AI capex ramp from platform cash flows.",
+  "description_md": "Tencent operates WeChat (1.4B+ users), the world's largest games business, and a major Chinese cloud. Its Hunyuan model family (Hunyuan 3 in production since 2026) powers advertising targeting, in-app agents (WorkBuddy, CodeBuddy, the Xiaowei assistant), and cloud AI services. Tencent is also one of the two big corporate backers of China's frontier labs (Moonshot, Zhipu, MiniMax, StepFun) and led DeepSeek's first external funding round in June 2026. Q2 2026 marked its decisive capex pivot: RMB 52.8B in one quarter, roughly triple a year earlier.",
+  "ai_monetization_md": "Tencent's AI revenue is mostly *embedded* rather than sold: AI-driven ad targeting lifted advertising revenue double-digits (management credits AI for most of the gain), games use AI content pipelines, and cloud sells Hunyuan APIs and GPU services. Hunyuan 3's production release drove a six-fold increase in daily token usage and top-three global rankings on OpenRouter. The cost is now visible in cash flow: Q2 2026 free cash flow was **negative RMB 13.8B** (RMB +37.6B excluding AI-related prepayments) — evidence of prepaying for scarce compute. Core profit ex-AI investments grew 19%, while reported net profit was near-flat (+0.7%).",
+  "ai_strategy_md": "Embed AI where Tencent already wins (ads, games, WeChat agents) rather than chase standalone chatbot share; triple capex to secure compute (domestic chips increasingly — reportedly including first external orders of Baidu's Kunlun chips, unverified); hedge the model race by backing external labs (Moonshot, Zhipu, DeepSeek round) alongside Hunyuan. Management frames AI spend as multi-year with returns via existing monetization engines, not new SKUs.",
+  "risk_notes_md": "**Export-control frame:** the H20 ban→re-license (with 15% USG revenue share)→B30A blockade, plus the Jun 1, 2026 extension of bans to Chinese firms' offshore data centers, constrains Tencent's compute supply and pushes it to domestic silicon of lower per-unit performance — its capex buys less compute per yuan than US peers'. **Cash-flow inversion:** negative FCF in Q2 2026 (first in years) from AI capex and prepayments; sustained AI spending at ~3× depends on games/ads holding up. **Monetization gap:** embedded-AI returns are hard to attribute and easy to overstate; the market reaction to Q2 (profit miss) shows sensitivity. **Regulatory:** platform regulation in China plus US investment restrictions.",
+  "observations": [
+    {
+      "metric": "revenue_total",
+      "period": "FY2026-Q2",
+      "value": 204.8,
+      "unit": "RMB_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.cnbc.com/2026/08/12/china-tencent-earnings-q2-2026-gaming-ai-advertising.html", "publisher": "CNBC", "published": "2026-08-12", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "+11% y/y; gaming accelerated and AI-driven ads boosted revenue, but net profit was near-flat (+0.7%) on AI spending."
+    },
+    {
+      "metric": "capex",
+      "period": "FY2026-Q2",
+      "value": 52.8,
+      "unit": "RMB_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.kucoin.com/news/flash/tencent-s-q2-capital-expenditure-surges-3x-to-rmb-52-8-billion-focused-on-ai-infrastructure", "publisher": "KuCoin News", "published": "2026-08-12", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "~3× y/y, focused on AI infrastructure. Earnings-call figure for *operating* capex: RMB 51.8B, +190% y/y — sources differ slightly on definition."
+    },
+    {
+      "metric": "free_cash_flow",
+      "period": "FY2026-Q2",
+      "value": -13.8,
+      "unit": "RMB_B",
+      "basis": "disclosed",
+      "confidence": "medium",
+      "source": { "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-tencent-posts-solid-q2-2026-growth-as-ai-spending-surges-93CH-4855197", "publisher": "Investing.com (earnings call)", "published": "2026-08-12", "kind": "earnings_call" },
+      "as_of": "2026-08-13",
+      "notes": "Negative on AI capex and compute prepayments; RMB +37.6B excluding AI-related prepayments — the prepayment line is itself a signal of scarce-compute hoarding."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-08-12",
+      "title": "Q2 2026: capex triples to ~RMB 52.8B; Hunyuan 3 token usage up 6×; FCF turns negative",
+      "why_it_matters": "China's second-biggest AI capex program stepped up decisively — and showed its cost, with free cash flow inverted by prepayments for compute.",
+      "impact": "high",
+      "entities": ["tencent"],
+      "sources": [
+        { "url": "https://www.cnbc.com/2026/08/12/china-tencent-earnings-q2-2026-gaming-ai-advertising.html", "publisher": "CNBC", "published": "2026-08-12", "kind": "press" },
+        { "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-tencent-posts-solid-q2-2026-growth-as-ai-spending-surges-93CH-4855197", "publisher": "Investing.com", "published": "2026-08-12", "kind": "earnings_call" }
+      ]
+    },
+    {
+      "date": "2026-06",
+      "title": "Leads DeepSeek's first external funding round (~$1.5B of a reported ~$7.4B raise)",
+      "why_it_matters": "Ties Tencent to China's most influential open-weight lab; the round's LP structure (no voting rights, 5-year lockup) is unusual and only partially confirmed.",
+      "impact": "medium",
+      "entities": ["tencent", "deepseek"],
+      "sources": [
+        { "url": "https://techfundingnews.com/deepseek-raises-7-4b-at-50b-valuation-in-first-ever-external-funding-round/", "publisher": "Tech Funding News", "published": "2026-06", "kind": "press" },
+        { "url": "https://www.forbes.com/sites/anishasircar/2026/06/17/deepseek-just-raised-74-billion-heres-the-catch/", "publisher": "Forbes", "published": "2026-06-17", "kind": "press" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.cnbc.com/2026/08/12/china-tencent-earnings-q2-2026-gaming-ai-advertising.html", "publisher": "CNBC", "kind": "press" },
+    { "url": "https://www.aljazeera.com/economy/2026/6/1/us-says-ban-on-ai-chip-shipments-applies-to-chinese-firms-outside-china", "publisher": "Al Jazeera", "kind": "press", "notes": "Jun 2026 extension of US chip bans to Chinese firms' offshore data centers." }
+  ],
+  "updated": "2026-08-13"
+}

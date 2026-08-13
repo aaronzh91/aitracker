@@ -1,0 +1,68 @@
+{
+  "id": "dell",
+  "name": "Dell Technologies Inc.",
+  "kind": "public_company",
+  "category": "server_oem_odm",
+  "group": "compute_supply_chain",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NYSE", "symbol": "DELL" }],
+  "cik": "1571996",
+  "website": "https://www.dell.com",
+  "fiscal_year_end": "01-31",
+  "monetization": "Builds and sells AI servers (ISG) to neoclouds, labs, and enterprises — $51.3B AI backlog and a ~$60B FY27 AI revenue guide — with storage, networking, and services attach.",
+  "description_md": "Dell Technologies is the largest US-branded server OEM and the leading merchant channel for Nvidia-based AI systems outside the hyperscalers' own ODM supply chains. Its Infrastructure Solutions Group (ISG) integrates GPUs into rack-scale systems (PowerEdge XE, IR7000) with deployment services, storage, and financing via Dell Financial Services. Marquee AI customers include xAI (>$5B of server contracts), CoreWeave, and IREN. In Q1 FY2027 (ended May 2026) Dell booked $24.4B of AI server orders in a single quarter, taking its AI backlog to $51.3B.",
+  "ai_monetization_md": "AI servers are recognized as product revenue on delivery — Dell guided to roughly $60B of AI server shipments for FY2027, versus ~$10B in FY2025, making it one of the largest single conduits of AI capex into recognized revenue anywhere in the chain. Margins on GPU-dense systems are structurally thin (the GPU bill-of-materials dominates), so Dell attaches storage, networking, services, and financing to lift blended profitability. The $51.3B backlog gives visibility, but converts only as customers take delivery — and several of the largest are leveraged neoclouds.",
+  "ai_strategy_md": "Be the arms-length integrator of choice for the non-hyperscaler AI buildout: ship Nvidia's newest platforms at scale and speed (first-to-market rack systems), serve the neocloud/lab tier that hyperscaler ODMs don't, and use Dell Financial Services plus the enterprise install base to extend into the enterprise-inference wave. Management frames AI servers as a volume-and-attach business rather than a margin business — win the box, monetize the ecosystem around it.",
+  "risk_notes_md": "**Counterparty concentration:** the AI backlog is concentrated in a handful of buyers — xAI, CoreWeave, IREN and similar neoclouds — several of which fund purchases with GPU-collateralized debt; a financing squeeze at these customers converts Dell's backlog into cancellations (the T4/committed-unfunded pattern). CoreWeave's widening credit spreads (CDS-implied ~50% 5-yr default probability, Jul 2026) are the live stress indicator. **Margin risk:** AI server operating margins are low-single-digit; mix shift toward AI dilutes ISG profitability even as revenue records. **Supply:** allocation of GPUs/HBM determines how fast backlog converts.",
+  "observations": [
+    {
+      "metric": "backlog_ai",
+      "period": "FY2027-Q1",
+      "value": 51.3,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-delivers-first-quarter-fiscal-2027-financial-results.htm", "publisher": "Dell Technologies", "published": "2026-05", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "AI server backlog after $24.4B of AI orders in the quarter (ended May 2026)."
+    },
+    {
+      "metric": "other",
+      "metric_label": "AI server orders in quarter",
+      "period": "FY2027-Q1",
+      "value": 24.4,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-delivers-first-quarter-fiscal-2027-financial-results.htm", "publisher": "Dell Technologies", "published": "2026-05", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Customers include CoreWeave, xAI, and IREN."
+    },
+    {
+      "metric": "revenue_ai",
+      "period": "FY2027 (guide)",
+      "value": 60,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-delivers-first-quarter-fiscal-2027-financial-results.htm", "publisher": "Dell Technologies", "published": "2026-05", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "~$60B of AI server shipments guided for FY2027 (year ending Jan 2027); approximate — stated as 'approximately' by management."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-05",
+      "title": "Q1 FY2027: $24.4B AI orders in one quarter; AI backlog hits $51.3B; ~$60B FY27 AI guide",
+      "why_it_matters": "Order intake at this scale made Dell the largest merchant AI-server channel and a direct read on neocloud/lab capex; backlog quality now hinges on those buyers' financing.",
+      "impact": "high",
+      "entities": ["dell", "coreweave", "xai"],
+      "sources": [{ "url": "https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-delivers-first-quarter-fiscal-2027-financial-results.htm", "publisher": "Dell Technologies", "published": "2026-05", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-delivers-first-quarter-fiscal-2027-financial-results.htm", "publisher": "Dell Technologies", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

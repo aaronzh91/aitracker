@@ -1,0 +1,72 @@
+{
+  "id": "mgx",
+  "name": "MGX",
+  "kind": "sovereign_fund",
+  "category": "sovereign_fund",
+  "group": "capital",
+  "region": "middle_east",
+  "tier": 1,
+  "cik": null,
+  "website": "https://www.mgx.ae",
+  "monetization": "Abu Dhabi state-backed AI investor (Mubadala/G42-anchored, chaired by Sheikh Tahnoun bin Zayed); monetizes AI via a $49B dedicated fund spanning frontier-lab equity (OpenAI, Anthropic, xAI), Stargate, and data-center platforms (AIP, Aligned).",
+  "description_md": "MGX is an Abu Dhabi technology investment firm founded in 2024 with Mubadala and G42 as anchor backers, purpose-built to put UAE sovereign capital across the whole AI stack. On July 1, 2026 it closed MGX Fund I at $49B — above its $45B target — making it one of the largest dedicated AI investors in the world, with 14 portfolio companies since inception.",
+  "ai_monetization_md": "AI-exposure thesis: be the sovereign check that appears in every layer of the ecosystem simultaneously. MGX is a founding Stargate LLC partner (~$7B initial contribution alongside Oracle, per press reports); a founding partner of the AI Infrastructure Partnership and part of the $40B Aligned Data Centers acquisition; and a lead/co-lead in the three largest frontier-lab rounds of H1 2026 — OpenAI's $122B round, Anthropic's Feb 2026 round, and xAI's $20B Series E. Returns are equity marks on private AI valuations plus infrastructure yield.",
+  "risk_notes_md": "Concentrated exposure to unlisted AI valuations that have never traded through a downcycle; strategic dependence on US export-control policy for UAE chip access (the Stargate UAE / UAE-US campus channel). MGX positions are frequently cited in circularity analyses because its capital appears on both the lab side (OpenAI/xAI/Anthropic equity) and the infrastructure side (Stargate, Aligned) of the same compute transactions.",
+  "observations": [
+    {
+      "metric": "funding_raised",
+      "metric_label": "MGX Fund I final close",
+      "period": "2026-07",
+      "value": 49,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.mgx.ae/news-insights/mgx-pleased-confirm-final-close-mgx-fund-i-49-billion-total-commitments-significantly", "publisher": "MGX", "published": "2026-07-01", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Above the $45B target; LPs across the Gulf, North America, Asia, and Europe; mandate spans semiconductors, AI infrastructure, and AI platforms."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Initial Stargate LLC capital contribution",
+      "period": "2025-01",
+      "value": 7,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.spglobal.com/market-intelligence/en/news-insights/research/softbabnk-openai-oracle-and-mgx-commit-to-100b-for-stargate-ai-infrastructure", "publisher": "S&P Global Market Intelligence", "published": "2025", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "Oracle and MGX ~$7B each vs ~$19B each from SoftBank and OpenAI in the initial $100B tranche; equity split ~40/40/20."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-01-21",
+      "title": "Founding partner of the $500B Stargate project",
+      "why_it_matters": "Put UAE sovereign capital at the center of OpenAI's US infrastructure program from day one.",
+      "impact": "high",
+      "entities": ["mgx", "stargate", "openai", "softbank", "oracle"],
+      "sources": [{ "url": "https://openai.com/index/announcing-the-stargate-project/", "publisher": "OpenAI", "published": "2025-01-21", "kind": "company_pr" }]
+    },
+    {
+      "date": "2025-10-15",
+      "title": "Joins $40B Aligned Data Centers acquisition with AIP and GIP",
+      "why_it_matters": "Converted MGX from a rounds investor into an owner of >6.4GW of operating/planned US data-center capacity.",
+      "impact": "high",
+      "entities": ["mgx", "aip", "blackrock"],
+      "sources": [{ "url": "https://www.cnbc.com/2025/10/15/nvidia-microsoft-blackrock-aligned-data-centers.html", "publisher": "CNBC", "published": "2025-10-15", "kind": "press" }]
+    },
+    {
+      "date": "2026-07-01",
+      "title": "Closes MGX Fund I at $49B, above target",
+      "why_it_matters": "One of the largest pools of dedicated AI capital ever raised — sovereign money is now a structural feature of AI funding rounds, having co-led OpenAI ($122B), Anthropic, and xAI ($20B) rounds in H1 2026.",
+      "impact": "high",
+      "entities": ["mgx", "openai", "anthropic", "xai"],
+      "sources": [{ "url": "https://www.cnbc.com/2026/07/01/mgx-ai-fund-uae-49-billion.html", "publisher": "CNBC", "published": "2026-07-01", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.mgx.ae/news-insights/mgx-pleased-confirm-final-close-mgx-fund-i-49-billion-total-commitments-significantly", "publisher": "MGX", "published": "2026-07-01", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2026/07/01/mgx-ai-fund-uae-49-billion.html", "publisher": "CNBC", "published": "2026-07-01", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

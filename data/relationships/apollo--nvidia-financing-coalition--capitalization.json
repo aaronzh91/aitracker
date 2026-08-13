@@ -1,0 +1,25 @@
+{
+  "id": "apollo--nvidia-financing-coalition--capitalization",
+  "from": "apollo",
+  "to": "nvidia-financing-coalition",
+  "type": "spv_capitalization",
+  "status": "announced",
+  "headline": { "value": null, "unit": "USD_B", "caveat": ">$500B combined target across all six financiers, subject to final agreements; no per-firm allocation disclosed", "as_of": "2026-08-10" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "nothing funded — MOU stage" },
+  "term": { "announced": "2026-08-10", "start": null, "end": null, "duration_years": null },
+  "nature_md": "Apollo is one of six financiers (with BlackRock, Blackstone, Brookfield, Goldman Sachs, and KKR) in NVIDIA's Aug 10, 2026 coalition to establish AI-compute-infrastructure financing platforms mobilizing >$500B of third-party capital, via SPV-issued debt collateralized by NVIDIA compute. Apollo brings the deepest GPU-collateral track record of the six — it co-led the ~$12.5B debt tranche of the xAI GPU SPV. Per-firm commitments are not disclosed and all agreements are memorandums of understanding.",
+  "accounting": {
+    "payer_treatment_md": "Prospective deployment of client capital (private credit funds, Athene insurance balance sheets) into compute-collateralized SPV debt/equity — fee-earning AUM for Apollo, not principal commitments of Apollo Global Management itself; nothing is booked at MOU stage.",
+    "payee_treatment_md": "Target capitalization for platforms that do not yet exist as funded entities; the >$500B figure is an aspiration pending final agreements.",
+    "off_balance_sheet": false,
+    "flags": ["commitment_unfunded", "collateralized_gpu_debt", "spv_shift"]
+  },
+  "related_edges": ["nvidia--nvidia-financing-coalition--capitalization", "apollo--xai-gpu-spv--debt"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital", "publisher": "NVIDIA Newsroom", "published": "2026-08-10", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html", "publisher": "CNBC", "published": "2026-08-10", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

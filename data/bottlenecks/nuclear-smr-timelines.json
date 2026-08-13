@@ -1,0 +1,67 @@
+{
+  "id": "nuclear-smr-timelines",
+  "name": "Nuclear & SMR timelines",
+  "group": "energy",
+  "status": "watch",
+  "description_md": "Nuclear is the power source hyperscalers actually want — firm, carbon-free, 24/7 — and the money is already committed (Microsoft/Crane, Google/Duane Arnold via NextEra, Meta/Clinton, Amazon/Talen, the $80B Westinghouse AP1000 government program). The bottleneck is time: nothing nuclear arrives when the demand is. The restart wave lands 2027-29 — Crane (ex-TMI Unit 1, ~835MW) targets 2027 with NRC environmental review clearing in June 2026; Duane Arnold (~615MW) targets Q1 2029; only Palisades (restarted Oct 2025) is already online. SMRs are a ~2030s technology: Holtec targets 2030 at Palisades, Oklo's first Aurora and the Amazon/X-energy and Google/Kairos units cluster late-decade, and no US SMR has yet produced a commercial watt. New AP1000s under the $80B Westinghouse program would deliver in the early-to-mid 2030s at best (Vogtle 3/4 took ~10 years). Against demand arriving 2026-28, nuclear is a claim on the future, not capacity — total restart pipeline is ~2.2GW versus data-center demand growing 5-7GW/year. Status basis: judged watch, not binding — nuclear isn't a rationed input the buildout queues for (gas and grid are); it is a timing mismatch worth tracking because slippage in 2027-29 restarts would push more demand onto the already-binding gas-turbine and grid constraints.",
+  "controlled_by": [
+    { "entity": "constellation-energy", "share_note": "Largest US nuclear fleet (~55GW post-Calpine); owns the Crane 2027 restart and most uprate potential (disclosed)" },
+    { "entity": "westinghouse", "share_note": "Sole US large-reactor vendor (AP1000); anchor of the $80B government fleet program (press_reported)" },
+    { "entity": "oklo", "share_note": "Leading listed SMR developer; ~14GW pipeline incl. 12GW Switch agreement — all pre-operational (company_claimed)" }
+  ],
+  "dependents": [
+    { "entity": "microsoft", "dependency_md": "20-year PPA for Crane's ~835MW; power flows only if the 2027 restart holds — until then Microsoft's carbon-matching and capacity plans lean on grid power." },
+    { "entity": "alphabet", "dependency_md": "PPA with NextEra for Duane Arnold (~615MW, Q1-2029) plus Kairos SMR agreement (~500MW, 2030+); both are late-decade capacity against near-term load." },
+    { "entity": "amazon", "dependency_md": "$18B/1,920MW Susquehanna PPA (existing plant — the exception that works now) plus X-energy SMR program (~2030s)." },
+    { "entity": "meta", "dependency_md": ">2.6GW of nuclear PPAs (Clinton, Vistra PJM units) — mostly preserving existing plants rather than adding new capacity before 2030." }
+  ],
+  "substitutes_md": "For the 2026-29 gap: gas turbines (themselves 4-5 years booked), fuel cells, gensets, and grid purchases — i.e., the other bottlenecks in this registry. Existing-plant PPAs and co-location (Susquehanna/Talen, Clinton) are the only nuclear that works on AI timelines, and that supply is nearly fully claimed. Uprates at existing reactors (~2-5% each) add sub-GW quantities. Restart candidates beyond the current three are scarce — few shuttered plants remain restartable. Internationally, Korean APR1400s and Chinese builds prove speed is possible (~6-7 years) but do not serve US load.",
+  "downcycle_md": "Nuclear deals are the most protected layer in an AI downturn — and the least exposed to glut: PPAs are 15-20-year utility-grade contracts with investment-grade counterparties, and the plants serve the grid regardless of AI demand (Susquehanna/Crane power resells into PJM at worst). The parties bearing AI-specific risk are the SMR developers: pre-revenue, funded by equity priced on multi-GW pipelines of largely non-binding master agreements (Oklo's 12GW Switch deal is an agreement to negotiate orders, not take-or-pay), so a demand fall would repric them violently — as the 2023 NuScale/UAMPS cancellation previewed. The Westinghouse program's government backstop (US takes 20% of distributions above $17.5B) socializes upside and cushions downside. Restarts under construction would complete regardless; uncommitted AP1000 orders would quietly not materialize.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Restart pipeline capacity (Palisades + Crane + Duane Arnold)",
+      "period": "2025-2029",
+      "value": 2.2,
+      "unit": "GW",
+      "basis": "estimated",
+      "method_md": "Sum of Palisades ~800MW (restarted Oct 2025), Crane ~835MW (target 2027), Duane Arnold ~615MW (target Q1 2029) from company/NRC disclosures.",
+      "confidence": "medium",
+      "source": { "url": "https://www.world-nuclear-news.org/articles/constellation-seeks-regulators-help-for-2027-plant-restart", "publisher": "World Nuclear News", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Versus US data-center load growth of ~5-7GW/year — the whole restart wave covers under half a year of demand growth."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Westinghouse AP1000 government program (announced value)",
+      "period": "2025-10",
+      "value": 80,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "high",
+      "source": { "url": "https://www.utilitydive.com/news/westinghouse-cameco-brookfield-nuclear/803999/", "publisher": "Utility Dive", "published": "2025-10", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Announced ≥$80B AP1000 fleet with Commerce Dept; US government takes 20% of distributions above $17.5B. Headline commitment — no reactor from this program can deliver power before the early 2030s."
+    },
+    {
+      "metric": "lead_time_months",
+      "period": "2026",
+      "value": 60,
+      "unit": "months",
+      "basis": "estimated",
+      "method_md": "Approximate minimum time-to-power for new nuclear commitments made in 2026: SMR first units target ~2030 (Holtec Palisades 'Mission 2030', Oklo, X-energy), i.e. ~48-72 months; new AP1000s longer (Vogtle 3/4 took ~120 months from construction start). Restarts are faster (~24-36 months) but the candidate pool is exhausted.",
+      "confidence": "low",
+      "source": { "url": "https://www.power-eng.com/nuclear/mission-2030-holtec-targets-first-smr-300-deployment-at-michigans-palisades-plant/", "publisher": "Power Engineering", "published": "2025", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "The structural mismatch: AI demand 2026-28 vs nuclear supply 2029-2035."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.world-nuclear-news.org/articles/constellation-seeks-regulators-help-for-2027-plant-restart", "publisher": "World Nuclear News", "kind": "press" },
+    { "url": "https://www.ans.org/news/2025-10-28/article-7501/nextera-and-google-ink-a-deal-to-restart-duane-arnold/", "publisher": "ANS Nuclear Newswire", "published": "2025-10-28", "kind": "press" },
+    { "url": "https://www.utilitydive.com/news/westinghouse-cameco-brookfield-nuclear/803999/", "publisher": "Utility Dive", "published": "2025-10", "kind": "press" },
+    { "url": "https://www.power-eng.com/nuclear/mission-2030-holtec-targets-first-smr-300-deployment-at-michigans-palisades-plant/", "publisher": "Power Engineering", "kind": "press" },
+    { "url": "https://oklo.com/newsroom/news-details/2024/Oklo-and-Switch-Form-Landmark-Strategic-Relationship-to-Deploy-12-Gigawatts-of-Advanced-Nuclear-Power-One-of-the-Largest-Corporate-Clean-Power-Agreements-Ever-Signed/default.aspx", "publisher": "Oklo PR", "published": "2024-12", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

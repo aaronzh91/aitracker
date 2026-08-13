@@ -1,0 +1,26 @@
+{
+  "id": "coreweave--applied-digital--lease",
+  "from": "coreweave",
+  "to": "applied-digital",
+  "type": "lease",
+  "status": "active",
+  "headline": { "value": 11, "unit": "USD_B", "caveat": "~$11B total anticipated contract revenue across 400MW at Polaris Forge 1 (Ellendale, ND): two ~15-year leases (~$7B, May 2025) plus a 150MW expansion (Aug 2025). Press estimates including options range up to ~$16B; campus designed to scale to 1GW.", "as_of": "2025-08-29" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "First 100MW building reached ready-for-service Q4 2025; second building mid-2026; rent flowing but cumulative amounts not broken out.", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-05", "start": "2025-Q4", "end": null, "duration_years": 15 },
+  "nature_md": "CoreWeave leases 400MW of critical IT capacity across ~15-year leases at Applied Digital's Polaris Forge 1 campus in Ellendale, North Dakota (~$11B anticipated contract revenue; first building RFS Q4 2025, second mid-2026, third by 2027). Applied Digital builds and owns the powered shells; CoreWeave installs its GPU fleet and resells capacity — much of it ultimately serving OpenAI and other lab contracts, making this a load-bearing link in the compute sublease chain.",
+  "accounting": {
+    "payer_treatment_md": "CoreWeave capitalizes leases as ROU assets/lease liabilities (adding to its ~$30B debt-plus-lease stack) and expenses rent through cost of revenue against contracted customer commitments.",
+    "payee_treatment_md": "Applied Digital books lease revenue from each building's ready-for-service date; the $11B backlog (within $36.2B total AI leases per FY26 10-K) anchors project financing for the campus buildout.",
+    "off_balance_sheet": false,
+    "flags": ["customer_concentration"]
+  },
+  "related_edges": ["coreweave--galaxy-digital--lease"],
+  "both_sides_md": "**Bull:** contracted, credit-enhanced revenue converts APLD from speculative developer to landlord with a fortress backlog. **Bear:** CoreWeave itself is a leveraged intermediary (CDS implying ~50% 5-yr default probability in Jul 2026); APLD's backlog quality is only as good as CoreWeave's own customer book.",
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://ir.applieddigital.com/news-events/press-releases/detail/128/applied-digital-finalizes-additional-150mw-lease-with", "publisher": "Applied Digital IR", "published": "2025-08-29", "kind": "company_ir" },
+    { "url": "https://www.datacenterdynamics.com/en/news/coreweave-signs-on-for-another-150mw-of-capacity-at-applied-digital-data-center-campus/", "publisher": "Data Center Dynamics", "published": "2025-08", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

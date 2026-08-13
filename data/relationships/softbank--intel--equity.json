@@ -1,0 +1,25 @@
+{
+  "id": "softbank--intel--equity",
+  "from": "softbank",
+  "to": "intel",
+  "type": "equity_investment",
+  "status": "completed",
+  "headline": { "value": 2, "unit": "USD_B", "caveat": "SoftBank bought $2B of Intel common stock at $23/share (Aug 2025), a strategic minority stake (~2%).", "as_of": "2025-08-18" },
+  "realized_to_date": { "value": 2, "unit": "USD_B", "as_of": "2025-08" },
+  "term": { "announced": "2025-08-18", "start": "2025-08", "end": null, "duration_years": null },
+  "nature_md": "SoftBank purchased $2B of newly issued Intel common stock at $23/share, announced days before the US government's $8.9B conversion — a coordinated confidence signal in Intel's foundry turnaround from the world's most aggressive AI investor. Passive minority stake; no board seat or offtake attached, though it complements SoftBank's broader US chip footprint (Arm, Ampere, Stargate fabs speculation).",
+  "accounting": {
+    "payer_treatment_md": "SoftBank books a marketable equity investment at fair value through earnings (its standard treatment), adding INTC mark-to-market swings to its Vision-Fund-driven P&L volatility.",
+    "payee_treatment_md": "Intel books $2B of equity issuance — cash and shareholders' equity up; no revenue, no obligation. Slight dilution alongside the government stake.",
+    "off_balance_sheet": false,
+    "flags": []
+  },
+  "related_edges": ["us-government--intel--equity"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://group.softbank/en/news/press/20250819", "publisher": "SoftBank Group", "published": "2025-08-19", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2025/08/18/softbank-intel-2-billion-investment.html", "publisher": "CNBC", "published": "2025-08-18", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

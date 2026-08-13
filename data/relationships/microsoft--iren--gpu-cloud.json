@@ -1,0 +1,27 @@
+{
+  "id": "microsoft--iren--gpu-cloud",
+  "from": "microsoft",
+  "to": "iren",
+  "type": "compute_purchase",
+  "status": "active",
+  "headline": { "value": 9.7, "unit": "USD_B", "caveat": "5-year AI cloud contract: Microsoft buys GPU-cloud capacity on NVIDIA GB300s at IREN's Childress, TX campus (750MW site; ~200MW dedicated).", "as_of": "2025-11" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "Microsoft made a ~20% prepayment (~$1.9B, press-reported) at signing; service revenue ramps through 2026 as GB300 phases energize.", "as_of": "2026-08-13" },
+  "annualized_flow": { "value": 1.9, "unit": "USD_B_per_year", "caveat": "Straight-line $9.7B/5yr at full ramp.", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-11", "start": "2026", "end": "2030", "duration_years": 5 },
+  "nature_md": "Microsoft contracted ~$9.7B over five years of GPU-as-a-service capacity from IREN on NVIDIA GB300 systems at Childress, Texas, with a ~20% prepayment. IREN — a bitcoin miner turned vertically-integrated AI cloud — bought ~$5.8B of GB300 systems from Dell to serve the contract (see related edge). Microsoft rents rather than builds: faster time-to-compute at the cost of margin and a new counterparty dependence. Capacity phases in through 2026-27.",
+  "accounting": {
+    "payer_treatment_md": "Microsoft books the prepayment as a contract asset/prepaid expense amortized against usage; ongoing payments are cost of revenue for Azure/AI services. The 5-year commitment appears in purchase obligations.",
+    "payee_treatment_md": "IREN recognizes cloud-services revenue over the term (deferred revenue from the prepayment), against heavy upfront Dell capex — a working-capital structure where the customer's prepayment part-funds the hardware that serves it.",
+    "off_balance_sheet": false,
+    "flags": ["customer_concentration", "vendor_financing"]
+  },
+  "related_edges": ["iren--dell--equipment", "amazon--cipher-mining--lease"],
+  "both_sides_md": "**Bull:** IREN converts power assets into a five-year investment-grade revenue stream at cloud margins, prepaid. **Bear:** one customer is most of IREN's forward revenue; the $5.8B hardware bet has GB300-generation obsolescence risk if Microsoft doesn't renew in 2030.",
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-secures-97bn-ai-cloud-contract-microsoft", "publisher": "IREN IR", "published": "2025-11", "kind": "company_ir" },
+    { "url": "https://blockspace.media/insight/bitcoin-mining-news-cipher-lands-5-5b-aws-lease-iren-inks-9-7b-microsoft-deal-and-public-bitcoin-miner-q3-earnings/", "publisher": "Blockspace", "published": "2025-11", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

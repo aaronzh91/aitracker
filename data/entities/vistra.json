@@ -1,0 +1,91 @@
+{
+  "id": "vistra",
+  "name": "Vistra Corp.",
+  "kind": "public_company",
+  "category": "power_generation_ipp",
+  "group": "energy",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NYSE", "symbol": "VST" }],
+  "cik": "1692819",
+  "website": "https://www.vistracorp.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Sells nuclear and gas power to hyperscalers under 20-year PPAs — >2,600MW to Meta across its PJM nuclear fleet, up to 1,200MW of Comanche Peak to Amazon — while buying gas fleets to serve data-center load.",
+  "description_md": "Vistra is one of the largest competitive power generators in the US (~41GW across nuclear, gas, coal, solar, and storage), with nuclear plants including Comanche Peak (TX), Perry and Davis-Besse (OH), and Beaver Valley (PA) following its Energy Harbor acquisition. In the AI cycle it has become the second-largest hyperscaler nuclear counterparty after Constellation: 20-year PPAs with Meta totaling 2,609MW across its PJM nuclear fleet (January 2026) and a 20-year agreement with Amazon for up to 1,200MW from Comanche Peak. It is doubling down on dispatchable gas, agreeing in January 2026 to buy Cogentrix Energy's 5.5GW fleet for $4.7B after acquiring 2.6GW from Lotus Infrastructure in 2025.",
+  "ai_monetization_md": "Two channels: (1) long-dated nuclear PPAs that convert merchant plants into contracted assets — Meta's 2,609MW package includes 1,268MW from Perry, 908MW from Davis-Besse, and 433MW of future uprates across Perry, Davis-Besse, and Beaver Valley, with full delivery of operating capacity by end-2027 and uprates through 2034; Amazon's Comanche Peak deal ramps from Q4 2027 to full capacity by 2032; and (2) merchant and contracted gas sales into ERCOT/PJM markets tightened by data-center load, which the Cogentrix and Lotus acquisitions (~8.1GW combined) are built to serve. PPA prices are undisclosed in both hyperscaler deals.",
+  "ai_strategy_md": "Contract the nuclear fleet to hyperscalers at premium (undisclosed) prices, fund uprates against that committed demand, and grow the dispatchable gas fleet through M&A in the three markets with the heaviest data-center growth (PJM, ERCOT, ISO-NE). Unlike utilities, Vistra as an IPP captures scarcity pricing directly, making it one of the highest-beta listed plays on AI power demand.",
+  "risk_notes_md": "Contract prices with Meta and Amazon are undisclosed — headline megawatts are known, economics are not. Uprate delivery (433MW for Meta, stretching to 2034) carries execution and NRC risk. The $4.7B Cogentrix deal (expected to close H2 2026, FERC/DOJ review pending) increases commodity-gas and acquisition-integration exposure and was premised on continued data-center load growth. Merchant upside works in reverse if AI demand or power prices soften.",
+  "observations": [
+    {
+      "metric": "capacity_mw",
+      "metric_label": "Nuclear capacity contracted to Meta (20-year PPAs)",
+      "period": "2026-01",
+      "value": 2609,
+      "unit": "MW",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://investor.vistracorp.com/2026-01-09-Vistra-and-Meta-Announce-Agreements-to-Support-Nuclear-Plants-in-PJM-and-Add-New-Nuclear-Generation-to-the-Grid", "publisher": "Vistra IR", "published": "2026-01-09", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Perry 1,268MW + Davis-Besse 908MW operating capacity, plus 433MW of uprates (Perry 213, Davis-Besse 80, Beaver Valley 140). Full operating delivery by end-2027; uprates 2031–2034. Price undisclosed."
+    },
+    {
+      "metric": "capacity_mw",
+      "metric_label": "Comanche Peak capacity contracted to Amazon (20-year PPA)",
+      "period": "2026-02",
+      "value": 1200,
+      "unit": "MW",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://world-nuclear-news.org/articles/ppas-support-extended-operations-at-vistra-plants", "publisher": "World Nuclear News", "published": "2026-03", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Up to 1,200MW; delivery begins Q4 2027, ramping to full capacity by 2032. Price undisclosed."
+    },
+    {
+      "metric": "capacity_gw",
+      "metric_label": "Total generation capacity",
+      "period": "CY2025",
+      "value": 41,
+      "unit": "GW",
+      "basis": "disclosed",
+      "confidence": "medium",
+      "source": { "url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000006/vistra-20251231.htm", "publisher": "SEC (Vistra 10-K)", "published": "2026-02", "kind": "sec_filing" },
+      "as_of": "2026-08-13",
+      "notes": "~41GW pre-Cogentrix; pending Cogentrix (5.5GW, $4.7B) and completed Lotus (2.6GW, $1.9B, Oct 2025) additions would take the fleet toward ~49GW."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-01-05",
+      "title": "Agrees to acquire Cogentrix Energy's 5.5GW gas fleet for $4.7B",
+      "why_it_matters": "One of the first large AI-rationale power M&A deals: 10 modern gas plants across PJM, ISO-NE, and ERCOT bought explicitly to serve data-center-driven load growth; close expected H2 2026.",
+      "impact": "high",
+      "entities": ["vistra"],
+      "sources": [{ "url": "https://www.powermag.com/vistra-to-bolster-gas-fired-fleet-by-5-5-gw-with-4b-cogentrix-acquisition/", "publisher": "POWER Magazine", "published": "2026-01", "kind": "press" }]
+    },
+    {
+      "date": "2026-01-09",
+      "title": "Meta signs 20-year PPAs for 2,609MW across Vistra's PJM nuclear fleet",
+      "why_it_matters": "The largest multi-plant hyperscaler nuclear package to date — supports continued operation of Perry and Davis-Besse and funds 433MW of new uprate capacity against committed demand.",
+      "impact": "high",
+      "entities": ["vistra", "meta"],
+      "sources": [{ "url": "https://investor.vistracorp.com/2026-01-09-Vistra-and-Meta-Announce-Agreements-to-Support-Nuclear-Plants-in-PJM-and-Add-New-Nuclear-Generation-to-the-Grid", "publisher": "Vistra IR", "published": "2026-01-09", "kind": "company_pr" }]
+    },
+    {
+      "date": "2026-02",
+      "title": "Amazon signs 20-year PPA for up to 1,200MW from Comanche Peak",
+      "why_it_matters": "Extends hyperscaler nuclear contracting into ERCOT; disclosed alongside Q4/FY2025 results.",
+      "impact": "high",
+      "entities": ["vistra", "amazon"],
+      "sources": [
+        { "url": "https://world-nuclear-news.org/articles/ppas-support-extended-operations-at-vistra-plants", "publisher": "World Nuclear News", "published": "2026-03", "kind": "press" },
+        { "url": "https://investor.vistracorp.com/2026-02-26-Vistra-Reports-Fourth-Quarter-and-Full-Year-2025-Results?asPDF=1", "publisher": "Vistra IR", "published": "2026-02-26", "kind": "company_ir" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://investor.vistracorp.com/2026-01-09-Vistra-and-Meta-Announce-Agreements-to-Support-Nuclear-Plants-in-PJM-and-Add-New-Nuclear-Generation-to-the-Grid", "publisher": "Vistra IR", "kind": "company_pr" },
+    { "url": "https://world-nuclear-news.org/articles/ppas-support-extended-operations-at-vistra-plants", "publisher": "World Nuclear News", "kind": "press" },
+    { "url": "https://www.powermag.com/vistra-to-bolster-gas-fired-fleet-by-5-5-gw-with-4b-cogentrix-acquisition/", "publisher": "POWER Magazine", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

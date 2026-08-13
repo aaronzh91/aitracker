@@ -1,0 +1,82 @@
+{
+  "id": "salesforce",
+  "name": "Salesforce, Inc.",
+  "kind": "public_company",
+  "category": "enterprise_software",
+  "group": "software_applications",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NYSE", "symbol": "CRM" }],
+  "cik": "1108524",
+  "website": "https://www.salesforce.com",
+  "fiscal_year_end": "01-31",
+  "monetization": "Sells AI agents (Agentforce) and data infrastructure (Data 360/Informatica) as paid add-ons to the world's largest CRM installed base; buys model capability from Anthropic and others rather than training its own.",
+  "description_md": "Salesforce is the largest enterprise CRM vendor, monetizing AI through Agentforce — its platform for deploying autonomous agents across service, sales, and marketing — layered on the Data Cloud/Data 360 data layer, which the $8B Informatica acquisition substantially deepened. It is the bellwether test of whether incumbent SaaS can convert AI from a feature into net-new paid revenue: Agentforce ARR crossed $1B in the quarter ended April 2026, reaching $1.2B (+205% y/y), roughly eighteen months after launch.",
+  "ai_monetization_md": "Three paid layers: (1) Agentforce ARR of $1.2B (April 2026), up from $500M in December 2025, sold via consumption ('flex credits') and per-conversation pricing on top of seat licenses; (2) Data 360 — combined Agentforce + Data 360 ARR reached $3.4B (+>200% y/y) including $1.1B of Informatica Cloud ARR; (3) the underlying subscription base, where Q1 FY2027 revenue was $11.1B (+~9-10% y/y) with subscription & support of $10.6B including ~$428M from the newly closed Informatica acquisition. On the cost side, Salesforce buys frontier capability rather than building it: Anthropic's Claude is a foundational model for Agentforce 360 and the preferred model for regulated industries, served inside Salesforce's trust boundary via Amazon Bedrock — per-token terms undisclosed.",
+  "ai_strategy_md": "Wrap AI around proprietary customer data rather than compete on models: acquire the data-integration layer (Informatica, $8B), partner for models (Anthropic for regulated industries, plus OpenAI and Google options), price agents on consumption to escape per-seat cannibalization, and pitch 'humans + agents' to defend the seat base that AI-native rivals attack. Management markets its own deployment ('Agentforce on Help') as proof, claiming billions of agent interactions.",
+  "risk_notes_md": "Agentforce's $1.2B ARR is ~3% of revenue — the AI line is growing fast but the core grows single-digits, and the stock has de-rated on fears that agents cannibalize seats faster than they add consumption revenue (shares were down roughly a third over the year to mid-2026 despite the AI milestones). Adoption breadth is contested: reported paying-customer adoption of Agentforce remains a single-digit percentage of the base. Model dependency (Anthropic/OpenAI/Google) puts the scarce input on others' balance sheets; per-token economics are undisclosed.",
+  "observations": [
+    {
+      "metric": "arr",
+      "metric_label": "Agentforce ARR",
+      "period": "run_rate@2026-04",
+      "value": 1.2,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://finance.yahoo.com/sectors/technology/articles/salesforces-agentforce-arr-tops-1b-150000612.html", "publisher": "Yahoo Finance", "published": "2026-05", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "+205% y/y; crossed the $1B mark during the quarter ended Apr 30, 2026 (reported May 27, 2026); was $500M in Dec 2025."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Combined Agentforce + Data 360 ARR",
+      "period": "run_rate@2026-04",
+      "value": 3.4,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "medium",
+      "source": { "url": "https://longyield.substack.com/p/salesforce-agentforce-reaches-12b", "publisher": "Long Yield (earnings recap)", "published": "2026-05", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "Up >200% y/y; includes $1.1B Informatica Cloud ARR — the AI+data stack Salesforce presents as its 'agentic enterprise' number."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "FY2027-Q1",
+      "value": 11.1,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "medium",
+      "source": { "url": "https://www.cynoteck.com/news/salesforce-q1-fy27-record-revenue-agentforce-2026", "publisher": "Cynoteck (earnings recap)", "published": "2026-05", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Quarter ended Apr 30, 2026. Subscription & support $10.6B (+14%), including ~$428M from the recently closed $8B Informatica acquisition."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-10-14",
+      "title": "Anthropic partnership: Claude becomes preferred model for regulated industries in Agentforce 360",
+      "why_it_matters": "A marquee model-access edge with undisclosed dollar terms: Claude runs inside Salesforce's virtual private cloud via Amazon Bedrock, testing whether 'trust boundary' distribution is worth a premium; deepens the Salesforce-Anthropic-AWS triangle.",
+      "impact": "medium",
+      "entities": ["salesforce", "anthropic", "amazon"],
+      "sources": [{ "url": "https://www.salesforce.com/news/press-releases/2025/10/14/anthropic-regulated-industries-partnership-expansion-announcement/", "publisher": "Salesforce", "published": "2025-10-14", "kind": "company_pr" }]
+    },
+    {
+      "date": "2026-05-27",
+      "title": "Q1 FY2027: Agentforce ARR crosses $1B (to $1.2B); Informatica contributes first full quarter",
+      "why_it_matters": "The clearest datapoint yet that an incumbent SaaS vendor can build a billion-dollar AI product line — while the market debates whether it offsets seat-model erosion.",
+      "impact": "high",
+      "entities": ["salesforce"],
+      "sources": [
+        { "url": "https://finance.yahoo.com/sectors/technology/articles/salesforces-agentforce-arr-tops-1b-150000612.html", "publisher": "Yahoo Finance", "published": "2026-05", "kind": "press" },
+        { "url": "https://www.cxtoday.com/contact-center/agentforce-hits-1-billion-arr-ai-agents-customer-service/", "publisher": "CX Today", "published": "2026-05", "kind": "press" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.cxtoday.com/contact-center/agentforce-hits-1-billion-arr-ai-agents-customer-service/", "publisher": "CX Today", "kind": "press" },
+    { "url": "https://finance.yahoo.com/sectors/technology/articles/salesforces-agentforce-arr-tops-1b-150000612.html", "publisher": "Yahoo Finance", "kind": "press" },
+    { "url": "https://www.salesforce.com/news/press-releases/2025/10/14/anthropic-regulated-industries-partnership-expansion-announcement/", "publisher": "Salesforce", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

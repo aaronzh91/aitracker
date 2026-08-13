@@ -1,0 +1,44 @@
+{
+  "id": "softbank--openai--equity",
+  "from": "softbank",
+  "to": "openai",
+  "type": "equity_investment",
+  "status": "active",
+  "headline": { "value": 64.6, "unit": "USD_B", "caveat": "planned cumulative investment for ~13% ownership on completion of the final $10B tranche (due Oct 1, 2026)", "as_of": "2026-02-27" },
+  "realized_to_date": { "value": 54.6, "unit": "USD_B", "caveat": "$34.6B invested Sept 2024–Feb 2026 (incl. the $22.5B tranche completed Dec 31, 2025) + $10B Apr 1, 2026 + $10B Jul 1, 2026, per SoftBank press releases; some trackers cite lower net figures after syndication to co-investors", "as_of": "2026-07-01" },
+  "term": { "announced": "2024-09", "start": "2024-09", "end": "2026-10", "duration_years": 2 },
+  "nature_md": "SoftBank is OpenAI's largest outside shareholder. Via SoftBank Vision Fund 2 it invested an aggregate $34.6B from Sept 2024 through early 2026 (including leading the Apr 2025 $40B round at $300B post and completing an additional $22.5B on Dec 31, 2025), then agreed on Feb 27, 2026 to a further $30B in three $10B tranches (Apr 1 / Jul 1 / Oct 1, 2026, accelerable if OpenAI lists) at a $730B pre-money valuation, in preferred shares auto-converting on IPO. Cumulative total on completion: $64.6B for ~13%. The funding is heavily levered: the Jul 1 tranche was drawn on a $10B bridge facility, SoftBank sold its entire NVIDIA stake in late 2025 to fund OpenAI, and it has borrowed ~$10B in margin loans collateralized by the OpenAI stake itself.",
+  "accounting": {
+    "payer_treatment_md": "Held in SoftBank Vision Fund 2 at fair value through profit and loss — OpenAI markups drive reported Vision Fund gains (a $46B VF gain in FY2025, mainly OpenAI, per CNBC). Funded partly with bridge loans and margin loans against the stake: mark-to-market gains are booked on an asset that is simultaneously collateral.",
+    "payee_treatment_md": "Equity financing — no revenue or liability for OpenAI. SoftBank is also OpenAI's ~40% partner in Stargate LLC and developer (via its energy subsidiary) of the Piketon, OH campus, so SoftBank capital reappears on the cost side of OpenAI's compute buildout.",
+    "off_balance_sheet": false,
+    "flags": ["equity_for_revenue"]
+  },
+  "related_edges": ["softbank--stargate--jv-equity", "nvidia--openai--equity-2026", "amazon--openai--equity-2026", "nvidia--openai--guarantee-talks-2026"],
+  "both_sides_md": "**Bear:** SoftBank sold its NVIDIA position and is borrowing against unlisted OpenAI shares to fund further OpenAI purchases — concentrated, levered exposure to a single private mark, priced by rounds SoftBank itself leads (Kedrosky/IMF-style circularity). **Bull:** OpenAI's valuation rose from $300B to $852B across SoftBank's entry points, the stake converts at IPO (targeted 2027 at >$1T per Reuters), and SoftBank's FY2025 results already show tens of billions of realized-quality gains.",
+  "observations": [],
+  "events": [
+    {
+      "date": "2026-02-27",
+      "title": "SoftBank agrees $30B follow-on at $730B pre-money, taking planned total to $64.6B (~13%)",
+      "impact": "high",
+      "entities": ["softbank", "openai"],
+      "sources": [{ "url": "https://group.softbank/en/news/press/20260227", "publisher": "SoftBank Group", "published": "2026-02-27", "kind": "company_pr" }]
+    },
+    {
+      "date": "2026-07-01",
+      "title": "Second $10B tranche executed, funded via bridge facility",
+      "impact": "medium",
+      "entities": ["softbank", "openai"],
+      "sources": [{ "url": "https://group.softbank/en/news/press/20260701", "publisher": "SoftBank Group", "published": "2026-07-01", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://group.softbank/en/news/press/20260227", "publisher": "SoftBank Group", "title": "Follow-on Investments in OpenAI", "published": "2026-02-27", "kind": "company_pr" },
+    { "url": "https://group.softbank/en/news/press/20251231", "publisher": "SoftBank Group", "title": "Completion of Additional $22.5 Billion Investment in OpenAI", "published": "2025-12-31", "kind": "company_pr" },
+    { "url": "https://group.softbank/en/news/press/20260701", "publisher": "SoftBank Group", "title": "Execution of Follow-on Investment (Second Tranche) in OpenAI", "published": "2026-07-01", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2026/05/13/softbank-earnings-fy-2025-vision-fund-openai-stake.html", "publisher": "CNBC", "published": "2026-05-13", "kind": "press" },
+    { "url": "https://finance.yahoo.com/technology/ai/articles/softbank-uses-openai-stake-borrow-121100550.html", "publisher": "Yahoo Finance", "published": "2026", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

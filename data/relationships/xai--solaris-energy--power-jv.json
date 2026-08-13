@@ -1,0 +1,26 @@
+{
+  "id": "xai--solaris-energy--power-jv",
+  "from": "xai",
+  "to": "solaris-energy",
+  "type": "jv_equity",
+  "status": "active",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "JV dollar terms undisclosed. Stateline Power JV (Solaris 50.1% / xAI 49.9%) owns and operates mobile gas turbines for the Memphis-area Colossus cluster: ~400MW initially, targeting >1.1GW of fully operating turbines by Q2 2027 (~240MW more sits on-site outside the JV).", "as_of": "2025" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "JV capex is running (e.g., $112M in Q2 2025 alone) funded by both partners pro rata; xAI's cumulative contribution is not disclosed.", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-02", "start": "2025", "end": null, "duration_years": null },
+  "nature_md": "xAI and Solaris Energy Infrastructure formed the Stateline Power JV (Solaris 50.1%, xAI 49.9%) to own and operate a fleet of mobile gas turbines (Solar Turbines Titan-350s, ~35-38MW each) powering xAI's Colossus data centers around Memphis, TN — behind-the-meter generation that sidesteps multi-year grid interconnection queues. Roughly 400MW deployed initially, with >1.1GW of fully operating capacity targeted by Q2 2027 and analyst expectations of options toward ~1.5GW. xAI is both JV co-owner and the sole power customer; Solaris consolidates the JV and books xAI's share as noncontrolling interest.",
+  "accounting": {
+    "payer_treatment_md": "xAI contributes JV equity (capitalized investment) and pays for delivered power as opex; as 49.9% owner it also bears its share of turbine capex. Structure keeps generation assets off xAI's own balance sheet while securing dedicated supply. Air-permit litigation around the Memphis turbines is a contingent risk.",
+    "payee_treatment_md": "Solaris consolidates Stateline Power (50.1%), booking power-services revenue from its single customer and reporting xAI's stake as noncontrolling interest; turbine fleet capex is funded by both partners, transforming Solaris from oilfield services into an AI-power growth story.",
+    "off_balance_sheet": true,
+    "flags": ["customer_concentration", "spv_shift"]
+  },
+  "related_edges": ["xai--dell--servers", "xai--supermicro--servers"],
+  "both_sides_md": "**Bull:** the fastest power-to-compute pathway in the industry — Colossus 2 reached gigawatt scale years before grid-served rivals, at ~$2.7M/MW. **Bear:** single-customer JV economics, unresolved air-permit challenges in Memphis, and merchant gas exposure if xAI's buildout pauses; Solaris' equity story is now one counterparty's capex plan.",
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://semianalysis.com/2025/09/16/xais-colossus-2-first-gigawatt-datacenter/", "publisher": "SemiAnalysis", "published": "2025-09-16", "kind": "analyst" },
+    { "url": "https://www.gem.wiki/Colossus_2_power_station", "publisher": "Global Energy Monitor", "kind": "dataset" }
+  ],
+  "updated": "2026-08-13"
+}

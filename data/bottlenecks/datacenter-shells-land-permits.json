@@ -1,0 +1,62 @@
+{
+  "id": "datacenter-shells-land-permits",
+  "name": "Data-center shells, land & permits",
+  "group": "land_permits",
+  "status": "watch",
+  "description_md": "Before power and chips comes the right to build: entitled land with water, fiber, and zoning. Developer pipelines are enormous (Vantage alone has a multi-GW global pipeline; the miners-turned-AI and colo REITs add tens of GW more), but local consent is becoming the contested input. Data Center Watch (10a Labs) counts at least 75 US projects worth ~$130B blocked or delayed by opposition in Q1-26 alone — matching all of 2025 in one quarter — with active opposition groups doubling to 833 across 49 states and 300+ state bills introduced; polls show ~71% of Americans oppose data centers near them. The rebuttal, argued by SemiAnalysis: these tallies overweight announcement-stage projects that had no financing, equipment orders, or realistic delivery path — its own 2026 North America capacity forecast moved only ~1%, and hyperscaler self-build (>5GW under construction at the top two alone) proceeds through moratoria via already-entitled land banks. Status basis: judged watch rather than binding — measured near-term capacity impact appears small (per the SemiAnalysis critique), but the opposition trend line (groups, bills, moratoria) is compounding fast enough that permitting could become the binding constraint for post-2028 sites; both readings are recorded per the contested-claims convention.",
+  "controlled_by": [
+    { "entity": "vantage", "share_note": "Representative wholesale developer: multi-GW entitled land bank across NoVA/Texas/EMEA; land position = the product (company_claimed). Ultimate control sits with county boards, state legislatures, and water/zoning authorities — not tracked as entities" }
+  ],
+  "dependents": [
+    { "entity": "microsoft", "dependency_md": "Leases shells from developers plus self-builds; both routes queue behind entitlement — its paused/reshuffled leases in early 2025-26 showed shell commitments are the first knob turned when plans change." },
+    { "entity": "meta", "dependency_md": "Multi-GW greenfield campuses (Louisiana, Ohio) depend on local approvals, water agreements, and tax abatements negotiated site by site; Hyperion drew organized water-use opposition." },
+    { "entity": "stargate", "dependency_md": "Gigawatt-campus strategy requires assembling rural land + power + permits at unprecedented scale; each new site is a bespoke political negotiation (Abilene: ~$3.4B local incentives)." }
+  ],
+  "substitutes_md": "Geographic arbitrage is the main valve: shifting to permit-friendly secondary markets (the documented 'next hotspots' migration out of NoVA/Phoenix), state-level preemption and fast-track statutes, federal land initiatives (DOE sites offered for AI DCs), building in already-industrial zones (brownfields, shuttered factories, mining sites), and international placement (Middle East gigacampuses via Humain/G42). Retrofitting existing shells and powered-land acquisitions (buying entitled-but-unbuilt sites) substitute for new entitlement — at a scarcity premium. None of these relieve water-stressed or moratorium jurisdictions; they route around them.",
+  "downcycle_md": "Land and shells are where an AI demand fall would be least painful and most visible: options on land expire quietly, announced campuses become 'paused' press releases, and speculative powered-land flippers eat the writedowns. Wholesale developers with signed hyperscaler prelease contracts (typically 10-15-year terms with credit-worthy tenants) are protected; merchant shell builders without anchor tenants are not — the 2001-02 carrier-hotel glut is the analog, when empty colo shells traded at cents on the dollar. A glut would also flip local politics: counties that fought data centers would court them for the tax base. Watch prelease rates on under-construction shells and the spread between entitled-land and raw-land prices as the quality indicators.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Value of DC projects blocked/delayed by opposition (Q1-26) — CONTESTED",
+      "period": "2026-Q1",
+      "value": 130,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://www.datacenterwatch.org/q1-2026", "publisher": "Data Center Watch (10a Labs)", "published": "2026", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "≥75 projects Jan-Mar 2026, matching all of 2025. SemiAnalysis rebuttal: denominator bias — mostly announcement-stage projects without financing/equipment; its NA 2026 capacity forecast adjustment ~1%."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Active local opposition groups",
+      "period": "2026-Q1",
+      "value": 833,
+      "unit": "groups",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.newsweek.com/data-center-projects-face-unprecedented-surge-in-blocks-and-delays-study-12240534", "publisher": "Newsweek", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "More than doubled y/y, across 49 states; 300+ state bills introduced."
+    },
+    {
+      "metric": "other",
+      "metric_label": "SemiAnalysis 2026 NA capacity forecast adjustment from blocks/delays",
+      "period": "2026",
+      "value": 1,
+      "unit": "pct",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.youtube.com/watch?v=xqq5_7daYWc", "publisher": "SemiAnalysis (podcast ep. 018)", "published": "2026", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "'Stop saying half of 2026 US datacenter capacity is canceled' — top-2 hyperscalers alone have >5GW under construction; delayed projects concentrated in speculative early-stage announcements."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.datacenterwatch.org/q1-2026", "publisher": "Data Center Watch", "kind": "analyst" },
+    { "url": "https://www.newsweek.com/data-center-projects-face-unprecedented-surge-in-blocks-and-delays-study-12240534", "publisher": "Newsweek", "kind": "press" },
+    { "url": "https://www.youtube.com/watch?v=xqq5_7daYWc", "publisher": "SemiAnalysis", "kind": "analyst" },
+    { "url": "https://www.forbes.com/sites/robertszczerba/2026/07/22/130-billion-in-ai-data-centers-stalled-the-bottleneck-is-consent/", "publisher": "Forbes", "published": "2026-07-22", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "nvidia--nvidia-financing-coalition--capitalization",
+  "from": "nvidia",
+  "to": "nvidia-financing-coalition",
+  "type": "spv_capitalization",
+  "status": "announced",
+  "headline": { "value": null, "unit": "USD_B", "caveat": ">$500B combined third-party capital target across the platforms, subject to final agreements (MOUs as of Aug 10, 2026); NVIDIA's own capital contribution unspecified", "as_of": "2026-08-10" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "nothing funded — memorandums of understanding only" },
+  "term": { "announced": "2026-08-10", "start": null, "end": null, "duration_years": null },
+  "nature_md": "On Aug 10, 2026 NVIDIA announced partnerships with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, and KKR to establish independent AI-compute-infrastructure financing platforms targeting mobilization of **over $500B of third-party capital**. Structure: special-purpose entities issue debt (private placements and bonds) **collateralized by NVIDIA compute**, funding customers' data-center, power, and hardware buildouts without the purchases landing on NVIDIA's balance sheet — institutionalizing at systemic scale what the CoreWeave backstop and xAI GPU SPV pioneered ad hoc. Huang: NVIDIA approached exactly six firms and none declined; his framing is that NVIDIA chips are an 'investable asset' class. All agreements are MOUs subject to final documentation — nothing is committed capital yet.",
+  "accounting": {
+    "payer_treatment_md": "NVIDIA is the sponsor/anchor of the platforms; its own financial commitment is unspecified in the announcement. Design goal is explicitly that customer financing NOT sit on NVIDIA's books — the vendor-financing exposure is syndicated to third-party asset managers while NVIDIA books the hardware revenue the platforms fund.",
+    "payee_treatment_md": "The coalition platforms would hold compute-collateralized debt and equity positions funded by the six financiers' clients (insurance, pension, private-credit capital). Until final agreements, there is no entity with assets — the >$500B is a target, not a balance sheet.",
+    "off_balance_sheet": true,
+    "flags": ["vendor_financing", "spv_shift", "commitment_unfunded", "collateralized_gpu_debt"]
+  },
+  "related_edges": ["apollo--nvidia-financing-coalition--capitalization", "blackstone--nvidia-financing-coalition--capitalization", "blackrock--nvidia-financing-coalition--capitalization", "brookfield--nvidia-financing-coalition--capitalization", "goldman-sachs--nvidia-financing-coalition--capitalization", "kkr--nvidia-financing-coalition--capitalization", "nvidia--coreweave--equity-backstop", "nvidia--xai-gpu-spv--equity"],
+  "both_sides_md": "**Bear:** the chip vendor organizing $500B of leverage against its own product to fund purchases of that product is vendor financing at a scale with no precedent — Lucent's $8.1B, the dot-com benchmark, is ~1.6% of this target; NVDA fell ~2.5% on announcement on concentration concerns. **Bull:** third-party capital bearing the risk at market prices is the *opposite* of hidden vendor financing — six sophisticated managers underwriting compute as collateral is price discovery, and infrastructure this large simply cannot be funded from operating cash flow (Huang/CNBC; the firms' own participation as evidence).",
+  "observations": [],
+  "events": [
+    {
+      "date": "2026-08-10",
+      "title": "NVIDIA announces >$500B financing coalition with six financial giants",
+      "impact": "high",
+      "entities": ["nvidia", "apollo", "blackstone", "blackrock", "brookfield", "goldman-sachs", "kkr"],
+      "sources": [{ "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html", "publisher": "CNBC", "published": "2026-08-10", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital", "publisher": "NVIDIA Newsroom", "published": "2026-08-10", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html", "publisher": "CNBC", "published": "2026-08-10", "kind": "press" },
+    { "url": "https://www.bloomberg.com/news/articles/2026-08-10/nvidia-to-team-with-wall-street-on-500-billion-package-ft-says", "publisher": "Bloomberg", "published": "2026-08-10", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

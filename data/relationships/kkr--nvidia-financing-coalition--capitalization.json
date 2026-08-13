@@ -1,0 +1,25 @@
+{
+  "id": "kkr--nvidia-financing-coalition--capitalization",
+  "from": "kkr",
+  "to": "nvidia-financing-coalition",
+  "type": "spv_capitalization",
+  "status": "announced",
+  "headline": { "value": null, "unit": "USD_B", "caveat": ">$500B combined target across all six financiers, subject to final agreements; no per-firm allocation disclosed", "as_of": "2026-08-10" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "nothing funded — MOU stage" },
+  "term": { "announced": "2026-08-10", "start": null, "end": null, "duration_years": null },
+  "nature_md": "KKR is one of six financiers in NVIDIA's Aug 10, 2026 coalition targeting >$500B of third-party capital for compute-collateralized SPV financing of AI infrastructure. KKR's existing exposure runs through data centers (CyrusOne, co-owned with GIP; ~20% of Singtel's Nxera; ST Telemedia GDC) and private credit. Per-firm commitments undisclosed; agreements are MOUs.",
+  "accounting": {
+    "payer_treatment_md": "Prospective deployment of client capital across KKR infrastructure and credit funds plus insurance capital (Global Atlantic) — fee-earning AUM rather than KKR & Co. principal for the most part; nothing booked at MOU stage.",
+    "payee_treatment_md": "Target capitalization for platforms not yet funded; >$500B is aspirational pending final agreements.",
+    "off_balance_sheet": false,
+    "flags": ["commitment_unfunded", "collateralized_gpu_debt", "spv_shift"]
+  },
+  "related_edges": ["nvidia--nvidia-financing-coalition--capitalization"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital", "publisher": "NVIDIA Newsroom", "published": "2026-08-10", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html", "publisher": "CNBC", "published": "2026-08-10", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

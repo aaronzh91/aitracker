@@ -1,0 +1,84 @@
+{
+  "id": "talen-energy",
+  "name": "Talen Energy Corporation",
+  "kind": "public_company",
+  "category": "power_generation_ipp",
+  "group": "energy",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NASDAQ", "symbol": "TLN" }],
+  "cik": "1622536",
+  "website": "https://www.talenenergy.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Sells nuclear power from Susquehanna to Amazon under the AI era's only disclosed-price nuclear PPA: ~$18B of expected revenue over 17 years for up to 1,920MW.",
+  "description_md": "Talen Energy is an independent power producer whose defining asset is the Susquehanna nuclear plant in Pennsylvania (~2.5GW, Talen owns 90%), alongside a fleet of gas and other generation across PJM and WECC. Talen pioneered the data-center-nuclear trade: it sold its Cumulus data-center campus adjacent to Susquehanna to Amazon (AWS) in March 2024, then converted the relationship in June 2025 into a grid-connected, front-of-meter PPA — expanded to up to 1,920MW through 2042 — after FERC rejected the original behind-the-meter interconnection arrangement.",
+  "ai_monetization_md": "The Amazon PPA is the money flow: approximately $18B of expected revenue over a 17-year term at full contract quantity — the only hyperscaler nuclear PPA whose dollar value is on the public record, making it the price benchmark against which every undisclosed Constellation/Vistra deal is guessed. Delivery ramps on an accelerated schedule to the full 1,920MW no later than 2032 and runs until 2042. The rest of Talen's fleet monetizes conventionally into PJM/WECC merchant and capacity markets tightened by data-center load.",
+  "ai_strategy_md": "Anchor the company on one contracted mega-asset: dedicate most of Susquehanna's output to a single investment-grade counterparty at a disclosed ~$18B notional, use the resulting cash-flow visibility for buybacks and selective dispatchable-generation M&A, and pitch the grid-connected 'front-of-meter' structure as the regulatory template for data-center power deals after FERC blocked the behind-the-meter original.",
+  "risk_notes_md": "Single-asset and single-counterparty concentration: the equity story leans heavily on one plant (Susquehanna) and one customer (Amazon). The $18B figure is Talen's expected revenue at full contract quantity — an announced/committed value, not cash received; realized revenue depends on the delivery ramp. Nuclear outage risk now carries contractual consequences, and the uncontracted fleet remains fully merchant. Regulatory precedent is still forming — the FERC fight over the original co-location structure shows the rules can move.",
+  "observations": [
+    {
+      "metric": "contract_value",
+      "metric_label": "Amazon nuclear PPA expected revenue (17-year term)",
+      "period": "2025-06",
+      "value": 18,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://ir.talenenergy.com/news-releases/news-release-details/talen-energy-expands-nuclear-energy-relationship-amazon", "publisher": "Talen Energy IR", "published": "2025-06-11", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Talen's stated expected revenue over the contract life at full quantity — the only nuclear-PPA dollar figure on public record in the AI cycle. Per-MWh pricing not itemized."
+    },
+    {
+      "metric": "capacity_mw",
+      "metric_label": "Susquehanna capacity contracted to Amazon",
+      "period": "2025-06",
+      "value": 1920,
+      "unit": "MW",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.powermag.com/talen-amazon-launch-18b-nuclear-ppa-a-grid-connected-ipp-model-for-the-data-center-era/", "publisher": "POWER Magazine", "published": "2025", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Up to 1,920MW, grid-connected/front-of-meter; accelerated ramp with full volume no later than 2032; term runs to 2042."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Share of Susquehanna capacity committed to Amazon at full quantity",
+      "period": "2025-06",
+      "value": 77,
+      "unit": "pct",
+      "basis": "estimated",
+      "method_md": "1,920MW contracted ÷ ~2,494MW total plant capacity ≈ 77%. Against Talen's ~90% ownership share (~2,245MW) the commitment is ≈ 86% of Talen's entitlement. Plant capacity per Talen disclosures; contracted MW per the June 2025 PPA announcement.",
+      "confidence": "medium",
+      "source": { "url": "https://www.utilitydive.com/news/talen-amazon-aws-susquehanna-nuclear-data-centert/750440/", "publisher": "Utility Dive", "published": "2025-06", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Illustrates the near-total dedication of the plant to one counterparty at full ramp."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-06-11",
+      "title": "Expands Amazon nuclear relationship to up to 1,920MW through 2042 (~$18B expected revenue)",
+      "why_it_matters": "The one disclosed-price nuclear PPA of the AI era — the public benchmark for what hyperscalers pay for firm carbon-free power — restructured as grid-connected after FERC rejected the behind-the-meter original.",
+      "impact": "high",
+      "entities": ["talen-energy", "amazon"],
+      "sources": [
+        { "url": "https://ir.talenenergy.com/news-releases/news-release-details/talen-energy-expands-nuclear-energy-relationship-amazon", "publisher": "Talen Energy IR", "published": "2025-06-11", "kind": "company_pr" },
+        { "url": "https://www.powermag.com/talen-amazon-launch-18b-nuclear-ppa-a-grid-connected-ipp-model-for-the-data-center-era/", "publisher": "POWER Magazine", "published": "2025", "kind": "press" }
+      ]
+    },
+    {
+      "date": "2024-03",
+      "title": "Sells Cumulus data-center campus adjacent to Susquehanna to Amazon",
+      "why_it_matters": "The transaction that started the nuclear-data-center land rush; its behind-the-meter power arrangement was later blocked by FERC, forcing the front-of-meter PPA structure now used industry-wide.",
+      "impact": "medium",
+      "entities": ["talen-energy", "amazon"],
+      "sources": [{ "url": "https://www.utilitydive.com/news/talen-amazon-aws-susquehanna-nuclear-data-centert/750440/", "publisher": "Utility Dive", "published": "2025-06", "kind": "press", "notes": "Recaps the 2024 campus sale and the FERC history in covering the 2025 PPA." }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.powermag.com/talen-amazon-launch-18b-nuclear-ppa-a-grid-connected-ipp-model-for-the-data-center-era/", "publisher": "POWER Magazine", "kind": "press" },
+    { "url": "https://ir.talenenergy.com/news-releases/news-release-details/talen-energy-expands-nuclear-energy-relationship-amazon", "publisher": "Talen Energy IR", "kind": "company_pr" },
+    { "url": "https://www.sec.gov/Archives/edgar/data/1622536/000162828025030559/a20250611pressreleasebusin.htm", "publisher": "SEC (Talen 8-K exhibit)", "kind": "sec_filing" }
+  ],
+  "updated": "2026-08-13"
+}

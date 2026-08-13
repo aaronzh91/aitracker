@@ -1,0 +1,90 @@
+{
+  "id": "bytedance",
+  "name": "ByteDance Ltd.",
+  "kind": "private_company",
+  "category": "consumer_platform",
+  "group": "software_applications",
+  "region": "china",
+  "tier": 1,
+  "tickers": [],
+  "cik": null,
+  "website": "https://www.bytedance.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Monetizes AI via Doubao (China's #1 chatbot, now adding subscriptions), Seedance media models, AI-driven ad targeting on Douyin/TikTok, and Volcano Engine cloud.",
+  "description_md": "ByteDance operates TikTok/Douyin and is China's biggest AI spender among private companies: its 2026 AI capex budget of ~RMB 200B (~$28–30B) was raised at least 25% from preliminary plans, with Bloomberg reporting internal scenarios of up to $70B. Its Doubao assistant is China's most-used AI app (345M MAU in March 2026 per QuestMobile — ahead of Alibaba's Qwen at 166M and DeepSeek at 127M), its Seed research group ships the Doubao/Seedance model families, and Volcano Engine sells cloud AI. Valuation in secondary markets is reported around $300B+ (unverified).",
+  "ai_monetization_md": "Three engines with very different maturity: (1) **Ads** — AI recommendation and generative ad tooling on Douyin/TikTok, the cash cow funding everything; (2) **Doubao** — dominant consumer reach but weak direct monetization (LatePost reported >200M DAU generating <RMB 1M/day, largely e-commerce commissions) — ByteDance began adding paid subscriptions in May 2026, with premium tiers reported above RMB 5,000/year for power users; (3) **Seedance/Volcano Engine** — video-generation models and API/cloud sales where per-token economics are reportedly better than the chatbot. The pattern mirrors US consumer AI: enormous usage, thin direct revenue, monetization via the ad platform.",
+  "ai_strategy_md": "Outspend domestic rivals on compute (~RMB 200B 2026 capex; reported plans to buy ~$14B of Nvidia GPUs in 2026 if both Washington licenses and Beijing approves), hedge with proportionally larger domestic-chip allocations plus in-house silicon efforts, and leverage the world's largest short-video distribution to make Doubao/Seedance defaults. Rising memory costs were cited as a driver of the capex raise — ByteDance is exposed to the same HBM/DRAM super-cycle as US hyperscalers.",
+  "risk_notes_md": "**Export-control frame:** the H20 ban→re-license (15% USG revenue share)→B30A blockade sequence, extended on Jun 1, 2026 to Chinese firms' overseas data centers, directly hits ByteDance — which historically rented offshore capacity (e.g., via landlords like AirTrunk and US clouds, including ~$800M/yr on Oracle OCI for TikTok) to access advanced GPUs. Its reported $14B Nvidia purchase plan is contingent on both US and Chinese approvals — a double political option. **TikTok politics:** US divestiture requirements remain unresolved leverage over the group. **Monetization gap:** Doubao's costs scale with 345M MAU while direct revenue is minimal; subscriptions are untested. **Disclosure:** private — capex, profit (~$50B reported for 2025), and valuation figures are press-reported, not audited disclosures.",
+  "observations": [
+    {
+      "metric": "capex_guidance",
+      "period": "CY2026",
+      "value": 200,
+      "unit": "RMB_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.scmp.com/tech/article/3352906/bytedance-raises-2026-capex-least-25-amid-ai-boom-rising-memory-costs-sources-say", "publisher": "South China Morning Post", "published": "2026-05", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "~$28–30B; raised ≥25% from a preliminary ~RMB 160B plan, citing AI demand and rising memory costs. Bloomberg: scenarios up to $70B weighed."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Doubao monthly active users",
+      "period": "2026-03",
+      "value": 345,
+      "unit": "M users",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://finance.biggo.com/news/Fks8Cp4BDXrLZJaAbcpF", "publisher": "BigGo Finance (QuestMobile via FT)", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "QuestMobile Q1 2026: 345M MAU vs Alibaba Qwen 166M and DeepSeek 127M. LatePost: >200M DAU but <RMB 1M/day direct revenue."
+    },
+    {
+      "metric": "contract_value",
+      "metric_label": "Reported 2026 Nvidia GPU purchase plan",
+      "period": "CY2026 (plan)",
+      "value": 14,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://www.tomshardware.com/pc-components/gpus/tiktok-owner-bytedance-to-reportedly-purchase-usd14-billion-worth-of-nvidia-ai-gpus-in-2026-company-betting-on-beijings-approval-following-trump-admins-ease-on-ai-export-controls", "publisher": "Tom's Hardware", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Contingent on US export licensing AND Beijing's approval — neither assured under the 2026 control regime; treat as intent, not commitment."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-05",
+      "title": "Raises 2026 AI capex ≥25% to ~RMB 200B; weighs up to $70B",
+      "why_it_matters": "The largest private-company AI budget in China, driven partly by memory-cost inflation — evidence the HBM/DRAM super-cycle is taxing buyers globally.",
+      "impact": "high",
+      "entities": ["bytedance"],
+      "sources": [
+        { "url": "https://www.scmp.com/tech/article/3352906/bytedance-raises-2026-capex-least-25-amid-ai-boom-rising-memory-costs-sources-say", "publisher": "South China Morning Post", "published": "2026-05", "kind": "press" },
+        { "url": "https://www.bloomberg.com/news/articles/2026-05-27/bytedance-weighs-capex-of-as-much-as-70-billion-in-ai-push", "publisher": "Bloomberg", "published": "2026-05-27", "kind": "press" }
+      ]
+    },
+    {
+      "date": "2026-05-05",
+      "title": "Plans paid subscriptions for Doubao",
+      "why_it_matters": "First real test of whether China's largest consumer-AI user base converts to direct revenue; compute costs of 345M MAU forced the monetization push.",
+      "impact": "medium",
+      "entities": ["bytedance"],
+      "sources": [{ "url": "https://www.caixinglobal.com/2026-05-05/bytedance-plans-subscriptions-for-ai-chatbot-doubao-102440708.html", "publisher": "Caixin Global", "published": "2026-05-05", "kind": "press" }]
+    },
+    {
+      "date": "2026-06-01",
+      "title": "US extends AI-chip bans to Chinese firms' overseas data centers",
+      "why_it_matters": "Closes ByteDance's main workaround (renting offshore GPU capacity) and undercuts the reported $14B Nvidia purchase plan.",
+      "impact": "high",
+      "entities": ["bytedance", "us-government"],
+      "sources": [{ "url": "https://www.aljazeera.com/economy/2026/6/1/us-says-ban-on-ai-chip-shipments-applies-to-chinese-firms-outside-china", "publisher": "Al Jazeera", "published": "2026-06-01", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.scmp.com/tech/article/3352906/bytedance-raises-2026-capex-least-25-amid-ai-boom-rising-memory-costs-sources-say", "publisher": "South China Morning Post", "kind": "press" },
+    { "url": "https://www.bloomberg.com/news/articles/2026-05-27/bytedance-weighs-capex-of-as-much-as-70-billion-in-ai-push", "publisher": "Bloomberg", "kind": "press" },
+    { "url": "https://www.caixinglobal.com/2026-05-05/bytedance-plans-subscriptions-for-ai-chatbot-doubao-102440708.html", "publisher": "Caixin Global", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

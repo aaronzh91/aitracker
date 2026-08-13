@@ -1,0 +1,112 @@
+{
+  "id": "coreweave",
+  "name": "CoreWeave, Inc.",
+  "kind": "public_company",
+  "category": "neocloud",
+  "group": "hyperscalers_clouds",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NASDAQ", "symbol": "CRWV" }],
+  "cik": "1769628",
+  "website": "https://www.coreweave.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Rents Nvidia GPU capacity under multi-year take-or-pay contracts to Microsoft, OpenAI, and Meta; funds the fleet with ~$35B of largely GPU-collateralized debt.",
+  "description_md": "CoreWeave is the largest independent neocloud: a crypto-miner-turned-AI-cloud that IPO'd in March 2025 and now operates one of the biggest Nvidia GPU fleets outside the hyperscalers. Its contracted backlog reached ~$129B at Q2 2026 (revenue backlog $104.2B as of June 30, +246% y/y, plus post-quarter signings) against quarterly revenue of $2.6B — an extreme ratio of committed-future to current revenue. Nvidia holds ~5% of CoreWeave and backstops $6.3B of capacity through 2032; customers are concentrated in Microsoft, OpenAI (~$22.4B of contracts), and Meta (~$35.2B). It leases most shells from third parties (Core Scientific, Applied Digital, Galaxy Digital) rather than owning them.",
+  "ai_monetization_md": "GPU-hours under long-dated take-or-pay contracts: Microsoft (its original anchor tenant), OpenAI ($11.9B initial + expansions to ~$22.4B — roughly a third of contracted revenue when signed), Meta (~$35.2B through 2032), plus IBM, Mistral and enterprise AI labs. Q2-26 revenue was $2.575B (+112% y/y) with widening losses — net interest expense alone hit $640M in the quarter (2.4x y/y). The equity story rests on converting the $129B backlog at contracted margins; the credit story asks whether the debt stack that funds the GPUs amortizes faster than the GPUs depreciate. CoreWeave's own re-lease evidence (A100s contracted into 2029, H100s re-leasing near original rates) is the bulls' key datapoint on useful life.",
+  "ai_strategy_md": "Scale ahead of the hyperscalers on Nvidia's newest silicon, financed by debt secured against GPUs and contracts (including the $7.6B GPU-backed DDTL 2.0 facility): total debt reached ~$35B at Q2-26 (from ~$30B earlier in 2026), plus >$10B of unsecured/convertible paper raised in Q2 alone, a $3.1B term loan, and a $1B strategic investment from Jane Street. Diversify the tenant base beyond Microsoft (OpenAI 2025, Meta 2025–26), acquire adjacencies (Weights & Biases ~$1.7B; the $9B Core Scientific merger was rejected by CORZ shareholders in Oct 2025, leaving CoreWeave leasing ~$10B+ from a landlord it failed to buy), and keep Nvidia alignment (equity, backstop, first-access to new architectures).",
+  "risk_notes_md": "**Credit-market signal:** bond/CDS markets implied roughly a 50% 5-year default probability as of Jul 2026 (ANALYST-DERIVED from thin markets — confidence low; SPEC §10.4 caveat applies), and spreads widened ~125bp in Aug 2026 around earnings even as the backlog grew. **Leverage & duration mismatch:** ~$35B of debt against assets (GPUs) whose economic life and residual value are the sector's most contested numbers; collateralized_gpu_debt flag — collateral value correlates with the same demand cycle that drives revenue. **Customer concentration:** Microsoft, OpenAI and Meta dominate backlog; OpenAI is itself loss-making, and Meta/Microsoft have in-house alternatives — renewal risk lands exactly when refinancing is due. **Circularity:** Nvidia is supplier, ~5% shareholder, and $6.3B backstop counterparty. **Landlord dependence:** Core Scientific, Applied Digital (~$11B/400MW), Galaxy (>$30B potential Helios value) leases create fixed obligations senior to equity; guidance-vs-actuals discrepancies in FY26 remain a data-quality flag (SPEC §9.3).",
+  "observations": [
+    {
+      "metric": "backlog_ai",
+      "period": "CY2026-Q2",
+      "value": 129,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html", "publisher": "CNBC", "title": "CoreWeave (CRWV) Q2 earnings report 2026", "published": "2026-08-11", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Total contracted backlog incl. ~$29.6B signed in the ~6 weeks around quarter-end; formal revenue backlog $104.2B as of Jun 30, 2026 (+246% y/y, vs $30.1B a year earlier). Committed value, not revenue."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "CY2026-Q2",
+      "value": 2.575,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.investing.com/news/company-news/coreweave-q2-2026-slides-revenue-doubles-backlog-surges-246-93CH-4852949", "publisher": "Investing.com (from CRWV Q2-26 release)", "published": "2026-08-11", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "+112% y/y; losses widened, net interest expense $640M (vs $267M in Q2-25)."
+    },
+    {
+      "metric": "total_debt",
+      "period": "CY2026-Q2",
+      "value": 35,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "medium",
+      "source": { "url": "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html", "publisher": "CNBC", "published": "2026-08-11", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Includes GPU-backed facilities (e.g. $7.6B DDTL 2.0), >$10B of unsecured/convertible debt raised in Q2-26, and a $3.1B term loan. Earlier 2026 tallies were ~$30B — the stack grows quarterly."
+    },
+    {
+      "metric": "other",
+      "metric_label": "CDS/bond-implied 5-year default probability",
+      "period": "2026-07",
+      "value": 50,
+      "unit": "pct",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://www.techtimes.com/articles/324054/20260812/coreweave-q2-2026-129b-backlog-grew-296b-six-weeks-despite-50-default-odds.htm", "publisher": "Tech Times", "title": "CoreWeave Q2 2026: $129B Backlog Grew $29.6B in Six Weeks Despite 50% Default Odds", "published": "2026-08-12", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "ANALYST-DERIVED from CDS/bond pricing in thin markets, not a disclosure — treat as indicative only (SPEC §10.4). Cited in official-sector stability commentary (Jul 2026)."
+    },
+    {
+      "metric": "contract_value",
+      "metric_label": "OpenAI contracts (cumulative)",
+      "period": "2025-09",
+      "value": 22.4,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "high",
+      "source": { "url": "https://www.cnbc.com/2025/09/25/coreweave-openai-6point5-billion-deal.html", "publisher": "CNBC", "title": "CoreWeave inks $6.5 billion deal with OpenAI", "published": "2025-09-25", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "$11.9B (Mar 2025) + $4B (May 2025) + $6.5B (Sep 2025); ≈1/3 of contracted revenue at the time. Meta contracts total ~$35.2B separately (see edge)."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-10",
+      "title": "Core Scientific shareholders reject CoreWeave's $9B all-stock merger",
+      "why_it_matters": "Leaves CoreWeave a tenant (~$10B+ of HPC contracts) rather than owner of critical capacity — a rent-vs-own structural weakness the credit market prices.",
+      "impact": "medium",
+      "entities": ["coreweave"],
+      "sources": [{ "url": "https://www.datacenterdynamics.com/en/news/coreweave-leases-another-260mw-capacity-from-galaxy-in-texas/", "publisher": "Data Center Dynamics", "published": "2025", "kind": "press", "notes": "Context on CoreWeave's leased-capacity strategy incl. Galaxy Helios." }]
+    },
+    {
+      "date": "2026-04",
+      "title": "Meta expands contracts by ~$21B to ~$35.2B total through 2032",
+      "why_it_matters": "Second-largest customer relationship after the Microsoft/OpenAI complex; diversifies the tenant base but deepens dependence on three counterparties.",
+      "impact": "high",
+      "entities": ["coreweave", "meta"],
+      "sources": [{ "url": "https://www.fool.com/investing/2026/04/21/meta-is-spending-48-billion-with-coreweave-nebius/", "publisher": "The Motley Fool", "published": "2026-04-21", "kind": "press" }]
+    },
+    {
+      "date": "2026-08-11",
+      "title": "Q2-26: revenue $2.6B (+112%), backlog ~$129B, debt ~$35B, losses widen; spreads widen ~125bp",
+      "why_it_matters": "The bull case (backlog) and bear case (leverage, interest burden, implied default risk) both strengthened in the same print — the defining credit-vs-equity divergence of the AI trade.",
+      "impact": "high",
+      "entities": ["coreweave"],
+      "sources": [
+        { "url": "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html", "publisher": "CNBC", "published": "2026-08-11", "kind": "press" },
+        { "url": "https://www.techtimes.com/articles/324054/20260812/coreweave-q2-2026-129b-backlog-grew-296b-six-weeks-despite-50-default-odds.htm", "publisher": "Tech Times", "published": "2026-08-12", "kind": "press" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html", "publisher": "CNBC", "published": "2026-08-11", "kind": "press" },
+    { "url": "https://www.cnbc.com/2025/09/25/coreweave-openai-6point5-billion-deal.html", "publisher": "CNBC", "published": "2025-09-25", "kind": "press" },
+    { "url": "https://seekingalpha.com/news/4629968-coreweave-q2-2026-earnings-preview", "publisher": "Seeking Alpha", "published": "2026-08", "kind": "analyst" }
+  ],
+  "updated": "2026-08-13"
+}

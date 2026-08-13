@@ -1,0 +1,26 @@
+{
+  "id": "nvidia--nebius--equity",
+  "from": "nvidia",
+  "to": "nebius",
+  "type": "equity_investment",
+  "status": "completed",
+  "headline": { "value": 2, "unit": "USD_B", "caveat": "announced Mar 11, 2026 with a full-stack AI-cloud partnership; press later described NVIDIA's total Nebius position as ~$2.2B including a smaller pre-existing stake", "as_of": "2026-03-11" },
+  "realized_to_date": { "value": 2, "unit": "USD_B", "caveat": "treated as funded per subsequent coverage of the position; NVIDIA has not published the closing separately", "as_of": "2026-05" },
+  "term": { "announced": "2026-03-11", "start": "2026-03", "end": null, "duration_years": null },
+  "nature_md": "NVIDIA invested $2B in Nebius (announced Mar 11, 2026) as part of a strategic partnership under which Nebius deploys more than 5GW of NVIDIA systems by 2030, with early access to the Rubin platform, Vera CPUs, and BlueField storage. Days later Nebius signed its up-to-$27B Meta contract — NVIDIA's equity strengthens a neocloud whose capex (guided $16–20B in 2026) flows overwhelmingly to NVIDIA hardware.",
+  "accounting": {
+    "payer_treatment_md": "Marketable equity investment (Nebius is NASDAQ-listed), marked through other income. The 5GW deployment plan it underwrites converts to NVIDIA revenue as Nebius buys systems.",
+    "payee_treatment_md": "Equity financing for Nebius — balance-sheet cash plus an implicit supply-priority endorsement that supports raising debt against contracted backlog (Microsoft $17.4–19.4B, Meta up to $27B).",
+    "off_balance_sheet": false,
+    "flags": ["equity_for_revenue"]
+  },
+  "related_edges": ["meta--nebius--compute", "microsoft--nebius--compute", "nvidia--nokia--equity"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://nvidianews.nvidia.com/news/nvidia-and-nebius-partner-to-scale-full-stack-ai-cloud", "publisher": "NVIDIA Newsroom", "published": "2026-03-11", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2026/03/11/nebius-nvidia-ai-cloud.html", "publisher": "CNBC", "published": "2026-03-11", "kind": "press" },
+    { "url": "https://www.fool.com/investing/2026/05/08/nvidias-22-billion-investment-in-this-rapidly-grow/", "publisher": "The Motley Fool", "published": "2026-05-08", "kind": "analyst" }
+  ],
+  "updated": "2026-08-13"
+}

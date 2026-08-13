@@ -1,0 +1,67 @@
+{
+  "id": "goldman-sachs",
+  "name": "The Goldman Sachs Group, Inc.",
+  "kind": "financial_institution",
+  "category": "financier_bank",
+  "group": "capital",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NYSE", "symbol": "GS" }],
+  "cik": "886982",
+  "website": "https://www.goldmansachs.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Investment bank; monetizes AI via lending and underwriting fees — SoftBank's OpenAI-collateralized loans, the $38B Vantage/Oracle project package, advisory on mega-financings (Saline Township), and structuring for Nvidia's >$500B customer-financing coalition.",
+  "description_md": "Goldman Sachs is a global investment bank whose AI-cycle franchise is credit and structuring rather than principal equity: it lends into the largest AI project-finance and margin-loan syndicates and advises on the record data-center packages. Its research also tracks the sector's shift to debt funding (AI capex debt-issuance share rising from ~26% in 2025 toward ~33%+ in 2026).",
+  "ai_monetization_md": "AI-exposure thesis: earn fees and spread on the AI credit wave while syndicating most of the risk. Positions: lender in the JPMorgan/MUFG-led $38B senior secured facilities for Vantage's Texas and Wisconsin campuses serving Oracle/OpenAI (Oct 2025, the largest AI project-debt package to date); Goldman Sachs Bank USA is in SoftBank's $10B margin loan collateralized by its OpenAI stake (Aug 2026); advisor on Related Digital's $16.3B Saline Township financing; and one of six founding financiers in Nvidia's >$500B compute-collateralized customer-financing coalition (Aug 10, 2026, subject to final agreements).",
+  "risk_notes_md": "Direct hold sizes are undisclosed — bank syndicate shares are typically distributed, but warehouse and bridge periods concentrate risk at announcement. Collateral quality is the open question: OpenAI private shares (margin loan) and GPUs/compute contracts (coalition) are both priced off the same AI cycle. Chicago Fed work puts bank C&I commitments to AI-adjacent industries near 25% of Tier 1 capital sector-wide.",
+  "observations": [
+    {
+      "metric": "contract_value",
+      "metric_label": "Vantage data-center debt package (syndicate participant)",
+      "period": "2025-10",
+      "value": 38,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.bloomberg.com/news/articles/2025-10-23/record-38-billion-debt-sale-nears-for-oracle-tied-data-centers", "publisher": "Bloomberg", "published": "2025-10-23", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Total package size ($23.25B Texas + $14.75B Wisconsin facilities), JPMorgan/MUFG-led with Goldman, BNP Paribas, SocGen, SMBC, Wells Fargo; Goldman's share undisclosed."
+    },
+    {
+      "metric": "other",
+      "metric_label": "SoftBank OpenAI-stake margin loan (syndicate participant)",
+      "period": "2026-08",
+      "value": 10,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.bloomberg.com/news/articles/2026-08-06/softbank-secures-10-billion-margin-loan-backed-by-openai-stake", "publisher": "Bloomberg", "published": "2026-08-06", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Total facility size; Goldman Sachs Bank USA is one of five named lenders — individual share undisclosed. Collateral is unlisted OpenAI preferred stock."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-10-23",
+      "title": "Joins record $38B debt package for Vantage's Oracle-tied campuses",
+      "why_it_matters": "The largest AI project-financing to date; bank credit formally underwrites the Oracle–OpenAI compute chain.",
+      "impact": "high",
+      "entities": ["goldman-sachs", "jpmorgan", "vantage", "oracle", "openai"],
+      "sources": [{ "url": "https://www.bloomberg.com/news/articles/2025-10-23/record-38-billion-debt-sale-nears-for-oracle-tied-data-centers", "publisher": "Bloomberg", "published": "2025-10-23", "kind": "press" }]
+    },
+    {
+      "date": "2026-08-10",
+      "title": "Founding financier in Nvidia's >$500B customer-financing coalition",
+      "why_it_matters": "Puts a systemically important bank inside a vendor-financing framework collateralized by compute — the structure regulators have flagged as this cycle's novel risk.",
+      "impact": "high",
+      "entities": ["goldman-sachs", "nvidia", "nvidia-financing-coalition"],
+      "sources": [{ "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html", "publisher": "CNBC", "published": "2026-08-10", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.bloomberg.com/news/articles/2025-10-23/record-38-billion-debt-sale-nears-for-oracle-tied-data-centers", "publisher": "Bloomberg", "published": "2025-10-23", "kind": "press" },
+    { "url": "https://www.bloomberg.com/news/articles/2026-08-06/softbank-secures-10-billion-margin-loan-backed-by-openai-stake", "publisher": "Bloomberg", "published": "2026-08-06", "kind": "press" },
+    { "url": "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/04/related-digital-announces-financing-for--16-billion-oracle-data-.html", "publisher": "Bank of America Newsroom", "published": "2026-04", "kind": "company_pr", "notes": "Names Goldman Sachs as advisor to Related Digital on the Saline Township financing." }
+  ],
+  "updated": "2026-08-13"
+}

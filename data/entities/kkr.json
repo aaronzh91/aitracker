@@ -1,0 +1,79 @@
+{
+  "id": "kkr",
+  "name": "KKR & Co. Inc.",
+  "kind": "financial_institution",
+  "category": "financier_pe_vc",
+  "group": "capital",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NYSE", "symbol": "KKR" }],
+  "cik": "1404912",
+  "website": "https://www.kkr.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Private-equity and infrastructure manager; monetizes AI through data-center platform ownership (CyrusOne, Nxera/STT GDC in APAC) and, via Nvidia's coalition, compute-collateralized customer financing.",
+  "description_md": "KKR is a global private-equity, infrastructure, and credit manager whose AI exposure runs through data-center platforms: it took CyrusOne private with GIP for ~$15B in 2022 (then the largest data-center deal ever) and has built an APAC footprint around Singtel's Nxera and ST Telemedia Global Data Centres.",
+  "ai_monetization_md": "AI-exposure thesis: own hyperscale landlords through the demand super-cycle. CyrusOne has become a major AI-era hyperscale developer under KKR/GIP ownership; in APAC, KKR bought ~20% of Singtel's regional data-center arm (Nxera) and, with Singtel, agreed to acquire the remaining stake in ST Telemedia Global Data Centres (~$6.6B), consolidating a 100-facility, 1GW+ pipeline platform. In Aug 2026 KKR joined Nvidia's >$500B compute-collateralized customer-financing coalition (subject to final agreements), adding a credit leg to its landlord positions.",
+  "risk_notes_md": "Platform-level leverage on CyrusOne and the APAC vehicles is not fully public; single-tenant hyperscale developments concentrate counterparty risk in a handful of AI buyers. Coalition participation would correlate KKR's credit book with the same compute demand that underwrites its data-center rents.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "CyrusOne take-private value (with GIP)",
+      "period": "2022-03",
+      "value": 15,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.global-infra.com/news/kkr-and-gip-complete-acquisition-of-cyrusone/", "publisher": "Global Infrastructure Partners", "published": "2022-03", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "$90.50/share all-cash, ~$15B including assumed debt; closed 2022-03-25."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Stake in Singtel's Nxera regional data-center arm",
+      "period": "2024",
+      "value": 20,
+      "unit": "pct",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.fierce-network.com/modernization/singtel-advances-data-center-segment-two-deals", "publisher": "Fierce Network", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "~S$1.1B for ~20%; Nxera targets ~200MW across four operating markets."
+    },
+    {
+      "metric": "other",
+      "metric_label": "STT Global Data Centres remaining-stake acquisition (with Singtel)",
+      "period": "2026",
+      "value": 6.6,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://sg.finance.yahoo.com/news/kkr-singtel-confirm-6-6-154422395.html", "publisher": "Yahoo Finance Singapore", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Follows the 2024 KKR/Singtel purchase of an 18.3% stake for $1.75B; STT GDC operates ~100 data centers across a dozen markets."
+    }
+  ],
+  "events": [
+    {
+      "date": "2022-03-25",
+      "title": "Completes $15B CyrusOne take-private with GIP",
+      "why_it_matters": "Positioned KKR in hyperscale development two years before the AI capex wave; CyrusOne is now a core AI-era landlord.",
+      "impact": "medium",
+      "entities": ["kkr", "blackrock"],
+      "sources": [{ "url": "https://www.datacenterfrontier.com/featured/article/11427496/cyrusone-becomes-a-private-company-as-15-billion-buyout-is-completed", "publisher": "Data Center Frontier", "published": "2022-03", "kind": "press" }]
+    },
+    {
+      "date": "2026-08-10",
+      "title": "Joins Nvidia's >$500B customer-financing coalition",
+      "why_it_matters": "Adds compute-collateralized SPV lending to KKR's data-center equity — landlord and lender to the same demand cycle.",
+      "impact": "high",
+      "entities": ["kkr", "nvidia", "nvidia-financing-coalition"],
+      "sources": [{ "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html", "publisher": "CNBC", "published": "2026-08-10", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.global-infra.com/news/kkr-and-gip-complete-acquisition-of-cyrusone/", "publisher": "Global Infrastructure Partners", "published": "2022-03", "kind": "company_pr" },
+    { "url": "https://sg.finance.yahoo.com/news/kkr-singtel-confirm-6-6-154422395.html", "publisher": "Yahoo Finance Singapore", "kind": "press" },
+    { "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html", "publisher": "CNBC", "published": "2026-08-10", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

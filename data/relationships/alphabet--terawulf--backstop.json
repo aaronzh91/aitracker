@@ -1,0 +1,26 @@
+{
+  "id": "alphabet--terawulf--backstop",
+  "from": "alphabet",
+  "to": "terawulf",
+  "type": "backstop_guarantee",
+  "status": "active",
+  "headline": { "value": 3.2, "unit": "USD_B", "caveat": "Cumulative Google backstop of Fluidstack's Lake Mariner lease obligations ($1.8B initial + $1.4B with CB-5), supporting TeraWulf project-debt financing; Google's pro forma equity rose to ~14% (41M shares initially + 32.5M CB-5 warrants). Grew further with 2026 expansions.", "as_of": "2025-08-18" },
+  "realized_to_date": { "value": 0, "unit": "USD_B", "caveat": "Contingent credit support — nothing is paid unless Fluidstack defaults on lease obligations. No draw reported.", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-08-14", "start": "2025", "end": null, "duration_years": 10 },
+  "nature_md": "Google guarantees (backstops) a large share of Fluidstack's lease obligations to TeraWulf, making the project debt for Lake Mariner's AI buildings financeable, and in exchange receives TeraWulf equity/warrants (~8% initially, ~14% pro forma after CB-5; further increased with later expansions). Google is not the tenant — it is the credit enhancer standing behind Fluidstack, whose capacity serves the Google/Anthropic compute stack. Cash flows from Google only on a Fluidstack default; the warrants flow value to Google regardless.",
+  "accounting": {
+    "payer_treatment_md": "For Alphabet this is a contingent liability (financial guarantee) — disclosed, not a booked expense; fair value of the guarantee and the warrants received are recognized, but the ~$3.2B notional stays off the income statement and effectively off balance sheet unless default risk crystallizes.",
+    "payee_treatment_md": "TeraWulf gets no cash from Google directly; the backstop lowers its project-debt cost and the warrant issuance dilutes existing holders. Rating agencies and lenders treat the leases as Google-grade credit — the whole point.",
+    "off_balance_sheet": true,
+    "flags": ["commitment_unfunded", "warrant_for_revenue", "customer_concentration"]
+  },
+  "related_edges": ["fluidstack--terawulf--lease", "alphabet--cipher-mining--backstop"],
+  "both_sides_md": "**Bull:** elegant capital efficiency — Google mobilizes third-party balance sheets for its supply chain at near-zero cash cost, taking upside via warrants. **Bear:** classic off-balance-sheet leverage of the cycle: if AI demand or Fluidstack falters, a contingent ~$3.2B (and growing) lands on Google at the worst moment, and equity-for-guarantee arrangements blur who really bears the project risk.",
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://investors.terawulf.com/news-events/press-releases/detail/114/terawulf-announces-fluidstack-expansion-with-160-mw-cb-5", "publisher": "TeraWulf IR", "published": "2025-08-18", "kind": "company_ir" },
+    { "url": "https://www.cnbc.com/2025/08/18/terawulf-stock-google-stake-datacenter.html", "publisher": "CNBC", "published": "2025-08-18", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,98 @@
+{
+  "id": "lambda",
+  "name": "Lambda (Lambda Labs)",
+  "kind": "private_company",
+  "category": "neocloud",
+  "group": "hyperscalers_clouds",
+  "region": "us",
+  "tier": 1,
+  "cik": null,
+  "website": "https://lambda.ai",
+  "fiscal_year_end": null,
+  "monetization": "Rents Nvidia GPU cloud capacity ('superintelligence cloud') to AI labs and enterprises; anchored by a multibillion-dollar Microsoft deal; IPO planned.",
+  "description_md": "Lambda is a San Francisco-based, Nvidia-backed neocloud that evolved from selling GPU workstations to operating an AI cloud for training and inference. Its defining commercial event is the multibillion-dollar AI-infrastructure agreement with Microsoft (Nov 2025) to deploy tens of thousands of Nvidia GPUs (including GB300 NVL72 systems). Two weeks later it raised over $1.5B in a Series E led by TWG Global, and it has since been reported in talks for pre-IPO funding ahead of a planned public listing. Lambda is building its own AI-factory footprint, including a Kansas City site opening in 2026 at 24MW with expansion potential beyond 100MW.",
+  "ai_monetization_md": "GPU-hours and reserved clusters (1-Click Clusters, private cloud) on Nvidia hardware, plus a legacy hardware business. The Microsoft agreement — size undisclosed beyond 'multibillion-dollar' — is its anchor contract and validation event; Nvidia is simultaneously supplier, investor, and (per press) a customer that has leased capacity back from Lambda. Pricing and utilization economics are undisclosed; like other neoclouds, headline deal values are commitments that convert to revenue as capacity deploys.",
+  "ai_strategy_md": "Ride the Microsoft anchor contract into public-market scale: raise growth capital (>$1.5B Series E, Nov 2025; reported ~$350M pre-IPO round in 2026), build owned AI factories (Kansas City, 2026) to reduce dependence on leased shells, and position as the developer-friendly neocloud vs CoreWeave's hyperscale focus. An IPO is planned but unscheduled; press expects it as a 2026 candidate. Nvidia backing secures allocation on new architectures.",
+  "risk_notes_md": "**Concentration:** the Microsoft deal dominates its contracted future; its exact value, term, and cancellation provisions are undisclosed — a data gap flagged rather than papered over. **Financing opacity:** as a private company Lambda's balance sheet, debt (it has used GPU-backed financing structures), and utilization are not public; valuation marks between rounds are secondary-market estimates. **Sector risks:** GPU residual-value/depreciation exposure and neocloud spread-widening (see CoreWeave) apply; an IPO window closing would constrain the capital plan. **Unverified:** post-Series-E valuation figures circulating (~$2.5–4B+) conflict across trackers and are not officially confirmed.",
+  "observations": [
+    {
+      "metric": "contract_value",
+      "metric_label": "Microsoft AI infrastructure agreement",
+      "period": "2025-11",
+      "value": null,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.cnbc.com/2025/11/03/lambda-ai-microsoft-nvidia.html", "publisher": "CNBC", "title": "Lambda, Microsoft agree to multibillion-dollar AI infrastructure deal with Nvidia chips", "published": "2025-11-03", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Value undisclosed ('multibillion-dollar'); tens of thousands of Nvidia GPUs incl. GB300 NVL72. Null recorded deliberately — the gap is the fact."
+    },
+    {
+      "metric": "funding_raised",
+      "metric_label": "Series E (TWG Global-led)",
+      "period": "2025-11",
+      "value": 1.5,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "high",
+      "source": { "url": "https://techcrunch.com/2025/11/18/ai-data-center-provider-lambda-raises-whopping-1-5b-after-multibillion-dollar-microsoft-deal/", "publisher": "TechCrunch", "title": "AI data center provider Lambda raises whopping $1.5B after multibillion-dollar Microsoft deal", "published": "2025-11-18", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Over $1.5B, led by TWG Global (Thomas Tull / Mark Walter), two weeks after the Microsoft deal."
+    },
+    {
+      "metric": "valuation",
+      "period": "2026-08",
+      "value": null,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://tsginvest.com/lambda-labs/", "publisher": "TSG Invest (secondary tracker)", "published": "2026", "kind": "other" },
+      "as_of": "2026-08-13",
+      "notes": "No officially confirmed post-money for the Series E; secondary trackers cite conflicting figures (~$2.5B to $4B+). Recorded as null — UNVERIFIED — pending a primary source or IPO filing."
+    },
+    {
+      "metric": "capacity_mw",
+      "metric_label": "Kansas City AI factory (initial)",
+      "period": "2026",
+      "value": 24,
+      "unit": "MW",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.datacenterdynamics.com/en/news/lambda-in-talks-to-raise-350m-in-pre-ipo-funding-report/", "publisher": "Data Center Dynamics", "title": "Lambda in talks to raise $350m in pre-IPO funding - report", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Opening 2026 at 24MW, scalable to >100MW."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-11-03",
+      "title": "Signs multibillion-dollar AI infrastructure deal with Microsoft (Nvidia GB300 systems)",
+      "why_it_matters": "Puts Lambda into the tier of Microsoft's overflow-capacity suppliers alongside CoreWeave, Nebius, and Nscale; the anchor for its IPO story.",
+      "impact": "high",
+      "entities": ["lambda", "microsoft", "nvidia"],
+      "sources": [{ "url": "https://www.cnbc.com/2025/11/03/lambda-ai-microsoft-nvidia.html", "publisher": "CNBC", "published": "2025-11-03", "kind": "press" }]
+    },
+    {
+      "date": "2025-11-18",
+      "title": "Raises >$1.5B Series E led by TWG Global",
+      "why_it_matters": "Funds the GPU fleet expansion behind the Microsoft agreement; brings in institutional pre-IPO capital.",
+      "impact": "medium",
+      "entities": ["lambda"],
+      "sources": [{ "url": "https://techcrunch.com/2025/11/18/ai-data-center-provider-lambda-raises-whopping-1-5b-after-multibillion-dollar-microsoft-deal/", "publisher": "TechCrunch", "published": "2025-11-18", "kind": "press" }]
+    },
+    {
+      "date": "2026",
+      "title": "Reported in talks for ~$350M pre-IPO funding; IPO planned but unscheduled",
+      "why_it_matters": "A neocloud IPO would put public-market pricing on the sector's private tier — a valuation read-through for Crusoe, Nscale, and Fluidstack.",
+      "impact": "medium",
+      "entities": ["lambda"],
+      "sources": [{ "url": "https://www.datacenterdynamics.com/en/news/lambda-in-talks-to-raise-350m-in-pre-ipo-funding-report/", "publisher": "Data Center Dynamics", "published": "2026", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.cnbc.com/2025/11/03/lambda-ai-microsoft-nvidia.html", "publisher": "CNBC", "published": "2025-11-03", "kind": "press" },
+    { "url": "https://techcrunch.com/2025/11/18/ai-data-center-provider-lambda-raises-whopping-1-5b-after-multibillion-dollar-microsoft-deal/", "publisher": "TechCrunch", "published": "2025-11-18", "kind": "press" },
+    { "url": "https://www.datacenterdynamics.com/en/news/lambda-in-talks-to-raise-350m-in-pre-ipo-funding-report/", "publisher": "Data Center Dynamics", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

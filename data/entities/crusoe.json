@@ -1,0 +1,101 @@
+{
+  "id": "crusoe",
+  "name": "Crusoe Energy Systems (Crusoe AI)",
+  "kind": "private_company",
+  "category": "datacenter_developer",
+  "group": "hyperscalers_clouds",
+  "region": "us",
+  "tier": 1,
+  "cik": null,
+  "website": "https://www.crusoe.ai",
+  "fiscal_year_end": null,
+  "monetization": "Designs, builds, and operates energy-first AI datacenter campuses (builder of Stargate Abilene) and sells GPU cloud capacity; monetizes power access as the scarce input.",
+  "description_md": "Crusoe is a Denver-based, vertically integrated AI-infrastructure company — from power generation to datacenter shells to Crusoe Cloud — that began in flared-gas bitcoin mining and pivoted fully to AI (selling its bitcoin business in 2025). It is the builder of the flagship Stargate campus in Abilene, Texas for OpenAI/Oracle (~1.2GW, developed through a $15B JV with Blue Owl Capital and Primary Digital Infrastructure), and broke ground in Mar 2026 on an adjacent ~900MW campus for Microsoft, taking the combined Abilene footprint to ~2.1GW. The company reports contracts for nearly 5GW of computing power and a >40GW project pipeline, with customers including OpenAI (via Oracle), Microsoft, Meta, Oracle and Google. In Jul 2026 it was reported in talks to raise ~$3B at a ~$30B valuation — roughly triple its ~$10B mark of late 2025 (UNVERIFIED; not closed).",
+  "ai_monetization_md": "Three stacked revenue models: (1) **Development/build fees and JV economics** on mega-campuses — the Abilene JV (Blue Owl/Primary Digital, $15B across two phases, financed with JPMorgan-led construction loans of $2.3B and $7.1B) pays Crusoe as developer-operator while capital partners hold the assets; (2) **Long-term capacity leases** to hyperscalers/labs (Oracle leases Abilene for OpenAI under Stargate; Microsoft anchor-tenants the second campus); (3) **Crusoe Cloud** GPU-as-a-service on its own power-advantaged sites. The energy-first model (behind-the-meter gas, stranded power, fast interconnects) turns time-to-power — the sector's binding constraint — into its margin.",
+  "ai_strategy_md": "Own the power bottleneck rather than the GPUs: acquire sites with multi-hundred-MW power access, build at record speed (Abilene phase 1 energized ~12 months from groundbreaking), and let investment-grade capital (Blue Owl, Primary Digital, bank construction loans) own the shells while Crusoe keeps development margin and operations. Scale the pipeline (>40GW) across Texas and beyond, diversify anchors beyond the OpenAI/Oracle complex (Microsoft campus, Google/Meta contracts), and grow Crusoe Cloud for margin capture. The reported ~$30B raise would fund the equity slices of new JVs.",
+  "risk_notes_md": "**Valuation unverified:** the ~$30B figure is from Jul 2026 press reports of an in-progress raise (~$3B) with no final terms, lead, or close disclosed — recorded at low confidence, explicitly UNVERIFIED. **Anchor concentration:** the economics of the flagship campuses trace to OpenAI (via Oracle's Stargate lease) and Microsoft; an OpenAI demand shortfall propagates through Oracle's lease to the Abilene JV's $9.4B of construction debt (see contagion framework, SPEC §10.3b). **Structure opacity:** as a private developer, Crusoe's own retained exposure vs the JV partners' (residual value, completion guarantees) is not publicly disclosed. **Execution:** simultaneous multi-GW builds strain turbine, transformer, and electrical-labor bottlenecks (see bottleneck registry).",
+  "observations": [
+    {
+      "metric": "valuation",
+      "period": "2026-07",
+      "value": 30,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://www.bloomberg.com/news/articles/2026-07-02/crusoe-in-talks-to-raise-3-billion-in-round-that-may-triple-firm-s-value", "publisher": "Bloomberg", "title": "Crusoe in Talks to Raise $3 Billion in Round That May Triple Firm's Value", "published": "2026-07-02", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "UNVERIFIED — reported talks only; no final terms, lead investor, or close date. Prior mark ~$10B (late 2025). Private valuations are round marks, not traded prices."
+    },
+    {
+      "metric": "capacity_gw",
+      "metric_label": "Contracted computing power",
+      "period": "2026-06",
+      "value": 5,
+      "unit": "GW",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://siliconangle.com/2026/07/03/ai-data-center-builder-crusoe-reportedly-raising-3b-30b-valuation/", "publisher": "SiliconANGLE", "title": "AI data center builder Crusoe reportedly raising $3B at $30B valuation", "published": "2026-07-03", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "'Nearly 5GW' contracted, >40GW total project pipeline, per company statements reported Jun–Jul 2026."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Stargate Abilene JV (Blue Owl / Primary Digital, two phases)",
+      "period": "2025-05",
+      "value": 15,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.globenewswire.com/news-release/2025/05/21/3085765/0/en/Crusoe-Blue-Owl-Capital-and-Primary-Digital-Infrastructure-Enter-Second-Phase-of-15-Billion-Joint-Venture-to-Fund-AI-Data-Center-in-Abilene-Texas.html", "publisher": "GlobeNewswire / Crusoe", "title": "Crusoe, Blue Owl Capital, and Primary Digital Infrastructure Enter Second Phase of $15 Billion Joint Venture", "published": "2025-05-21", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "~1.2GW / 8 buildings for OpenAI (Oracle-leased, Stargate). Financed incl. JPMorgan-led $7.1B construction loan (phase 2) and $2.3B (phase 1). JV capital, not Crusoe revenue."
+    },
+    {
+      "metric": "capacity_mw",
+      "metric_label": "Second Abilene campus (Microsoft anchor)",
+      "period": "2026-03",
+      "value": 900,
+      "unit": "MW",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.techtimes.com/articles/319641/20260703/crusoe-ai-3-billion-talks-ai-power-plant-builder-triples-30-billion-valuation.htm", "publisher": "Tech Times", "title": "Crusoe AI in $3 Billion Talks: AI Power Plant Builder Triples to $30 Billion Valuation", "published": "2026-07-03", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Groundbreaking Mar 2026, adjacent to the OpenAI/Oracle site; combined Abilene footprint ~2.1GW."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-05-21",
+      "title": "Second phase of $15B Abilene JV with Blue Owl and Primary Digital; JPMorgan leads $7.1B construction loan",
+      "why_it_matters": "The financing template for Stargate-scale sites: private-credit equity + bank construction debt on the shell, developer economics for Crusoe, tenant risk with Oracle/OpenAI.",
+      "impact": "high",
+      "entities": ["crusoe", "blue-owl", "jpmorgan", "stargate"],
+      "sources": [
+        { "url": "https://www.globenewswire.com/news-release/2025/05/21/3085765/0/en/Crusoe-Blue-Owl-Capital-and-Primary-Digital-Infrastructure-Enter-Second-Phase-of-15-Billion-Joint-Venture-to-Fund-AI-Data-Center-in-Abilene-Texas.html", "publisher": "GlobeNewswire / Crusoe", "published": "2025-05-21", "kind": "company_pr" },
+        { "url": "https://www.bloomberg.com/news/articles/2025-05-22/jpmorgan-leads-7-1-billion-loan-for-blue-owl-tied-data-center", "publisher": "Bloomberg", "published": "2025-05-22", "kind": "press" }
+      ]
+    },
+    {
+      "date": "2026-03",
+      "title": "Breaks ground on ~900MW second Abilene campus for Microsoft",
+      "why_it_matters": "Diversifies Crusoe's anchor-tenant base beyond the OpenAI/Oracle complex and confirms Abilene as a ~2.1GW multi-tenant hub.",
+      "impact": "medium",
+      "entities": ["crusoe", "microsoft"],
+      "sources": [{ "url": "https://siliconangle.com/2026/07/03/ai-data-center-builder-crusoe-reportedly-raising-3b-30b-valuation/", "publisher": "SiliconANGLE", "published": "2026-07-03", "kind": "press" }]
+    },
+    {
+      "date": "2026-07-02",
+      "title": "Reported in talks to raise ~$3B at ~$30B valuation (UNVERIFIED)",
+      "why_it_matters": "Would triple the ~$10B late-2025 mark and price the power-first developer model near CoreWeave's public multiple — if it closes; recorded at low confidence.",
+      "impact": "medium",
+      "entities": ["crusoe"],
+      "sources": [{ "url": "https://www.bloomberg.com/news/articles/2026-07-02/crusoe-in-talks-to-raise-3-billion-in-round-that-may-triple-firm-s-value", "publisher": "Bloomberg", "published": "2026-07-02", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture", "publisher": "Crusoe", "kind": "company_pr" },
+    { "url": "https://www.bloomberg.com/news/articles/2026-07-02/crusoe-in-talks-to-raise-3-billion-in-round-that-may-triple-firm-s-value", "publisher": "Bloomberg", "published": "2026-07-02", "kind": "press" },
+    { "url": "https://www.newmark.com/insights/press-releases/newmark-facilitates-7-1-billion-construction-loan-to-develop-ai-data-center", "publisher": "Newmark", "kind": "company_pr", "notes": "Abilene phase-2 construction-loan arrangement." }
+  ],
+  "updated": "2026-08-13"
+}

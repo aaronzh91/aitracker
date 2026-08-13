@@ -1,0 +1,35 @@
+{
+  "id": "nvidia--openai--guarantee-talks-2026",
+  "from": "nvidia",
+  "to": "openai",
+  "type": "backstop_guarantee",
+  "status": "in_talks",
+  "headline": { "value": 250, "unit": "USD_B", "caveat": "up to; unsigned — terms unsettled and the arrangement could still collapse", "as_of": "2026-07-27" },
+  "realized_to_date": { "value": 0, "unit": "USD_B", "as_of": "2026-08-13" },
+  "term": { "announced": "2026-07", "start": null, "end": null, "duration_years": null },
+  "nature_md": "NVIDIA is negotiating a guarantee of up to ~$250B of lease and construction-debt obligations for OpenAI's planned 10GW campus in Piketon, Ohio (a former uranium-enrichment site being developed by SoftBank's energy subsidiary). If OpenAI misses lease or debt-service payments, NVIDIA covers them — letting lenders price the debt against NVIDIA's balance sheet, since OpenAI has no investment-grade rating. The backstop would exclude the chips themselves; NVIDIA is separately discussing financing OpenAI's chip purchases for the site, reported at up to ~$350B. Nothing is signed.",
+  "accounting": {
+    "payer_treatment_md": "If signed: a financial guarantee — initially recognized at fair value, with the maximum exposure disclosed but the full $250B not carried as a liability unless payment becomes probable. Largely off-balance-sheet contingent exposure, the same mechanism regulators flagged in Google's TeraWulf/Cipher lease backstops but at ~50x the scale.",
+    "payee_treatment_md": "OpenAI would gain access to investment-grade-priced lease/construction debt it could not raise on its own credit. The leases/debt would sit with the project owner (SoftBank-side development entities) and OpenAI as lessee — keeping the campus itself off OpenAI's balance sheet while creating enormous fixed payment obligations.",
+    "off_balance_sheet": true,
+    "flags": ["vendor_financing", "commitment_unfunded", "equity_for_revenue"]
+  },
+  "related_edges": ["nvidia--openai--equity-2026", "nvidia--openai--loi-2025"],
+  "both_sides_md": "**Bear:** a $250B guarantee 'proves the debt markets said no' (TechTimes framing) — the vendor standing behind its customer's debt is the purest form of the Lucent/Nortel vendor-financing pattern, and if OpenAI stumbles NVIDIA absorbs losses vastly exceeding any equity check. **Bull:** a guarantee is not a cash outlay; it locks NVIDIA in as effectively exclusive compute supplier to the largest planned AI campus for a decade, and NVIDIA only pays if OpenAI — which had ~$25B ARR in early 2026 and is heading to IPO — actually defaults.",
+  "observations": [],
+  "events": [
+    {
+      "date": "2026-07-27",
+      "title": "WSJ/CNBC report NVIDIA in talks for up-to-$250B OpenAI backstop",
+      "why_it_matters": "Moves NVIDIA from equity investor to potential guarantor of customer debt — a categorical escalation of circularity risk.",
+      "impact": "high",
+      "entities": ["nvidia", "openai", "softbank"],
+      "sources": [{ "url": "https://www.cnbc.com/2026/07/27/nvidia-and-openai-in-talks-for-up-to-250-billion-dollar-ai-backstop.html", "publisher": "CNBC", "published": "2026-07-27", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.cnbc.com/2026/07/27/nvidia-and-openai-in-talks-for-up-to-250-billion-dollar-ai-backstop.html", "publisher": "CNBC", "published": "2026-07-27", "kind": "press" },
+    { "url": "https://www.tomshardware.com/tech-industry/data-centers/nvidia-weighs-250-billion-guarantee-so-openai-can-lease-softbanks-10-gigawatt-ohio-campus", "publisher": "Tom's Hardware", "published": "2026-07-27", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

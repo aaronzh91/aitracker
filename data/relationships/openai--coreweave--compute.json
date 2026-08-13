@@ -1,0 +1,47 @@
+{
+  "id": "openai--coreweave--compute",
+  "from": "openai",
+  "to": "coreweave",
+  "type": "compute_purchase",
+  "status": "active",
+  "headline": { "value": 22.4, "unit": "USD_B", "caveat": "cumulative 'up to' value: $11.9B (Mar 2025) + $4B (May 2025) + $6.5B (Sept 2025)", "as_of": "2025-09-25" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "capacity delivering since 2025; consumed amounts not disclosed", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-03", "start": "2025", "end": "2030", "duration_years": null },
+  "nature_md": "Three successive contracts (Mar/May/Sept 2025) totaling up to $22.4B of CoreWeave AI infrastructure for training OpenAI's next-generation models — roughly a third of CoreWeave's contracted revenue when the Sept expansion was signed (CoreWeave's total backlog has since grown to ~$129B, diluting the share but not the dollar exposure). Twist in the initial deal: OpenAI was *issued $350M of CoreWeave stock* as part of the March agreement — the customer took equity in the supplier at IPO-adjacent pricing, the mirror image of the usual supplier-funds-customer pattern. OpenAI had previously reached CoreWeave capacity only indirectly via Microsoft.",
+  "accounting": {
+    "payer_treatment_md": "Purchase commitments expensed as consumed. The $350M CRWV stock received is an investment asset for OpenAI, appreciating/depreciating with CoreWeave's listed price — partially hedging its supplier exposure.",
+    "payee_treatment_md": "Revenue backlog recognized as delivered. OpenAI's contracts underpin a material slice of the backlog against which CoreWeave has raised ~$30B of debt (incl. GPU-backed facilities) — OpenAI's creditworthiness passes through into CoreWeave's credit spreads (CDS implied ~50% 5-yr default probability, Jul 2026).",
+    "off_balance_sheet": false,
+    "flags": ["customer_concentration", "collateralized_gpu_debt"]
+  },
+  "related_edges": ["openai--microsoft--azure-commit", "openai--oracle--compute-2025", "openai--amazon--compute"],
+  "observations": [
+    {
+      "metric": "contract_value",
+      "metric_label": "Cumulative OpenAI–CoreWeave contract value",
+      "period": "2025",
+      "value": 22.4,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://www.bloomberg.com/news/articles/2025-09-25/coreweave-expands-deals-with-openai-to-as-much-as-22-4-billion", "publisher": "Bloomberg", "published": "2025-09-25", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "'Up to' values; take-or-pay structure not fully disclosed."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-09-25",
+      "title": "Third contract (up to $6.5B) takes cumulative OpenAI–CoreWeave deals to ~$22.4B",
+      "impact": "medium",
+      "entities": ["openai", "coreweave"],
+      "sources": [{ "url": "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Expands-Agreement-with-OpenAI-by-up-to-6-5B/default.aspx", "publisher": "CoreWeave IR", "published": "2025-09-25", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.bloomberg.com/news/articles/2025-09-25/coreweave-expands-deals-with-openai-to-as-much-as-22-4-billion", "publisher": "Bloomberg", "published": "2025-09-25", "kind": "press" },
+    { "url": "https://www.coreweave.com/news/coreweave-announces-agreement-with-openai-to-deliver-ai-infrastructure", "publisher": "CoreWeave", "published": "2025-03", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2025/09/25/coreweave-openai-6point5-billion-deal.html", "publisher": "CNBC", "published": "2025-09-25", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

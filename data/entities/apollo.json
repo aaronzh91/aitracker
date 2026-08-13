@@ -1,0 +1,67 @@
+{
+  "id": "apollo",
+  "name": "Apollo Global Management, Inc.",
+  "kind": "financial_institution",
+  "category": "financier_private_credit",
+  "group": "capital",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NYSE", "symbol": "APO" }],
+  "cik": null,
+  "website": "https://www.apollo.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Alternative asset manager and private-credit giant; monetizes AI by lending against it — GPU-collateralized SPV debt (xAI), margin lending against OpenAI equity (SoftBank syndicate), and Nvidia's compute-collateralized financing coalition.",
+  "description_md": "Apollo Global Management is one of the largest private-credit managers, with the Athene insurance balance sheet giving it long-duration appetite for investment-grade structured paper. In the AI cycle it has specialized in the newest collateral types: GPUs and unlisted AI equity.",
+  "ai_monetization_md": "AI-exposure thesis: earn private-credit spreads secured by AI hardware and AI equity rather than corporate guarantees. Apollo co-leads (with Diameter Capital) up to ~$12.5B of GPU-backed debt in the ~$20B xAI SPV that buys Nvidia chips and leases them to xAI for Colossus 2; Apollo Global Funding is in the syndicate for SoftBank's $10B margin loan collateralized by its OpenAI stake (Aug 2026); and Apollo is a founding member of Nvidia's >$500B compute-collateralized customer-financing coalition announced Aug 10, 2026 (subject to final agreements).",
+  "risk_notes_md": "Classic wrong-way risk: the collateral (used GPUs, private OpenAI shares) is priced off the same AI demand cycle that would trigger borrower stress — the `collateralized_gpu_debt` pattern. Recovery values for large used-GPU fleets are untested at scale, and OpenAI equity collateral has no traded price. Insurance-account funding (Athene) means stress would propagate into policyholder-backed portfolios, the channel highlighted by BIS and Fed financial-stability work in 2026.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "xAI GPU SPV debt co-led (with Diameter)",
+      "period": "2025-10",
+      "value": 12.5,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.roic.ai/news/xai-pursues-20-billion-lease-to-own-deal-for-nvidia-gpus-through-spv-structure-10-16-2025", "publisher": "Roic News", "published": "2025-10-16", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Up to $12.5B of GPU-backed debt within the ~$20B SPV ($7.5B equity anchored by Valor incl. ≤$2B Nvidia); five-year lease to xAI."
+    },
+    {
+      "metric": "other",
+      "metric_label": "SoftBank OpenAI-stake margin loan (syndicate participant)",
+      "period": "2026-08",
+      "value": 10,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://finance.yahoo.com/technology/ai/articles/softbank-secures-10-billion-loan-105715129.html", "publisher": "Yahoo Finance", "published": "2026-08", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Total facility size; Apollo Global Funding LLC is one of five named lenders alongside Goldman Sachs, JPMorgan, Mizuho, and SMBC — Apollo's individual share undisclosed."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-10",
+      "title": "Reported co-lead of GPU-backed debt for xAI's ~$20B SPV",
+      "why_it_matters": "One of the first landmark tests of GPUs as standalone loan collateral at scale, keeping ~$20B of compute financing off xAI's balance sheet.",
+      "impact": "high",
+      "entities": ["apollo", "xai-gpu-spv", "xai", "nvidia"],
+      "sources": [{ "url": "https://investinglive.com/stocks/musks-xai-seeks-20-bn-funding-nvidia-investing-and-backing-gpu-linked-financing-model-20251008/", "publisher": "InvestingLive", "published": "2025-10-08", "kind": "press" }]
+    },
+    {
+      "date": "2026-08-10",
+      "title": "Founding member of Nvidia's >$500B customer-financing coalition",
+      "why_it_matters": "Extends Apollo's GPU-collateral lending model into a systemic framework for financing Nvidia's own customers.",
+      "impact": "high",
+      "entities": ["apollo", "nvidia", "nvidia-financing-coalition"],
+      "sources": [{ "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html", "publisher": "CNBC", "published": "2026-08-10", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.roic.ai/news/xai-pursues-20-billion-lease-to-own-deal-for-nvidia-gpus-through-spv-structure-10-16-2025", "publisher": "Roic News", "published": "2025-10-16", "kind": "press" },
+    { "url": "https://www.bloomberg.com/news/articles/2026-08-06/softbank-secures-10-billion-margin-loan-backed-by-openai-stake", "publisher": "Bloomberg", "published": "2026-08-06", "kind": "press" },
+    { "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html", "publisher": "CNBC", "published": "2026-08-10", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

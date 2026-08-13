@@ -1,0 +1,35 @@
+{
+  "id": "anthropic--riot-platforms--lease",
+  "from": "anthropic",
+  "to": "riot-platforms",
+  "type": "lease",
+  "status": "contracted",
+  "headline": { "value": 9.1, "unit": "USD_B", "caveat": "20-year lease for 191MW at Riot's Rockdale, TX campus through June 2048; two 5-year extension options lift potential value to $16.1B. Tenant identity is press-reported (Bloomberg) — Riot named only 'one of the world's leading frontier AI labs'. Confidence: low on counterparty, high on lease terms.", "as_of": "2026-08-11" },
+  "realized_to_date": { "value": 0, "unit": "USD_B", "caveat": "Announced Aug 11, 2026; capacity delivery is staged — 96MW by Dec 2027, full 191MW by June 2028 — so no rent has flowed.", "as_of": "2026-08-13" },
+  "term": { "announced": "2026-08-11", "start": "2027-12", "end": "2048-06", "duration_years": 20 },
+  "nature_md": "A 20-year, ~$9.1B lease of 191MW of AI data-center capacity at Riot Platforms' Rockdale, Texas campus (through June 2048; $16.1B potential with two 5-year extensions), announced Aug 11, 2026. Riot disclosed the tenant only as a leading frontier AI lab; Bloomberg identified it as Anthropic, and this record follows that attribution at LOW confidence. Riot's second AI tenant after AMD (Jan 2026), bringing its contracted book to ~241MW / ~$9.8B. Riot arranged $573M of Morgan Stanley interim financing for early construction; capacity phases in from Dec 2027 to June 2028.",
+  "accounting": {
+    "payer_treatment_md": "If Anthropic is the tenant, it would capitalize the lease (ROU asset/liability) once capacity delivers from Dec 2027 — a direct-tenancy departure from its cloud-committed compute (AWS/Google) and Fluidstack-intermediated capacity. Nothing booked yet; Anthropic has not confirmed the deal.",
+    "payee_treatment_md": "Riot books no revenue until first delivery (Dec 2027); the contracted stream backs its interim construction financing, with lease revenue recognized over the term thereafter.",
+    "off_balance_sheet": false,
+    "flags": ["customer_concentration"]
+  },
+  "related_edges": ["fluidstack--terawulf--lease", "fluidstack--cipher-mining--lease"],
+  "both_sides_md": "**Bull:** if confirmed, Anthropic going direct-to-miner shows labs disintermediating hyperscalers for capacity — and Riot re-rated ~17% in a day on the news. **Bear:** the counterparty is unconfirmed by either party; a 20-year obligation against a lab whose revenue is scaling but unprofitable is exactly the commitment-vs-capacity risk the tracker exists to flag.",
+  "observations": [],
+  "events": [
+    {
+      "date": "2026-08-11",
+      "title": "Riot announces $9.1B, 191MW Rockdale lease; Bloomberg reports tenant is Anthropic",
+      "impact": "high",
+      "entities": ["anthropic", "riot-platforms"],
+      "sources": [{ "url": "https://www.bloomberg.com/news/articles/2026-08-11/anthropic-strikes-9-billion-deal-with-cloud-computing-firm-riot", "publisher": "Bloomberg", "published": "2026-08-11", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.bloomberg.com/news/articles/2026-08-11/anthropic-strikes-9-billion-deal-with-cloud-computing-firm-riot", "publisher": "Bloomberg", "published": "2026-08-11", "kind": "press", "notes": "Source of the Anthropic identification; single-origin — treat counterparty as low confidence." },
+    { "url": "https://www.datacenterdynamics.com/en/news/riot-platforms-agrees-191mw-20-year-lease-agreement-with-anthropic-worth-91bn-report/", "publisher": "Data Center Dynamics", "published": "2026-08", "kind": "press" },
+    { "url": "https://www.cnbc.com/2026/08/11/riot-platforms-signs-anthropic-deal-as-miners-shift-to-ai-infrastructure-.html", "publisher": "CNBC", "published": "2026-08-11", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

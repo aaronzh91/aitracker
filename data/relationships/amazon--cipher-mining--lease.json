@@ -1,0 +1,26 @@
+{
+  "id": "amazon--cipher-mining--lease",
+  "from": "amazon",
+  "to": "cipher-mining",
+  "type": "lease",
+  "status": "active",
+  "headline": { "value": 5.5, "unit": "USD_B", "caveat": "15-year lease: AWS takes 300MW of turnkey space and power at Cipher's West Texas capacity (supporting the ~1GW Colchis JV); Cipher's first direct hyperscaler deal.", "as_of": "2025-11-03" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "Phased delivery began July 2026 with rent commencing Aug 2026; only initial rent has flowed.", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-11-03", "start": "2026-08", "end": "2041", "duration_years": 15 },
+  "nature_md": "AWS signed an approximately $5.5B, 15-year lease with Cipher Mining for 300MW of AI data-center capacity in West Texas, delivered in two phases (July 2026 start, completion Q4 2026, rent from Aug 2026) with air and liquid cooling to the rack. Unlike the Fluidstack leases, this is a direct hyperscaler tenancy — no intermediary or third-party backstop — marking Cipher's graduation to investment-grade counterparties.",
+  "accounting": {
+    "payer_treatment_md": "Amazon capitalizes the lease as an ROU asset/lease liability under ASC 842 as capacity is delivered (finance or operating lease depending on terms), with rent through AWS cost of sales — this one does land on Amazon's balance sheet, unlike its PPA commitments.",
+    "payee_treatment_md": "Cipher books lease revenue from Aug 2026 rent commencement and uses the AWS credit to finance the buildout; the contract diversifies it away from Fluidstack/Google concentration.",
+    "off_balance_sheet": false,
+    "flags": []
+  },
+  "related_edges": ["fluidstack--cipher-mining--lease", "amazon--talen-energy--ppa-susquehanna"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.coindesk.com/business/2025/11/03/cipher-mining-surges-19-usd5-5b-amazon-web-services-deal", "publisher": "CoinDesk", "published": "2025-11-03", "kind": "press" },
+    { "url": "https://www.datacenterdynamics.com/en/news/aws-signs-300mw-hosting-deal-to-lease-capacity-from-cipher-mining/", "publisher": "Data Center Dynamics", "published": "2025-11", "kind": "press" },
+    { "url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/nov3_earningspressreleasex.htm", "publisher": "SEC (Cipher Mining)", "published": "2025-11-03", "kind": "sec_filing" }
+  ],
+  "updated": "2026-08-13"
+}

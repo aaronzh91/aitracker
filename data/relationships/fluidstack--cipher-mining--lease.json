@@ -1,0 +1,33 @@
+{
+  "id": "fluidstack--cipher-mining--lease",
+  "from": "fluidstack",
+  "to": "cipher-mining",
+  "type": "lease",
+  "status": "active",
+  "headline": { "value": 3, "unit": "USD_B", "caveat": "10-year AI hosting agreement for 168MW at Barber Lake (Colorado City, TX), ~$3B contracted revenue; two 5-year extension options lift potential to ~$7B. A Nov 2025 add-on (~39-56MW) added ~$830M more.", "as_of": "2025-09" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "Delivery due by Sept 2026; early-stage payments/rent not separately disclosed.", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-09", "start": "2026", "end": null, "duration_years": 10 },
+  "nature_md": "Fluidstack leases 168MW of critical IT load at Cipher Mining's Barber Lake site in West Texas under a 10-year hosting agreement (~$3B initial term, ~$7B with two 5-year extensions), expanded in Nov 2025 with an additional ~$830M lease. As at TeraWulf, Fluidstack is the tenant serving the Google/Anthropic stack and Google backstops a portion of Fluidstack's obligations, taking Cipher warrants (see related backstop edge). Cipher retains full ownership of the site.",
+  "accounting": {
+    "payer_treatment_md": "Fluidstack (private) adds multi-billion lease liabilities against end-customer compute demand; its obligations are part-guaranteed by Google, which is what makes Cipher's lenders whole in a default.",
+    "payee_treatment_md": "Cipher books hosting/lease revenue from service commencement (target Sept 2026) and used the contracted stream plus Google's backstop to raise project financing for the Barber Lake buildout.",
+    "off_balance_sheet": false,
+    "flags": ["customer_concentration"]
+  },
+  "related_edges": ["alphabet--cipher-mining--backstop", "fluidstack--terawulf--lease", "amazon--cipher-mining--lease"],
+  "observations": [],
+  "events": [
+    {
+      "date": "2025-11",
+      "title": "Fluidstack expands Barber Lake lease (~$830M); Google backstop rises to $1.73B",
+      "impact": "medium",
+      "entities": ["fluidstack", "cipher-mining", "alphabet"],
+      "sources": [{ "url": "https://www.datacenterdynamics.com/en/news/fluidstack-signs-additional-39mw-lease-with-cipher-mining-in-texas-backed-by-google/", "publisher": "Data Center Dynamics", "published": "2025-11", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.theblock.co/post/372315/cipher-mining-google-backed-3-billion-usd-ai-hosting-deal", "publisher": "The Block", "published": "2025-09", "kind": "press" },
+    { "url": "https://www.sec.gov/Archives/edgar/data/1819989/000095010325012168/dp234624_ex9901.htm", "publisher": "SEC (Cipher Mining 8-K)", "published": "2025-09", "kind": "sec_filing" }
+  ],
+  "updated": "2026-08-13"
+}

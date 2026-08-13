@@ -1,0 +1,26 @@
+{
+  "id": "nvidia--nscale--equity",
+  "from": "nvidia",
+  "to": "nscale",
+  "type": "equity_investment",
+  "status": "completed",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "undisclosed participation in Nscale's $1.1B Series B (Sep 2025, led by Aker); NVIDIA also backed the later round at a $14.6B valuation (Mar 2026)", "as_of": "2025-09-25" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "NVIDIA's individual check sizes not disclosed" },
+  "term": { "announced": "2025-09-25", "start": "2025-09", "end": null, "duration_years": null },
+  "nature_md": "NVIDIA participated in Nscale's $1.1B Series B (announced Sep 25, 2025) — the largest Series B in UK/European history — led by Aker ASA ($285M) with Blue Owl managed funds, Dell, Fidelity, G Squared, Nokia, Point72, Sandton, and T.Capital. Proceeds fund Nscale's European AI-infrastructure buildout including Stargate Norway/UK sites targeting ~100K NVIDIA GPUs at Narvik before 2027. NVIDIA participated again when Nscale raised at a $14.6B valuation (Mar 2026). Equity into a neocloud whose ~$20B+ of Microsoft contracts are fulfilled with ~200K NVIDIA GB300s.",
+  "accounting": {
+    "payer_treatment_md": "Non-marketable equity investment on NVIDIA's balance sheet; another instance of equity seeding a large GPU buyer (see Nebius, CoreWeave, Nokia edges).",
+    "payee_treatment_md": "Series B equity financing — no revenue; strengthens the balance sheet against which Nscale contracts GPU supply and data-center leases for the Microsoft deployments.",
+    "off_balance_sheet": false,
+    "flags": ["equity_for_revenue"]
+  },
+  "related_edges": ["microsoft--nscale--compute", "nvidia--nebius--equity"],
+  "observations": [],
+  "events": [],
+  "sources": [
+    { "url": "https://www.cnbc.com/2025/09/25/nvidia-backed-uk-ai-firm-nscale-raises-1point1-billion-funding-round.html", "publisher": "CNBC", "published": "2025-09-25", "kind": "press" },
+    { "url": "https://www.datacenterdynamics.com/en/news/ai-data-center-firm-nscale-raises-11bn-from-backers-including-aker-nokia-and-nvidia/", "publisher": "Data Center Dynamics", "published": "2025-09", "kind": "press" },
+    { "url": "https://www.cnbc.com/2026/03/09/nscale-ai-data-center-nvidia-raise.html", "publisher": "CNBC", "published": "2026-03-09", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,113 @@
+{
+  "id": "nebius",
+  "name": "Nebius Group N.V.",
+  "kind": "public_company",
+  "category": "neocloud",
+  "group": "hyperscalers_clouds",
+  "region": "europe",
+  "tier": 1,
+  "tickers": [{ "exchange": "NASDAQ", "symbol": "NBIS" }],
+  "cik": "1513845",
+  "website": "https://nebius.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Rents Nvidia GPU cloud capacity under multi-year contracts — ~$46B contracted with Microsoft and Meta — while scaling capex far ahead of current revenue.",
+  "description_md": "Nebius Group (Amsterdam-headquartered, NASDAQ-listed; the ex-Yandex international business) is Europe's flagship neocloud. In under a year it signed ~$46B of contracted business: up to $19.4B with Microsoft (Sep 2025, five years) and up to $27B with Meta (Mar 2026, five years: $12B dedicated capacity plus up to $15B of additional committed purchases). Nvidia is both its key supplier and a ~$2B equity investor. 2026 guidance: revenue $3.0–3.4B, ARR run-rate $7–9B by year-end, and capex raised from $16–20B to $20–25B on demand — a build program several times current revenue, funded by equity, converts, and vendor-aligned capital.",
+  "ai_monetization_md": "AI-infrastructure-as-a-service on Nvidia fleets across US and European datacenters (plus adjacent businesses: Toloka data services, TripleTen, Avride autonomy). Revenue is dominated by two anchor take-or-pay-style contracts — Microsoft (up to $19.4B) and Meta (up to $27B) — which convert into recognized revenue as capacity is delivered; 2026 revenue guidance of $3.0–3.4B against ~$46B contracted illustrates the multi-year conversion lag. The Nvidia investment (~$2B, Mar 2026) aligns supply access but adds an equity_for_revenue-adjacent loop: the investor's money helps fund purchases of the investor's chips.",
+  "ai_strategy_md": "Convert credibility from the two mega-contracts into a diversified customer base before concentration hardens: build fast (capex guide $20–25B for 2026), keep Nvidia alignment for allocation on new architectures, and use the Amsterdam/Europe footprint as a sovereignty selling point for EU AI workloads. The strategic tension is deliberate: accept extreme two-customer concentration now in exchange for scale economics that smaller neoclouds cannot reach, then broaden into enterprise/inference demand.",
+  "risk_notes_md": "**Customer concentration:** Microsoft and Meta account for the overwhelming majority of the ~$46B contracted backlog; both counterparties have in-house capacity programs and could deprioritize renewals — headline contract values are also 'up to' ceilings, not guaranteed floors (the $27B Meta deal includes $15B of optional additional purchases). **Funding gap:** $20–25B of 2026 capex against $3.0–3.4B of 2026 revenue requires continuous external funding; execution or capital-market disruption directly hits delivery obligations. **Supplier circularity:** Nvidia is supplier and investor (~$2B). **Note:** headline backlog (~$46B) is committed, not realized — realized-to-date sits in quarterly revenue disclosures.",
+  "observations": [
+    {
+      "metric": "contract_value",
+      "metric_label": "Microsoft compute contract (up to, 5 years)",
+      "period": "2025-09",
+      "value": 19.4,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "high",
+      "source": { "url": "https://www.fool.com/investing/2026/03/16/this-ai-stock-has-a-194-billion-microsoft-deal-a-3/", "publisher": "The Motley Fool", "title": "This AI Stock Has a $19.4 Billion Microsoft Deal ... and Now a $2 Billion Nvidia Investment", "published": "2026-03-16", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Signed Sep 2025; five-year term. Headline ceiling, not realized revenue."
+    },
+    {
+      "metric": "contract_value",
+      "metric_label": "Meta compute contract (up to, 5 years)",
+      "period": "2026-03",
+      "value": 27,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926027886/tm268879d1_ex99-1.htm", "publisher": "SEC / Nebius 6-K", "published": "2026-03", "kind": "sec_filing" },
+      "as_of": "2026-08-13",
+      "notes": "$12B dedicated capacity + committed additional purchases up to ~$15B. Announced Mar 16, 2026; NBIS +14% on the news."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "CY2026",
+      "value": 3.2,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926027886/tm268879d1_ex99-1.htm", "publisher": "SEC / Nebius 6-K", "published": "2026-03", "kind": "sec_filing" },
+      "as_of": "2026-08-13",
+      "notes": "Guidance midpoint ($3.0–3.4B range); ARR run-rate guided to $7–9B exiting 2026."
+    },
+    {
+      "metric": "capex_guidance",
+      "period": "CY2026",
+      "value": 22.5,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://app.dealroom.co/news/feed/nebius-hikes-2026-capex-guidance-to-25b-signs-27b-meta-deal", "publisher": "Dealroom", "title": "Nebius hikes 2026 capex guidance to $25B, signs $27B Meta deal", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Midpoint of $20–25B range, raised from $16–20B on demand. ~7x guided 2026 revenue — the funding-gap metric to watch."
+    },
+    {
+      "metric": "funding_raised",
+      "metric_label": "Nvidia equity investment",
+      "period": "2026-03",
+      "value": 2,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.fool.com/investing/2026/03/16/this-ai-stock-has-a-194-billion-microsoft-deal-a-3/", "publisher": "The Motley Fool", "published": "2026-03-16", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Supplier-investor alignment; part of Nvidia's >$40B 2026 ecosystem equity program."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-09",
+      "title": "Signs up-to-$19.4B five-year AI capacity deal with Microsoft",
+      "why_it_matters": "The contract that moved Nebius from challenger to Tier-1 neocloud; Microsoft outsources capacity it cannot build fast enough.",
+      "impact": "high",
+      "entities": ["nebius", "microsoft"],
+      "sources": [{ "url": "https://www.fool.com/investing/2026/03/16/this-ai-stock-has-a-194-billion-microsoft-deal-a-3/", "publisher": "The Motley Fool", "published": "2026-03-16", "kind": "press" }]
+    },
+    {
+      "date": "2026-03-16",
+      "title": "Signs up-to-$27B five-year deal with Meta; Nvidia invests ~$2B",
+      "why_it_matters": "Takes contracted business to ~$46B and adds a second anchor tenant — while deepening the supplier-investor loop with Nvidia.",
+      "impact": "high",
+      "entities": ["nebius", "meta", "nvidia"],
+      "sources": [
+        { "url": "https://www.cnbc.com/2026/03/16/meta-nebius-ai-infrastructure.html", "publisher": "CNBC", "published": "2026-03-16", "kind": "press" },
+        { "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926027886/tm268879d1_ex99-1.htm", "publisher": "SEC / Nebius 6-K", "published": "2026-03", "kind": "sec_filing" }
+      ]
+    },
+    {
+      "date": "2026",
+      "title": "Raises 2026 capex guidance to $20–25B citing demand",
+      "why_it_matters": "Confirms the build-ahead-of-revenue model and enlarges the external funding requirement.",
+      "impact": "medium",
+      "entities": ["nebius"],
+      "sources": [{ "url": "https://app.dealroom.co/news/feed/nebius-hikes-2026-capex-guidance-to-25b-signs-27b-meta-deal", "publisher": "Dealroom", "published": "2026", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926027886/tm268879d1_ex99-1.htm", "publisher": "SEC / Nebius 6-K", "kind": "sec_filing" },
+    { "url": "https://www.cnbc.com/2026/03/16/meta-nebius-ai-infrastructure.html", "publisher": "CNBC", "published": "2026-03-16", "kind": "press" },
+    { "url": "https://www.fool.com/investing/2026/04/19/nebius-has-landed-46-billion-in-ai-cloud-deals-cou/", "publisher": "The Motley Fool", "published": "2026-04-19", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

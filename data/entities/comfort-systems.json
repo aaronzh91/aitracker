@@ -1,0 +1,82 @@
+{
+  "id": "comfort-systems",
+  "name": "Comfort Systems USA, Inc.",
+  "kind": "public_company",
+  "category": "engineering_construction",
+  "group": "physical_infrastructure",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NYSE", "symbol": "FIX" }],
+  "cik": "1035983",
+  "website": "https://www.comfortsystemsusa.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Installs the mechanical and electrical guts of data centers — HVAC, piping, modular builds, electrical — with technology customers now ~58% of revenue and a record $14.1B backlog.",
+  "description_md": "Comfort Systems USA is a national mechanical and electrical contractor (HVAC, plumbing, piping, controls, and electrical services, plus off-site modular construction) that has become one of the purest listed plays on data-center construction labor. Technology customers — dominated by data centers for hyperscale cloud providers — supplied 58.7% of Q2 2026 revenue, and the backlog of $14.1B (+73% y/y) is primarily technology-driven. Its modular/off-site fabrication capability is a differentiator in compressing hyperscaler build timelines.",
+  "ai_monetization_md": "AI monetizes as construction billings: Q2 2026 revenue reached a record $3.27B (+50% y/y) with net income up 91% to $441.6M, driven by data-center mechanical and electrical work. New construction was 75.1% of revenue. Like Quanta, Comfort Systems is paid for skilled labor and execution rather than equipment, so its results track physical buildout activity directly — and its 73% backlog growth is among the strongest demand signals in the construction tier. The company holds a net cash position above $1.8B, funding acquisitions and buybacks.",
+  "ai_strategy_md": "Concentrate where the labor shortage bites: keep winning hyperscale data-center mechanical/electrical scopes, expand modular off-site construction (which economizes scarce field labor), and roll up regional specialty contractors with the balance-sheet room its net cash provides. Management leans into technology-sector mix rather than diversifying away from it.",
+  "risk_notes_md": "Customer and end-market concentration: ~58% of revenue from technology/data centers means an AI construction pause would hit revenue and the multiple simultaneously — backlog can be re-phased by the same few hyperscale customers who drove it up. Skilled-labor availability limits growth and raises wage-inflation risk on fixed-price work. The stock's re-rating embeds continuation of 50%-class revenue growth that is historically anomalous for a mechanical contractor.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Total backlog (record)",
+      "period": "FY2026-Q2",
+      "value": 14.1,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.investing.com/news/company-news/comfort-systems-q2-2026-slides-revenue-tops-3b-backlog-hits-14b-93CH-4812234", "publisher": "Investing.com (Q2 2026 slides)", "published": "2026-07", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "+73% y/y, primarily technology (data-center) sector."
+    },
+    {
+      "metric": "revenue_segment",
+      "metric_label": "Technology customers' share of revenue",
+      "period": "FY2026-Q2",
+      "value": 58.7,
+      "unit": "pct",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.investing.com/news/company-news/comfort-systems-q2-2026-slides-revenue-tops-3b-backlog-hits-14b-93CH-4812234", "publisher": "Investing.com (Q2 2026 slides)", "published": "2026-07", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Next largest: manufacturing 16.4%, healthcare 7.1%. Technology is overwhelmingly data-center construction."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "FY2026-Q2",
+      "value": 3.27,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.tradingview.com/news/zacks:9d3a1681e094b:0-comfort-systems-q2-earnings-revenues-beat-estimates-backlog-up-y-y/", "publisher": "Zacks via TradingView", "published": "2026-07", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "+50% y/y record; net income $441.6M (+91%); EPS $12.53; new construction 75.1% of revenue."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Net cash position",
+      "period": "FY2026-Q2",
+      "value": 1.8,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-comfort-systems-usa-tops-q2-2026-estimates-stock-slips-93CH-4812224", "publisher": "Investing.com (earnings call)", "published": "2026-07", "kind": "earnings_call" },
+      "as_of": "2026-08-13",
+      "notes": "Over $1.8B net cash; earmarked for acquisitions and opportunistic buybacks."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-07",
+      "title": "Q2 2026: revenue +50% to a record $3.27B; backlog $14.1B (+73%)",
+      "why_it_matters": "A mechanical/electrical contractor compounding at hyperscaler speed — direct evidence that data-center construction labor is scarce enough to reprice an entire industry tier.",
+      "impact": "medium",
+      "entities": ["comfort-systems"],
+      "sources": [{ "url": "https://www.investing.com/news/company-news/comfort-systems-q2-2026-slides-revenue-tops-3b-backlog-hits-14b-93CH-4812234", "publisher": "Investing.com", "published": "2026-07", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.investing.com/news/company-news/comfort-systems-q2-2026-slides-revenue-tops-3b-backlog-hits-14b-93CH-4812234", "publisher": "Investing.com", "kind": "press" },
+    { "url": "https://www.tradingview.com/news/zacks:9d3a1681e094b:0-comfort-systems-q2-earnings-revenues-beat-estimates-backlog-up-y-y/", "publisher": "Zacks via TradingView", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

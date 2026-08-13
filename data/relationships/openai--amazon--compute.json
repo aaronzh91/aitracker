@@ -1,0 +1,41 @@
+{
+  "id": "openai--amazon--compute",
+  "from": "openai",
+  "to": "amazon",
+  "type": "compute_purchase",
+  "status": "active",
+  "headline": { "value": 138, "unit": "USD_B", "caveat": "$38B over 7 years (Nov 2025) + $100B over 8 years expansion agreed alongside Amazon's $50B equity (2026)", "as_of": "2026-02" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "consumption began immediately in Nov 2025 on existing AWS capacity; amounts consumed not disclosed", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-11-03", "start": "2025-11", "end": "2033", "duration_years": 8 },
+  "nature_md": "OpenAI's first non-Microsoft hyperscaler contract, signed Nov 3, 2025 days after Azure exclusivity ended: $38B over ~7 years for AWS compute — hundreds of thousands of NVIDIA GB200/GB300 GPUs in EC2 UltraServer clusters, with capacity targeted for full deployment by end-2026 and expansion into 2027+. Expanded by a further $100B over 8 years as part of the Feb 2026 round in which Amazon invested $50B in OpenAI (completed Jul 31, 2026) — equity and compute contracted together. Makes Amazon simultaneously OpenAI's shareholder, supplier, and (via Bedrock model distribution) channel partner.",
+  "accounting": {
+    "payer_treatment_md": "Compute purchase commitment expensed as consumed; adds ~$138B to OpenAI's stack of forward obligations across Microsoft ($250B), Oracle (~$300B), CoreWeave (~$22.4B), and others — all payable from capital not yet raised.",
+    "payee_treatment_md": "AWS books revenue as consumed and the commitment into backlog (AWS backlog ~$496B mid-2026). Amazon's $50B equity stake means a portion of OpenAI's payments are funded, at one remove, by Amazon's own investment — the round-trip pattern, though the contracts predate and exceed the equity.",
+    "off_balance_sheet": false,
+    "flags": ["round_trip_cloud", "commitment_unfunded"]
+  },
+  "related_edges": ["amazon--openai--equity-2026", "openai--microsoft--azure-commit", "openai--oracle--compute-2025"],
+  "observations": [],
+  "events": [
+    {
+      "date": "2025-11-03",
+      "title": "OpenAI signs $38B/7yr AWS compute deal — first non-Microsoft hyperscaler contract",
+      "impact": "high",
+      "entities": ["openai", "amazon"],
+      "sources": [{ "url": "https://www.aboutamazon.com/news/aws/aws-openai-workloads-compute-infrastructure", "publisher": "Amazon", "published": "2025-11-03", "kind": "company_pr" }]
+    },
+    {
+      "date": "2026-02",
+      "title": "$100B/8yr AWS expansion agreed alongside Amazon's $50B equity investment",
+      "impact": "high",
+      "entities": ["openai", "amazon"],
+      "sources": [{ "url": "https://www.pymnts.com/news/artificial-intelligence/2026/amazon-completes-50-billion-dollar-investment-openai/", "publisher": "PYMNTS", "published": "2026-08", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.aboutamazon.com/news/aws/aws-openai-workloads-compute-infrastructure", "publisher": "Amazon", "published": "2025-11-03", "kind": "company_pr" },
+    { "url": "https://www.pymnts.com/news/artificial-intelligence/2026/amazon-completes-50-billion-dollar-investment-openai/", "publisher": "PYMNTS", "published": "2026-08", "kind": "press" },
+    { "url": "https://www.citybiz.co/article/882621/amazon-completes-50b-openai-investment-finalizing-35b-funding-tranche/", "publisher": "citybiz", "published": "2026-08", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

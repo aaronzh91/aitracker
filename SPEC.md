@@ -212,14 +212,16 @@ Sortable/filterable by category, group, region, and tier; a row expands to show 
 
 Terminal-style profile, in order:
 
-1. **Header:** name, category, ticker(s), market cap/valuation, one-line monetization summary.
-2. **Description** (CapIQ/Bloomberg-style business summary).
-3. **Summary financials table:** revenue, gross margin, opex, net income, capex, FCF, cash & debt — last 4–8 quarters + FY, from XBRL where public; press-sourced for private cos. Basis badges throughout.
-4. **AI breakdown:** AI revenue (disclosed segments where they exist, estimates elsewhere), AI-related capex, AI P&L attribution attempt with method, backlog/RPO where relevant, depreciation policy for compute assets (useful-life assumption — a load-bearing number in the bear case).
-5. **AI strategy narrative** with sources.
-6. **Money flows:** this company's edges as a mini-graph + table (in/out, type, value, counterparty), each linking to its relationship page.
-7. **Risk notes:** concentration, circular exposure, financing dependencies — factual, sourced.
-8. **Timeline** of events; **changelog** of edits to this page (git-derived).
+1. **Header:** name, category, ticker(s), market cap/valuation (live via API Ninjas), one-line monetization summary.
+2. **Investor synthesis (AI-generated, clearly labeled):** a short brief (~200–300 words) of what an investor should know right now, synthesized from four defined inputs — key financials, latest SEC filings, the most recent earnings call, and the impact-filtered recent news below. Written from an investor's perspective: what changed, what matters, what to watch. Trust treatment: prominently labeled as AI-generated with generation date; the four inputs listed and linked; regenerated in the weekly run whenever an input changes; ships through the weekly editorial PR like all narrative content; obeys the NPOV rules (§12) — no buy/sell language, contested judgments attributed, both-sides where disputed.
+3. **Description** (CapIQ/Bloomberg-style business summary).
+4. **Summary financials table:** revenue, gross margin, opex, net income, capex, FCF, cash & debt — last 4–8 quarters + FY, from XBRL where public (API Ninjas cross-check); press/Epoch-sourced for private cos. Basis badges throughout.
+5. **AI breakdown:** AI revenue (disclosed segments where they exist, estimates elsewhere), AI-related capex, AI P&L attribution attempt with method, backlog/RPO where relevant, depreciation policy for compute assets (useful-life assumption — a load-bearing number in the bear case).
+6. **AI strategy narrative** with sources.
+7. **Money flows:** this company's edges as a mini-graph + table (in/out, type, value, counterparty), each linking to its relationship page.
+8. **Risk notes:** concentration, circular exposure, financing dependencies — factual, sourced.
+9. **Key developments (impact-filtered news):** the most important recent news on the company, behind a **strict impact filter** so noise never makes the page. An item qualifies only if it (a) changes a number we track (revenue, capex, deal value, guidance), (b) creates, modifies, or kills a money-flow edge, (c) materially affects counterparty or credit risk, (d) is a management/strategy inflection, or (e) is a regulatory/legal action with financial consequence. Explicitly excluded: product reviews, minor feature launches, daily stock-move stories, opinion/listicle content. Mechanically: the OpenRouter triage layer (§7 step 2) scores every candidate item against this rubric; only top-scoring items survive into the weekly editorial PR, where they are confirmed and stored as Event records (§3.4) with date, one-line "why it matters," and source — so filtered news and the company timeline are one system, not two. The page shows the last ~5–10 qualifying items; older ones remain in the timeline archive.
+10. **Timeline** of all events; **changelog** of edits to this page (git-derived).
 
 ### 4.3 Relationship page (`/flows/<id>`)
 
@@ -308,8 +310,8 @@ The product commitment: **every Saturday evening the data is reconciled against 
 Pipeline per run:
 
 1. **Mechanical ingest (scripted, auto-mergeable):** pull latest quarterly XBRL facts (revenue, capex, RPO, segments) from SEC EDGAR for all public tracked entities; refresh prices/market caps for the full ticker universe via **API Ninjas**; fetch new 8-K/10-Q/10-K filings list since last run. These are schema-validated numeric refreshes from sources of record — they merge automatically when validation passes.
-2. **News sweep with LLM triage (scripted):** GDELT/Google News queries per entity and per live deal → dedupe → a **cheap OpenRouter model** classifies and extracts candidate facts (deal announced/changed, amounts, parties, accounting hints) into structured nominations with the source article attached. Nominations never write to data directly — they feed step 3. Quality bar: extraction prompts demand quotes + URLs; anything the model can't ground gets dropped, not guessed.
-3. **Editorial review (agentic + human):** a scheduled Claude session reviews the week's nominations and new filings against the dataset, drafts the actual data updates — new edges, revised observations, new events, each with sources and confidence — and opens a **pull request**. The project owner (initially; maintainers later, §12) reviews and merges. High-quality information is the product; nothing editorial ships unreviewed.
+2. **News sweep with LLM triage (scripted):** GDELT/Google News queries per entity and per live deal → dedupe → a **cheap OpenRouter model** classifies and extracts candidate facts (deal announced/changed, amounts, parties, accounting hints) into structured nominations with the source article attached, and **scores each item against the impact rubric** (§4.2 item 9) — only high-impact items proceed; noise dies here. Nominations never write to data directly — they feed step 3. Quality bar: extraction prompts demand quotes + URLs; anything the model can't ground gets dropped, not guessed.
+3. **Editorial review (agentic + human):** a scheduled Claude session reviews the week's nominations and new filings against the dataset, drafts the actual data updates — new edges, revised observations, new events (impact-filtered news becomes Event records), each with sources and confidence — **regenerates the investor synthesis (§4.2 item 2) for every company whose inputs changed** (using a stronger model tier than triage — synthesis quality is user-facing), and opens a **pull request**. The project owner (initially; maintainers later, §12) reviews and merges. High-quality information is the product; nothing editorial ships unreviewed.
 4. **Validation (CI, on every PR):** JSON Schema, referential integrity (edges point at real entities), basis rules (no `estimated` without documented method), link liveness, cycle-flag reconciliation.
 5. **Derive + build + changelog:** analytics engine, site build, human-readable changelog entry; merge → CI deploys. The commit message is the changelog summary.
 
@@ -350,7 +352,7 @@ This section lists the **Tier-1 core**: the entities and edges that get full han
 - **SPVs / JVs (first-class nodes):** Stargate LLC (SoftBank ~40% / OpenAI ~40% / Oracle+MGX ~20%; $500B target), Hyperion JV (Meta 20% / Blue Owl 80%; $27B bonds), Meta El Paso SPV ($12.5B, BlackRock-led), xAI GPU SPV (~$20B: Valor equity anchor, Nvidia ≤$2B, ~$12.5B debt via Apollo/Diameter), AI Infrastructure Partnership (BlackRock/GIP + Microsoft + MGX + Nvidia + xAI).
 - **Financial players:** SoftBank (>$60B into OpenAI; sold entire Nvidia stake to fund it), MGX, Blue Owl, PIMCO (~$18B Hyperion bonds), BlackRock/GIP, Apollo, Blackstone, Brookfield, KKR, Goldman Sachs, JPMorgan (co-lead $38B Vantage project debt), Morgan Stanley (arranged Hyperion; forecasts ~$570B AI debt issuance in 2026), MUFG, Valor Equity, Bank of America (OpenAI's first bank line, $520M).
 
-### 9.2 Seed edges (~40, grouped by cluster)
+### 9.2 Seed edges (~100, grouped by cluster)
 
 **OpenAI cluster** — the densest node:
 | Flow | Type | Headline |
@@ -406,8 +408,80 @@ This section lists the **Tier-1 core**: the entities and edges that get full han
 | Nvidia → Intel | equity | $5B |
 | Nvidia → Nokia/Lumentum/Coherent/Synopsys/Nebius/Nscale | equity | ~$1–2B each; >$40B total 2026 commitments |
 | Microsoft → CoreWeave/Nebius/Lambda/Nscale | compute contracts | ~$60B+ across the four |
-| CoreWeave → debt markets | GPU-backed + unsecured debt | ~$30B total; spreads +125bp Aug 2026 |
+| CoreWeave → debt markets | GPU-backed + unsecured debt | ~$30B total (incl. $7.6B GPU-backed DDTL 2.0); spreads +125bp Aug 2026 |
 | OpenAI-linked developers → debt markets | project debt | ~$100B accumulated |
+
+**Power & energy** — where the buildout meets the physical world:
+| Flow | Type | Headline |
+|---|---|---|
+| Amazon → Talen | nuclear PPA | **$18B**/17yr, up to 1,920MW Susquehanna — the one nuclear PPA with a disclosed price |
+| Microsoft → Constellation | nuclear PPA | 20yr, 835MW Three Mile Island/Crane restart (online 2027–28) |
+| Meta → Constellation / Vistra | nuclear PPAs | 1,121MW Clinton + **>2,600MW** across Vistra PJM fleet |
+| Amazon → Vistra | nuclear PPA | 20yr, up to 1,200MW Comanche Peak |
+| Google → NextEra | PPA + restart funding | 25yr, 615MW Duane Arnold restart |
+| Google → Kairos / Commonwealth Fusion | SMR/fusion PPAs | 500MW SMR fleet by 2035; 200MW fusion (2030s) |
+| Google + TPG → Intersect Power | equity/JV | **$20B** co-located power+DC parks by 2030 |
+| Fluidstack → TeraWulf / Cipher Mining | leases (serving Google/Anthropic stack) | ~$3.7B→$8B+ (TeraWulf); ~$3B (Cipher) — miners-turned-AI |
+| Google → TeraWulf / Cipher | lease backstops + warrants | ~$3.2B + $1.4B backstops, ~14% / ~5.4% equity — off-balance-sheet contingent |
+| xAI ↔ Solaris Energy | power JV | 50.1/49.9; ~400MW turbines → >1.1GW by 2027 (Memphis Colossus) |
+
+**Sovereign & international** (details in `UNIVERSE.md` §7.9): Humain↔Nvidia (600K GPUs) / AMD ($10B) / AWS / xAI ($3B equity + 500MW JV); Microsoft→G42 ($1.5B + $15.2B UAE program); Stargate UAE (1GW; first 200MW live Feb 2026), Norway, Korea (Samsung/SK: up to 900K DRAM wafers/mo ≈ 40% of global output — analyst est. >$70B through 2029), India (TCS 100MW→1GW), Argentina ($25B LOI, UNVERIFIED); Microsoft→UK $30B; Nvidia→UK ~$17B; Google→India $15B; ASML→Mistral €1.3B; SoftBank→Ampere $6.5B; EU gigafactories ~€10B public tender.
+
+**M&A with AI rationale:**
+| Flow | Type | Headline |
+|---|---|---|
+| Meta → Scale AI | quasi-M&A | $14.3B for 49% non-voting |
+| SpaceX → xAI | merger | all-stock at $250B; combined $1.25T (Feb 2026) |
+| SpaceX/xAI → Anysphere (Cursor) | M&A | **$60B all-stock** (agreed Jun 2026) — largest VC-backed startup acquisition ever |
+| OpenAI → io / Statsig / Neptune.ai / Torch Health / others | M&A | ~$6.5B / $1.1B / <$400M / ~$100M |
+| Google → Windsurf leadership / Wiz | license-hire / M&A | ~$2.4B (after OpenAI's ~$3B deal failed) / $32B |
+| AMD → ZT Systems | M&A | $4.9B (mfg arm resold ~$3B) |
+| Nvidia → Run:ai / Enfabrica / Lepton | M&A / license-hire | ~$700M / >$900M / undisclosed |
+| CoreWeave → W&B / Core Scientific | M&A / failed M&A | ~$1.7B / $9B rejected by shareholders |
+| Salesforce → Informatica; ServiceNow → Moveworks; IBM → HashiCorp; Databricks → Mosaic/Tabular/Neon | M&A | $8B; $2.85B; $6.4B; ~$4.3B combined |
+| Tesla → unnamed AI-hardware co | M&A | $1.95B stock, disclosed only in a 10-Q footnote (UNVERIFIED interpretation) |
+
+**App layer, model access & government** — where AI revenue quality gets tested:
+| Flow | Type | Headline |
+|---|---|---|
+| Apple → Google | model license | **~$1B/yr** for 1.2T-param Gemini powering Siri (confirmed Jan 2026) |
+| Snowflake → Anthropic + OpenAI | model access | $200M multi-year each |
+| Intuit → OpenAI | model access | >$100M multi-year |
+| Disney → OpenAI | equity + IP license — **withdrawn** | $1B announced Dec 2025, pulled Mar 2026, $0 delivered — a cautionary edge for commitment-vs-realized |
+| DoD → OpenAI/Anthropic/Google/xAI | contracts | up to $200M each (OpenAI: only ~$2M obligated at award — ceiling ≠ revenue) |
+| US Govt ✕ Anthropic | **negative edge** | Feb 2026: federal agencies ordered off Anthropic products; DoD supply-chain designation — kills its federal pipeline |
+| Pentagon ↔ OpenAI | classified-systems deal | terms sealed (Feb 2026, revised Mar 2026) |
+| GSA OneGov → OpenAI/Anthropic/Google | loss-leader distribution | $1 / $1 / $0.47 per agency |
+| SAP + OpenAI + Microsoft | sovereign platform | "OpenAI for Germany" on Delos Cloud (~4,000 GPUs) |
+| Meta → Google Cloud | compute contract | **>$10B/6yr** — hyperscaler renting a rival's cloud |
+| ByteDance/TikTok → Oracle OCI | cloud contract | ~$800M FY2025 (~5% of OCI) |
+
+**Chips, memory & foundry supply:**
+| Flow | Type | Headline |
+|---|---|---|
+| US Government → Intel | equity | **$8.9B for ~10%** (converted CHIPS grants, Aug 2025); + SoftBank $2B; Intel $15B stock sale planned (Aug 2026, UNVERIFIED) |
+| Tesla → Samsung Foundry | supply | $16.5B AI6 chips through 2033 |
+| Nvidia → TSMC | wafer/packaging commitments | ~60% of 2026 CoWoS capacity booked; drives TSMC 2026 capex to $60–64B |
+| Nvidia → SK Hynix / Samsung / Micron | HBM supply | sold out through 2026; ~⅔ of HBM4 from SK Hynix; customers prepaying (contract $ undisclosed) |
+| xAI → Dell / HPE / Supermicro | server contracts | >$5B Dell; ~$1B HPE (X); ~$6B shifted from SMCI |
+| Hyperscalers → Dell / Foxconn | AI server flows | Dell AI backlog $51.3B; Foxconn AI servers >51% of Q2-26 revenue |
+
+**Structured finance & new-lab funding:**
+| Flow | Type | Headline |
+|---|---|---|
+| Oracle → bond markets | debt | $18B (Sep 2025) + $25B (Feb 2026) + ~$25B equity planned |
+| PIMCO et al. → Related Digital/Oracle (Saline Twp MI) | project debt | **$16.3B single-facility** — largest single-DC debt package; US banks pulled back, PIMCO anchored ~$10B (UNVERIFIED) |
+| Blue Owl/Crusoe/Primary Digital → Stargate Abilene JV | project finance | $15B JV; JPMorgan-led $2.3B + $7.1B construction loans |
+| Vantage → Frontier campus (TX) | DC development | $25B, 1.4GW for OpenAI/Oracle |
+| Banks → OpenAI | revolver | $4.7B unsecured, undrawn |
+| CoreWeave → Applied Digital / Galaxy Digital | leases | ~$11–16B (Polaris Forge); >$1B/yr Helios (Galaxy funded via $3.5B junk bonds) |
+| Investors → xAI | debt + equity | $5B debt (2025) + $20B Series E at $230B (Jan 2026: Nvidia, Cisco, Valor, Fidelity, QIA, MGX) |
+| Alphabet/Nvidia → SSI | equity | $2B at $32B (2025); Nvidia $5B (Jul 2026, single-sourced) — was Google Cloud's largest TPU customer, shifting to GPUs |
+| Investors → Thinking Machines / Reflection AI | equity | $2B seed at $12B; $2B at $8B (Nvidia-led, open-frontier play; talks at ~$25B) |
+
+### 9.2b Known data gaps (represented honestly, not papered over)
+
+Where public data doesn't exist, relationship pages show "undisclosed" with what *is* known: nuclear PPA prices (only Talen's $18B is on record), Humain contract dollars (GPU counts/MW only), Apple's AI compute spend, per-token economics of model-access deals (Microsoft↔Anthropic Copilot, Salesforce↔Anthropic), Nvidia↔HBM/TSMC contract values, Broadcom's ASIC contract splits, most Stargate site-level SPV stacks, the Pentagon–OpenAI classified deal, Fluidstack's own balance sheet, and the identity of Tesla's $1.95B AI-hardware target. An explicit "what we don't know" section is itself a trust feature.
 
 ### 9.3 Why weekly updates are the product (evidence from Feb–Aug 2026 alone)
 
@@ -514,6 +588,7 @@ What exists today (surveyed Aug 2026):
 7. **Open source** — from day one; owner as initial sole reviewer/approver, maintainer ladder as it scales (§12). ✓
 8. **Market data** — API Ninjas (owner-supplied key); **news/web extraction** — cheap OpenRouter models (owner-supplied key), quality-first configuration (§8). ✓
 9. **Supply-chain bottlenecks** — discovery, visualization, and in-depth understanding of key chokepoints added as a core cross-audience use case: first-class records (§3.6), graph lens (§4.1), dedicated pages (§4.5), concentration analytics (§5). ✓
+10. **Company pages: impact-filtered news + investor synthesis** — each company page carries the most important recent news behind a strict impact filter (rubric in §4.2 item 9; noise excluded mechanically), and a short, clearly-labeled AI synthesis of the company from an investor's perspective built from key financials, SEC filings, the latest earnings call, and the filtered news — regenerated weekly, reviewed before merge. ✓
 
 **Still open:**
 

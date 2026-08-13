@@ -1,0 +1,42 @@
+{
+  "id": "mitsubishi-heavy",
+  "name": "Mitsubishi Heavy Industries",
+  "kind": "public_company",
+  "category": "turbines_gensets",
+  "group": "energy",
+  "region": "japan",
+  "tier": 2,
+  "tickers": [{ "exchange": "TSE", "symbol": "7011" }],
+  "website": "https://www.mhi.com",
+  "monetization": "One of three global heavy-duty gas-turbine makers; sells turbines and long-term service into US/Asian data-center power demand.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Gas-turbine order pace vs. prior years",
+      "period": "FY2026",
+      "value": 2,
+      "unit": "x",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.energytech.com/data-center-power/article/55329126/strong-us-and-asian-data-center-orders-propel-mitsubishi-heavy-industries-in-energy-sector", "publisher": "EnergyTech", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Gas-turbine contracts running at more than twice the prior pace on US/Asian data-center orders."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Planned gas-turbine manufacturing capacity (multiple of current)",
+      "period": "by FY2030",
+      "value": 2,
+      "unit": "x",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.utilitydive.com/news/mitsubishi-gas-turbine-manufacturing-capacity-expansion-supply-demand/759371/", "publisher": "Utility Dive", "published": "2025", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Doubling gas-turbine manufacturing capacity; press reports differ on window (next two years vs. by FY2030)."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.energytech.com/data-center-power/article/55329126/strong-us-and-asian-data-center-orders-propel-mitsubishi-heavy-industries-in-energy-sector", "publisher": "EnergyTech", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

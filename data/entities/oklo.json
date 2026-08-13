@@ -1,0 +1,29 @@
+{
+  "id": "oklo",
+  "name": "Oklo Inc.",
+  "kind": "public_company",
+  "category": "nuclear_smr",
+  "group": "energy",
+  "region": "us",
+  "tier": 2,
+  "tickers": [{ "exchange": "NYSE", "symbol": "OKLO" }],
+  "website": "https://oklo.com",
+  "monetization": "Pre-revenue SMR developer selling power (not reactors) under long-term agreements; data-center operators are the anchor customer class.",
+  "observations": [
+    {
+      "metric": "capacity_gw",
+      "period": "pipeline@2026",
+      "value": 14,
+      "unit": "GW",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://oklo.com/newsroom/news-details/2024/Oklo-and-Switch-Form-Landmark-Strategic-Relationship-to-Deploy-12-Gigawatts-of-Advanced-Nuclear-Power-One-of-the-Largest-Corporate-Clean-Power-Agreements-Ever-Signed/default.aspx", "publisher": "Oklo PR", "published": "2024-12", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "~14GW customer pipeline incl. 12GW Switch master agreement — non-binding master agreements, not delivered capacity; first Aurora plant still pre-operational."
+    }
+  ],
+  "sources": [
+    { "url": "https://oklo.com/newsroom/news-details/2024/Oklo-and-Switch-Form-Landmark-Strategic-Relationship-to-Deploy-12-Gigawatts-of-Advanced-Nuclear-Power-One-of-the-Largest-Corporate-Clean-Power-Agreements-Ever-Signed/default.aspx", "publisher": "Oklo PR", "published": "2024-12", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

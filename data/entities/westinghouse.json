@@ -1,0 +1,30 @@
+{
+  "id": "westinghouse",
+  "name": "Westinghouse Electric Company",
+  "kind": "private_company",
+  "category": "nuclear_smr",
+  "group": "energy",
+  "region": "us",
+  "tier": 2,
+  "website": "https://www.westinghousenuclear.com",
+  "monetization": "Sells AP1000/AP300 reactors, nuclear fuel, and services; owned by Brookfield (51%) and Cameco (49%); anchor of the $80B US-government new-build program.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "US-government AP1000 fleet partnership (announced program value)",
+      "period": "2025-10",
+      "value": 80,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "high",
+      "source": { "url": "https://www.utilitydive.com/news/westinghouse-cameco-brookfield-nuclear/803999/", "publisher": "Utility Dive", "published": "2025-10", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Announced Oct 27, 2025: ≥$80B of AP1000 reactors with Commerce Dept; US government receives 20% of distributions above $17.5B. Announced program value, not realized spend; first units unlikely to deliver power before the early-to-mid 2030s."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.utilitydive.com/news/westinghouse-cameco-brookfield-nuclear/803999/", "publisher": "Utility Dive", "published": "2025-10", "kind": "press" },
+    { "url": "https://www.powermag.com/westinghouse-enters-partnership-for-80-billion-of-new-nuclear-reactors/", "publisher": "POWER Magazine", "published": "2025-10", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

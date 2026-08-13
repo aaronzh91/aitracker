@@ -1,0 +1,31 @@
+{
+  "id": "amkor",
+  "name": "Amkor Technology",
+  "kind": "public_company",
+  "category": "packaging_substrate",
+  "group": "compute_supply_chain",
+  "region": "us",
+  "tier": 3,
+  "tickers": [{ "exchange": "NASDAQ", "symbol": "AMKR" }],
+  "website": "https://www.amkor.com",
+  "monetization": "#2 global OSAT; sells packaging/test capacity to AI chip designers and takes TSMC advanced-packaging overflow, including the first US high-volume advanced packaging campus (Peoria, AZ).",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Arizona advanced packaging campus investment",
+      "period": "2025-2028",
+      "value": 7,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://ir.amkor.com/news-releases/news-release-details/amkor-technology-breaks-ground-new-semiconductor-advanced", "publisher": "Amkor IR", "published": "2025-10", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Expanded from $2B to $7B at Oct 2025 groundbreaking; first facility complete mid-2027, volume production early 2028; 10-year TSMC packaging deal; Apple first anchor customer, Nvidia also named."
+    }
+  ],
+  "sources": [
+    { "url": "https://ir.amkor.com/news-releases/news-release-details/amkor-technology-breaks-ground-new-semiconductor-advanced", "publisher": "Amkor IR", "published": "2025-10", "kind": "company_pr" },
+    { "url": "https://www.manufacturingdive.com/news/amkor-arizona-7-billion-semiconductor-tsmc-apple-nvidia/802297/", "publisher": "Manufacturing Dive", "published": "2025-10", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

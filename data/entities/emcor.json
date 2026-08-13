@@ -1,0 +1,29 @@
+{
+  "id": "emcor",
+  "name": "EMCOR Group",
+  "kind": "public_company",
+  "category": "engineering_construction",
+  "group": "physical_infrastructure",
+  "region": "us",
+  "tier": 2,
+  "tickers": [{ "exchange": "NYSE", "symbol": "EME" }],
+  "website": "https://www.emcorgroup.com",
+  "monetization": "Sells mechanical/electrical construction and facilities services; data-center electrical fit-out is the fastest-growing book of business.",
+  "observations": [
+    {
+      "metric": "rpo",
+      "period": "FY2026-Q2",
+      "value": 17.1,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "medium",
+      "source": { "url": "https://stockstory.org/us/stocks/nyse/eme/news/earnings-call/eme-q2-deep-dive-data-center-demand-and-strategic-acquisitions-drive-growth", "publisher": "StockStory (from earnings)", "published": "2026-07", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Record remaining performance obligations, +44% y/y; data-center/communications work +45%."
+    }
+  ],
+  "sources": [
+    { "url": "https://stockstory.org/us/stocks/nyse/eme/news/earnings-call/eme-q2-deep-dive-data-center-demand-and-strategic-acquisitions-drive-growth", "publisher": "StockStory", "published": "2026-07", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "ase",
+  "name": "ASE Technology Holding",
+  "kind": "public_company",
+  "category": "packaging_substrate",
+  "group": "compute_supply_chain",
+  "region": "taiwan",
+  "tier": 2,
+  "tickers": [{ "exchange": "NYSE", "symbol": "ASX" }, { "exchange": "TWSE", "symbol": "3711" }],
+  "website": "https://www.aseglobal.com",
+  "monetization": "World's largest OSAT (outsourced assembly & test); sells advanced-packaging and test capacity, including CoWoS-class overflow from TSMC, to AI chip designers.",
+  "observations": [
+    {
+      "metric": "revenue_segment",
+      "metric_label": "Leading-edge advanced packaging revenue",
+      "period": "CY2026",
+      "value": 3.5,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.trendforce.com/news/2026/07/31/news-ase-again-raises-2026-capex-to-record-us10-5b-eyes-2x-leading-edge-advanced-packaging-revenue-by-2027/", "publisher": "TrendForce", "published": "2026-07-31", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": ">$3.5B in 2026; company targets ≥$7.5B by 2027 (~2x)."
+    },
+    {
+      "metric": "capex",
+      "period": "CY2026",
+      "value": 10.5,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.trendforce.com/news/2026/07/31/news-ase-again-raises-2026-capex-to-record-us10-5b-eyes-2x-leading-edge-advanced-packaging-revenue-by-2027/", "publisher": "TrendForce", "published": "2026-07-31", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Record capex, raised twice during 2026; mostly leading-edge packaging (CoWoS-class overflow, test)."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.trendforce.com/news/2026/07/31/news-ase-again-raises-2026-capex-to-record-us10-5b-eyes-2x-leading-edge-advanced-packaging-revenue-by-2027/", "publisher": "TrendForce", "published": "2026-07-31", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

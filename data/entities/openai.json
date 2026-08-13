@@ -1,0 +1,117 @@
+{
+  "id": "openai",
+  "name": "OpenAI",
+  "kind": "private_company",
+  "category": "model_lab",
+  "group": "labs_ai_native",
+  "region": "us",
+  "tier": 1,
+  "website": "https://openai.com",
+  "monetization": "Sells ChatGPT subscriptions, API access, and enterprise AI; deeply loss-making at scale and funded by the largest private capital raises in history.",
+  "description_md": "OpenAI is the developer of ChatGPT, the GPT model family, and Sora, and remains the densest node in the AI money graph: its compute commitments span Microsoft Azure, Oracle, AWS, CoreWeave, Google Cloud, AMD, and Broadcom. After the October 2025 recapitalization, Microsoft holds ~27% of OpenAI Group PBC; the company closed a $122B round at an $852B post-money valuation in March 2026 (Amazon $50B, Nvidia $30B, SoftBank $30B). It is also ~40% owner of the Stargate LLC data-center JV alongside SoftBank, Oracle, and MGX.",
+  "ai_monetization_md": "Revenue is dominated by ChatGPT subscriptions (~$17B of the ~$25B annualized run rate at Feb 2026), with API consumption (~$6.5B) and Sora/licensing (~$1.5B) the rest. Full-year 2025 revenue was ~$13.1B against much larger losses — Microsoft's equity-method line implied a ~$11.5B quarterly loss in Q3 CY2025, and OpenAI projects a 2026 loss of ≥$14B. The business is a bet that scale and distribution convert into durable margin before the ~$600B+ of cloud/compute commitments (raised to ~$750B planned through 2030 per WSJ) come due.",
+  "ai_strategy_md": "Lock up compute at unprecedented scale across every major cloud and chip vendor (Oracle ~$300B/5yr from 2027; Microsoft $250B Azure commit; AWS $38B plus a reported $100B expansion; CoreWeave ~$22.4B; AMD 6GW with a warrant kicker; Broadcom 10GW custom ASICs; Cerebras 750MW), diversify away from Microsoft after the April 2026 restructuring capped the 20% revenue share (~$38B through 2030) and ended exclusivity, and finance it all with mega-rounds (SoftBank >$60B cumulative, targeting ~13% by Oct 2026) plus early debt (BofA $520M bilateral line, $4.7B undrawn revolver) ahead of an IPO now pushed to 2027.",
+  "risk_notes_md": "The central 'single point of failure' in the circularity debate: hundreds of billions of counterparty performance obligations (Zitron estimates ~$748B across Microsoft/Amazon/Oracle) rest on OpenAI revenue that is currently ~$25B annualized and loss-making (2026 projected loss ≥$14B). OpenAI missed internal targets in 2026 and pushed its IPO to 2027; several funders (SoftBank margin loans collateralized by its OpenAI stake; Nvidia's proposed ~$250B debt backstop) tie the ecosystem's credit quality to OpenAI's demand curve. Amazon's $50B investment is partly contingent ($35B on IPO/AGI milestones) — headline ≠ realized.",
+  "observations": [
+    {
+      "metric": "valuation",
+      "period": "2026-03",
+      "value": 852,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "high",
+      "source": { "url": "https://www.bloomberg.com/news/articles/2026-03-31/openai-valued-at-852-billion-after-completing-122-billion-round", "publisher": "Bloomberg", "title": "OpenAI Valued at $852 Billion After Backing From Amazon, Nvidia, SoftBank", "published": "2026-03-31", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Post-money on the $122B round closed Mar 31, 2026. Private round mark, not a traded price."
+    },
+    {
+      "metric": "funding_raised",
+      "period": "2026-03",
+      "value": 122,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "high",
+      "source": { "url": "https://www.forbes.com/sites/antoniopequenoiv/2026/03/31/openai-valuation-reaches-852-billion-after-massive-funding-round/", "publisher": "Forbes", "title": "OpenAI Valuation Reaches $852 Billion After Massive Funding Round", "published": "2026-03-31", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Amazon $50B (of which $35B contingent on IPO/AGI milestone), Nvidia $30B, SoftBank $30B."
+    },
+    {
+      "metric": "ai_run_rate",
+      "period": "run_rate@2026-02",
+      "value": 25,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://finance.yahoo.com/news/openai-tops-25-billion-annualized-033836274.html", "publisher": "Reuters via Yahoo Finance (The Information)", "title": "OpenAI tops $25 billion in annualized revenue, The Information reports", "published": "2026-03", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Per The Information: ~$17B ChatGPT subscriptions, ~$6.5B API, ~$1.5B Sora/licensing; up from $21.4B annualized at end-2025. Run rate = latest month ×12, not recognized revenue."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "CY2025",
+      "value": 13.07,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://finance.yahoo.com/news/openai-tops-25-billion-annualized-033836274.html", "publisher": "Reuters via Yahoo Finance (The Information)", "title": "OpenAI tops $25 billion in annualized revenue, The Information reports", "published": "2026-03", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Recognized full-year 2025 revenue, as reported by The Information."
+    },
+    {
+      "metric": "loss_annual",
+      "period": "CY2026 (projected)",
+      "value": 14,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.rdworldonline.com/facing-14b-losses-in-2026-openai-is-now-seeking-100b-in-funding-but-can-it-ever-turn-a-profit/", "publisher": "R&D World", "title": "Facing $14B losses in 2026, OpenAI is now seeking $100B in funding", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Projected 2026 loss of at least $14B; some reports put the figure higher (a leaked ~$20.9B figure circulates). Not a disclosed audited number."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Cumulative cloud/compute commitments",
+      "period": "2026-08",
+      "value": 600,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://finance.yahoo.com/technology/ai/articles/openai-lifts-planned-compute-spending-144917731.html", "publisher": "Yahoo Finance (WSJ)", "title": "OpenAI lifts planned compute spending to $750 billion through 2030: WSJ", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Total cloud commitments approached ~$600B in early 2026 (Oracle ~$300B, Microsoft $250B, AWS $38B+, CoreWeave ~$22.4B); WSJ reports planned compute spending lifted to ~$750B through 2030. Committed, not realized spend."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-03-31",
+      "title": "Closes $122B round at $852B post-money",
+      "why_it_matters": "Largest private round ever; brings Amazon in as a major backer ($50B, $35B contingent) alongside Nvidia ($30B) and SoftBank ($30B), deepening investor-supplier circularity.",
+      "impact": "high",
+      "entities": ["openai", "amazon", "nvidia", "softbank"],
+      "sources": [{ "url": "https://www.bloomberg.com/news/articles/2026-03-31/openai-valued-at-852-billion-after-completing-122-billion-round", "publisher": "Bloomberg", "published": "2026-03-31", "kind": "press" }]
+    },
+    {
+      "date": "2026-04-27",
+      "title": "Microsoft partnership restructured: revenue share capped, exclusivity ended",
+      "why_it_matters": "OpenAI's 20% revenue-share payments to Microsoft are capped (~$38B through 2030, ~$97B below the prior trajectory) and Microsoft's exclusive technology license ends; Microsoft retains ~27% ownership. Frees OpenAI to sell across all clouds but removes a structural Microsoft advantage.",
+      "impact": "high",
+      "entities": ["openai", "microsoft"],
+      "sources": [{ "url": "https://www.cnbc.com/2026/04/27/openai-microsoft-partnership-revenue-cap.html", "publisher": "CNBC", "published": "2026-04-27", "kind": "press" }]
+    },
+    {
+      "date": "2026-07",
+      "title": "IPO pushed to 2027 after missed internal targets",
+      "why_it_matters": "OpenAI leaned toward delaying its IPO from September 2026 to 2027 amid missed internal targets and heavy spending commitments — a key date for the ~$35B contingent Amazon tranche and for SoftBank's leveraged position.",
+      "impact": "high",
+      "entities": ["openai", "softbank", "amazon"],
+      "sources": [{ "url": "https://www.forbes.com/sites/investor-hub/article/openai-ipo-things-to-know/", "publisher": "Forbes", "title": "OpenAI IPO: 4 Things To Know As Anticipation Builds (July 2026)", "published": "2026-07", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.bloomberg.com/news/articles/2026-03-31/openai-valued-at-852-billion-after-completing-122-billion-round", "publisher": "Bloomberg", "kind": "press" },
+    { "url": "https://www.cnbc.com/2026/04/27/openai-microsoft-partnership-revenue-cap.html", "publisher": "CNBC", "kind": "press" },
+    { "url": "https://finance.yahoo.com/news/openai-tops-25-billion-annualized-033836274.html", "publisher": "Reuters via Yahoo Finance (The Information)", "kind": "press" },
+    { "url": "https://finance.yahoo.com/technology/ai/articles/openai-lifts-planned-compute-spending-144917731.html", "publisher": "Yahoo Finance (WSJ)", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

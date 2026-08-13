@@ -1,0 +1,30 @@
+{
+  "id": "hd-hyundai-electric",
+  "name": "HD Hyundai Electric",
+  "kind": "public_company",
+  "category": "electrical_equipment",
+  "group": "physical_infrastructure",
+  "region": "korea",
+  "tier": 2,
+  "tickers": [{ "exchange": "KRX", "symbol": "267260" }],
+  "website": "https://www.hd-hyundaielectric.com",
+  "monetization": "Sells power transformers and switchgear, with record US orders driven by data-center and grid demand; production booked out more than three years.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Order backlog",
+      "period": "2026-Q1",
+      "value": 7.9,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://en.sedaily.com/news/2026/05/01/korean-power-equipment-makers-clinch-record-orders-on-us", "publisher": "Seoul Economic Daily", "published": "2026-05-01", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "~$7.9B backlog — more than 3 years of production already booked, largely on US data-center/grid orders."
+    }
+  ],
+  "sources": [
+    { "url": "https://en.sedaily.com/news/2026/05/01/korean-power-equipment-makers-clinch-record-orders-on-us", "publisher": "Seoul Economic Daily", "published": "2026-05-01", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

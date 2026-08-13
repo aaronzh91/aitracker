@@ -1,0 +1,40 @@
+{
+  "id": "ibiden",
+  "name": "Ibiden Co., Ltd.",
+  "kind": "public_company",
+  "category": "packaging_substrate",
+  "group": "compute_supply_chain",
+  "region": "japan",
+  "tier": 2,
+  "tickers": [{ "exchange": "TSE", "symbol": "4062" }],
+  "website": "https://www.ibiden.com",
+  "monetization": "Sells ABF package substrates for high-end logic; Nvidia's lead substrate supplier, with AI-substrate capacity effectively sold out as it is added.",
+  "observations": [
+    {
+      "metric": "capex",
+      "period": "FY2026-FY2028",
+      "value": 3.2,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://techresearchonline.com/news/nvidia-supplier-ibiden-plans-faster-expansion/", "publisher": "Tech Research Online", "published": "2026-02", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "¥500B (~$3.2B) AI-substrate capacity plan announced Feb 2026 — reportedly the largest single substrate expansion on record."
+    },
+    {
+      "metric": "utilization_pct",
+      "period": "CY2026",
+      "value": 100,
+      "unit": "pct",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://techresearchonline.com/news/nvidia-supplier-ibiden-plans-faster-expansion/", "publisher": "Tech Research Online", "published": "2026-02", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "CEO: customers are 'buying up all that Ibiden has been adding' — AI substrate capacity effectively sold out."
+    }
+  ],
+  "sources": [
+    { "url": "https://techresearchonline.com/news/nvidia-supplier-ibiden-plans-faster-expansion/", "publisher": "Tech Research Online", "published": "2026-02", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

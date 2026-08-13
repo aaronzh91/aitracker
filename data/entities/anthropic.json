@@ -1,0 +1,96 @@
+{
+  "id": "anthropic",
+  "name": "Anthropic",
+  "kind": "private_company",
+  "category": "model_lab",
+  "group": "labs_ai_native",
+  "region": "us",
+  "tier": 1,
+  "website": "https://www.anthropic.com",
+  "monetization": "Sells Claude models via API, enterprise plans, and Claude Code; the fastest revenue scaling ever recorded in enterprise software, funded by Amazon, Google, and record venture rounds.",
+  "description_md": "Anthropic is the AI safety-focused lab behind the Claude model family and Claude Code. Its revenue run-rate went from ~$1B (Dec 2024) to ~$9B (Dec 2025) to ~$47B (May 2026) — reportedly passing OpenAI — and its $65B Series H in May 2026 priced it at $965B post-money, the largest private venture round in history. Amazon (~$13B invested, AWS primary training partner) and Google (~$3B equity plus a TPU deal of up to 1M chips) are both major shareholders and compute suppliers.",
+  "ai_monetization_md": "Predominantly enterprise/API revenue: Claude via API and cloud marketplaces (AWS Bedrock, Google Cloud, and since the Azure deal, Microsoft), enterprise subscriptions, and Claude Code, with consumer subscriptions a smaller share than OpenAI's mix. Run-rate revenue: ~$9B end-2025 → $14B (Feb) → $30B (Apr) → ~$47B (May 2026), per company statements and press. The company has signaled it expects to approach break-even sooner than OpenAI, though no audited figures are public.",
+  "ai_strategy_md": "Multi-cloud compute at committed scale — >$100B over a decade with AWS including up to 5GW of Trainium, a $30B Azure commitment, up to 1M Google TPUs (>1GW), ~3.5GW of Google-designed TPU capacity via Broadcom from 2027, and a $50B US data-center buildout with Fluidstack — while taking investment from nearly every layer of its own supply chain (Amazon, Google, Microsoft ≤$5B and Nvidia ≤$10B announced Nov 2025; Series H included Blackstone, Brookfield, Micron, Samsung, SK Hynix). Differentiates on enterprise trust, safety research, and coding/agent workloads.",
+  "risk_notes_md": "The February 2026 federal ban is the defining negative edge: after Anthropic refused to drop acceptable-use limits (mass surveillance, autonomous weapons), all federal agencies were ordered off its products and DoD designated it a supply-chain risk — killing its federal pipeline and pressuring enterprise contractors; Anthropic is litigating and lost an early appeals-court bid (Apr 2026). Other risks: run-rate figures are company/press numbers, not audited; investor-supplier circularity (Amazon booked a ~$53B fair-value gain on its stake in Q2 2026 while selling it compute); compute commitments >$130B across clouds assume the growth curve holds.",
+  "observations": [
+    {
+      "metric": "valuation",
+      "period": "2026-05",
+      "value": 965,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "high",
+      "source": { "url": "https://www.anthropic.com/news/series-h", "publisher": "Anthropic", "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation", "published": "2026-05", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "$65B Series H closed late May 2026; company-announced and widely covered. Private round mark, not a traded price."
+    },
+    {
+      "metric": "funding_raised",
+      "period": "2026-05",
+      "value": 65,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "high",
+      "source": { "url": "https://www.anthropic.com/news/series-h", "publisher": "Anthropic", "title": "Anthropic raises $65B in Series H funding", "published": "2026-05", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Largest private VC round on record; participants reported to include Blackstone, Brookfield, Micron, Samsung, and SK Hynix — suppliers investing in their customer."
+    },
+    {
+      "metric": "ai_run_rate",
+      "period": "run_rate@2025-12",
+      "value": 9,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://x.com/AnthropicAI/status/2041275563466502560", "publisher": "Anthropic (X post)", "title": "Run-rate revenue surpassed $30 billion, up from $9 billion at the end of 2025", "published": "2026-04", "kind": "company_pr" },
+      "as_of": "2026-08-13",
+      "notes": "Company statement; not audited."
+    },
+    {
+      "metric": "ai_run_rate",
+      "period": "run_rate@2026-05",
+      "value": 47,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://simonwillison.net/2026/May/29/anthropic/", "publisher": "Simon Willison (citing Anthropic)", "title": "Anthropic's run-rate revenue hits $47 billion", "published": "2026-05-29", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Disclosed alongside the Series H; trajectory $9B (Dec 2025) → $14B (Feb) → $19B (Mar) → $30B (Apr) → $47B (May 2026). Reportedly passed OpenAI's run rate. Run rate ≠ recognized revenue."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-02-27",
+      "title": "Federal agencies ordered to stop using Anthropic products",
+      "why_it_matters": "After Anthropic refused to relax acceptable-use limits for the Pentagon, the President directed all federal agencies to cease using Anthropic AI (some given a six-month transition). Erases Anthropic's federal pipeline and creates compliance risk for contractors — the tracker's canonical negative edge.",
+      "impact": "high",
+      "entities": ["anthropic", "us-government"],
+      "sources": [
+        { "url": "https://www.taftlaw.com/news-events/law-bulletins/us-government-bans-use-of-anthropic-products-what-this-means-for-government-contractors-and-ai-strategy/", "publisher": "Taft Law", "published": "2026-03", "kind": "other" },
+        { "url": "https://www.mayerbrown.com/en/insights/publications/2026/03/pentagon-designates-anthropic-a-supply-chain-risk-what-government-contractors-need-to-know", "publisher": "Mayer Brown", "published": "2026-03", "kind": "other" }
+      ]
+    },
+    {
+      "date": "2026-03-05",
+      "title": "DoD designates Anthropic a supply-chain risk; Anthropic sues",
+      "why_it_matters": "The designation extends the ban's reach into the defense-contractor ecosystem; Anthropic sued DoD and lost an appeals-court bid to temporarily block the ruling (Apr 8, 2026). Litigation outcome determines whether any federal revenue is recoverable.",
+      "impact": "high",
+      "entities": ["anthropic", "us-government"],
+      "sources": [{ "url": "https://www.cnbc.com/2026/04/08/anthropic-pentagon-court-ruling-supply-chain-risk.html", "publisher": "CNBC", "published": "2026-04-08", "kind": "press" }]
+    },
+    {
+      "date": "2026-05-28",
+      "title": "Closes $65B Series H at $965B post-money",
+      "why_it_matters": "Largest private venture round in history; makes Anthropic the world's most valuable private AI company, surpassing OpenAI's $852B mark, with supply-chain investors (Micron, Samsung, SK Hynix, Blackstone, Brookfield) in the syndicate.",
+      "impact": "high",
+      "entities": ["anthropic"],
+      "sources": [{ "url": "https://www.anthropic.com/news/series-h", "publisher": "Anthropic", "published": "2026-05", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.anthropic.com/news/series-h", "publisher": "Anthropic", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2026/04/08/anthropic-pentagon-court-ruling-supply-chain-risk.html", "publisher": "CNBC", "kind": "press" },
+    { "url": "https://venturebeat.com/technology/anthropic-says-it-hit-a-30-billion-revenue-run-rate-after-crazy-80x-growth", "publisher": "VentureBeat", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "hitachi-energy",
+  "name": "Hitachi Energy",
+  "kind": "subsidiary",
+  "category": "electrical_equipment",
+  "group": "physical_infrastructure",
+  "region": "japan",
+  "tier": 2,
+  "website": "https://www.hitachienergy.com",
+  "monetization": "Sells transformers, HVDC, and grid equipment into utility and data-center buildouts; world's largest transformer maker (Hitachi Ltd. subsidiary, HQ Zurich).",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Order backlog",
+      "period": "2026",
+      "value": 43,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.datacenterdynamics.com/en/news/hitachi-energy-ceo-warns-of-transformer-supply-shortage/", "publisher": "Data Center Dynamics", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": ">$43B backlog, up from ~$14B three years earlier; CEO has warned publicly of transformer supply shortage."
+    },
+    {
+      "metric": "capex",
+      "period": "2024-2027",
+      "value": 4.5,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.mirrorreview.com/news/hitachi-energy-investment-transformer-shortage/", "publisher": "Mirror Review", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "$4.5B global manufacturing expansion for transformers/grid gear, incl. ~$500M for North American facilities through 2027."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.datacenterdynamics.com/en/news/hitachi-energy-ceo-warns-of-transformer-supply-shortage/", "publisher": "Data Center Dynamics", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

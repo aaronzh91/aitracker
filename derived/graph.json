@@ -1,0 +1,17 @@
+{
+ "nodes": [
+  {
+   "id": "nvidia",
+   "name": "NVIDIA Corporation",
+   "group": "compute_supply_chain",
+   "category": "chip_designer",
+   "region": "us",
+   "tier": 1,
+   "kind": "public_company",
+   "sizeUSDB": 5200,
+   "sizeBasis": "press_reported",
+   "monetization": "Sells AI accelerators, systems, and networking; increasingly also an investor in and financier of its own customer base."
+  }
+ ],
+ "edges": []
+}

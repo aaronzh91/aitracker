@@ -1,0 +1,33 @@
+{
+  "id": "nvidia--intel--equity",
+  "from": "nvidia",
+  "to": "intel",
+  "type": "equity_investment",
+  "status": "completed",
+  "headline": { "value": 5, "unit": "USD_B", "caveat": "common stock at $23.28/share (~215–217M shares), announced Sep 18, 2025; closed Dec 2025 after FTC clearance", "as_of": "2025-12" },
+  "realized_to_date": { "value": 5, "unit": "USD_B", "as_of": "2025-12" },
+  "term": { "announced": "2025-09-18", "start": "2025-12", "end": null, "duration_years": null },
+  "nature_md": "NVIDIA purchased $5B of Intel common stock at $23.28/share in a private placement (announced Sep 18, 2025; funded Dec 2025 after US antitrust clearance), becoming one of Intel's largest shareholders. Attached to a product alliance: Intel will build NVIDIA-custom x86 CPUs for NVIDIA's AI-infrastructure platforms and x86 SoCs integrating NVIDIA RTX GPU chiplets for PCs, connected via NVLink. Sits alongside the US government's $8.9B/~10% stake and SoftBank's $2B in Intel's 2025 recapitalization-by-strategic-investors. Note: the position's market value has moved well above cost with Intel's share price; press claims about the 'value' of the stake vary — the 13F-marked figure (~$9.5B) is mark-to-market, not new investment.",
+  "accounting": {
+    "payer_treatment_md": "Marketable equity security on NVIDIA's balance sheet, marked through other income each quarter (as with its Arm holding). Not revenue-linked directly, though the alliance routes future Intel-built CPUs into NVIDIA systems.",
+    "payee_treatment_md": "Equity issuance — balance-sheet cash for Intel's foundry/turnaround, no revenue recognized. Dilutive to existing holders; strategically an anchor endorsement of Intel's x86 relevance in AI systems.",
+    "off_balance_sheet": false,
+    "flags": []
+  },
+  "related_edges": ["nvidia--openai--equity-2026"],
+  "observations": [],
+  "events": [
+    {
+      "date": "2025-09-18",
+      "title": "NVIDIA announces $5B Intel investment plus chip co-development alliance",
+      "impact": "high",
+      "entities": ["nvidia", "intel"],
+      "sources": [{ "url": "https://nvidianews.nvidia.com/news/nvidia-and-intel-to-develop-ai-infrastructure-and-personal-computing-products", "publisher": "NVIDIA Newsroom", "published": "2025-09-18", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://nvidianews.nvidia.com/news/nvidia-and-intel-to-develop-ai-infrastructure-and-personal-computing-products", "publisher": "NVIDIA Newsroom", "published": "2025-09-18", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2025/12/29/nvidia-takes-5-billion-stake-in-intel-under-september-agreement.html", "publisher": "CNBC", "published": "2025-12-29", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

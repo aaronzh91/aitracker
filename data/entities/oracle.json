@@ -1,0 +1,125 @@
+{
+  "id": "oracle",
+  "name": "Oracle Corporation",
+  "kind": "public_company",
+  "category": "hyperscaler",
+  "group": "hyperscalers_clouds",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NYSE", "symbol": "ORCL" }],
+  "cik": "1341439",
+  "website": "https://www.oracle.com",
+  "fiscal_year_end": "05-31",
+  "monetization": "Sells OCI cloud infrastructure against a $638B contracted backlog dominated by OpenAI/Stargate, funded by aggressive debt issuance — the ecosystem's key credit-watch entity.",
+  "description_md": "Oracle is a database/enterprise-software incumbent that has bet the company on AI cloud infrastructure (OCI). Its remaining performance obligations hit $638B at FY2026 year-end (May 31, 2026), up 363% y/y and larger than Alphabet's or Microsoft's — driven overwhelmingly by the ~$300B/5-year OpenAI Stargate contract starting 2027, with reportedly more than half of RPO attributable to OpenAI (analyst estimate). Unlike cash-rich peers, Oracle funds the buildout with debt: $18B of bonds (Sep 2025), $25B more (Feb 2026), ~$40B of planned FY27 debt+equity, total borrowings around $150B+, and negative free cash flow. Its 5-year CDS traded at record wides, partly because banks financing Oracle-leased datacenters (the $38B Vantage package, the $18B New Mexico loan) hedge tenant exposure through Oracle CDS.",
+  "ai_monetization_md": "OCI consumption revenue from AI training/inference tenants — above all OpenAI (~$300B over five years from 2027), plus ByteDance/TikTok (~$800M FY25) and enterprise AI workloads. Oracle also co-owns the Stargate LLC JV (with SoftBank, OpenAI, MGX; ~20% alongside MGX). The model is asymmetric: Oracle signs take-or-pay-style contracts recorded as RPO, then spends the capex (FY26: $55.7B; FY27 guide: ~$70B net / $90–95B gross, partially offset by ~$75B of customer prepayments and customer-supplied GPUs) and leases shells from developers (Vantage Frontier/Lighthouse, Crusoe Abilene, Related Saline Twp) before the revenue converts. Conversion of RPO into paid invoices from a loss-making counterparty is the central question.",
+  "ai_strategy_md": "Land the anchor tenant no one else would size for: Oracle contracted 4.5GW+ for OpenAI's Stargate when Microsoft's exclusivity ended, accepting extreme customer concentration in exchange for a backlog that repriced the stock. Management guides to 34% FY27 revenue growth and defends the leverage as pre-funded by contracts; it raised ~$20B of equity in H1 FY27 and says the Feb 2026 $25B bond was the year's last straight-debt raise. Expansion is leased, not owned, where possible — shifting construction risk to developers (Vantage, Crusoe, Related) and their project-finance banks, while Oracle carries the lease obligations.",
+  "risk_notes_md": "**Counterparty concentration:** reportedly >50% of the $638B RPO is OpenAI (BofA-attributed analyst estimate — not an Oracle disclosure; confidence low), a counterparty projecting ≥$14B losses in 2026. RPO here is T4 committed-but-unfunded territory in our revenue-quality framework. **Leverage:** ~$124.7B non-current debt at FY26-Q3, ~$150B+ total borrowings after the Feb 2026 raise (press tallies ~$153B), against negative free cash flow — the only big-cap hyperscaler spending ahead of both cash flow and cash reserves. **Credit-market signal:** 5-yr CDS hit records (~215bp, Jan 2026) with net notional on Oracle CDS ~$6.5B — inflated partly by project-finance banks hedging Oracle-tenant exposure, so the spread overstates pure default fear but understates system linkage. Fed/IMF/BIS 2026 stability reports all cite the Oracle-OpenAI chain as the canonical AI contagion path. **Lease obligations** to Vantage/Crusoe/Related sites sit alongside bond debt; the $38B Vantage package and $18B Saline/New Mexico loans depend on Oracle honoring leases whose economics depend on OpenAI honoring contracts.",
+  "observations": [
+    {
+      "metric": "rpo",
+      "period": "FY2026-Q4",
+      "value": 638,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/default.aspx", "publisher": "Oracle IR", "title": "Oracle Announces Record Q4 and FY 2026 Results", "published": "2026-06", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "+363% y/y; exceeds Alphabet (~$627B) and Microsoft (~$460B) per press comparisons. Reportedly >50% OpenAI (analyst estimate, low confidence — see risk notes). ~$75B of the increase reflects GPU prepayments/customer-supplied hardware."
+    },
+    {
+      "metric": "capex",
+      "period": "FY2026",
+      "value": 55.7,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "medium",
+      "source": { "url": "https://mlq.ai/news/oracle-reports-557b-fy2026-capex-guides-to-70b-net-outlay-in-fy2027/", "publisher": "MLQ News (from Oracle FY26 results)", "published": "2026-06", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Fiscal year ended May 31, 2026."
+    },
+    {
+      "metric": "capex_guidance",
+      "period": "FY2027",
+      "value": 70,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://seekingalpha.com/news/4602439-oracle-expects-34-percent-fy27-revenue-growth-as-it-plans-70b-net-cash-capex-outlay", "publisher": "Seeking Alpha", "title": "Oracle expects 34% FY27 revenue growth as it plans $70B net cash capex outlay", "published": "2026-06", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Net cash outlay; gross capex guided $90–95B, offset by customer prepayments and customer-supplied GPUs."
+    },
+    {
+      "metric": "total_debt",
+      "period": "2026-08",
+      "value": 153,
+      "unit": "USD_B",
+      "basis": "estimated",
+      "method_md": "Non-current borrowings were ~$124.7B at FY26-Q3 (Feb 2026), up from ~$85B a year earlier (press from filings). Adding current maturities and the Feb 2026 $25B issuance net of repayments yields ~$150B+; SPEC.md research (Aug 13, 2026) and press tallies cite ~$153B total debt. Treat as approximate pending the FY26 10-K balance sheet.",
+      "confidence": "low",
+      "source": { "url": "https://www.fool.com/investing/2026/04/10/oracles-credit-risk-is-at-an-all-time-high/", "publisher": "The Motley Fool", "title": "Oracle's Credit Risk Is At an All-Time High", "published": "2026-04-10", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Largest non-financial borrower in the Bloomberg US high-grade index. Excludes datacenter lease obligations."
+    },
+    {
+      "metric": "free_cash_flow",
+      "period": "FY2026",
+      "value": null,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://howtheymake.money/en/blog/orcl-q4-fy2026-638b-rpo-negative-fcf", "publisher": "How They Make Money", "title": "Oracle's $638B Backlog Soared 363%. Why Did the Stock Fall?", "published": "2026-06", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "FY2026 free cash flow was negative (capex $55.7B outran operating cash flow); exact figure to be pulled from the 10-K cash-flow statement in the weekly run — null recorded rather than an unverified number."
+    },
+    {
+      "metric": "other",
+      "metric_label": "5-year CDS spread",
+      "period": "2026-01",
+      "value": 215,
+      "unit": "bps",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.cnbc.com/2026/02/02/oracles-credit-default-swaps-are-plummeting-after-financing-plans.html", "publisher": "CNBC", "title": "Oracle's credit default swaps are plummeting as financing plan boosts investor confidence", "published": "2026-02-02", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Record wide ~215bp in Jan 2026 (vs ~145bp end-2025), easing after the Feb financing plan. Q1-26 Oracle CDS trading volume $4.6B notional vs $0.76B a year earlier; net notional ~$6.5B — partly project-finance banks hedging Oracle-tenant lease exposure, a thin-market signal to read with care (SPEC §10.4)."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-09-24",
+      "title": "Sells $18B of investment-grade bonds (second-largest US deal of 2025)",
+      "why_it_matters": "First mega-raise of the OpenAI-contract era; ~$88B of peak demand showed credit markets initially embraced the AI story.",
+      "impact": "high",
+      "entities": ["oracle"],
+      "sources": [{ "url": "https://news.bloomberglaw.com/tech-and-telecom-law/oracle-looks-to-raise-15-billion-from-corporate-bond-sale-2", "publisher": "Bloomberg Law", "published": "2025-09", "kind": "press" }]
+    },
+    {
+      "date": "2026-02",
+      "title": "Raises $25B of bonds and lays out ~$40B FY27 debt+equity funding plan; CDS retraces from record wides",
+      "why_it_matters": "Pre-funding the OpenAI buildout calmed the credit market — 5-yr CDS fell from ~215bp — but doubled down on leverage into a single-counterparty backlog.",
+      "impact": "high",
+      "entities": ["oracle"],
+      "sources": [{ "url": "https://www.cnbc.com/2026/02/02/oracles-credit-default-swaps-are-plummeting-after-financing-plans.html", "publisher": "CNBC", "published": "2026-02-02", "kind": "press" }]
+    },
+    {
+      "date": "2026-06",
+      "title": "FY26 Q4: RPO $638B (+363%), FY27 net capex guided ~$70B, FCF negative; stock falls",
+      "why_it_matters": "The backlog now exceeds every other cloud's, but the market discounted it on conversion and funding risk — the clearest case of commitments-are-not-revenue in the dataset.",
+      "impact": "high",
+      "entities": ["oracle", "openai"],
+      "sources": [
+        { "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/default.aspx", "publisher": "Oracle IR", "published": "2026-06", "kind": "company_ir" },
+        { "url": "https://howtheymake.money/en/blog/orcl-q4-fy2026-638b-rpo-negative-fcf", "publisher": "How They Make Money", "published": "2026-06", "kind": "analyst" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/default.aspx", "publisher": "Oracle IR", "kind": "company_ir" },
+    { "url": "https://www.datacenterdynamics.com/en/news/openai-signs-300bn-cloud-deal-with-oracle-report/", "publisher": "Data Center Dynamics", "published": "2025-09", "kind": "press", "notes": "The ~$300B/5yr OpenAI contract underlying the RPO." },
+    { "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262034371-oracle-ai-rpo-credit-downgrade-cash-flow-analysis-tradingkey", "publisher": "TradingKey", "kind": "analyst", "notes": "OpenAI share of RPO and credit analysis — analyst-derived, low confidence." },
+    { "url": "https://www.itiger.com/news/1118477526", "publisher": "iTiger (Morgan Stanley note)", "kind": "analyst", "notes": "Banks hedging Oracle-linked project-finance exposure via Oracle CDS." },
+    { "url": "https://sherwood.news/tech/oracle-is-trying-really-hard-to-convince-investors-it-wont-have-a-debt-problem/", "publisher": "Sherwood News", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

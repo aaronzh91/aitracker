@@ -1,0 +1,75 @@
+{
+  "id": "gas-turbines",
+  "name": "Gas turbines (heavy-duty)",
+  "group": "energy",
+  "status": "binding",
+  "description_md": "With interconnection queues at five years and nuclear a decade out, gas turbines are the only dispatchable generation that can be added on data-center timescales — and all three global makers are sold out for roughly half a decade. GE Vernova's gas-turbine backlog plus slot reservations hit 116GW in Q2-26 (~5 years of output; taking reservations for 2031 delivery; expects ≥125GW by year-end), with ~20% explicitly for data centers. Siemens Energy has ~87GW on the books (60GW firm orders + 27GW reserved) with waits up to four years inside a record €154B group backlog. Mitsubishi Heavy's contracts are running at more than double the prior pace and it is doubling manufacturing capacity. Buyers now pay for reservation slots before contracts — an option market for turbines. Status basis: judged binding — 4-5-year committed order books at all three suppliers make near-term incremental gas power essentially unbuyable, pushing buyers to gensets, fuel cells (Bloom's ~$7.65B of DC contracts in 90 days), and aeroderivative stopgaps.",
+  "controlled_by": [
+    { "entity": "ge-vernova", "share_note": "~40-45% of heavy-duty GT market; 116GW backlog+reservations ≈5 years of output (disclosed)" },
+    { "entity": "siemens-energy", "share_note": "~87GW order book (60 firm + 27 reserved), up to 4-year waits (disclosed)" },
+    { "entity": "mitsubishi-heavy", "share_note": "#3 globally; order pace >2x prior years; doubling manufacturing capacity (company_claimed)" }
+  ],
+  "dependents": [
+    { "entity": "crusoe", "dependency_md": "Behind-the-meter gas campuses (Abilene/Stargate lineage) are built around turbine availability; slot access is the business model's core input." },
+    { "entity": "xai", "dependency_md": "Colossus (Memphis) runs on dozens of on-site gas turbines; expansion requires either new slots or secondhand/mobile units at premium prices." },
+    { "entity": "oracle", "dependency_md": "Stargate-class campuses need firm on-site or contracted gas power on 2026-28 timelines only turbines (or fuel-cell substitutes like its 2.8GW Bloom agreement) can meet." },
+    { "entity": "vistra", "dependency_md": "IPP expansion (e.g., $4.7B gas-fleet purchase) is partly a bet that existing turbines are worth more than new ones that cannot be delivered before ~2030." }
+  ],
+  "substitutes_md": "For firm power on <4-year timelines: aeroderivative turbines and reciprocating gensets (Caterpillar backlog +92% to $72B; Cummins), fuel cells (Bloom Energy — Oracle 2.8GW master agreement, ~$7.65B of DC contracts in 90 days), mobile gas fleets (VoltaGrid), and buying existing plants (Vistra's $4.7B fleet purchase — repricing scarcity, not adding capacity). Renewables+storage substitute energy but not 24/7 firmness for dense AI load. All substitutes are more expensive per firm MW; the queue for large frames is effectively unjumpable before ~2029-30.",
+  "downcycle_md": "Order books look bombproof but contain soft layers: 'slot reservations' (27GW of Siemens' 87GW; a large share of GEV's 116GW) are fee-backed options, not full contracts — in a demand fall they simply expire, deflating backlog headlines without equivalent revenue loss. Firm utility orders (the majority) survive on regulated-capex logic even if AI demand fades, since queues also serve reshoring/electrification. The exposed parties are the capacity expanders (MHI doubling, GEV/Siemens adding lines) if 2029-30 deliveries land into a glut, and speculative DC-power intermediaries holding slots they cannot re-sell. Historical analog: the 2000-01 turbine bubble, when US orders collapsed ~90% and GE Power took a decade to recover — the reason all three makers are expanding cautiously and demanding reservations fees this time.",
+  "observations": [
+    {
+      "metric": "capacity_gw",
+      "period": "2026-Q2",
+      "value": 116,
+      "unit": "GW",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.utilitydive.com/news/ge-vernova-gas-turbine-backlog-climbs-to-116-gw/826039/", "publisher": "Utility Dive", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "GE Vernova backlog + slot reservations; ~5 years of output; reservations taken for 2031 delivery; ≥125GW expected by YE26; ~20% explicitly data centers."
+    },
+    {
+      "metric": "capacity_gw",
+      "period": "2026-Q3",
+      "value": 87,
+      "unit": "GW",
+      "basis": "disclosed",
+      "confidence": "medium",
+      "source": { "url": "https://finance.yahoo.com/energy/articles/siemens-energy-beats-forecasts-ai-144126001.html", "publisher": "Yahoo Finance / Reuters", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Siemens Energy gas-turbine order book: 60GW firm + 27GW reserved; customer waits up to 4 years; group backlog record €154B."
+    },
+    {
+      "metric": "lead_time_months",
+      "period": "2026",
+      "value": 54,
+      "unit": "months",
+      "basis": "estimated",
+      "method_md": "Midpoint of the 4-5-year delivery horizon: GEV books ≈5 years of output and reserves 2031 slots; Siemens quotes waits up to 4 years. New unreserved heavy-frame orders quoted 2030-31.",
+      "confidence": "medium",
+      "source": { "url": "https://www.turbomachinerymag.com/view/ge-vernova-gas-turbine-backlog-hits-116-gw-as-power-orders-more-than-double", "publisher": "Turbomachinery Magazine", "published": "2026", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "All three makers booking reservations 4-5 years out."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Mitsubishi Heavy GT capacity plan (multiple of current)",
+      "period": "by FY2030",
+      "value": 2,
+      "unit": "x",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://www.utilitydive.com/news/mitsubishi-gas-turbine-manufacturing-capacity-expansion-supply-demand/759371/", "publisher": "Utility Dive", "published": "2025", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Doubling manufacturing capacity; contracts >2x prior pace on US/Asian DC orders."
+    }
+  ],
+  "sources": [
+    { "url": "https://www.utilitydive.com/news/ge-vernova-gas-turbine-backlog-climbs-to-116-gw/826039/", "publisher": "Utility Dive", "kind": "press" },
+    { "url": "https://finance.yahoo.com/energy/articles/siemens-energy-beats-forecasts-ai-144126001.html", "publisher": "Yahoo Finance / Reuters", "kind": "press" },
+    { "url": "https://www.energytech.com/data-center-power/article/55329126/strong-us-and-asian-data-center-orders-propel-mitsubishi-heavy-industries-in-energy-sector", "publisher": "EnergyTech", "kind": "press" },
+    { "url": "https://www.cnbc.com/2026/04/14/oracle-orcl-bloom-energy-be-stock-data-center-ai-power.html", "publisher": "CNBC", "published": "2026-04-14", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

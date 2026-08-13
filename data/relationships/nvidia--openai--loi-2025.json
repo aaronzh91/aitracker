@@ -1,0 +1,43 @@
+{
+  "id": "nvidia--openai--loi-2025",
+  "from": "nvidia",
+  "to": "openai",
+  "type": "equity_investment",
+  "status": "dead",
+  "headline": { "value": 100, "unit": "USD_B", "caveat": "letter of intent only — up to $100B invested progressively as each of 10GW of NVIDIA systems deployed; never signed", "as_of": "2025-09-22" },
+  "realized_to_date": { "value": 0, "unit": "USD_B", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-09-22", "start": null, "end": null, "duration_years": null },
+  "nature_md": "Sept 22, 2025 letter of intent: NVIDIA intended to invest up to $100B in OpenAI progressively as each gigawatt of a planned 10GW of NVIDIA systems was deployed, with the first ~$10B tranche at the first gigawatt. The LOI never became a definitive agreement — NVIDIA CFO Colette Kress confirmed in Dec 2025 that nothing was finalized, the WSJ reported talks went 'on ice' in Jan 2026 after internal NVIDIA concerns, and the structure was abandoned. It was superseded by NVIDIA's unconditional $30B participation in OpenAI's $122B round (closed Mar 31, 2026; see related edge). Retained as the tracker's clearest example of a nine-figure headline that produced $0 of realized flow in its announced form.",
+  "accounting": {
+    "payer_treatment_md": "Nothing was ever booked: a non-binding LOI creates no asset, liability, or commitment disclosure. NVIDIA's financial statements were never touched by the $100B figure.",
+    "payee_treatment_md": "OpenAI received no proceeds under the LOI. The announcement's main effect was market-moving (NVIDIA added ~$170B of market cap on announcement day) and reputational, not financial.",
+    "off_balance_sheet": true,
+    "flags": ["equity_for_revenue", "commitment_unfunded"]
+  },
+  "related_edges": ["nvidia--openai--equity-2026", "nvidia--openai--guarantee-talks-2026"],
+  "both_sides_md": "**Bear:** the LOI's death shows announced AI mega-deals are provisional — a $100B 'investment' moved markets for months and then simply evaporated (Chanos and others cited it as manufactured-demand theater). **Bull:** its replacement with a clean $30B equity check was a *healthier* structure — money not contractually tied to GPU deployments — and NVIDIA argues walking away from a flawed structure is discipline, not weakness (NVIDIA Nov 2025 IR memo framing).",
+  "observations": [],
+  "events": [
+    {
+      "date": "2025-09-22",
+      "title": "NVIDIA and OpenAI announce LOI: up to $100B tied to 10GW of NVIDIA systems",
+      "impact": "high",
+      "entities": ["nvidia", "openai"],
+      "sources": [{ "url": "https://openai.com/index/openai-nvidia-systems-partnership/", "publisher": "OpenAI", "published": "2025-09-22", "kind": "company_pr" }]
+    },
+    {
+      "date": "2026-01",
+      "title": "Talks reported 'on ice'; deal never signed",
+      "why_it_matters": "Confirmed that the largest announced vendor-to-customer equity commitment in the cycle would not close as structured.",
+      "impact": "high",
+      "entities": ["nvidia", "openai"],
+      "sources": [{ "url": "https://www.business-standard.com/technology/tech-news/nvidia-halts-plan-to-invest-100-billion-in-openai-after-talks-collapse-126013100211_1.html", "publisher": "Business Standard (citing WSJ)", "published": "2026-01-31", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://openai.com/index/openai-nvidia-systems-partnership/", "publisher": "OpenAI", "title": "OpenAI and NVIDIA announce strategic partnership to deploy 10 gigawatts of NVIDIA systems", "published": "2025-09-22", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2026/02/03/nvidia-openai-stalled-on-their-mega-deal-ai-giants-need-each-other.html", "publisher": "CNBC", "published": "2026-02-03", "kind": "press" },
+    { "url": "https://www.business-standard.com/technology/tech-news/nvidia-halts-plan-to-invest-100-billion-in-openai-after-talks-collapse-126013100211_1.html", "publisher": "Business Standard", "published": "2026-01-31", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

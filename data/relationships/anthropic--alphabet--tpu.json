@@ -1,0 +1,34 @@
+{
+  "id": "anthropic--alphabet--tpu",
+  "from": "anthropic",
+  "to": "alphabet",
+  "type": "compute_purchase",
+  "status": "contracted",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "'tens of billions of dollars' — exact value undisclosed; up to 1 million Google Cloud TPUs, well over 1GW online in 2026", "as_of": "2025-10-23" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "Anthropic has trained/served on Google Cloud since 2023; cumulative spend undisclosed", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-10-23", "start": "2026", "end": null, "duration_years": null },
+  "nature_md": "Announced Oct 23, 2025: Anthropic expands Google Cloud usage to as many as **one million TPUs** — the largest known TPU commitment by an external customer — bringing well over 1GW of capacity online in 2026, in a deal both parties confirmed as worth 'tens of billions of dollars.' The expansion made Google's custom silicon a genuine merchant business rather than internal-only infrastructure, and anchors one leg of Anthropic's three-cloud strategy (AWS Trainium for training scale, Google TPUs, Azure/NVIDIA). Six months later it was extended by ~3.5GW more from 2027 in the three-way Broadcom deal (see related edge).",
+  "accounting": {
+    "payer_treatment_md": "Multi-year cloud purchase commitment expensed as consumed; combined with the AWS ($100B/decade) and Azure ($30B) commitments, Anthropic's forward compute obligations far exceed its ~$30B run-rate — funded by revenue growth and equity raises, including from the same cloud vendors.",
+    "payee_treatment_md": "Google Cloud revenue/backlog as consumed (part of Cloud's +82% y/y backlog surge). Google is simultaneously ~14%-shareholder and supplier: TPU revenue from a company whose valuation gains it also books — circular in the same way as Amazon, though Google discloses far less.",
+    "off_balance_sheet": true,
+    "flags": ["round_trip_cloud", "commitment_unfunded"]
+  },
+  "related_edges": ["alphabet--anthropic--equity", "anthropic--broadcom--tpu-2026", "anthropic--amazon--compute", "anthropic--microsoft--azure"],
+  "observations": [],
+  "events": [
+    {
+      "date": "2025-10-23",
+      "title": "Anthropic expands to up to 1M Google TPUs / >1GW in 2026 ('tens of billions')",
+      "impact": "high",
+      "entities": ["anthropic", "alphabet"],
+      "sources": [{ "url": "https://www.googlecloudpresscorner.com/2025-10-23-Anthropic-to-Expand-Use-of-Google-Cloud-TPUs-and-Services", "publisher": "Google Cloud", "published": "2025-10-23", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.googlecloudpresscorner.com/2025-10-23-Anthropic-to-Expand-Use-of-Google-Cloud-TPUs-and-Services", "publisher": "Google Cloud", "published": "2025-10-23", "kind": "company_pr" },
+    { "url": "https://www.cnbc.com/2025/10/23/anthropic-google-cloud-deal-tpu.html", "publisher": "CNBC", "published": "2025-10-23", "kind": "press" },
+    { "url": "https://www.datacenterdynamics.com/en/news/google-and-anthropic-confirm-massive-1gw-cloud-deal-with-up-to-one-million-google-tpus/", "publisher": "Data Center Dynamics", "published": "2025-10", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

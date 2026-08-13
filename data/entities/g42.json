@@ -1,0 +1,77 @@
+{
+  "id": "g42",
+  "name": "G42",
+  "kind": "private_company",
+  "category": "datacenter_operator",
+  "group": "hyperscalers_clouds",
+  "region": "middle_east",
+  "tier": 1,
+  "cik": null,
+  "website": "https://www.g42.ai",
+  "monetization": "Abu Dhabi AI holding group (Core42 cloud, Khazna data centers, Inception models); monetizes by operating UAE sovereign AI infrastructure — including Stargate UAE — and reselling compute, backed by Microsoft's $1.5B strategic stake.",
+  "description_md": "G42 is Abu Dhabi's flagship AI group, chaired by Sheikh Tahnoun bin Zayed, spanning data centers (Khazna), AI cloud (Core42), and models (Inception). Microsoft took a $1.5B minority stake in April 2024 (Brad Smith joined the board), and G42 anchors the UAE side of the US–UAE AI relationship as operator of the Stargate UAE cluster within the planned 5GW UAE–US AI Campus in Abu Dhabi.",
+  "ai_monetization_md": "AI-exposure thesis: be the licensed landlord and operator for Western AI capacity in the Gulf. Revenue legs: Khazna's data-center leasing (including a +200MW Microsoft expansion from late 2026 within Microsoft's $15.2B UAE program through 2029); Core42's sovereign cloud and GPU services; and the Stargate UAE build with OpenAI/Oracle/Nvidia/SoftBank/Cisco — a 1GW Abu Dhabi cluster whose first ~200MW phase was reported commissioned in early 2026. Historically G42 was also Cerebras's anchor customer (with related parties, 83–87% of Cerebras revenue in 2023–1H24), though it was reported in Dec 2025 to be stepping back from that commitment.",
+  "risk_notes_md": "Export-control dependence: every GPU shipment runs through US license conditions (press reports describe a '270-day' clause pressuring UAE-linked buyers toward US domiciling — unconfirmed officially). The Cerebras pullback (Semafor, Dec 2025) removed the revenue anchor that had underpinned Cerebras's IPO filing, illustrating how concentrated G42's partner economics are. Financials are private; deal values beyond the Microsoft stake are largely undisclosed.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Microsoft equity investment",
+      "period": "2024-04",
+      "value": 1.5,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.techtarget.com/searchenterpriseai/news/366581197/Looking-closer-at-Microsoft-investment-in-UAE-AI-vendor-G42", "publisher": "TechTarget", "published": "2024-04", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Minority stake; Microsoft vice chair Brad Smith joined G42's board. Part of a broader Microsoft UAE commitment ($15.2B through 2029)."
+    },
+    {
+      "metric": "capacity_mw",
+      "metric_label": "Stargate UAE Phase 1",
+      "period": "2026-02",
+      "value": 200,
+      "unit": "MW",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://www.datacenterdynamics.com/en/news/g42-ceo-says-company-will-receive-first-ai-chip-shipments-within-months-to-support-initial-200mw-of-capacity-for-planned-stargate-cluster/", "publisher": "Data Center Dynamics", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Initial 200MW tranche of the 1GW Stargate UAE cluster (within the 5GW UAE–US campus); reported commissioned Feb 2026 — commissioning date is single-sourced in secondary aggregations, hence low confidence."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Share of Cerebras revenue (G42 and related parties)",
+      "period": "CY2023",
+      "value": 85,
+      "unit": "pct",
+      "basis": "disclosed",
+      "confidence": "medium",
+      "source": { "url": "https://www.semafor.com/article/12/22/2025/abu-dhabi-based-g42-taps-out-of-cerebras", "publisher": "Semafor", "published": "2025-12-22", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "83–87% across 2023 and 1H2024 per Cerebras's IPO filing (midpoint recorded); Semafor reported G42 stepping back from the commitment in Dec 2025."
+    }
+  ],
+  "events": [
+    {
+      "date": "2024-04",
+      "title": "Microsoft invests $1.5B for a minority stake",
+      "why_it_matters": "The deal that aligned the UAE's AI champion with US technology and export-control frameworks, unlocking later chip licenses.",
+      "impact": "high",
+      "entities": ["g42", "microsoft"],
+      "sources": [{ "url": "https://www.techtarget.com/searchenterpriseai/news/366581197/Looking-closer-at-Microsoft-investment-in-UAE-AI-vendor-G42", "publisher": "TechTarget", "published": "2024-04", "kind": "press" }]
+    },
+    {
+      "date": "2025-12-22",
+      "title": "Reported stepping back from Cerebras purchase commitments",
+      "why_it_matters": "Removed the anchor customer that was 83–87% of Cerebras revenue — a live case study in single-customer concentration risk inside the AI supply chain.",
+      "impact": "medium",
+      "entities": ["g42", "cerebras"],
+      "sources": [{ "url": "https://www.semafor.com/article/12/22/2025/abu-dhabi-based-g42-taps-out-of-cerebras", "publisher": "Semafor", "published": "2025-12-22", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.techtarget.com/searchenterpriseai/news/366581197/Looking-closer-at-Microsoft-investment-in-UAE-AI-vendor-G42", "publisher": "TechTarget", "published": "2024-04", "kind": "press" },
+    { "url": "https://www.datacenterdynamics.com/en/news/g42-ceo-says-company-will-receive-first-ai-chip-shipments-within-months-to-support-initial-200mw-of-capacity-for-planned-stargate-cluster/", "publisher": "Data Center Dynamics", "kind": "press" },
+    { "url": "https://techinformed.com/microsoft-g42-announce-200-megawatt-uae-data-center-expansion/", "publisher": "TechInformed", "kind": "press", "notes": "Microsoft–Khazna +200MW expansion from late 2026." }
+  ],
+  "updated": "2026-08-13"
+}

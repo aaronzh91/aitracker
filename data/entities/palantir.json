@@ -1,0 +1,96 @@
+{
+  "id": "palantir",
+  "name": "Palantir Technologies Inc.",
+  "kind": "public_company",
+  "category": "enterprise_software",
+  "group": "software_applications",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NASDAQ", "symbol": "PLTR" }],
+  "cik": "1321655",
+  "website": "https://www.palantir.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Sells its AI Platform (AIP) and ontology software to enterprises and governments at premium prices — the fastest-growing large software company of the AI cycle, and its most-watched valuation battleground.",
+  "description_md": "Palantir builds data-integration and AI orchestration software: Foundry and Gotham layered under AIP (Artificial Intelligence Platform), which puts LLMs to work against an enterprise's 'ontology' of operational data. It is the incumbent software company that AI accelerated hardest: Q2 2026 revenue of $1.94B grew 93% y/y — with US commercial up 149% — while posting GAAP net income of $1.06B (55% margin). It is simultaneously the marquee battleground of the AI-valuation debate, trading at roughly 40x forward revenue.",
+  "ai_monetization_md": "AIP is the monetization engine: short 'bootcamp' deployments convert into large usage-based and platform contracts across commercial and government customers. Q2 2026: US commercial revenue $764M (+149% y/y), US government revenue $809M (+90%) — including defense/intelligence work and sovereign-AI style deployments — and FY2026 guidance raised to ~$8.15B (+82% y/y). Unusually for the AI trade, Palantir monetizes with high GAAP profitability rather than capex: it rents rather than builds compute, so AI revenue arrives asset-light.",
+  "ai_strategy_md": "Own the operational layer between models and decisions: be model-agnostic (frontier models are interchangeable inputs), sell the ontology/orchestration lock-in, and expand from defense into commercial via AIP bootcamps and from the US into allied-government 'sovereign AI' stacks. Management leans into on-premise and classified deployments the hyperscalers cannot serve, and prices on value delivered rather than seats.",
+  "risk_notes_md": "Palantir is the marquee AI-valuation short battleground. Bear case, argued most prominently by Michael Burry (Scion): at ~40x forward revenue and a market cap around $420B, no execution can justify the price — Burry first disclosed large put positions in late 2025, and on August 10, 2026 disclosed re-entering via March 2027 puts after the Q2 rally; he has argued the stock is worth a fraction of its price long-term. Bull case: 93% growth with 55% GAAP net margins is unprecedented at this scale, and the Q2 2026 beat (+29% single-session move, erasing ~$3B of short-seller gains) shows the operating results keep outrunning the thesis. Neutral note: both things can be true — extraordinary fundamentals and an extreme multiple; this record takes no side. Additional risks: US government concentration, politically exposed contracts, and stock-based compensation.",
+  "observations": [
+    {
+      "metric": "revenue_total",
+      "period": "FY2026-Q2",
+      "value": 1.935,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html", "publisher": "CNBC", "published": "2026-08-03", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "+93% y/y vs consensus ~$1.81B; GAAP net income $1.062B (55% margin)."
+    },
+    {
+      "metric": "revenue_segment",
+      "metric_label": "US commercial revenue",
+      "period": "FY2026-Q2",
+      "value": 764,
+      "unit": "USD_M",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html", "publisher": "CNBC", "published": "2026-08-03", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "+149% y/y — the AIP-driven line; US government revenue $809M (+90%)."
+    },
+    {
+      "metric": "other",
+      "metric_label": "FY2026 revenue guidance (midpoint)",
+      "period": "FY2026E",
+      "value": 8.154,
+      "unit": "USD_B",
+      "basis": "company_claimed",
+      "confidence": "high",
+      "source": { "url": "https://finance.yahoo.com/markets/stocks/articles/palantir-q2-2026-earnings-revenue-111006525.html", "publisher": "Yahoo Finance", "published": "2026-08", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Raised to $8.150–8.158B, ~+82% y/y."
+    },
+    {
+      "metric": "market_cap",
+      "period": "2026-08",
+      "value": 420,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.thestreet.com/investing/stocks/pltr-palantir-stock-michael-burry-says-surging-ai-giant-is-worth-under-1-long-term-despite-strong-q2-2026-earnings", "publisher": "TheStreet", "published": "2026-08", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "~40x forward revenue per bear commentary; the reference number in the Burry-vs-bulls valuation fight."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-08-03",
+      "title": "Q2 2026: revenue +93% y/y, guidance raised to ~$8.15B; stock surges 29%",
+      "why_it_matters": "The strongest revenue print of any large software company in the AI cycle; the one-day move erased roughly $3B of short-seller gains and reframed the AI-monetization debate around software, not just infrastructure.",
+      "impact": "high",
+      "entities": ["palantir"],
+      "sources": [
+        { "url": "https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html", "publisher": "CNBC", "published": "2026-08-03", "kind": "press" },
+        { "url": "https://www.techtimes.com/articles/323175/20260805/palantir-q2-2026-earnings-prove-premise-ai-thesis-3b-short-squeeze.htm", "publisher": "Tech Times", "published": "2026-08-05", "kind": "press" }
+      ]
+    },
+    {
+      "date": "2026-08-10",
+      "title": "Michael Burry discloses rebuilt bearish position via March 2027 puts",
+      "why_it_matters": "Keeps Palantir at the center of the AI-valuation short debate: the most-followed AI bear re-entered days after the Q2 beat, buying puts struck in the low-to-mid $100s while implied volatility sat at multi-month lows.",
+      "impact": "medium",
+      "entities": ["palantir"],
+      "sources": [
+        { "url": "https://intellectia.ai/news/stock/michael-burry-reenters-bearish-trades-on-palantir-technologies", "publisher": "Intellectia", "published": "2026-08", "kind": "press" },
+        { "url": "https://www.thestreet.com/investing/stocks/pltr-palantir-stock-michael-burry-says-surging-ai-giant-is-worth-under-1-long-term-despite-strong-q2-2026-earnings", "publisher": "TheStreet", "published": "2026-08", "kind": "press" }
+      ]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html", "publisher": "CNBC", "kind": "press" },
+    { "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262076608-palantir-q2-2026-earnings-commercial-149-stock-surge-tradingkey", "publisher": "TradingKey", "kind": "analyst" },
+    { "url": "https://www.thestreet.com/investing/stocks/pltr-palantir-stock-michael-burry-says-surging-ai-giant-is-worth-under-1-long-term-despite-strong-q2-2026-earnings", "publisher": "TheStreet", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

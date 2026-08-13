@@ -1,0 +1,34 @@
+{
+  "id": "openai--amd--gpu-2025",
+  "from": "openai",
+  "to": "amd",
+  "type": "hardware_purchase",
+  "status": "contracted",
+  "headline": { "value": 6, "unit": "GW", "caveat": "multi-generational GPU purchases starting with 1GW of Instinct MI450 in 2H2026; contract dollars undisclosed — AMD has pointed to 'tens of billions' per GW and >$100B four-year revenue opportunity", "as_of": "2025-10-06" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "first 1GW deploying 2H2026; no revenue recognized from the agreement through AMD FY2025", "as_of": "2026-08-13" },
+  "term": { "announced": "2025-10-06", "start": "2026", "end": null, "duration_years": null },
+  "nature_md": "Definitive agreement (Oct 6, 2025) making AMD a 'core strategic compute partner': OpenAI will deploy 6GW of AMD Instinct GPUs across multiple generations, beginning with a 1GW MI450 rack-scale deployment in 2H2026. Purchases are tied to deployment milestones rather than a disclosed fixed dollar commitment. The deal came paired with a warrant for up to 160M AMD shares issued to OpenAI (see related edge) — the buy side and the equity sweetener must be read together.",
+  "accounting": {
+    "payer_treatment_md": "Hardware purchases expensed/capitalized as deployed (much of the fleet will sit in partner data centers). Milestone-gated structure means OpenAI controls the pace — commitment converts to spend only as gigawatts land.",
+    "payee_treatment_md": "AMD recognizes product revenue on shipment — but net of contra-revenue from the OpenAI warrant as tranches vest (per AMD's FY2025 10-K/A, no impact yet since no vesting conditions have been met). Reported AMD data-center revenue from this deal will therefore understate gross selling prices.",
+    "off_balance_sheet": true,
+    "flags": ["warrant_for_revenue", "customer_concentration"]
+  },
+  "related_edges": ["amd--openai--warrant-2025", "openai--broadcom--asics", "nvidia--openai--equity-2026"],
+  "observations": [],
+  "events": [
+    {
+      "date": "2025-10-06",
+      "title": "AMD and OpenAI announce 6GW multi-generation GPU partnership",
+      "impact": "high",
+      "entities": ["openai", "amd"],
+      "sources": [{ "url": "https://www.amd.com/en/newsroom/press-releases/2025-10-6-amd-and-openai-announce-strategic-partnership-to-d.html", "publisher": "AMD", "published": "2025-10-06", "kind": "company_pr" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.amd.com/en/newsroom/press-releases/2025-10-6-amd-and-openai-announce-strategic-partnership-to-d.html", "publisher": "AMD", "published": "2025-10-06", "kind": "company_pr" },
+    { "url": "https://openai.com/index/openai-amd-strategic-partnership/", "publisher": "OpenAI", "published": "2025-10-06", "kind": "company_pr" },
+    { "url": "https://ir.amd.com/financial-information/sec-filings/content/0001193125-25-230895/d28189dex991.htm", "publisher": "SEC / AMD 8-K", "published": "2025-10-06", "kind": "sec_filing" }
+  ],
+  "updated": "2026-08-13"
+}

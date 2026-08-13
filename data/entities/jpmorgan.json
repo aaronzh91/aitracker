@@ -1,0 +1,79 @@
+{
+  "id": "jpmorgan",
+  "name": "JPMorgan Chase & Co.",
+  "kind": "financial_institution",
+  "category": "financier_bank",
+  "group": "capital",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NYSE", "symbol": "JPM" }],
+  "cik": "19617",
+  "website": "https://www.jpmorganchase.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Largest US bank; monetizes AI as lead arranger of data-center project debt (Vantage $38B, Stargate Abilene construction loans) and margin/bridge lending against AI equity stakes (SoftBank) — while its research sizes the AI debt market it is building.",
+  "description_md": "JPMorgan Chase is the largest US bank and the lead arranger of record for AI infrastructure credit: it co-led the biggest AI project-debt package to date (Vantage, $38B) and the construction financing for Stargate's flagship Abilene campus. Its research desk was among the first to size total AI-linked debt at ~$1.2T, calling it the largest sector in the US investment-grade market.",
+  "ai_monetization_md": "AI-exposure thesis: arrange, warehouse briefly, and distribute the AI debt wave — earning league-table fees at every layer. Positions: co-lead (with MUFG) of the $38B senior secured facilities for Vantage's Texas/Wisconsin campuses that Oracle will use for OpenAI (Oct 2025); lead on the $2.3B and $7.1B construction loans for the Crusoe/Blue Owl/Primary Digital Stargate Abilene JV; JPMorgan Chase Bank is in SoftBank's $10B margin loan collateralized by its OpenAI stake (Aug 2026) after the earlier $40B bridge for the same investment.",
+  "risk_notes_md": "Underwriting-to-distribution works until it doesn't: bridge and warehouse exposure concentrates at exactly the moments credit appetite turns (US banks' retreat from the Saline Township deal is the live example). The bank's own research estimate of ~$1.2T of AI-linked debt is an analyst figure, not a disclosure, and is one of the most-cited numbers in the systemic-risk debate — Chicago Fed analysis separately puts bank C&I commitments to AI-adjacent industries near 25% of Tier 1 capital.",
+  "observations": [
+    {
+      "metric": "contract_value",
+      "metric_label": "Vantage data-center debt package (co-lead with MUFG)",
+      "period": "2025-10",
+      "value": 38,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.bloomberg.com/news/articles/2025-10-23/record-38-billion-debt-sale-nears-for-oracle-tied-data-centers", "publisher": "Bloomberg", "published": "2025-10-23", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "$23.25B (Texas) + $14.75B (Wisconsin) senior secured facilities for Vantage campuses leased to Oracle for OpenAI; syndicate includes Goldman, BNP, SocGen, SMBC, Wells Fargo."
+    },
+    {
+      "metric": "contract_value",
+      "metric_label": "Stargate Abilene construction loan (expansion tranche)",
+      "period": "2025",
+      "value": 7.1,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.commercialsearch.com/news/blue-owl-jv-lands-7-1b-for-data-center-project/", "publisher": "Commercial Property Executive", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "JPMorgan-led; follows the initial $2.3B construction loan for the Crusoe/Blue Owl/Primary Digital JV at Abilene, TX (Lancium Clean Campus)."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Estimated total AI-linked debt outstanding (JPM research)",
+      "period": "2025-10",
+      "value": 1200,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "low",
+      "source": { "url": "https://www.studioglobal.ai/discover/answers/what-is-jpmorgan-s-updated-forecast-for-total-6a31b5a76ea4126128ebeee3", "publisher": "Studio Global (citing JPMorgan research)", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "JPMorgan research estimate (~$1.2T by Oct 2025), making AI the largest sector in its US IG index — an analyst estimate widely cited in the systemic-risk debate, not a disclosure. Secondary-source URL; primary note is paywalled."
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-10-23",
+      "title": "Co-leads record $38B debt package for Vantage's Oracle-tied campuses",
+      "why_it_matters": "The largest AI project-financing to date; commercial-bank credit now directly underwrites the Oracle–OpenAI compute chain.",
+      "impact": "high",
+      "entities": ["jpmorgan", "goldman-sachs", "vantage", "oracle", "openai"],
+      "sources": [{ "url": "https://www.bloomberg.com/news/articles/2025-10-23/record-38-billion-debt-sale-nears-for-oracle-tied-data-centers", "publisher": "Bloomberg", "published": "2025-10-23", "kind": "press" }]
+    },
+    {
+      "date": "2026-08-06",
+      "title": "Lends in SoftBank's $10B OpenAI-collateralized margin loan",
+      "why_it_matters": "Bank credit is now secured directly by unlisted frontier-lab equity — a first-of-kind collateral chain at this scale.",
+      "impact": "medium",
+      "entities": ["jpmorgan", "softbank", "openai"],
+      "sources": [{ "url": "https://www.bloomberg.com/news/articles/2026-08-06/softbank-secures-10-billion-margin-loan-backed-by-openai-stake", "publisher": "Bloomberg", "published": "2026-08-06", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.bloomberg.com/news/articles/2025-08-20/jpmorgan-mufg-to-lead-22-billion-loan-for-vantage-data-centers", "publisher": "Bloomberg", "published": "2025-08-20", "kind": "press", "notes": "Earlier tranche of the Vantage relationship before the $38B package." },
+    { "url": "https://www.bloomberg.com/news/articles/2025-10-23/record-38-billion-debt-sale-nears-for-oracle-tied-data-centers", "publisher": "Bloomberg", "published": "2025-10-23", "kind": "press" },
+    { "url": "https://www.commercialsearch.com/news/blue-owl-jv-lands-7-1b-for-data-center-project/", "publisher": "Commercial Property Executive", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

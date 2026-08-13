@@ -1,0 +1,39 @@
+{
+  "id": "nvidia--tsmc--wafer-packaging",
+  "from": "nvidia",
+  "to": "tsmc",
+  "type": "supply_agreement",
+  "status": "active",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "Contract dollars undisclosed. NVIDIA has booked ~60% of TSMC's 2026 CoWoS advanced-packaging capacity (press/analyst-reported) plus leading-edge wafer supply for Blackwell/Rubin — the single largest customer commitment at TSMC, which guided 2026 capex to $60-64B partly on this demand.", "as_of": "2026" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "NVIDIA pays as wafers/packages deliver, plus capacity prepayments that are aggregated (not itemized) in both firms' disclosures. NVIDIA's data-center COGS implies tens of billions annually to TSMC.", "as_of": "2026-08-13" },
+  "term": { "announced": null, "start": null, "end": null, "duration_years": null },
+  "nature_md": "The load-bearing supply relationship of the AI buildout: TSMC fabricates effectively all of NVIDIA's leading-edge GPUs and performs CoWoS advanced packaging, with NVIDIA reported to have booked ~60% of TSMC's 2026 CoWoS capacity. Structured as rolling capacity reservations and purchase orders (with prepayments/deposits customary for capacity locks) rather than one disclosed mega-contract. CoWoS capacity — not wafer starts — has repeatedly been the binding constraint on global AI-accelerator output; overflow goes to OSATs like ASE.",
+  "accounting": {
+    "payer_treatment_md": "NVIDIA carries supply commitments and capacity prepayments in its inventory-purchase-obligation disclosures (tens of billions across suppliers); wafer/packaging costs flow through COGS as products ship (NVIDIA gross margin ~70%+ prices well above these input costs).",
+    "payee_treatment_md": "TSMC recognizes foundry/packaging revenue on delivery — HPC/AI is now the majority of its revenue mix — and is spending $60-64B of 2026 capex to expand CoWoS/leading-edge capacity against these bookings; prepayments sit as contract liabilities until earned.",
+    "off_balance_sheet": true,
+    "flags": ["customer_concentration", "commitment_unfunded"]
+  },
+  "related_edges": ["nvidia--sk-hynix--hbm", "nvidia--micron--hbm", "nvidia--samsung--hbm"],
+  "both_sides_md": "**Bull:** capacity pre-booking is rational scarcity management, and TSMC's capex response is demand-verified — its customers prepay. **Bear:** one customer holding ~60% of the critical packaging bottleneck concentrates the entire ecosystem's supply risk (and TSMC's capex bet) on NVIDIA's demand forecast being right.",
+  "observations": [
+    {
+      "metric": "market_share_pct",
+      "metric_label": "Share of TSMC 2026 CoWoS capacity booked by NVIDIA",
+      "period": "CY2026",
+      "value": 60,
+      "unit": "pct",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.trendforce.com/news/2025/12/15/news-nvidia-books-majority-of-tsmc-2026-cowos-capacity/", "publisher": "TrendForce", "published": "2025-12", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "Analyst/supply-chain-reported figure; neither company confirms customer-level splits."
+    }
+  ],
+  "events": [],
+  "sources": [
+    { "url": "https://www.trendforce.com/news/2025/12/15/news-nvidia-books-majority-of-tsmc-2026-cowos-capacity/", "publisher": "TrendForce", "published": "2025-12", "kind": "press" },
+    { "url": "https://www.trendforce.com/news/2026/07/31/news-ase-again-raises-2026-capex-to-record-us10-5b-eyes-2x-leading-edge-advanced-packaging-revenue-by-2027/", "publisher": "TrendForce", "published": "2026-07-31", "kind": "press", "notes": "CoWoS overflow to OSATs corroborates the capacity squeeze." }
+  ],
+  "updated": "2026-08-13"
+}

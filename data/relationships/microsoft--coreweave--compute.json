@@ -1,0 +1,52 @@
+{
+  "id": "microsoft--coreweave--compute",
+  "from": "microsoft",
+  "to": "coreweave",
+  "type": "compute_purchase",
+  "status": "active",
+  "headline": { "value": null, "unit": "USD_B", "caveat": "no single disclosed aggregate; a series of master-agreement commitments since 2023. Microsoft was ~67% of CoreWeave's $5.1B FY2025 revenue but is now less than half of future committed contract revenue", "as_of": "2026" },
+  "realized_to_date": { "value": null, "unit": "USD_B", "caveat": "cumulative billings not separately disclosed; ~67% of FY2025 revenue implies ≈$3.4B in 2025 alone" },
+  "annualized_flow": { "value": 3.4, "unit": "USD_B_per_year", "caveat": "estimated: ~67% of CoreWeave's $5.1B FY2025 revenue", "as_of": "2025-12" },
+  "term": { "announced": "2023", "start": "2023", "end": null, "duration_years": null },
+  "nature_md": "Microsoft is CoreWeave's founding anchor customer: GPU capacity contracted under multi-year take-or-pay-style committed agreements, historically including capacity Microsoft resold onward to OpenAI workloads. Microsoft was ~62% of CoreWeave's 2024 revenue and ~67% of FY2025 revenue (~$3.4B of $5.1B), but CoreWeave states Microsoft now represents **less than half of future committed contract revenue** after the OpenAI ($11.9B direct, later expanded to ~$22.4B), Meta (~$35B), Google, and NVIDIA agreements diversified the backlog (~$129B). Microsoft has also reportedly declined some optional capacity expansions while remaining the largest single revenue payer.",
+  "accounting": {
+    "payer_treatment_md": "Committed cloud-capacity purchases expensed by Microsoft as cost of revenue as consumed; part of Microsoft's strategy of renting third-party capacity (CoreWeave, Nebius, Lambda, Nscale, IREN — ~$60B+ across neoclouds) instead of owning all buildout capex.",
+    "payee_treatment_md": "CoreWeave's revenue base and the collateral foundation of its ~$30B debt stack — GPU-backed facilities were underwritten substantially on Microsoft committed contracts. Concentration cuts both ways: falling below 50% of future committed revenue reduces single-customer risk but also reflects Microsoft's marginal shift toward its own capacity.",
+    "off_balance_sheet": false,
+    "flags": ["customer_concentration"]
+  },
+  "related_edges": ["meta--coreweave--compute", "nvidia--coreweave--equity-backstop", "microsoft--nebius--compute", "microsoft--lambda--compute", "microsoft--nscale--compute"],
+  "observations": [
+    {
+      "metric": "revenue_segment",
+      "metric_label": "Microsoft share of CoreWeave revenue",
+      "period": "FY2025",
+      "value": 67,
+      "unit": "pct",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.stocktitan.net/sec-filings/CRWV/10-k-core-weave-inc-files-annual-report-765643168fc2.html", "publisher": "CoreWeave 10-K (via StockTitan)", "published": "2026", "kind": "sec_filing" },
+      "as_of": "2026-08-13",
+      "notes": "CoreWeave FY2025 revenue $5.1B; Microsoft ~67%. Down from concentration risk highs but still dominant in realized revenue."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Microsoft share of future committed contract revenue",
+      "period": "2026",
+      "value": null,
+      "unit": "pct",
+      "basis": "company_claimed",
+      "confidence": "medium",
+      "source": { "url": "https://sacra.com/c/coreweave/", "publisher": "Sacra", "published": "2026", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "CoreWeave states Microsoft is now less than 50% of expected future committed contract revenue; exact figure undisclosed."
+    }
+  ],
+  "events": [],
+  "sources": [
+    { "url": "https://www.stocktitan.net/sec-filings/CRWV/10-k-core-weave-inc-files-annual-report-765643168fc2.html", "publisher": "CoreWeave 10-K (via StockTitan)", "published": "2026", "kind": "sec_filing" },
+    { "url": "https://www.cnbc.com/2025/05/01/coreweave-stock-surges-after-microsoft-sticks-to-spending-plans.html", "publisher": "CNBC", "published": "2025-05-01", "kind": "press" },
+    { "url": "https://sacra.com/c/coreweave/", "publisher": "Sacra", "published": "2026", "kind": "analyst" }
+  ],
+  "updated": "2026-08-13"
+}

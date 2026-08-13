@@ -1,0 +1,87 @@
+{
+  "id": "huawei",
+  "name": "Huawei Technologies Co., Ltd.",
+  "kind": "private_company",
+  "category": "chip_designer",
+  "group": "compute_supply_chain",
+  "region": "china",
+  "tier": 1,
+  "tickers": [],
+  "cik": null,
+  "website": "https://www.huawei.com",
+  "fiscal_year_end": "12-31",
+  "monetization": "Sells the domestic full stack — Ascend accelerators (with in-house HBM), Atlas SuperPoDs, Kunpeng CPUs, MindSpore/CANN software, and Huawei Cloud — as China's sanctioned-market Nvidia substitute.",
+  "description_md": "Huawei is the employee-owned Chinese technology group (2024 revenue RMB 862B) that anchors China's parallel AI compute stack. Its HiSilicon-designed Ascend accelerators (910C shipping; 950 series with **in-house-developed HBM** from 2026) are fabricated at SMIC on non-EUV 7nm-class processes, assembled into Atlas SuperPoD rack systems marketed against Nvidia's NVL platforms. Huawei has been on the US Entity List since May 2019 — the original export-control action — and its resurgence in AI chips is the central counterexample to the controls' effectiveness. DeepSeek's V4 launched with day-0 training and serving on Ascend in April 2026.",
+  "ai_monetization_md": "Hardware sales of Ascend accelerators and Atlas systems to Chinese clouds, labs, telcos, and state buyers — a market progressively reserved for domestic silicon as US bans tightened (H20 re-ban dynamics, B30A blocked, offshore-DC ban Jun 2026; TrendForce expects domestic chips at ~50% of China's high-end AI market by end-2026). Planned 2026 output: ~600K Ascend 910C units (~2× 2025) and up to 1.6M total Ascend dies across SKUs. Beyond chips: Huawei Cloud sells Ascend-backed AI services; the CANN/MindSpore stack monetizes lock-in the way CUDA does. Financial detail is limited — Huawei is private and does not break out Ascend revenue (a known data gap).",
+  "ai_strategy_md": "Vertical integration under embargo: own the accelerator (Ascend), the memory (in-house HBM on the 950 series — bypassing the Korean/US HBM chokepoint), the interconnect and rack (SuperPoD), the software (CANN), and the fab relationship (SMIC's constrained 7nm capacity is largely allocated to Huawei). Compensate for per-chip performance deficits with system-level scale (larger pods, more power) and price. Win the domestic market by policy default, then export to sanctioned-adjacent markets. DeepSeek V4's day-0 Ascend support is the flagship proof that frontier-class work can run on the stack.",
+  "risk_notes_md": "**Manufacturing ceiling:** without EUV, SMIC's 7nm-class output caps both volume and efficiency; the ~600K 910C plan depends on SMIC yield/capacity doubling and remains press-reported, not disclosed. **HBM gap:** in-house HBM is unproven at scale versus SK hynix/Samsung parts; CXMT's HBM ramp timing is unverified. **Entity List:** US restrictions (since May 2019, repeatedly expanded) bar access to leading-edge foundry, tools, and most foreign components; June 2026 offshore rules also complicate customers' hybrid strategies, which helps Huawei domestically but caps its addressable market. **Opacity:** private company; no audited segment data — most figures here carry press-reported confidence.",
+  "observations": [
+    {
+      "metric": "other",
+      "metric_label": "Planned Ascend 910C output, CY2026",
+      "period": "CY2026 (plan)",
+      "value": 600,
+      "unit": "K units",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.rcrwireless.com/20250930/ai-infrastructure/huawei-ai-chips-2", "publisher": "RCR Wireless (via Bloomberg)", "published": "2025-09-30", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "~2× the ~300K produced in 2025; total Ascend dies across SKUs reported up to 1.6M for 2026. Fabricated at SMIC."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "CY2024",
+      "value": 862,
+      "unit": "RMB_B",
+      "basis": "disclosed",
+      "confidence": "medium",
+      "source": { "url": "https://www.huawei.com/en/annual-report/2024", "publisher": "Huawei Annual Report", "published": "2025", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "Group revenue (all segments), +22% y/y; Huawei does not disclose Ascend/AI revenue separately. CY2025 figures not yet in this record."
+    },
+    {
+      "metric": "market_share_pct",
+      "metric_label": "Domestic chips' share of China high-end AI accelerator market (2026E)",
+      "period": "CY2026 (estimate)",
+      "value": 50,
+      "unit": "pct",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.trendforce.com/news/2025/09/18/news-huawei-unveils-ascend-950-with-in-house-hbm-in-2026-touts-superpod-to-rival-nvidia/", "publisher": "TrendForce", "published": "2025-09-18", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "TrendForce estimate for domestic chips collectively (Huawei is the largest share) by end-2026, accelerated by the B30A blockade."
+    }
+  ],
+  "events": [
+    {
+      "date": "2019-05",
+      "title": "Added to the US Entity List",
+      "why_it_matters": "The founding event of the export-control era: cut Huawei off from US technology and leading-edge foundry, forcing the vertical-integration strategy that now defines China's AI stack.",
+      "impact": "high",
+      "entities": ["huawei", "us-government"],
+      "sources": [{ "url": "https://www.federalregister.gov/documents/2019/05/21/2019-10616/addition-of-entities-to-the-entity-list", "publisher": "US Federal Register", "published": "2019-05-21", "kind": "official_sector" }]
+    },
+    {
+      "date": "2025-09-18",
+      "title": "Unveils Ascend 950 with in-house HBM for 2026; SuperPoD roadmap against Nvidia",
+      "why_it_matters": "Attacks the HBM bottleneck — the one input China could not source — with vertical integration; the SuperPoD roadmap concedes per-chip deficits and competes at system level.",
+      "impact": "high",
+      "entities": ["huawei"],
+      "sources": [{ "url": "https://www.trendforce.com/news/2025/09/18/news-huawei-unveils-ascend-950-with-in-house-hbm-in-2026-touts-superpod-to-rival-nvidia/", "publisher": "TrendForce", "published": "2025-09-18", "kind": "press" }]
+    },
+    {
+      "date": "2026-04-24",
+      "title": "DeepSeek V4 trains and serves on Ascend from day 0",
+      "why_it_matters": "The strongest demand-side validation of the Ascend stack: China's flagship open-weight frontier model no longer depends on Nvidia hardware at any stage.",
+      "impact": "high",
+      "entities": ["huawei", "deepseek"],
+      "sources": [{ "url": "https://fortune.com/2026/04/24/deepseek-v4-ai-model-price-performance-china-open-source/", "publisher": "Fortune", "published": "2026-04-24", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.rcrwireless.com/20250930/ai-infrastructure/huawei-ai-chips-2", "publisher": "RCR Wireless", "kind": "press" },
+    { "url": "https://www.trendforce.com/news/2025/09/18/news-huawei-unveils-ascend-950-with-in-house-hbm-in-2026-touts-superpod-to-rival-nvidia/", "publisher": "TrendForce", "kind": "press" },
+    { "url": "https://www.aljazeera.com/economy/2026/6/1/us-says-ban-on-ai-chip-shipments-applies-to-chinese-firms-outside-china", "publisher": "Al Jazeera", "kind": "press", "notes": "Export-control frame: offshore-DC ban extension, Jun 2026." }
+  ],
+  "updated": "2026-08-13"
+}

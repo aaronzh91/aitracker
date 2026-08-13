@@ -1,0 +1,33 @@
+{
+  "id": "us-government--openai--dod-2025",
+  "from": "us-government",
+  "to": "openai",
+  "type": "government_contract",
+  "status": "active",
+  "headline": { "value": 200, "unit": "USD_M", "caveat": "contract ceiling — a fixed-amount prototype Other Transaction Agreement, not committed spend", "as_of": "2025-06-16" },
+  "realized_to_date": { "value": 2, "unit": "USD_M", "caveat": "$1,999,998 of FY2025 RDT&E funds obligated at time of award; subsequent obligations not publicly consolidated", "as_of": "2025-06-16" },
+  "term": { "announced": "2025-06-16", "start": "2025-06", "end": "2026-07", "duration_years": 1 },
+  "nature_md": "DoD prototype OTA HQ0883-25-9-0012, awarded June 16, 2025 via the Chief Digital and AI Office (CDAO): OpenAI Public Sector LLC develops 'prototype frontier AI capabilities to address critical national security challenges in both warfighting and enterprise domains,' performed mainly in the National Capital Region, estimated completion July 2026. This edge is the dataset's cleanest **headline ≠ realized** exemplar: a $200M ceiling was reported everywhere as a '$200M contract,' but only **$1,999,998 was obligated at award** — ceilings are hunting licenses, not revenue. It launched 'OpenAI for Government,' and CDAO extended similar $200M-ceiling awards to Anthropic, Google, and xAI in July 2025. A separate, later Pentagon deal for classified systems (Feb 2026, revised Mar 2026) remains under seal and is not counted here.",
+  "accounting": {
+    "payer_treatment_md": "US Government obligations occur incrementally against the ceiling as task orders/milestones are funded (initial: ~$2M of FY25 RDT&E appropriations). OTAs bypass standard FAR procurement — faster, but with thinner public reporting of subsequent obligations.",
+    "payee_treatment_md": "OpenAI recognizes revenue as work is performed against obligated (not ceiling) amounts. Government revenue is strategically outsized relative to its dollars: validation for enterprise/sovereign sales, and via GSA OneGov OpenAI also offered $1/agency ChatGPT access — classic loss-leader distribution.",
+    "off_balance_sheet": false,
+    "flags": ["loss_leader_distribution"]
+  },
+  "related_edges": ["us-government--anthropic--dod-2025"],
+  "observations": [],
+  "events": [
+    {
+      "date": "2025-06-16",
+      "title": "DoD awards OpenAI $200M-ceiling prototype OTA (~$2M obligated)",
+      "impact": "medium",
+      "entities": ["us-government", "openai"],
+      "sources": [{ "url": "https://www.war.gov/News/Contracts/Contract/Article/4218062/contracts-for-jun-16-2025", "publisher": "US Department of Defense (contracts listing)", "published": "2025-06-16", "kind": "official_sector" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.war.gov/News/Contracts/Contract/Article/4218062/contracts-for-jun-16-2025", "publisher": "US Department of Defense", "title": "Contracts for June 16, 2025", "published": "2025-06-16", "kind": "official_sector" },
+    { "url": "https://openai.com/global-affairs/introducing-openai-for-government/", "publisher": "OpenAI", "published": "2025-06-16", "kind": "company_pr" }
+  ],
+  "updated": "2026-08-13"
+}

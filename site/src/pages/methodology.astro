@@ -1,0 +1,50 @@
+---
+import Base from "../layouts/Base.astro";
+---
+<Base title="Methodology — AI Money Tracker">
+  <div class="narrow">
+    <h1>Methodology</h1>
+    <p class="lede">The rules this site holds itself to. The full specification and every data file live in the open at
+      <a href="https://github.com/aaronzh91/aitracker">github.com/aaronzh91/aitracker</a> — the git history is the audit trail.</p>
+
+    <h2>Provenance on every number</h2>
+    <p>Each figure is an <em>observation</em> with a source URL, source type, date, and a basis tag rendered everywhere the number appears:</p>
+    <ul>
+      <li><span class="basis disclosed">disclosed</span> — audited or regulatory filings (SEC, exchange filings)</li>
+      <li><span class="basis company_claimed">company-claimed</span> — company PR, blogs, executive statements</li>
+      <li><span class="basis press_reported">press-reported</span> — reputable press; single-sourced claims carry low confidence</li>
+      <li><span class="basis estimated">estimated</span> — our estimate, always with a documented method one click away</li>
+    </ul>
+    <p>Ratified policy: where a reported figure exists, it is always used. Estimates fill genuine gaps and never masquerade as facts.</p>
+
+    <h2>Commitments are not revenue</h2>
+    <p>The single largest source of public confusion is headline deal values versus money actually moving. Every flow
+      distinguishes <strong>headline</strong> (announced/committed) from <strong>realized to date</strong> (best-sourced
+      actual transfers). Where realized is unknown, we say "unknown" — which is itself information.</p>
+
+    <h2>Two-sided accounting</h2>
+    <p>A money flow isn't understood until we can say how <em>both</em> parties record it — revenue vs. deferred revenue vs.
+      RPO; capex vs. opex vs. equity-method investment; on- vs. off-balance-sheet. Every flow page forces this question.</p>
+
+    <h2>Circularity flags</h2>
+    <p>Structural patterns marked on flows and verified against detected cycles in the graph: equity-for-revenue,
+      warrant-for-revenue, vendor financing, round-trip cloud, off-balance-sheet SPV shift, GPU-collateralized debt.
+      The site presents the decomposition and the evidence — it does not tell you what multiple to pay. Contested deals
+      carry both the bull and bear framing in their strongest sourced form.</p>
+
+    <h2>Neutral voice</h2>
+    <p>Data pages are factual; judgments are attributed; corrections are public and never silent. This is an educational
+      reference, <strong>not investment advice</strong>.</p>
+
+    <h2>Update rhythm</h2>
+    <p>Weekly, Saturdays 8pm ET: automated ingest from SEC EDGAR and market-data APIs (auto-merged when schema-valid),
+      plus an LLM-assisted news sweep behind a strict impact filter whose editorial output ships as a reviewed pull
+      request. The <a href="/changelog">changelog</a> records what changed each week — including "no material changes,"
+      so silence is distinguishable from staleness.</p>
+
+    <h2>Contribute</h2>
+    <p>Corrections and additions are welcome via pull request — see
+      <a href="https://github.com/aaronzh91/aitracker/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>. Every page links
+      to its underlying data file and an error-report form.</p>
+  </div>
+</Base>

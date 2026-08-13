@@ -1,0 +1,18 @@
+---
+import Base from "../layouts/Base.astro";
+import { summary } from "../lib/data.js";
+---
+<Base title="Changelog — AI Money Tracker">
+  <div class="narrow">
+    <h1>Changelog</h1>
+    <p class="lede">One entry per weekly update run (Saturdays 8pm ET), plus out-of-band corrections. Full detail lives in the
+      <a href="https://github.com/aaronzh91/aitracker/commits/main">git history</a>.</p>
+
+    <div class="panel">
+      <h3>2026-08-13 — Initial dataset</h3>
+      <p>Phase 1 launch: {summary.entities} entities, {summary.relationships} money flows, {summary.bottlenecks} bottleneck
+        records — hand-compiled and sourced from filings, company disclosures, and tier-1 press as of Aug 13, 2026.
+        Automated weekly updates (SEC EDGAR + market data + impact-filtered news) arrive with Phase 2.</p>
+    </div>
+  </div>
+</Base>

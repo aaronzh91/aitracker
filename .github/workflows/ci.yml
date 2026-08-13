@@ -1,0 +1,25 @@
+name: CI
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  validate-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install root deps
+        run: npm ci || npm install
+      - name: Validate data against schemas + referential integrity
+        run: npm run validate
+      - name: Install site deps
+        run: npm --prefix site ci || npm --prefix site install
+      - name: Derive analytics + build site
+        run: npm run build
+      # Phase 2 will add scheduled ingest jobs using secrets:
+      #   APININJAS_API_KEY (market data), OPENROUTER_API_KEY (news triage/extraction).
+      # Secrets are never exposed to fork PRs; ingest runs only on the maintained branch.

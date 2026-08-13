@@ -1,0 +1,82 @@
+{
+  "$id": "common.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Shared definitions for AI Money Tracker data records",
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "publisher", "kind"],
+      "properties": {
+        "url": { "type": "string", "pattern": "^https?://" },
+        "publisher": { "type": "string", "minLength": 1 },
+        "title": { "type": "string" },
+        "published": { "type": "string", "pattern": "^\\d{4}(-\\d{2})?(-\\d{2})?$" },
+        "kind": {
+          "type": "string",
+          "enum": ["sec_filing", "company_pr", "company_ir", "earnings_call", "press", "analyst", "official_sector", "dataset", "other"]
+        },
+        "notes": { "type": "string" }
+      }
+    },
+    "money": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "unit"],
+      "properties": {
+        "value": { "type": ["number", "null"] },
+        "unit": { "type": "string", "enum": ["USD_B", "USD_M", "USD_B_per_year", "EUR_B", "GBP_B", "JPY_B", "KRW_T", "RMB_B", "GW", "MW", "shares_M", "pct"] },
+        "caveat": { "type": "string" },
+        "as_of": { "type": "string", "pattern": "^\\d{4}(-\\d{2})?(-\\d{2})?$" }
+      }
+    },
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["metric", "period", "value", "unit", "basis", "confidence", "source", "as_of"],
+      "properties": {
+        "metric": {
+          "type": "string",
+          "enum": [
+            "revenue_total", "revenue_ai", "ai_run_rate", "revenue_segment", "gross_margin_pct",
+            "operating_income", "net_income", "capex", "capex_guidance", "free_cash_flow",
+            "cash_and_equivalents", "total_debt", "rpo", "backlog_ai", "market_cap", "valuation",
+            "arr", "funding_raised", "depreciation_useful_life_years", "headcount",
+            "capacity_gw", "capacity_mw", "lead_time_months", "market_share_pct",
+            "utilization_pct", "price_trend", "contract_value", "loss_annual", "burn_rate", "other"
+          ]
+        },
+        "metric_label": { "type": "string", "description": "Human label; required in practice when metric=other or revenue_segment" },
+        "period": { "type": "string", "minLength": 2, "description": "e.g. FY2026-Q2, CY2025, run_rate@2026-05, 2026-08-13" },
+        "value": { "type": ["number", "null"] },
+        "unit": { "type": "string" },
+        "basis": { "type": "string", "enum": ["disclosed", "company_claimed", "press_reported", "estimated"] },
+        "method_md": { "type": "string", "description": "REQUIRED when basis=estimated: assumptions and derivation, reader-accessible" },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "source": { "$ref": "common.schema.json#/$defs/source" },
+        "as_of": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "notes": { "type": "string" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "basis": { "const": "estimated" } } },
+          "then": { "required": ["method_md"] }
+        }
+      ]
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["date", "title", "impact", "sources"],
+      "properties": {
+        "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}(-\\d{2})?$" },
+        "title": { "type": "string", "minLength": 3 },
+        "why_it_matters": { "type": "string" },
+        "impact": { "type": "string", "enum": ["high", "medium", "low"] },
+        "entities": { "type": "array", "items": { "type": "string" } },
+        "relationships": { "type": "array", "items": { "type": "string" } },
+        "sources": { "type": "array", "minItems": 1, "items": { "$ref": "common.schema.json#/$defs/source" } }
+      }
+    }
+  }
+}

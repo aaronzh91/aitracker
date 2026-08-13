@@ -1,0 +1,39 @@
+---
+import "../styles/global.css";
+const { title = "AI Money Tracker", description = "An open-source, weekly-updated map of who pays whom in the AI ecosystem — sources on every number." } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗺️</text></svg>" />
+  </head>
+  <body>
+    <header class="site">
+      <div class="wrap">
+        <a class="brand" href="/">AI Money Tracker</a>
+        <nav>
+          <a href="/#companies">Companies</a>
+          <a href="/#map">Money map</a>
+          <a href="/flows">Flows</a>
+          <a href="/bottlenecks">Bottlenecks</a>
+          <a href="/methodology">Methodology</a>
+          <a href="/changelog">Changelog</a>
+        </nav>
+        <span class="tag">open data · updated weekly</span>
+      </div>
+    </header>
+    <main class="wrap">
+      <slot />
+    </main>
+    <footer class="site">
+      <div class="wrap">
+        <span>Data: CC BY-SA 4.0 · Code: MIT · <a href="https://github.com/aaronzh91/aitracker">GitHub</a></span>
+        <span>Not investment advice. Every number carries its source; estimates carry their method.</span>
+      </div>
+    </footer>
+  </body>
+</html>

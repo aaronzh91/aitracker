@@ -1,0 +1,57 @@
+{
+  "$id": "entity.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AI Money Tracker entity record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "kind", "category", "group", "region", "tier", "monetization", "updated"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{1,63}$" },
+    "name": { "type": "string", "minLength": 1 },
+    "kind": {
+      "type": "string",
+      "enum": ["public_company", "private_company", "subsidiary", "financial_institution", "fund", "sovereign_fund", "spv_jv", "government", "nonprofit"]
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "model_lab", "ai_native",
+        "hyperscaler", "neocloud", "datacenter_operator", "datacenter_developer",
+        "chip_designer", "foundry", "memory_storage", "semi_equipment_eda", "packaging_substrate",
+        "network_optics", "server_oem_odm", "power_semis",
+        "electrical_equipment", "cooling_thermal", "engineering_construction", "materials_cables",
+        "power_utility", "power_generation_ipp", "nuclear_smr", "turbines_gensets", "energy_other",
+        "enterprise_software", "consumer_platform",
+        "financier_bank", "financier_private_credit", "financier_pe_vc", "sovereign_fund", "insurer", "spv_jv",
+        "government_program"
+      ]
+    },
+    "group": {
+      "type": "string",
+      "enum": ["labs_ai_native", "hyperscalers_clouds", "compute_supply_chain", "physical_infrastructure", "energy", "software_applications", "capital", "government_state"]
+    },
+    "region": { "type": "string", "enum": ["us", "europe", "china", "japan", "korea", "taiwan", "middle_east", "india", "other"] },
+    "tier": { "type": "integer", "minimum": 1, "maximum": 3 },
+    "tickers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["exchange", "symbol"],
+        "properties": { "exchange": { "type": "string" }, "symbol": { "type": "string" } }
+      }
+    },
+    "cik": { "type": ["string", "null"], "pattern": "^[0-9]{1,10}$" },
+    "website": { "type": ["string", "null"] },
+    "fiscal_year_end": { "type": ["string", "null"], "pattern": "^\\d{2}-\\d{2}$" },
+    "monetization": { "type": "string", "minLength": 3, "description": "One line: how this company turns AI into money" },
+    "description_md": { "type": "string" },
+    "ai_monetization_md": { "type": "string" },
+    "ai_strategy_md": { "type": "string" },
+    "risk_notes_md": { "type": "string" },
+    "observations": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/observation" } },
+    "events": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/event" } },
+    "sources": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/source" } },
+    "updated": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+  }
+}

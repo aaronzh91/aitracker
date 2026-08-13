@@ -284,7 +284,7 @@ Pure TypeScript, runs at build; outputs derived JSON the site renders. All formu
 | Graph viz | D3 force layout in one React island | Full control over hover cards, edge styling, cycle highlighting |
 | Analytics | TypeScript scripts at build time (`/scripts`) | No server; every derived number reproducible from the repo |
 | Charts on pages | Lightweight SVG (D3/Observable Plot) | consistency, no heavy chart lib |
-| Hosting | GitHub Pages via Actions (custom domain optional) | Free, deploys on push — the weekly commit *is* the deploy |
+| Hosting | **Railway** (owner decision, Phase 1) — static build served by a minimal Node server (`npm start`); deploys on push to main | Custom domain later; CI still validates + builds on every PR |
 | CI | GitHub Actions: schema validation, link checks, cycle-flag reconciliation, build | Trust = the data can't silently break |
 
 Alternative considered: Next.js static export (fine, heavier); a database-backed app (rejected for v1 — kills the git-audit-trail trust story and adds ops burden for no v1 feature).
@@ -590,12 +590,12 @@ What exists today (surveyed Aug 2026):
 9. **Supply-chain bottlenecks** — discovery, visualization, and in-depth understanding of key chokepoints added as a core cross-audience use case: first-class records (§3.6), graph lens (§4.1), dedicated pages (§4.5), concentration analytics (§5). ✓
 10. **Company pages: impact-filtered news + investor synthesis** — each company page carries the most important recent news behind a strict impact filter (rubric in §4.2 item 9; noise excluded mechanically), and a short, clearly-labeled AI synthesis of the company from an investor's perspective built from key financials, SEC filings, the latest earnings call, and the filtered news — regenerated weekly, reviewed before merge. ✓
 
-**Still open:**
+**Resolved (owner, Aug 13, 2026):**
 
-1. **License confirmation** — recommended: MIT (code) + CC BY-SA 4.0 (data/content). Confirm before the repo goes public.
-2. **Key handoff** — how the API Ninjas and OpenRouter keys reach CI (GitHub Actions secrets set by owner; needed at the start of Phase 2). Which API Ninjas tier to subscribe to (Developer tier suffices per §8 verification).
-3. **Custom domain** — none chosen yet; GitHub Pages default until then.
-4. **Repo visibility timing** — make `aitracker` public at Phase 1 completion, or immediately?
+1. **License** — MIT (code) + CC BY-SA 4.0 (data/content). ✓ (`LICENSE`)
+2. **Keys** — `APININJAS_API_KEY` and `OPENROUTER_API_KEY` set in GitHub Actions secrets; consumed from Phase 2. ✓
+3. **Hosting** — Railway (owner-managed); custom domain deferred. ✓
+4. **Repo visibility** — public now. ✓
 
 ---
 

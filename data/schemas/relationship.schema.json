@@ -1,0 +1,63 @@
+{
+  "$id": "relationship.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AI Money Tracker relationship (money-flow edge) record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "from", "to", "type", "status", "headline", "nature_md", "accounting", "sources", "updated"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{1,95}$" },
+    "from": { "type": "string", "description": "Entity id of the PAYER (direction money flows)" },
+    "to": { "type": "string", "description": "Entity id of the PAYEE" },
+    "type": {
+      "type": "string",
+      "enum": [
+        "equity_investment", "warrant", "convertible_debt", "debt_financing", "bond_issuance",
+        "credit_facility", "margin_loan", "project_debt",
+        "compute_purchase", "hardware_purchase", "supply_agreement", "prepayment",
+        "revenue_share", "lease", "ppa", "spv_capitalization", "jv_equity",
+        "vendor_financing", "cloud_credits", "model_license", "acquisition",
+        "backstop_guarantee", "government_contract", "grant"
+      ]
+    },
+    "status": { "type": "string", "enum": ["announced", "in_talks", "contracted", "active", "completed", "cancelled", "dead", "disputed", "withdrawn", "failed"] },
+    "headline": { "$ref": "common.schema.json#/$defs/money" },
+    "realized_to_date": { "$ref": "common.schema.json#/$defs/money" },
+    "annualized_flow": { "$ref": "common.schema.json#/$defs/money" },
+    "term": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "announced": { "type": ["string", "null"], "pattern": "^\\d{4}(-\\d{2})?(-\\d{2})?$" },
+        "start": { "type": ["string", "null"], "pattern": "^\\d{4}(-\\d{2})?(-\\d{2})?$" },
+        "end": { "type": ["string", "null"], "pattern": "^\\d{4}(-\\d{2})?(-\\d{2})?$" },
+        "duration_years": { "type": ["number", "null"] }
+      }
+    },
+    "nature_md": { "type": "string", "minLength": 10, "description": "What is actually being exchanged; conditionality (take-or-pay? cancellable? gated tranches?)" },
+    "accounting": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["payer_treatment_md", "payee_treatment_md"],
+      "properties": {
+        "payer_treatment_md": { "type": "string", "minLength": 5 },
+        "payee_treatment_md": { "type": "string", "minLength": 5 },
+        "off_balance_sheet": { "type": "boolean" },
+        "flags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["equity_for_revenue", "warrant_for_revenue", "vendor_financing", "round_trip_cloud", "spv_shift", "collateralized_gpu_debt", "customer_concentration", "commitment_unfunded", "loss_leader_distribution"]
+          }
+        }
+      }
+    },
+    "related_edges": { "type": "array", "items": { "type": "string" } },
+    "bottlenecks": { "type": "array", "items": { "type": "string" }, "description": "Bottleneck ids this flow transits" },
+    "both_sides_md": { "type": "string", "description": "Strongest sourced bull and bear framing where the deal is contested" },
+    "observations": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/observation" } },
+    "events": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/event" } },
+    "sources": { "type": "array", "minItems": 1, "items": { "$ref": "common.schema.json#/$defs/source" } },
+    "updated": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+  }
+}

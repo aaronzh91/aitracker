@@ -1,0 +1,82 @@
+---
+import Base from "../layouts/Base.astro";
+import Graph from "../components/Graph.jsx";
+import { entities, relationships, graph, summary, latestObs, fmtMoney, GROUP_LABELS, GROUP_VARS, TYPE_LABELS } from "../lib/data.js";
+
+const tier1 = entities.filter((e) => e.tier === 1);
+const rows = tier1
+  .map((e) => {
+    const cap = latestObs(e, ["market_cap", "valuation"]);
+    const aiRev = latestObs(e, ["revenue_ai", "ai_run_rate", "arr"]);
+    const capex = latestObs(e, ["capex", "capex_guidance"]);
+    const rpo = latestObs(e, ["rpo", "backlog_ai"]);
+    const out = relationships.filter((r) => r.from === e.id && !["dead", "cancelled", "withdrawn", "failed"].includes(r.status));
+    const inn = relationships.filter((r) => r.to === e.id && !["dead", "cancelled", "withdrawn", "failed"].includes(r.status));
+    const top = [...out, ...inn].sort((a, b) => (b.headline?.value ?? 0) - (a.headline?.value ?? 0))[0];
+    return { e, cap, aiRev, capex, rpo, flows: out.length + inn.length, top };
+  })
+  .sort((a, b) => (b.cap?.value ?? 0) - (a.cap?.value ?? 0));
+---
+<Base>
+  <h1>Who pays whom in the AI economy</h1>
+  <p class="lede">
+    An open-source, weekly-updated map of the AI ecosystem's money flows — investments, compute commitments, hardware
+    purchases, power contracts, and financing structures — with the accounting treatment on <em>both</em> sides of every
+    flow and a source on every number. Commitments are never presented as revenue. Estimates are labeled and carry their
+    method. <a href="/methodology">How this works →</a>
+  </p>
+
+  <div class="statrow">
+    <div class="stat"><div class="n">{summary.entities ?? entities.length}</div><div class="l">entities tracked</div></div>
+    <div class="stat"><div class="n">{summary.relationships ?? relationships.length}</div><div class="l">money flows</div></div>
+    <div class="stat"><div class="n">${((summary.totalHeadlineUSDB ?? 0) / 1000).toFixed(1)}T</div><div class="l">headline flow value*</div></div>
+    <div class="stat"><div class="n">{summary.cycles ?? 0}</div><div class="l">circular structures detected</div></div>
+    <div class="stat"><div class="n">{summary.offBalanceSheetEdges ?? 0}</div><div class="l">off-balance-sheet flows</div></div>
+  </div>
+  <p class="src">*Sum of announced/committed values across live flows — <strong>not</strong> money that has moved. See each flow's page for realized-to-date.</p>
+
+  <h2 id="map">The money map</h2>
+  <Graph client:only="react" nodes={graph.nodes} edges={graph.edges} />
+  <div class="legend" style="margin-top:8px">
+    {Object.entries(GROUP_LABELS).map(([g, label]) => (
+      <span><span class="sw" style={`background: var(${GROUP_VARS[g]})`}></span>{label}</span>
+    ))}
+  </div>
+
+  <h2 id="companies">Tier-1 companies</h2>
+  <p class="src">
+    Badges show each figure's basis: <span class="basis disclosed">D</span> disclosed (filings) ·
+    <span class="basis company_claimed">C</span> company-claimed · <span class="basis press_reported">P</span> press-reported ·
+    <span class="basis estimated">E</span> estimated (method documented). Full universe (~500 entities, tiered) is rolling out —
+    see <a href="https://github.com/aaronzh91/aitracker/blob/main/UNIVERSE.md">the census</a>.
+  </p>
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Company</th><th>Group</th>
+          <th class="num">Mkt cap / valuation</th>
+          <th class="num">AI revenue (ann.)</th>
+          <th class="num">Capex</th>
+          <th class="num">RPO / AI backlog</th>
+          <th class="num">Flows</th>
+          <th>Largest flow</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map(({ e, cap, aiRev, capex, rpo, flows, top }) => (
+          <tr>
+            <td><a href={`/companies/${e.id}`}><strong>{e.name}</strong></a></td>
+            <td><span class="chip dim">{GROUP_LABELS[e.group]}</span></td>
+            <td class="num">{cap ? fmtMoney(cap) : "—"} {cap && <span class={`basis ${cap.basis}`}>{cap.basis[0].toUpperCase()}</span>}</td>
+            <td class="num">{aiRev ? fmtMoney(aiRev) : "—"} {aiRev && <span class={`basis ${aiRev.basis}`}>{aiRev.basis[0].toUpperCase()}</span>}</td>
+            <td class="num">{capex ? fmtMoney(capex) : "—"} {capex && <span class={`basis ${capex.basis}`}>{capex.basis[0].toUpperCase()}</span>}</td>
+            <td class="num">{rpo ? fmtMoney(rpo) : "—"} {rpo && <span class={`basis ${rpo.basis}`}>{rpo.basis[0].toUpperCase()}</span>}</td>
+            <td class="num"><a href={`/companies/${e.id}#flows`}>{flows}</a></td>
+            <td>{top ? <a href={`/flows/${top.id}`}>{TYPE_LABELS[top.type]} · {fmtMoney(top.headline)}</a> : "—"}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</Base>

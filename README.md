@@ -8,4 +8,26 @@ An open-source, weekly-updated, neutral reference for the financial structure of
 
 **Update rhythm:** weekly, Saturdays 8:00 pm ET — automated ingest (SEC EDGAR, API Ninjas market data, Epoch AI) plus an LLM-assisted news sweep whose editorial changes ship as reviewed pull requests, with a public changelog.
 
-**Contributing:** the project is open to updates, corrections, improvements, and new features via pull request; contribution and sourcing standards will land with Phase 1 (`CONTRIBUTING.md`).
+**Contributing:** updates, corrections, improvements, and new features are welcome via pull request — see [`CONTRIBUTING.md`](./CONTRIBUTING.md) for the sourcing standard and [`GOVERNANCE.md`](./GOVERNANCE.md) for how review works. Data records live in [`/data`](./data) (one JSON file per entity/relationship/bottleneck, schema-validated in CI).
+
+## Repo layout
+
+```
+data/         entities, relationships, bottlenecks (JSON, one file per record) + schemas + AUTHORING.md
+scripts/      validate.mjs (schema + referential integrity) · derive.mjs (graph + analytics) · serve.mjs (Railway server)
+site/         Astro app (home table + D3 money map, company/flow/bottleneck pages)
+derived/      build-time analytics output (committed for diffability)
+SPEC.md       full product & architecture specification · UNIVERSE.md coverage census
+```
+
+## Develop & deploy
+
+```bash
+npm install && npm --prefix site install   # once
+npm run validate                           # schema + referential integrity checks
+npm run build                              # validate + derive + build site into site/dist
+npm start                                  # serve site/dist (Railway runs this; respects $PORT)
+npm run dev                                # local dev server
+```
+
+**Railway:** point a service at this repo; build command `npm install && npm --prefix site install && npm run build`, start command `npm start`. **Licensing:** code MIT, data/content CC BY-SA 4.0 (see [`LICENSE`](./LICENSE)). Not investment advice.

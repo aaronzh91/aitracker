@@ -1,0 +1,80 @@
+{
+  "id": "nvidia",
+  "name": "NVIDIA Corporation",
+  "kind": "public_company",
+  "category": "chip_designer",
+  "group": "compute_supply_chain",
+  "region": "us",
+  "tier": 1,
+  "tickers": [{ "exchange": "NASDAQ", "symbol": "NVDA" }],
+  "cik": "1045810",
+  "website": "https://www.nvidia.com",
+  "fiscal_year_end": "01-31",
+  "monetization": "Sells AI accelerators, systems, and networking; increasingly also an investor in and financier of its own customer base.",
+  "description_md": "NVIDIA designs GPUs and full-rack AI systems (Blackwell, Vera Rubin), networking (NVLink, Spectrum-X), and the CUDA software stack that together dominate AI training and inference compute. Data-center revenue is ~92% of total. Manufacturing is outsourced, principally to TSMC (wafers, CoWoS advanced packaging) with HBM memory from SK Hynix, Micron, and Samsung.",
+  "ai_monetization_md": "Direct hardware/systems sales to hyperscalers, neoclouds, enterprises, and sovereigns; software (AI Enterprise, DGX Cloud); and a growing investment portfolio (>$40B of equity commitments across the ecosystem in 2026 YTD) that critics argue partially funds its own demand. In Aug 2026 NVIDIA announced a >$500B financing coalition with Apollo, Blackstone, BlackRock, Brookfield, Goldman Sachs, and KKR to fund customer purchases via compute-collateralized SPV bonds.",
+  "ai_strategy_md": "Sell the full data-center stack rather than chips alone; lock in multi-year supply (≈60% of TSMC 2026 CoWoS capacity booked) and demand (Huang claims ~$1T revenue visibility through 2027); seed strategic customers and suppliers with equity (OpenAI $30B, xAI SPV, Intel $5B, Anthropic ≤$10B, Nokia, Nebius, Nscale, Naver, SSI); backstop customer financing where debt markets hesitate (proposed ~$250B OpenAI guarantee, in talks).",
+  "risk_notes_md": "Customer concentration: four direct customers were 61% of revenue in Q1 FY27 (each >10%). Circularity: equity investments and financing structures touch a material share of its demand (see flows). China: zero data-center compute revenue assumed in guidance after export bans; a 15%-of-China-revenue license arrangement with the US government applied to prior H20 sales.",
+  "observations": [
+    {
+      "metric": "revenue_total",
+      "period": "FY2026",
+      "value": 215.9,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26cfocommentary.htm", "publisher": "SEC / NVIDIA CFO commentary", "published": "2026-02", "kind": "sec_filing" },
+      "as_of": "2026-08-13",
+      "notes": "Fiscal year ended late Jan 2026; +65% y/y."
+    },
+    {
+      "metric": "revenue_total",
+      "period": "FY2027-Q1",
+      "value": 81.6,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027", "publisher": "NVIDIA IR", "published": "2026-05", "kind": "company_ir" },
+      "as_of": "2026-08-13",
+      "notes": "+85% y/y; data center $75.2B; GAAP net income $58.3B; Q2 guide ~$91B."
+    },
+    {
+      "metric": "market_cap",
+      "period": "2026-08",
+      "value": 5200,
+      "unit": "USD_B",
+      "basis": "press_reported",
+      "confidence": "medium",
+      "source": { "url": "https://www.fool.com/research/largest-companies-by-market-cap/", "publisher": "Motley Fool", "published": "2026-08", "kind": "press" },
+      "as_of": "2026-08-13",
+      "notes": "~16% below May 2026 peak (~$1T of market cap retraced). Sources range $5.0–5.4T; automated feed replaces this in Phase 2."
+    },
+    {
+      "metric": "other",
+      "metric_label": "Top-4 customer revenue concentration",
+      "period": "FY2027-Q1",
+      "value": 61,
+      "unit": "pct",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": { "url": "https://daloopa.com/blog/analyst-pov/nvidia-customer-concentration-a-big-4-earnings-preview", "publisher": "Daloopa (from 10-Q)", "published": "2026-06", "kind": "analyst" },
+      "as_of": "2026-08-13",
+      "notes": "Four direct customers each >10% of revenue."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-08-10",
+      "title": "Announces >$500B customer-financing coalition with six financial giants",
+      "why_it_matters": "Formalizes compute-as-collateral SPV financing for NVIDIA customers at systemic scale; NVDA fell ~2.5% on concentration-risk concerns.",
+      "impact": "high",
+      "entities": ["nvidia", "apollo", "blackstone", "blackrock", "brookfield", "goldman-sachs", "kkr"],
+      "sources": [{ "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html", "publisher": "CNBC", "published": "2026-08-10", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027", "publisher": "NVIDIA IR", "kind": "company_ir" },
+    { "url": "https://www.cnbc.com/2026/05/09/nvidia-embraces-ai-investor-topping-40-billion-in-equity-bets-2026.html", "publisher": "CNBC", "published": "2026-05-09", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

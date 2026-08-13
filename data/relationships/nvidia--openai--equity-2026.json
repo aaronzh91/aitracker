@@ -1,0 +1,34 @@
+{
+  "id": "nvidia--openai--equity-2026",
+  "from": "nvidia",
+  "to": "openai",
+  "type": "equity_investment",
+  "status": "completed",
+  "headline": { "value": 30, "unit": "USD_B", "caveat": "part of OpenAI's $122B round at $852B post-money", "as_of": "2026-03-31" },
+  "realized_to_date": { "value": 30, "unit": "USD_B", "as_of": "2026-03-31" },
+  "term": { "announced": "2026-02", "start": "2026-03-31", "end": null, "duration_years": null },
+  "nature_md": "NVIDIA invested $30B in OpenAI's $122B round (closed Mar 31, 2026; $852B post-money), alongside Amazon ($50B, partly milestone-contingent) and SoftBank ($30B). This *replaced* the Sept 2025 letter of intent for up to $100B of progressive equity tied to 10GW of deployments, which was never signed and was abandoned after talks stalled in early 2026 (see related edge). Huang has said this is possibly NVIDIA's last pre-IPO investment in OpenAI. Separately, NVIDIA and OpenAI are in unsigned talks over an up-to-$250B debt guarantee (see related edge).",
+  "accounting": {
+    "payer_treatment_md": "Balance sheet: non-marketable equity investment (cost basis / fair value through disclosures). Does not flow through NVIDIA's income statement as an expense; gains/losses appear in other income upon remeasurement events.",
+    "payee_treatment_md": "Equity financing — no revenue or liability recognized. Proceeds fund compute purchases that ARE recognized as supplier revenue (NVIDIA GPUs bought directly and via clouds), which is the circularity concern.",
+    "off_balance_sheet": false,
+    "flags": ["equity_for_revenue"]
+  },
+  "related_edges": ["nvidia--openai--loi-2025", "nvidia--openai--guarantee-talks-2026"],
+  "both_sides_md": "**Bear:** the investor's money returns as the investee's purchases from the investor — manufactured demand at the margin (Chanos: 'if demand were that strong you wouldn't need to finance your customer'). **Bull:** $30B is a fraction of OpenAI's total outside fundraising ($122B round was majority non-NVIDIA money); equity-seeding a strategic customer is legitimate vendor strategy (Nvidia's Nov 2025 IR memo; Noah Smith's GM-financing analogy). Both framings are sourced on the flows methodology page.",
+  "observations": [],
+  "events": [
+    {
+      "date": "2026-03-31",
+      "title": "OpenAI closes $122B round; NVIDIA invests $30B",
+      "impact": "high",
+      "entities": ["nvidia", "openai"],
+      "sources": [{ "url": "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html", "publisher": "CNBC", "published": "2026-03-31", "kind": "press" }]
+    }
+  ],
+  "sources": [
+    { "url": "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html", "publisher": "CNBC", "published": "2026-03-31", "kind": "press" },
+    { "url": "https://www.bloomberg.com/news/articles/2026-03-31/openai-valued-at-852-billion-after-completing-122-billion-round", "publisher": "Bloomberg", "published": "2026-03-31", "kind": "press" }
+  ],
+  "updated": "2026-08-13"
+}

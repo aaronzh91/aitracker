@@ -1,0 +1,77 @@
+---
+import Base from "../../layouts/Base.astro";
+import { bottlenecks, entityById, fmtObsValue } from "../../lib/data.js";
+
+export function getStaticPaths() {
+  return bottlenecks.map((b) => ({ params: { id: b.id } }));
+}
+const { id } = Astro.params;
+const b = bottlenecks.find((x) => x.id === id);
+const statusChip = { binding: "bad", easing: "warn", watch: "dim", resolved: "dim" };
+const events = [...(b.events ?? [])].sort((x, y) => (x.date < y.date ? 1 : -1));
+---
+<Base title={`${b.name} — AI Money Tracker`}>
+  <h1>{b.name}</h1>
+  <p><span class={`chip ${statusChip[b.status]}`}>{b.status}</span> <span class="chip dim">{b.group.replaceAll("_", " ")}</span></p>
+
+  <section class="prose"><h2>What it is and why it binds</h2><p>{b.description_md}</p></section>
+
+  <div class="grid2">
+    <div class="panel">
+      <h3>Who controls it</h3>
+      {b.controlled_by.map((c) => (
+        <p style="margin:6px 0"><a href={`/companies/${c.entity}`}><strong>{entityById[c.entity]?.name ?? c.entity}</strong></a>{c.share_note ? ` — ${c.share_note}` : ""}</p>
+      ))}
+    </div>
+    <div class="panel">
+      <h3>Who depends on it</h3>
+      {(b.dependents ?? []).map((d) => (
+        <p style="margin:6px 0"><a href={`/companies/${d.entity}`}><strong>{entityById[d.entity]?.name ?? d.entity}</strong></a> — {d.dependency_md}</p>
+      ))}
+    </div>
+  </div>
+
+  {(b.observations ?? []).length > 0 && (
+    <section>
+      <h2>Current state</h2>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Metric</th><th>Period</th><th class="num">Value</th><th>Basis</th><th>Source</th><th>Notes</th></tr></thead>
+          <tbody>
+            {b.observations.map((o) => (
+              <tr>
+                <td>{o.metric_label ?? o.metric.replaceAll("_", " ")}</td>
+                <td>{o.period}</td>
+                <td class="num"><strong>{fmtObsValue(o)}</strong></td>
+                <td><span class={`basis ${o.basis}`}>{o.basis.replaceAll("_", " ")}</span></td>
+                <td class="src"><a href={o.source.url}>{o.source.publisher}</a></td>
+                <td class="src">{o.notes ?? ""}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  )}
+
+  {b.substitutes_md && (<section class="prose"><h2>Substitutes & switching</h2><p>{b.substitutes_md}</p></section>)}
+  {b.downcycle_md && (<section class="prose"><h2>Downcycle behavior</h2><p>{b.downcycle_md}</p></section>)}
+
+  {events.length > 0 && (
+    <section>
+      <h2>Timeline</h2>
+      {events.map((ev) => (
+        <div class="panel" style="margin-bottom:10px">
+          <strong>{ev.date}</strong> — {ev.title}
+          <p class="src" style="margin:4px 0 0">{ev.sources.map((s, i) => <span>{i > 0 && " · "}<a href={s.url}>{s.publisher}</a></span>)}</p>
+        </div>
+      ))}
+    </section>
+  )}
+
+  <section>
+    <h2>Sources</h2>
+    {b.sources.map((s) => <p class="src"><a href={s.url}>{s.publisher}{s.title ? ` — ${s.title}` : ""}</a>{s.published ? ` (${s.published})` : ""}</p>)}
+  </section>
+  <p class="updated">Updated {b.updated} · <a href={`https://github.com/aaronzh91/aitracker/blob/main/data/bottlenecks/${b.id}.json`}>data & history on GitHub</a></p>
+</Base>

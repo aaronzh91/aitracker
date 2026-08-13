@@ -1,0 +1,29 @@
+---
+import Base from "../../layouts/Base.astro";
+import { relationships, entityById, fmtMoney, TYPE_LABELS, FLAG_LABELS } from "../../lib/data.js";
+const rows = [...relationships].sort((a, b) => (b.headline?.value ?? 0) - (a.headline?.value ?? 0));
+const dead = (r) => ["dead", "cancelled", "withdrawn", "failed"].includes(r.status);
+---
+<Base title="Money flows — AI Money Tracker">
+  <h1>All money flows</h1>
+  <p class="lede">Every tracked financial arrangement, largest headline value first. Headline is the announced/committed value — open a flow for realized-to-date, terms, and the accounting treatment on both sides.</p>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Flow (payer → payee)</th><th>Type</th><th class="num">Headline</th><th class="num">Realized</th><th>Status</th><th>Flags</th></tr></thead>
+      <tbody>
+        {rows.map((r) => (
+          <tr>
+            <td>
+              <a href={`/flows/${r.id}`}><strong>{entityById[r.from]?.name ?? r.from} → {entityById[r.to]?.name ?? r.to}</strong></a>
+            </td>
+            <td><span class="chip dim">{TYPE_LABELS[r.type]}</span></td>
+            <td class="num">{fmtMoney(r.headline)}</td>
+            <td class="num">{r.realized_to_date ? fmtMoney(r.realized_to_date) : "—"}</td>
+            <td>{dead(r) ? <span class="chip bad">{r.status}</span> : <span class="chip dim">{r.status}</span>}</td>
+            <td>{(r.accounting?.flags ?? []).map((f) => <span class="chip warn" style="margin-right:4px">{FLAG_LABELS[f] ?? f}</span>)}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</Base>

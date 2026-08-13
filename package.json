@@ -1,0 +1,19 @@
+{
+  "name": "aitracker",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI Money Tracker — an open-source, weekly-updated map of AI-ecosystem money flows",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "derive": "node scripts/derive.mjs",
+    "build": "npm run validate && npm run derive && npm --prefix site run build",
+    "dev": "npm run derive && npm --prefix site run dev",
+    "start": "node scripts/serve.mjs"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  }
+}

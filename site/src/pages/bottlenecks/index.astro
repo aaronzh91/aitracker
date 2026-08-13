@@ -1,0 +1,24 @@
+---
+import Base from "../../layouts/Base.astro";
+import { bottlenecks, entityById } from "../../lib/data.js";
+const order = { binding: 0, easing: 1, watch: 2, resolved: 3 };
+const sorted = [...bottlenecks].sort((a, b) => order[a.status] - order[b.status]);
+const statusChip = { binding: "bad", easing: "warn", watch: "dim", resolved: "dim" };
+---
+<Base title="Supply-chain bottlenecks — AI Money Tracker">
+  <h1>Supply-chain bottlenecks</h1>
+  <p class="lede">
+    The chokepoints where capacity constraints set the pace of the AI buildout, pricing power concentrates, and shocks
+    originate — who controls each one, who depends on it, and what happens in a downcycle.
+  </p>
+  <div class="cardgrid">
+    {sorted.map((b) => (
+      <div class="card">
+        <a class="t" href={`/bottlenecks/${b.id}`}>{b.name}</a>
+        <span class={`chip ${statusChip[b.status]}`} style="margin-left:8px">{b.status}</span>
+        <p>{b.description_md.length > 170 ? b.description_md.slice(0, 168) + "…" : b.description_md}</p>
+        <p class="src">Controlled by: {b.controlled_by.map((c) => entityById[c.entity]?.name ?? c.entity).join(", ")}</p>
+      </div>
+    ))}
+  </div>
+</Base>

@@ -6,7 +6,12 @@
   "group": "energy",
   "region": "us",
   "tier": 2,
-  "tickers": [{ "exchange": "NYSE", "symbol": "ETR" }],
+  "tickers": [
+    {
+      "exchange": "NYSE",
+      "symbol": "ETR"
+    }
+  ],
   "website": "https://www.entergy.com",
   "monetization": "Regulated Gulf-South utility; monetizes AI through rate-based new gas generation and transmission serving Meta's Hyperion campus in Richland Parish, Louisiana (~2.2GW load) under long-term electric service agreements.",
   "observations": [
@@ -18,13 +23,39 @@
       "unit": "MW",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.utilitydive.com/news/entergy-louisiana-meta-data-center-gas-plants-lpsc-approval/", "publisher": "Utility Dive", "published": "2025", "kind": "press" },
+      "source": {
+        "url": "https://www.utilitydive.com/news/entergy-louisiana-meta-data-center-gas-plants-lpsc-approval/",
+        "publisher": "Utility Dive",
+        "published": "2025",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Three combined-cycle gas turbines (~$3.2B) approved by the Louisiana PSC in 2025; in service 2028-2029."
+    },
+    {
+      "metric": "market_cap",
+      "period": "2026-08-15",
+      "value": 50.3,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://api-ninjas.com/api/marketcap",
+        "publisher": "API Ninjas",
+        "published": "2026-08-15",
+        "kind": "dataset"
+      },
+      "as_of": "2026-08-15",
+      "notes": "Exchange market cap for ETR; auto-refreshed weekly."
     }
   ],
   "sources": [
-    { "url": "https://www.utilitydive.com/news/entergy-louisiana-meta-data-center-gas-plants-lpsc-approval/", "publisher": "Utility Dive", "published": "2025", "kind": "press" }
+    {
+      "url": "https://www.utilitydive.com/news/entergy-louisiana-meta-data-center-gas-plants-lpsc-approval/",
+      "publisher": "Utility Dive",
+      "published": "2025",
+      "kind": "press"
+    }
   ],
-  "updated": "2026-08-13"
+  "updated": "2026-08-15"
 }

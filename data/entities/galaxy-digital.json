@@ -6,7 +6,12 @@
   "group": "hyperscalers_clouds",
   "region": "us",
   "tier": 2,
-  "tickers": [{ "exchange": "NASDAQ", "symbol": "GLXY" }],
+  "tickers": [
+    {
+      "exchange": "NASDAQ",
+      "symbol": "GLXY"
+    }
+  ],
   "website": "https://www.galaxy.com",
   "monetization": "Crypto financial-services firm turned AI data-center landlord: converted its Helios (West Texas) bitcoin-mining campus into 526MW of CoreWeave-leased AI capacity (>$30B potential 25-yr value), funded partly with $3.5B of high-yield bonds.",
   "observations": [
@@ -18,14 +23,45 @@
       "unit": "MW",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.prnewswire.com/news-releases/galaxy-completes-phase-i-of-its-helios-data-center-campus-delivering-133-megawatts-of-critical-it-load-to-coreweave-302818664.html", "publisher": "PR Newswire (Galaxy Digital)", "published": "2026", "kind": "company_pr" },
+      "source": {
+        "url": "https://www.prnewswire.com/news-releases/galaxy-completes-phase-i-of-its-helios-data-center-campus-delivering-133-megawatts-of-critical-it-load-to-coreweave-302818664.html",
+        "publisher": "PR Newswire (Galaxy Digital)",
+        "published": "2026",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "Across three phases; Phase I (133MW) delivered and revenue-generating; 15-yr leases with two 5-yr extension options."
+    },
+    {
+      "metric": "market_cap",
+      "period": "2026-08-15",
+      "value": 7.2,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://api-ninjas.com/api/marketcap",
+        "publisher": "API Ninjas",
+        "published": "2026-08-15",
+        "kind": "dataset"
+      },
+      "as_of": "2026-08-15",
+      "notes": "Exchange market cap for GLXY; auto-refreshed weekly."
     }
   ],
   "sources": [
-    { "url": "https://www.datacenterdynamics.com/en/news/coreweave-leases-another-260mw-capacity-from-galaxy-in-texas/", "publisher": "Data Center Dynamics", "published": "2025", "kind": "press" },
-    { "url": "https://uk.investing.com/news/company-news/galaxy-digital-q2-2026-slides-show-30b-contract-pipeline-amid-losses-93CH-4811726", "publisher": "Investing.com", "published": "2026-08", "kind": "press" }
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/coreweave-leases-another-260mw-capacity-from-galaxy-in-texas/",
+      "publisher": "Data Center Dynamics",
+      "published": "2025",
+      "kind": "press"
+    },
+    {
+      "url": "https://uk.investing.com/news/company-news/galaxy-digital-q2-2026-slides-show-30b-contract-pipeline-amid-losses-93CH-4811726",
+      "publisher": "Investing.com",
+      "published": "2026-08",
+      "kind": "press"
+    }
   ],
-  "updated": "2026-08-13"
+  "updated": "2026-08-15"
 }

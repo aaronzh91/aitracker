@@ -6,7 +6,12 @@
   "group": "hyperscalers_clouds",
   "region": "us",
   "tier": 2,
-  "tickers": [{ "exchange": "NASDAQ", "symbol": "APLD" }],
+  "tickers": [
+    {
+      "exchange": "NASDAQ",
+      "symbol": "APLD"
+    }
+  ],
   "website": "https://www.applieddigital.com",
   "monetization": "AI data-center developer/landlord (ex-crypto hosting): builds powered campuses in North Dakota (Polaris Forge) and leases them long-term, anchored by ~$11B/400MW of CoreWeave leases plus a $5B hyperscaler lease.",
   "observations": [
@@ -18,14 +23,45 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://ir.applieddigital.com/news-events/press-releases/detail/132/applied-digital-announces-5-billion-ai-factory-lease-with", "publisher": "Applied Digital IR", "published": "2026", "kind": "company_ir" },
+      "source": {
+        "url": "https://ir.applieddigital.com/news-events/press-releases/detail/132/applied-digital-announces-5-billion-ai-factory-lease-with",
+        "publisher": "Applied Digital IR",
+        "published": "2026",
+        "kind": "company_ir"
+      },
       "as_of": "2026-08-13",
       "notes": "Includes CoreWeave 400MW (~$11B) and a $5B hyperscaler AI-factory lease."
+    },
+    {
+      "metric": "market_cap",
+      "period": "2026-08-15",
+      "value": 9,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://api-ninjas.com/api/marketcap",
+        "publisher": "API Ninjas",
+        "published": "2026-08-15",
+        "kind": "dataset"
+      },
+      "as_of": "2026-08-15",
+      "notes": "Exchange market cap for APLD; auto-refreshed weekly."
     }
   ],
   "sources": [
-    { "url": "https://ir.applieddigital.com/news-events/press-releases/detail/128/applied-digital-finalizes-additional-150mw-lease-with", "publisher": "Applied Digital IR", "published": "2025-08", "kind": "company_ir" },
-    { "url": "https://ir.applieddigital.com/news-events/press-releases/detail/132/applied-digital-announces-5-billion-ai-factory-lease-with", "publisher": "Applied Digital IR", "published": "2026", "kind": "company_ir" }
+    {
+      "url": "https://ir.applieddigital.com/news-events/press-releases/detail/128/applied-digital-finalizes-additional-150mw-lease-with",
+      "publisher": "Applied Digital IR",
+      "published": "2025-08",
+      "kind": "company_ir"
+    },
+    {
+      "url": "https://ir.applieddigital.com/news-events/press-releases/detail/132/applied-digital-announces-5-billion-ai-factory-lease-with",
+      "publisher": "Applied Digital IR",
+      "published": "2026",
+      "kind": "company_ir"
+    }
   ],
-  "updated": "2026-08-13"
+  "updated": "2026-08-15"
 }

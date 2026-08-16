@@ -6,7 +6,12 @@
   "group": "physical_infrastructure",
   "region": "us",
   "tier": 2,
-  "tickers": [{ "exchange": "NYSE", "symbol": "EME" }],
+  "tickers": [
+    {
+      "exchange": "NYSE",
+      "symbol": "EME"
+    }
+  ],
   "website": "https://www.emcorgroup.com",
   "monetization": "Sells mechanical/electrical construction and facilities services; data-center electrical fit-out is the fastest-growing book of business.",
   "observations": [
@@ -17,13 +22,39 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "medium",
-      "source": { "url": "https://stockstory.org/us/stocks/nyse/eme/news/earnings-call/eme-q2-deep-dive-data-center-demand-and-strategic-acquisitions-drive-growth", "publisher": "StockStory (from earnings)", "published": "2026-07", "kind": "press" },
+      "source": {
+        "url": "https://stockstory.org/us/stocks/nyse/eme/news/earnings-call/eme-q2-deep-dive-data-center-demand-and-strategic-acquisitions-drive-growth",
+        "publisher": "StockStory (from earnings)",
+        "published": "2026-07",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Record remaining performance obligations, +44% y/y; data-center/communications work +45%."
+    },
+    {
+      "metric": "market_cap",
+      "period": "2026-08-15",
+      "value": 36.9,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://api-ninjas.com/api/marketcap",
+        "publisher": "API Ninjas",
+        "published": "2026-08-15",
+        "kind": "dataset"
+      },
+      "as_of": "2026-08-15",
+      "notes": "Exchange market cap for EME; auto-refreshed weekly."
     }
   ],
   "sources": [
-    { "url": "https://stockstory.org/us/stocks/nyse/eme/news/earnings-call/eme-q2-deep-dive-data-center-demand-and-strategic-acquisitions-drive-growth", "publisher": "StockStory", "published": "2026-07", "kind": "press" }
+    {
+      "url": "https://stockstory.org/us/stocks/nyse/eme/news/earnings-call/eme-q2-deep-dive-data-center-demand-and-strategic-acquisitions-drive-growth",
+      "publisher": "StockStory",
+      "published": "2026-07",
+      "kind": "press"
+    }
   ],
-  "updated": "2026-08-13"
+  "updated": "2026-08-15"
 }

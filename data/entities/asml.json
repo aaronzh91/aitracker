@@ -7,8 +7,14 @@
   "region": "europe",
   "tier": 1,
   "tickers": [
-    { "exchange": "Euronext Amsterdam", "symbol": "ASML" },
-    { "exchange": "NASDAQ", "symbol": "ASML" }
+    {
+      "exchange": "Euronext Amsterdam",
+      "symbol": "ASML"
+    },
+    {
+      "exchange": "NASDAQ",
+      "symbol": "ASML"
+    }
   ],
   "cik": "937966",
   "website": "https://www.asml.com",
@@ -26,7 +32,12 @@
       "unit": "EUR_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results", "publisher": "ASML", "published": "2026-07-15", "kind": "company_ir" },
+      "source": {
+        "url": "https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results",
+        "publisher": "ASML",
+        "published": "2026-07-15",
+        "kind": "company_ir"
+      },
       "as_of": "2026-08-13",
       "notes": "Net income €2.9B; gross margin 54.0%, above guidance on installed-base management sales."
     },
@@ -37,7 +48,12 @@
       "unit": "EUR_B",
       "basis": "company_claimed",
       "confidence": "high",
-      "source": { "url": "https://www.cnbc.com/2026/07/15/asml-2q-earnings-ai-chips-orders.html", "publisher": "CNBC", "published": "2026-07-15", "kind": "press" },
+      "source": {
+        "url": "https://www.cnbc.com/2026/07/15/asml-2q-earnings-ai-chips-orders.html",
+        "publisher": "CNBC",
+        "published": "2026-07-15",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Guided €43–45B (midpoint shown), gross margin 54–56% — the second raise of 2026, on AI-driven logic and memory demand."
     },
@@ -49,7 +65,12 @@
       "unit": "pct",
       "basis": "company_claimed",
       "confidence": "medium",
-      "source": { "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-asml-q2-2026-beats-guidance-as-ai-demand-lifts-outlook-93CH-4792156", "publisher": "Investing.com (earnings call)", "published": "2026-07-15", "kind": "earnings_call" },
+      "source": {
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-asml-q2-2026-beats-guidance-as-ai-demand-lifts-outlook-93CH-4792156",
+        "publisher": "Investing.com (earnings call)",
+        "published": "2026-07-15",
+        "kind": "earnings_call"
+      },
       "as_of": "2026-08-13",
       "notes": "On a 2026 base of ~65 low-NA EUV systems; High-NA EUV in production use at Intel."
     },
@@ -61,9 +82,30 @@
       "unit": "pct",
       "basis": "company_claimed",
       "confidence": "high",
-      "source": { "url": "https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai/", "publisher": "Mistral AI", "published": "2025-09", "kind": "company_pr" },
+      "source": {
+        "url": "https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai/",
+        "publisher": "Mistral AI",
+        "published": "2025-09",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "€1.3B invested in Mistral's Series C (€1.7B round) — ASML became Mistral's largest shareholder; Mistral later raised at $20B (Jun 2026)."
+    },
+    {
+      "metric": "market_cap",
+      "period": "2026-08-15",
+      "value": 710.7,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://api-ninjas.com/api/marketcap",
+        "publisher": "API Ninjas",
+        "published": "2026-08-15",
+        "kind": "dataset"
+      },
+      "as_of": "2026-08-15",
+      "notes": "Exchange market cap for ASML; auto-refreshed weekly."
     }
   ],
   "events": [
@@ -72,24 +114,60 @@
       "title": "Invests €1.3B in Mistral AI for ~11% — becomes largest shareholder",
       "why_it_matters": "The EUV monopolist buying into a frontier lab is the cycle's most unusual vertical equity link — upstream toolmaker capital directly funding downstream model development.",
       "impact": "high",
-      "entities": ["asml", "mistral"],
-      "sources": [{ "url": "https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai/", "publisher": "Mistral AI", "published": "2025-09", "kind": "company_pr" }]
+      "entities": [
+        "asml",
+        "mistral"
+      ],
+      "sources": [
+        {
+          "url": "https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai/",
+          "publisher": "Mistral AI",
+          "published": "2025-09",
+          "kind": "company_pr"
+        }
+      ]
     },
     {
       "date": "2026-07-15",
       "title": "Q2 2026: beats guidance, raises 2026 outlook for the second time (€43–45B)",
       "why_it_matters": "Confirms AI demand has reached the most upstream node of the supply chain — both logic and HBM-driven memory litho orders; shares nonetheless fell on positioning, showing expectations risk.",
       "impact": "high",
-      "entities": ["asml", "tsmc", "intel", "samsung", "sk-hynix", "micron"],
+      "entities": [
+        "asml",
+        "tsmc",
+        "intel",
+        "samsung",
+        "sk-hynix",
+        "micron"
+      ],
       "sources": [
-        { "url": "https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results", "publisher": "ASML", "published": "2026-07-15", "kind": "company_ir" },
-        { "url": "https://www.cnbc.com/2026/07/15/asml-2q-earnings-ai-chips-orders.html", "publisher": "CNBC", "published": "2026-07-15", "kind": "press" }
+        {
+          "url": "https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results",
+          "publisher": "ASML",
+          "published": "2026-07-15",
+          "kind": "company_ir"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/07/15/asml-2q-earnings-ai-chips-orders.html",
+          "publisher": "CNBC",
+          "published": "2026-07-15",
+          "kind": "press"
+        }
       ]
     }
   ],
   "sources": [
-    { "url": "https://www.asml.com/en/investors/financial-results/q2-2026", "publisher": "ASML IR", "kind": "company_ir" },
-    { "url": "https://www.sec.gov/Archives/edgar/data/0000937966/000162828026048235/pressreleasefinancialresul.htm", "publisher": "SEC / ASML 6-K", "published": "2026-07", "kind": "sec_filing" }
+    {
+      "url": "https://www.asml.com/en/investors/financial-results/q2-2026",
+      "publisher": "ASML IR",
+      "kind": "company_ir"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000937966/000162828026048235/pressreleasefinancialresul.htm",
+      "publisher": "SEC / ASML 6-K",
+      "published": "2026-07",
+      "kind": "sec_filing"
+    }
   ],
-  "updated": "2026-08-13"
+  "updated": "2026-08-15"
 }

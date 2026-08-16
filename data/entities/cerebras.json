@@ -6,7 +6,12 @@
   "group": "compute_supply_chain",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NASDAQ", "symbol": "CBRS" }],
+  "tickers": [
+    {
+      "exchange": "NASDAQ",
+      "symbol": "CBRS"
+    }
+  ],
   "website": "https://www.cerebras.ai",
   "monetization": "Sells wafer-scale AI systems and, increasingly, high-speed inference as a service (tokens/sec as the product); the main non-GPU architecture with real revenue.",
   "description_md": "Cerebras designs the Wafer-Scale Engine — a single dinner-plate-sized chip that replaces racks of GPUs — and sells both systems and Cerebras-hosted inference, where it claims the fastest token throughput available. After years as a G42-dependent private company (its 2024 S-1 showed the UAE group at ~87% of H1 2024 revenue), it landed a >$20B, 750MW multi-year inference deal with OpenAI in January 2026 and went public on May 14, 2026 in the year's breakout IPO: priced at $185 ($5.55B raised), it opened at $385 and ended day one around a ~$66B market cap.",
@@ -21,7 +26,13 @@
       "unit": "USD_M",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://techcrunch.com/2026/05/14/cerebras-raises-5-5b-kicking-off-2026s-ipo-season-with-a-bang/", "publisher": "TechCrunch", "title": "Cerebras raises $5.5B, then stock pops 108%, in the first huge tech IPO of 2026", "published": "2026-05-14", "kind": "press" },
+      "source": {
+        "url": "https://techcrunch.com/2026/05/14/cerebras-raises-5-5b-kicking-off-2026s-ipo-season-with-a-bang/",
+        "publisher": "TechCrunch",
+        "title": "Cerebras raises $5.5B, then stock pops 108%, in the first huge tech IPO of 2026",
+        "published": "2026-05-14",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "2025 revenue per IPO-prospectus figures as reported in press; replace with direct S-1/10-Q citation in Phase 2."
     },
@@ -32,7 +43,13 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.cnbc.com/2026/05/13/cerebras-prices-ipo-above-expected-range-wall-street-expects-ai-flood.html", "publisher": "CNBC", "title": "Cerebras prices IPO above expected range", "published": "2026-05-13", "kind": "press" },
+      "source": {
+        "url": "https://www.cnbc.com/2026/05/13/cerebras-prices-ipo-above-expected-range-wall-street-expects-ai-flood.html",
+        "publisher": "CNBC",
+        "title": "Cerebras prices IPO above expected range",
+        "published": "2026-05-13",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "IPO: 30M shares at $185 (above range), priced May 13, 2026; ~$56.4B fully diluted at pricing. Demand reported >20x oversubscribed."
     },
@@ -43,7 +60,13 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://techcrunch.com/2026/05/14/cerebras-raises-5-5b-kicking-off-2026s-ipo-season-with-a-bang/", "publisher": "TechCrunch", "title": "Cerebras raises $5.5B, then stock pops 108%", "published": "2026-05-14", "kind": "press" },
+      "source": {
+        "url": "https://techcrunch.com/2026/05/14/cerebras-raises-5-5b-kicking-off-2026s-ipo-season-with-a-bang/",
+        "publisher": "TechCrunch",
+        "title": "Cerebras raises $5.5B, then stock pops 108%",
+        "published": "2026-05-14",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Day-one cap after a 108% pop (opened $385 vs $185 pricing). Snapshot value; automated market feed replaces this in Phase 2."
     },
@@ -54,7 +77,13 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261879673-cerebras-systems-ipo-wafer-scale-engine-openai-deal-nvidia-competition-valuation-profitability-cbrs-tradingkey", "publisher": "TradingKey", "title": "Cerebras Systems IPO 2026: the OpenAI deal", "published": "2026-05", "kind": "analyst" },
+      "source": {
+        "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261879673-cerebras-systems-ipo-wafer-scale-engine-openai-deal-nvidia-competition-valuation-profitability-cbrs-tradingkey",
+        "publisher": "TradingKey",
+        "title": "Cerebras Systems IPO 2026: the OpenAI deal",
+        "published": "2026-05",
+        "kind": "analyst"
+      },
       "as_of": "2026-08-13",
       "notes": "OpenAI multi-year deal announced Jan 2026: 750MW of Cerebras compute, reported at >$20B total value. Committed/headline value — realized-to-date unknown."
     },
@@ -66,9 +95,31 @@
       "unit": "pct",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=cerebras&type=S-1", "publisher": "SEC (Cerebras S-1)", "title": "Cerebras Systems S-1 filings", "published": "2024-09", "kind": "sec_filing" },
+      "source": {
+        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=cerebras&type=S-1",
+        "publisher": "SEC (Cerebras S-1)",
+        "title": "Cerebras Systems S-1 filings",
+        "published": "2024-09",
+        "kind": "sec_filing"
+      },
       "as_of": "2026-08-13",
       "notes": "Original 2024 S-1 disclosed G42 at ~83% of 2023 and ~87% of H1 2024 revenue; the concentration that delayed the first IPO attempt (CFIUS review of G42's stake). Diversified since via the OpenAI deal."
+    },
+    {
+      "metric": "market_cap",
+      "period": "2026-08-15",
+      "value": 49.6,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://api-ninjas.com/api/marketcap",
+        "publisher": "API Ninjas",
+        "published": "2026-08-15",
+        "kind": "dataset"
+      },
+      "as_of": "2026-08-15",
+      "notes": "Exchange market cap for CBRS; auto-refreshed weekly."
     }
   ],
   "events": [
@@ -77,24 +128,54 @@
       "title": "OpenAI signs 750MW, >$20B multi-year Cerebras compute deal",
       "why_it_matters": "Transforms Cerebras's book from G42-dependent to OpenAI-anchored and validates non-Nvidia silicon at frontier-inference scale — while re-creating single-customer concentration one node over.",
       "impact": "high",
-      "entities": ["cerebras", "openai"],
-      "sources": [{ "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261879673-cerebras-systems-ipo-wafer-scale-engine-openai-deal-nvidia-competition-valuation-profitability-cbrs-tradingkey", "publisher": "TradingKey", "published": "2026-05", "kind": "analyst" }]
+      "entities": [
+        "cerebras",
+        "openai"
+      ],
+      "sources": [
+        {
+          "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261879673-cerebras-systems-ipo-wafer-scale-engine-openai-deal-nvidia-competition-valuation-profitability-cbrs-tradingkey",
+          "publisher": "TradingKey",
+          "published": "2026-05",
+          "kind": "analyst"
+        }
+      ]
     },
     {
       "date": "2026-05-14",
       "title": "IPO on Nasdaq (CBRS): $5.55B raised, stock pops 108%",
       "why_it_matters": "First large AI-infrastructure IPO of 2026 — priced $185 (above range), opened $385, ~$66B day-one cap on $510M trailing revenue. Set the tone for the 2026 IPO window (SpaceX followed in June).",
       "impact": "high",
-      "entities": ["cerebras"],
+      "entities": [
+        "cerebras"
+      ],
       "sources": [
-        { "url": "https://techcrunch.com/2026/05/14/cerebras-raises-5-5b-kicking-off-2026s-ipo-season-with-a-bang/", "publisher": "TechCrunch", "published": "2026-05-14", "kind": "press" },
-        { "url": "https://www.cnbc.com/2026/05/14/cerebras-cbrs-stock-trade-nasdaq-ipo.html", "publisher": "CNBC", "published": "2026-05-14", "kind": "press" }
+        {
+          "url": "https://techcrunch.com/2026/05/14/cerebras-raises-5-5b-kicking-off-2026s-ipo-season-with-a-bang/",
+          "publisher": "TechCrunch",
+          "published": "2026-05-14",
+          "kind": "press"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/05/14/cerebras-cbrs-stock-trade-nasdaq-ipo.html",
+          "publisher": "CNBC",
+          "published": "2026-05-14",
+          "kind": "press"
+        }
       ]
     }
   ],
   "sources": [
-    { "url": "https://techcrunch.com/2026/05/14/cerebras-raises-5-5b-kicking-off-2026s-ipo-season-with-a-bang/", "publisher": "TechCrunch", "kind": "press" },
-    { "url": "https://www.cnbc.com/2026/05/13/cerebras-prices-ipo-above-expected-range-wall-street-expects-ai-flood.html", "publisher": "CNBC", "kind": "press" }
+    {
+      "url": "https://techcrunch.com/2026/05/14/cerebras-raises-5-5b-kicking-off-2026s-ipo-season-with-a-bang/",
+      "publisher": "TechCrunch",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/05/13/cerebras-prices-ipo-above-expected-range-wall-street-expects-ai-flood.html",
+      "publisher": "CNBC",
+      "kind": "press"
+    }
   ],
-  "updated": "2026-08-13"
+  "updated": "2026-08-15"
 }

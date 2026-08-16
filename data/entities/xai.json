@@ -6,7 +6,12 @@
   "group": "labs_ai_native",
   "region": "us",
   "tier": 1,
-  "tickers": [{ "exchange": "NASDAQ", "symbol": "SPCX" }],
+  "tickers": [
+    {
+      "exchange": "NASDAQ",
+      "symbol": "SPCX"
+    }
+  ],
   "website": "https://www.spacex.com",
   "monetization": "Grok subscriptions/API and X platform integration inside SpaceX's launch/Starlink cash-flow machine; monetizes the merger thesis that space and AI compute converge.",
   "description_md": "This record covers the merged xAI/SpaceX entity: SpaceX absorbed xAI in an all-stock deal on Feb 2, 2026 at a combined ~$1.25T valuation ($1T SpaceX / $250B xAI), with xAI operating as a wholly owned subsidiary — the largest private merger ever. The combined company then completed the largest IPO in history (Nasdaq: SPCX, June 12, 2026, ~$75B raised at ~$1.8T, closing day one near $2.1T). xAI builds the Grok models and runs the Colossus campus in Memphis, one of the largest single AI training sites in the world.",
@@ -21,7 +26,13 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://finance.yahoo.com/news/xai-raises-additional-20-billion-161407195.html", "publisher": "Yahoo Finance", "title": "xAI Raises an Additional $20B", "published": "2026-01", "kind": "press" },
+      "source": {
+        "url": "https://finance.yahoo.com/news/xai-raises-additional-20-billion-161407195.html",
+        "publisher": "Yahoo Finance",
+        "title": "xAI Raises an Additional $20B",
+        "published": "2026-01",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "xAI standalone: $20B Series E (upsized from $15B) at $230B, Jan 2026. Investors incl. Nvidia, Cisco Investments, Valor, Fidelity, QIA, MGX, StepStone, Baron; Humain invested $3B. Superseded by the Feb 2026 merger."
     },
@@ -32,7 +43,13 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "high",
-      "source": { "url": "https://www.cnbc.com/2026/02/03/musk-xai-spacex-biggest-merger-ever.html", "publisher": "CNBC", "title": "Musk's xAI, SpaceX combo is the biggest merger of all time, valued at $1.25 trillion", "published": "2026-02-03", "kind": "press" },
+      "source": {
+        "url": "https://www.cnbc.com/2026/02/03/musk-xai-spacex-biggest-merger-ever.html",
+        "publisher": "CNBC",
+        "title": "Musk's xAI, SpaceX combo is the biggest merger of all time, valued at $1.25 trillion",
+        "published": "2026-02-03",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "All-stock merger, Feb 2, 2026: $1T SpaceX + $250B xAI; xAI became a wholly owned SpaceX subsidiary."
     },
@@ -43,7 +60,13 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.forbes.com/sites/investor-hub/article/spacex-ipo-things-to-know/", "publisher": "Forbes", "title": "SpaceX IPO: 8 Things To Know Before It Goes Public", "published": "2026-06", "kind": "press" },
+      "source": {
+        "url": "https://www.forbes.com/sites/investor-hub/article/spacex-ipo-things-to-know/",
+        "publisher": "Forbes",
+        "title": "SpaceX IPO: 8 Things To Know Before It Goes Public",
+        "published": "2026-06",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "IPO June 12, 2026 (Nasdaq: SPCX): priced $135, raised ~$75B at ~$1.8T; closed day one at $160.95 (~$2.1T). Largest IPO in history. Day-one figure; automated feed replaces this in Phase 2."
     },
@@ -55,9 +78,31 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-backs-20-billion-xai-chip-deal", "publisher": "Tom's Hardware", "title": "Nvidia backs $20 billion xAI chip deal for Colossus 2 Memphis project", "published": "2025-10", "kind": "press" },
+      "source": {
+        "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-backs-20-billion-xai-chip-deal",
+        "publisher": "Tom's Hardware",
+        "title": "Nvidia backs $20 billion xAI chip deal for Colossus 2 Memphis project",
+        "published": "2025-10",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "~$7.5B equity (Valor anchor; Nvidia ≤$2B) + ~$12.5B debt (Apollo/Diameter); SPV buys Nvidia GPUs and leases them to xAI over five years — off xAI's balance sheet, lenders' recourse is the hardware."
+    },
+    {
+      "metric": "market_cap",
+      "period": "2026-08-15",
+      "value": 1830.6,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://api-ninjas.com/api/marketcap",
+        "publisher": "API Ninjas",
+        "published": "2026-08-15",
+        "kind": "dataset"
+      },
+      "as_of": "2026-08-15",
+      "notes": "Exchange market cap for SPCX; auto-refreshed weekly."
     }
   ],
   "events": [
@@ -66,18 +111,42 @@
       "title": "xAI closes $20B Series E at $230B",
       "why_it_matters": "Last standalone xAI round before the merger; syndicate (Nvidia, Cisco, Valor, Fidelity, QIA, MGX, Humain $3B) mixes chip suppliers and sovereign wealth into the cap table.",
       "impact": "medium",
-      "entities": ["xai", "nvidia", "mgx", "humain"],
-      "sources": [{ "url": "https://finance.yahoo.com/news/xai-raises-additional-20-billion-161407195.html", "publisher": "Yahoo Finance", "published": "2026-01", "kind": "press" }]
+      "entities": [
+        "xai",
+        "nvidia",
+        "mgx",
+        "humain"
+      ],
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/news/xai-raises-additional-20-billion-161407195.html",
+          "publisher": "Yahoo Finance",
+          "published": "2026-01",
+          "kind": "press"
+        }
+      ]
     },
     {
       "date": "2026-02-02",
       "title": "SpaceX and xAI merge at combined ~$1.25T",
       "why_it_matters": "Largest private merger in history ($1T SpaceX / $250B xAI, all-stock; xAI becomes a wholly owned subsidiary). Fuses AI capital needs with SpaceX's cash flows and sets up the record IPO; this tracker records the merged entity under `xai`.",
       "impact": "high",
-      "entities": ["xai"],
+      "entities": [
+        "xai"
+      ],
       "sources": [
-        { "url": "https://www.cnbc.com/2026/02/03/musk-xai-spacex-biggest-merger-ever.html", "publisher": "CNBC", "published": "2026-02-03", "kind": "press" },
-        { "url": "https://www.bloomberg.com/news/articles/2026-02-02/elon-musk-s-spacex-said-to-combine-with-xai-ahead-of-mega-ipo", "publisher": "Bloomberg", "published": "2026-02-02", "kind": "press" }
+        {
+          "url": "https://www.cnbc.com/2026/02/03/musk-xai-spacex-biggest-merger-ever.html",
+          "publisher": "CNBC",
+          "published": "2026-02-03",
+          "kind": "press"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-02-02/elon-musk-s-spacex-said-to-combine-with-xai-ahead-of-mega-ipo",
+          "publisher": "Bloomberg",
+          "published": "2026-02-02",
+          "kind": "press"
+        }
       ]
     },
     {
@@ -85,22 +154,53 @@
       "title": "SpaceX IPO — largest in history (Nasdaq: SPCX)",
       "why_it_matters": "Priced at $135, raised ~$75B at a ~$1.8T valuation, closed day one ~$2.1T — gives the merged entity a public acquisition currency and marks the AI buildout's arrival in public equity markets at trillion-dollar scale.",
       "impact": "high",
-      "entities": ["xai"],
-      "sources": [{ "url": "https://www.forbes.com/sites/investor-hub/article/spacex-ipo-things-to-know/", "publisher": "Forbes", "published": "2026-06", "kind": "press" }]
+      "entities": [
+        "xai"
+      ],
+      "sources": [
+        {
+          "url": "https://www.forbes.com/sites/investor-hub/article/spacex-ipo-things-to-know/",
+          "publisher": "Forbes",
+          "published": "2026-06",
+          "kind": "press"
+        }
+      ]
     },
     {
       "date": "2026-06-16",
       "title": "Agrees to acquire Anysphere (Cursor) for $60B in stock",
       "why_it_matters": "Largest acquisition of a VC-backed startup ever; all-stock, expected to close Q3 2026 pending approvals. Would bolt ~$4B of fast-growing AI coding ARR onto the merged entity.",
       "impact": "high",
-      "entities": ["xai", "anysphere"],
-      "sources": [{ "url": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html", "publisher": "CNBC", "published": "2026-06-16", "kind": "press" }]
+      "entities": [
+        "xai",
+        "anysphere"
+      ],
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html",
+          "publisher": "CNBC",
+          "published": "2026-06-16",
+          "kind": "press"
+        }
+      ]
     }
   ],
   "sources": [
-    { "url": "https://www.cnbc.com/2026/02/03/musk-xai-spacex-biggest-merger-ever.html", "publisher": "CNBC", "kind": "press" },
-    { "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-backs-20-billion-xai-chip-deal", "publisher": "Tom's Hardware", "kind": "press" },
-    { "url": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html", "publisher": "CNBC", "kind": "press" }
+    {
+      "url": "https://www.cnbc.com/2026/02/03/musk-xai-spacex-biggest-merger-ever.html",
+      "publisher": "CNBC",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-backs-20-billion-xai-chip-deal",
+      "publisher": "Tom's Hardware",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html",
+      "publisher": "CNBC",
+      "kind": "press"
+    }
   ],
-  "updated": "2026-08-13"
+  "updated": "2026-08-15"
 }

@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-08-15",
+    "kind": "mechanical",
+    "title": "Market caps refreshed: 54 tickers",
+    "body": "Live market caps via API Ninjas."
+  },
+  {
+    "date": "2026-08-15",
+    "kind": "mechanical",
+    "title": "EDGAR refresh: 36 entities",
+    "body": "Latest disclosed revenue/capex/RPO pulled from SEC XBRL companyfacts."
+  },
+  {
     "date": "2026-08-13",
     "kind": "mechanical",
     "title": "EDGAR refresh: 36 entities",
@@ -9,6 +21,6 @@
     "date": "2026-08-13",
     "kind": "editorial",
     "title": "Phase 1 launch: initial dataset",
-    "body": "116 entities, 119 money flows, and 12 supply-chain bottleneck records \u2014 hand-compiled and sourced from filings, company disclosures, and tier-1 press as of Aug 13, 2026. Automated weekly refresh (SEC EDGAR, market data, impact-filtered news) ships with Phase 2."
+    "body": "116 entities, 119 money flows, and 12 supply-chain bottleneck records — hand-compiled and sourced from filings, company disclosures, and tier-1 press as of Aug 13, 2026. Automated weekly refresh (SEC EDGAR, market data, impact-filtered news) ships with Phase 2."
   }
 ]

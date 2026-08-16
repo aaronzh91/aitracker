@@ -83,7 +83,7 @@
         "published": "2026-06-09",
         "kind": "sec_filing"
       },
-      "as_of": "2026-08-13",
+      "as_of": "2026-08-15",
       "notes": "Revenues; 3-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
     },
     {
@@ -99,7 +99,7 @@
         "published": "2026-06-09",
         "kind": "sec_filing"
       },
-      "as_of": "2026-08-13",
+      "as_of": "2026-08-15",
       "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 3-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
     },
     {
@@ -115,8 +115,24 @@
         "published": "2026-06-09",
         "kind": "sec_filing"
       },
-      "as_of": "2026-08-13",
+      "as_of": "2026-08-15",
       "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-Q."
+    },
+    {
+      "metric": "market_cap",
+      "period": "2026-08-15",
+      "value": 326.2,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://api-ninjas.com/api/marketcap",
+        "publisher": "API Ninjas",
+        "published": "2026-08-15",
+        "kind": "dataset"
+      },
+      "as_of": "2026-08-15",
+      "notes": "Exchange market cap for DELL; auto-refreshed weekly."
     }
   ],
   "events": [
@@ -147,5 +163,5 @@
       "kind": "company_pr"
     }
   ],
-  "updated": "2026-08-13"
+  "updated": "2026-08-15"
 }

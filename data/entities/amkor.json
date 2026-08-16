@@ -6,7 +6,12 @@
   "group": "compute_supply_chain",
   "region": "us",
   "tier": 3,
-  "tickers": [{ "exchange": "NASDAQ", "symbol": "AMKR" }],
+  "tickers": [
+    {
+      "exchange": "NASDAQ",
+      "symbol": "AMKR"
+    }
+  ],
   "website": "https://www.amkor.com",
   "monetization": "#2 global OSAT; sells packaging/test capacity to AI chip designers and takes TSMC advanced-packaging overflow, including the first US high-volume advanced packaging campus (Peoria, AZ).",
   "observations": [
@@ -18,14 +23,45 @@
       "unit": "USD_B",
       "basis": "company_claimed",
       "confidence": "high",
-      "source": { "url": "https://ir.amkor.com/news-releases/news-release-details/amkor-technology-breaks-ground-new-semiconductor-advanced", "publisher": "Amkor IR", "published": "2025-10", "kind": "company_pr" },
+      "source": {
+        "url": "https://ir.amkor.com/news-releases/news-release-details/amkor-technology-breaks-ground-new-semiconductor-advanced",
+        "publisher": "Amkor IR",
+        "published": "2025-10",
+        "kind": "company_pr"
+      },
       "as_of": "2026-08-13",
       "notes": "Expanded from $2B to $7B at Oct 2025 groundbreaking; first facility complete mid-2027, volume production early 2028; 10-year TSMC packaging deal; Apple first anchor customer, Nvidia also named."
+    },
+    {
+      "metric": "market_cap",
+      "period": "2026-08-15",
+      "value": 14.7,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://api-ninjas.com/api/marketcap",
+        "publisher": "API Ninjas",
+        "published": "2026-08-15",
+        "kind": "dataset"
+      },
+      "as_of": "2026-08-15",
+      "notes": "Exchange market cap for AMKR; auto-refreshed weekly."
     }
   ],
   "sources": [
-    { "url": "https://ir.amkor.com/news-releases/news-release-details/amkor-technology-breaks-ground-new-semiconductor-advanced", "publisher": "Amkor IR", "published": "2025-10", "kind": "company_pr" },
-    { "url": "https://www.manufacturingdive.com/news/amkor-arizona-7-billion-semiconductor-tsmc-apple-nvidia/802297/", "publisher": "Manufacturing Dive", "published": "2025-10", "kind": "press" }
+    {
+      "url": "https://ir.amkor.com/news-releases/news-release-details/amkor-technology-breaks-ground-new-semiconductor-advanced",
+      "publisher": "Amkor IR",
+      "published": "2025-10",
+      "kind": "company_pr"
+    },
+    {
+      "url": "https://www.manufacturingdive.com/news/amkor-arizona-7-billion-semiconductor-tsmc-apple-nvidia/802297/",
+      "publisher": "Manufacturing Dive",
+      "published": "2025-10",
+      "kind": "press"
+    }
   ],
-  "updated": "2026-08-13"
+  "updated": "2026-08-15"
 }

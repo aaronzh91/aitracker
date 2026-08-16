@@ -6,7 +6,12 @@
   "group": "compute_supply_chain",
   "region": "us",
   "tier": 2,
-  "tickers": [{ "exchange": "NYSE", "symbol": "COHR" }],
+  "tickers": [
+    {
+      "exchange": "NYSE",
+      "symbol": "COHR"
+    }
+  ],
   "website": "https://www.coherent.com",
   "monetization": "Sells 800G/1.6T datacom transceivers, lasers (EML/VCSEL), and optical components into AI back-end networks; Nvidia investee.",
   "observations": [
@@ -18,13 +23,38 @@
       "unit": "pct",
       "basis": "disclosed",
       "confidence": "medium",
-      "source": { "url": "https://futurumgroup.com/insights/coherent-q3-fy-2026-ai-data-center-demand-accelerates-optical-growth/", "publisher": "Futurum Group", "published": "2026", "kind": "analyst" },
+      "source": {
+        "url": "https://futurumgroup.com/insights/coherent-q3-fy-2026-ai-data-center-demand-accelerates-optical-growth/",
+        "publisher": "Futurum Group",
+        "published": "2026",
+        "kind": "analyst"
+      },
       "as_of": "2026-08-13",
       "notes": "+41% y/y; datacenter & comms now ~75% of total revenue; 1.6T modules in production."
+    },
+    {
+      "metric": "market_cap",
+      "period": "2026-08-15",
+      "value": 63.7,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://api-ninjas.com/api/marketcap",
+        "publisher": "API Ninjas",
+        "published": "2026-08-15",
+        "kind": "dataset"
+      },
+      "as_of": "2026-08-15",
+      "notes": "Exchange market cap for COHR; auto-refreshed weekly."
     }
   ],
   "sources": [
-    { "url": "https://futurumgroup.com/insights/coherent-q3-fy-2026-ai-data-center-demand-accelerates-optical-growth/", "publisher": "Futurum Group", "kind": "analyst" }
+    {
+      "url": "https://futurumgroup.com/insights/coherent-q3-fy-2026-ai-data-center-demand-accelerates-optical-growth/",
+      "publisher": "Futurum Group",
+      "kind": "analyst"
+    }
   ],
-  "updated": "2026-08-13"
+  "updated": "2026-08-15"
 }

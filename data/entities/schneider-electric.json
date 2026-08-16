@@ -6,7 +6,12 @@
   "group": "physical_infrastructure",
   "region": "europe",
   "tier": 1,
-  "tickers": [{ "exchange": "EPA", "symbol": "SU" }],
+  "tickers": [
+    {
+      "exchange": "EPA",
+      "symbol": "SU"
+    }
+  ],
   "cik": null,
   "website": "https://www.se.com",
   "fiscal_year_end": "12-31",
@@ -23,7 +28,12 @@
       "unit": "EUR_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.se.com/ww/en/assets/564/document/528237/release-fy-results-2025.pdf", "publisher": "Schneider Electric", "published": "2026-02-26", "kind": "company_ir" },
+      "source": {
+        "url": "https://www.se.com/ww/en/assets/564/document/528237/release-fy-results-2025.pdf",
+        "publisher": "Schneider Electric",
+        "published": "2026-02-26",
+        "kind": "company_ir"
+      },
       "as_of": "2026-08-13",
       "notes": "+8.9% organic; first year above €40B. Q4 2025 sales €11.1B, +10.7% organic, a quarterly record."
     },
@@ -35,7 +45,12 @@
       "unit": "pct",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://w.media/schneider-electric-posts-record-revenue-driven-by-data-center-demand/", "publisher": "W.Media", "published": "2026", "kind": "press" },
+      "source": {
+        "url": "https://w.media/schneider-electric-posts-record-revenue-driven-by-data-center-demand/",
+        "publisher": "W.Media",
+        "published": "2026",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Data center is the group's largest end-market by growth contribution; share is rising as hyperscale demand outpaces other segments."
     },
@@ -47,7 +62,12 @@
       "unit": "pct",
       "basis": "company_claimed",
       "confidence": "medium",
-      "source": { "url": "https://www.investing.com/news/company-news/schneider-electric-fy-2025-slides-record-40bn-revenues-strong-outlook-93CH-4526856", "publisher": "Investing.com (FY2025 slides)", "published": "2026-02", "kind": "press" },
+      "source": {
+        "url": "https://www.investing.com/news/company-news/schneider-electric-fy-2025-slides-record-40bn-revenues-strong-outlook-93CH-4526856",
+        "publisher": "Investing.com (FY2025 slides)",
+        "published": "2026-02",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Triple-digit percentage y/y order growth from hyperscale and colocation customers; exact figure not disclosed. Strongest in North America with pickup in France, Nordics, and APAC."
     },
@@ -59,9 +79,30 @@
       "unit": "pct",
       "basis": "company_claimed",
       "confidence": "high",
-      "source": { "url": "https://www.se.com/ww/en/assets/564/document/528237/release-fy-results-2025.pdf", "publisher": "Schneider Electric", "published": "2026-02-26", "kind": "company_ir" },
+      "source": {
+        "url": "https://www.se.com/ww/en/assets/564/document/528237/release-fy-results-2025.pdf",
+        "publisher": "Schneider Electric",
+        "published": "2026-02-26",
+        "kind": "company_ir"
+      },
       "as_of": "2026-08-13",
       "notes": "Target range 7–10% organic revenue growth and 10–15% organic adjusted EBITA growth for 2026."
+    },
+    {
+      "metric": "market_cap",
+      "period": "2026-08-15",
+      "value": 77.7,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://api-ninjas.com/api/marketcap",
+        "publisher": "API Ninjas",
+        "published": "2026-08-15",
+        "kind": "dataset"
+      },
+      "as_of": "2026-08-15",
+      "notes": "Exchange market cap for SU; auto-refreshed weekly."
     }
   ],
   "events": [
@@ -70,17 +111,41 @@
       "title": "FY2025 results: revenue crosses €40B for the first time on data-center demand",
       "why_it_matters": "Confirms the AI buildout is now the growth engine of Europe's largest electrical-equipment maker, with Q4 data-center orders up triple-digit percent; announced alongside a leadership change.",
       "impact": "medium",
-      "entities": ["schneider-electric"],
+      "entities": [
+        "schneider-electric"
+      ],
       "sources": [
-        { "url": "https://www.se.com/ww/en/assets/564/document/528237/release-fy-results-2025.pdf", "publisher": "Schneider Electric", "published": "2026-02-26", "kind": "company_ir" },
-        { "url": "https://www.datacenterdynamics.com/en/news/schneider-electric-announces-record-revenue-and-a-leadership-change/", "publisher": "Data Center Dynamics", "published": "2026-02", "kind": "press" }
+        {
+          "url": "https://www.se.com/ww/en/assets/564/document/528237/release-fy-results-2025.pdf",
+          "publisher": "Schneider Electric",
+          "published": "2026-02-26",
+          "kind": "company_ir"
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/schneider-electric-announces-record-revenue-and-a-leadership-change/",
+          "publisher": "Data Center Dynamics",
+          "published": "2026-02",
+          "kind": "press"
+        }
       ]
     }
   ],
   "sources": [
-    { "url": "https://www.se.com/ww/en/assets/564/document/528237/release-fy-results-2025.pdf", "publisher": "Schneider Electric", "kind": "company_ir" },
-    { "url": "https://w.media/schneider-electric-posts-record-revenue-driven-by-data-center-demand/", "publisher": "W.Media", "kind": "press" },
-    { "url": "https://www.datacenterdynamics.com/en/news/schneider-electric-announces-record-revenue-and-a-leadership-change/", "publisher": "Data Center Dynamics", "kind": "press" }
+    {
+      "url": "https://www.se.com/ww/en/assets/564/document/528237/release-fy-results-2025.pdf",
+      "publisher": "Schneider Electric",
+      "kind": "company_ir"
+    },
+    {
+      "url": "https://w.media/schneider-electric-posts-record-revenue-driven-by-data-center-demand/",
+      "publisher": "W.Media",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.datacenterdynamics.com/en/news/schneider-electric-announces-record-revenue-and-a-leadership-change/",
+      "publisher": "Data Center Dynamics",
+      "kind": "press"
+    }
   ],
-  "updated": "2026-08-13"
+  "updated": "2026-08-15"
 }

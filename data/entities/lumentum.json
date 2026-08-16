@@ -6,7 +6,12 @@
   "group": "compute_supply_chain",
   "region": "us",
   "tier": 2,
-  "tickers": [{ "exchange": "NASDAQ", "symbol": "LITE" }],
+  "tickers": [
+    {
+      "exchange": "NASDAQ",
+      "symbol": "LITE"
+    }
+  ],
   "website": "https://www.lumentum.com",
   "monetization": "Sells datacom lasers and 800G/1.6T transceivers for AI clusters; record 800G shipments with 1.6T ramping; Nvidia investee.",
   "observations": [
@@ -18,13 +23,39 @@
       "unit": "qualitative",
       "basis": "company_claimed",
       "confidence": "medium",
-      "source": { "url": "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Results/default.aspx", "publisher": "Lumentum IR", "published": "2026-08", "kind": "company_ir" },
+      "source": {
+        "url": "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Results/default.aspx",
+        "publisher": "Lumentum IR",
+        "published": "2026-08",
+        "kind": "company_ir"
+      },
       "as_of": "2026-08-13",
       "notes": "Record 800G revenue in FY26; 1.6T in early ramp — company reports demand above supply."
+    },
+    {
+      "metric": "market_cap",
+      "period": "2026-08-15",
+      "value": 72.1,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://api-ninjas.com/api/marketcap",
+        "publisher": "API Ninjas",
+        "published": "2026-08-15",
+        "kind": "dataset"
+      },
+      "as_of": "2026-08-15",
+      "notes": "Exchange market cap for LITE; auto-refreshed weekly."
     }
   ],
   "sources": [
-    { "url": "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Results/default.aspx", "publisher": "Lumentum IR", "published": "2026-08", "kind": "company_ir" }
+    {
+      "url": "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Results/default.aspx",
+      "publisher": "Lumentum IR",
+      "published": "2026-08",
+      "kind": "company_ir"
+    }
   ],
-  "updated": "2026-08-13"
+  "updated": "2026-08-15"
 }

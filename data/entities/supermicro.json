@@ -6,7 +6,12 @@
   "group": "compute_supply_chain",
   "region": "us",
   "tier": 2,
-  "tickers": [{ "exchange": "NASDAQ", "symbol": "SMCI" }],
+  "tickers": [
+    {
+      "exchange": "NASDAQ",
+      "symbol": "SMCI"
+    }
+  ],
   "website": "https://www.supermicro.com",
   "monetization": "Builds AI server racks (NVIDIA GB200/GB300 NVL72, liquid-cooled) for hyperscalers, neoclouds, and labs; built much of xAI's Colossus and supplies GB300 racks for Colossus 2.",
   "observations": [
@@ -17,14 +22,43 @@
       "unit": "USD_B",
       "basis": "press_reported",
       "confidence": "low",
-      "source": { "url": "https://www.servethehome.com/inside-100000-nvidia-gpu-xai-colossus-cluster-supermicro-helped-build-for-elon-musk/", "publisher": "ServeTheHome", "published": "2024", "kind": "press" },
+      "source": {
+        "url": "https://www.servethehome.com/inside-100000-nvidia-gpu-xai-colossus-cluster-supermicro-helped-build-for-elon-musk/",
+        "publisher": "ServeTheHome",
+        "published": "2024",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "~70%+ AI-related; FY26 guide ~$33B (unverified). Figures flagged UNVERIFIED in the coverage census; accounting-restatement history warrants caution."
+    },
+    {
+      "metric": "market_cap",
+      "period": "2026-08-15",
+      "value": 25.8,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://api-ninjas.com/api/marketcap",
+        "publisher": "API Ninjas",
+        "published": "2026-08-15",
+        "kind": "dataset"
+      },
+      "as_of": "2026-08-15",
+      "notes": "Exchange market cap for SMCI; auto-refreshed weekly."
     }
   ],
   "sources": [
-    { "url": "https://www.supermicro.com/en/featured/xai-colossus", "publisher": "Supermicro", "kind": "company_pr" },
-    { "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/elon-musks-xai-reportedly-shifts-usd6-billion-ai-server-order-from-troubled-supermicro-to-its-rivals", "publisher": "Tom's Hardware", "kind": "press" }
+    {
+      "url": "https://www.supermicro.com/en/featured/xai-colossus",
+      "publisher": "Supermicro",
+      "kind": "company_pr"
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/elon-musks-xai-reportedly-shifts-usd6-billion-ai-server-order-from-troubled-supermicro-to-its-rivals",
+      "publisher": "Tom's Hardware",
+      "kind": "press"
+    }
   ],
-  "updated": "2026-08-13"
+  "updated": "2026-08-15"
 }

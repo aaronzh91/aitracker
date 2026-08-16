@@ -6,7 +6,12 @@
   "group": "energy",
   "region": "us",
   "tier": 3,
-  "tickers": [{ "exchange": "NYSE", "symbol": "SEI" }],
+  "tickers": [
+    {
+      "exchange": "NYSE",
+      "symbol": "SEI"
+    }
+  ],
   "website": "https://www.solaris-energy.com",
   "monetization": "Mobile gas-turbine power-as-a-service provider; monetizes AI through the 50.1%-owned Stateline Power JV with xAI (49.9%) supplying behind-the-meter turbine power to the Memphis-area Colossus data-center cluster.",
   "observations": [
@@ -18,14 +23,44 @@
       "unit": "MW",
       "basis": "company_claimed",
       "confidence": "medium",
-      "source": { "url": "https://semianalysis.com/2025/09/16/xais-colossus-2-first-gigawatt-datacenter/", "publisher": "SemiAnalysis", "published": "2025-09-16", "kind": "analyst" },
+      "source": {
+        "url": "https://semianalysis.com/2025/09/16/xais-colossus-2-first-gigawatt-datacenter/",
+        "publisher": "SemiAnalysis",
+        "published": "2025-09-16",
+        "kind": "analyst"
+      },
       "as_of": "2026-08-13",
       "notes": "From ~400MW initially deployed; JV owns ~900MW with ~240MW on the Colossus 1 site; Titan-350 units from Solar Turbines (Caterpillar)."
+    },
+    {
+      "metric": "market_cap",
+      "period": "2026-08-15",
+      "value": 3.9,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://api-ninjas.com/api/marketcap",
+        "publisher": "API Ninjas",
+        "published": "2026-08-15",
+        "kind": "dataset"
+      },
+      "as_of": "2026-08-15",
+      "notes": "Exchange market cap for SEI; auto-refreshed weekly."
     }
   ],
   "sources": [
-    { "url": "https://semianalysis.com/2025/09/16/xais-colossus-2-first-gigawatt-datacenter/", "publisher": "SemiAnalysis", "published": "2025-09-16", "kind": "analyst" },
-    { "url": "https://www.gem.wiki/Colossus_2_power_station", "publisher": "Global Energy Monitor", "kind": "dataset" }
+    {
+      "url": "https://semianalysis.com/2025/09/16/xais-colossus-2-first-gigawatt-datacenter/",
+      "publisher": "SemiAnalysis",
+      "published": "2025-09-16",
+      "kind": "analyst"
+    },
+    {
+      "url": "https://www.gem.wiki/Colossus_2_power_station",
+      "publisher": "Global Energy Monitor",
+      "kind": "dataset"
+    }
   ],
-  "updated": "2026-08-13"
+  "updated": "2026-08-15"
 }

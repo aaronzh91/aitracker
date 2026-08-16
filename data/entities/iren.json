@@ -6,7 +6,12 @@
   "group": "hyperscalers_clouds",
   "region": "us",
   "tier": 2,
-  "tickers": [{ "exchange": "NASDAQ", "symbol": "IREN" }],
+  "tickers": [
+    {
+      "exchange": "NASDAQ",
+      "symbol": "IREN"
+    }
+  ],
   "website": "https://iren.com",
   "monetization": "Bitcoin miner turned vertically-integrated AI cloud: owns power-rich sites (Childress TX, 750MW) and sells GPU-cloud capacity, anchored by a $9.7B/5-year Microsoft contract on NVIDIA GB300s.",
   "observations": [
@@ -18,14 +23,45 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-secures-97bn-ai-cloud-contract-microsoft", "publisher": "IREN IR", "published": "2025-11", "kind": "company_ir" },
+      "source": {
+        "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-secures-97bn-ai-cloud-contract-microsoft",
+        "publisher": "IREN IR",
+        "published": "2025-11",
+        "kind": "company_ir"
+      },
       "as_of": "2026-08-13",
       "notes": "Backed by a ~$5.8B equipment purchase from Dell; ~20% Microsoft prepayment reported."
+    },
+    {
+      "metric": "market_cap",
+      "period": "2026-08-15",
+      "value": 15.7,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://api-ninjas.com/api/marketcap",
+        "publisher": "API Ninjas",
+        "published": "2026-08-15",
+        "kind": "dataset"
+      },
+      "as_of": "2026-08-15",
+      "notes": "Exchange market cap for IREN; auto-refreshed weekly."
     }
   ],
   "sources": [
-    { "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-secures-97bn-ai-cloud-contract-microsoft", "publisher": "IREN IR", "published": "2025-11", "kind": "company_ir" },
-    { "url": "https://blockspace.media/insight/bitcoin-mining-news-cipher-lands-5-5b-aws-lease-iren-inks-9-7b-microsoft-deal-and-public-bitcoin-miner-q3-earnings/", "publisher": "Blockspace", "published": "2025-11", "kind": "press" }
+    {
+      "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-secures-97bn-ai-cloud-contract-microsoft",
+      "publisher": "IREN IR",
+      "published": "2025-11",
+      "kind": "company_ir"
+    },
+    {
+      "url": "https://blockspace.media/insight/bitcoin-mining-news-cipher-lands-5-5b-aws-lease-iren-inks-9-7b-microsoft-deal-and-public-bitcoin-miner-q3-earnings/",
+      "publisher": "Blockspace",
+      "published": "2025-11",
+      "kind": "press"
+    }
   ],
-  "updated": "2026-08-13"
+  "updated": "2026-08-15"
 }

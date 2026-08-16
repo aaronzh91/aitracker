@@ -6,7 +6,12 @@
   "group": "software_applications",
   "region": "us",
   "tier": 2,
-  "tickers": [{ "exchange": "NASDAQ", "symbol": "TSLA" }],
+  "tickers": [
+    {
+      "exchange": "NASDAQ",
+      "symbol": "TSLA"
+    }
+  ],
   "website": "https://www.tesla.com",
   "monetization": "Sells EVs, energy storage, and robotics; monetizes AI through FSD/robotaxi software and designs in-house AI inference silicon (AI5/AI6), fabbed externally — including a $16.5B AI6 foundry deal with Samsung's Taylor, TX fab through 2033.",
   "observations": [
@@ -18,13 +23,39 @@
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://www.reuters.com/business/autos-transportation/samsung-electronics-signs-165-billion-chip-supply-deal-tesla-2025-07-28/", "publisher": "Reuters", "published": "2025-07-28", "kind": "press" },
+      "source": {
+        "url": "https://www.reuters.com/business/autos-transportation/samsung-electronics-signs-165-billion-chip-supply-deal-tesla-2025-07-28/",
+        "publisher": "Reuters",
+        "published": "2025-07-28",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Disclosed via Samsung regulatory filing; Musk confirmed AI6 production at Samsung's Taylor, TX fab."
+    },
+    {
+      "metric": "market_cap",
+      "period": "2026-08-15",
+      "value": 1351.8,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://api-ninjas.com/api/marketcap",
+        "publisher": "API Ninjas",
+        "published": "2026-08-15",
+        "kind": "dataset"
+      },
+      "as_of": "2026-08-15",
+      "notes": "Exchange market cap for TSLA; auto-refreshed weekly."
     }
   ],
   "sources": [
-    { "url": "https://www.reuters.com/business/autos-transportation/samsung-electronics-signs-165-billion-chip-supply-deal-tesla-2025-07-28/", "publisher": "Reuters", "published": "2025-07-28", "kind": "press" }
+    {
+      "url": "https://www.reuters.com/business/autos-transportation/samsung-electronics-signs-165-billion-chip-supply-deal-tesla-2025-07-28/",
+      "publisher": "Reuters",
+      "published": "2025-07-28",
+      "kind": "press"
+    }
   ],
-  "updated": "2026-08-13"
+  "updated": "2026-08-15"
 }

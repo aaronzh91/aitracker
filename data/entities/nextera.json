@@ -6,7 +6,12 @@
   "group": "energy",
   "region": "us",
   "tier": 2,
-  "tickers": [{ "exchange": "NYSE", "symbol": "NEE" }],
+  "tickers": [
+    {
+      "exchange": "NYSE",
+      "symbol": "NEE"
+    }
+  ],
   "website": "https://www.nexteraenergy.com",
   "monetization": "Largest US renewables developer plus regulated Florida utility (FPL); monetizes AI demand through long-term PPAs with hyperscalers, headlined by the 25-year Duane Arnold nuclear restart deal with Google.",
   "observations": [
@@ -18,13 +23,39 @@
       "unit": "MW",
       "basis": "company_claimed",
       "confidence": "high",
-      "source": { "url": "https://www.reuters.com/business/energy/nextera-google-strike-deal-restart-iowa-nuclear-plant-2025-10-28/", "publisher": "Reuters", "published": "2025-10", "kind": "press" },
+      "source": {
+        "url": "https://www.reuters.com/business/energy/nextera-google-strike-deal-restart-iowa-nuclear-plant-2025-10-28/",
+        "publisher": "Reuters",
+        "published": "2025-10",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "25-year PPA; Iowa BWR shut in 2020, restart targeted for early 2029."
+    },
+    {
+      "metric": "market_cap",
+      "period": "2026-08-15",
+      "value": 179.8,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://api-ninjas.com/api/marketcap",
+        "publisher": "API Ninjas",
+        "published": "2026-08-15",
+        "kind": "dataset"
+      },
+      "as_of": "2026-08-15",
+      "notes": "Exchange market cap for NEE; auto-refreshed weekly."
     }
   ],
   "sources": [
-    { "url": "https://www.reuters.com/business/energy/nextera-google-strike-deal-restart-iowa-nuclear-plant-2025-10-28/", "publisher": "Reuters", "published": "2025-10", "kind": "press" }
+    {
+      "url": "https://www.reuters.com/business/energy/nextera-google-strike-deal-restart-iowa-nuclear-plant-2025-10-28/",
+      "publisher": "Reuters",
+      "published": "2025-10",
+      "kind": "press"
+    }
   ],
-  "updated": "2026-08-13"
+  "updated": "2026-08-15"
 }

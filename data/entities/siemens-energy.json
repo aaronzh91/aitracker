@@ -6,7 +6,12 @@
   "group": "energy",
   "region": "europe",
   "tier": 1,
-  "tickers": [{ "exchange": "XETRA", "symbol": "ENR" }],
+  "tickers": [
+    {
+      "exchange": "XETRA",
+      "symbol": "ENR"
+    }
+  ],
   "cik": null,
   "website": "https://www.siemens-energy.com",
   "fiscal_year_end": "09-30",
@@ -24,7 +29,12 @@
       "unit": "EUR_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://finance.yahoo.com/energy/articles/siemens-energy-beats-forecasts-ai-144126001.html", "publisher": "Yahoo Finance", "published": "2026-08", "kind": "press" },
+      "source": {
+        "url": "https://finance.yahoo.com/energy/articles/siemens-energy-beats-forecasts-ai-144126001.html",
+        "publisher": "Yahoo Finance",
+        "published": "2026-08",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Fiscal Q3 = Apr–Jun 2026. Backlog set a then-record €154B in fiscal Q2 2026 before reaching €162B in Q3; AI data-center demand cited as the driver."
     },
@@ -36,7 +46,12 @@
       "unit": "GW",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/siemens-energy-s-record-backlog-creates-a-four-year-wait-and-a-test/69531463", "publisher": "ad-hoc-news.de", "published": "2026-08", "kind": "press" },
+      "source": {
+        "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/siemens-energy-s-record-backlog-creates-a-four-year-wait-and-a-test/69531463",
+        "publisher": "ad-hoc-news.de",
+        "published": "2026-08",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Order book has ballooned to ~87GW; medium gas-turbine annual production raised from ~50 units (FY2025) to ~80 (FY2026)."
     },
@@ -48,7 +63,12 @@
       "unit": "months",
       "basis": "press_reported",
       "confidence": "medium",
-      "source": { "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/siemens-energy-s-record-backlog-creates-a-four-year-wait-and-a-test/69531463", "publisher": "ad-hoc-news.de", "published": "2026-08", "kind": "press" },
+      "source": {
+        "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/siemens-energy-s-record-backlog-creates-a-four-year-wait-and-a-test/69531463",
+        "publisher": "ad-hoc-news.de",
+        "published": "2026-08",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Lead times of up to four years for gas turbines — one of the hard physical constraints on AI data-center power."
     },
@@ -60,9 +80,30 @@
       "unit": "EUR_B",
       "basis": "disclosed",
       "confidence": "high",
-      "source": { "url": "https://finance.yahoo.com/energy/articles/siemens-energy-beats-forecasts-ai-144126001.html", "publisher": "Yahoo Finance", "published": "2026-08", "kind": "press" },
+      "source": {
+        "url": "https://finance.yahoo.com/energy/articles/siemens-energy-beats-forecasts-ai-144126001.html",
+        "publisher": "Yahoo Finance",
+        "published": "2026-08",
+        "kind": "press"
+      },
       "as_of": "2026-08-13",
       "notes": "Q3 Grid Technologies orders €5.4B (+28% y/y); revenue €3.6B (+29%); 19.9% margin before special items. Transformers/HVDC are a named buildout bottleneck."
+    },
+    {
+      "metric": "market_cap",
+      "period": "2026-08-15",
+      "value": 1.6,
+      "unit": "USD_B",
+      "basis": "disclosed",
+      "confidence": "high",
+      "source": {
+        "url": "https://api-ninjas.com/api/marketcap",
+        "publisher": "API Ninjas",
+        "published": "2026-08-15",
+        "kind": "dataset"
+      },
+      "as_of": "2026-08-15",
+      "notes": "Exchange market cap for ENR; auto-refreshed weekly."
     }
   ],
   "events": [
@@ -71,17 +112,42 @@
       "title": "Fiscal Q3 2026: record backlog (€162B), Gamesa turns profitable, FY outlook raised",
       "why_it_matters": "Confirms AI data-center demand as the driver of record orders across both turbines and grid equipment, while the wind unit's return to profit removes the group's structural drag.",
       "impact": "medium",
-      "entities": ["siemens-energy"],
+      "entities": [
+        "siemens-energy"
+      ],
       "sources": [
-        { "url": "https://finance.yahoo.com/energy/articles/siemens-energy-beats-forecasts-ai-144126001.html", "publisher": "Yahoo Finance", "published": "2026-08", "kind": "press" },
-        { "url": "https://www.utilitydive.com/news/siemens-gas-turbine-backlog-nears-70-gw-as-company-expands-manufacturing/827390/", "publisher": "Utility Dive", "published": "2026-08", "kind": "press", "notes": "Reports a lower ~70GW figure for the near-term gas-turbine backlog — figures differ by scope (firm orders vs total order book)." }
+        {
+          "url": "https://finance.yahoo.com/energy/articles/siemens-energy-beats-forecasts-ai-144126001.html",
+          "publisher": "Yahoo Finance",
+          "published": "2026-08",
+          "kind": "press"
+        },
+        {
+          "url": "https://www.utilitydive.com/news/siemens-gas-turbine-backlog-nears-70-gw-as-company-expands-manufacturing/827390/",
+          "publisher": "Utility Dive",
+          "published": "2026-08",
+          "kind": "press",
+          "notes": "Reports a lower ~70GW figure for the near-term gas-turbine backlog — figures differ by scope (firm orders vs total order book)."
+        }
       ]
     }
   ],
   "sources": [
-    { "url": "https://finance.yahoo.com/energy/articles/siemens-energy-beats-forecasts-ai-144126001.html", "publisher": "Yahoo Finance", "kind": "press" },
-    { "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/siemens-energy-s-record-backlog-creates-a-four-year-wait-and-a-test/69531463", "publisher": "ad-hoc-news.de", "kind": "press" },
-    { "url": "https://www.utilitydive.com/news/siemens-gas-turbine-backlog-nears-70-gw-as-company-expands-manufacturing/827390/", "publisher": "Utility Dive", "kind": "press" }
+    {
+      "url": "https://finance.yahoo.com/energy/articles/siemens-energy-beats-forecasts-ai-144126001.html",
+      "publisher": "Yahoo Finance",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/siemens-energy-s-record-backlog-creates-a-four-year-wait-and-a-test/69531463",
+      "publisher": "ad-hoc-news.de",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.utilitydive.com/news/siemens-gas-turbine-backlog-nears-70-gw-as-company-expands-manufacturing/827390/",
+      "publisher": "Utility Dive",
+      "kind": "press"
+    }
   ],
-  "updated": "2026-08-13"
+  "updated": "2026-08-15"
 }

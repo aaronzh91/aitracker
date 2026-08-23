@@ -1,728 +1,1023 @@
 {
-  "generated": "2026-08-15",
+  "generated": "2026-08-22",
   "model": "deepseek/deepseek-v4-flash-0731",
   "rubric_version": "spec-4.2-v1",
   "nominations": [
     {
-      "title": "AMD ( AMD ) Benefits as AI Shifts From Training to Inference",
-      "url": "https://finance.yahoo.com/technology/ai/articles/why-amd-amd-could-benefit-143635913.html",
+      "title": "Groq Valued at $3 . 5 Billion in Funding Round After Nvidia Deal",
+      "url": "https://finance.yahoo.com/technology/ai/articles/groq-valued-3-5-billion-123000885.html",
       "domain": "finance.yahoo.com",
-      "date": "20260810T151500Z",
+      "date": "20260817T133000Z",
       "entities": [
-        "amd"
-      ],
-      "impact": 4,
-      "extraction": {
-        "reason": "AMD benefits from AI shift to inference; changes expected revenue/capex flows in AI ecosystem.",
-        "parties": [
-          "AMD"
-        ],
-        "amount_hint": "revenue growth from inference demand"
-      },
-      "triaged": true
-    },
-    {
-      "title": "AMD plans to raise as much as $5 billion from debt offering : Report",
-      "url": "https://www.business-standard.com/companies/news/amd-plans-to-raise-as-much-as-5-billion-from-debt-offering-report-126081302189_1.html",
-      "domain": "business-standard.com",
-      "date": "20260813T194500Z",
-      "entities": [
-        "amd"
+        "alphabet"
       ],
       "impact": 5,
       "extraction": {
-        "reason": "AMD plans to raise up to $5B via debt offering; directly alters capital structure and creates a financing edge.",
+        "reason": "AI chip company funding round, directly adds deal value.",
         "parties": [
-          "AMD"
-        ],
-        "amount_hint": "$5B debt offering"
-      },
-      "triaged": true
-    },
-    {
-      "title": "Major alternative asset managers trade higher after Nvidia $500B AI financing deal ( BX : NYSE ) ",
-      "url": "https://seekingalpha.com/news/4630874-major-alternative-asset-managers-trade-higher-after-nvidias-500b-ai-financing-deal",
-      "domain": "seekingalpha.com",
-      "date": "20260811T170000Z",
-      "entities": [
-        "apollo",
-        "blackstone"
-      ],
-      "impact": 5,
-      "extraction": {
-        "reason": "Nvidia $500B AI financing deal; major money-flow edge affecting alternative asset managers and financial ecosystem.",
-        "parties": [
-          "Nvidia",
-          "Alternative asset managers"
-        ],
-        "amount_hint": "$500B AI financing deal"
-      },
-      "triaged": true
-    },
-    {
-      "title": "Nvidia half - a - tril deal tackles hyperscaler funding bottleneck : analysts",
-      "url": "https://seekingalpha.com/news/4630805-nvidias-half-a-tril-deal-tackles-hyperscalers-funding-bottleneck-analysts",
-      "domain": "seekingalpha.com",
-      "date": "20260811T170000Z",
-      "entities": [
-        "apollo",
-        "blackstone"
-      ],
-      "impact": 5,
-      "extraction": {
-        "reason": "Nvidia $500B AI financing deal directly addresses hyperscaler funding; significant capital flow change.",
-        "parties": [
-          "Nvidia",
-          "Hyperscalers"
-        ],
-        "amount_hint": "$500B AI financing deal"
-      },
-      "triaged": true
-    },
-    {
-      "title": "Financial Stocks Jump As Nvidia Confirms Huge AI Funding Deal | Investor Business Daily",
-      "url": "https://www.investors.com/news/financial-stocks-jump-nvidia-ai-funding-deal/",
-      "domain": "investors.com",
-      "date": "20260810T224500Z",
-      "entities": [
-        "apollo"
-      ],
-      "impact": 5,
-      "extraction": {
-        "reason": "Nvidia confirms huge AI funding deal; confirmed capital raise impacts AI ecosystem and financial markets.",
-        "parties": [
+          "Groq",
           "Nvidia"
         ],
-        "amount_hint": "$500B AI financing deal"
+        "amount_hint": "Groq, funding, $3.5B"
       },
       "triaged": true
     },
     {
-      "title": "Nvidia and Broadcom Deepen AI Financing Push But Wolfe Sees Long - Term Risks",
-      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-broadcom-deepen-ai-financing-131902271.html",
+      "title": "Anthropic Taps Google Chip Veteran as Part of Push Into Hardware",
+      "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-taps-google-chip-veteran-195955567.html",
       "domain": "finance.yahoo.com",
-      "date": "20260813T141500Z",
+      "date": "20260822T153000Z",
       "entities": [
-        "apollo",
-        "blackstone"
+        "alphabet"
       ],
       "impact": 4,
       "extraction": {
-        "reason": "Nvidia and Broadcom deepening AI financing push; creates/modifies money-flow edge in AI infrastructure financing, with long-term risk noted.",
+        "reason": "Hiring a Google chip veteran signals hardware strategy shift, a management move affecting AI ecosystem.",
+        "parties": [
+          "Anthropic",
+          "Google"
+        ],
+        "amount_hint": ""
+      },
+      "triaged": true
+    },
+    {
+      "title": "Nvidia customers notified about AI - related price hikes above 15 % ",
+      "url": "https://fortune.com/2026/08/22/nvidia-customers-ai-related-price-hikes-15-percent-vera-rubin-grace-blackwell-chips/",
+      "domain": "fortune.com",
+      "date": "20260822T220000Z",
+      "entities": [
+        "alphabet"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Price increases for AI hardware directly affect revenue and cost structures.",
         "parties": [
           "Nvidia",
-          "Broadcom",
-          "Wolfe Research"
+          "customers"
         ],
-        "amount_hint": "None specified"
+        "amount_hint": ">15% price hike"
       },
       "triaged": true
     },
     {
-      "title": "NVIDIA Joins Hands With Global Finance Giants To Mobilize Over $500 Bln For AI Infrastructure",
-      "url": "https://www.finanznachrichten.de/nachrichten-2026-08/69271696-nvidia-joins-hands-with-global-finance-giants-to-mobilize-over-dollar-500-bln-for-ai-infrastructure-020.htm",
-      "domain": "finanznachrichten.de",
-      "date": "20260811T070000Z",
-      "entities": [
-        "apollo",
-        "kkr"
-      ],
-      "impact": 5,
-      "extraction": {
-        "reason": "NVIDIA partnering with global finance giants to mobilize over $500B for AI infrastructure; direct creation of money-flow edge and large capital commitment.",
-        "parties": [
-          "NVIDIA",
-          "Global finance giants"
-        ],
-        "amount_hint": "$500B+"
-      },
-      "triaged": true
-    },
-    {
-      "title": "Nvidia Is Close to a $500 Billion Deal to Build AI Infrastructure . Why Arent Some Investors Happy About It ? ",
-      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-close-500-billion-deal-133000647.html",
-      "domain": "finance.yahoo.com",
-      "date": "20260812T220000Z",
-      "entities": [
-        "apollo"
-      ],
-      "impact": 4,
-      "extraction": {
-        "reason": "Nvidia close to $500B AI infrastructure deal; investor skepticism indicates potential risk, but deal value is material.",
-        "parties": [
-          "Nvidia"
-        ],
-        "amount_hint": "$500B"
-      },
-      "triaged": true
-    },
-    {
-      "title": "Nvidia Lines Up $500 Billion AI Financing Push As CEO Jensen Huang Says Chips Are Now an  Investable Asset  ",
-      "url": "https://www.ibtimes.com/nvidia-lines-500-billion-ai-financing-push-ceo-jensen-huang-says-chips-are-now-investable-3806288",
-      "domain": "ibtimes.com",
-      "date": "20260811T163000Z",
-      "entities": [
-        "blackstone"
-      ],
-      "impact": 5,
-      "extraction": {
-        "reason": "Massive AI financing push by Nvidia; directly alters AI capital flows and asset perceptions.",
-        "parties": [
-          "Nvidia",
-          "Jensen Huang"
-        ],
-        "amount_hint": "$500B (financing push)"
-      },
-      "triaged": true
-    },
-    {
-      "title": "Databricks wanted to raise $1B , investors wanted $15B . It settled on $5B at a $190B valuation . ",
-      "url": "https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/",
-      "domain": "techcrunch.com",
-      "date": "20260813T220000Z",
-      "entities": [
-        "databricks"
-      ],
-      "impact": 5,
-      "extraction": {
-        "reason": "Major capital raise: Databricks raised $5B at $190B valuation, significantly above initial target. Directly changes funding and valuation numbers tracked.",
-        "parties": [
-          "Databricks"
-        ],
-        "amount_hint": "$5B raised at $190B valuation"
-      },
-      "triaged": true
-    },
-    {
-      "title": "Databricks Closes $5 Billion Round at $190 Billion Valuation",
-      "url": "https://thenextweb.com/news/databricks-closes-5-billion-round-at-190-billion-valuation",
-      "domain": "thenextweb.com",
-      "date": "20260813T234500Z",
-      "entities": [
-        "databricks"
-      ],
-      "impact": 5,
-      "extraction": {
-        "reason": "Confirms $5B round at $190B valuation. Updates key financial metric for Databricks.",
-        "parties": [
-          "Databricks"
-        ],
-        "amount_hint": "$5B round at $190B valuation"
-      },
-      "triaged": true
-    },
-    {
-      "title": "Databricks tops USD $7 billion run - rate after funding",
-      "url": "https://itbrief.co.nz/story/databricks-tops-usd-7-billion-run-rate-after-funding",
-      "domain": "itbrief.co.nz",
-      "date": "20260814T013000Z",
-      "entities": [
-        "databricks"
-      ],
-      "impact": 5,
-      "extraction": {
-        "reason": "Reports Databricks' run-rate exceeding $7B after funding. Provides concrete revenue metric that changes tracked financial numbers.",
-        "parties": [
-          "Databricks"
-        ],
-        "amount_hint": "$7B+ annual run-rate"
-      },
-      "triaged": true
-    },
-    {
-      "title": "Databricks raises $5 billion as valuation jumps to $190 billion",
-      "url": "http://www.indiagazette.com/news/279240304/databricks-raises-usd5-billion-as-valuation-jumps-to-usd190-billion",
-      "domain": "indiagazette.com",
-      "date": "20260814T180000Z",
-      "entities": [
-        "databricks",
-        "databricks",
-        "databricks",
-        "databricks",
-        "databricks",
-        "databricks",
-        "databricks"
-      ],
-      "impact": 5,
-      "extraction": {
-        "reason": "Reiterates $5B raise at $190B valuation, reinforcing critical funding event.",
-        "parties": [
-          "Databricks"
-        ],
-        "amount_hint": "$5B raised at $190B valuation"
-      },
-      "triaged": true
-    },
-    {
-      "title": "Super Micro Advances 13 %, Dell Gains 5 %, HPE Rises 3 % on Blowout AI Server Guidance",
-      "url": "https://finance.yahoo.com/technology/ai/articles/super-micro-advances-13-dell-140610269.html",
-      "domain": "finance.yahoo.com",
-      "date": "20260812T143000Z",
-      "entities": [
-        "dell"
-      ],
-      "impact": 4,
-      "extraction": {
-        "reason": "AI server guidance from Super Micro, Dell, and HPE. The guidance materially affects revenue expectations for AI hardware ecosystem, a key money-flow metric.",
-        "parties": [
-          "Super Micro",
-          "Dell",
-          "HPE"
-        ],
-        "amount_hint": "AI server guidance (blowout)"
-      },
-      "triaged": true
-    },
-    {
-      "title": "NVIDIA partners with Apollo , BlackRock , Blackstone , KKR and others to mobilise over $500 billion for AI infrastructure",
-      "url": "https://www.livemint.com/companies/nvidia-partners-with-apollo-blackrock-blackstone-kkr-and-others-to-mobilise-over-500-billion-for-ai-infrastructure-11786419485171.html",
+      "title": "Anthropic may expand credit line beyond $10 billion as it gears up for IPO",
+      "url": "https://www.livemint.com/companies/news/anthropic-may-expand-credit-line-beyond-10-billion-as-it-gears-up-for-ipo-11787135173217.html",
       "domain": "livemint.com",
-      "date": "20260811T053000Z",
+      "date": "20260819T113000Z",
       "entities": [
-        "kkr"
+        "alphabet"
       ],
-      "impact": 5,
+      "impact": 4,
       "extraction": {
-        "reason": "Major strategic partnership to mobilise >$500B for AI infrastructure. Direct deal value, creates money-flow edges among major financial players and NVIDIA.",
+        "reason": "Expanding credit line is a financial move preparing for IPO, changes funding capacity.",
         "parties": [
-          "NVIDIA",
-          "Apollo",
-          "BlackRock",
-          "Blackstone",
-          "KKR",
-          "others"
+          "Anthropic"
         ],
-        "amount_hint": "$500B+ in AI infrastructure financing"
+        "amount_hint": "$10B+ credit line"
       },
       "triaged": true
     },
     {
-      "title": "Nvidia $500 billion plan envelops Wall Street in its AI frenzy",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/nvidias-500-billion-plan-envelops-wall-street-in-its-ai-frenzy/articleshow/133249552.cms",
-      "domain": "economictimes.indiatimes.com",
-      "date": "20260814T184500Z",
+      "title": "Anthropic pre - IPO credit facility set to climb past $10 billion",
+      "url": "https://www.thehindubusinessline.com/markets/anthropic-pre-ipo-credit-facility-set-to-climb-past-10-billion/article71363221.ece",
+      "domain": "thehindubusinessline.com",
+      "date": "20260819T063000Z",
       "entities": [
-        "kkr"
+        "alphabet"
       ],
       "impact": 5,
       "extraction": {
-        "reason": "Same core event as #3 – NVIDIA's $500B plan impacting Wall Street. Recognises deal value and strategic inflection.",
+        "reason": "Concrete pre-IPO credit facility increase, a clear financial event.",
+        "parties": [
+          "Anthropic"
+        ],
+        "amount_hint": "$10B+ credit facility"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Meta faces $1 . 4 trillion legal threat as child - safety trial deepens stock woes",
+      "url": "https://www.moneycontrol.com/news/business/markets/meta-faces-1-4-trillion-legal-threat-as-child-safety-trial-deepens-stock-woes-14011677.html",
+      "domain": "moneycontrol.com",
+      "date": "20260820T134500Z",
+      "entities": [
+        "alphabet"
+      ],
+      "impact": 4,
+      "extraction": {
+        "reason": "Large legal liability number, major financial risk for Meta.",
+        "parties": [
+          "Meta"
+        ],
+        "amount_hint": "$1.4T legal threat"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Meta stares down trillion - dollar threat as landmark social media trial begins",
+      "url": "https://www.thestar.com.my/tech/tech-news/2026/08/18/meta-stares-down-trillion-dollar-threat-as-landmark-social-media-trial-begins",
+      "domain": "thestar.com.my",
+      "date": "20260818T050000Z",
+      "entities": [
+        "alphabet",
+        "alphabet"
+      ],
+      "impact": 4,
+      "extraction": {
+        "reason": "Landmark trial start with trillion-dollar threat, legal risk.",
+        "parties": [
+          "Meta"
+        ],
+        "amount_hint": "$1T threat"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Alphabet ( GOOGL ): Google AI Boss Just Stepped Back . Is DeepMind Falling Apart ? ",
+      "url": "https://www.insidermonkey.com/blog/alphabet-googl-googles-ai-boss-just-stepped-back-is-deepmind-falling-apart-1809394/",
+      "domain": "insidermonkey.com",
+      "date": "20260821T213000Z",
+      "entities": [
+        "alphabet"
+      ],
+      "impact": 4,
+      "extraction": {
+        "reason": "Key AI executive stepping down, management disruption.",
+        "parties": [
+          "Alphabet",
+          "DeepMind"
+        ],
+        "amount_hint": ""
+      },
+      "triaged": true
+    },
+    {
+      "title": "Broadcom engages with lenders to secure $60B for AI chip financing : report",
+      "url": "https://seekingalpha.com/news/4635702-broadcom-engages-with-lenders-to-secure-60b-for-ai-chip-financing-report",
+      "domain": "seekingalpha.com",
+      "date": "20260820T224500Z",
+      "entities": [
+        "apollo",
+        "blackstone"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Broadcom securing $60B for AI chip financing—major capital flow.",
+        "parties": [
+          "Broadcom"
+        ],
+        "amount_hint": "$60B"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Apollo Global confirms data breach ; Social Security numbers , personal data potentially exposed",
+      "url": "https://www.moneycontrol.com/news/business/apollo-global-confirms-data-breach-social-security-numbers-personal-data-potentially-exposed-14012590.html",
+      "domain": "moneycontrol.com",
+      "date": "20260821T144500Z",
+      "entities": [
+        "apollo"
+      ],
+      "impact": 4,
+      "extraction": {
+        "reason": "Data breach with potential legal, reputational, and financial consequences.",
+        "parties": [
+          "Apollo Global Management"
+        ],
+        "amount_hint": "Potential legal costs / fines"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Broadcom Eyes Up to $100 Billion AI Financing Deal",
+      "url": "https://finance.yahoo.com/technology/ai/articles/broadcom-eyes-100-billion-ai-162200783.html",
+      "domain": "finance.yahoo.com",
+      "date": "20260821T164500Z",
+      "entities": [
+        "apollo",
+        "blackstone",
+        "broadcom"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Broadcom eyeing up to $100B AI financing deal—major capital flow.",
+        "parties": [
+          "Broadcom"
+        ],
+        "amount_hint": "up to $100B"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Broadcom seeks more than $60bn in debt to fund AI chips for Anthropic",
+      "url": "https://thenextweb.com/news/broadcom-60bn-ai-chip-debt-anthropic",
+      "domain": "thenextweb.com",
+      "date": "20260821T161500Z",
+      "entities": [
+        "blackstone"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Broadcom seeks >$60B debt to fund AI chips for Anthropic; major deal value and AI infrastructure.",
+        "parties": [
+          "Broadcom",
+          "Anthropic"
+        ],
+        "amount_hint": "60B USD"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Broadcom Pursues $60 Billion AI Chip Financing to Support Anthropic and Tech Giants , ETTelecom",
+      "url": "https://telecom.economictimes.indiatimes.com/news/devices/broadcom-seeks-more-than-60-billion-in-latest-ai-debt-deal-report/133390828",
+      "domain": "telecom.economictimes.indiatimes.com",
+      "date": "20260821T031500Z",
+      "entities": [
+        "blackstone",
+        "broadcom"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Similar to headline 1; Broadcom pursuing $60B AI financing to support Anthropic.",
+        "parties": [
+          "Broadcom",
+          "Anthropic"
+        ],
+        "amount_hint": "60B USD"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Broadcom AI Financing Could Reach $370 Billion . But It Not as Bad as It Sounds . ",
+      "url": "https://www.fool.com/investing/2026/08/17/broadcom-s-ai-financing-could-reach-usd370-billion-but-it-s-not-as-bad-as-it-sounds/",
+      "domain": "fool.com",
+      "date": "20260818T044500Z",
+      "entities": [
+        "broadcom",
+        "broadcom",
+        "broadcom"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Broadcom AI financing could reach $370B; massive scale, deal value, and AI ecosystem impact.",
+        "parties": [
+          "Broadcom"
+        ],
+        "amount_hint": "370B USD"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Broadcom reportedly seeking up to $100B in debt financing for AI chip deal",
+      "url": "https://siliconangle.com/2026/08/20/broadcom-reportedly-seeking-up-to-100b-in-debt-financing-for-ai-chip-deal/",
+      "domain": "siliconangle.com",
+      "date": "20260821T050000Z",
+      "entities": [
+        "broadcom"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Explicit $100B debt financing request for an AI chip deal, changing a major tracked financing/deal value and creating money-flow in the AI ecosystem.",
+        "parties": [
+          "Broadcom"
+        ],
+        "amount_hint": ""
+      },
+      "triaged": true
+    },
+    {
+      "title": "Brookfield AM snaps up Japan real estate , eyes India expansion",
+      "url": "https://www.financeasia.com:443/article/brookfield-am-snaps-up-japan-real-estate-eyes-india-expansion/508170",
+      "domain": "financeasia.com",
+      "date": "20260819T010000Z",
+      "entities": [
+        "brookfield"
+      ],
+      "impact": 4,
+      "extraction": {
+        "reason": "Corporate action (acquisition of Japan real estate, expansion into India) that changes capital allocation, though no explicit value in the title.",
+        "parties": [
+          "Brookfield AM"
+        ],
+        "amount_hint": ""
+      },
+      "triaged": true
+    },
+    {
+      "title": "Nvidia discloses $21B stake in SpaceX",
+      "url": "https://arstechnica.com/information-technology/2026/08/nvidia-discloses-21b-stake-in-spacex/",
+      "domain": "arstechnica.com",
+      "date": "20260817T163000Z",
+      "entities": [
+        "brookfield"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Disclosure of a specific $21B stake investment, changing an investment position and creating a money-flow edge between Nvidia and SpaceX.",
         "parties": [
           "NVIDIA",
-          "Wall Street (implicit)"
+          "SpaceX"
+        ],
+        "amount_hint": "$21B"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Brookfield , La Caisse close $6 . 5bn Boralex acquisition",
+      "url": "https://finance.yahoo.com/energy/articles/brookfield-la-caisse-close-6-091903622.html",
+      "domain": "finance.yahoo.com",
+      "date": "20260817T094500Z",
+      "entities": [
+        "brookfield"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Closed a $6.5B acquisition; explicit deal value and corporate action that materially affects counterparties and capital flows.",
+        "parties": [
+          "Brookfield",
+          "La Caisse",
+          "Boralex"
+        ],
+        "amount_hint": "$6.5B"
+      },
+      "triaged": true
+    },
+    {
+      "title": "​​​​​​DOJ Probes Andreessen Horowitz Over Rival AI Board Roles",
+      "url": "https://finance.yahoo.com/technology/ai/articles/doj-probes-andreessen-horowitz-over-214521170.html",
+      "domain": "finance.yahoo.com",
+      "date": "20260817T221500Z",
+      "entities": [
+        "brookfield"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Regulatory probe (DOJ) regarding AI board roles—a legal action with direct financial and governance consequences.",
+        "parties": [
+          "DOJ",
+          "Andreessen Horowitz"
+        ],
+        "amount_hint": ""
+      },
+      "triaged": true
+    },
+    {
+      "title": "Nvidia $500bn Wall Street deal signals AI boom strain",
+      "url": "https://www.thenews.com.pk/latest/1412563-nvidias-500bn-wall-street-deal-signals-ai-boom-strain",
+      "domain": "thenews.com.pk",
+      "date": "20260817T133000Z",
+      "entities": [
+        "brookfield"
+      ],
+      "impact": 4,
+      "extraction": {
+        "reason": "Mentions a specific $500B Wall Street deal and its market signal (AI boom strain); high value but framed as a signal/analysis rather than a standalone announcement.",
+        "parties": [
+          "NVIDIA"
         ],
         "amount_hint": "$500B"
       },
       "triaged": true
     },
     {
-      "title": "How New Mexico $567 Million Ruling Could Change Meta",
-      "url": "https://www.insidermonkey.com/blog/how-new-mexicos-567-million-ruling-could-change-meta-1809745/",
-      "domain": "insidermonkey.com",
-      "date": "20260815T133000Z",
+      "title": "Copenhagen Infrastructure Partners closes US$3 billion energy fund targeting  high - growth , middle - income markets  ",
+      "url": "https://www.energy-storage.news/copenhagen-infrastructure-partners-closes-us3-billion-energy-fund-targeting-high-growth-middle-income-markets/",
+      "domain": "energy-storage.news",
+      "date": "20260819T124500Z",
       "entities": [
-        "meta"
-      ],
-      "impact": 4,
-      "extraction": {
-        "reason": "Legal ruling against Meta for $567M – material financial consequence, affects credit risk and potential AI spending capacity.",
-        "parties": [
-          "Meta",
-          "New Mexico"
-        ],
-        "amount_hint": "$567M"
-      },
-      "triaged": true
-    },
-    {
-      "title": "Micron Ventures Launches $250 Million Fund to Invest in the Next Generation of AI",
-      "url": "https://www.manilatimes.net/2026/08/14/tmt-newswire/globenewswire/micron-ventures-launches-250-million-fund-to-invest-in-the-next-generation-of-ai/2405270",
-      "domain": "manilatimes.net",
-      "date": "20260813T203000Z",
-      "entities": [
-        "micron"
+        "brookfield"
       ],
       "impact": 5,
       "extraction": {
-        "reason": "Micron Ventures launches $250M fund for AI – concrete investment amount, creates money-flow edge between Micron and AI startups.",
+        "reason": "Closed a US$3 billion energy fund, a specific capital raise/deal value that changes tracked funding figures.",
         "parties": [
-          "Micron Technology"
+          "Copenhagen Infrastructure Partners"
         ],
-        "amount_hint": "$250,000,000"
+        "amount_hint": "$3B"
       },
       "triaged": true
     },
     {
-      "title": "Memory Stocks Open Flat And Then Soar : Micron Up 6 %, SK Hynix 8 %, SanDisk Up 15 %. Here What Driving the Move . ",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/memory-stocks-open-flat-then-165054304.html",
+      "title": "Nvidia Unveils $21B Stake in SpaceX , Details Plans on Massive AI Investments",
+      "url": "https://www.itechpost.com/articles/237054/20260817/nvidia-unveils-21b-stake-spacex-details-plans-massive-ai-investments.htm",
+      "domain": "itechpost.com",
+      "date": "20260818T053000Z",
+      "entities": [
+        "brookfield"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Direct quantified investment and AI strategy inflection.",
+        "parties": [
+          "Nvidia",
+          "SpaceX"
+        ],
+        "amount_hint": "$21B stake; massive AI investments planned"
+      },
+      "triaged": true
+    },
+    {
+      "title": "TikTok to pay $400 million to settle DOJ child privacy case",
+      "url": "https://www.columbian.com/news/2026/aug/21/tiktok-to-pay-400-million-to-settle-doj-child-privacy-case/",
+      "domain": "columbian.com",
+      "date": "20260821T231500Z",
+      "entities": [
+        "bytedance"
+      ],
+      "impact": 4,
+      "extraction": {
+        "reason": "Regulatory/legal settlement with direct financial consequence.",
+        "parties": [
+          "TikTok/ByteDance"
+        ],
+        "amount_hint": "$400M settlement"
+      },
+      "triaged": true
+    },
+    {
+      "title": "ByteDance Draws Over $30 Billion in Orders for Jumbo Bank Loan",
+      "url": "https://finance.yahoo.com/technology/ai/articles/bytedance-draws-over-30-billion-125514222.html",
       "domain": "finance.yahoo.com",
-      "date": "20260815T001500Z",
+      "date": "20260820T004500Z",
+      "entities": [
+        "bytedance"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Major AI-ecosystem financing event.",
+        "parties": [
+          "ByteDance"
+        ],
+        "amount_hint": "Over $30B in loan orders"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Alibaba profit dives 75 % after amping up AI spending",
+      "url": "https://www.moneycontrol.com/news/business/markets/alibaba-s-profit-dives-75-after-amping-up-ai-spending-14011586.html",
+      "domain": "moneycontrol.com",
+      "date": "20260820T114500Z",
+      "entities": [
+        "bytedance"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Earnings and capex shift directly tracked.",
+        "parties": [
+          "Alibaba"
+        ],
+        "amount_hint": "Profit -75%; AI spending increased"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Cerebras Shares Jump 15 % as Wedbush Flags Bigger OpenAI Deal Opportunity",
+      "url": "https://finance.yahoo.com/technology/ai/articles/cerebras-shares-jump-15-wedbush-174108398.html",
+      "domain": "finance.yahoo.com",
+      "date": "20260817T181500Z",
+      "entities": [
+        "cerebras"
+      ],
+      "impact": 4,
+      "extraction": {
+        "reason": "Analyst (Wedbush) flags a potential *bigger* OpenAI deal opportunity — this points to a material change in expected deal value/revenue for Cerebras (money-flow edge).",
+        "parties": [
+          "Cerebras Systems",
+          "OpenAI",
+          "Wedbush"
+        ],
+        "amount_hint": "Potential larger deal value (unspecified)"
+      },
+      "triaged": true
+    },
+    {
+      "title": "UK AI start - up Callosum secures $100m in seed funding round",
+      "url": "https://www.siliconrepublic.com/start-ups/uk-ai-start-up-callosum-secures-100m-seed-funding-round",
+      "domain": "siliconrepublic.com",
+      "date": "20260820T100000Z",
+      "entities": [
+        "cerebras"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "UK AI startup Callosum secures $100M seed round — direct, material money-flow event (new capital injection, creates new AI-ecosystem counterparty).",
+        "parties": [
+          "Callosum",
+          "Investors (unspecified)"
+        ],
+        "amount_hint": "100M USD (seed round)"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Anthropic IPO valuation looks to $190 - 200 billion revenue target for 2028",
+      "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-ipo-valuation-looks-190-103350118.html",
+      "domain": "finance.yahoo.com",
+      "date": "20260818T200000Z",
+      "entities": [
+        "cerebras"
+      ],
+      "impact": 4,
+      "extraction": {
+        "reason": "Anthropic IPO valuation target set at $190–200B, tied to a 2028 revenue target. Directly changes guidance/valuation assumptions for a major AI player.",
+        "parties": [
+          "Anthropic",
+          "IPO investors (potential)"
+        ],
+        "amount_hint": "Valuation $190-200B; 2028 revenue target"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Hudson River Trading Expands Partnership With CoreWeave For Advanced AI Infrastructure",
+      "url": "https://www.crowdfundinsider.com/2026/08/299651-hudson-river-trading-expands-partnership-with-coreweave-for-advanced-ai-infrastructure/",
+      "domain": "crowdfundinsider.com",
+      "date": "20260821T223000Z",
+      "entities": [
+        "coreweave"
+      ],
+      "impact": 4,
+      "extraction": {
+        "reason": "Expansion of an existing partnership for AI infrastructure implies a new or enlarged commercial money-flow edge (CoreWeave providing compute/AI infrastructure to Hudson River Trading), even though no dollar figure is stated in the headline.",
+        "parties": [
+          "Hudson River Trading",
+          "CoreWeave"
+        ],
+        "amount_hint": "skip"
+      },
+      "triaged": true
+    },
+    {
+      "title": "GE Vernova AI Data Center Orders Just Doubled All of 2025 in 1 Half - Year . Is the Stock Still a Buy ? ",
+      "url": "https://www.fool.com/investing/2026/08/20/ge-vernovas-ai-data-center-orders-just-doubled-all/?source=iedfolrf0000001",
+      "domain": "fool.com",
+      "date": "20260820T233000Z",
+      "entities": [
+        "ge-vernova",
+        "ge-vernova"
+      ],
+      "impact": 4,
+      "extraction": {
+        "reason": "Quantified order growth (doubled 2025 total in half-year) directly changes revenue/capex expectations for GE Vernova and signals AI data center demand.",
+        "parties": [
+          "GE Vernova",
+          "AI data center operators"
+        ],
+        "amount_hint": "AI data center orders doubled 2025 total in one half-year (no absolute value)"
+      },
+      "triaged": true
+    },
+    {
+      "title": "The Gas Turbine Shortage Just Became AI Biggest Constraint",
+      "url": "https://oilprice.com/Energy/Energy-General/The-Gas-Turbine-Shortage-Just-Became-AIs-Biggest-Constraint.html",
+      "domain": "oilprice.com",
+      "date": "20260822T220000Z",
+      "entities": [
+        "ge-vernova"
+      ],
+      "impact": 4,
+      "extraction": {
+        "reason": "Identifies gas turbine shortage as a key constraint for AI; affects capex, supply-demand dynamics, and pricing for turbine makers (GE Vernova, etc.).",
+        "parties": [
+          "Gas turbine manufacturers",
+          "AI data center operators"
+        ],
+        "amount_hint": "No specific value; shortage constraint"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Big Tech Is on Pace to Spend $735 Billion on AI Data Centers in 2026 . These 3 Industrial Stocks Collect the Checks . ",
+      "url": "https://www.fool.com/investing/2026/08/19/big-tech-is-on-pace-to-spend-735-billion-on-ai-dat/?source=iedfolrf0000001",
+      "domain": "fool.com",
+      "date": "20260820T014500Z",
+      "entities": [
+        "ge-vernova"
+      ],
+      "impact": 4,
+      "extraction": {
+        "reason": "Quantified $735B AI data center capex for 2026; directly affects revenue for industrial suppliers (GE Vernova, etc.).",
+        "parties": [
+          "Big Tech",
+          "industrial suppliers (GE Vernova, etc.)"
+        ],
+        "amount_hint": "$735 billion AI data center spend in 2026"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Public Investment Fund revenue rises 9 % to $120bn as 2025 profit more than doubles",
+      "url": "https://www.arabnews.com/node/2654968/business-economy",
+      "domain": "arabnews.com",
+      "date": "20260817T131500Z",
+      "entities": [
+        "humain"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Directly changes tracked financial metrics of a major AI-ecosystem investor, affecting its investment capacity and potential money flows.",
+        "parties": [
+          "Public Investment Fund (PIF)"
+        ],
+        "amount_hint": "PIF revenue increased 9% to $120bn; 2025 profit more than doubled."
+      },
+      "triaged": true
+    },
+    {
+      "title": "Intel Embarks on $15 Billion Stock Offering to Capitalize on AI Demand",
+      "url": "https://smallbiztrends.com/intel-embarks-on-15-billion-stock-offering-to-capitalize-on-ai-demand/",
+      "domain": "smallbiztrends.com",
+      "date": "20260820T184500Z",
+      "entities": [
+        "intel"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Intel raising $15bn via stock offering is a direct, large capital-markets money flow tied to AI demand; it materially changes funding, dilution, and forward capex capacity.",
+        "parties": [
+          "Intel",
+          "equity investors"
+        ],
+        "amount_hint": "$15bn"
+      },
+      "triaged": true
+    },
+    {
+      "title": "SK Hynix Rises 6 % on $29B Buyback , SanDisk Gains 5 %, Micron Climbs 3 % as Memory Names Rebound",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-rises-6-29b-132908117.html",
+      "domain": "finance.yahoo.com",
+      "date": "20260819T140000Z",
       "entities": [
         "micron"
       ],
       "impact": 4,
       "extraction": {
-        "reason": "Memory stock price surge with specific gains may reflect market-moving supply/demand or news; direct money-flow implications for Micron, SK Hynix, SanDisk.",
+        "reason": "SK Hynix $29B buyback plus memory stocks rebound; concrete numbers and revenue/money-flow implications in AI memory sector.",
         "parties": [
-          "Micron Technology",
           "SK Hynix",
-          "SanDisk"
+          "SanDisk",
+          "Micron"
         ],
-        "amount_hint": "Micron up 6%, SK Hynix 8%, SanDisk 15%"
+        "amount_hint": "$29B buyback"
       },
       "triaged": true
     },
     {
-      "title": "Nebius preview : Burry short puts focus on AI infrastructure execution ( NBIS : NASDAQ ) ",
-      "url": "https://seekingalpha.com/news/4630964-nebius-preview-burry-short-puts-focus-on-ai-infrastructure-execution",
-      "domain": "seekingalpha.com",
-      "date": "20260811T200000Z",
+      "title": "Micron To Pour $10 Billion Into US Hub To Invent Post - DRAM AI Tech",
+      "url": "https://hothardware.com/news/micron-pours-10-billion-us-hub-invent-post-dram-ai-tech",
+      "domain": "hothardware.com",
+      "date": "20260821T164500Z",
+      "entities": [
+        "micron"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Micron investing $10B in US hub for post-DRAM AI tech; direct capex and R&D investment.",
+        "parties": [
+          "Micron"
+        ],
+        "amount_hint": "$10 billion"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Crossroads Capital Confidence in Nebius Group ( NBIS ) Reflected in Scaled Position",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/crossroads-capital-confidence-nebius-group-150844082.html",
+      "domain": "finance.yahoo.com",
+      "date": "20260820T154500Z",
       "entities": [
         "nebius"
       ],
       "impact": 4,
       "extraction": {
-        "reason": "Burry short puts focus on AI infrastructure execution; direct credit/counterparty risk and strategy inflection for Nebius.",
+        "reason": "Crossroads Capital increases position in Nebius – a concrete ownership change, indicating money flow into the AI company.",
         "parties": [
-          "Michael Burry",
-          "Nebius"
+          "Crossroads Capital",
+          "Nebius Group (NBIS)"
         ],
-        "amount_hint": "unspecified"
+        "amount_hint": "Scaled position"
       },
       "triaged": true
     },
     {
-      "title": "Nebius Soars 20 % as AI Revenue Explodes",
-      "url": "https://finance.yahoo.com/technology/ai/articles/nebius-soars-20-ai-revenue-171642333.html",
+      "title": "Nebius Slides 8 % After $4 . 5 Billion AI Funding Plan",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nebius-slides-8-4-5-150811108.html",
       "domain": "finance.yahoo.com",
-      "date": "20260812T174500Z",
+      "date": "20260819T153000Z",
       "entities": [
         "nebius"
       ],
       "impact": 5,
       "extraction": {
-        "reason": "AI revenue explodes and shares soar 20%; direct revenue impact and money-flow edge.",
+        "reason": "Nebius announces $4.5B AI funding plan – a capital‑raising event that changes the company's financials.",
         "parties": [
-          "Nebius"
+          "Nebius Group (NBIS)"
         ],
-        "amount_hint": "20% share surge"
+        "amount_hint": "$4.5B"
       },
       "triaged": true
     },
     {
-      "title": "Nebius Shares Jump 23 % After Q2 Revenue Surges",
-      "url": "https://www.rttnews.com/3679598/nebius-shares-jump-23-after-q2-revenue-surges.aspx",
-      "domain": "rttnews.com",
-      "date": "20260812T174500Z",
-      "entities": [
-        "nebius"
-      ],
-      "impact": 5,
-      "extraction": {
-        "reason": "Q2 revenue surges with 23% jump; direct change in revenue metric and market reaction.",
-        "parties": [
-          "Nebius"
-        ],
-        "amount_hint": "Q2 revenue surge, 23% share jump"
-      },
-      "triaged": true
-    },
-    {
-      "title": "Nebius Posts Loss In Q2 ; Revenues Up 454 % ",
-      "url": "https://www.rttnews.com/3679486/nebius-posts-loss-in-q2-revenues-up-454.aspx",
-      "domain": "rttnews.com",
-      "date": "20260812T170000Z",
-      "entities": [
-        "nebius"
-      ],
-      "impact": 5,
-      "extraction": {
-        "reason": "Earnings release with explicit revenue and loss figures, altering tracked metrics.",
-        "parties": [
-          "Nebius Group"
-        ],
-        "amount_hint": "Revenues up 454%; Q2 loss reported"
-      },
-      "triaged": true
-    },
-    {
-      "title": "Nebius Group : Nebius reports second quarter 2026 financial results",
-      "url": "https://www.finanznachrichten.de/nachrichten-2026-08/69290345-nebius-group-nebius-reports-second-quarter-2026-financial-results-023.htm",
+      "title": "Nebius Group Plans $4 . 5 Bln Convertible Senior Notes Offering ; Shares Fall In Pre - market",
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-08/69353177-nebius-group-plans-dollar-4-5-bln-convertible-senior-notes-offering-shares-fall-in-pre-market-020.htm",
       "domain": "finanznachrichten.de",
-      "date": "20260812T121500Z",
+      "date": "20260819T124500Z",
       "entities": [
         "nebius"
       ],
       "impact": 5,
       "extraction": {
-        "reason": "Earnings report for Q2 2026; official financial results affecting tracked numbers.",
+        "reason": "Nebius plans $4.5B convertible senior notes offering – a concrete deal, directly affects capital structure and money flow.",
+        "parties": [
+          "Nebius Group (NBIS)"
+        ],
+        "amount_hint": "$4.5B"
+      },
+      "triaged": true
+    },
+    {
+      "title": "United Super Pty Ltd in its capacity as Trustee for the Construction & Building Unions Superannuation Fund Cuts Stock Holdings in Nebius Group N . V . $NBIS",
+      "url": "https://www.tickerreport.com/banking-finance/13545873/united-super-pty-ltd-in-its-capacity-as-trustee-for-the-construction-building-unions-superannuation-fund-cuts-stock-holdings-in-nebius-group-n-v-nbis.html",
+      "domain": "tickerreport.com",
+      "date": "20260816T130000Z",
+      "entities": [
+        "nebius"
+      ],
+      "impact": 4,
+      "extraction": {
+        "reason": "A superannuation fund cuts its Nebius holdings – a concrete sell‑side money flow event.",
+        "parties": [
+          "Construction & Building Unions Superannuation Fund",
+          "Nebius Group (NBIS)"
+        ],
+        "amount_hint": "Reduction in holdings"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Nebius Group New Jersey Data Center Deal Sends Bloom Energy ( NYSE : BE ) Stock Surging 12 % ",
+      "url": "https://www.foreignpolicyjournal.com/2026/08/16/nebius-groups-new-jersey-data-center-deal-sends-bloom-energy-nyse-be-stock-surging-12/",
+      "domain": "foreignpolicyjournal.com",
+      "date": "20260816T184500Z",
+      "entities": [
+        "nebius"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Nebius data center deal with Bloom Energy likely creates a money-flow edge between AI-ecosystem companies: a supply agreement or procurement driving Bloom's revenue and Nebius's capex/energy costs. Stock surged 12%, indicating material financial impact.",
+        "parties": [
+          "Nebius Group",
+          "Bloom Energy"
+        ],
+        "amount_hint": "data center energy deal value not specified"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Nebius Group N . V .: Nebius Group announces pricing of upsized private offering of $5 . 0 billion of convertible senior notes",
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-08/69358643-nebius-group-n-v-nebius-group-announces-pricing-of-upsized-private-offering-of-dollar-5-0-billion-of-convertible-senior-notes-004.htm",
+      "domain": "finanznachrichten.de",
+      "date": "20260820T043000Z",
+      "entities": [
+        "nebius"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Nebius announces pricing of upsized private offering of $5.0 billion convertible senior notes, a direct capital raise changing cash/debt and funding capacity for AI infrastructure.",
         "parties": [
           "Nebius Group"
         ],
-        "amount_hint": "Q2 2026 results"
+        "amount_hint": "$5.0 billion"
       },
       "triaged": true
     },
     {
-      "title": "WhiteFiber revenue rises 54 % as NC - 1 starts billing contracted capacity : Earnings",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/whitefiber-revenue-rises-54-nc-174919747.html",
-      "domain": "finance.yahoo.com",
-      "date": "20260814T060000Z",
+      "title": "Oracle Just Raised Its Dividend for a 12th Straight Year to $2 a Share , Even as AI Spending Pressures Free Cash Flow . Is Larry Ellison Payout Still Safe ? ",
+      "url": "https://www.fool.com/investing/2026/08/18/oracle-just-raised-its-dividend-for-a-12th-straigh/?source=iedfolrf0000001",
+      "domain": "fool.com",
+      "date": "20260818T174500Z",
       "entities": [
-        "nscale"
-      ],
-      "impact": 5,
-      "extraction": {
-        "reason": "Earnings release with revenue jump and start of capacity billing – direct flow/metric change.",
-        "parties": [
-          "WhiteFiber",
-          "NC‑1"
-        ],
-        "amount_hint": "Revenue +54%; contracted capacity billing begins"
-      },
-      "triaged": true
-    },
-    {
-      "title": "  It still day zero : Lovable is worth $13 . 3bn , and the EU just became a shareholder",
-      "url": "https://thenextweb.com/news/lovable-400m-series-c-13-3bn-scaleup-europe-fund",
-      "domain": "thenextweb.com",
-      "date": "20260812T153000Z",
-      "entities": [
-        "nscale"
-      ],
-      "impact": 5,
-      "extraction": {
-        "reason": "Valuation update and new shareholder (EU) – creates a money‑flow edge and strategic inflection.",
-        "parties": [
-          "Lovable",
-          "European Union"
-        ],
-        "amount_hint": "Valuation $13.3bn; EU becomes shareholder"
-      },
-      "triaged": true
-    },
-    {
-      "title": "Nvidia $500B AI Infrastructure Bet Raises Power Stakes",
-      "url": "https://www.datacenterknowledge.com/investing/nvidia-s-500b-ai-infrastructure-bet-raises-power-stakes",
-      "domain": "datacenterknowledge.com",
-      "date": "20260814T023000Z",
-      "entities": [
-        "nscale",
-        "vistra"
-      ],
-      "impact": 5,
-      "extraction": {
-        "reason": "Nvidia's USD 500B AI infrastructure commitment is a major capex/money-flow event in the AI ecosystem.",
-        "parties": [
-          "Nvidia"
-        ],
-        "amount_hint": "500B"
-      },
-      "triaged": true
-    },
-    {
-      "title": "Oracle Cuts Exadata Cloud Cost Floor 95 % With Pooled - Storage Tier Across 22 AWS Regions",
-      "url": "https://www.techtimes.com/articles/324333/20260813/oracle-cuts-exadatas-cloud-cost-floor-95-pooled-storage-tier-across-22-aws-regions.htm",
-      "domain": "techtimes.com",
-      "date": "20260814T010000Z",
-      "entities": [
+        "oracle",
         "oracle"
       ],
       "impact": 4,
       "extraction": {
-        "reason": "A 95% price-floor cut for Oracle Exadata cloud on AWS significantly changes the pricing/cost edge across 22 AWS regions.",
+        "reason": "Oracle raised dividend to $2/share despite AI spending pressuring free cash flow. This changes payout/cash flow numbers and signals capital allocation strategy, relevant to financial tracking.",
+        "parties": [
+          "Oracle"
+        ],
+        "amount_hint": "$2 per share annual dividend"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Oracle VA Contract Just Got $17 Billion Bigger",
+      "url": "https://finance.yahoo.com/healthcare/articles/oracles-va-contract-just-got-194125319.html",
+      "domain": "finance.yahoo.com",
+      "date": "20260821T201500Z",
+      "entities": [
+        "oracle"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Oracle VA contract got $17 billion bigger, a direct revenue/deal value increase, material money-flow edge with the government as counterparty.",
         "parties": [
           "Oracle",
-          "AWS"
+          "U.S. Department of Veterans Affairs"
         ],
-        "amount_hint": "95%"
+        "amount_hint": "$17 billion"
       },
       "triaged": true
     },
     {
-      "title": "After Brutal 6AM Layoffs , Oracle Plans Fresh Job Cuts as Billions in AI Spending Drive More Payroll Cuts",
-      "url": "https://www.ibtimes.co.uk/oracle-job-cuts-ai-investment-1813968",
-      "domain": "ibtimes.co.uk",
-      "date": "20260813T070000Z",
-      "entities": [
-        "oracle"
-      ],
-      "impact": 4,
-      "extraction": {
-        "reason": "Oracle cutting jobs while facing billions in AI spending is a significant cost-structure and cash-allocation signal, though the AI spend figure is not exact.",
-        "parties": [
-          "Oracle"
-        ],
-        "amount_hint": "billions in AI spending"
-      },
-      "triaged": true
-    },
-    {
-      "title": "Oracle plans fresh layoffs as AI spending piles up billions in debt : Report",
-      "url": "https://economictimes.indiatimes.com/news/international/global-trends/oracle-plans-fresh-layoffs-as-ai-spending-piles-up-billions-in-debt-report/articleshow/133173023.cms",
-      "domain": "economictimes.indiatimes.com",
-      "date": "20260812T064500Z",
-      "entities": [
-        "oracle"
-      ],
-      "impact": 5,
-      "extraction": {
-        "reason": "Reports layoffs and billions in debt from AI spending; materially affects costs, credit risk, and capex/guidance.",
-        "parties": [
-          "Oracle"
-        ],
-        "amount_hint": "Debt and layoff scale (billions)"
-      },
-      "triaged": true
-    },
-    {
-      "title": "Broad Q1 Beat and Outlook Raise Power Quanta Service ( PWR ) Rally",
-      "url": "https://www.insidermonkey.com/blog/broad-q1-beat-and-outlook-raise-power-quanta-services-pwr-rally-1810438/",
-      "domain": "insidermonkey.com",
-      "date": "20260814T134500Z",
-      "entities": [
-        "quanta-services"
-      ],
-      "impact": 4,
-      "extraction": {
-        "reason": "Quarterly beat and raised outlook directly affect revenue, earnings, and forward guidance tracked by the system.",
-        "parties": [
-          "Quanta Services"
-        ],
-        "amount_hint": "Q1 beat; raised outlook; exact amounts unspecified"
-      },
-      "triaged": true
-    },
-    {
-      "title": "Vistra ( VST ) Just Grew Ebitda 30 %, So Why Did Profit Fall ? ",
-      "url": "https://finance.yahoo.com/energy/articles/vistra-vst-just-grew-ebitda-185214479.html",
+      "title": "  The Selling Goes Too Far : Jim Cramer Defends ServiceNow , Salesforce , and Other Software Giants Against Extinction Fears",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/selling-goes-too-far-jim-145506424.html",
       "domain": "finance.yahoo.com",
-      "date": "20260813T061500Z",
+      "date": "20260820T224500Z",
       "entities": [
-        "vistra",
-        "vistra"
+        "servicenow"
       ],
       "impact": 4,
       "extraction": {
-        "reason": "EBITDA growth and profit decline are concrete financial metrics that affect Vistra's valuation and potentially its role as an AI-power supplier, changing tracked numbers.",
+        "reason": "Cramer defends software giants against extinction fears, which may counter negative sentiment and potential stock price impact for ServiceNow and Salesforce. Management/strategy inflection as expert opinion shifts market perception and could affect money flow in AI ecosystem stocks.",
         "parties": [
-          "Vistra",
-          "AI data centers"
+          "ServiceNow",
+          "Salesforce"
         ],
-        "amount_hint": "EBITDA +30% but profit fall - actual financials"
+        "amount_hint": "Not specified"
       },
       "triaged": true
     },
     {
-      "title": "Vistra Q2 Earnings Call Highlights",
-      "url": "https://www.tickerreport.com/banking-finance/13537953/vistra-q2-earnings-call-highlights.html",
-      "domain": "tickerreport.com",
-      "date": "20260811T023000Z",
+      "title": "Salesforce and ServiceNow Business Models Are in Danger , Expert Cautions : What Does It Mean For CRM and NOW ? ",
+      "url": "https://finance.yahoo.com/technology/articles/salesforces-servicenow-business-models-danger-154622056.html",
+      "domain": "finance.yahoo.com",
+      "date": "20260818T161500Z",
       "entities": [
-        "vistra"
+        "servicenow"
       ],
       "impact": 4,
       "extraction": {
-        "reason": "Earnings call highlights provide guidance and financial performance updates, directly relevant to money-flow tracking.",
+        "reason": "Expert cautions that Salesforce and ServiceNow business models are in danger. This is a management/strategy inflection that could materially affect these companies' revenue and valuation in the AI ecosystem.",
         "parties": [
-          "Vistra"
+          "Salesforce",
+          "ServiceNow",
+          "Expert"
         ],
-        "amount_hint": "Q2 earnings guidance and metrics"
+        "amount_hint": "Not specified"
       },
       "triaged": true
     },
     {
-      "title": "Vistra ( VST ) Q2 2026 Earnings Call Transcript",
-      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/14/vistra-vst-q2-2026-earnings-call-transcript/?source=iedfolrf0000001",
+      "title": "Nvidia Eyes $3 Billion Investment in SoftBank - Backed AI Data Center",
+      "url": "http://www.econotimes.com/Nvidia-Eyes-3-Billion-Investment-in-SoftBank-Backed-AI-Data-Center-1749567",
+      "domain": "econotimes.com",
+      "date": "20260816T013000Z",
+      "entities": [
+        "softbank"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Nvidia eyes $3 billion investment in SoftBank-backed AI data center. This is a massive capital expenditure and partnership that directly creates a money-flow edge between Nvidia and SoftBank, impacting both companies.",
+        "parties": [
+          "Nvidia",
+          "SoftBank",
+          "AI Data Center"
+        ],
+        "amount_hint": "$3 billion"
+      },
+      "triaged": true
+    },
+    {
+      "title": "SoftBank Lines Up Another $6 . 3 Billion for AI",
+      "url": "https://finance.yahoo.com/technology/ai/articles/softbank-lines-another-6-3-215224110.html",
+      "domain": "finance.yahoo.com",
+      "date": "20260819T221500Z",
+      "entities": [
+        "softbank"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Direct AI capital commitment: SoftBank is lining up $6.3B for AI. Qualifies via (a) and (b).",
+        "parties": [
+          "SoftBank"
+        ],
+        "amount_hint": "$6.3 billion"
+      },
+      "triaged": true
+    },
+    {
+      "title": "NVIDIA Guarantees SB Energy PORTS - Pike Technology Campus in Ohio to Exclusively Host NVIDIA AI Compute",
+      "url": "https://www.manilatimes.net/2026/08/17/tmt-newswire/globenewswire/nvidia-guarantees-sb-energys-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute/2406834",
+      "domain": "manilatimes.net",
+      "date": "20260817T133000Z",
+      "entities": [
+        "softbank"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Creates an AI-infrastructure money-flow edge: NVIDIA guarantees exclusive AI-compute hosting at SB Energy/Pike campus.",
+        "parties": [
+          "NVIDIA",
+          "SB Energy",
+          "Pike Technology Campus"
+        ],
+        "amount_hint": "$0 - unspecified (strategic commitment)"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Nvidia eyes investing $3 billion in SB Energy",
+      "url": "https://www.manilatimes.net/2026/08/17/business/foreign-business/nvidia-eyes-investing-3-billion-in-sb-energy/2406380",
+      "domain": "manilatimes.net",
+      "date": "20260816T190000Z",
+      "entities": [
+        "softbank"
+      ],
+      "impact": 5,
+      "extraction": {
+        "reason": "Potential $3B Nvidia investment in SB Energy; clear AI-ecosystem deal value.",
+        "parties": [
+          "Nvidia",
+          "SB Energy"
+        ],
+        "amount_hint": "$3 billion"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Constellation Energy vs . Vistra : Who Leads the AI Power Revenue Race ? ",
+      "url": "https://www.fool.com/coverage/charts/2026/08/21/constellation-energy-vs-vistra-who-leads-the-ai-power-revenue-race/?source=iedfolrf0000001",
       "domain": "fool.com",
-      "date": "20260814T150000Z",
+      "date": "20260821T134500Z",
+      "entities": [
+        "vistra"
+      ],
+      "impact": 4,
+      "extraction": {
+        "reason": "Directly compares AI power revenue race between two companies, highly relevant to AI ecosystem money flows.",
+        "parties": [
+          "Constellation Energy",
+          "Vistra (VST)"
+        ],
+        "amount_hint": "score: 4"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Vistra ( VST ) Is Not Just a Power Producer , But an AI Infrastructure Bet",
+      "url": "https://finance.yahoo.com/energy/articles/vistra-vst-not-just-power-002658669.html",
+      "domain": "finance.yahoo.com",
+      "date": "20260816T070000Z",
+      "entities": [
+        "vistra"
+      ],
+      "impact": 4,
+      "extraction": {
+        "reason": "Highlights Vistra's role as an AI infrastructure bet, relevant narrative but no specific financial event.",
+        "parties": [
+          "Vistra (VST)"
+        ],
+        "amount_hint": "score: 4"
+      },
+      "triaged": true
+    },
+    {
+      "title": "Deutsche Bank AG Invests $138 . 27 Million in Vistra Corp . $VST",
+      "url": "https://www.tickerreport.com/banking-finance/13550512/deutsche-bank-ag-invests-138-27-million-in-vistra-corp-vst.html",
+      "domain": "tickerreport.com",
+      "date": "20260820T081500Z",
       "entities": [
         "vistra"
       ],
       "impact": 5,
       "extraction": {
-        "reason": "Full earnings call transcript, primary source of financial data and guidance.",
+        "reason": "Specific $138.27M investment by Deutsche Bank in Vistra, clear money flow event with explicit amount.",
         "parties": [
-          "Vistra"
+          "Deutsche Bank AG",
+          "Vistra Corp. (VST)"
         ],
-        "amount_hint": "Full Q2 2026 financials"
+        "amount_hint": "score: 5"
       },
       "triaged": true
     },
     {
-      "title": "Waymo gets green light for major California robotaxi expansion",
-      "url": "https://nypost.com/2026/08/14/business/waymo-gets-green-light-for-major-california-robotaxi-expansion/",
-      "domain": "nypost.com",
-      "date": "20260815T001500Z",
+      "title": "Mivtachim The Workers Social Insurance Fund Ltd . Under Special Management Buys New Position in Vistra Corp . $VST",
+      "url": "https://www.tickerreport.com/banking-finance/13545614/mivtachim-the-workers-social-insurance-fund-ltd-under-special-management-buys-new-position-in-vistra-corp-vst.html",
+      "domain": "tickerreport.com",
+      "date": "20260816T111500Z",
       "entities": [
-        "waymo"
+        "vistra"
       ],
       "impact": 5,
       "extraction": {
-        "reason": "Regulatory approval enables expansion, directly affecting Waymo's revenue and capex, a core AI-ecosystem player.",
+        "reason": "Fund buys new position in Vistra, another specific institutional investment, direct money flow.",
         "parties": [
-          "Waymo",
-          "California regulators"
+          "Mivtachim The Workers Social Insurance Fund Ltd.",
+          "Vistra Corp. (VST)"
         ],
-        "amount_hint": "Expansion approval, no specific amount"
-      },
-      "triaged": true
-    },
-    {
-      "title": "Waymo Receives Permission To Offer Rides In Sacramento And San Diego",
-      "url": "https://www.engadget.com/2237530/waymo-receives-permission-to-offer-rides-in-sacramento-and-san-diego/",
-      "domain": "engadget.com",
-      "date": "20260814T231500Z",
-      "entities": [
-        "waymo"
-      ],
-      "impact": 5,
-      "extraction": {
-        "reason": "Permission to operate in new cities, regulatory action with clear financial scale.",
-        "parties": [
-          "Waymo",
-          "Sacramento",
-          "San Diego"
-        ],
-        "amount_hint": "New service areas"
-      },
-      "triaged": true
-    },
-    {
-      "title": "Google Waymo Is Paying 127 . 5 % Tariffs To Fill Its Robotaxi Fleet With Chinese EVs",
-      "url": "https://www.carscoops.com/2026/08/waymo-zeekr-robotaxi-usa/",
-      "domain": "carscoops.com",
-      "date": "20260815T041500Z",
-      "entities": [
-        "waymo"
-      ],
-      "impact": 4,
-      "extraction": {
-        "reason": "Waymo paying 127.5% tariffs on Chinese EVs increases costs, directly affecting margins and capex.",
-        "parties": [
-          "Waymo",
-          "Chinese EV makers"
-        ],
-        "amount_hint": "127.5% tariff cost"
-      },
-      "triaged": true
-    },
-    {
-      "title": "Waymo Imports 3 , 200 Zeekr Robotaxis Despite Super High Tariffs",
-      "url": "https://cleantechnica.com/2026/08/12/waymo-imports-3200-zeekr-robotaxis-despite-super-high-tariffs/",
-      "domain": "cleantechnica.com",
-      "date": "20260813T020000Z",
-      "entities": [
-        "waymo"
-      ],
-      "impact": 4,
-      "extraction": {
-        "reason": "Concrete import/capex event involving Waymo and Zeekr, with 3,200 robotaxis and tariff exposure explicitly in the headline.",
-        "parties": [
-          "Waymo",
-          "Zeekr"
-        ],
-        "amount_hint": "3,200 Zeekr robotaxis; tariff costs undisclosed"
+        "amount_hint": "score: 5"
       },
       "triaged": true
     }

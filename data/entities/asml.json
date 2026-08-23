@@ -93,18 +93,18 @@
     },
     {
       "metric": "market_cap",
-      "period": "2026-08-15",
-      "value": 710.7,
+      "period": "2026-08-22",
+      "value": 679.8,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
       "source": {
         "url": "https://api-ninjas.com/api/marketcap",
         "publisher": "API Ninjas",
-        "published": "2026-08-15",
+        "published": "2026-08-22",
         "kind": "dataset"
       },
-      "as_of": "2026-08-15",
+      "as_of": "2026-08-22",
       "notes": "Exchange market cap for ASML; auto-refreshed weekly."
     }
   ],
@@ -169,5 +169,5 @@
       "kind": "sec_filing"
     }
   ],
-  "updated": "2026-08-15"
+  "updated": "2026-08-22"
 }

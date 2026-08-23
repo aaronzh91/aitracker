@@ -101,7 +101,7 @@
         "published": "2026-07-24",
         "kind": "sec_filing"
       },
-      "as_of": "2026-08-15",
+      "as_of": "2026-08-22",
       "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
     },
     {
@@ -117,23 +117,23 @@
         "published": "2026-07-24",
         "kind": "sec_filing"
       },
-      "as_of": "2026-08-15",
+      "as_of": "2026-08-22",
       "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
     },
     {
       "metric": "market_cap",
-      "period": "2026-08-15",
-      "value": 517,
+      "period": "2026-08-22",
+      "value": 454.3,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
       "source": {
         "url": "https://api-ninjas.com/api/marketcap",
         "publisher": "API Ninjas",
-        "published": "2026-08-15",
+        "published": "2026-08-22",
         "kind": "dataset"
       },
-      "as_of": "2026-08-15",
+      "as_of": "2026-08-22",
       "notes": "Exchange market cap for INTC; auto-refreshed weekly."
     }
   ],
@@ -212,5 +212,5 @@
       "kind": "press"
     }
   ],
-  "updated": "2026-08-15"
+  "updated": "2026-08-22"
 }

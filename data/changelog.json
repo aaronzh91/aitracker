@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-08-22",
+    "kind": "mechanical",
+    "title": "Market caps refreshed: 54 tickers",
+    "body": "Live market caps via API Ninjas."
+  },
+  {
+    "date": "2026-08-22",
+    "kind": "mechanical",
+    "title": "EDGAR refresh: 36 entities",
+    "body": "Latest disclosed revenue/capex/RPO pulled from SEC XBRL companyfacts."
+  },
+  {
     "date": "2026-08-15",
     "kind": "mechanical",
     "title": "Market caps refreshed: 54 tickers",

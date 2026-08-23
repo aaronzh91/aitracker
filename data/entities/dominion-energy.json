@@ -61,23 +61,23 @@
         "published": "2026-05-01",
         "kind": "sec_filing"
       },
-      "as_of": "2026-08-15",
+      "as_of": "2026-08-22",
       "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 3-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
     },
     {
       "metric": "market_cap",
-      "period": "2026-08-15",
-      "value": 60.5,
+      "period": "2026-08-22",
+      "value": 58.6,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
       "source": {
         "url": "https://api-ninjas.com/api/marketcap",
         "publisher": "API Ninjas",
-        "published": "2026-08-15",
+        "published": "2026-08-22",
         "kind": "dataset"
       },
-      "as_of": "2026-08-15",
+      "as_of": "2026-08-22",
       "notes": "Exchange market cap for D; auto-refreshed weekly."
     }
   ],
@@ -88,5 +88,5 @@
       "kind": "press"
     }
   ],
-  "updated": "2026-08-15"
+  "updated": "2026-08-22"
 }

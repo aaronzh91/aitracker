@@ -20,7 +20,7 @@
    "region": "china",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 296.6,
+   "sizeUSDB": 286,
    "sizeBasis": "disclosed",
    "monetization": "Sells AI cloud (Qwen model family, GPU/inference services) through Alibaba Cloud, funded by e-commerce cash flows and a RMB 380B+ AI capex program."
   },
@@ -44,7 +44,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 4186.1,
+   "sizeUSDB": 4173.1,
    "sizeBasis": "disclosed",
    "monetization": "Monetizes AI through Search/YouTube ads, Google Cloud (TPUs + Gemini), Gemini subscriptions, and model licensing (Apple ~$1B/yr); vertically integrated on its own TPU silicon."
   },
@@ -56,7 +56,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 2825.4,
+   "sizeUSDB": 2782.1,
    "sizeBasis": "disclosed",
    "monetization": "Sells AI compute through AWS (Nvidia GPUs + Trainium custom silicon) against a ~$496B backlog; holds large equity stakes in both Anthropic and OpenAI; spending ~$220B of capex in 2026."
   },
@@ -68,7 +68,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 838.8,
+   "sizeUSDB": 771.7,
    "sizeBasis": "disclosed",
    "monetization": "Sells Instinct GPUs, EPYC CPUs, and rack-scale AI systems; anchor OpenAI 6GW deal is paired with a milestone-vested warrant booked as contra-revenue."
   },
@@ -80,7 +80,7 @@
    "region": "us",
    "tier": 3,
    "kind": "public_company",
-   "sizeUSDB": 14.7,
+   "sizeUSDB": 12.5,
    "sizeBasis": "disclosed",
    "monetization": "#2 global OSAT; sells packaging/test capacity to AI chip designers and takes TSMC advanced-packaging overflow, including the first US high-volume advanced packaging campus (Peoria, AZ)."
   },
@@ -140,7 +140,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 4493.3,
+   "sizeUSDB": 4543.5,
    "sizeBasis": "disclosed",
    "monetization": "Monetizes AI indirectly — as a device-upgrade and services driver — while paying partners (Google ~$1B/yr for a custom Gemini) rather than building frontier models or hyperscale AI capex."
   },
@@ -152,7 +152,7 @@
    "region": "us",
    "tier": 2,
    "kind": "public_company",
-   "sizeUSDB": 9,
+   "sizeUSDB": 7.8,
    "sizeBasis": "disclosed",
    "monetization": "AI data-center developer/landlord (ex-crypto hosting): builds powered campuses in North Dakota (Polaris Forge) and leases them long-term, anchored by ~$11B/400MW of CoreWeave leases plus a $5B hyperscaler lease."
   },
@@ -164,7 +164,7 @@
    "region": "taiwan",
    "tier": 2,
    "kind": "public_company",
-   "sizeUSDB": 86.9,
+   "sizeUSDB": 80.3,
    "sizeBasis": "disclosed",
    "monetization": "World's largest OSAT (outsourced assembly & test); sells advanced-packaging and test capacity, including CoWoS-class overflow from TSMC, to AI chip designers."
   },
@@ -176,7 +176,7 @@
    "region": "europe",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 710.7,
+   "sizeUSDB": 679.8,
    "sizeBasis": "disclosed",
    "monetization": "Monopoly supplier of EUV lithography — every leading-edge AI chip and next-generation memory requires its machines; also Mistral AI's largest shareholder (~11%)."
   },
@@ -188,7 +188,7 @@
    "region": "us",
    "tier": 2,
    "kind": "public_company",
-   "sizeUSDB": 457.7,
+   "sizeUSDB": 437.8,
    "sizeBasis": "disclosed",
    "monetization": "Lends to and seeks capital-markets mandates from AI issuers; extended OpenAI's first bilateral bank credit line ($520M, Jul 2026) while pursuing IPO advisory roles at OpenAI and Anthropic."
   },
@@ -236,7 +236,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 1869.7,
+   "sizeUSDB": 1752.9,
    "sizeBasis": "disclosed",
    "monetization": "Sells custom AI accelerators (XPUs) and AI networking silicon to hyperscalers and labs — OpenAI 10GW and Anthropic 3.5GW TPU deals — plus VMware infrastructure software."
   },
@@ -272,7 +272,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 49.6,
+   "sizeUSDB": 44.4,
    "sizeBasis": "disclosed",
    "monetization": "Sells wafer-scale AI systems and, increasingly, high-speed inference as a service (tokens/sec as the product); the main non-GPU architecture with real revenue."
   },
@@ -284,7 +284,7 @@
    "region": "us",
    "tier": 2,
    "kind": "public_company",
-   "sizeUSDB": 7.3,
+   "sizeUSDB": 6.4,
    "sizeBasis": "disclosed",
    "monetization": "Bitcoin miner converted to AI data-center landlord: long-term hosting leases at its West Texas campuses to AWS (~$5.5B/15yr, 300MW) and Fluidstack (~$3B/10yr at Barber Lake, Google-backstopped; Google ~5.4% pro forma equity)."
   },
@@ -308,7 +308,7 @@
    "region": "us",
    "tier": 2,
    "kind": "public_company",
-   "sizeUSDB": 63.7,
+   "sizeUSDB": 56.6,
    "sizeBasis": "disclosed",
    "monetization": "Sells 800G/1.6T datacom transceivers, lasers (EML/VCSEL), and optical components into AI back-end networks; Nvidia investee."
   },
@@ -320,7 +320,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 62.4,
+   "sizeUSDB": 58.3,
    "sizeBasis": "disclosed",
    "monetization": "Installs the mechanical and electrical guts of data centers — HVAC, piping, modular builds, electrical — with technology customers now ~58% of revenue and a record $14.1B backlog."
   },
@@ -332,7 +332,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 101.4,
+   "sizeUSDB": 98,
    "sizeBasis": "disclosed",
    "monetization": "Sells firm carbon-free nuclear power to hyperscalers under 15–20-year PPAs — Microsoft (Crane/TMI restart), Meta (Clinton) — on top of the largest US nuclear fleet, expanded by Calpine's gas fleet."
   },
@@ -344,7 +344,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 57.4,
+   "sizeUSDB": 47.9,
    "sizeBasis": "disclosed",
    "monetization": "Rents Nvidia GPU capacity under multi-year take-or-pay contracts to Microsoft, OpenAI, and Meta; funds the fleet with ~$35B of largely GPU-collateralized debt."
   },
@@ -392,7 +392,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 326.2,
+   "sizeUSDB": 293.6,
    "sizeBasis": "disclosed",
    "monetization": "Builds and sells AI servers (ISG) to neoclouds, labs, and enterprises — $51.3B AI backlog and a ~$60B FY27 AI revenue guide — with storage, networking, and services attach."
   },
@@ -404,7 +404,7 @@
    "region": "us",
    "tier": 2,
    "kind": "public_company",
-   "sizeUSDB": 185.6,
+   "sizeUSDB": 187.1,
    "sizeBasis": "disclosed",
    "monetization": "Media and IP owner; its AI exposure is as a licensor of characters/IP to generative-AI platforms — an announced $1B OpenAI equity-plus-IP-license deal (Dec 2025) was withdrawn in Mar 2026 with $0 delivered."
   },
@@ -416,7 +416,7 @@
    "region": "us",
    "tier": 2,
    "kind": "public_company",
-   "sizeUSDB": 60.5,
+   "sizeUSDB": 58.6,
    "sizeBasis": "disclosed",
    "monetization": "Regulated utility serving Northern Virginia — the world's largest data-center cluster; monetizes AI via rate-based transmission/substation buildout for ~40GW of contracted DC demand."
   },
@@ -428,7 +428,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 175.3,
+   "sizeUSDB": 162.8,
    "sizeBasis": "disclosed",
    "monetization": "Sells electrical power management from grid to chip — switchgear, UPS, busway, and (post-Boyd) liquid cooling — with data centers now its largest end-market."
   },
@@ -440,7 +440,7 @@
    "region": "us",
    "tier": 2,
    "kind": "public_company",
-   "sizeUSDB": 36.9,
+   "sizeUSDB": 34.3,
    "sizeBasis": "disclosed",
    "monetization": "Sells mechanical/electrical construction and facilities services; data-center electrical fit-out is the fastest-growing book of business."
   },
@@ -452,7 +452,7 @@
    "region": "us",
    "tier": 2,
    "kind": "public_company",
-   "sizeUSDB": 50.3,
+   "sizeUSDB": 48.8,
    "sizeBasis": "disclosed",
    "monetization": "Regulated Gulf-South utility; monetizes AI through rate-based new gas generation and transmission serving Meta's Hyperion campus in Richland Parish, Louisiana (~2.2GW load) under long-term electric service agreements."
   },
@@ -500,7 +500,7 @@
    "region": "us",
    "tier": 2,
    "kind": "public_company",
-   "sizeUSDB": 7.2,
+   "sizeUSDB": 7.8,
    "sizeBasis": "disclosed",
    "monetization": "Crypto financial-services firm turned AI data-center landlord: converted its Helios (West Texas) bitcoin-mining campus into 526MW of CoreWeave-leased AI capacity (>$30B potential 25-yr value), funded partly with $3.5B of high-yield bonds."
   },
@@ -512,7 +512,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 283.2,
+   "sizeUSDB": 254.8,
    "sizeBasis": "disclosed",
    "monetization": "Sells gas turbines, grid equipment, and multi-decade service agreements into the power buildout that AI data-center load is driving; sells out capacity years ahead via paid slot reservations."
   },
@@ -632,7 +632,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 517,
+   "sizeUSDB": 454.3,
    "sizeBasis": "disclosed",
    "monetization": "Sells x86 CPUs (data center + client) while rebuilding as a US-champion foundry — recapitalized by the US government (~10%), Nvidia ($5B), SoftBank ($2B), and a $15B public share sale."
   },
@@ -656,7 +656,7 @@
    "region": "us",
    "tier": 2,
    "kind": "public_company",
-   "sizeUSDB": 94.6,
+   "sizeUSDB": 100.4,
    "sizeBasis": "disclosed",
    "monetization": "Sells TurboTax, QuickBooks, Credit Karma, and Mailchimp; pays OpenAI >$100M multi-year for model access and distribution of its apps inside ChatGPT."
   },
@@ -680,7 +680,7 @@
    "region": "us",
    "tier": 2,
    "kind": "public_company",
-   "sizeUSDB": 15.7,
+   "sizeUSDB": 14.9,
    "sizeBasis": "disclosed",
    "monetization": "Bitcoin miner turned vertically-integrated AI cloud: owns power-rich sites (Childress TX, 750MW) and sells GPU-cloud capacity, anchored by a $9.7B/5-year Microsoft contract on NVIDIA GB300s."
   },
@@ -740,7 +740,7 @@
    "region": "us",
    "tier": 2,
    "kind": "public_company",
-   "sizeUSDB": 72.1,
+   "sizeUSDB": 67.4,
    "sizeBasis": "disclosed",
    "monetization": "Sells datacom lasers and 800G/1.6T transceivers for AI clusters; record 800G shipments with 1.6T ramping; Nvidia investee."
   },
@@ -764,7 +764,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 1502.6,
+   "sizeUSDB": 1400.9,
    "sizeBasis": "disclosed",
    "monetization": "Monetizes AI through ad targeting/ranking and engagement across Facebook/Instagram/WhatsApp; no cloud business — AI is a cost center funded by ads, bonds, and off-balance-sheet SPVs."
   },
@@ -788,7 +788,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 1097.4,
+   "sizeUSDB": 1091.9,
    "sizeBasis": "disclosed",
    "monetization": "Sells DRAM, HBM, and NAND — the US-based HBM supplier, with capacity sold out and revenue up ~4.5× y/y at super-cycle pricing."
   },
@@ -800,7 +800,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 3678.6,
+   "sizeUSDB": 3588.3,
    "sizeBasis": "disclosed",
    "monetization": "Sells AI via Azure cloud consumption and Copilot seats across Microsoft 365/GitHub/Dynamics; holds ~27% of OpenAI plus a capped 20% revenue share; funds it with ~$190B/yr of capex."
   },
@@ -848,7 +848,7 @@
    "region": "europe",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 66.6,
+   "sizeUSDB": 52.6,
    "sizeBasis": "disclosed",
    "monetization": "Rents Nvidia GPU cloud capacity under multi-year contracts — ~$46B contracted with Microsoft and Meta — while scaling capex far ahead of current revenue."
   },
@@ -860,7 +860,7 @@
    "region": "us",
    "tier": 2,
    "kind": "public_company",
-   "sizeUSDB": 179.8,
+   "sizeUSDB": 174.5,
    "sizeBasis": "disclosed",
    "monetization": "Largest US renewables developer plus regulated Florida utility (FPL); monetizes AI demand through long-term PPAs with hyperscalers, headlined by the 25-year Duane Arnold nuclear restart deal with Google."
   },
@@ -872,7 +872,7 @@
    "region": "europe",
    "tier": 3,
    "kind": "public_company",
-   "sizeUSDB": 58.2,
+   "sizeUSDB": 55.1,
    "sizeBasis": "disclosed",
    "monetization": "Sells mobile (RAN), fixed, optical, and data-center networking equipment; AI exposure via AI-RAN co-development with NVIDIA (its 2.9% shareholder) and data-center optical networking (Infinera acquisition)."
   },
@@ -908,7 +908,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 5453.6,
+   "sizeUSDB": 5200.7,
    "sizeBasis": "disclosed",
    "monetization": "Sells AI accelerators, systems, and networking; increasingly also an investor in and financier of its own customer base."
   },
@@ -920,7 +920,7 @@
    "region": "us",
    "tier": 2,
    "kind": "public_company",
-   "sizeUSDB": 7.7,
+   "sizeUSDB": 7.3,
    "sizeBasis": "disclosed",
    "monetization": "Pre-revenue SMR developer selling power (not reactors) under long-term agreements; data-center operators are the anchor customer class."
   },
@@ -944,7 +944,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 433,
+   "sizeUSDB": 421.9,
    "sizeBasis": "disclosed",
    "monetization": "Sells OCI cloud infrastructure against a $638B contracted backlog dominated by OpenAI/Stargate, funded by aggressive debt issuance — the ecosystem's key credit-watch entity."
   },
@@ -956,7 +956,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 399.6,
+   "sizeUSDB": 413.2,
    "sizeBasis": "disclosed",
    "monetization": "Sells its AI Platform (AIP) and ontology software to enterprises and governments at premium prices — the fastest-growing large software company of the AI cycle, and its most-watched valuation battleground."
   },
@@ -992,7 +992,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 103.1,
+   "sizeUSDB": 96.1,
    "sizeBasis": "disclosed",
    "monetization": "Builds and electrifies the grid and data centers with the largest skilled electrical-labor force in North America — transmission, substations, and DC electrical fit-out (Cupertino Electric)."
   },
@@ -1004,7 +1004,7 @@
    "region": "us",
    "tier": 3,
    "kind": "public_company",
-   "sizeUSDB": 7.2,
+   "sizeUSDB": 7.5,
    "sizeBasis": "disclosed",
    "monetization": "Bitcoin miner converting its Rockdale, TX campus to AI hosting: 20-year leases to AMD (Jan 2026) and a ~$9.1B lease to a frontier AI lab reported to be Anthropic (Aug 2026), totaling ~241MW / ~$9.8B contracted."
   },
@@ -1028,7 +1028,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 160.7,
+   "sizeUSDB": 171.3,
    "sizeBasis": "disclosed",
    "monetization": "Sells AI agents (Agentforce) and data infrastructure (Data 360/Informatica) as paid add-ons to the world's largest CRM installed base; buys model capability from Anthropic and others rather than training its own."
   },
@@ -1064,7 +1064,7 @@
    "region": "europe",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 77.7,
+   "sizeUSDB": 80.8,
    "sizeBasis": "disclosed",
    "monetization": "Sells electrical distribution, secure power (APC UPS), cooling (Motivair), and EcoStruxure software into data centers — the group's largest growth driver at roughly a quarter of revenue."
   },
@@ -1076,7 +1076,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 128.2,
+   "sizeUSDB": 132.8,
    "sizeBasis": "disclosed",
    "monetization": "Sells AI (Now Assist / agentic workflows) as premium-priced SKUs on its enterprise workflow platform; AI annual contract value crossed $1B in Q2 2026."
   },
@@ -1088,7 +1088,7 @@
    "region": "europe",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 1.6,
+   "sizeUSDB": 1.5,
    "sizeBasis": "disclosed",
    "monetization": "Sells gas turbines, grid technologies (transformers, HVDC, switchgear), and long-term service into AI-driven power demand; order book stretches to four-year delivery waits."
   },
@@ -1112,7 +1112,7 @@
    "region": "us",
    "tier": 2,
    "kind": "public_company",
-   "sizeUSDB": 114,
+   "sizeUSDB": 115.3,
    "sizeBasis": "disclosed",
    "monetization": "Sells the AI Data Cloud; monetizes AI via Cortex AI consumption, paying OpenAI and Anthropic ($200M multi-year each) for frontier-model access it resells to 12,600+ enterprise customers."
   },
@@ -1136,7 +1136,7 @@
    "region": "us",
    "tier": 3,
    "kind": "public_company",
-   "sizeUSDB": 3.9,
+   "sizeUSDB": 3.3,
    "sizeBasis": "disclosed",
    "monetization": "Mobile gas-turbine power-as-a-service provider; monetizes AI through the 50.1%-owned Stateline Power JV with xAI (49.9%) supplying behind-the-meter turbine power to the Memphis-area Colossus data-center cluster."
   },
@@ -1172,7 +1172,7 @@
    "region": "us",
    "tier": 2,
    "kind": "public_company",
-   "sizeUSDB": 25.8,
+   "sizeUSDB": 24.1,
    "sizeBasis": "disclosed",
    "monetization": "Builds AI server racks (NVIDIA GB200/GB300 NVL72, liquid-cooled) for hyperscalers, neoclouds, and labs; built much of xAI's Colossus and supplies GB300 racks for Colossus 2."
   },
@@ -1184,7 +1184,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 16.5,
+   "sizeUSDB": 14.3,
    "sizeBasis": "disclosed",
    "monetization": "Sells nuclear power from Susquehanna to Amazon under the AI era's only disclosed-price nuclear PPA: ~$18B of expected revenue over 17 years for up to 1,920MW."
   },
@@ -1220,7 +1220,7 @@
    "region": "us",
    "tier": 2,
    "kind": "public_company",
-   "sizeUSDB": 8.6,
+   "sizeUSDB": 7.8,
    "sizeBasis": "disclosed",
    "monetization": "Bitcoin miner converted to AI data-center landlord: leases purpose-built HPC capacity at Lake Mariner (NY) to Fluidstack under long-term, Google-backstopped leases (Google ~14% pro forma equity holder)."
   },
@@ -1232,7 +1232,7 @@
    "region": "us",
    "tier": 2,
    "kind": "public_company",
-   "sizeUSDB": 1351.8,
+   "sizeUSDB": 1433.1,
    "sizeBasis": "disclosed",
    "monetization": "Sells EVs, energy storage, and robotics; monetizes AI through FSD/robotaxi software and designs in-house AI inference silicon (AI5/AI6), fabbed externally — including a $16.5B AI6 foundry deal with Samsung's Taylor, TX fab through 2033."
   },
@@ -1304,7 +1304,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 113.1,
+   "sizeUSDB": 100.8,
    "sizeBasis": "disclosed",
    "monetization": "Sells the power and cooling guts of AI data centers — UPS, switchgear, busway, liquid-cooling CDUs, racks, and services — to hyperscalers, neoclouds, and colocation operators."
   },
@@ -1316,7 +1316,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 49.9,
+   "sizeUSDB": 45.9,
    "sizeBasis": "disclosed",
    "monetization": "Sells nuclear and gas power to hyperscalers under 20-year PPAs — >2,600MW to Meta across its PJM nuclear fleet, up to 1,200MW of Comanche Peak to Amazon — while buying gas fleets to serve data-center load."
   },
@@ -1376,7 +1376,7 @@
    "region": "us",
    "tier": 1,
    "kind": "public_company",
-   "sizeUSDB": 1830.6,
+   "sizeUSDB": 1791,
    "sizeBasis": "disclosed",
    "monetization": "Grok subscriptions/API and X platform integration inside SpaceX's launch/Starlink cash-flow machine; monetizes the merger thesis that space and AI compute converge."
   },

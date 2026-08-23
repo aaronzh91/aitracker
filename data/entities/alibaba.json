@@ -88,23 +88,23 @@
         "published": "2026-05-20",
         "kind": "sec_filing"
       },
-      "as_of": "2026-08-15",
+      "as_of": "2026-08-22",
       "notes": "Revenues; 12-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 20-F."
     },
     {
       "metric": "market_cap",
-      "period": "2026-08-15",
-      "value": 296.6,
+      "period": "2026-08-22",
+      "value": 286,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
       "source": {
         "url": "https://api-ninjas.com/api/marketcap",
         "publisher": "API Ninjas",
-        "published": "2026-08-15",
+        "published": "2026-08-22",
         "kind": "dataset"
       },
-      "as_of": "2026-08-15",
+      "as_of": "2026-08-22",
       "notes": "Exchange market cap for BABA; auto-refreshed weekly."
     }
   ],
@@ -171,5 +171,5 @@
       "notes": "Export-control frame: H20 ban → 15% USG revenue-share re-license → B30A blocked."
     }
   ],
-  "updated": "2026-08-15"
+  "updated": "2026-08-22"
 }

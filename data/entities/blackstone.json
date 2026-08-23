@@ -83,7 +83,7 @@
         "published": "2026-08-07",
         "kind": "sec_filing"
       },
-      "as_of": "2026-08-15",
+      "as_of": "2026-08-22",
       "notes": "Revenues; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
     },
     {
@@ -99,7 +99,7 @@
         "published": "2026-08-07",
         "kind": "sec_filing"
       },
-      "as_of": "2026-08-15",
+      "as_of": "2026-08-22",
       "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
     }
   ],
@@ -180,5 +180,5 @@
       "kind": "press"
     }
   ],
-  "updated": "2026-08-15"
+  "updated": "2026-08-22"
 }

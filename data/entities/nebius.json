@@ -119,7 +119,7 @@
         "published": "2026-04-30",
         "kind": "sec_filing"
       },
-      "as_of": "2026-08-22",
+      "as_of": "2026-08-30",
       "notes": "Revenues; 12-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 20-F."
     },
     {
@@ -135,7 +135,7 @@
         "published": "2026-04-30",
         "kind": "sec_filing"
       },
-      "as_of": "2026-08-22",
+      "as_of": "2026-08-30",
       "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 12-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 20-F."
     },
     {
@@ -151,23 +151,23 @@
         "published": "2026-04-30",
         "kind": "sec_filing"
       },
-      "as_of": "2026-08-22",
+      "as_of": "2026-08-30",
       "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 20-F."
     },
     {
       "metric": "market_cap",
-      "period": "2026-08-22",
-      "value": 52.6,
+      "period": "2026-08-30",
+      "value": 50.2,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
       "source": {
         "url": "https://api-ninjas.com/api/marketcap",
         "publisher": "API Ninjas",
-        "published": "2026-08-22",
+        "published": "2026-08-30",
         "kind": "dataset"
       },
-      "as_of": "2026-08-22",
+      "as_of": "2026-08-30",
       "notes": "Exchange market cap for NBIS; auto-refreshed weekly."
     }
   ],
@@ -252,5 +252,5 @@
       "kind": "press"
     }
   ],
-  "updated": "2026-08-22"
+  "updated": "2026-08-30"
 }

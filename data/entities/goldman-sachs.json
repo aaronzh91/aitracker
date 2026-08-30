@@ -67,7 +67,7 @@
         "published": "2026-08-03",
         "kind": "sec_filing"
       },
-      "as_of": "2026-08-22",
+      "as_of": "2026-08-30",
       "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
     }
   ],
@@ -134,5 +134,5 @@
       "notes": "Names Goldman Sachs as advisor to Related Digital on the Saline Township financing."
     }
   ],
-  "updated": "2026-08-22"
+  "updated": "2026-08-30"
 }

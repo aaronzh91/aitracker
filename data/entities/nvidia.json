@@ -88,66 +88,66 @@
     },
     {
       "metric": "revenue_total",
-      "period": "3-month to 2026-04-26 (Q1 FY2027, 10-Q)",
-      "value": 81.61,
+      "period": "6-month to 2026-07-26 (Q2 FY2027, 10-Q)",
+      "value": 177.84,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
       "source": {
         "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001045810/us-gaap/Revenues.json",
         "publisher": "SEC EDGAR (XBRL)",
-        "published": "2026-05-20",
+        "published": "2026-08-26",
         "kind": "sec_filing"
       },
-      "as_of": "2026-08-22",
-      "notes": "Revenues; 3-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+      "as_of": "2026-08-30",
+      "notes": "Revenues; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
     },
     {
       "metric": "capex",
-      "period": "3-month to 2026-04-26 (Q1 FY2027, 10-Q)",
-      "value": 1.76,
+      "period": "6-month to 2026-07-26 (Q2 FY2027, 10-Q)",
+      "value": 4.43,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
       "source": {
         "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001045810/us-gaap/PaymentsToAcquireProductiveAssets.json",
         "publisher": "SEC EDGAR (XBRL)",
-        "published": "2026-05-20",
+        "published": "2026-08-26",
         "kind": "sec_filing"
       },
-      "as_of": "2026-08-22",
-      "notes": "PaymentsToAcquireProductiveAssets; 3-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
+      "as_of": "2026-08-30",
+      "notes": "PaymentsToAcquireProductiveAssets; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
     },
     {
       "metric": "rpo",
-      "period": "point-in-time to 2026-04-26 (Q1 FY2027, 10-Q)",
-      "value": 2.6,
+      "period": "point-in-time to 2026-07-26 (Q2 FY2027, 10-Q)",
+      "value": 3.2,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
       "source": {
         "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001045810/us-gaap/RevenueRemainingPerformanceObligation.json",
         "publisher": "SEC EDGAR (XBRL)",
-        "published": "2026-05-20",
+        "published": "2026-08-26",
         "kind": "sec_filing"
       },
-      "as_of": "2026-08-22",
+      "as_of": "2026-08-30",
       "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-Q."
     },
     {
       "metric": "market_cap",
-      "period": "2026-08-22",
-      "value": 5200.7,
+      "period": "2026-08-30",
+      "value": 5269.3,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
       "source": {
         "url": "https://api-ninjas.com/api/marketcap",
         "publisher": "API Ninjas",
-        "published": "2026-08-22",
+        "published": "2026-08-30",
         "kind": "dataset"
       },
-      "as_of": "2026-08-22",
+      "as_of": "2026-08-30",
       "notes": "Exchange market cap for NVDA; auto-refreshed weekly."
     }
   ],
@@ -189,5 +189,5 @@
       "kind": "press"
     }
   ],
-  "updated": "2026-08-22"
+  "updated": "2026-08-30"
 }

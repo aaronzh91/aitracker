@@ -101,7 +101,7 @@
         "published": "2026-07-29",
         "kind": "sec_filing"
       },
-      "as_of": "2026-08-22",
+      "as_of": "2026-08-30",
       "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
     },
     {
@@ -117,23 +117,23 @@
         "published": "2026-07-29",
         "kind": "sec_filing"
       },
-      "as_of": "2026-08-22",
+      "as_of": "2026-08-30",
       "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
     },
     {
       "metric": "market_cap",
-      "period": "2026-08-22",
-      "value": 100.8,
+      "period": "2026-08-30",
+      "value": 99,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
       "source": {
         "url": "https://api-ninjas.com/api/marketcap",
         "publisher": "API Ninjas",
-        "published": "2026-08-22",
+        "published": "2026-08-30",
         "kind": "dataset"
       },
-      "as_of": "2026-08-22",
+      "as_of": "2026-08-30",
       "notes": "Exchange market cap for VRT; auto-refreshed weekly."
     }
   ],
@@ -192,5 +192,5 @@
       "notes": "Q4 2025 slides recap; NVIDIA 800VDC collaboration timed to Rubin platform, 2H 2026."
     }
   ],
-  "updated": "2026-08-22"
+  "updated": "2026-08-30"
 }

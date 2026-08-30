@@ -82,7 +82,7 @@
         "published": "2026-02-13",
         "kind": "sec_filing"
       },
-      "as_of": "2026-08-22",
+      "as_of": "2026-08-30",
       "notes": "Revenues; 12-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-K."
     }
   ],
@@ -148,5 +148,5 @@
       "kind": "press"
     }
   ],
-  "updated": "2026-08-22"
+  "updated": "2026-08-30"
 }

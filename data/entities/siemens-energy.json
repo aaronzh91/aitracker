@@ -91,7 +91,7 @@
     },
     {
       "metric": "market_cap",
-      "period": "2026-08-22",
+      "period": "2026-08-30",
       "value": 1.5,
       "unit": "USD_B",
       "basis": "disclosed",
@@ -99,10 +99,10 @@
       "source": {
         "url": "https://api-ninjas.com/api/marketcap",
         "publisher": "API Ninjas",
-        "published": "2026-08-22",
+        "published": "2026-08-30",
         "kind": "dataset"
       },
-      "as_of": "2026-08-22",
+      "as_of": "2026-08-30",
       "notes": "Exchange market cap for ENR; auto-refreshed weekly."
     }
   ],
@@ -149,5 +149,5 @@
       "kind": "press"
     }
   ],
-  "updated": "2026-08-22"
+  "updated": "2026-08-30"
 }

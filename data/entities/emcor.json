@@ -33,18 +33,18 @@
     },
     {
       "metric": "market_cap",
-      "period": "2026-08-30",
-      "value": 32.6,
+      "period": "2026-09-06",
+      "value": 33.3,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
       "source": {
         "url": "https://api-ninjas.com/api/marketcap",
         "publisher": "API Ninjas",
-        "published": "2026-08-30",
+        "published": "2026-09-06",
         "kind": "dataset"
       },
-      "as_of": "2026-08-30",
+      "as_of": "2026-09-06",
       "notes": "Exchange market cap for EME; auto-refreshed weekly."
     }
   ],
@@ -56,5 +56,5 @@
       "kind": "press"
     }
   ],
-  "updated": "2026-08-30"
+  "updated": "2026-09-06"
 }

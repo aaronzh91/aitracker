@@ -87,66 +87,66 @@
     },
     {
       "metric": "revenue_total",
-      "period": "6-month to 2026-05-03 (Q2 FY2026, 10-Q)",
-      "value": 41.5,
+      "period": "9-month to 2026-08-02 (Q3 FY2026, 10-Q)",
+      "value": 71.09,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
       "source": {
         "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001730168/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
         "publisher": "SEC EDGAR (XBRL)",
-        "published": "2026-06-09",
+        "published": "2026-09-10",
         "kind": "sec_filing"
       },
-      "as_of": "2026-09-06",
-      "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+      "as_of": "2026-09-13",
+      "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 9-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
     },
     {
       "metric": "capex",
-      "period": "6-month to 2026-05-03 (Q2 FY2026, 10-Q)",
-      "value": 0.48,
+      "period": "9-month to 2026-08-02 (Q3 FY2026, 10-Q)",
+      "value": 1.01,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
       "source": {
         "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001730168/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
         "publisher": "SEC EDGAR (XBRL)",
-        "published": "2026-06-09",
+        "published": "2026-09-10",
         "kind": "sec_filing"
       },
-      "as_of": "2026-09-06",
-      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
+      "as_of": "2026-09-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 9-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
     },
     {
       "metric": "rpo",
-      "period": "point-in-time to 2026-05-03 (Q2 FY2026, 10-Q)",
-      "value": 164.6,
+      "period": "point-in-time to 2026-08-02 (Q3 FY2026, 10-Q)",
+      "value": 179.2,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
       "source": {
         "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001730168/us-gaap/RevenueRemainingPerformanceObligation.json",
         "publisher": "SEC EDGAR (XBRL)",
-        "published": "2026-06-09",
+        "published": "2026-09-10",
         "kind": "sec_filing"
       },
-      "as_of": "2026-09-06",
+      "as_of": "2026-09-13",
       "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-Q."
     },
     {
       "metric": "market_cap",
-      "period": "2026-09-06",
-      "value": 1702.7,
+      "period": "2026-09-13",
+      "value": 1722.2,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
       "source": {
         "url": "https://api-ninjas.com/api/marketcap",
         "publisher": "API Ninjas",
-        "published": "2026-09-06",
+        "published": "2026-09-13",
         "kind": "dataset"
       },
-      "as_of": "2026-09-06",
+      "as_of": "2026-09-13",
       "notes": "Exchange market cap for AVGO; auto-refreshed weekly."
     }
   ],
@@ -231,5 +231,5 @@
       "kind": "press"
     }
   ],
-  "updated": "2026-09-06"
+  "updated": "2026-09-13"
 }

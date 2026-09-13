@@ -34,7 +34,7 @@
     },
     {
       "metric": "market_cap",
-      "period": "2026-09-06",
+      "period": "2026-09-13",
       "value": 7.6,
       "unit": "USD_B",
       "basis": "disclosed",
@@ -42,10 +42,10 @@
       "source": {
         "url": "https://api-ninjas.com/api/marketcap",
         "publisher": "API Ninjas",
-        "published": "2026-09-06",
+        "published": "2026-09-13",
         "kind": "dataset"
       },
-      "as_of": "2026-09-06",
+      "as_of": "2026-09-13",
       "notes": "Exchange market cap for APLD; auto-refreshed weekly."
     }
   ],
@@ -63,5 +63,5 @@
       "kind": "company_ir"
     }
   ],
-  "updated": "2026-09-06"
+  "updated": "2026-09-13"
 }

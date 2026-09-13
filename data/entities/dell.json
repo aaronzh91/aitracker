@@ -72,66 +72,66 @@
     },
     {
       "metric": "revenue_total",
-      "period": "3-month to 2026-05-01 (Q1 FY2027, 10-Q)",
-      "value": 43.84,
+      "period": "6-month to 2026-07-31 (Q2 FY2027, 10-Q)",
+      "value": 90.81,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
       "source": {
         "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001571996/us-gaap/Revenues.json",
         "publisher": "SEC EDGAR (XBRL)",
-        "published": "2026-06-09",
+        "published": "2026-09-08",
         "kind": "sec_filing"
       },
-      "as_of": "2026-09-06",
-      "notes": "Revenues; 3-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
+      "as_of": "2026-09-13",
+      "notes": "Revenues; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
     },
     {
       "metric": "capex",
-      "period": "3-month to 2026-05-01 (Q1 FY2027, 10-Q)",
-      "value": 0.96,
+      "period": "6-month to 2026-07-31 (Q2 FY2027, 10-Q)",
+      "value": 2.2,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
       "source": {
         "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001571996/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json",
         "publisher": "SEC EDGAR (XBRL)",
-        "published": "2026-06-09",
+        "published": "2026-09-08",
         "kind": "sec_filing"
       },
-      "as_of": "2026-09-06",
-      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 3-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
+      "as_of": "2026-09-13",
+      "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
     },
     {
       "metric": "rpo",
-      "period": "point-in-time to 2026-05-01 (Q1 FY2027, 10-Q)",
-      "value": 97,
+      "period": "point-in-time to 2026-07-31 (Q2 FY2027, 10-Q)",
+      "value": 132,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
       "source": {
         "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001571996/us-gaap/RevenueRemainingPerformanceObligation.json",
         "publisher": "SEC EDGAR (XBRL)",
-        "published": "2026-06-09",
+        "published": "2026-09-08",
         "kind": "sec_filing"
       },
-      "as_of": "2026-09-06",
+      "as_of": "2026-09-13",
       "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-Q."
     },
     {
       "metric": "market_cap",
-      "period": "2026-09-06",
-      "value": 348.1,
+      "period": "2026-09-13",
+      "value": 376.7,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
       "source": {
         "url": "https://api-ninjas.com/api/marketcap",
         "publisher": "API Ninjas",
-        "published": "2026-09-06",
+        "published": "2026-09-13",
         "kind": "dataset"
       },
-      "as_of": "2026-09-06",
+      "as_of": "2026-09-13",
       "notes": "Exchange market cap for DELL; auto-refreshed weekly."
     }
   ],
@@ -163,5 +163,5 @@
       "kind": "company_pr"
     }
   ],
-  "updated": "2026-09-06"
+  "updated": "2026-09-13"
 }

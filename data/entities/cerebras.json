@@ -107,18 +107,18 @@
     },
     {
       "metric": "market_cap",
-      "period": "2026-09-06",
-      "value": 47.6,
+      "period": "2026-09-13",
+      "value": 43.5,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
       "source": {
         "url": "https://api-ninjas.com/api/marketcap",
         "publisher": "API Ninjas",
-        "published": "2026-09-06",
+        "published": "2026-09-13",
         "kind": "dataset"
       },
-      "as_of": "2026-09-06",
+      "as_of": "2026-09-13",
       "notes": "Exchange market cap for CBRS; auto-refreshed weekly."
     }
   ],
@@ -177,5 +177,5 @@
       "kind": "press"
     }
   ],
-  "updated": "2026-09-06"
+  "updated": "2026-09-13"
 }

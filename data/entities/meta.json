@@ -136,7 +136,7 @@
         "published": "2026-07-30",
         "kind": "sec_filing"
       },
-      "as_of": "2026-09-06",
+      "as_of": "2026-09-13",
       "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
     },
     {
@@ -152,23 +152,23 @@
         "published": "2026-07-30",
         "kind": "sec_filing"
       },
-      "as_of": "2026-09-06",
+      "as_of": "2026-09-13",
       "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 6-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
     },
     {
       "metric": "market_cap",
-      "period": "2026-09-06",
-      "value": 1571.2,
+      "period": "2026-09-13",
+      "value": 1650.8,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
       "source": {
         "url": "https://api-ninjas.com/api/marketcap",
         "publisher": "API Ninjas",
-        "published": "2026-09-06",
+        "published": "2026-09-13",
         "kind": "dataset"
       },
-      "as_of": "2026-09-06",
+      "as_of": "2026-09-13",
       "notes": "Exchange market cap for META; auto-refreshed weekly."
     }
   ],
@@ -282,5 +282,5 @@
       "kind": "press"
     }
   ],
-  "updated": "2026-09-06"
+  "updated": "2026-09-13"
 }

@@ -33,7 +33,7 @@
     },
     {
       "metric": "market_cap",
-      "period": "2026-09-20",
+      "period": "2026-09-27",
       "value": 6.6,
       "unit": "USD_B",
       "basis": "disclosed",
@@ -41,10 +41,10 @@
       "source": {
         "url": "https://api-ninjas.com/api/marketcap",
         "publisher": "API Ninjas",
-        "published": "2026-09-20",
+        "published": "2026-09-27",
         "kind": "dataset"
       },
-      "as_of": "2026-09-20",
+      "as_of": "2026-09-27",
       "notes": "Exchange market cap for OKLO; auto-refreshed weekly."
     }
   ],
@@ -56,5 +56,5 @@
       "kind": "company_pr"
     }
   ],
-  "updated": "2026-09-20"
+  "updated": "2026-09-27"
 }

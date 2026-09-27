@@ -137,7 +137,7 @@
         "published": "2026-09-11",
         "kind": "sec_filing"
       },
-      "as_of": "2026-09-20",
+      "as_of": "2026-09-27",
       "notes": "RevenueFromContractWithCustomerExcludingAssessedTax; 3-month duration value — 10-Q figures can be year-to-date, not single-quarter; auto-ingested from 10-Q."
     },
     {
@@ -153,7 +153,7 @@
         "published": "2026-09-11",
         "kind": "sec_filing"
       },
-      "as_of": "2026-09-20",
+      "as_of": "2026-09-27",
       "notes": "PaymentsToAcquirePropertyPlantAndEquipment; 3-month duration value — 10-Q figures can be year-to-date, not single-quarter; cash payments, may exclude finance leases; auto-ingested from 10-Q."
     },
     {
@@ -169,23 +169,23 @@
         "published": "2026-09-11",
         "kind": "sec_filing"
       },
-      "as_of": "2026-09-20",
+      "as_of": "2026-09-27",
       "notes": "RevenueRemainingPerformanceObligation; balance as of period end; auto-ingested from 10-Q."
     },
     {
       "metric": "market_cap",
-      "period": "2026-09-20",
-      "value": 425.2,
+      "period": "2026-09-27",
+      "value": 394.9,
       "unit": "USD_B",
       "basis": "disclosed",
       "confidence": "high",
       "source": {
         "url": "https://api-ninjas.com/api/marketcap",
         "publisher": "API Ninjas",
-        "published": "2026-09-20",
+        "published": "2026-09-27",
         "kind": "dataset"
       },
-      "as_of": "2026-09-20",
+      "as_of": "2026-09-27",
       "notes": "Exchange market cap for ORCL; auto-refreshed weekly."
     }
   ],
@@ -280,5 +280,5 @@
       "kind": "press"
     }
   ],
-  "updated": "2026-09-20"
+  "updated": "2026-09-27"
 }
